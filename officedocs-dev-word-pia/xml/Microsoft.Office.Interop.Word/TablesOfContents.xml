@@ -1,0 +1,472 @@
+<Type Name="TablesOfContents" FullName="Microsoft.Office.Interop.Word.TablesOfContents">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="34f7f3f0b04b6f94b3b32e279d16090a2318aa78" />
+    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="pt-BR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20665348" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface TablesOfContents : System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TablesOfContents implements class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.TablesOfContents" />
+  <TypeSignature Language="VB.NET" Value="Public Interface TablesOfContents&#xA;Implements IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class TablesOfContents : System::Collections::IEnumerable" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("00020914-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Uma coleção de <see cref="T:Microsoft.Office.Interop.Word.TableOfContents" /> objetos que representam os índices de conteúdo em um documento.</summary>
+    <remarks>
+      <para>Use o <see cref="P:Microsoft.Office.Interop.Word._Document.TablesOfContents" /> propriedade para retornar a coleção <b>TablesOfContents</b> .</para>
+      <para>Uso o <see cref="M:Microsoft.Office.Interop.Word.TablesOfContents.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> método para adicionar um sumário a um documento.</para>
+      <para>Uso <b>TablesOfContents</b>(<paramref name="index" />), onde <paramref name="index" /> é o número de índice, para retornar um único objeto <b>TableOfContents</b> . O número de índice representa a posição do sumário no documento.</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.TableOfContents Add (Microsoft.Office.Interop.Word.Range Range, ref object UseHeadingStyles, ref object UpperHeadingLevel, ref object LowerHeadingLevel, ref object UseFields, ref object TableID, ref object RightAlignPageNumbers, ref object IncludePageNumbers, ref object AddedStyles, ref object UseHyperlinks, ref object HidePageNumbersInWeb, ref object UseOutlineLevels);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.TableOfContents Add([in]class Microsoft.Office.Interop.Word.Range Range, [in]object&amp; UseHeadingStyles, [in]object&amp; UpperHeadingLevel, [in]object&amp; LowerHeadingLevel, [in]object&amp; UseFields, [in]object&amp; TableID, [in]object&amp; RightAlignPageNumbers, [in]object&amp; IncludePageNumbers, [in]object&amp; AddedStyles, [in]object&amp; UseHyperlinks, [in]object&amp; HidePageNumbersInWeb, [in]object&amp; UseOutlineLevels) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.TablesOfContents.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(103)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.TableOfContents</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
+        <Parameter Name="UseHeadingStyles" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="UpperHeadingLevel" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="LowerHeadingLevel" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="UseFields" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="TableID" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="RightAlignPageNumbers" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="IncludePageNumbers" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="AddedStyles" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="UseHyperlinks" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="HidePageNumbersInWeb" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="UseOutlineLevels" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Range">Necessário <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto. O intervalo onde você deseja que o sumário apareça. O sumário substitui o intervalo, se o intervalo não estiver recolhido.</param>
+        <param name="UseHeadingStyles">
+          <b>Objeto</b>de opcional. <b>True</b> para usar estilos de título internos para criar o sumário. O valor padrão é <b>True</b>.</param>
+        <param name="UpperHeadingLevel">
+          <b>Objeto</b>de opcional. O nível de título inicial para o sumário. Corresponde ao valor inicial usado com a opção \o de um campo TOC (Sumário). O valor padrão é 1.</param>
+        <param name="LowerHeadingLevel">
+          <b>Objeto</b>de opcional. O nível de título final para o sumário. Corresponde ao valor final usado com a opção \o de um campo de sumário (TOC). O valor padrão é 9.</param>
+        <param name="UseFields">
+          <b>Objeto</b>de opcional. <b>True</b> se os campos de entrada de conteúdo (TC) são usados para criar o sumário. Use o <see cref="M:Microsoft.Office.Interop.Word.TablesOfContents.MarkEntry(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@)" /> método para marcar as entradas a serem incluídos no índice de conteúdo. O valor padrão é <b>False</b>.</param>
+        <param name="TableID">
+          <b>Objeto</b>de opcional. Um identificador de uma letra que é usado para construir um sumário a partir de campos TC. Corresponde à opção \f de um campo TOC (sumário). Por exemplo, "T" constrói um sumário a partir de campos TC usando o identificador de índice T. Se esse argumento for omitido, campos TC não são usados.</param>
+        <param name="RightAlignPageNumbers">
+          <b>Objeto</b>de opcional. <b>True</b> se os números de página na tabela sumário são alinhados com a margem direita. O valor padrão é <b>True</b>.</param>
+        <param name="IncludePageNumbers">
+          <b>Objeto</b>de opcional. <b>True</b> para incluir números de página no índice de conteúdo. O valor padrão é <b>True</b>.</param>
+        <param name="AddedStyles">
+          <b>Objeto</b>de opcional. O nome da cadeia de caracteres para estilos adicionais usados para compilar o sumário (estilos que não seja o título 1 até Título 9). Use o <see cref="M:Microsoft.Office.Interop.Word.HeadingStyles.Add(System.Object@,System.Int16)" /> método de um <see cref="T:Microsoft.Office.Interop.Word.HeadingStyles" /> objeto para criar novos estilos de título.</param>
+        <param name="UseHyperlinks">
+          <b>Objeto</b>de opcional. <b>True</b> se as entradas em um sumário a ser formatadas como hiperlinks quando o documento estiver sendo publicado na Web. O valor padrão é <b>True</b>.</param>
+        <param name="HidePageNumbersInWeb">
+          <b>Objeto</b>de opcional. <b>True</b> para usar os níveis de estrutura de tópicos para criar o sumário. O padrão é <b>False</b>.</param>
+        <param name="UseOutlineLevels">
+          <b>Objeto</b>de opcional. <b>True</b> para usar os níveis de estrutura de tópicos para criar o sumário. O padrão é <b>False</b>.</param>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.TableOfContents" /> object que representa um índice analítico adicionado a um documento.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add2000">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.TableOfContents Add2000 (Microsoft.Office.Interop.Word.Range Range, ref object UseHeadingStyles, ref object UpperHeadingLevel, ref object LowerHeadingLevel, ref object UseFields, ref object TableID, ref object RightAlignPageNumbers, ref object IncludePageNumbers, ref object AddedStyles, ref object UseHyperlinks, ref object HidePageNumbersInWeb);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.TableOfContents Add2000([in]class Microsoft.Office.Interop.Word.Range Range, [in]object&amp; UseHeadingStyles, [in]object&amp; UpperHeadingLevel, [in]object&amp; LowerHeadingLevel, [in]object&amp; UseFields, [in]object&amp; TableID, [in]object&amp; RightAlignPageNumbers, [in]object&amp; IncludePageNumbers, [in]object&amp; AddedStyles, [in]object&amp; UseHyperlinks, [in]object&amp; HidePageNumbersInWeb) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.TablesOfContents.Add2000(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(102)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.TableOfContents</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
+        <Parameter Name="UseHeadingStyles" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="UpperHeadingLevel" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="LowerHeadingLevel" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="UseFields" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="TableID" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="RightAlignPageNumbers" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="IncludePageNumbers" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="AddedStyles" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="UseHyperlinks" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="HidePageNumbersInWeb" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Range">To be added.</param>
+        <param name="UseHeadingStyles">To be added.</param>
+        <param name="UpperHeadingLevel">To be added.</param>
+        <param name="LowerHeadingLevel">To be added.</param>
+        <param name="UseFields">To be added.</param>
+        <param name="TableID">To be added.</param>
+        <param name="RightAlignPageNumbers">To be added.</param>
+        <param name="IncludePageNumbers">To be added.</param>
+        <param name="AddedStyles">To be added.</param>
+        <param name="UseHyperlinks">To be added.</param>
+        <param name="HidePageNumbersInWeb">To be added.</param>
+        <summary>Reservado para uso interno.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddOld">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.TableOfContents AddOld (Microsoft.Office.Interop.Word.Range Range, ref object UseHeadingStyles, ref object UpperHeadingLevel, ref object LowerHeadingLevel, ref object UseFields, ref object TableID, ref object RightAlignPageNumbers, ref object IncludePageNumbers, ref object AddedStyles);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.TableOfContents AddOld([in]class Microsoft.Office.Interop.Word.Range Range, [in]object&amp; UseHeadingStyles, [in]object&amp; UpperHeadingLevel, [in]object&amp; LowerHeadingLevel, [in]object&amp; UseFields, [in]object&amp; TableID, [in]object&amp; RightAlignPageNumbers, [in]object&amp; IncludePageNumbers, [in]object&amp; AddedStyles) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.TablesOfContents.AddOld(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(100)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.TableOfContents</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
+        <Parameter Name="UseHeadingStyles" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="UpperHeadingLevel" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="LowerHeadingLevel" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="UseFields" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="TableID" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="RightAlignPageNumbers" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="IncludePageNumbers" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="AddedStyles" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Range">To be added.</param>
+        <param name="UseHeadingStyles">To be added.</param>
+        <param name="UpperHeadingLevel">To be added.</param>
+        <param name="LowerHeadingLevel">To be added.</param>
+        <param name="UseFields">To be added.</param>
+        <param name="TableID">To be added.</param>
+        <param name="RightAlignPageNumbers">To be added.</param>
+        <param name="IncludePageNumbers">To be added.</param>
+        <param name="AddedStyles">To be added.</param>
+        <summary>Reservado para uso interno.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TablesOfContents.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TablesOfContents.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna o número de itens na coleção especificada.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TablesOfContents.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Se o objeto foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
+          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Format">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.WdTocFormat Format { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Word.WdTocFormat Format" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TablesOfContents.Format" />
+      <MemberSignature Language="VB.NET" Value="Public Property Format As WdTocFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdTocFormat Format { Microsoft::Office::Interop::Word::WdTocFormat get(); void set(Microsoft::Office::Interop::Word::WdTocFormat value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.WdTocFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna ou define a formatação para os sumários no documento especificado.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdTocFormat" />pode ser uma destas constantes <b>WdTocFormat</b> . </para>
+          <para>
+            <b>wdTOCDistinctive </b>
+          </para>
+          <para>
+            <b>wdTOCFormal </b>
+          </para>
+          <para>
+            <b>wdTOCSimple </b>
+          </para>
+          <para>
+            <b>wdTOCClassic </b>
+          </para>
+          <para>
+            <b>wdTOCFancy </b>
+          </para>
+          <para>
+            <b>wdTOCModern </b>
+          </para>
+          <para>
+            <b>wdTOCTemplate</b>
+          </para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.TablesOfContents.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.TableOfContents this[int Index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.TableOfContents Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TablesOfContents.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Integer) As TableOfContents" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::TableOfContents ^ default[int] { Microsoft::Office::Interop::Word::TableOfContents ^ get(int Index); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.TableOfContents</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="Index">Um <b>inteiro</b> que indica a posição ordinal do objeto individual.</param>
+        <summary>Retorna um objeto individual de uma coleção.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MarkEntry">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Field MarkEntry (Microsoft.Office.Interop.Word.Range Range, ref object Entry, ref object EntryAutoText, ref object TableID, ref object Level);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Field MarkEntry([in]class Microsoft.Office.Interop.Word.Range Range, [in]object&amp; Entry, [in]object&amp; EntryAutoText, [in]object&amp; TableID, [in]object&amp; Level) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.TablesOfContents.MarkEntry(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(101)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Field</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
+        <Parameter Name="Entry" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="EntryAutoText" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="TableID" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Level" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Range">Necessário <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto. A posição da entrada. O campo TC é inserido após <paramref name="Range" />.</param>
+        <param name="Entry">
+          <b>Objeto</b>de opcional. O texto que aparece no sumário ou índice de ilustrações. Para indicar uma subentrada, inclua o texto da entrada principal e o texto da subentrada, separados por dois-pontos (:) (por exemplo, "Introdução:O Produto").</param>
+        <param name="EntryAutoText">
+          <b>Objeto</b>de opcional. O nome da entrada de AutoTexto que inclui texto do índice, índice de ilustrações ou sumário (<paramref name="Entry" /> será ignorado).</param>
+        <param name="TableID">
+          <b>Objeto</b>de opcional. Um identificador de uma letra para o índice de ilustrações ou sumário (por exemplo, "i" para uma "ilustração").</param>
+        <param name="Level">
+          <b>Objeto</b>de opcional. Um nível para a entrada no sumário ou índice de ilustrações.</param>
+        <summary>Insere um campo TC (entrada de sumário) após o intervalo especificado. O método retornará um <see cref="T:Microsoft.Office.Interop.Word.Field" /> objeto que representa o campo TC.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TablesOfContents.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um objeto que representa o objeto pai do objeto especificado.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

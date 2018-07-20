@@ -1,0 +1,1094 @@
+<Type Name="XMLNode" FullName="Microsoft.Office.Interop.Word.XMLNode">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="a72a2d631a6f2ec507d0a855eff12afd3295dbe8" />
+    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="pt-BR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20664567" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface XMLNode" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract XMLNode" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.XMLNode" />
+  <TypeSignature Language="VB.NET" Value="Public Interface XMLNode" />
+  <TypeSignature Language="C++ CLI" Value="public interface class XMLNode" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("09760240-0B89-49F7-A79D-479F24723F56")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Representa um único elemento XML aplicado a um documento.</summary>
+    <remarks>
+      <para>Cada elemento XML que foi aplicado a um documento é exibido como um nó em um controle de modo de exibição de árvore no painel de tarefas estrutura XML. Cada nó na exibição em árvore é uma instância de um <see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> objeto. A hierarquia no modo de exibição de árvore indica se um nó contém nós filho.</para>
+      <para>Uso o <see cref="P:Microsoft.Office.Interop.Word.XMLNodes.Item(System.Int32)" /> propriedade do <see cref="T:Microsoft.Office.Interop.Word.XMLNodes" /> coleção, para retornar um indivíduo <see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> objeto. Use o <see cref="M:Microsoft.Office.Interop.Word.XMLNode.Validate" /> método para verificar se um elemento XML é válido de acordo com os esquemas aplicados e se qualquer necessário elementos filho existem e estão na ordem exigida. Depois que você executar o <see cref="M:Microsoft.Office.Interop.Word.XMLNode.Validate" /> método, use o <see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationStatus" /> propriedade para verificar se um elemento é válido e usar o <see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationErrorText(System.Boolean)" /> propriedade para exibir informações sobre o que o usuário precisa fazer para tornar o documento está em conformidade com as regras do esquema XML.</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Attributes">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.XMLNodes Attributes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.XMLNodes Attributes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.Attributes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Attributes As XMLNodes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::XMLNodes ^ Attributes { Microsoft::Office::Interop::Word::XMLNodes ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(15)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(15)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.XMLNodes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.XMLNodes" /> coleção que representa os atributos do elemento especificado.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Todos os <see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> objetos na coleção <b>XMLNodes</b> retornados usando a propriedade <b>Attributes</b> possuem um <see cref="P:Microsoft.Office.Interop.Word.XMLNode.NodeType" /> valor da propriedade <b>wdXMLNodeAttribute</b>.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BaseName">
+      <MemberSignature Language="C#" Value="public string this { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string BaseName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.BaseName" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property BaseName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna uma <b>cadeia de caracteres</b> que representa o nome do elemento sem nenhum prefixo.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChildNodes">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.XMLNodes ChildNodes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.XMLNodes ChildNodes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.ChildNodes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChildNodes As XMLNodes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::XMLNodes ^ ChildNodes { Microsoft::Office::Interop::Word::XMLNodes ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(13)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(13)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.XMLNodes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.XMLNodes" /> coleção que representa os elementos filho de um elemento especificado.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChildNodeSuggestions">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.XMLChildNodeSuggestions ChildNodeSuggestions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.XMLChildNodeSuggestions ChildNodeSuggestions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.ChildNodeSuggestions" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChildNodeSuggestions As XMLChildNodeSuggestions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::XMLChildNodeSuggestions ^ ChildNodeSuggestions { Microsoft::Office::Interop::Word::XMLChildNodeSuggestions ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(20)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(20)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.XMLChildNodeSuggestions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.XMLChildNodeSuggestions" /> permitido de coleção que representa a lista de elementos para o <see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> objeto (que retorna os elementos filhos de um elemento especificado).</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Cada <see cref="T:Microsoft.Office.Interop.Word.XMLChildNodeSuggestion" /> do objeto em uma <see cref="T:Microsoft.Office.Interop.Word.XMLChildNodeSuggestions" /> conjunto é um item na lista de possíveis elementos XML na parte inferior do painel de tarefas estrutura XML permitidos.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Copy">
+      <MemberSignature Language="C#" Value="public void Copy ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Copy() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.XMLNode.Copy" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Copy ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Copy();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(101)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Copia o objeto especificado para a Área de transferência.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Se o objeto especificado foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>. </para>
+          <para>o <b>criador</b> de propriedade principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Cut">
+      <MemberSignature Language="C#" Value="public void Cut ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Cut() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.XMLNode.Cut" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Cut ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Cut();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(103)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Remove o objeto especificado do documento e o coloca na área de transferência.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public void Delete ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Delete() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.XMLNode.Delete" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(100)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Exclui o objeto especificado.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FirstChild">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.XMLNode FirstChild { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.XMLNode FirstChild" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.FirstChild" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FirstChild As XMLNode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::XMLNode ^ FirstChild { Microsoft::Office::Interop::Word::XMLNode ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(9)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(9)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.XMLNode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> object que representa o primeiro nó filho de um nó pai.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Use o <see cref="P:Microsoft.Office.Interop.Word.XMLNode.LastChild" /> propriedade para acessar o último nó filho. Use o <see cref="P:Microsoft.Office.Interop.Word.DiagramNode.Root" /> propriedade para acessar o nó pai em um diagrama.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasChildNodes">
+      <MemberSignature Language="C#" Value="public bool HasChildNodes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasChildNodes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.HasChildNodes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasChildNodes As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasChildNodes { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(17)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(17)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Determina se o elemento XML especificado tiver elementos filhos.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Esta propriedade retorna <b>True</b> se o elemento XML especificado tiver elementos filho e <b>False</b> se não.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastChild">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.XMLNode LastChild { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.XMLNode LastChild" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.LastChild" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastChild As XMLNode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::XMLNode ^ LastChild { Microsoft::Office::Interop::Word::XMLNode ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(10)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(10)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.XMLNode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> object que representa o último nó filho de um nó pai.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Use o <see cref="P:Microsoft.Office.Interop.Word.XMLNode.FirstChild" /> propriedade para acessar o primeiro nó filho em um diagrama. Use o <see cref="P:Microsoft.Office.Interop.Word.DiagramNode.Root" /> propriedade para acessar o nó pai em um diagrama.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Level">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.WdXMLNodeLevel Level { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Word.WdXMLNodeLevel Level" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.Level" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Level As WdXMLNodeLevel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdXMLNodeLevel Level { Microsoft::Office::Interop::Word::WdXMLNodeLevel get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(21)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(21)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.WdXMLNodeLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna o nível do elemento XML especificado dentro da hierarquia de elementos aplicado a um documento.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NamespaceURI">
+      <MemberSignature Language="C#" Value="public string NamespaceURI { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string NamespaceURI" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.NamespaceURI" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NamespaceURI As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NamespaceURI { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna uma <b>cadeia de caracteres</b> que representa o identificador URI (Uniform Resource) do namespace do esquema para o objeto especificado.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Se você estiver criando esquemas XML para uso com o Microsoft Word, é altamente recomendável que você especifique a configuração <b>targetNamespace</b> no esquema.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NextSibling">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.XMLNode NextSibling { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.XMLNode NextSibling" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.NextSibling" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NextSibling As XMLNode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::XMLNode ^ NextSibling { Microsoft::Office::Interop::Word::XMLNode ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.XMLNode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> object que representa o próximo elemento no documento que está no mesmo nível do elemento especificado.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Se o elemento especificado for o último elemento no <see cref="T:Microsoft.Office.Interop.Word.XMLNodes" /> conjunto, essa propriedade retornará <b>Nothing</b>.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NodeType">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.WdXMLNodeType NodeType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Word.WdXMLNodeType NodeType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.NodeType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NodeType As WdXMLNodeType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdXMLNodeType NodeType { Microsoft::Office::Interop::Word::WdXMLNodeType get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(12)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(12)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.WdXMLNodeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.WdXMLNodeType" /> constante que representa o tipo de nó.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdXMLNodeType" />pode ser uma das seguintes constantes <b>wdXMLNodeType</b> :</para>
+          <para>
+            <b>wdXMLNodeAttribute</b> – indica um nó de atributo.</para>
+          <para>
+            <b>wdXMLNodeElement</b> – indica um nó de elemento.</para>
+          <para>Uma <see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> objeto pode ser um elemento XML ou um atributo de um elemento. Use a propriedade <b>NodeType</b> para determinar qual tipo de nó você está trabalhando com para que você não tentar realizar operações inválidas no nó. Por exemplo, o <see cref="P:Microsoft.Office.Interop.Word.XMLNode.Attributes" /> propriedade só se aplica a nós de elementos, embora ele aparecerá na lista de propriedades disponíveis para o objeto <b>XMLNode</b> .</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NodeValue">
+      <MemberSignature Language="C#" Value="public string NodeValue { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string NodeValue" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.NodeValue" />
+      <MemberSignature Language="VB.NET" Value="Public Property NodeValue As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NodeValue { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(16)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(16)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(16)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna ou define um <b>String</b> que representa o valor de um atributo.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Uma <see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> objeto pode ser um elemento XML ou um atributo de um elemento. Use o <see cref="P:Microsoft.Office.Interop.Word.XMLNode.NodeType" /> propriedade para determinar qual tipo de nó que você está trabalhando com.</para>
+          <para>Para objetos <b>XMLNode</b> com um valor <b>NodeType</b> de <b>wdXMLNodeElement</b>, a propriedade <b>NodeValue</b> retornará nothing.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OwnerDocument">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Document OwnerDocument { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Document OwnerDocument" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.OwnerDocument" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OwnerDocument As Document" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Document ^ OwnerDocument { Microsoft::Office::Interop::Word::Document ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(11)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(11)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Document</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Document" /> object que representa o documento pai do elemento XML especificado.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>A propriedade <b>OwnerDocument</b> retorna os mesmos resultados que o <see cref="P:Microsoft.Office.Interop.Word.XMLNode.Parent" /> propriedade.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um objeto que representa o objeto pai do objeto especificado.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParentNode">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.XMLNode ParentNode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.XMLNode ParentNode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.ParentNode" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ParentNode As XMLNode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::XMLNode ^ ParentNode { Microsoft::Office::Interop::Word::XMLNode ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(8)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(8)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.XMLNode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> object que representa o elemento pai do elemento especificado.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PlaceholderText">
+      <MemberSignature Language="C#" Value="public string PlaceholderText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PlaceholderText" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.PlaceholderText" />
+      <MemberSignature Language="VB.NET" Value="Public Property PlaceholderText As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PlaceholderText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(25)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(25)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(25)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna ou define um <b>String</b> que representa o texto exibido para um elemento que não contém texto.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Texto de espaço reservado é exibido no Microsoft Word somente quando as marcas XML Mostrar na caixa de seleção do documento no painel de tarefas estrutura XML está desmarcada. As marcas XML Mostrar na caixa de seleção do documento corresponde ao <see cref="P:Microsoft.Office.Interop.Word.View.ShowXMLMarkup" /> propriedade.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreviousSibling">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.XMLNode PreviousSibling { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.XMLNode PreviousSibling" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.PreviousSibling" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PreviousSibling As XMLNode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::XMLNode ^ PreviousSibling { Microsoft::Office::Interop::Word::XMLNode ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(7)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(7)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.XMLNode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> object que representa o elemento anterior no documento que está no mesmo nível do elemento especificado.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Se o elemento especificado for o primeiro elemento no <see cref="T:Microsoft.Office.Interop.Word.XMLNodes" /> conjunto, essa propriedade retornará <b>Nothing</b>.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Range">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Range Range { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Range Range" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.Range" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Range As Range" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ Range { Microsoft::Office::Interop::Word::Range ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Range" /> object que representa a parte de um documento que está contida no objeto especificado.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Para obter informações sobre como retornar um intervalo de um documento, consulte o <see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" /> método.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveChild">
+      <MemberSignature Language="C#" Value="public void RemoveChild (Microsoft.Office.Interop.Word.XMLNode ChildElement);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveChild([in]class Microsoft.Office.Interop.Word.XMLNode ChildElement) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.XMLNode.RemoveChild(Microsoft.Office.Interop.Word.XMLNode)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveChild (ChildElement As XMLNode)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveChild(Microsoft::Office::Interop::Word::XMLNode ^ ChildElement);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(102)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ChildElement" Type="Microsoft.Office.Interop.Word.XMLNode" />
+      </Parameters>
+      <Docs>
+        <param name="ChildElement">Necessário <see cref="T:Microsoft.Office.Interop.Word.XMLNode" />. O elemento filho a ser removido.</param>
+        <summary>Remove o elemento filho especificado do elemento especificado.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectNodes">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.XMLNodes SelectNodes (string XPath, string PrefixMapping = &quot;&quot;, bool FastSearchSkippingTextNodes = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.XMLNodes SelectNodes([in]string XPath, [in]string PrefixMapping, [in]bool FastSearchSkippingTextNodes) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.XMLNode.SelectNodes(System.String,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SelectNodes (XPath As String, Optional PrefixMapping As String = &quot;&quot;, Optional FastSearchSkippingTextNodes As Boolean = false) As XMLNodes" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(19)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.XMLNodes</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="XPath" Type="System.String" />
+        <Parameter Name="PrefixMapping" Type="System.String" />
+        <Parameter Name="FastSearchSkippingTextNodes" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="XPath">
+          <b>String</b> necessário. Uma sequência XPath válida. Para obter mais informações sobre o XPath, consulte a documentação de referência do XPath no Web site Microsoft Developer Network (MSDN).</param>
+        <param name="PrefixMapping">
+          <b>Objeto</b>de opcional. Fornece o prefixo no esquema no qual será realizada a busca. Use o <paramref name="PrefixMapping" /> parâmetro se sua <paramref name="XPath" /> parâmetro usa nomes para procurar elementos.</param>
+        <param name="FastSearchSkippingTextNodes">Opcional <b>booleano</b>. <b>True</b> ignora todos os nós de texto ao procurar o nó especificado. <b>False</b> inclui nós de texto na pesquisa. Valor padrão é <b>False</b>.</param>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.XMLNodes" /> coleção que representa todos os nós que coincidem com uma cadeia de caracteres de XPath especificada na ordem em que aparecem.</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>Definindo o <paramref name="FastSearchSkippingTextNodes" /> parâmetro como <b>True</b> reduz o desempenho, pois o Microsoft Word procura por todos os nós em um documento em comparação com o texto contido no nó.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectSingleNode">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.XMLNode SelectSingleNode (string XPath, string PrefixMapping = &quot;&quot;, bool FastSearchSkippingTextNodes = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.XMLNode SelectSingleNode([in]string XPath, [in]string PrefixMapping, [in]bool FastSearchSkippingTextNodes) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.XMLNode.SelectSingleNode(System.String,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SelectSingleNode (XPath As String, Optional PrefixMapping As String = &quot;&quot;, Optional FastSearchSkippingTextNodes As Boolean = false) As XMLNode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(18)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.XMLNode</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="XPath" Type="System.String" />
+        <Parameter Name="PrefixMapping" Type="System.String" />
+        <Parameter Name="FastSearchSkippingTextNodes" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="XPath">
+          <b>String</b> necessário. Um válido <paramref name="XPath" /> cadeia de caracteres. Para obter mais informações sobre <paramref name="XPath" />, consulte o <paramref name="XPath" /> referência documentação no site Microsoft Developer Network (MSDN).</param>
+        <param name="PrefixMapping">
+          <b>Objeto</b>de opcional. Fornece o prefixo no esquema no qual será realizada a busca. Use o <paramref name="PrefixMapping" /> parâmetro se sua <paramref name="XPath" /> parâmetro usa nomes para procurar elementos.</param>
+        <param name="FastSearchSkippingTextNodes">Opcional <b>booleano</b>. <b>True</b> ignora todos os nós de texto ao procurar o nó especificado. <b>False</b> inclui nós de texto na pesquisa. Valor padrão é <b>True</b>.</param>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> object que representa o primeiro nó que corresponda a uma cadeia de caracteres de XPath especificada no documento especificado.</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>Definindo o <paramref name="FastSearchSkippingTextNodes" /> parâmetro como <b>False</b> reduz o desempenho, pois o Microsoft Word procura por todos os nós em um documento em comparação com o texto contido no nó.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetValidationError">
+      <MemberSignature Language="C#" Value="public void SetValidationError (Microsoft.Office.Interop.Word.WdXMLValidationStatus Status, ref object ErrorText, bool ClearedAutomatically = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetValidationError([in]valuetype Microsoft.Office.Interop.Word.WdXMLValidationStatus Status, [in]object&amp; ErrorText, [in]bool ClearedAutomatically) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.XMLNode.SetValidationError(Microsoft.Office.Interop.Word.WdXMLValidationStatus,System.Object@,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetValidationError (Status As WdXMLValidationStatus, Optional ByRef ErrorText As Object, Optional ClearedAutomatically As Boolean = false)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(105)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Status" Type="Microsoft.Office.Interop.Word.WdXMLValidationStatus" />
+        <Parameter Name="ErrorText" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ClearedAutomatically" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="Status">Necessário <see cref="T:Microsoft.Office.Interop.Word.WdXMLValidationStatus" />. Especifica se define (<b>wdXMLValidationStatusCustom</b>wdXMLValidationStatusCustom) ou apaga (<b>wdXMLValidationStatusOK</b>wdXMLValidationStatusOK) o texto de erro de status da validação.</param>
+        <param name="ErrorText">
+          <b>Objeto</b>de opcional. O texto exibido para o usuário. Deixe em branco quando o parâmetro <b>Status</b> estiver definido como <b>wdXMLValidationStatusOK</b>.</param>
+        <param name="ClearedAutomatically">Opcional <b>booleano</b>. <b>True</b> limpa automaticamente a mensagem de erro assim que o próximo evento de validação ocorrer no nó especificado. <b>False</b> requer a execução do método <b>SetValidationError</b> com um <paramref name="Status" /> parâmetro do <b>wdXMLValidationStatusOK</b> para limpar o texto de erro personalizado.</param>
+        <summary>Altera o texto de erro de validação exibido a um usuário para um nó especificado e obriga o Microsoft Word a reportar um nó como inválido.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SmartTag">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.SmartTag SmartTag { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.SmartTag SmartTag" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.SmartTag" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SmartTag As SmartTag" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::SmartTag ^ SmartTag { Microsoft::Office::Interop::Word::SmartTag ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(23)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(23)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.SmartTag</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.SmartTag" /> object que representa a marca inteligente associada a um elemento XML.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Elementos XML podem ter ações com marcas inteligentes atribuídas a eles por meio de componentes externos que implementam a interface <b>ISmartTag</b> . Para obter mais informações sobre marcas inteligentes e como criar identificadores e manipuladores de ação, consulte o Smart Tag Software Development Kit no site Microsoft Developer Network (MSDN).</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Text">
+      <MemberSignature Language="C#" Value="public string Text { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Text" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.Text" />
+      <MemberSignature Language="VB.NET" Value="Public Property Text As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna ou define um <b>String</b> que representa o texto exibido para um elemento XML.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Validate">
+      <MemberSignature Language="C#" Value="public void Validate ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Validate() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.XMLNode.Validate" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Validate ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Validate();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(104)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Certifica-se de um elemento XML individual ou todo o documento contra os esquemas ou esquema XML anexado.</summary>
+        <remarks>
+          <para>Use o método <b>Validate</b> com o <see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationStatus" /> e <see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationErrorText(System.Boolean)" /> propriedades para determinar se um elemento XML é válido para o esquema aplicado e que texto de erro será exibido ao usuário. Use o <see cref="M:Microsoft.Office.Interop.Word.XMLNode.SetValidationError(Microsoft.Office.Interop.Word.WdXMLValidationStatus,System.Object@,System.Boolean)" /> método para substituir as violações do esquema com erros de validação personalizada.</para>
+          <para>Quando você executa o método <b>Validate</b> , o Microsoft Word preenche a <see cref="P:Microsoft.Office.Interop.Word._Document.XMLSchemaViolations" /> coleção com os nós XML que possuem erros de validação.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidationErrorText">
+      <MemberSignature Language="C#" Value="public string ValidationErrorText[bool Advanced = false] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ValidationErrorText(bool)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.ValidationErrorText(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ValidationErrorText(Optional Advanced As Boolean = false) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ValidationErrorText[bool] { System::String ^ get(bool Advanced); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(24)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(24)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Advanced" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="Advanced">Opcional <b>booleano</b>. Indica que o texto de erro exibido é a versão avançada da descrição do erro de validação, que vem do componente MSXML 5.0 que acompanha o Microsoft Word.</param>
+        <summary>Retorna uma <b>cadeia de caracteres</b> que representa a descrição de um erro de validação em um <see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> objeto.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidationStatus">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.WdXMLValidationStatus ValidationStatus { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Word.WdXMLValidationStatus ValidationStatus" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.ValidationStatus" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ValidationStatus As WdXMLValidationStatus" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdXMLValidationStatus ValidationStatus { Microsoft::Office::Interop::Word::WdXMLValidationStatus get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(22)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(22)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.WdXMLValidationStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.WdXMLValidationStatus" /> constante que indica se um elemento ou atributo é válido de acordo com o esquema anexo.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            <b>WdXMLValidationStatus</b> pode ser uma das seguintes constantes:</para>
+          <para>
+            <b>Wdxmlvalidationstatuscustomwdxmlvalidationstatuscustom</b> indica que o <see cref="M:Microsoft.Office.Interop.Word.XMLNode.SetValidationError(Microsoft.Office.Interop.Word.WdXMLValidationStatus,System.Object@,System.Boolean)" /> método foi usado para definir <see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationErrorText(System.Boolean)" /> propriedade como uma cadeia de caracteres de texto personalizada.</para>
+          <para>
+            <b>wdXMLValidationStatusOK</b> indica um elemento XML ou atributo é válido de acordo com o esquema anexo.</para>
+          <para>Enquanto essas são as constantes nomeadas apenas dois permite que a propriedade <b>ValidationStatus</b> , existem muitos valores não-nomeados mais provenientes do componente MSXML 5.0 incluído no Microsoft Word. Para mais uma lista completa de valores possíveis e seus significados, consulte o Microsoft Word XML Content Development Kit no site Microsoft Developer Network (MSDN).</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WordOpenXML">
+      <MemberSignature Language="C#" Value="public string WordOpenXML { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string WordOpenXML" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.WordOpenXML" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WordOpenXML As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ WordOpenXML { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(106)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(106)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna uma <b>cadeia de caracteres</b> que representa o XML para o nó no formato Open XML do Microsoft Office Word. Somente leitura.</summary>
+        <value>
+          <b>String</b>
+        </value>
+        <remarks>
+          <para>Essa propriedade retorna somente o XML no documento que é necessário para representar o nó XML especificado.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XML">
+      <MemberSignature Language="C#" Value="public string XML[bool DataOnly = false] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string XML(bool)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.XML(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XML(Optional DataOnly As Boolean = false) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XML[bool] { System::String ^ get(bool DataOnly); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="DataOnly" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="DataOnly">Opcional <b>booleano</b>. <b>True</b> retorna o texto do XML sem a marcação XML do Word. A configuração padrão é <b>False</b>.</param>
+        <summary>Retorna uma <b>cadeia de caracteres</b> que representa o texto XML no objeto especificado.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

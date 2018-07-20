@@ -1,0 +1,767 @@
+<Type Name="Documents" FullName="Microsoft.Office.Interop.Word.Documents">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="a41822aae7b9dcff67293b6f07a8d78b06540706" />
+    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="pt-BR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20665420" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface Documents : System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Documents implements class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Documents" />
+  <TypeSignature Language="VB.NET" Value="Public Interface Documents&#xA;Implements IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class Documents : System::Collections::IEnumerable" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("0002096C-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Uma coleção de todos os <see cref="T:Microsoft.Office.Interop.Word.Document" /> objetos que estão atualmente abertos no Word.</summary>
+    <remarks>
+      <para>Use o <see cref="P:Microsoft.Office.Interop.Word._Application.Documents" /> propriedade para retornar a coleção <b>Documents</b> .</para>
+      <para>Uso o <see cref="M:Microsoft.Office.Interop.Word.Documents.Add(System.Object@,System.Object@,System.Object@,System.Object@)" /> método para criar um novo documento vazio e adicioná-lo à coleção <b>Documents</b> .</para>
+      <para>Use o método <b>Open</b> para abrir um arquivo.</para>
+      <para>Uso de <b>documentos</b>(<paramref name="index" />), onde <paramref name="index" /> é o nome do documento ou o número de índice para retornar um único objeto de <b>documento</b> .</para>
+      <para>o número de índice representa a posição do documento na coleção <b>Documents</b> .</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Document Add (ref object Template, ref object NewTemplate, ref object DocumentType, ref object Visible);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Document Add([in]object&amp; Template, [in]object&amp; NewTemplate, [in]object&amp; DocumentType, [in]object&amp; Visible) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Documents.Add(System.Object@,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (Optional ByRef Template As Object, Optional ByRef NewTemplate As Object, Optional ByRef DocumentType As Object, Optional ByRef Visible As Object) As Document" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(14)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Document</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Template" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="NewTemplate" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="DocumentType" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Visible" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Template">
+          <b>Objeto</b>de opcional. O nome do modelo a ser usado para o novo documento. Se esse argumento for omitido, será usado o modelo Normal.</param>
+        <param name="NewTemplate">
+          <b>Objeto</b>de opcional. <b>True</b> para abrir o documento como um modelo. O valor padrão é <b>False</b>.</param>
+        <param name="DocumentType">
+          <b>Objeto</b>de opcional. Pode ser uma das seguintes opções <see cref="T:Microsoft.Office.Interop.Word.WdNewDocumentType" /> constantes: <b>wdNewBlankDocument</b>, <b>wdNewEmailMessage</b>, <b>wdNewFrameset</b>ou <b>wdNewWebPage</b>. A constante padrão é <b>wdNewBlankDocument</b>.</param>
+        <param name="Visible">
+          <b>Objeto</b>de opcional. <b>True</b> para abrir o documento em uma janela visível. Se esse valor for <b>False</b>, o Microsoft Word abre o documento mas definirá o <see cref="P:Microsoft.Office.Interop.Word.Window.Visible" /> propriedade da janela de documento, como <b>False</b>. O valor padrão é <b>True</b>.</param>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Document" /> object que representa um documento novo e vazio adicionado à coleção de documentos abertos.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddBlogDocument">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Document AddBlogDocument (string ProviderID, string PostURL, string BlogName, string PostID = &quot;&quot;);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Document AddBlogDocument([in]string ProviderID, [in]string PostURL, [in]string BlogName, [in]string PostID) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Documents.AddBlogDocument(System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddBlogDocument (ProviderID As String, PostURL As String, BlogName As String, Optional PostID As String = &quot;&quot;) As Document" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(21)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Document</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ProviderID" Type="System.String" />
+        <Parameter Name="PostURL" Type="System.String" />
+        <Parameter Name="BlogName" Type="System.String" />
+        <Parameter Name="PostID" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="ProviderID">Um GUID é o valor exclusivo usado pelos fornecedores quando se registram no Word.</param>
+        <param name="PostURL">A URL usada para adicionar postagens no blog.</param>
+        <param name="BlogName">Um nome para o blog que será usado no Word.</param>
+        <param name="PostID">A identificação de uma postagem existente com a qual preencher o documento criado usando o método <b>AddBlogDocument</b>.</param>
+        <summary>Retorna um objeto que representa um novo documento do blog que o Microsoft Office Word publica para a conta descrita pelos primeiros três parâmetros.</summary>
+        <returns>
+          <see cref="T:Microsoft.Office.Interop.Word._Document" />
+        </returns>
+        <remarks>
+          <para>Este método cria um novo documento, e também registra a conta de blog especificado com o Word se ele já não estiver registrado. Além disso, se o <paramref name="PostID" /> parâmetro for especificado, o novo documento é preenchido com o conteúdo da postagem especificado pelo valor do <paramref name="PostID" /> parâmetro, a partir do site do provedor.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddOld">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Document AddOld (ref object Template, ref object NewTemplate);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Document AddOld([in]object&amp; Template, [in]object&amp; NewTemplate) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Documents.AddOld(System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddOld (Optional ByRef Template As Object, Optional ByRef NewTemplate As Object) As Document" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(11)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Document</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Template" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="NewTemplate" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Template">To be added.</param>
+        <param name="NewTemplate">To be added.</param>
+        <summary>Reservado para uso interno.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Documents.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanCheckOut">
+      <MemberSignature Language="C#" Value="public bool CanCheckOut (string FileName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanCheckOut([in]string FileName) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Documents.CanCheckOut(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CanCheckOut (FileName As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool CanCheckOut(System::String ^ FileName);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(17)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="FileName">
+          <b>String</b> necessário. O nome e caminho do documento no servidor.</param>
+        <summary>Determina se o Microsoft Word pode check-out de um documento especificado de um servidor. <b>Boolean</b> de leitura/gravação.</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>Esse método retornará <b>True</b> se o Microsoft Word pode check-out de um documento especificado de um servidor e <b>False</b> se não.</para>
+          <para>Para se beneficiar dos recursos de colaboração internos do Word, os documentos precisam ser armazenados em um Microsoft SharePoint Portal Server.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckOut">
+      <MemberSignature Language="C#" Value="public void CheckOut (string FileName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CheckOut([in]string FileName) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Documents.CheckOut(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CheckOut (FileName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CheckOut(System::String ^ FileName);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(16)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="FileName">
+          <b>String</b> necessário. O nome do arquivo a ser feito o check-out.</param>
+        <summary>Copia um documento especificado de um servidor para um computador local para edição.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Close">
+      <MemberSignature Language="C#" Value="public void Close (ref object SaveChanges, ref object OriginalFormat, ref object RouteDocument);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Close([in]object&amp; SaveChanges, [in]object&amp; OriginalFormat, [in]object&amp; RouteDocument) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Documents.Close(System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Close (Optional ByRef SaveChanges As Object, Optional ByRef OriginalFormat As Object, Optional ByRef RouteDocument As Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1105)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="SaveChanges" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="OriginalFormat" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="RouteDocument" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="SaveChanges">
+          <b>Objeto</b>de opcional. Especifica o salvamento ação para o documento. Pode ser uma das seguintes opções <see cref="T:Microsoft.Office.Interop.Word.WdSaveOptions" /> constantes: <b>wdDoNotSaveChanges</b>, <b>wdPromptToSaveChanges</b>ou <b>wdSaveChanges</b>.</param>
+        <param name="OriginalFormat">
+          <b>Objeto</b>de opcional. Especifica a salvar formato para o documento. Pode ser uma das seguintes opções <see cref="T:Microsoft.Office.Interop.Word.WdOriginalFormat" /> constantes: <b>wdOriginalDocumentFormat</b>, <b>wdPromptUser</b>ou <b>wdWordDocument</b>.</param>
+        <param name="RouteDocument">
+          <b>Objeto</b>de opcional. <b>True</b> para encaminhar o documento para o próximo destinatário. Se o documento não tiver uma lista de circulação anexada, este argumento será ignorado.</param>
+        <summary>Fecha o documento especificado ou documentos.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Documents.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna o número de itens na coleção especificada.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Documents.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Se o objeto especificado foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
+          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Documents.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Document this[ref object Index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Document Item(object)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Documents.Item(System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(ByRef Index As Object) As Document" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Document ^ default[System::Object ^ %] { Microsoft::Office::Interop::Word::Document ^ get(System::Object ^ % Index); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Document</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Index">Um <b>objeto</b> que indica a posição ordinal ou uma cadeia de caracteres que representa o nome do objeto individual.</param>
+        <summary>Retorna um objeto individual de uma coleção.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Open">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Document Open (ref object FileName, ref object ConfirmConversions, ref object ReadOnly, ref object AddToRecentFiles, ref object PasswordDocument, ref object PasswordTemplate, ref object Revert, ref object WritePasswordDocument, ref object WritePasswordTemplate, ref object Format, ref object Encoding, ref object Visible, ref object OpenAndRepair, ref object DocumentDirection, ref object NoEncodingDialog, ref object XMLTransform);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Document Open([in]object&amp; FileName, [in]object&amp; ConfirmConversions, [in]object&amp; ReadOnly, [in]object&amp; AddToRecentFiles, [in]object&amp; PasswordDocument, [in]object&amp; PasswordTemplate, [in]object&amp; Revert, [in]object&amp; WritePasswordDocument, [in]object&amp; WritePasswordTemplate, [in]object&amp; Format, [in]object&amp; Encoding, [in]object&amp; Visible, [in]object&amp; OpenAndRepair, [in]object&amp; DocumentDirection, [in]object&amp; NoEncodingDialog, [in]object&amp; XMLTransform) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Documents.Open(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Open (ByRef FileName As Object, Optional ByRef ConfirmConversions As Object, Optional ByRef ReadOnly As Object, Optional ByRef AddToRecentFiles As Object, Optional ByRef PasswordDocument As Object, Optional ByRef PasswordTemplate As Object, Optional ByRef Revert As Object, Optional ByRef WritePasswordDocument As Object, Optional ByRef WritePasswordTemplate As Object, Optional ByRef Format As Object, Optional ByRef Encoding As Object, Optional ByRef Visible As Object, Optional ByRef OpenAndRepair As Object, Optional ByRef DocumentDirection As Object, Optional ByRef NoEncodingDialog As Object, Optional ByRef XMLTransform As Object) As Document" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(19)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Document</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileName" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ConfirmConversions" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ReadOnly" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="AddToRecentFiles" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="PasswordDocument" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="PasswordTemplate" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Revert" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="WritePasswordDocument" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="WritePasswordTemplate" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Format" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Encoding" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Visible" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="OpenAndRepair" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="DocumentDirection" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="NoEncodingDialog" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="XMLTransform" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="FileName">
+          <b>Objeto</b>necessário. O nome do documento (caminhos são aceitos).</param>
+        <param name="ConfirmConversions">
+          <b>Objeto</b>de opcional. <b>True</b> para exibir a caixa de diálogo Converter arquivo se o arquivo não estiver no formato do Microsoft Word.</param>
+        <param name="ReadOnly">
+          <b>Objeto</b>de opcional. <b>True</b> para abrir o documento como somente leitura. <b>Observação</b>   Esse argumento não anula somente leitura configuração recomendada em um documento salvo. Por exemplo, se um documento tiver sido salvo com somente leitura recomendado ativado, a definição do argumento <b>ReadOnly</b> como <b>False</b> não fará o arquivo a ser aberto como leitura/gravação.</param>
+        <param name="AddToRecentFiles">
+          <b>Objeto</b>de opcional. <b>True</b> para adicionar o nome de arquivo à lista de arquivos usados recentemente na parte inferior do menu arquivo.</param>
+        <param name="PasswordDocument">
+          <b>Objeto</b>de opcional. A senha para abertura do documento.</param>
+        <param name="PasswordTemplate">
+          <b>Objeto</b>de opcional. A senha para abertura do modelo.</param>
+        <param name="Revert">
+          <b>Objeto</b>de opcional. Controla o que acontece se <paramref name="FileName" /> é o nome de um documento aberto. <b>True</b> para descartar as alterações não salvas no documento aberto e reabrir o arquivo. <b>Falso</b> para ativar o documento aberto.</param>
+        <param name="WritePasswordDocument">
+          <b>Objeto</b>de opcional. A senha para gravação de alterações no documento.</param>
+        <param name="WritePasswordTemplate">
+          <b>Objeto</b>de opcional. A senha para gravação de alterações no modelo.</param>
+        <param name="Format">
+          <b>Objeto</b>de opcional. O conversor de arquivo a ser usado para abrir o documento. Pode ser uma <see cref="T:Microsoft.Office.Interop.Word.WdOpenFormat" /> constante. Para especificar um formato de arquivo externo, aplique o <see cref="P:Microsoft.Office.Interop.Word.FileConverter.OpenFormat" /> propriedade para um <see cref="T:Microsoft.Office.Interop.Word.FileConverter" /> objeto para determinar o valor a ser usado com esse argumento.</param>
+        <param name="Encoding">
+          <b>Objeto</b>de opcional. A codificação (conjunto de caracteres ou páginas de código) para ser usada pelo Microsoft Word quando você vê o documento salvo de documento. Pode ser qualquer consulta <see cref="T:Microsoft.Office.Core.MsoEncoding" /> constante. O valor padrão é a página de código do sistema.</param>
+        <param name="Visible">
+          <b>Objeto</b>de opcional. <b>True</b> se o documento é aberto em uma janela visível. O valor padrão é <b>True</b>.</param>
+        <param name="OpenAndRepair">
+          <b>Objeto</b>de opcional. <b>True</b> para reparar o documento para impedir danos ao documento.</param>
+        <param name="DocumentDirection">Opcional <b>objeto.</b> Pode ser uma <see cref="T:Microsoft.Office.Interop.Word.WdDocumentDirection" /> constante.</param>
+        <param name="NoEncodingDialog">
+          <b>Objeto</b>de opcional. <b>Verdadeiro</b> para ignorar a exibição na caixa de diálogo de codificação que o Word exibe se a codificação de texto não pode ser reconhecida. O valor padrão é <b>False</b>.</param>
+        <param name="XMLTransform">
+          <b>Objeto</b>de opcional. Especifica uma transformação a ser usada.</param>
+        <summary>Abre o documento especificado e adiciona-lo para o <see cref="T:Microsoft.Office.Interop.Word.Documents" /> conjunto.</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>Evite usar senhas codificadas em seus aplicativos. Se uma senha for necessária em um procedimento, solicitar a senha do usuário, armazene em uma variável e, em seguida, use a variável no seu código.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Open2000">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Document Open2000 (ref object FileName, ref object ConfirmConversions, ref object ReadOnly, ref object AddToRecentFiles, ref object PasswordDocument, ref object PasswordTemplate, ref object Revert, ref object WritePasswordDocument, ref object WritePasswordTemplate, ref object Format, ref object Encoding, ref object Visible);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Document Open2000([in]object&amp; FileName, [in]object&amp; ConfirmConversions, [in]object&amp; ReadOnly, [in]object&amp; AddToRecentFiles, [in]object&amp; PasswordDocument, [in]object&amp; PasswordTemplate, [in]object&amp; Revert, [in]object&amp; WritePasswordDocument, [in]object&amp; WritePasswordTemplate, [in]object&amp; Format, [in]object&amp; Encoding, [in]object&amp; Visible) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Documents.Open2000(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Open2000 (ByRef FileName As Object, Optional ByRef ConfirmConversions As Object, Optional ByRef ReadOnly As Object, Optional ByRef AddToRecentFiles As Object, Optional ByRef PasswordDocument As Object, Optional ByRef PasswordTemplate As Object, Optional ByRef Revert As Object, Optional ByRef WritePasswordDocument As Object, Optional ByRef WritePasswordTemplate As Object, Optional ByRef Format As Object, Optional ByRef Encoding As Object, Optional ByRef Visible As Object) As Document" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(15)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Document</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileName" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ConfirmConversions" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ReadOnly" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="AddToRecentFiles" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="PasswordDocument" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="PasswordTemplate" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Revert" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="WritePasswordDocument" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="WritePasswordTemplate" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Format" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Encoding" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Visible" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="FileName">To be added.</param>
+        <param name="ConfirmConversions">To be added.</param>
+        <param name="ReadOnly">To be added.</param>
+        <param name="AddToRecentFiles">To be added.</param>
+        <param name="PasswordDocument">To be added.</param>
+        <param name="PasswordTemplate">To be added.</param>
+        <param name="Revert">To be added.</param>
+        <param name="WritePasswordDocument">To be added.</param>
+        <param name="WritePasswordTemplate">To be added.</param>
+        <param name="Format">To be added.</param>
+        <param name="Encoding">To be added.</param>
+        <param name="Visible">To be added.</param>
+        <summary>Reservado para uso interno.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Open2002">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Document Open2002 (ref object FileName, ref object ConfirmConversions, ref object ReadOnly, ref object AddToRecentFiles, ref object PasswordDocument, ref object PasswordTemplate, ref object Revert, ref object WritePasswordDocument, ref object WritePasswordTemplate, ref object Format, ref object Encoding, ref object Visible, ref object OpenAndRepair, ref object DocumentDirection, ref object NoEncodingDialog);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Document Open2002([in]object&amp; FileName, [in]object&amp; ConfirmConversions, [in]object&amp; ReadOnly, [in]object&amp; AddToRecentFiles, [in]object&amp; PasswordDocument, [in]object&amp; PasswordTemplate, [in]object&amp; Revert, [in]object&amp; WritePasswordDocument, [in]object&amp; WritePasswordTemplate, [in]object&amp; Format, [in]object&amp; Encoding, [in]object&amp; Visible, [in]object&amp; OpenAndRepair, [in]object&amp; DocumentDirection, [in]object&amp; NoEncodingDialog) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Documents.Open2002(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Open2002 (ByRef FileName As Object, Optional ByRef ConfirmConversions As Object, Optional ByRef ReadOnly As Object, Optional ByRef AddToRecentFiles As Object, Optional ByRef PasswordDocument As Object, Optional ByRef PasswordTemplate As Object, Optional ByRef Revert As Object, Optional ByRef WritePasswordDocument As Object, Optional ByRef WritePasswordTemplate As Object, Optional ByRef Format As Object, Optional ByRef Encoding As Object, Optional ByRef Visible As Object, Optional ByRef OpenAndRepair As Object, Optional ByRef DocumentDirection As Object, Optional ByRef NoEncodingDialog As Object) As Document" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(18)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Document</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileName" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ConfirmConversions" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ReadOnly" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="AddToRecentFiles" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="PasswordDocument" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="PasswordTemplate" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Revert" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="WritePasswordDocument" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="WritePasswordTemplate" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Format" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Encoding" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Visible" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="OpenAndRepair" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="DocumentDirection" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="NoEncodingDialog" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="FileName">To be added.</param>
+        <param name="ConfirmConversions">To be added.</param>
+        <param name="ReadOnly">To be added.</param>
+        <param name="AddToRecentFiles">To be added.</param>
+        <param name="PasswordDocument">To be added.</param>
+        <param name="PasswordTemplate">To be added.</param>
+        <param name="Revert">To be added.</param>
+        <param name="WritePasswordDocument">To be added.</param>
+        <param name="WritePasswordTemplate">To be added.</param>
+        <param name="Format">To be added.</param>
+        <param name="Encoding">To be added.</param>
+        <param name="Visible">To be added.</param>
+        <param name="OpenAndRepair">To be added.</param>
+        <param name="DocumentDirection">To be added.</param>
+        <param name="NoEncodingDialog">To be added.</param>
+        <summary>Reservado para uso interno.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenNoRepairDialog">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Document OpenNoRepairDialog (ref object FileName, ref object ConfirmConversions, ref object ReadOnly, ref object AddToRecentFiles, ref object PasswordDocument, ref object PasswordTemplate, ref object Revert, ref object WritePasswordDocument, ref object WritePasswordTemplate, ref object Format, ref object Encoding, ref object Visible, ref object OpenAndRepair, ref object DocumentDirection, ref object NoEncodingDialog, ref object XMLTransform);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Document OpenNoRepairDialog([in]object&amp; FileName, [in]object&amp; ConfirmConversions, [in]object&amp; ReadOnly, [in]object&amp; AddToRecentFiles, [in]object&amp; PasswordDocument, [in]object&amp; PasswordTemplate, [in]object&amp; Revert, [in]object&amp; WritePasswordDocument, [in]object&amp; WritePasswordTemplate, [in]object&amp; Format, [in]object&amp; Encoding, [in]object&amp; Visible, [in]object&amp; OpenAndRepair, [in]object&amp; DocumentDirection, [in]object&amp; NoEncodingDialog, [in]object&amp; XMLTransform) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Documents.OpenNoRepairDialog(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function OpenNoRepairDialog (ByRef FileName As Object, Optional ByRef ConfirmConversions As Object, Optional ByRef ReadOnly As Object, Optional ByRef AddToRecentFiles As Object, Optional ByRef PasswordDocument As Object, Optional ByRef PasswordTemplate As Object, Optional ByRef Revert As Object, Optional ByRef WritePasswordDocument As Object, Optional ByRef WritePasswordTemplate As Object, Optional ByRef Format As Object, Optional ByRef Encoding As Object, Optional ByRef Visible As Object, Optional ByRef OpenAndRepair As Object, Optional ByRef DocumentDirection As Object, Optional ByRef NoEncodingDialog As Object, Optional ByRef XMLTransform As Object) As Document" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(20)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Document</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileName" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ConfirmConversions" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ReadOnly" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="AddToRecentFiles" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="PasswordDocument" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="PasswordTemplate" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Revert" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="WritePasswordDocument" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="WritePasswordTemplate" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Format" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Encoding" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Visible" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="OpenAndRepair" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="DocumentDirection" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="NoEncodingDialog" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="XMLTransform" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="FileName">O nome do documento (caminhos são aceitos).</param>
+        <param name="ConfirmConversions">
+          <b>True</b> para exibir a caixa de diálogo Converter arquivo se o arquivo não estiver no formato do Microsoft Word.</param>
+        <param name="ReadOnly">
+          <b>True</b> para abrir o documento como somente leitura. Este argumento não substituir somente leitura configuração em um documento salvo recomendada. Por exemplo, se um documento tiver sido salvo com somente leitura é recomendável ativado, definindo o <paramref name="ReadOnly" /> argumento como <b>False</b> não farão com que o arquivo a ser aberto como leitura/gravação.</param>
+        <param name="AddToRecentFiles">
+          <b>True</b> para adicionar o nome de arquivo à lista de arquivos usados recentemente na parte inferior do menu arquivo.</param>
+        <param name="PasswordDocument">A senha para abertura do documento.</param>
+        <param name="PasswordTemplate">A senha para abertura do modelo.</param>
+        <param name="Revert">Controla o que acontece se <paramref name="FileName" /> é o nome de um documento aberto. <b>True</b> para descartar as alterações não salvas no documento aberto e reabrir o arquivo. <b>Falso</b> para ativar o documento aberto.</param>
+        <param name="WritePasswordDocument">A senha para gravação de alterações no documento.</param>
+        <param name="WritePasswordTemplate">A senha para gravação de alterações no modelo.</param>
+        <param name="Format">O conversor de arquivo a ser usado para abrir o documento. Pode ser uma do <see cref="T:Microsoft.Office.Interop.Word.WdOpenFormat" /> constantes. O valor padrão é <see cref="F:Microsoft.Office.Interop.Word.WdOpenFormat.wdOpenFormatAuto" />.</param>
+        <param name="Encoding">A codificação (conjunto de caracteres ou páginas de código) para ser usada pelo Microsoft Word quando você vê o documento salvo de documento. Pode ser qualquer consulta <see cref="T:Microsoft.Office.Core.MsoEncoding" /> o valor de enumeração. O valor padrão é a página de código do sistema.</param>
+        <param name="Visible">
+          <b>True</b> se o documento é aberto em uma janela visível. O valor padrão é <b>True</b>. </param>
+        <param name="OpenAndRepair">
+          <b>True</b> para reparar o documento para impedir danos ao documento.</param>
+        <param name="DocumentDirection">Indica o fluxo horizontal do texto em um documento. Pode ser qualquer consulta <see cref="T:Microsoft.Office.Interop.Word.WdDocumentDirection" /> constante. O valor padrão é <see cref="F:Microsoft.Office.Interop.Word.WdDocumentDirection.wdLeftToRight" />.</param>
+        <param name="NoEncodingDialog">
+          <b>Verdadeiro</b> para ignorar a exibição na caixa de diálogo de codificação que o Word exibe se a codificação de texto não pode ser reconhecida. O valor padrão é <b>False</b>. </param>
+        <param name="XMLTransform">Especifica uma transformação a ser usada.</param>
+        <summary>Abre o documento especificado e adiciona-lo para o <see cref="T:Microsoft.Office.Interop.Word.Documents" /> conjunto.</summary>
+        <returns>
+          <see cref="T:Microsoft.Office.Interop.Word._Document" />
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenOld">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Document OpenOld (ref object FileName, ref object ConfirmConversions, ref object ReadOnly, ref object AddToRecentFiles, ref object PasswordDocument, ref object PasswordTemplate, ref object Revert, ref object WritePasswordDocument, ref object WritePasswordTemplate, ref object Format);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Document OpenOld([in]object&amp; FileName, [in]object&amp; ConfirmConversions, [in]object&amp; ReadOnly, [in]object&amp; AddToRecentFiles, [in]object&amp; PasswordDocument, [in]object&amp; PasswordTemplate, [in]object&amp; Revert, [in]object&amp; WritePasswordDocument, [in]object&amp; WritePasswordTemplate, [in]object&amp; Format) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Documents.OpenOld(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function OpenOld (ByRef FileName As Object, Optional ByRef ConfirmConversions As Object, Optional ByRef ReadOnly As Object, Optional ByRef AddToRecentFiles As Object, Optional ByRef PasswordDocument As Object, Optional ByRef PasswordTemplate As Object, Optional ByRef Revert As Object, Optional ByRef WritePasswordDocument As Object, Optional ByRef WritePasswordTemplate As Object, Optional ByRef Format As Object) As Document" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(12)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Document</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileName" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ConfirmConversions" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ReadOnly" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="AddToRecentFiles" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="PasswordDocument" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="PasswordTemplate" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Revert" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="WritePasswordDocument" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="WritePasswordTemplate" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Format" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="FileName">To be added.</param>
+        <param name="ConfirmConversions">To be added.</param>
+        <param name="ReadOnly">To be added.</param>
+        <param name="AddToRecentFiles">To be added.</param>
+        <param name="PasswordDocument">To be added.</param>
+        <param name="PasswordTemplate">To be added.</param>
+        <param name="Revert">To be added.</param>
+        <param name="WritePasswordDocument">To be added.</param>
+        <param name="WritePasswordTemplate">To be added.</param>
+        <param name="Format">To be added.</param>
+        <summary>Reservado para uso interno.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Documents.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um objeto que representa o objeto pai do objeto especificado.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Save">
+      <MemberSignature Language="C#" Value="public void Save (ref object NoPrompt, ref object OriginalFormat);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Save([in]object&amp; NoPrompt, [in]object&amp; OriginalFormat) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Documents.Save(System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Save (Optional ByRef NoPrompt As Object, Optional ByRef OriginalFormat As Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(13)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="NoPrompt" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="OriginalFormat" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="NoPrompt">
+          <b>Objeto</b>de opcional. <b>True</b> para fazer com que o Microsoft Word salvar automaticamente todos os documentos; <b>False</b> para que o Word peça o usuário salve cada documento que tenha sido alterado desde que foi salvo pela última vez.</param>
+        <param name="OriginalFormat">
+          <b>Objeto</b>de opcional. Especifica a maneira como os documentos são salvos. Pode ser uma do <see cref="T:Microsoft.Office.Interop.Word.WdOriginalFormat" />constantes.</param>
+        <summary>Salva todos os documentos no <see cref="P:Microsoft.Office.Interop.Word._Application.Documents" /> conjunto.</summary>
+        <remarks>
+          <para>Se um documento não tiver sido salvo antes, a caixa de diálogo Salvar como solicita ao usuário um nome de arquivo.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

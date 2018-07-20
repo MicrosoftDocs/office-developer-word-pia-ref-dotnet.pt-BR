@@ -1,0 +1,266 @@
+<Type Name="Zoom" FullName="Microsoft.Office.Interop.Word.Zoom">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="2f2dc9d4d63de913f860ff43cbd70f73c583211b" />
+    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="pt-BR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20664414" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface Zoom" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Zoom" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Zoom" />
+  <TypeSignature Language="VB.NET" Value="Public Interface Zoom" />
+  <TypeSignature Language="C++ CLI" Value="public interface class Zoom" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000209A6-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Contém opções de ampliação (por exemplo, o percentual de zoom) para uma janela ou painel.</summary>
+    <remarks>
+      <para>O objeto <b>Zoom</b> é um membro do <see cref="T:Microsoft.Office.Interop.Word.Zooms" /> conjunto.</para>
+      <para>Uso o <see cref="P:Microsoft.Office.Interop.Word.View.Zoom" /> propriedade do <see cref="T:Microsoft.Office.Interop.Word.View" /> objeto para retornar um único objeto <b>Zoom</b> .</para>
+      <para>Uso <b>Zooms</b>(<paramref name="index" />), onde <paramref name="index" /> identifica o tipo de exibição, para retornar um único objeto <b>Zoom</b> . O tipo de exibição especificado pelo parâmetro index pode ser uma das seguintes opções <see cref="T:Microsoft.Office.Interop.Word.WdViewType" /> constantes: <b>wdMasterView</b>, <b>wdNormalView</b>, <b>wdOutlineView</b>, <b>wdPrintPreview</b>, <b>wdPrintView</b>ou <b>wdWebView</b>.</para> Método 
+      <para><b>Adicionar</b> não está disponível para a coleção <b>Zooms</b> . A coleção <b>Zooms</b> inclui um único objeto <b>Zoom</b> para cada um dos vários tipos de exibição (estrutura de tópicos, normal, layout da página e assim por diante).</para><para /></remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Zoom.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Zoom.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Se o objeto foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
+          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PageColumns">
+      <MemberSignature Language="C#" Value="public int PageColumns { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 PageColumns" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Zoom.PageColumns" />
+      <MemberSignature Language="VB.NET" Value="Public Property PageColumns As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PageColumns { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna ou define o número de páginas a serem exibidas lado a lado na tela ao mesmo tempo no modo de layout de impressão ou visualizar impressão.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PageFit">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.WdPageFit PageFit { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Word.WdPageFit PageFit" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Zoom.PageFit" />
+      <MemberSignature Language="VB.NET" Value="Public Property PageFit As WdPageFit" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdPageFit PageFit { Microsoft::Office::Interop::Word::WdPageFit get(); void set(Microsoft::Office::Interop::Word::WdPageFit value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.WdPageFit</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna ou define a ampliação do modo de exibição de uma janela de modo que toda a página fique visível ou toda a largura da página fique visível.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdPageFit" />pode ser uma destas constantes <b>WdPageFit</b> : </para>
+          <para>
+            <b>wdPageFitBestFit </b>
+          </para>
+          <para>
+            <b>wdPageFitFullPage </b>
+          </para>
+          <para>
+            <b>wdPageFitNone </b>
+          </para>
+          <para>
+            <b>wdPageFitTextFit</b>
+          </para>
+          <para>a constante <b>wdPageFitFullPage</b> não tem efeito se o documento não estiver em modo de impressão.</para>
+          <para>Quando a propriedade <b>PageFit</b> estiver definida como <b>wdPageFitBestFit</b>, o percentual de zoom é recalculado automaticamente toda vez que o tamanho da janela de documento é alterado. A definição dessa propriedade como <b>wdPageFitNone</b> evita o percentual de zoom seja recalculado sempre que isso acontece.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PageRows">
+      <MemberSignature Language="C#" Value="public int PageRows { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 PageRows" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Zoom.PageRows" />
+      <MemberSignature Language="VB.NET" Value="Public Property PageRows As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PageRows { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna ou define o número de páginas a ser exibidas de uma acima da outra na tela ao mesmo tempo no modo de layout de impressão ou visualizar impressão.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Zoom.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um objeto que representa o objeto pai do objeto especificado.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Percentage">
+      <MemberSignature Language="C#" Value="public int this { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Percentage" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Zoom.Percentage" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Percentage As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int default { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna ou define a ampliação para uma janela como um percentual.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
