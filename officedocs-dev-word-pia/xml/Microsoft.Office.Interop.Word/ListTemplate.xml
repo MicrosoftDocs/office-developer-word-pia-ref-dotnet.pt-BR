@@ -1,0 +1,360 @@
+<Type Name="ListTemplate" FullName="Microsoft.Office.Interop.Word.ListTemplate">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="6ee663e8d8d86e765adeb286114c48281180a479" />
+    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="pt-BR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20664391" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface ListTemplate" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ListTemplate" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ListTemplate" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ListTemplate" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ListTemplate" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("0002098F-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="c750c-101">Representa um modelo de lista única que inclui toda a formatação que define uma lista.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="c750c-101">Represents a single list template that includes all the formatting that defines a list.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="c750c-102">
+        <para>Objeto <b>ListTemplate</b> é um membro do <see cref="T:Microsoft.Office.Interop.Word.ListTemplates" /> conjunto. Cada um dos sete formatos (excluindo nenhum) encontrados em cada uma das três guias em marcadores e numeração a caixa de diálogo corresponde a um objeto de modelo de lista. Esses modelos de lista predefinidos que podem ser acessados nos três <see cref="T:Microsoft.Office.Interop.Word.ListGallery" /> objetos no <see cref="T:Microsoft.Office.Interop.Word.ListGalleries" /> conjunto. Documentos e modelos também podem conter coleções de modelos de lista.</para>
+        <para>Uso <b>ListTemplates</b>(<paramref name="index" />), onde <paramref name="index" /> é um número de 1 a 7, para retornar um único modelo de lista de uma galeria de listas.</para>
+        <para>
+          <b>Observação</b>: algumas propriedades e métodos — <see cref="M:Microsoft.Office.Interop.Word.ListTemplate.Convert(System.Object@)" /> e <see cref="M:Microsoft.Office.Interop.Word.ListTemplates.Add(System.Object@,System.Object@)" />, por exemplo — não funcionarão com os modelos de lista que são acessados a partir de uma galeria de listas. Você pode modificar esses modelos de lista, mas você não pode alterar seu tipo de galeria de lista (<b>wdBulletGallery</b>, <b>wdNumberGallery</b>ou <b>wdOutlineNumberGallery</b>).</para>
+        <para>Uso o <see cref="M:Microsoft.Office.Interop.Word.ListTemplates.Add(System.Object@,System.Object@)" /> método para adicionar um modelo de lista à coleção de modelos de lista em um documento ou modelo.</para>
+        <para>Para ver se o modelo de lista especificado contém a formatação interna do Microsoft Word, use o <see cref="P:Microsoft.Office.Interop.Word.ListGallery.Modified(System.Int32)" /> propriedade com o objeto <b>ListGallery</b> . Para redefinir a formatação para o formato de lista original, use o <see cref="M:Microsoft.Office.Interop.Word.ListGallery.Reset(System.Int32)" /> método do objeto <b>ListGallery</b> .</para>
+        <para>Após ter retornado um objeto <b>ListTemplate</b> , use <b>ListLevels</b>(<paramref name="index" />), onde <paramref name="index" /> é um número de 1 a 9, para retornar um único <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> objeto. Com um objeto <b>ListLevel</b> , você tem acesso a todas as propriedades de formatação para o nível de lista especificado, como <see cref="P:Microsoft.Office.Interop.Word.ListLevel.Alignment" />, <see cref="P:Microsoft.Office.Interop.Word.ListLevel.Font" />, <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberFormat" />, <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberPosition" />, <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberStyle" />, e <see cref="P:Microsoft.Office.Interop.Word.ListLevel.TrailingCharacter" />.</para>
+        <para>Uso o <see cref="M:Microsoft.Office.Interop.Word.ListTemplate.Convert(System.Object@)" /> método para converter um modelo de lista de vários níveis em um modelo de nível único.</para>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="c750c-102">
+          <para>The <b>ListTemplate</b> object is a member of the <see cref="T:Microsoft.Office.Interop.Word.ListTemplates" /> collection. Each of the seven formats (excluding None) found on each of the three tabs in the Bullets and Numbering dialog box corresponds to a list template object. These predefined list templates can be accessed from the three <see cref="T:Microsoft.Office.Interop.Word.ListGallery" /> objects in the <see cref="T:Microsoft.Office.Interop.Word.ListGalleries" /> collection. Documents and templates can also contain collections of list templates.</para>
+          <para>Use <b>ListTemplates</b>(<paramref name="index" />), where <paramref name="index" /> is a number from 1 through 7, to return a single list template from a list gallery.</para>
+          <para>
+            <b>Note</b>: Some properties and methods— <see cref="M:Microsoft.Office.Interop.Word.ListTemplate.Convert(System.Object@)" /> and <see cref="M:Microsoft.Office.Interop.Word.ListTemplates.Add(System.Object@,System.Object@)" />, for example— won't work with list templates that are accessed from a list gallery. You can modify these list templates, but you cannot change their list gallery type (<b>wdBulletGallery</b>, <b>wdNumberGallery</b>, or <b>wdOutlineNumberGallery</b>).</para>
+          <para>Use the <see cref="M:Microsoft.Office.Interop.Word.ListTemplates.Add(System.Object@,System.Object@)" /> method to add a list template to the collection of list templates in a document or template.</para>
+          <para>To see whether the specified list template contains the formatting built into Microsoft Word, use the <see cref="P:Microsoft.Office.Interop.Word.ListGallery.Modified(System.Int32)" /> property with the <b>ListGallery</b> object. To reset formatting to the original list format, use the <see cref="M:Microsoft.Office.Interop.Word.ListGallery.Reset(System.Int32)" /> method for the <b>ListGallery</b> object.</para>
+          <para>After you have returned a <b>ListTemplate</b> object, use <b>ListLevels</b>(<paramref name="index" />), where <paramref name="index" /> is a number from 1 through 9, to return a single <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> object. With a <b>ListLevel</b> object, you have access to all the formatting properties for the specified list level, such as <see cref="P:Microsoft.Office.Interop.Word.ListLevel.Alignment" />, <see cref="P:Microsoft.Office.Interop.Word.ListLevel.Font" />, <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberFormat" />, <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberPosition" />, <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberStyle" />, and <see cref="P:Microsoft.Office.Interop.Word.ListLevel.TrailingCharacter" />.</para>
+          <para>Use the <see cref="M:Microsoft.Office.Interop.Word.ListTemplate.Convert(System.Object@)" /> method to convert a multiple-level list template to a single-level template.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListTemplate.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="c750c-103">Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c750c-103">Returns a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Convert">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.ListTemplate Convert (ref object Level);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.ListTemplate Convert([in]object&amp; Level) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ListTemplate.Convert(System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Convert (Optional ByRef Level As Object) As ListTemplate" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(101)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.ListTemplate</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Level" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Level">
+          <span data-ttu-id="c750c-104">
+            <b>Objeto</b>de opcional.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c750c-104">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="c750c-105">O nível a ser usado para formatar a nova lista.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c750c-105">The level to use for formatting the new list.</span>
+          </span>
+          <span data-ttu-id="c750c-106">Ao converter uma lista de vários níveis em uma lista de um único nível, esse argumento pode ser um número de 1 a 9.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c750c-106">When converting a multiple-level list to a single-level list, this argument can be a number from 1 through 9.</span>
+          </span>
+          <span data-ttu-id="c750c-107">Ao converter uma lista de um único nível em uma lista de vários níveis, 1 é o único valor válido.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c750c-107">When converting a single-level list to a multiple-level list, 1 is the only valid value.</span>
+          </span>
+          <span data-ttu-id="c750c-108">Se este argumento for omitido, 1 é o valor padrão.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c750c-108">If this argument is omitted, 1 is the default value.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="c750c-109">Converte uma lista de vários níveis em uma lista de único nível ou vice-versa.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c750c-109">Converts a multiple-level list to a single-level list, or vice versa.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <span data-ttu-id="c750c-110">
+            <para>Você não pode usar o método <b>Convert</b> em um modelo de lista derivado do <see cref="T:Microsoft.Office.Interop.Word.ListGalleries" /> conjunto.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c750c-110">
+              <para>You cannot use the <b>Convert</b> method on a list template that is derived from the <see cref="T:Microsoft.Office.Interop.Word.ListGalleries" /> collection.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListTemplate.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="c750c-111">Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c750c-111">Returns a 32-bit integer that indicates the application in which the specified object was created.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="c750c-112">
+            <para>Se o objeto foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
+          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c750c-112">
+              <para>If the object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD." This value can also be represented by the constant <b>wdCreatorCode</b>.</para>
+              <para>The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code. For example, Microsoft Word has the creator code MSWD. For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListLevels">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.ListLevels ListLevels { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.ListLevels ListLevels" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListTemplate.ListLevels" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ListLevels As ListLevels" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ListLevels ^ ListLevels { Microsoft::Office::Interop::Word::ListLevels ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.ListLevels</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="c750c-113">Retorna um <see cref="T:Microsoft.Office.Interop.Word.ListLevels" /> coleção que representa todos os níveis de especificado <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c750c-113">Returns a <see cref="T:Microsoft.Office.Interop.Word.ListLevels" /> collection that represents all the levels for the specified <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" />.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListTemplate.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="c750c-114">Retorna ou define o nome do objeto especificado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c750c-114">Returns or sets the name of the specified object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OutlineNumbered">
+      <MemberSignature Language="C#" Value="public bool OutlineNumbered { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool OutlineNumbered" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListTemplate.OutlineNumbered" />
+      <MemberSignature Language="VB.NET" Value="Public Property OutlineNumbered As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool OutlineNumbered { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="c750c-115">
+            <b>True</b> se o especificado <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> objeto tiver numerado de tópicos.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c750c-115">
+              <b>True</b> if the specified <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> object is outline numbered.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="c750c-116">
+            <para>A definição dessa propriedade como <b>False</b> converte o modelo de lista em uma lista de único nível que usa a formatação do primeiro nível.</para>
+            <para>Você não pode definir essa propriedade para um objeto <b>ListTemplate</b> retornado de uma <see cref="T:Microsoft.Office.Interop.Word.ListGallery" /> objeto.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c750c-116">
+              <para>Setting this property to <b>False</b> converts the list template to a single-level list that uses the formatting of the first level.</para>
+              <para>You cannot set this property for a <b>ListTemplate</b> object returned from a <see cref="T:Microsoft.Office.Interop.Word.ListGallery" /> object.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListTemplate.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="c750c-117">Retorna um objeto que representa o objeto pai do objeto especificado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="c750c-117">Returns an object that represents the parent object of the specified object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,593 @@
+<Type Name="Fields" FullName="Microsoft.Office.Interop.Word.Fields">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="2fdd77cf26598c9ff9a9d497e81fbed99577fb24" />
+    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="pt-BR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20664586" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface Fields : System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Fields implements class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Fields" />
+  <TypeSignature Language="VB.NET" Value="Public Interface Fields&#xA;Implements IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class Fields : System::Collections::IEnumerable" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("00020930-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="4ceff-101">Uma coleção de <see cref="T:Microsoft.Office.Interop.Word.Field" /> objetos que representam todos os campos em uma seleção, intervalo ou documento.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="4ceff-101">A collection of <see cref="T:Microsoft.Office.Interop.Word.Field" /> objects that represent all the fields in a selection, range, or document.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="4ceff-102">
+        <para>Use a propriedade <b>Fields</b> para retornar a coleção <b>Fields</b> .</para>
+        <para>Uso o <see cref="M:Microsoft.Office.Interop.Word.Fields.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@)" /> método para adicionar um campo à coleção <b>Fields</b> .</para> Uso de <b>campos</b>de 
+      <para>(<paramref name="index" />), onde index é o <paramref name="index" /> número, para retornar um único objeto <b>Field</b> . O número de índice representa a posição do campo na seleção, intervalo ou documento.</para><para>Use a propriedade <b>Fields</b> com um objeto <b>MailMerge</b> para retornar a coleção <b>MailMergeFields</b> .</para><para>o <see cref="P:Microsoft.Office.Interop.Word.Fields.Count" /> propriedade dessa coleção em um documento retorna o número de itens no texto principal. Para contar itens em outros textos use a coleção com o <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto.</para><para /></span>
+      <span class="sxs-lookup">
+        <span data-stu-id="4ceff-102">
+          <para>Use the <b>Fields</b> property to return the <b>Fields</b> collection.</para>
+          <para>Use the <see cref="M:Microsoft.Office.Interop.Word.Fields.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@)" /> method to add a field to the <b>Fields</b> collection.</para>
+          <para>Use <b>Fields</b>(<paramref name="index" />), where index is the <paramref name="index" /> number, to return a single <b>Field</b> object. The index number represents the position of the field in the selection, range, or document.</para>
+          <para>Use the <b>Fields</b> property with a <b>MailMerge</b> object to return the <b>MailMergeFields</b> collection.</para>
+          <para>The <see cref="P:Microsoft.Office.Interop.Word.Fields.Count" /> property for this collection in a document returns the number of items in the main story only. To count items in other stories use the collection with the <see cref="T:Microsoft.Office.Interop.Word.Range" /> object.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Field Add (Microsoft.Office.Interop.Word.Range Range, ref object Type, ref object Text, ref object PreserveFormatting);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Field Add([in]class Microsoft.Office.Interop.Word.Range Range, [in]object&amp; Type, [in]object&amp; Text, [in]object&amp; PreserveFormatting) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Fields.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(105)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Field</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
+        <Parameter Name="Type" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Text" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="PreserveFormatting" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Range">
+          <span data-ttu-id="4ceff-103">Necessário <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ceff-103">Required <see cref="T:Microsoft.Office.Interop.Word.Range" /> object.</span>
+          </span>
+          <span data-ttu-id="4ceff-104">O intervalo onde você deseja adicionar o campo.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ceff-104">The range where you want to add the field.</span>
+          </span>
+          <span data-ttu-id="4ceff-105">Se o intervalo não estiver recolhido, o campo substitui o intervalo.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ceff-105">If the range isn't collapsed, the field replaces the range.</span>
+          </span>
+        </param>
+        <param name="Type">
+          <span data-ttu-id="4ceff-106">
+            <b>Objeto</b>de opcional.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ceff-106">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="4ceff-107">Pode ser qualquer <see cref="T:Microsoft.Office.Interop.Word.WdFieldType" /> constante.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ceff-107">Can be any <see cref="T:Microsoft.Office.Interop.Word.WdFieldType" /> constant.</span>
+          </span>
+          <span data-ttu-id="4ceff-108">Para obter uma lista de constantes válidas, consulte o Pesquisador de objetos.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ceff-108">For a list of valid constants, consult the Object Browser.</span>
+          </span>
+          <span data-ttu-id="4ceff-109">O valor padrão é <b>wdFieldEmpty</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ceff-109">The default value is <b>wdFieldEmpty</b>.</span>
+          </span>
+        </param>
+        <param name="Text">
+          <span data-ttu-id="4ceff-110">
+            <b>Objeto</b>de opcional.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ceff-110">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="4ceff-111">Texto adicional necessário para o campo.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ceff-111">Additional text needed for the field.</span>
+          </span>
+          <span data-ttu-id="4ceff-112">Por exemplo, se você deseja especificar um comutador para o campo, seria adicioná-lo aqui.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ceff-112">For example, if you want to specify a switch for the field, you would add it here.</span>
+          </span>
+        </param>
+        <param name="PreserveFormatting">
+          <span data-ttu-id="4ceff-113">
+            <b>Objeto</b>de opcional.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ceff-113">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="4ceff-114">
+            <b>True</b> para fazer com que a formatação aplicada ao campo seja preservada durante as atualizações.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ceff-114">
+              <b>True</b> to have the formatting that's applied to the field preserved during updates.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="4ceff-115">Adiciona um <see cref="T:Microsoft.Office.Interop.Word.Field" /> o objeto para o <see cref="T:Microsoft.Office.Interop.Word.Fields" /> conjunto.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ceff-115">Adds a <see cref="T:Microsoft.Office.Interop.Word.Field" /> object to the <see cref="T:Microsoft.Office.Interop.Word.Fields" /> collection.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <span data-ttu-id="4ceff-116">
+            <para>Esse método retorna o objeto <b>Field</b> no intervalo especificado.</para> Você não pode inserir alguns campos (por exemplo, <b>wdFieldOCX</b> e <b>wdFieldFormCheckBox</b>) usando o método <b>Add</b> da coleção <b>Fields</b> de 
+          <para>. Em vez disso, você deve usar os métodos específicos como o <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddOLEControl(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> método e o método <b>Add</b> para o <see cref="T:Microsoft.Office.Interop.Word.FormFields" /> conjunto.</para><para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ceff-116">
+              <para>This method returns the <b>Field</b> object at the specified range.</para>
+              <para>You cannot insert some fields (such as <b>wdFieldOCX</b> and <b>wdFieldFormCheckBox</b>) by using the <b>Add</b> method of the <b>Fields</b> collection. Instead, you must use specific methods such as the <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddOLEControl(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> method and the <b>Add</b> method for the <see cref="T:Microsoft.Office.Interop.Word.FormFields" /> collection.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Fields.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="4ceff-117">Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ceff-117">Returns a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Fields.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="4ceff-118">Retorna o número de itens na coleção especificada.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ceff-118">Returns the number of items in the specified collection.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Fields.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="4ceff-119">Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ceff-119">Returns a 32-bit integer that indicates the application in which the specified object was created.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="4ceff-120">
+            <para>Se o objeto especificado foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
+          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ceff-120">
+              <para>If the specified object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD." This value can also be represented by the constant <b>wdCreatorCode</b>.</para>
+              <para>The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code. For example, Microsoft Word has the creator code MSWD. For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Fields.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Field this[int Index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Field Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Fields.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Integer) As Field" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Field ^ default[int] { Microsoft::Office::Interop::Word::Field ^ get(int Index); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Field</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="Index">
+          <span data-ttu-id="4ceff-121">Um <b>inteiro</b> que indica a posição ordinal do objeto individual.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ceff-121">An <b>Integer</b> indicating the ordinal position of the individual object.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="4ceff-122">Retorna um objeto individual de uma coleção.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ceff-122">Returns an individual object in a collection.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Locked">
+      <MemberSignature Language="C#" Value="public int Locked { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Locked" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Fields.Locked" />
+      <MemberSignature Language="VB.NET" Value="Public Property Locked As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Locked { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="4ceff-123">Determina se todos os campos a <see cref="T:Microsoft.Office.Interop.Word.Fields" /> coleção estiverem bloqueados.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ceff-123">Determines if all fields in the <see cref="T:Microsoft.Office.Interop.Word.Fields" /> collection are locked.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="4ceff-124">
+            <para>Esta propriedade retorna <b>True</b> se todos os campos no <see cref="T:Microsoft.Office.Interop.Word.Fields" /> coleção estiverem bloqueados e <b>False</b> se não.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ceff-124">
+              <para>This property returns <b>True</b> if all fields in the <see cref="T:Microsoft.Office.Interop.Word.Fields" /> collection are locked, and <b>False</b> if not.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Fields.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="4ceff-125">Retorna um objeto que representa o objeto pai do objeto especificado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ceff-125">Returns an object that represents the parent object of the specified object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToggleShowCodes">
+      <MemberSignature Language="C#" Value="public void ToggleShowCodes ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ToggleShowCodes() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Fields.ToggleShowCodes" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ToggleShowCodes ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ToggleShowCodes();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(100)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="4ceff-126">Alterna a exibição dos campos entre códigos de campo e resultados de campo.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ceff-126">Toggles the display of the fields between field codes and field results.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="4ceff-127">
+            <para>Use o <see cref="P:Microsoft.Office.Interop.Word.Field.ShowCodes" /> propriedade para controlar a exibição de um campo individual.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ceff-127">
+              <para>Use the <see cref="P:Microsoft.Office.Interop.Word.Field.ShowCodes" /> property to control the display of an individual field.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Unlink">
+      <MemberSignature Language="C#" Value="public void Unlink ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Unlink() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Fields.Unlink" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Unlink ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Unlink();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(102)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="4ceff-128">Substitui todos os campos a <see cref="T:Microsoft.Office.Interop.Word.Fields" /> coleção com seus resultados mais recentes.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ceff-128">Replaces all the fields in the <see cref="T:Microsoft.Office.Interop.Word.Fields" /> collection with their most recent results.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="4ceff-129">
+            <para>Quando você retira o vínculo de um campo, seu resultado atual é convertido em texto ou imagem gráfica e não pode ser atualizado automaticamente. Observe que alguns campos — como campos XE (entrada de índice) e os campos SEQ (sequência) — não pode ser desvinculada.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ceff-129">
+              <para>When you unlink a field, its current result is converted to text or a graphic and can no longer be updated automatically. Note that some fields— such as XE (Index Entry) fields and SEQ (Sequence) fields— cannot be unlinked.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Update">
+      <MemberSignature Language="C#" Value="public int Update ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Update() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Fields.Update" />
+      <MemberSignature Language="VB.NET" Value="Public Function Update () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Update();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(101)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="4ceff-130">Atualiza o resultado do objeto de campos.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ceff-130">Updates the result of the fields object.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <span data-ttu-id="4ceff-131">
+            <para>Quando aplicado a um <see cref="T:Microsoft.Office.Interop.Word.Fields" /> conjunto, retornará 0 (zero) se nenhum erro ocorrer quando os campos são atualizados ou retorna um <b>inteiro</b> que representa o índice do primeiro campo que contém um erro.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ceff-131">
+              <para>When applied to a <see cref="T:Microsoft.Office.Interop.Word.Fields" /> collection, returns 0 (zero) if no errors occur when the fields are updated, or returns an <b>Integer</b> that represents the index of the first field that contains an error.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateSource">
+      <MemberSignature Language="C#" Value="public void UpdateSource ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UpdateSource() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Fields.UpdateSource" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UpdateSource ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void UpdateSource();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(104)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="4ceff-132">Salva as alterações feitas nos resultados de um campo INCLUDETEXT de volta para o documento de origem.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ceff-132">Saves the changes made to the results of an INCLUDETEXT field back to the source document.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="4ceff-133">
+            <para>O documento de origem precisa estar formatado como um documento do Microsoft Word.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ceff-133">
+              <para>The source document must be formatted as a Microsoft Word document.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,2571 @@
+<Type Name="Shapes" FullName="Microsoft.Office.Interop.Word.Shapes">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="596f5d04825cbd4362b47c3e2b57a588a0ededd6" />
+    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="pt-BR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20665356" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface Shapes : System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Shapes implements class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Shapes" />
+  <TypeSignature Language="VB.NET" Value="Public Interface Shapes&#xA;Implements IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class Shapes : System::Collections::IEnumerable" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("0002099F-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="198e2-101">Uma coleção de <see cref="T:Microsoft.Office.Interop.Word.Shape" /> objetos que representam todas as formas em um documento ou todas as formas em todos os cabeçalhos e rodapés em um documento.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="198e2-101">A collection of <see cref="T:Microsoft.Office.Interop.Word.Shape" /> objects that represent all the shapes in a document or all the shapes in all the headers and footers in a document.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="198e2-102">&lt;b0&gt;Cada objeto &lt;b1&gt;Shape&lt;/b1&gt; representa um objeto na camada de desenho, como uma AutoForma, uma forma livre, um objeto OLE ou uma figura.&lt;/b0&gt; &lt;b3&gt;Observação&lt;/b3&gt; se você deseja trabalhar com um subconjunto das formas em um documento de &lt;b2&gt;— por exemplo, para fazer algo apenas com as AutoFormas do documento ou somente as formas selecionadas — você deve construir um &lt;b4&gt;&lt;/b4&gt; coleção que contém as formas que você deseja trabalhar com. &lt; / C2 &gt;&lt;b5&gt;uso o &lt;b6&gt;&lt;/b6&gt; propriedade para retornar a coleção &lt;b7&gt;Shapes&lt;/b7&gt; .&lt;/b5&gt; &lt;b8&gt; &lt;b9&gt;Observação&lt;/b9&gt; se você deseja fazer algo (como excluir ou definir uma propriedade) com todas as formas em um documento ao mesmo tempo, use o &lt;b10&gt;&lt;/b10&gt; método para criar um objeto &lt;b11&gt;ShapeRange&lt;/b11&gt; que contém todas as formas na coleção &lt;b12&gt;Shapes&lt;/b12&gt; e em seguida, aplique a propriedade ou método apropriado ao objeto &lt;b13&gt;ShapeRange&lt;/b13&gt; .&lt;/b8&gt; &lt;b14&gt;Utilize um dos seguintes métodos da coleção &lt;b15&gt;Shapes&lt;/b15&gt; : &lt;b16&gt; &lt;/b16&gt;, &lt;b17&gt; &lt;/b17&gt;, &lt;b18&gt; &lt;/b18&gt;, &lt;b19&gt; &lt;/b19&gt;, &lt;b20&gt; &lt;/b20&gt;, &lt;b21&gt; &lt;/b21&gt;, &lt;b22&gt; &lt;/b22&gt;, &lt;b23&gt; &lt;/b23&gt;, &lt;b24&gt; &lt;/b24&gt;, &lt;b25&gt; &lt;/b25&gt;, ou &lt;b26&gt;&lt;/b26&gt; para adicionar uma forma a um documento e retornar um objeto &lt;b27&gt;Shape&lt;/b27&gt; que representa a forma recém-criada.&lt;/b14&gt; &lt;b28&gt;: Usar &lt;b29&gt;formas&lt;/b29&gt;(&lt;b30&gt;&lt;/b30&gt;), onde &lt;b31&gt;&lt;/b31&gt; é o nome ou o número de índice, para retornar um único objeto &lt;b32&gt;Shape&lt;/b32&gt; .&lt;/b28&gt; &lt;b33&gt;Cada forma é atribuída um nome padrão quando ele é criado. Por exemplo, se você adicionar três formas diferentes a um documento, elas podem ser nomeadas "Rectangle 2", "TextBox 3" e "Oval 4". Para dar um nome mais significativo uma forma, defina o &lt;b34&gt;&lt;/b34&gt; propriedade.&lt;/b33&gt; Não incluir &lt;b35&gt;coleção Shapes o &lt;b36&gt;&lt;/b36&gt; objetos. Objetos &lt;b37&gt;InlineShape&lt;/b37&gt; são tratados como caracteres e são posicionados como caracteres dentro de uma linha de texto. Objetos &lt;b38&gt;Shape&lt;/b38&gt; ficam vinculados a um intervalo de texto, mas são flutuante independente e podem ser posicionados em qualquer lugar na página. Você pode usar o &lt;b39&gt;&lt;/b39&gt; método e a &lt;b40&gt;&lt;/b40&gt; método para converter formas de um tipo para outro. Você pode converter somente figuras, objetos OLE e controles ActiveX em formas embutidas.&lt;/b35&gt; &lt;b41&gt;o &lt;b42&gt;&lt;/b42&gt; propriedade dessa coleção em um documento retorna o número de itens no texto principal. Para contar as formas em todos os cabeçalhos e rodapés, use a coleção &lt;b43&gt;Shapes&lt;/b43&gt; com qualquer &lt;b44&gt;&lt;/b44&gt; objeto.&lt;/b41&gt;&lt;/b2&gt;&lt;b45&gt;&lt;/b45&gt;</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="198e2-102">
+          <para>Each <b>Shape</b> object represents an object in the drawing layer, such as an AutoShape, freeform, OLE object, or picture.</para>
+          <para>
+            <b>Note</b>  If you want to work with a subset of the shapes on a document— for example, to do something to only the AutoShapes on the document or to only the selected shapes— you must construct a <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> collection that contains the shapes you want to work with.</para>
+          <para>Use the <see cref="P:Microsoft.Office.Interop.Word._Document.Shapes" /> property to return the <b>Shapes</b> collection.</para>
+          <para>
+            <b>Note</b>  If you want to do something (like delete or set a property) to all the shapes on a document at the same time, use the <see cref="M:Microsoft.Office.Interop.Word.Shapes.Range(System.Object@)" /> method to create a <b>ShapeRange</b> object that contains all the shapes in the <b>Shapes</b> collection, and then apply the appropriate property or method to the <b>ShapeRange</b> object.</para>
+          <para>Use one of the following methods of the <b>Shapes</b> collection: <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddCallout(Microsoft.Office.Core.MsoCalloutType,System.Single,System.Single,System.Single,System.Single,System.Object@)" />, <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddCurve(System.Object@,System.Object@)" />, <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddLabel(Microsoft.Office.Core.MsoTextOrientation,System.Single,System.Single,System.Single,System.Single,System.Object@)" />, <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddLine(System.Single,System.Single,System.Single,System.Single,System.Object@)" />, <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddOLEControl(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />, <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddOLEObject(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />, <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddPolyline(System.Object@,System.Object@)" />, <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddShape(System.Int32,System.Single,System.Single,System.Single,System.Single,System.Object@)" />, <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddTextbox(Microsoft.Office.Core.MsoTextOrientation,System.Single,System.Single,System.Single,System.Single,System.Object@)" />, <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddTextEffect(Microsoft.Office.Core.MsoPresetTextEffect,System.String,System.String,System.Single,Microsoft.Office.Core.MsoTriState,Microsoft.Office.Core.MsoTriState,System.Single,System.Single,System.Object@)" />, or <see cref="M:Microsoft.Office.Interop.Word.Shapes.BuildFreeform(Microsoft.Office.Core.MsoEditingType,System.Single,System.Single)" /> to add a shape to a document and return a <b>Shape</b> object that represents the newly created shape.</para>
+          <para>Use <b>Shapes</b>(<paramref name="index" />), where <paramref name="index" /> is the name or the index number, to return a single <b>Shape</b> object.</para>
+          <para>Each shape is assigned a default name when it is created. For example, if you add three different shapes to a document, they might be named "Rectangle 2," "TextBox 3," and "Oval 4." To give a shape a more meaningful name, set the <see cref="P:Microsoft.Office.Interop.Word.Shape.Name" /> property.</para>
+          <para>The Shapes collection does not include <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> objects. <b>InlineShape</b> objects are treated like characters and are positioned as characters within a line of text. <b>Shape</b> objects are anchored to a range of text but are free-floating and can be positioned anywhere on the page. You can use the <see cref="M:Microsoft.Office.Interop.Word.Shape.ConvertToInlineShape" /> method and the <see cref="M:Microsoft.Office.Interop.Word.FreeformBuilder.ConvertToShape(System.Object@)" /> method to convert shapes from one type to the other. You can convert only pictures, OLE objects, and ActiveX controls to inline shapes.</para>
+          <para>The <see cref="P:Microsoft.Office.Interop.Word.Shapes.Count" /> property for this collection in a document returns the number of items in the main story only. To count the shapes in all the headers and footers, use the <b>Shapes</b> collection with any <see cref="T:Microsoft.Office.Interop.Word.HeaderFooter" /> object.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddCallout">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddCallout (Microsoft.Office.Core.MsoCalloutType Type, float Left, float Top, float Width, float Height, ref object Anchor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddCallout([in]valuetype Microsoft.Office.Core.MsoCalloutType Type, [in]float32 Left, [in]float32 Top, [in]float32 Width, [in]float32 Height, [in]object&amp; Anchor) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.AddCallout(Microsoft.Office.Core.MsoCalloutType,System.Single,System.Single,System.Single,System.Single,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddCallout (Type As MsoCalloutType, Left As Single, Top As Single, Width As Single, Height As Single, Optional ByRef Anchor As Object) As Shape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(10)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Type" Type="Microsoft.Office.Core.MsoCalloutType" />
+        <Parameter Name="Left" Type="System.Single" />
+        <Parameter Name="Top" Type="System.Single" />
+        <Parameter Name="Width" Type="System.Single" />
+        <Parameter Name="Height" Type="System.Single" />
+        <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Type">
+          <span data-ttu-id="198e2-103">Necessário <see cref="T:Microsoft.Office.Core.MsoCalloutType" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-103">Required <see cref="T:Microsoft.Office.Core.MsoCalloutType" />.</span>
+          </span>
+          <span data-ttu-id="198e2-104">O tipo de texto explicativo. <b>MsoCalloutType</b> pode ser uma destas constantes.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-104">The type of callout.<b>MsoCalloutType</b> can be one of these constants.</span>
+          </span>
+          <span data-ttu-id="198e2-105">
+            <b>msoCalloutOne</b> – texto explicativo de posições linha reta para baixo ao longo da borda esquerda da caixa de texto explicativo.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-105">
+              <b>msoCalloutOne</b> – Positions callout line straight down along the left edge of the callout box.</span>
+          </span>
+          <span data-ttu-id="198e2-106">
+            <b>msoCalloutTwo</b> – posiciona a linha do texto explicativo diagonalmente para baixo e distante da borda esquerda da caixa de texto explicativo.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-106">
+              <b>msoCalloutTwo</b> – Positions callout line diagonally down and away from the left edge of the callout box.</span>
+          </span>
+          <span data-ttu-id="198e2-107">
+            <b>msoCalloutThree</b> – posiciona a linha do texto explicativo reta e, em seguida, diagonalmente para baixo e distante da borda esquerda da caixa de texto explicativo.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-107">
+              <b>msoCalloutThree</b> – Positions callout line straight out and then diagonally down and away from the left edge of the callout box.</span>
+          </span>
+          <span data-ttu-id="198e2-108">
+            <b>msoCalloutFour</b> – posiciona a linha do texto explicativo ao longo da borda esquerda da caixa de texto explicativo.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-108">
+              <b>msoCalloutFour</b> – Positions callout line along the left edge of the callout text box.</span>
+          </span>
+          <span data-ttu-id="198e2-109">
+            <b>msoCalloutMixed</b> – A retornar o valor que indica a existência de mais de um <b>MsoCalloutType</b> em um intervalo ou seleção.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-109">
+              <b>msoCalloutMixed</b> – A return value indicating that more than one <b>MsoCalloutType</b> exists in a range or selection.</span>
+          </span>
+        </param>
+        <param name="Left">
+          <span data-ttu-id="198e2-110">
+            <b>Single</b>obrigatório.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-110">Required <b>Single</b>.</span>
+          </span>
+          <span data-ttu-id="198e2-111">A posição, em pontos, da borda esquerda da caixa delimitadora do texto explicativo.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-111">The position, in points, of the left edge of the callout's bounding box.</span>
+          </span>
+        </param>
+        <param name="Top">
+          <span data-ttu-id="198e2-112">
+            <b>Single</b>obrigatório.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-112">Required <b>Single</b>.</span>
+          </span>
+          <span data-ttu-id="198e2-113">A posição, em pontos, da borda superior da caixa delimitadora do texto explicativo.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-113">The position, in points, of the top edge of the callout's bounding box.</span>
+          </span>
+        </param>
+        <param name="Width">
+          <span data-ttu-id="198e2-114">
+            <b>Single</b>obrigatório.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-114">Required <b>Single</b>.</span>
+          </span>
+          <span data-ttu-id="198e2-115">A largura, em pontos, da caixa delimitadora do texto explicativo.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-115">The width, in points, of the callout's bounding box.</span>
+          </span>
+        </param>
+        <param name="Height">
+          <span data-ttu-id="198e2-116">
+            <b>Single</b>obrigatório.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-116">Required <b>Single</b>.</span>
+          </span>
+          <span data-ttu-id="198e2-117">A altura, em pontos, da caixa delimitadora do texto explicativo.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-117">The height, in points, of the callout's bounding box.</span>
+          </span>
+        </param>
+        <param name="Anchor">
+          <span data-ttu-id="198e2-118">
+            <b>Objeto</b>de opcional.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-118">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="198e2-119">Uma <see cref="T:Microsoft.Office.Interop.Word.Range" /> object que representa o texto ao qual o texto explicativo está acoplado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-119">A <see cref="T:Microsoft.Office.Interop.Word.Range" /> object that represents the text to which the callout is bound.</span>
+          </span>
+          <span data-ttu-id="198e2-120">Se <paramref name="Anchor" /> for especificado, a âncora será posicionada no início do primeiro parágrafo no intervalo de ancoragem.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-120">If <paramref name="Anchor" /> is specified, the anchor is positioned at the beginning of the first paragraph in the anchoring range.</span>
+          </span>
+          <span data-ttu-id="198e2-121">Se esse argumento for omitido, o intervalo de ancoragem é selecionado automaticamente e o texto explicativo é posicionado em relação às bordas superior e esquerdas da página.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-121">If this argument is omitted, the anchoring range is selected automatically and the callout is positioned relative to the top and left edges of the page.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="198e2-122">Adiciona um texto explicativo sem borda a um documento.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-122">Adds a borderless line callout to a document.</span>
+          </span>
+          <span data-ttu-id="198e2-123">Retorna um <see cref="T:Microsoft.Office.Interop.Word.Shape" /> object que representa o texto explicativo e o adiciona ao <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> conjunto.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-123">Returns a <see cref="T:Microsoft.Office.Interop.Word.Shape" /> object that represents the callout and adds it to the <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> collection.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <span data-ttu-id="198e2-124">
+            <para>Você pode inserir uma variedade maior de textos explicativos, como balões e nuvens, usando o <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddShape(System.Int32,System.Single,System.Single,System.Single,System.Single,System.Object@)" /> método.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-124">
+              <para>You can insert a greater variety of callouts, such as balloons and clouds, using the <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddShape(System.Int32,System.Single,System.Single,System.Single,System.Single,System.Object@)" /> method.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddCanvas">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddCanvas (float Left, float Top, float Width, float Height, ref object Anchor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddCanvas([in]float32 Left, [in]float32 Top, [in]float32 Width, [in]float32 Height, [in]object&amp; Anchor) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.AddCanvas(System.Single,System.Single,System.Single,System.Single,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddCanvas (Left As Single, Top As Single, Width As Single, Height As Single, Optional ByRef Anchor As Object) As Shape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(25)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Left" Type="System.Single" />
+        <Parameter Name="Top" Type="System.Single" />
+        <Parameter Name="Width" Type="System.Single" />
+        <Parameter Name="Height" Type="System.Single" />
+        <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Left">
+          <span data-ttu-id="198e2-125">
+            <b>Single</b>obrigatório.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-125">Required <b>Single</b>.</span>
+          </span>
+          <span data-ttu-id="198e2-126">A posição, em pontos, da borda esquerda da tela de desenho, relativa à âncora.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-126">The position, in points, of the left edge of the drawing canvas, relative to the anchor.</span>
+          </span>
+        </param>
+        <param name="Top">
+          <span data-ttu-id="198e2-127">
+            <b>Single</b>obrigatório.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-127">Required <b>Single</b>.</span>
+          </span>
+          <span data-ttu-id="198e2-128">A posição, em pontos, da borda superior da tela de desenho, relativa à âncora.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-128">The position, in points, of the top edge of the drawing canvas, relative to the anchor.</span>
+          </span>
+        </param>
+        <param name="Width">
+          <span data-ttu-id="198e2-129">
+            <b>Single</b>obrigatório.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-129">Required <b>Single</b>.</span>
+          </span>
+          <span data-ttu-id="198e2-130">A largura, em pontos, da tela de desenho.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-130">The width, in points, of the drawing canvas.</span>
+          </span>
+        </param>
+        <param name="Height">
+          <span data-ttu-id="198e2-131">
+            <b>Single</b>obrigatório.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-131">Required <b>Single</b>.</span>
+          </span>
+          <span data-ttu-id="198e2-132">A altura, em pontos, da tela de desenho.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-132">The height, in points, of the drawing canvas.</span>
+          </span>
+        </param>
+        <param name="Anchor">
+          <span data-ttu-id="198e2-133">
+            <b>Objeto</b>de opcional.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-133">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="198e2-134">Uma <see cref="T:Microsoft.Office.Interop.Word.Range" /> object que representa o texto ao qual a tela está associado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-134">A <see cref="T:Microsoft.Office.Interop.Word.Range" /> object that represents the text to which the canvas is bound.</span>
+          </span>
+          <span data-ttu-id="198e2-135">Se <paramref name="Anchor" /> for especificado, a âncora será posicionada no início do primeiro parágrafo no intervalo de ancoragem.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-135">If <paramref name="Anchor" /> is specified, the anchor is positioned at the beginning of the first paragraph in the anchoring range.</span>
+          </span>
+          <span data-ttu-id="198e2-136">Se esse argumento for omitido, o intervalo de ancoragem é selecionado automaticamente e a tela de desenho é posicionada em relação às bordas superior e esquerdas da página.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-136">If this argument is omitted, the anchoring range is selected automatically and the canvas is positioned relative to the top and left edges of the page.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="198e2-137">Adiciona uma tela de desenho a um documento.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-137">Adds a drawing canvas to a document.</span>
+          </span>
+          <span data-ttu-id="198e2-138">Retorna um <see cref="T:Microsoft.Office.Interop.Word.Shape" /> objeto que representa a tela de desenho e adiciona-lo para o <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> conjunto.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-138">Returns a <see cref="T:Microsoft.Office.Interop.Word.Shape" /> object that represents the drawing canvas and adds it to the <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> collection.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddChart">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddChart (Microsoft.Office.Core.XlChartType Type = (Microsoft.Office.Core.XlChartType) -1, ref object Left, ref object Top, ref object Width, ref object Height, ref object Anchor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddChart([in]valuetype Microsoft.Office.Core.XlChartType Type, [in]object&amp; Left, [in]object&amp; Top, [in]object&amp; Width, [in]object&amp; Height, [in]object&amp; Anchor) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.AddChart(Microsoft.Office.Core.XlChartType,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddChart (Optional Type As XlChartType = (Microsoft.Office.Core.XlChartType) -1, Optional ByRef Left As Object, Optional ByRef Top As Object, Optional ByRef Width As Object, Optional ByRef Height As Object, Optional ByRef Anchor As Object) As Shape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(103)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Type" Type="Microsoft.Office.Core.XlChartType" />
+        <Parameter Name="Left" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Top" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Width" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Height" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Type">To be added.</param>
+        <param name="Left">To be added.</param>
+        <param name="Top">To be added.</param>
+        <param name="Width">To be added.</param>
+        <param name="Height">To be added.</param>
+        <param name="Anchor">To be added.</param>
+        <summary>
+          <span data-ttu-id="198e2-139">This object, member, or enumeration is deprecated and is not intended to be used in your code.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-139">This object, member, or enumeration is deprecated and is not intended to be used in your code.</span>
+          </span>
+        </summary>
+        <returns>
+          <see cref="T:Microsoft.Office.Interop.Word.Shape" />
+        </returns>
+        <remarks>To be added.</remarks>
+        <example>
+          <span data-ttu-id="198e2-140">
+            <para>Cria um novo gráfico de coluna em 3D e o adiciona ao documento ativo.</para>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-140">
+              <para>Creates a new 3-D column chart and adds it to the active document.</para>
+            </span>
+          </span>
+        </example>
+      </Docs>
+    </Member>
+    <Member MemberName="AddChart2">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddChart2 (int Style = -1, Microsoft.Office.Core.XlChartType Type = (Microsoft.Office.Core.XlChartType) -1, ref object Left, ref object Top, ref object Width, ref object Height, ref object Anchor, ref object NewLayout);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddChart2([in]int32 Style, [in]valuetype Microsoft.Office.Core.XlChartType Type, [in]object&amp; Left, [in]object&amp; Top, [in]object&amp; Width, [in]object&amp; Height, [in]object&amp; Anchor, [in]object&amp; NewLayout) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.AddChart2(System.Int32,Microsoft.Office.Core.XlChartType,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddChart2 (Optional Style As Integer = -1, Optional Type As XlChartType = (Microsoft.Office.Core.XlChartType) -1, Optional ByRef Left As Object, Optional ByRef Top As Object, Optional ByRef Width As Object, Optional ByRef Height As Object, Optional ByRef Anchor As Object, Optional ByRef NewLayout As Object) As Shape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(105)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Style" Type="System.Int32" />
+        <Parameter Name="Type" Type="Microsoft.Office.Core.XlChartType" />
+        <Parameter Name="Left" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Top" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Width" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Height" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="NewLayout" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Style">
+          <span data-ttu-id="198e2-141">O estilo do gráfico.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-141">The chart style.</span>
+          </span>
+        </param>
+        <param name="Type">
+          <span data-ttu-id="198e2-142">O tipo de gráfico.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-142">The type of chart.</span>
+          </span>
+        </param>
+        <param name="Left">
+          <span data-ttu-id="198e2-143">A posição, em pontos, da borda esquerda do gráfico, relativa à âncora.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-143">The position, in points, of the left edge of the chart, relative to the anchor.</span>
+          </span>
+        </param>
+        <param name="Top">
+          <span data-ttu-id="198e2-144">A posição, em pontos, da borda superior do gráfico, relativa à âncora.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-144">The position, in points, of the top edge of the chart, relative to the anchor.</span>
+          </span>
+        </param>
+        <param name="Width">
+          <span data-ttu-id="198e2-145">A largura, em pontos, do gráfico.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-145">The width, in points, of the chart.</span>
+          </span>
+        </param>
+        <param name="Height">
+          <span data-ttu-id="198e2-146">A altura, em pontos, do gráfico.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-146">The height, in points, of the chart.</span>
+          </span>
+        </param>
+        <param name="Anchor">
+          <span data-ttu-id="198e2-147">Se <paramref name="NewLayout" /> for true, o gráfico será inserido usando as novas regras de formatação dinâmicas (título estiver na e legenda é apenas em se há várias séries).</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-147">If <paramref name="NewLayout" /> is true, the chart will be inserted by using the new dynamic formatting rules (Title is on, and Legend is on only if there are multiple series).</span>
+          </span>
+        </param>
+        <param name="NewLayout">
+          <span data-ttu-id="198e2-148">Se <paramref name="NewLayout" /> for true, o gráfico será inserido usando as novas regras de formatação dinâmicas (título estiver na e legenda é apenas em se há várias séries).</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-148">If <paramref name="NewLayout" /> is true, the chart is inserted by using the new dynamic formatting rules (Title is on, and Legend is on only if there are multiple series).</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="198e2-149">Adiciona um gráfico no documento.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-149">Adds a chart to the document.</span>
+          </span>
+          <span data-ttu-id="198e2-150">Retorna um <see cref="T:Microsoft.Office.Interop.Word.Shape" /> objeto que representa um gráfico e o adiciona à coleção especificada.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-150">Returns a <see cref="T:Microsoft.Office.Interop.Word.Shape" /> object that represents a chart and adds it to the specified collection.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddConnector">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddConnector (Microsoft.Office.Core.MsoConnectorType Type, float BeginX, float BeginY, float EndX, float EndY);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddConnector([in]valuetype Microsoft.Office.Core.MsoConnectorType Type, [in]float32 BeginX, [in]float32 BeginY, [in]float32 EndX, [in]float32 EndY) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.AddConnector(Microsoft.Office.Core.MsoConnectorType,System.Single,System.Single,System.Single,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddConnector (Type As MsoConnectorType, BeginX As Single, BeginY As Single, EndX As Single, EndY As Single) As Shape" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::Shape ^ AddConnector(Microsoft::Office::Core::MsoConnectorType Type, float BeginX, float BeginY, float EndX, float EndY);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(11)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Type" Type="Microsoft.Office.Core.MsoConnectorType" />
+        <Parameter Name="BeginX" Type="System.Single" />
+        <Parameter Name="BeginY" Type="System.Single" />
+        <Parameter Name="EndX" Type="System.Single" />
+        <Parameter Name="EndY" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="Type">To be added.</param>
+        <param name="BeginX">To be added.</param>
+        <param name="BeginY">To be added.</param>
+        <param name="EndX">To be added.</param>
+        <param name="EndY">To be added.</param>
+        <summary>
+          <span data-ttu-id="198e2-151">Reservado para uso interno.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-151">Reserved for internal use.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddCurve">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddCurve (ref object SafeArrayOfPoints, ref object Anchor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddCurve([in]object&amp; SafeArrayOfPoints, [in]object&amp; Anchor) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.AddCurve(System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddCurve (ByRef SafeArrayOfPoints As Object, Optional ByRef Anchor As Object) As Shape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(12)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="SafeArrayOfPoints" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="SafeArrayOfPoints">
+          <span data-ttu-id="198e2-152">
+            <b>Objeto</b>necessário.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-152">Required <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="198e2-153">Uma matriz de pares que especifica os vértices de coordenadas e controlar os pontos da curva.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-153">An array of coordinate pairs that specifies the vertices and control points of the curve.</span>
+          </span>
+          <span data-ttu-id="198e2-154">O primeiro ponto especificado é o vértice inicial e os próximos dois pontos são pontos de controle para o primeiro segmento Bézier.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-154">The first point you specify is the starting vertex, and the next two points are control points for the first Bézier segment.</span>
+          </span>
+          <span data-ttu-id="198e2-155">Em seguida, para cada segmento adicional da curva, especifique um vértice e dois pontos de controle.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-155">Then, for each additional segment of the curve, you specify a vertex and two control points.</span>
+          </span>
+          <span data-ttu-id="198e2-156">O último ponto especificado é o vértice final da curva.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-156">The last point you specify is the ending vertex for the curve.</span>
+          </span>
+          <span data-ttu-id="198e2-157">Observe que você sempre deve especificar 3n + 1 pontos, onde n é o número de segmentos da curva.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-157">Note that you must always specify 3n + 1 points, where n is the number of segments in the curve.</span>
+          </span>
+        </param>
+        <param name="Anchor">
+          <span data-ttu-id="198e2-158">
+            <b>Objeto</b>de opcional.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-158">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="198e2-159">Uma <see cref="T:Microsoft.Office.Interop.Word.Range" /> object que representa o texto ao qual a curva está acoplada.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-159">A <see cref="T:Microsoft.Office.Interop.Word.Range" /> object that represents the text to which the curve is bound.</span>
+          </span>
+          <span data-ttu-id="198e2-160">Se <paramref name="Anchor" /> for especificado, a âncora será posicionada no início do primeiro parágrafo no intervalo de ancoragem.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-160">If <paramref name="Anchor" /> is specified, the anchor is positioned at the beginning of the first paragraph in the anchoring range.</span>
+          </span>
+          <span data-ttu-id="198e2-161">Se esse argumento for omitido, o intervalo de ancoragem é selecionado automaticamente e a curva é posicionada em relação às bordas superior e esquerdas da página.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-161">If this argument is omitted, the anchoring range is selected automatically and the curve is positioned relative to the top and left edges of the page.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="198e2-162">Retorna um <see cref="T:Microsoft.Office.Interop.Word.Shape" /> object que representa uma curva de Bézier em um documento.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-162">Returns a <see cref="T:Microsoft.Office.Interop.Word.Shape" /> object that represents a Bézier curve in a document.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddDiagram">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddDiagram (Microsoft.Office.Core.MsoDiagramType Type, float Left, float Top, float Width, float Height, ref object Anchor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddDiagram([in]valuetype Microsoft.Office.Core.MsoDiagramType Type, [in]float32 Left, [in]float32 Top, [in]float32 Width, [in]float32 Height, [in]object&amp; Anchor) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.AddDiagram(Microsoft.Office.Core.MsoDiagramType,System.Single,System.Single,System.Single,System.Single,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddDiagram (Type As MsoDiagramType, Left As Single, Top As Single, Width As Single, Height As Single, Optional ByRef Anchor As Object) As Shape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(23)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Type" Type="Microsoft.Office.Core.MsoDiagramType" />
+        <Parameter Name="Left" Type="System.Single" />
+        <Parameter Name="Top" Type="System.Single" />
+        <Parameter Name="Width" Type="System.Single" />
+        <Parameter Name="Height" Type="System.Single" />
+        <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Type">
+          <span data-ttu-id="198e2-163">Necessário <see cref="T:Microsoft.Office.Core.MsoDiagramType" />. <b>MsoDiagramType</b> pode ser uma destas constantes:</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-163">Required <see cref="T:Microsoft.Office.Core.MsoDiagramType" />.<b>MsoDiagramType</b> can be one of these constants.</span>
+          </span>
+          <span data-ttu-id="198e2-164">
+            <b>msoDiagramCycle</b> – mostra um processo com um ciclo contínuo.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-164">
+              <b>msoDiagramCycle</b> – Shows a process with a continuous cycle.</span>
+          </span>
+          <span data-ttu-id="198e2-165">
+            <b>msoDiagramMixed</b> – não é usado com este método.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-165">
+              <b>msoDiagramMixed</b> – Not used with this method.</span>
+          </span>
+          <span data-ttu-id="198e2-166">
+            <b>msoDiagramOrgChart</b> – relacionamentos hierárquicos de apresentações.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-166">
+              <b>msoDiagramOrgChart</b> – Shows hierarchical relationships.</span>
+          </span>
+          <span data-ttu-id="198e2-167">
+            <b>msoDiagramPyramid</b> – mostra relacionamentos de base.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-167">
+              <b>msoDiagramPyramid</b> – Shows foundation-based relationships.</span>
+          </span>
+          <span data-ttu-id="198e2-168">
+            <b>msoDiagramRadial</b> – mostra relacionamentos de um elemento essencial.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-168">
+              <b>msoDiagramRadial</b> – Shows relationships of a core element.</span>
+          </span>
+          <span data-ttu-id="198e2-169">
+            <b>msoDiagramTarget</b> – mostra etapas para atingir uma meta.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-169">
+              <b>msoDiagramTarget</b> – Shows steps toward a goal.</span>
+          </span>
+          <span data-ttu-id="198e2-170">
+            <b>msoDiagramVenn</b> – mostra áreas de sobreposição entre elementos.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-170">
+              <b>msoDiagramVenn</b> – Shows areas of overlap between elements.</span>
+          </span>
+        </param>
+        <param name="Left">
+          <span data-ttu-id="198e2-171">
+            <b>Single</b>obrigatório.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-171">Required <b>Single</b>.</span>
+          </span>
+          <span data-ttu-id="198e2-172">A posição, medida em pontos, da borda esquerda da caixa de contorno do diagrama relativa à âncora.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-172">The position, measured in points, of the left edge of the diagram's bounding box relative to the anchor.</span>
+          </span>
+        </param>
+        <param name="Top">
+          <span data-ttu-id="198e2-173">
+            <b>Single</b>obrigatório.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-173">Required <b>Single</b>.</span>
+          </span>
+          <span data-ttu-id="198e2-174">A posição, medida em pontos, da borda superior da caixa de contorno do diagrama relativa à âncora.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-174">The position, measured in points, of the top edge of the diagram's bounding box relative to the anchor.</span>
+          </span>
+        </param>
+        <param name="Width">
+          <span data-ttu-id="198e2-175">
+            <b>Single</b>obrigatório.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-175">Required <b>Single</b>.</span>
+          </span>
+          <span data-ttu-id="198e2-176">A largura, medida em pontos, da caixa delimitadora do diagrama.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-176">The width, measured in points, of the diagram's bounding box.</span>
+          </span>
+        </param>
+        <param name="Height">
+          <span data-ttu-id="198e2-177">
+            <b>Single</b>obrigatório.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-177">Required <b>Single</b>.</span>
+          </span>
+          <span data-ttu-id="198e2-178">A altura, medida em pontos, da caixa delimitadora do diagrama.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-178">The height, measured in points, of the diagram's bounding box.</span>
+          </span>
+        </param>
+        <param name="Anchor">
+          <span data-ttu-id="198e2-179">
+            <b>Objeto</b>de opcional.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-179">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="198e2-180">Uma <see cref="T:Microsoft.Office.Interop.Word.Range" /> object que representa o texto ao qual o diagrama está acoplado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-180">A <see cref="T:Microsoft.Office.Interop.Word.Range" /> object that represents the text to which the diagram is bound.</span>
+          </span>
+          <span data-ttu-id="198e2-181">Se <paramref name="Anchor" /> for especificado, a âncora será posicionada no início do primeiro parágrafo no intervalo de ancoragem.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-181">If <paramref name="Anchor" /> is specified, the anchor is positioned at the beginning of the first paragraph in the anchoring range.</span>
+          </span>
+          <span data-ttu-id="198e2-182">Se esse argumento for omitido, o intervalo de ancoragem é selecionado automaticamente e o diagrama será posicionado em relação às bordas superior e esquerdas da página.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-182">If this argument is omitted, the anchoring range is selected automatically and the diagram is positioned relative to the top and left edges of the page.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="198e2-183">Retorna um <see cref="T:Microsoft.Office.Interop.Word.Shape" /> object que representa um diagrama recém-criado em um documento.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-183">Returns a <see cref="T:Microsoft.Office.Interop.Word.Shape" /> object that represents a newly created diagram in a document.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddLabel">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddLabel (Microsoft.Office.Core.MsoTextOrientation Orientation, float Left, float Top, float Width, float Height, ref object Anchor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddLabel([in]valuetype Microsoft.Office.Core.MsoTextOrientation Orientation, [in]float32 Left, [in]float32 Top, [in]float32 Width, [in]float32 Height, [in]object&amp; Anchor) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.AddLabel(Microsoft.Office.Core.MsoTextOrientation,System.Single,System.Single,System.Single,System.Single,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddLabel (Orientation As MsoTextOrientation, Left As Single, Top As Single, Width As Single, Height As Single, Optional ByRef Anchor As Object) As Shape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(13)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Orientation" Type="Microsoft.Office.Core.MsoTextOrientation" />
+        <Parameter Name="Left" Type="System.Single" />
+        <Parameter Name="Top" Type="System.Single" />
+        <Parameter Name="Width" Type="System.Single" />
+        <Parameter Name="Height" Type="System.Single" />
+        <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Orientation">
+          <span data-ttu-id="198e2-184">Necessário <see cref="T:Microsoft.Office.Core.MsoTextOrientation" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-184">Required <see cref="T:Microsoft.Office.Core.MsoTextOrientation" />.</span>
+          </span>
+          <span data-ttu-id="198e2-185">A orientação do texto. <b>MsoTextOrientation</b> pode ser uma das seguintes constantes: <b>msoTextOrientationDownward </b><b>msoTextOrientationHorizontal </b><b>msoTextOrientationHorizontalRotatedFarEast </b><b>msoTextOrientationMixed</b><b> msoTextOrientationUpward </b><b>msoTextOrientationVertical </b><b>msoTextOrientationVerticalFarEast </b>algumas dessas constantes podem não estar disponíveis para você, dependendo do suporte a idioma (inglês americano, por exemplo) que você selecionou ou instalado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-185">The orientation of the text.<b>MsoTextOrientation</b> can be one of the following constants: <b>msoTextOrientationDownward </b><b>msoTextOrientationHorizontal </b><b>msoTextOrientationHorizontalRotatedFarEast </b><b>msoTextOrientationMixed </b><b>msoTextOrientationUpward </b><b>msoTextOrientationVertical </b><b>msoTextOrientationVerticalFarEast </b>Some of these constants may not be available to you, depending on the language support (U.S. English, for example) that you’ve selected or installed.</span>
+          </span>
+        </param>
+        <param name="Left">
+          <span data-ttu-id="198e2-186">
+            <b>Single</b>obrigatório.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-186">Required <b>Single</b>.</span>
+          </span>
+          <span data-ttu-id="198e2-187">A posição, medida em pontos, da borda esquerda do rótulo, relativa à âncora.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-187">The position, measured in points, of the left edge of the label relative to the anchor.</span>
+          </span>
+        </param>
+        <param name="Top">
+          <span data-ttu-id="198e2-188">
+            <b>Single</b>obrigatório.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-188">Required <b>Single</b>.</span>
+          </span>
+          <span data-ttu-id="198e2-189">A posição, medida em pontos, da borda superior do rótulo, relativa à âncora.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-189">The position, measured in points, of the top edge of the label relative to the anchor.</span>
+          </span>
+        </param>
+        <param name="Width">
+          <span data-ttu-id="198e2-190">
+            <b>Single</b>obrigatório.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-190">Required <b>Single</b>.</span>
+          </span>
+          <span data-ttu-id="198e2-191">A largura do rótulo, em pontos.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-191">The width of the label, in points.</span>
+          </span>
+        </param>
+        <param name="Height">
+          <span data-ttu-id="198e2-192">
+            <b>Single</b>obrigatório.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-192">Required <b>Single</b>.</span>
+          </span>
+          <span data-ttu-id="198e2-193">A altura do rótulo, em pontos.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-193">The height of the label, in points.</span>
+          </span>
+        </param>
+        <param name="Anchor">
+          <span data-ttu-id="198e2-194">
+            <b>Objeto</b>de opcional.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-194">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="198e2-195">Uma <see cref="T:Microsoft.Office.Interop.Word.Range" /> object que representa o texto ao qual o rótulo está vinculado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-195">A <see cref="T:Microsoft.Office.Interop.Word.Range" /> object that represents the text to which the label is bound.</span>
+          </span>
+          <span data-ttu-id="198e2-196">Se <paramref name="Anchor" /> for especificado, a âncora será posicionada no início do primeiro parágrafo no intervalo de ancoragem.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-196">If <paramref name="Anchor" /> is specified, the anchor is positioned at the beginning of the first paragraph in the anchoring range.</span>
+          </span>
+          <span data-ttu-id="198e2-197">Se esse argumento for omitido, o intervalo de ancoragem é selecionado automaticamente e o rótulo está posicionado em relação às bordas superior e esquerdas da página.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-197">If this argument is omitted, the anchoring range is selected automatically and the label is positioned relative to the top and left edges of the page.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="198e2-198">Adiciona um rótulo de texto a um documento.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-198">Adds a text label to a document.</span>
+          </span>
+          <span data-ttu-id="198e2-199">Retorna um <see cref="T:Microsoft.Office.Interop.Word.Shape" /> object que representa o rótulo de texto e o adiciona ao <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> conjunto.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-199">Returns a <see cref="T:Microsoft.Office.Interop.Word.Shape" /> object that represents the text label and adds it to the <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> collection.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddLine">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddLine (float BeginX, float BeginY, float EndX, float EndY, ref object Anchor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddLine([in]float32 BeginX, [in]float32 BeginY, [in]float32 EndX, [in]float32 EndY, [in]object&amp; Anchor) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.AddLine(System.Single,System.Single,System.Single,System.Single,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddLine (BeginX As Single, BeginY As Single, EndX As Single, EndY As Single, Optional ByRef Anchor As Object) As Shape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(14)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="BeginX" Type="System.Single" />
+        <Parameter Name="BeginY" Type="System.Single" />
+        <Parameter Name="EndX" Type="System.Single" />
+        <Parameter Name="EndY" Type="System.Single" />
+        <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="BeginX">
+          <span data-ttu-id="198e2-200">
+            <b>Single</b>obrigatório.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-200">Required <b>Single</b>.</span>
+          </span>
+          <span data-ttu-id="198e2-201">A posição horizontal, medida em pontos, do ponto de partida da linha, relativa à âncora.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-201">The horizontal position, measured in points, of the line's starting point, relative to the anchor.</span>
+          </span>
+        </param>
+        <param name="BeginY">
+          <span data-ttu-id="198e2-202">
+            <b>Single</b>obrigatório.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-202">Required <b>Single</b>.</span>
+          </span>
+          <span data-ttu-id="198e2-203">A posição vertical, medida em pontos, do ponto de partida da linha, relativa à âncora.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-203">The vertical position, measured in points, of the line's starting point, relative to the anchor.</span>
+          </span>
+        </param>
+        <param name="EndX">
+          <span data-ttu-id="198e2-204">
+            <b>Single</b>obrigatório.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-204">Required <b>Single</b>.</span>
+          </span>
+          <span data-ttu-id="198e2-205">A posição horizontal, medida em pontos, do ponto final da linha, relativa à âncora.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-205">The horizontal position, measured in points, of the line's end point, relative to the anchor.</span>
+          </span>
+        </param>
+        <param name="EndY">
+          <span data-ttu-id="198e2-206">
+            <b>Single</b>obrigatório.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-206">Required <b>Single</b>.</span>
+          </span>
+          <span data-ttu-id="198e2-207">A posição vertical, medida em pontos, do ponto final da linha, relativa à âncora.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-207">The vertical position, measured in points, of the line's end point, relative to the anchor.</span>
+          </span>
+        </param>
+        <param name="Anchor">
+          <span data-ttu-id="198e2-208">
+            <b>Objeto</b>de opcional.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-208">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="198e2-209">Uma <see cref="T:Microsoft.Office.Interop.Word.Range" /> object que representa o texto ao qual o rótulo está vinculado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-209">A <see cref="T:Microsoft.Office.Interop.Word.Range" /> object that represents the text to which the label is bound.</span>
+          </span>
+          <span data-ttu-id="198e2-210">Se <paramref name="Anchor" /> for especificado, a âncora será posicionada no início do primeiro parágrafo no intervalo de ancoragem.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-210">If <paramref name="Anchor" /> is specified, the anchor is positioned at the beginning of the first paragraph in the anchoring range.</span>
+          </span>
+          <span data-ttu-id="198e2-211">Se esse argumento for omitido, o intervalo de ancoragem é selecionado automaticamente e o rótulo está posicionado em relação às bordas superior e esquerdas da página.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-211">If this argument is omitted, the anchoring range is selected automatically and the label is positioned relative to the top and left edges of the page.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="198e2-212">Adiciona uma linha a um documento.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-212">Adds a line to a document.</span>
+          </span>
+          <span data-ttu-id="198e2-213">Retorna um <see cref="T:Microsoft.Office.Interop.Word.Shape" /> object que representa a linha e o adiciona ao <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddCallout(Microsoft.Office.Core.MsoCalloutType,System.Single,System.Single,System.Single,System.Single,System.Object@)" /> conjunto.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-213">Returns a <see cref="T:Microsoft.Office.Interop.Word.Shape" /> object that represents the line and adds it to the <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddCallout(Microsoft.Office.Core.MsoCalloutType,System.Single,System.Single,System.Single,System.Single,System.Object@)" /> collection.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <span data-ttu-id="198e2-214">
+            <para>Para criar uma seta, use o <see cref="P:Microsoft.Office.Interop.Word.Shape.Line" /> propriedade para formatar uma linha.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-214">
+              <para>To create an arrow, use the <see cref="P:Microsoft.Office.Interop.Word.Shape.Line" /> property to format a line.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddOLEControl">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddOLEControl (ref object ClassType, ref object Left, ref object Top, ref object Width, ref object Height, ref object Anchor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddOLEControl([in]object&amp; ClassType, [in]object&amp; Left, [in]object&amp; Top, [in]object&amp; Width, [in]object&amp; Height, [in]object&amp; Anchor) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.AddOLEControl(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddOLEControl (Optional ByRef ClassType As Object, Optional ByRef Left As Object, Optional ByRef Top As Object, Optional ByRef Width As Object, Optional ByRef Height As Object, Optional ByRef Anchor As Object) As Shape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(102)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ClassType" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Left" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Top" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Width" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Height" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="ClassType">
+          <span data-ttu-id="198e2-215">
+            <b>Objeto</b>de opcional.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-215">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="198e2-216">O identificador programático para o controle ActiveX ser criado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-216">The programmatic identifier for the ActiveX control to be created.</span>
+          </span>
+        </param>
+        <param name="Left">
+          <span data-ttu-id="198e2-217">
+            <b>Objeto</b>de opcional.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-217">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="198e2-218">A posição (em pontos) da borda esquerda do novo objeto relativa à âncora.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-218">The position (in points) of the left edge of the new object relative to the anchor.</span>
+          </span>
+        </param>
+        <param name="Top">
+          <span data-ttu-id="198e2-219">
+            <b>Objeto</b>de opcional.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-219">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="198e2-220">A posição (em pontos) da borda superior do novo objeto relativa à âncora.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-220">The position (in points) of the upper edge of the new object relative to the anchor.</span>
+          </span>
+        </param>
+        <param name="Width">
+          <span data-ttu-id="198e2-221">
+            <b>Objeto</b>de opcional.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-221">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="198e2-222">A largura do controle ActiveX, em pontos.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-222">The width of the ActiveX control, in points.</span>
+          </span>
+        </param>
+        <param name="Height">
+          <span data-ttu-id="198e2-223">
+            <b>Objeto</b>de opcional. A altura do controle ActiveX, em pontos.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-223">Optional <b>Object</b>.The height of the ActiveX control, in points.</span>
+          </span>
+        </param>
+        <param name="Anchor">
+          <span data-ttu-id="198e2-224">
+            <b>Objeto</b>de opcional.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-224">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="198e2-225">O intervalo ao qual o controle ActiveX está acoplado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-225">The range to which the ActiveX control is bound.</span>
+          </span>
+          <span data-ttu-id="198e2-226">Se <paramref name="Anchor" /> for especificado, a âncora será posicionada no início do primeiro parágrafo no intervalo de ancoragem.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-226">If <paramref name="Anchor" /> is specified, the anchor is positioned at the beginning of the first paragraph in the anchoring range.</span>
+          </span>
+          <span data-ttu-id="198e2-227">Se esse argumento for omitido, entretanto, a âncora será colocada automaticamente e o controle ActiveX é posicionado em relação às bordas superior e esquerdas da página.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-227">If this argument is omitted, however, the anchor is placed automatically and the ActiveX control is positioned relative to the top and left edges of the page.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="198e2-228">Cria um controle ActiveX (conhecido anteriormente como controle OLE).</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-228">Creates an ActiveX control (formerly known as an OLE control).</span>
+          </span>
+          <span data-ttu-id="198e2-229">Retorna o <see cref="T:Microsoft.Office.Interop.Word.Shape" /> object que representa o novo controle ActiveX.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-229">Returns the <see cref="T:Microsoft.Office.Interop.Word.Shape" /> object that represents the new ActiveX control.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddOLEObject">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddOLEObject (ref object ClassType, ref object FileName, ref object LinkToFile, ref object DisplayAsIcon, ref object IconFileName, ref object IconIndex, ref object IconLabel, ref object Left, ref object Top, ref object Width, ref object Height, ref object Anchor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddOLEObject([in]object&amp; ClassType, [in]object&amp; FileName, [in]object&amp; LinkToFile, [in]object&amp; DisplayAsIcon, [in]object&amp; IconFileName, [in]object&amp; IconIndex, [in]object&amp; IconLabel, [in]object&amp; Left, [in]object&amp; Top, [in]object&amp; Width, [in]object&amp; Height, [in]object&amp; Anchor) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.AddOLEObject(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddOLEObject (Optional ByRef ClassType As Object, Optional ByRef FileName As Object, Optional ByRef LinkToFile As Object, Optional ByRef DisplayAsIcon As Object, Optional ByRef IconFileName As Object, Optional ByRef IconIndex As Object, Optional ByRef IconLabel As Object, Optional ByRef Left As Object, Optional ByRef Top As Object, Optional ByRef Width As Object, Optional ByRef Height As Object, Optional ByRef Anchor As Object) As Shape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(24)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ClassType" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="FileName" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="LinkToFile" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="DisplayAsIcon" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="IconFileName" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="IconIndex" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="IconLabel" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Left" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Top" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Width" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Height" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="ClassType">
+          <span data-ttu-id="198e2-230">
+            <b>Objeto</b>de opcional.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-230">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="198e2-231">O nome do aplicativo usado para ativar o objeto OLE especificado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-231">The name of the application used to activate the specified OLE object.</span>
+          </span>
+        </param>
+        <param name="FileName">
+          <span data-ttu-id="198e2-232">
+            <b>Objeto</b>de opcional.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-232">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="198e2-233">O arquivo a partir do qual o objeto será criado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-233">The file from which the object is to be created.</span>
+          </span>
+          <span data-ttu-id="198e2-234">Se esse argumento for omitido, a pasta atual será usada.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-234">If this argument is omitted, the current folder is used.</span>
+          </span>
+          <span data-ttu-id="198e2-235">Você deve especificar o <paramref name="ClassType" /> ou <paramref name="FileName" /> argumento para o objeto, mas não ambos.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-235">You must specify either the <paramref name="ClassType" /> or <paramref name="FileName" /> argument for the object, but not both.</span>
+          </span>
+        </param>
+        <param name="LinkToFile">
+          <span data-ttu-id="198e2-236">
+            <b>Objeto</b>de opcional.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-236">Optional<b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="198e2-237">
+            <b>True</b> para vincular o objeto OLE ao arquivo do qual ele foi criado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-237">
+              <b>True</b> to link the OLE object to the file from which it was created.</span>
+          </span>
+          <span data-ttu-id="198e2-238">
+            <b>False</b> para tornar o uma cópia independente do arquivo de objeto OLE.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-238">
+              <b>False</b> to make the OLE object an independent copy of the file.</span>
+          </span>
+          <span data-ttu-id="198e2-239">Se você tiver especificado um valor para <paramref name="ClassType" />, o <paramref name="LinkToFile" /> argumento precisa ser <b>False</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-239">If you specified a value for <paramref name="ClassType" />, the <paramref name="LinkToFile" /> argument must be <b>False</b>.</span>
+          </span>
+          <span data-ttu-id="198e2-240">O valor padrão é <b>False</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-240">The default value is <b>False</b>.</span>
+          </span>
+        </param>
+        <param name="DisplayAsIcon">
+          <span data-ttu-id="198e2-241">
+            <b>Objeto</b>de opcional.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-241">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="198e2-242">
+            <b>True</b> para exibir o objeto OLE como um ícone.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-242">
+              <b>True</b> to display the OLE object as an icon.</span>
+          </span>
+          <span data-ttu-id="198e2-243">O valor padrão é <b>False</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-243">The default value is <b>False</b>.</span>
+          </span>
+        </param>
+        <param name="IconFileName">
+          <span data-ttu-id="198e2-244">
+            <b>Objeto</b>de opcional.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-244">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="198e2-245">O arquivo que contém o ícone a ser exibido.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-245">The file that contains the icon to be displayed.</span>
+          </span>
+        </param>
+        <param name="IconIndex">
+          <span data-ttu-id="198e2-246">
+            <b>Objeto</b>de opcional.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-246">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="198e2-247">O número de índice do ícone no <paramref name="IconFileName" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-247">The index number of the icon within <paramref name="IconFileName" />.</span>
+          </span>
+          <span data-ttu-id="198e2-248">A ordem dos ícones no arquivo especificado corresponde à ordem na qual os ícones aparecem na caixa de diálogo Alterar ícone (menu Inserir, caixa de diálogo objeto) quando a exibição como ícone caixa de seleção está selecionada.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-248">The order of icons in the specified file corresponds to the order in which the icons appear in the Change Icon dialog box (Insert menu, Object dialog box) when the Display as icon check box is selected.</span>
+          </span>
+          <span data-ttu-id="198e2-249">O primeiro ícone no arquivo tem o número de índice 0 (zero).</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-249">The first icon in the file has the index number 0 (zero).</span>
+          </span>
+          <span data-ttu-id="198e2-250">Se não existir um ícone com o número de índice dado em <paramref name="IconFileName" />, será usado o ícone com o número de índice 1 (o segundo ícone no arquivo).</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-250">If an icon with the given index number doesn't exist in <paramref name="IconFileName" />, the icon with the index number 1 (the second icon in the file) is used.</span>
+          </span>
+          <span data-ttu-id="198e2-251">O valor padrão é 0 (zero).</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-251">The default value is 0 (zero).</span>
+          </span>
+        </param>
+        <param name="IconLabel">
+          <span data-ttu-id="198e2-252">
+            <b>Objeto</b>de opcional.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-252">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="198e2-253">Um nome (legenda) a ser exibido abaixo do ícone.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-253">A label (caption) to be displayed beneath the icon.</span>
+          </span>
+        </param>
+        <param name="Left">
+          <span data-ttu-id="198e2-254">
+            <b>Objeto</b>de opcional.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-254">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="198e2-255">A posição (em pontos) da borda esquerda do novo objeto relativa à âncora.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-255">The position (in points) of the left edge of the new object relative to the anchor.</span>
+          </span>
+        </param>
+        <param name="Top">
+          <span data-ttu-id="198e2-256">
+            <b>Objeto</b>de opcional.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-256">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="198e2-257">A posição (em pontos) da borda superior do novo objeto relativa à âncora.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-257">The position (in points) of the upper edge of the new object relative to the anchor.</span>
+          </span>
+        </param>
+        <param name="Width">
+          <span data-ttu-id="198e2-258">
+            <b>Objeto</b>de opcional.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-258">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="198e2-259">A largura do objeto OLE, em pontos.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-259">The width of the OLE object, in points.</span>
+          </span>
+        </param>
+        <param name="Height">
+          <span data-ttu-id="198e2-260">
+            <b>Objeto</b>de opcional.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-260">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="198e2-261">A altura do objeto OLE, em pontos.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-261">The height of the OLE object, in points.</span>
+          </span>
+        </param>
+        <param name="Anchor">
+          <span data-ttu-id="198e2-262">
+            <b>Objeto</b>de opcional.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-262">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="198e2-263">O intervalo ao qual o objeto OLE está acoplado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-263">The range to which the OLE object is bound.</span>
+          </span>
+          <span data-ttu-id="198e2-264">Se <paramref name="Anchor" /> for especificado, a âncora será posicionada no início do primeiro parágrafo do intervalo de ancoragem.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-264">If <paramref name="Anchor" /> is specified, the anchor is positioned at the beginning of the first paragraph of the anchoring range.</span>
+          </span>
+          <span data-ttu-id="198e2-265">Se <paramref name="Anchor" /> não for especificado, a âncora será colocada automaticamente e o objeto OLE será posicionado em relação às bordas superior e esquerdas da página.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-265">If <paramref name="Anchor" /> is not specified, the anchor is placed automatically and the OLE Object is positioned relative to the top and left edges of the page.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="198e2-266">Cria um objeto OLE.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-266">Creates an OLE object.</span>
+          </span>
+          <span data-ttu-id="198e2-267">Retorna o <see cref="T:Microsoft.Office.Interop.Word.Shape" /> object que representa o novo objeto OLE.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-267">Returns the <see cref="T:Microsoft.Office.Interop.Word.Shape" /> object that represents the new OLE object.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddPicture">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddPicture (string FileName, ref object LinkToFile, ref object SaveWithDocument, ref object Left, ref object Top, ref object Width, ref object Height, ref object Anchor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddPicture([in]string FileName, [in]object&amp; LinkToFile, [in]object&amp; SaveWithDocument, [in]object&amp; Left, [in]object&amp; Top, [in]object&amp; Width, [in]object&amp; Height, [in]object&amp; Anchor) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.AddPicture(System.String,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddPicture (FileName As String, Optional ByRef LinkToFile As Object, Optional ByRef SaveWithDocument As Object, Optional ByRef Left As Object, Optional ByRef Top As Object, Optional ByRef Width As Object, Optional ByRef Height As Object, Optional ByRef Anchor As Object) As Shape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(15)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FileName" Type="System.String" />
+        <Parameter Name="LinkToFile" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="SaveWithDocument" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Left" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Top" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Width" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Height" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="FileName">
+          <span data-ttu-id="198e2-268">
+            <b>String</b> necessário.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-268">Required <b>String</b>.</span>
+          </span>
+          <span data-ttu-id="198e2-269">O caminho e o nome de arquivo do arquivo de figura.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-269">The path and file name of the picture.</span>
+          </span>
+        </param>
+        <param name="LinkToFile">
+          <span data-ttu-id="198e2-270">
+            <b>Objeto</b>de opcional.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-270">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="198e2-271">
+            <b>True</b> para vincular a imagem ao arquivo do qual ele foi criado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-271">
+              <b>True</b> to link the picture to the file from which it was created.</span>
+          </span>
+          <span data-ttu-id="198e2-272">
+            <b>False</b> para tornar a imagem uma cópia independente do arquivo.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-272">
+              <b>False</b> to make the picture an independent copy of the file.</span>
+          </span>
+          <span data-ttu-id="198e2-273">O valor padrão é <b>False</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-273">The default value is <b>False</b>.</span>
+          </span>
+        </param>
+        <param name="SaveWithDocument">
+          <span data-ttu-id="198e2-274">
+            <b>Objeto</b>de opcional.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-274">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="198e2-275">
+            <b>True</b> para salvar a imagem vinculada com o documento.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-275">
+              <b>True</b> to save the linked picture with the document.</span>
+          </span>
+          <span data-ttu-id="198e2-276">O valor padrão é <b>False</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-276">The default value is <b>False</b>.</span>
+          </span>
+        </param>
+        <param name="Left">
+          <span data-ttu-id="198e2-277">
+            <b>Objeto</b>de opcional.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-277">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="198e2-278">A posição, medida em pontos, da borda esquerda da nova figura relativa à âncora.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-278">The position, measured in points, of the left edge of the new picture relative to the anchor.</span>
+          </span>
+        </param>
+        <param name="Top">
+          <span data-ttu-id="198e2-279">
+            <b>Objeto</b>de opcional.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-279">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="198e2-280">A posição, medida em pontos, da borda superior da nova figura relativa à âncora.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-280">The position, measured in points, of the top edge of the new picture relative to the anchor.</span>
+          </span>
+        </param>
+        <param name="Width">
+          <span data-ttu-id="198e2-281">
+            <b>Objeto</b>de opcional.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-281">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="198e2-282">A largura da figura, em pontos.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-282">The width of the picture, in points.</span>
+          </span>
+        </param>
+        <param name="Height">
+          <span data-ttu-id="198e2-283">
+            <b>Objeto</b>de opcional.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-283">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="198e2-284">A altura da figura, em pontos.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-284">The height of the picture, in points.</span>
+          </span>
+        </param>
+        <param name="Anchor">
+          <span data-ttu-id="198e2-285">
+            <b>Objeto</b>de opcional.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-285">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="198e2-286">O intervalo ao qual a imagem está acoplada.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-286">The range to which the picture is bound.</span>
+          </span>
+          <span data-ttu-id="198e2-287">Se <paramref name="Anchor" /> for especificado, a âncora será posicionada no início do primeiro parágrafo no intervalo de ancoragem.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-287">If <paramref name="Anchor" /> is specified, the anchor is positioned at the beginning of the first paragraph in the anchoring range.</span>
+          </span>
+          <span data-ttu-id="198e2-288">Se esse argumento for omitido, entretanto, a âncora será colocada automaticamente e a imagem é posicionada em relação às bordas superior e esquerdas da página.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-288">If this argument is omitted, however, the anchor is placed automatically and the picture is positioned relative to the top and left edges of the page.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="198e2-289">Adiciona uma figura a um documento.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-289">Adds a picture to a document.</span>
+          </span>
+          <span data-ttu-id="198e2-290">Retorna um <see cref="T:Microsoft.Office.Interop.Word.Shape" /> object que representa a imagem e adiciona-lo para o <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> conjunto.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-290">Returns a <see cref="T:Microsoft.Office.Interop.Word.Shape" /> object that represents the picture and adds it to the <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> collection.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddPolyline">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddPolyline (ref object SafeArrayOfPoints, ref object Anchor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddPolyline([in]object&amp; SafeArrayOfPoints, [in]object&amp; Anchor) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.AddPolyline(System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddPolyline (ByRef SafeArrayOfPoints As Object, Optional ByRef Anchor As Object) As Shape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(16)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="SafeArrayOfPoints" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="SafeArrayOfPoints">
+          <span data-ttu-id="198e2-291">
+            <b>Objeto</b>necessário.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-291">Required <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="198e2-292">Uma matriz de pares coordenados que especifica os vértices do desenho do polígono.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-292">An array of coordinate pairs that specifies the polyline drawing's vertices.</span>
+          </span>
+        </param>
+        <param name="Anchor">
+          <span data-ttu-id="198e2-293">
+            <b>Objeto</b>de opcional.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-293">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="198e2-294">Uma <see cref="T:Microsoft.Office.Interop.Word.Range" /> object que representa o texto ao qual a polilinha está acoplada.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-294">A <see cref="T:Microsoft.Office.Interop.Word.Range" /> object that represents the text to which the polyline is bound.</span>
+          </span>
+          <span data-ttu-id="198e2-295">Se <paramref name="Anchor" /> for especificado, a âncora será posicionada no início do primeiro parágrafo no intervalo de ancoragem.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-295">If <paramref name="Anchor" /> is specified, the anchor is positioned at the beginning of the first paragraph in the anchoring range.</span>
+          </span>
+          <span data-ttu-id="198e2-296">Se esse argumento for omitido, o intervalo de ancoragem é selecionado automaticamente e a linha é posicionada em relação às bordas superior e esquerdas da página.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-296">If this argument is omitted, the anchoring range is selected automatically and the line is positioned relative to the top and left edges of the page.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="198e2-297">Adiciona um polígono aberto ou fechado a um documento.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-297">Adds an open or closed polygon to a document.</span>
+          </span>
+          <span data-ttu-id="198e2-298">Retorna um <see cref="T:Microsoft.Office.Interop.Word.Shape" /> objeto que representa o polígono e adiciona-lo para o <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> conjunto.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-298">Returns a <see cref="T:Microsoft.Office.Interop.Word.Shape" /> object that represents the polygon and adds it to the <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> collection.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <span data-ttu-id="198e2-299">
+            <para>Para formar um polígono fechado, atribua as mesmas coordenadas ao primeiro e último vértices no desenho de polilinha.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-299">
+              <para>To form a closed polygon, assign the same coordinates to the first and last vertices in the polyline drawing.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddShape">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddShape (int Type, float Left, float Top, float Width, float Height, ref object Anchor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddShape([in]int32 Type, [in]float32 Left, [in]float32 Top, [in]float32 Width, [in]float32 Height, [in]object&amp; Anchor) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.AddShape(System.Int32,System.Single,System.Single,System.Single,System.Single,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddShape (Type As Integer, Left As Single, Top As Single, Width As Single, Height As Single, Optional ByRef Anchor As Object) As Shape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(17)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Type" Type="System.Int32" />
+        <Parameter Name="Left" Type="System.Single" />
+        <Parameter Name="Top" Type="System.Single" />
+        <Parameter Name="Width" Type="System.Single" />
+        <Parameter Name="Height" Type="System.Single" />
+        <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Type">
+          <span data-ttu-id="198e2-300">
+            <b>Integer</b>necessário.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-300">Required <b>Integer</b>.</span>
+          </span>
+          <span data-ttu-id="198e2-301">O tipo de forma a ser retornado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-301">The type of shape to be returned.</span>
+          </span>
+          <span data-ttu-id="198e2-302">Pode ser qualquer <see cref="T:Microsoft.Office.Core.MsoAutoShapeType" /> constante.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-302">Can be any <see cref="T:Microsoft.Office.Core.MsoAutoShapeType" /> constant.</span>
+          </span>
+        </param>
+        <param name="Left">
+          <span data-ttu-id="198e2-303">
+            <b>Single</b>obrigatório.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-303">Required <b>Single</b>.</span>
+          </span>
+          <span data-ttu-id="198e2-304">A posição, medida em pontos, da borda esquerda da AutoForma.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-304">The position, measured in points, of the left edge of the AutoShape.</span>
+          </span>
+        </param>
+        <param name="Top">
+          <span data-ttu-id="198e2-305">
+            <b>Single</b>obrigatório.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-305">Required <b>Single</b>.</span>
+          </span>
+          <span data-ttu-id="198e2-306">A posição, medida em pontos, da borda superior da AutoForma.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-306">The position, measured in points, of the top edge of the AutoShape.</span>
+          </span>
+        </param>
+        <param name="Width">
+          <span data-ttu-id="198e2-307">
+            <b>Single</b>obrigatório.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-307">Required <b>Single</b>.</span>
+          </span>
+          <span data-ttu-id="198e2-308">A largura, medida em pontos, da AutoForma.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-308">The width, measured in points, of the AutoShape.</span>
+          </span>
+        </param>
+        <param name="Height">
+          <span data-ttu-id="198e2-309">
+            <b>Single</b>obrigatório.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-309">Required <b>Single</b>.</span>
+          </span>
+          <span data-ttu-id="198e2-310">A altura, medida em pontos, da AutoForma.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-310">The height, measured in points, of the AutoShape.</span>
+          </span>
+        </param>
+        <param name="Anchor">
+          <span data-ttu-id="198e2-311">
+            <b>Objeto</b>de opcional.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-311">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="198e2-312">Uma <see cref="T:Microsoft.Office.Interop.Word.Range" /> object que representa o texto ao qual a AutoForma está acoplada.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-312">A <see cref="T:Microsoft.Office.Interop.Word.Range" /> object that represents the text to which the AutoShape is bound.</span>
+          </span>
+          <span data-ttu-id="198e2-313">Se <paramref name="Anchor" /> for especificado, a âncora será posicionada no início do primeiro parágrafo no intervalo de ancoragem.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-313">If <paramref name="Anchor" /> is specified, the anchor is positioned at the beginning of the first paragraph in the anchoring range.</span>
+          </span>
+          <span data-ttu-id="198e2-314">Se esse argumento for omitido, o intervalo de ancoragem é selecionado automaticamente e a AutoForma será posicionada em relação às bordas superior e esquerdas da página.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-314">If this argument is omitted, the anchoring range is selected automatically and the AutoShape is positioned relative to the top and left edges of the page.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="198e2-315">Adiciona uma AutoForma a um documento.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-315">Adds an AutoShape to a document.</span>
+          </span>
+          <span data-ttu-id="198e2-316">Retorna um <see cref="T:Microsoft.Office.Interop.Word.Shape" /> object que representa a AutoForma e adiciona-lo para o <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> conjunto.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-316">Returns a <see cref="T:Microsoft.Office.Interop.Word.Shape" /> object that represents the AutoShape and adds it to the <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> collection.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <span data-ttu-id="198e2-317">
+            <para>Para alterar o tipo de uma AutoForma que você tenha adicionado, defina o <see cref="P:Microsoft.Office.Interop.Word.Shape.AutoShapeType" /> propriedade.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-317">
+              <para>To change the type of an AutoShape that you've added, set the <see cref="P:Microsoft.Office.Interop.Word.Shape.AutoShapeType" /> property.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddSmartArt">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddSmartArt (Microsoft.Office.Core.SmartArtLayout Layout, ref object Left, ref object Top, ref object Width, ref object Height, ref object Anchor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddSmartArt([in]class Microsoft.Office.Core.SmartArtLayout Layout, [in]object&amp; Left, [in]object&amp; Top, [in]object&amp; Width, [in]object&amp; Height, [in]object&amp; Anchor) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.AddSmartArt(Microsoft.Office.Core.SmartArtLayout,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddSmartArt (Layout As SmartArtLayout, Optional ByRef Left As Object, Optional ByRef Top As Object, Optional ByRef Width As Object, Optional ByRef Height As Object, Optional ByRef Anchor As Object) As Shape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(28)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Layout" Type="Microsoft.Office.Core.SmartArtLayout" />
+        <Parameter Name="Left" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Top" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Width" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Height" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Layout">
+          <span data-ttu-id="198e2-318">Uma <see cref="T:Microsoft.Office.Core.SmartArtLayout" /> objeto que especifica o layout para o elemento gráfico SmartArt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-318">A <see cref="T:Microsoft.Office.Core.SmartArtLayout" /> object that specifies the layout for the SmartArt graphic.</span>
+          </span>
+        </param>
+        <param name="Left">
+          <span data-ttu-id="198e2-319">A distância em pontos, da borda esquerda do slide até a borda esquerda do gráfico SmartArt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-319">The distance, in points, from the left edge of the slide to the left edge of the SmartArt graphic.</span>
+          </span>
+        </param>
+        <param name="Top">
+          <span data-ttu-id="198e2-320">A distância em pontos, da borda superior do slide até a borda superior do gráfico SmartArt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-320">The distance, in points, from the top edge of the slide to the top edge of the SmartArt graphic.</span>
+          </span>
+        </param>
+        <param name="Width">
+          <span data-ttu-id="198e2-321">A largura do gráfico SmartArt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-321">The width of the SmartArt graphic.</span>
+          </span>
+        </param>
+        <param name="Height">
+          <span data-ttu-id="198e2-322">A altura do gráfico SmartArt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-322">The height of the SmartArt graphic.</span>
+          </span>
+        </param>
+        <param name="Anchor">
+          <span data-ttu-id="198e2-323">Uma <see cref="T:Microsoft.Office.Interop.Word.Range" /> object que representa o texto ao qual o elemento gráfico SmartArt está acoplado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-323">A <see cref="T:Microsoft.Office.Interop.Word.Range" /> object that represents the text to which the SmartArt graphic is bound.</span>
+          </span>
+          <span data-ttu-id="198e2-324">Se a âncora for especificada, a âncora está posicionada no início do primeiro parágrafo no intervalo de ancoragem.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-324">If Anchor is specified, the anchor is positioned at the beginning of the first paragraph in the anchoring range.</span>
+          </span>
+          <span data-ttu-id="198e2-325">Se esse parâmetro for omitido, o intervalo de ancoragem é selecionado automaticamente e o elemento gráfico SmartArt é posicionado em relação às bordas superior e esquerdas da página.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-325">If this parameter is omitted, the anchoring range is selected automatically and the SmartArt graphic is positioned relative to the top and left edges of the page.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="198e2-326">Insere o elemento gráfico SmartArt especificado no documento ativo.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-326">Inserts the specified SmartArt graphic into the active document.</span>
+          </span>
+        </summary>
+        <returns>
+          <span data-ttu-id="198e2-327">Uma <see cref="T:Microsoft.Office.Interop.Word.Shape" /> objeto.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-327">A <see cref="T:Microsoft.Office.Interop.Word.Shape" /> object.</span>
+          </span>
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddTextbox">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddTextbox (Microsoft.Office.Core.MsoTextOrientation Orientation, float Left, float Top, float Width, float Height, ref object Anchor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddTextbox([in]valuetype Microsoft.Office.Core.MsoTextOrientation Orientation, [in]float32 Left, [in]float32 Top, [in]float32 Width, [in]float32 Height, [in]object&amp; Anchor) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.AddTextbox(Microsoft.Office.Core.MsoTextOrientation,System.Single,System.Single,System.Single,System.Single,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddTextbox (Orientation As MsoTextOrientation, Left As Single, Top As Single, Width As Single, Height As Single, Optional ByRef Anchor As Object) As Shape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(19)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Orientation" Type="Microsoft.Office.Core.MsoTextOrientation" />
+        <Parameter Name="Left" Type="System.Single" />
+        <Parameter Name="Top" Type="System.Single" />
+        <Parameter Name="Width" Type="System.Single" />
+        <Parameter Name="Height" Type="System.Single" />
+        <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Orientation">
+          <span data-ttu-id="198e2-328">Necessário <see cref="T:Microsoft.Office.Core.MsoTextOrientation" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-328">Required <see cref="T:Microsoft.Office.Core.MsoTextOrientation" />.</span>
+          </span>
+          <span data-ttu-id="198e2-329">A orientação do texto.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-329">The orientation of the text.</span>
+          </span>
+          <span data-ttu-id="198e2-330">Algumas dessas constantes podem não estar disponíveis, dependendo do suporte a idioma (português do Brasil, por exemplo) que você selecionou ou instalou.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-330">Some of these constants may not be available to you, depending on the language support (U.S. English, for example) that you’ve selected or installed.</span>
+          </span>
+        </param>
+        <param name="Left">
+          <span data-ttu-id="198e2-331">
+            <b>Single</b>obrigatório.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-331">Required <b>Single</b>.</span>
+          </span>
+          <span data-ttu-id="198e2-332">A posição, medida em pontos, da borda esquerda da caixa de texto.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-332">The position, measured in points, of the left edge of the text box.</span>
+          </span>
+        </param>
+        <param name="Top">
+          <span data-ttu-id="198e2-333">
+            <b>Single</b>obrigatório.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-333">Required <b>Single</b>.</span>
+          </span>
+          <span data-ttu-id="198e2-334">A posição, medida em pontos, da borda superior da caixa de texto.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-334">The position, measured in points, of the top edge of the text box.</span>
+          </span>
+        </param>
+        <param name="Width">
+          <span data-ttu-id="198e2-335">
+            <b>Single</b>obrigatório.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-335">Required <b>Single</b>.</span>
+          </span>
+          <span data-ttu-id="198e2-336">A largura, medida em pontos, da caixa de texto.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-336">The width, measured in points, of the text box.</span>
+          </span>
+        </param>
+        <param name="Height">
+          <span data-ttu-id="198e2-337">
+            <b>Single</b>obrigatório.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-337">Required <b>Single</b>.</span>
+          </span>
+          <span data-ttu-id="198e2-338">A altura, medida em pontos, da caixa de texto.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-338">The height, measured in points, of the text box.</span>
+          </span>
+        </param>
+        <param name="Anchor">
+          <span data-ttu-id="198e2-339">
+            <b>Objeto</b>de opcional.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-339">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="198e2-340">Uma <see cref="T:Microsoft.Office.Interop.Word.Range" /> object que representa o texto ao qual a caixa de texto está vinculada.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-340">A <see cref="T:Microsoft.Office.Interop.Word.Range" /> object that represents the text to which the text box is bound.</span>
+          </span>
+          <span data-ttu-id="198e2-341">Se <paramref name="Anchor" /> for especificado, a âncora será posicionada no início do primeiro parágrafo no intervalo de ancoragem.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-341">If <paramref name="Anchor" /> is specified, the anchor is positioned at the beginning of the first paragraph in the anchoring range.</span>
+          </span>
+          <span data-ttu-id="198e2-342">Se esse argumento for omitido, o intervalo de ancoragem é selecionado automaticamente e a caixa de texto é posicionada em relação às bordas superior e esquerdas da página.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-342">If this argument is omitted, the anchoring range is selected automatically and the text box is positioned relative to the top and left edges of the page.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="198e2-343">Adiciona uma caixa de texto a um documento.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-343">Adds a text box to a document.</span>
+          </span>
+          <span data-ttu-id="198e2-344">Retorna um <see cref="T:Microsoft.Office.Interop.Word.Shape" /> object que representa a caixa de texto e o adiciona ao <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> conjunto.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-344">Returns a <see cref="T:Microsoft.Office.Interop.Word.Shape" /> object that represents the text box and adds it to the <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> collection.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddTextEffect">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddTextEffect (Microsoft.Office.Core.MsoPresetTextEffect PresetTextEffect, string Text, string FontName, float FontSize, Microsoft.Office.Core.MsoTriState FontBold, Microsoft.Office.Core.MsoTriState FontItalic, float Left, float Top, ref object Anchor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddTextEffect([in]valuetype Microsoft.Office.Core.MsoPresetTextEffect PresetTextEffect, [in]string Text, [in]string FontName, [in]float32 FontSize, [in]valuetype Microsoft.Office.Core.MsoTriState FontBold, [in]valuetype Microsoft.Office.Core.MsoTriState FontItalic, [in]float32 Left, [in]float32 Top, [in]object&amp; Anchor) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.AddTextEffect(Microsoft.Office.Core.MsoPresetTextEffect,System.String,System.String,System.Single,Microsoft.Office.Core.MsoTriState,Microsoft.Office.Core.MsoTriState,System.Single,System.Single,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddTextEffect (PresetTextEffect As MsoPresetTextEffect, Text As String, FontName As String, FontSize As Single, FontBold As MsoTriState, FontItalic As MsoTriState, Left As Single, Top As Single, Optional ByRef Anchor As Object) As Shape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(18)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="PresetTextEffect" Type="Microsoft.Office.Core.MsoPresetTextEffect" />
+        <Parameter Name="Text" Type="System.String" />
+        <Parameter Name="FontName" Type="System.String" />
+        <Parameter Name="FontSize" Type="System.Single" />
+        <Parameter Name="FontBold" Type="Microsoft.Office.Core.MsoTriState" />
+        <Parameter Name="FontItalic" Type="Microsoft.Office.Core.MsoTriState" />
+        <Parameter Name="Left" Type="System.Single" />
+        <Parameter Name="Top" Type="System.Single" />
+        <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="PresetTextEffect">
+          <span data-ttu-id="198e2-345">Necessário <see cref="T:Microsoft.Office.Core.MsoPresetTextEffect" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-345">Required <see cref="T:Microsoft.Office.Core.MsoPresetTextEffect" />.</span>
+          </span>
+          <span data-ttu-id="198e2-346">Um efeito de texto predefinido.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-346">A preset text effect.</span>
+          </span>
+          <span data-ttu-id="198e2-347">Os valores das constantes <b>MsoPresetTextEffect</b> correspondem aos formatos listados na caixa de diálogo Galeria WordArt (numerada da esquerda para a direita e de cima para baixo).</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-347">The values of the <b>MsoPresetTextEffect</b> constants correspond to the formats listed in the WordArt Gallery dialog box (numbered from left to right and from top to bottom).</span>
+          </span>
+        </param>
+        <param name="Text">
+          <span data-ttu-id="198e2-348">
+            <b>String</b> necessário.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-348">Required <b>String</b>.</span>
+          </span>
+          <span data-ttu-id="198e2-349">O texto no WordArt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-349">The text in the WordArt.</span>
+          </span>
+        </param>
+        <param name="FontName">
+          <span data-ttu-id="198e2-350">
+            <b>String</b> necessário.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-350">Required <b>String</b>.</span>
+          </span>
+          <span data-ttu-id="198e2-351">O nome da fonte utilizada no WordArt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-351">The name of the font used in the WordArt.</span>
+          </span>
+        </param>
+        <param name="FontSize">
+          <span data-ttu-id="198e2-352">
+            <b>Single</b>obrigatório.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-352">Required <b>Single</b>.</span>
+          </span>
+          <span data-ttu-id="198e2-353">O tamanho, em pontos, da fonte usada no WordArt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-353">The size, in points, of the font used in the WordArt.</span>
+          </span>
+        </param>
+        <param name="FontBold">
+          <span data-ttu-id="198e2-354">Necessário <see cref="T:Microsoft.Office.Core.MsoTriState" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-354">Required <see cref="T:Microsoft.Office.Core.MsoTriState" />.</span>
+          </span>
+          <span data-ttu-id="198e2-355">
+            <b>MsoTrue</b> como negrito a fonte da WordArt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-355">
+              <b>MsoTrue</b> to bold the WordArt font.</span>
+          </span>
+        </param>
+        <param name="FontItalic">
+          <span data-ttu-id="198e2-356">Necessário <see cref="T:Microsoft.Office.Core.MsoTriState" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-356">Required <see cref="T:Microsoft.Office.Core.MsoTriState" />.</span>
+          </span>
+          <span data-ttu-id="198e2-357">
+            <b>MsoTrue</b> deixa em itálico a fonte da WordArt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-357">
+              <b>MsoTrue</b> to italicize the WordArt font.</span>
+          </span>
+        </param>
+        <param name="Left">
+          <span data-ttu-id="198e2-358">
+            <b>Single</b>obrigatório.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-358">Required <b>Single</b>.</span>
+          </span>
+          <span data-ttu-id="198e2-359">A posição, medida em pontos, da borda esquerda da forma do WordArt, relativa à âncora.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-359">The position, measured in points, of the left edge of the WordArt shape relative to the anchor.</span>
+          </span>
+        </param>
+        <param name="Top">
+          <span data-ttu-id="198e2-360">
+            <b>Single</b>obrigatório.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-360">Required <b>Single</b>.</span>
+          </span>
+          <span data-ttu-id="198e2-361">A posição, medida em pontos, da borda superior da forma do WordArt, relativa à âncora.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-361">The position, measured in points, of the top edge of the WordArt shape relative to the anchor.</span>
+          </span>
+        </param>
+        <param name="Anchor">
+          <span data-ttu-id="198e2-362">
+            <b>Objeto</b>de opcional.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-362">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="198e2-363">Uma <see cref="T:Microsoft.Office.Interop.Word.Range" /> object que representa o texto ao qual o WordArt está acoplado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-363">A <see cref="T:Microsoft.Office.Interop.Word.Range" /> object that represents the text to which the WordArt is bound.</span>
+          </span>
+          <span data-ttu-id="198e2-364">Se <paramref name="Anchor" /> for especificado, a âncora será posicionada no início do primeiro parágrafo no intervalo de ancoragem.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-364">If <paramref name="Anchor" /> is specified, the anchor is positioned at the beginning of the first paragraph in the anchoring range.</span>
+          </span>
+          <span data-ttu-id="198e2-365">Se esse argumento for omitido, o intervalo de ancoragem é selecionado automaticamente e o WordArt será posicionado em relação às bordas superior e esquerdas da página.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-365">If this argument is omitted, the anchoring range is selected automatically and the WordArt is positioned relative to the top and left edges of the page.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="198e2-366">Adiciona uma forma de WordArt a um documento.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-366">Adds a WordArt shape to a document.</span>
+          </span>
+          <span data-ttu-id="198e2-367">Retorna um <see cref="T:Microsoft.Office.Interop.Word.Shape" /> object que representa o WordArt e o adiciona ao <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> conjunto.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-367">Returns a <see cref="T:Microsoft.Office.Interop.Word.Shape" /> object that represents the WordArt and adds it to the <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> collection.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <span data-ttu-id="198e2-368">
+            <para>Quando você adiciona WordArt a um documento, a altura e largura do WordArt são definidas automaticamente com base no tamanho e na quantidade de texto especificada.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-368">
+              <para>When you add WordArt to a document, the height and width of the WordArt are automatically set based on the size and amount of text you specify.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddWebVideo">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape AddWebVideo (string EmbedCode, ref object VideoWidth, ref object VideoHeight, ref object PosterFrameImage, ref object Url, ref object Left, ref object Top, ref object Width, ref object Height, ref object Anchor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Shape AddWebVideo([in]string EmbedCode, [in]object&amp; VideoWidth, [in]object&amp; VideoHeight, [in]object&amp; PosterFrameImage, [in]object&amp; Url, [in]object&amp; Left, [in]object&amp; Top, [in]object&amp; Width, [in]object&amp; Height, [in]object&amp; Anchor) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.AddWebVideo(System.String,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddWebVideo (EmbedCode As String, ByRef VideoWidth As Object, ByRef VideoHeight As Object, Optional ByRef PosterFrameImage As Object, Optional ByRef Url As Object, Optional ByRef Left As Object, Optional ByRef Top As Object, Optional ByRef Width As Object, Optional ByRef Height As Object, Optional ByRef Anchor As Object) As Shape" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(104)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="EmbedCode" Type="System.String" />
+        <Parameter Name="VideoWidth" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="VideoHeight" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="PosterFrameImage" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Url" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Left" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Top" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Width" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Height" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="EmbedCode">
+          <span data-ttu-id="198e2-369">O código HTML para incorporar.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-369">The HTML code to embed.</span>
+          </span>
+        </param>
+        <param name="VideoWidth">
+          <span data-ttu-id="198e2-370">Um inteiro que representa a largura da web vídeo em pixels.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-370">An integer that represents the width of the web video in pixels.</span>
+          </span>
+        </param>
+        <param name="VideoHeight">
+          <span data-ttu-id="198e2-371">Um inteiro que representa a altura da web vídeo em pixels.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-371">An integer that represents the height of the web video in pixels.</span>
+          </span>
+        </param>
+        <param name="PosterFrameImage">
+          <span data-ttu-id="198e2-372">Uma string que aponta para o arquivo a ser utilizado como o quadro de pôster para o vídeo da web.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-372">A string that points to the file to use as the poster frame for the web video.</span>
+          </span>
+        </param>
+        <param name="Url">
+          <span data-ttu-id="198e2-373">Uma cadeia de caracteres que contém a URL para o vídeo da web.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-373">A string that contains the URL to the web video.</span>
+          </span>
+        </param>
+        <param name="Left">
+          <span data-ttu-id="198e2-374">A posição, medida em pontos, da borda esquerda do quadro de cartaz da borda do documento.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-374">The position, measured in points, of the left edge of the poster frame from the edge of the document.</span>
+          </span>
+        </param>
+        <param name="Top">
+          <span data-ttu-id="198e2-375">A posição, medida em pontos, da borda superior do quadro de cartaz da borda do documento.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-375">The position, measured in points, of the top edge of the poster frame from the edge of the document.</span>
+          </span>
+        </param>
+        <param name="Width">
+          <span data-ttu-id="198e2-376">A largura, medida em pontos, do quadro cartaz no documento.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-376">The width, measured in points, of the poster frame in the document.</span>
+          </span>
+        </param>
+        <param name="Height">
+          <span data-ttu-id="198e2-377">A altura, medida em pontos, do quadro cartaz no documento.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-377">The height, measured in points, of the poster frame in the document.</span>
+          </span>
+        </param>
+        <param name="Anchor">
+          <span data-ttu-id="198e2-378">Uma <see cref="T:Microsoft.Office.Interop.Word.Range" /> object que representa o texto ao qual o vídeo da web está acoplada.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-378">A <see cref="T:Microsoft.Office.Interop.Word.Range" /> object that represents the text to which the web video is bound.</span>
+          </span>
+          <span data-ttu-id="198e2-379">Se <paramref name="Anchor" /> for especificado, a âncora será posicionada no início do primeiro parágrafo no intervalo de ancoragem.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-379">If <paramref name="Anchor" /> is specified, the anchor is positioned at the beginning of the first paragraph in the anchoring range.</span>
+          </span>
+          <span data-ttu-id="198e2-380">Se esse argumento for omitido, o intervalo de ancoragem é selecionado automaticamente e o vídeo é posicionado em relação às bordas superior e esquerdas da página.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-380">If this argument is omitted, the anchoring range is selected automatically and the video is positioned relative to the top and left edges of the page.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="198e2-381">Adiciona um novo vídeo da web ao documento.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-381">Adds a new web video to the document.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shapes.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(8000)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(8000)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="198e2-382">Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-382">Returns a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BuildFreeform">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.FreeformBuilder BuildFreeform (Microsoft.Office.Core.MsoEditingType EditingType, float X1, float Y1);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.FreeformBuilder BuildFreeform([in]valuetype Microsoft.Office.Core.MsoEditingType EditingType, [in]float32 X1, [in]float32 Y1) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.BuildFreeform(Microsoft.Office.Core.MsoEditingType,System.Single,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BuildFreeform (EditingType As MsoEditingType, X1 As Single, Y1 As Single) As FreeformBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::FreeformBuilder ^ BuildFreeform(Microsoft::Office::Core::MsoEditingType EditingType, float X1, float Y1);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(20)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.FreeformBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="EditingType" Type="Microsoft.Office.Core.MsoEditingType" />
+        <Parameter Name="X1" Type="System.Single" />
+        <Parameter Name="Y1" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="EditingType">
+          <span data-ttu-id="198e2-383">A propriedade de edição do primeiro nó.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-383">The editing property of the first node.</span>
+          </span>
+          <span data-ttu-id="198e2-384">Necessário <see cref="T:Microsoft.Office.Core.MsoEditingType" />. <b>MsoEditingType</b> pode ser uma das seguintes constantes (não pode ser <b>msoEditingSmooth</b> ou <b>msoEditingSymmetric</b>).</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-384">Required <see cref="T:Microsoft.Office.Core.MsoEditingType" />.<b>MsoEditingType</b> can be either of these constants (cannot be <b>msoEditingSmooth</b> or <b>msoEditingSymmetric</b>).</span>
+          </span>
+          <span data-ttu-id="198e2-385">
+            <b>msoEditingAuto</b>
+            <b>msoEditingCorner</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-385">
+              <b>msoEditingAuto </b>
+              <b>msoEditingCorner</b>
+            </span>
+          </span>
+        </param>
+        <param name="X1">
+          <span data-ttu-id="198e2-386">
+            <b>Single</b>obrigatório.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-386">Required <b>Single</b>.</span>
+          </span>
+          <span data-ttu-id="198e2-387">A posição (em pontos) do primeiro nó do desenho de forma livre em relação ao canto superior esquerdo do documento.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-387">The position (in points) of the first node in the freeform drawing relative to the upper-left corner of the document.</span>
+          </span>
+        </param>
+        <param name="Y1">
+          <span data-ttu-id="198e2-388">
+            <b>Single</b>obrigatório.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-388">Required <b>Single</b>.</span>
+          </span>
+          <span data-ttu-id="198e2-389">A posição (em pontos) do primeiro nó do desenho de forma livre em relação ao canto superior esquerdo do documento.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-389">The position (in points) of the first node in the freeform drawing relative to the upper-left corner of the document.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="198e2-390">Cria um objeto de forma livre.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-390">Builds a freeform object.</span>
+          </span>
+          <span data-ttu-id="198e2-391">Retorna um <see cref="T:Microsoft.Office.Interop.Word.FreeformBuilder" /> do objeto que representa a forma livre conforme ele está sendo construída.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-391">Returns a <see cref="T:Microsoft.Office.Interop.Word.FreeformBuilder" /> object that represents the freeform as it is being built.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <span data-ttu-id="198e2-392">
+            <para>Use o <see cref="M:Microsoft.Office.Interop.Word.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" /> método para adicionar segmentos à forma livre. Após ter adicionado pelo menos um segmento à forma livre, você pode usar o <see cref="M:Microsoft.Office.Interop.Word.FreeformBuilder.ConvertToShape(System.Object@)" /> método para converter o objeto <b>FreeformBuilder</b> em um <see cref="T:Microsoft.Office.Interop.Word.Shape" /> objeto que tenha a descrição geométrica que você definiu no objeto <b>FreeformBuilder</b> .</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-392">
+              <para>Use the <see cref="M:Microsoft.Office.Interop.Word.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" /> method to add segments to the freeform. After you have added at least one segment to the freeform, you can use the <see cref="M:Microsoft.Office.Interop.Word.FreeformBuilder.ConvertToShape(System.Object@)" /> method to convert the <b>FreeformBuilder</b> object into a <see cref="T:Microsoft.Office.Interop.Word.Shape" /> object that has the geometric description you've defined in the <b>FreeformBuilder</b> object.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shapes.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="198e2-393">Retorna o número de itens na coleção especificada.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-393">Returns the number of items in the specified collection.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shapes.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(8001)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(8001)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="198e2-394">Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-394">Returns a 32-bit integer that indicates the application in which the specified object was created.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="198e2-395">
+            <para>Se o objeto foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
+          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-395">
+              <para>If the object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD." This value can also be represented by the constant <b>wdCreatorCode</b>.</para>
+              <para>The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code. For example, Microsoft Word has the creator code MSWD. For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shape this[ref object Index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Shape Item(object)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shapes.Item(System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(ByRef Index As Object) As Shape" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Shape ^ default[System::Object ^ %] { Microsoft::Office::Interop::Word::Shape ^ get(System::Object ^ % Index); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shape</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Index">
+          <span data-ttu-id="198e2-396">Um <b>objeto</b> que indica a posição ordinal ou uma cadeia de caracteres que representa o nome do objeto individual.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-396">An <b>Object</b> indicating the ordinal position or a string representing the name of the individual object.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="198e2-397">Retorna um objeto individual de uma coleção.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-397">Returns an individual object in a collection.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Shapes.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="198e2-398">Retorna um objeto que representa o objeto pai do objeto especificado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-398">Returns an object that represents the parent object of the specified object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Range">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.ShapeRange Range (ref object Index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.ShapeRange Range([in]object&amp; Index) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.Range(System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Range (ByRef Index As Object) As ShapeRange" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::ShapeRange ^ Range(System::Object ^ % Index);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(21)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.ShapeRange</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Index">
+          <span data-ttu-id="198e2-399">
+            <b>Objeto</b>necessário.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-399">Required <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="198e2-400">Especifica quais formas devem ser incluídas no intervalo especificado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-400">Specifies which shapes are to be included in the specified range.</span>
+          </span>
+          <span data-ttu-id="198e2-401">Pode ser um inteiro que especifica o número de índice de uma forma dentro do <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> conjunto, uma cadeia de caracteres que especifica o nome de uma forma ou uma matriz de <b>objeto</b> que contém inteiros ou sequências.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-401">Can be an integer that specifies the index number of a shape within the <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> collection, a string that specifies the name of a shape, or an <b>Object</b> array that contains integers or strings.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="198e2-402">Retorna um <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> objeto.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-402">Returns a <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> object.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <span data-ttu-id="198e2-403">
+            <para>Valores de posição de caractere começam com 0 (zero) no início do documento. Todos os caracteres são contados, incluindo caracteres não imprimíveis. Os caracteres ocultos são contados mesmo se eles não são exibidos. Se você não especificar inicial e final posições de caractere para o método <b>Range</b> , todo o documento é retornado como um <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto.</para> Objetos 
+          <para><b>ShapeRange</b> não incluem <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> objetos. Um objeto <b>InlineShape</b> é equivalente a um caractere e é posicionado como um caractere dentro de um intervalo de texto. <see cref="T:Microsoft.Office.Interop.Word.Shape" /> objetos ficam vinculados a um intervalo de texto (a seleção, por padrão), mas pode ser posicionados em qualquer lugar na página. Um objeto <b>Shape</b> sempre aparecerá na mesma página que o intervalo ao qual está ancorado.</para><para>a maioria das operações que você pode fazer com um objeto <b>Shape</b> você também pode fazer com um objeto <b>ShapeRange</b> que contém uma única forma. Algumas operações, quando executadas em um objeto <b>ShapeRange</b> que contém várias formas, produzem um erro.</para><para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-403">
+              <para>Character position values begin with 0 (zero) at the beginning of the document. All characters are counted, including nonprinting characters. Hidden characters are counted even if they're not displayed. If you don't specify starting and ending character positions for the <b>Range</b> method, the entire document is returned as a <see cref="T:Microsoft.Office.Interop.Word.Range" /> object.</para>
+              <para>
+                <b>ShapeRange</b> objects don't include <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> objects. An <b>InlineShape</b> object is equivalent to a character and is positioned as a character within a range of text. <see cref="T:Microsoft.Office.Interop.Word.Shape" /> objects are anchored to a range of text (the selection, by default), but they can be positioned anywhere on the page. A <b>Shape</b> object will always appear on the same page as the range it's anchored to.</para>
+              <para>Most operations that you can do with a <b>Shape</b> object you can also do with a <b>ShapeRange</b> object that contains a single shape. Some operations, when performed on a <b>ShapeRange</b> object that contains multiple shapes, produce an error.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectAll">
+      <MemberSignature Language="C#" Value="public void SelectAll ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SelectAll() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Shapes.SelectAll" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SelectAll ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SelectAll();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(22)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="198e2-404">Seleciona todas as formas no texto principal, em uma tela ou em cabeçalhos e rodapés de um documento.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-404">Selects all the shapes in the main story, in a canvas, or in headers and footers of a document.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="198e2-405">
+            <para>Este método não seleciona <see cref="T:Microsoft.Office.Interop.Word.InlineShapes" /> objetos.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="198e2-405">
+              <para>This method doesn't select <see cref="T:Microsoft.Office.Interop.Word.InlineShapes" /> objects.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

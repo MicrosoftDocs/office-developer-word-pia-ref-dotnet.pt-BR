@@ -1,0 +1,2894 @@
+<Type Name="Paragraphs" FullName="Microsoft.Office.Interop.Word.Paragraphs">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="f7a4ec3a3f9cef850ee4d2525ac862807859cba1" />
+    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="pt-BR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20663834" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface Paragraphs : System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Paragraphs implements class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Paragraphs" />
+  <TypeSignature Language="VB.NET" Value="Public Interface Paragraphs&#xA;Implements IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class Paragraphs : System::Collections::IEnumerable" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("00020958-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="8b278-101">Uma coleção de <see cref="T:Microsoft.Office.Interop.Word.Paragraph" /> objetos em uma seleção, intervalo ou documento.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="8b278-101">A collection of <see cref="T:Microsoft.Office.Interop.Word.Paragraph" /> objects in a selection, range, or document.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="8b278-102">
+        <para>Use a propriedade <b>Paragraphs</b> para retornar a coleção <b>Paragraphs</b> .</para>
+        <para>Uso o <see cref="M:Microsoft.Office.Interop.Word.Paragraphs.Add(System.Object@)" />, <see cref="M:Microsoft.Office.Interop.Word.Selection.InsertParagraph" />, <see cref="M:Microsoft.Office.Interop.Word.Selection.InsertParagraphAfter" />, ou <see cref="M:Microsoft.Office.Interop.Word.Selection.InsertParagraphBefore" /> método para adicionar um novo parágrafo a um documento.</para>
+        <para>Uso <b>parágrafos</b>(<paramref name="index" />), onde <paramref name="index" /> é o número de índice, para retornar um único objeto <b>Paragraph</b> .</para>
+        <para>o <see cref="P:Microsoft.Office.Interop.Word.Paragraphs.Count" /> propriedade dessa coleção em um documento retorna o número de itens no texto principal. Para contar itens em outros textos use a coleção com o <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto.</para>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="8b278-102">
+          <para>Use the <b>Paragraphs</b> property to return the <b>Paragraphs</b> collection.</para>
+          <para>Use the <see cref="M:Microsoft.Office.Interop.Word.Paragraphs.Add(System.Object@)" />, <see cref="M:Microsoft.Office.Interop.Word.Selection.InsertParagraph" />, <see cref="M:Microsoft.Office.Interop.Word.Selection.InsertParagraphAfter" />, or <see cref="M:Microsoft.Office.Interop.Word.Selection.InsertParagraphBefore" /> method to add a new paragraph to a document.</para>
+          <para>Use <b>Paragraphs</b>(<paramref name="index" />), where <paramref name="index" /> is the index number, to return a single <b>Paragraph</b> object.</para>
+          <para>The <see cref="P:Microsoft.Office.Interop.Word.Paragraphs.Count" /> property for this collection in a document returns the number of items in the main story only. To count items in other stories use the collection with the <see cref="T:Microsoft.Office.Interop.Word.Range" /> object.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Paragraph Add (ref object Range);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Paragraph Add([in]object&amp; Range) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Paragraphs.Add(System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (Optional ByRef Range As Object) As Paragraph" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Paragraph</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Range" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Range">
+          <span data-ttu-id="8b278-103">
+            <b>Objeto</b>de opcional.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-103">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="8b278-104">O intervalo antes do qual você deseja que o novo parágrafo seja adicionado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-104">The range before which you want the new paragraph to be added.</span>
+          </span>
+          <span data-ttu-id="8b278-105">O novo parágrafo não substitui o intervalo.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-105">The new paragraph doesn't replace the range.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="8b278-106">Retorna um <see cref="T:Microsoft.Office.Interop.Word.Paragraph" /> object que representa um novo parágrafo em branco adicionado a um documento.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-106">Returns a <see cref="T:Microsoft.Office.Interop.Word.Paragraph" /> object that represents a new, blank paragraph added to a document.</span>
+          </span>
+        </summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <span data-ttu-id="8b278-107">
+            <para>Se <paramref name="Range" /> não for especificado, o novo parágrafo será adicionado após a seleção ou o intervalo ou no final do documento.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-107">
+              <para>If <paramref name="Range" /> isn't specified, the new paragraph is added after the selection or range or at the end of the document.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddSpaceBetweenFarEastAndAlpha">
+      <MemberSignature Language="C#" Value="public int AddSpaceBetweenFarEastAndAlpha { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 AddSpaceBetweenFarEastAndAlpha" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.AddSpaceBetweenFarEastAndAlpha" />
+      <MemberSignature Language="VB.NET" Value="Public Property AddSpaceBetweenFarEastAndAlpha As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int AddSpaceBetweenFarEastAndAlpha { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(121)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(121)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(121)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="8b278-108">Determina se o Microsoft Word está definido para adicionar automaticamente espaços entre texto japonês e latino para os parágrafos especificados.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-108">Determines if Microsoft Word is set to automatically add spaces between Japanese and Latin text for the specified paragraphs.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="8b278-109">
+            <para>Esta propriedade retorna <b>True</b> se o Word está definido para adicionar automaticamente espaços entre texto japonês e latino para os parágrafos especificados e <b>False</b> se não. Defina o valor da propriedade como <b>True</b> ou <b>False</b> para habilitar ou desabilitar a funcionalidade.</para>
+            <para>Esta propriedade retornará <b>wdUndefined</b> se ele for definido como <b>True</b> para apenas alguns dos parágrafos especificados.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-109">
+              <para>This property returns <b>True</b> if Word is set to automatically add spaces between Japanese and Latin text for the specified paragraphs, and <b>False</b> if not. Set the property value to <b>True</b> or <b>False</b> to enable or disable the functionality.</para>
+              <para>This property returns <b>wdUndefined</b> if it’s set to <b>True</b> for only some of the specified paragraphs.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddSpaceBetweenFarEastAndDigit">
+      <MemberSignature Language="C#" Value="public int AddSpaceBetweenFarEastAndDigit { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 AddSpaceBetweenFarEastAndDigit" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.AddSpaceBetweenFarEastAndDigit" />
+      <MemberSignature Language="VB.NET" Value="Public Property AddSpaceBetweenFarEastAndDigit As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int AddSpaceBetweenFarEastAndDigit { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(122)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(122)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(122)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="8b278-110">Determina se o Microsoft Word está definido para adicionar automaticamente espaços entre texto japonês e números para os parágrafos especificados.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-110">Determines if Microsoft Word is set to automatically add spaces between Japanese text and numbers for the specified paragraphs.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="8b278-111">
+            <para>Esta propriedade retorna <b>True</b> se o Word está definido para adicionar automaticamente espaços entre texto japonês e números para os parágrafos especificados e <b>False</b> se não. Defina o valor da propriedade como <b>True</b> ou <b>False</b> para habilitar ou desabilitar a funcionalidade.</para>
+            <para>Esta propriedade retornará <b>wdUndefined</b> se ele for definido como <b>True</b> para apenas alguns dos parágrafos especificados.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-111">
+              <para>This property returns <b>True</b> if Word is set to automatically add spaces between Japanese text and numbers for the specified paragraphs, and <b>False</b> if not. Set the property value to <b>True</b> or <b>False</b> to enable or disable the functionality.</para>
+              <para>This property returns <b>wdUndefined</b> if it’s set to <b>True</b> for only some of the specified paragraphs.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Alignment">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.WdParagraphAlignment Alignment { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Word.WdParagraphAlignment Alignment" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.Alignment" />
+      <MemberSignature Language="VB.NET" Value="Public Property Alignment As WdParagraphAlignment" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdParagraphAlignment Alignment { Microsoft::Office::Interop::Word::WdParagraphAlignment get(); void set(Microsoft::Office::Interop::Word::WdParagraphAlignment value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(101)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(101)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(101)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.WdParagraphAlignment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="8b278-112">Retorna ou define um <see cref="T:Microsoft.Office.Interop.Word.WdParagraphAlignment" /> constante que representa o alinhamento dos parágrafos especificados.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-112">Returns or sets a <see cref="T:Microsoft.Office.Interop.Word.WdParagraphAlignment" /> constant that represents the alignment for the specified paragraphs.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="8b278-113">
+            <para>Algumas das constantes listadas acima podem não estar disponíveis para você, dependendo do suporte a idioma (inglês americano, por exemplo) que você selecionou ou instalou.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-113">
+              <para>Some of the constants listed above may not be available to you, depending on the language support (U.S. English, for example) that you’ve selected or installed.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1000)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="8b278-114">Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-114">Returns a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoAdjustRightIndent">
+      <MemberSignature Language="C#" Value="public int AutoAdjustRightIndent { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 AutoAdjustRightIndent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.AutoAdjustRightIndent" />
+      <MemberSignature Language="VB.NET" Value="Public Property AutoAdjustRightIndent As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int AutoAdjustRightIndent { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(124)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(124)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(124)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="8b278-115">Determina se o Microsoft Word está definido para ajustar automaticamente o recuo à direita dos parágrafos especificados se você tiver especificado um número definido de caracteres por linha.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-115">Determines if Microsoft Word is set to automatically adjust the right indent for the specified paragraphs if you’ve specified a set number of characters per line.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="8b278-116">
+            <para>Esta propriedade retorna <b>True</b> se o Word está definido para ajustar automaticamente o recuo à direita dos parágrafos especificados se você tiver especificado um número de caracteres por linha e <b>False</b> se não for definido. Defina o valor da propriedade como <b>True</b> ou <b>False</b> para habilitar ou desabilitar a funcionalidade.</para>
+            <para>Esta propriedade retornará <b>wdUndefined</b> se a propriedade <b>AutoAdjustRightIndent</b> estiver definida como <b>True</b> para apenas alguns dos parágrafos especificados.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-116">
+              <para>This property returns <b>True</b> if Word is set to automatically adjust the right indent for the specified paragraphs if you’ve specified a set number of characters per line, and <b>False</b> if not. Set the property value to <b>True</b> or <b>False</b> to enable or disable the functionality.</para>
+              <para>This property returns <b>wdUndefined</b> if the <b>AutoAdjustRightIndent</b> property is set to <b>True</b> for only some of the specified paragraphs.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BaseLineAlignment">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.WdBaselineAlignment BaseLineAlignment { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Word.WdBaselineAlignment BaseLineAlignment" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.BaseLineAlignment" />
+      <MemberSignature Language="VB.NET" Value="Public Property BaseLineAlignment As WdBaselineAlignment" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdBaselineAlignment BaseLineAlignment { Microsoft::Office::Interop::Word::WdBaselineAlignment get(); void set(Microsoft::Office::Interop::Word::WdBaselineAlignment value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(123)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(123)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(123)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.WdBaselineAlignment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="8b278-117">Retorna ou define um <see cref="T:Microsoft.Office.Interop.Word.WdBaselineAlignment" /> constante que representa a posição vertical de fontes em uma linha.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-117">Returns or sets a <see cref="T:Microsoft.Office.Interop.Word.WdBaselineAlignment" /> constant that represents the vertical position of fonts on a line.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Borders">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Borders Borders { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Borders Borders" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.Borders" />
+      <MemberSignature Language="VB.NET" Value="Public Property Borders As Borders" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Borders ^ Borders { Microsoft::Office::Interop::Word::Borders ^ get(); void set(Microsoft::Office::Interop::Word::Borders ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1100)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1100)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1100)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Borders</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="8b278-118">Retorna um <see cref="T:Microsoft.Office.Interop.Word.Borders" /> coleção que representa todas as bordas do objeto especificado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-118">Returns a <see cref="T:Microsoft.Office.Interop.Word.Borders" /> collection that represents all the borders for the specified object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CharacterUnitFirstLineIndent">
+      <MemberSignature Language="C#" Value="public float CharacterUnitFirstLineIndent { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 CharacterUnitFirstLineIndent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.CharacterUnitFirstLineIndent" />
+      <MemberSignature Language="VB.NET" Value="Public Property CharacterUnitFirstLineIndent As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float CharacterUnitFirstLineIndent { float get(); void set(float value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(128)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(128)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(128)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="8b278-119">Retorna ou define o valor (em caracteres) de um recuo de primeira linha ou deslocado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-119">Returns or sets the value (in characters) for a first-line or hanging indent.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="8b278-120">
+            <para>Use um valor positivo para definir um recuo da primeira linha e use um valor negativo para definir um recuo deslocado.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-120">
+              <para>Use a positive value to set a first-line indent, and use a negative value to set a hanging indent.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CharacterUnitLeftIndent">
+      <MemberSignature Language="C#" Value="public float CharacterUnitLeftIndent { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 CharacterUnitLeftIndent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.CharacterUnitLeftIndent" />
+      <MemberSignature Language="VB.NET" Value="Public Property CharacterUnitLeftIndent As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float CharacterUnitLeftIndent { float get(); void set(float value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(127)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(127)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(127)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="8b278-121">Retorna ou define o valor de recuo à esquerda (em caracteres) para os parágrafos especificados.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-121">Returns or sets the left indent value (in characters) for the specified paragraphs.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CharacterUnitRightIndent">
+      <MemberSignature Language="C#" Value="public float CharacterUnitRightIndent { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 CharacterUnitRightIndent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.CharacterUnitRightIndent" />
+      <MemberSignature Language="VB.NET" Value="Public Property CharacterUnitRightIndent As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float CharacterUnitRightIndent { float get(); void set(float value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(126)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(126)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(126)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="8b278-122">Retorna ou define o valor de recuo à direita (em caracteres) para os parágrafos especificados.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-122">Returns or sets the right indent value (in characters) for the specified paragraphs.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CloseUp">
+      <MemberSignature Language="C#" Value="public void CloseUp ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CloseUp() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Paragraphs.CloseUp" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CloseUp ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CloseUp();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(301)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="8b278-123">Remove qualquer espaçamento antes dos parágrafos especificados.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-123">Removes any spacing before the specified paragraphs.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="8b278-124">Retorna o número de itens na coleção especificada.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-124">Returns the number of items in the specified collection.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1001)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="8b278-125">Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-125">Returns a 32-bit integer that indicates the application in which the specified object was created.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="8b278-126">
+            <para>Se o objeto especificado foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
+          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-126">
+              <para>If the specified object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD." This value can also be represented by the constant <b>wdCreatorCode</b>.</para>
+              <para>The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code. For example, Microsoft Word has the creator code MSWD. For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DecreaseSpacing">
+      <MemberSignature Language="C#" Value="public void DecreaseSpacing ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DecreaseSpacing() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Paragraphs.DecreaseSpacing" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DecreaseSpacing ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DecreaseSpacing();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(336)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="8b278-127">Diminui o espaçamento antes e depois dos parágrafos em incrementos de seis pontos.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-127">Decreases the spacing before and after paragraphs in six-point increments.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisableLineHeightGrid">
+      <MemberSignature Language="C#" Value="public int DisableLineHeightGrid { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 DisableLineHeightGrid" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.DisableLineHeightGrid" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisableLineHeightGrid As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int DisableLineHeightGrid { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(125)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(125)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(125)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="8b278-128">Determina se o Microsoft Word alinha os caracteres nos parágrafos especificados para a grade de linhas quando um número definido de linhas por página for especificado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-128">Determines if Microsoft Word aligns characters in the specified paragraphs to the line grid when a set number of lines per page is specified.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="8b278-129">
+            <para>Esta propriedade retorna <b>True</b> se o Word alinha os caracteres nos parágrafos especificados na grade de linhas quando um número definido de linhas por página for especificado, e <b>False</b> se não. Defina o valor da propriedade como <b>True</b> ou <b>False</b> para habilitar ou desabilitar a funcionalidade.</para>
+            <para>Retorna <b>wdUndefined</b> se a propriedade <b>DisableLineHeightGrid</b> estiver definida como <b>True</b> para apenas alguns dos parágrafos especificados.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-129">
+              <para>This property returns <b>True</b> if Word aligns characters in the specified paragraphs to the line grid when a set number of lines per page is specified, and <b>False</b> if not. Set the property value to <b>True</b> or <b>False</b> to enable or disable the functionality.</para>
+              <para>Returns <b>wdUndefined</b> if the <b>DisableLineHeightGrid</b> property is set to <b>True</b> for only some of the specified paragraphs.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FarEastLineBreakControl">
+      <MemberSignature Language="C#" Value="public int FarEastLineBreakControl { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 FarEastLineBreakControl" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.FarEastLineBreakControl" />
+      <MemberSignature Language="VB.NET" Value="Public Property FarEastLineBreakControl As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int FarEastLineBreakControl { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(117)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(117)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(117)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="8b278-130">Determina se o Microsoft Word aplica regras de quebra de linha do Leste Asiático aos parágrafos especificados.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-130">Determines if Microsoft Word applies East Asian line-breaking rules to the specified paragraphs.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="8b278-131">
+            <para>Esta propriedade retorna <b>True</b> se o Word aplica as regras de quebra de linha do Leste Asiático aos parágrafos especificados e <b>False</b> se não. Defina o valor da propriedade como <b>True</b> ou <b>False</b> para habilitar ou desabilitar a funcionalidade.</para>
+            <para>Esta propriedade retornará <b>wdUndefined</b> se a propriedade <b>FarEastLineBreakControl</b> estiver definida como <b>True</b> para apenas alguns dos parágrafos especificados.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-131">
+              <para>This property returns <b>True</b> if Word applies East Asian line-breaking rules to the specified paragraphs, and <b>False</b> if not. Set the property value to <b>True</b> or <b>False</b> to enable or disable the functionality.</para>
+              <para>This property returns <b>wdUndefined</b> if the <b>FarEastLineBreakControl</b> property is set to <b>True</b> for only some of the specified paragraphs.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="First">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Paragraph First { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Paragraph First" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.First" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property First As Paragraph" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Paragraph ^ First { Microsoft::Office::Interop::Word::Paragraph ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Paragraph</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="8b278-132">Retorna um <see cref="T:Microsoft.Office.Interop.Word.Paragraph" /> object que representa o primeiro item no <see cref="T:Microsoft.Office.Interop.Word.Paragraphs" /> conjunto.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-132">Returns a <see cref="T:Microsoft.Office.Interop.Word.Paragraph" /> object that represents the first item in the <see cref="T:Microsoft.Office.Interop.Word.Paragraphs" /> collection.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FirstLineIndent">
+      <MemberSignature Language="C#" Value="public float FirstLineIndent { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 FirstLineIndent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.FirstLineIndent" />
+      <MemberSignature Language="VB.NET" Value="Public Property FirstLineIndent As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float FirstLineIndent { float get(); void set(float value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(108)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(108)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(108)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="8b278-133">Retorna ou define o valor (em pontos) para um recuo da primeira linha ou deslocado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-133">Returns or sets the value (in points) for a first line or hanging indent.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="8b278-134">
+            <para>Use um valor positivo para definir um recuo da primeira linha e use um valor negativo para definir um recuo deslocado.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-134">
+              <para>Use a positive value to set a first-line indent, and use a negative value to set a hanging indent.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Format">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.ParagraphFormat Format { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.ParagraphFormat Format" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.Format" />
+      <MemberSignature Language="VB.NET" Value="Public Property Format As ParagraphFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ParagraphFormat ^ Format { Microsoft::Office::Interop::Word::ParagraphFormat ^ get(); void set(Microsoft::Office::Interop::Word::ParagraphFormat ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1102)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1102)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1102)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.ParagraphFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="8b278-135">Retorna ou define um <see cref="T:Microsoft.Office.Interop.Word.ParagraphFormat" /> object que representa a formatação do parágrafo ou parágrafos especificados.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-135">Returns or sets a <see cref="T:Microsoft.Office.Interop.Word.ParagraphFormat" /> object that represents the formatting of the specified paragraph or paragraphs.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Paragraphs.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HalfWidthPunctuationOnTopOfLine">
+      <MemberSignature Language="C#" Value="public int HalfWidthPunctuationOnTopOfLine { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 HalfWidthPunctuationOnTopOfLine" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.HalfWidthPunctuationOnTopOfLine" />
+      <MemberSignature Language="VB.NET" Value="Public Property HalfWidthPunctuationOnTopOfLine As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int HalfWidthPunctuationOnTopOfLine { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(120)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(120)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(120)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="8b278-136">Determina se o Microsoft Word altera os símbolos de pontuação no início de uma linha para caracteres de meia largura dos parágrafos especificados.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-136">Determines if Microsoft Word changes punctuation symbols at the beginning of a line to half-width characters for the specified paragraphs.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="8b278-137">
+            <para>Esta propriedade retorna <b>True</b> se o Word altera os símbolos de pontuação no início de uma linha para caracteres de meia largura para os parágrafos especificados e <b>False</b> se não. Defina o valor da propriedade como <b>True</b> ou <b>False</b> para habilitar ou desabilitar a funcionalidade.</para>
+            <para>Esta propriedade retornará <b>wdUndefined</b> se definida como <b>True</b> para apenas alguns dos parágrafos especificados.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-137">
+              <para>This property returns <b>True</b> if Word changes punctuation symbols at the beginning of a line to half-width characters for the specified paragraphs, and <b>False</b> if not. Set the property value to <b>True</b> or <b>False</b> to enable or disable the functionality.</para>
+              <para>This property returns <b>wdUndefined</b> if set to <b>True</b> for only some of the specified paragraphs. </para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HangingPunctuation">
+      <MemberSignature Language="C#" Value="public int HangingPunctuation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 HangingPunctuation" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.HangingPunctuation" />
+      <MemberSignature Language="VB.NET" Value="Public Property HangingPunctuation As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int HangingPunctuation { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(119)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(119)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(119)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="8b278-138">Determina se a pontuação deslocada está habilitada para os parágrafos especificados.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-138">Determines if hanging punctuation is enabled for the specified paragraphs.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="8b278-139">
+            <para>Esta propriedade retorna <b>True</b> se a pontuação deslocada está habilitada para os parágrafos especificados e <b>False</b> se não. Defina o valor da propriedade como <b>True</b> ou <b>False</b> para habilitar ou desabilitar a funcionalidade.</para>
+            <para>Esta propriedade retornará <b>wdUndefined</b> se definida como <b>True</b> para apenas alguns dos parágrafos especificados.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-139">
+              <para>This property returns <b>True</b> if hanging punctuation is enabled for the specified paragraphs, and <b>False</b> if not. Set the property value to <b>True</b> or <b>False</b> to enable or disable the functionality.</para>
+              <para>This property returns <b>wdUndefined</b> if set to <b>True</b> for only some of the specified paragraphs.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Hyphenation">
+      <MemberSignature Language="C#" Value="public int Hyphenation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Hyphenation" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.Hyphenation" />
+      <MemberSignature Language="VB.NET" Value="Public Property Hyphenation As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Hyphenation { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(113)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(113)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(113)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="8b278-140">Determina se os parágrafos especificados serão incluídos na hifenização automática.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-140">Determines if the specified paragraphs are included in automatic hyphenation.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="8b278-141">
+            <para>Esta propriedade retorna <b>True</b> se os parágrafos especificados estão incluídos na hifenização automática e <b>False</b> se não. Defina o valor da propriedade como <b>True</b> ou <b>False</b> para habilitar ou desabilitar a funcionalidade.</para>
+            <para>Essa propriedade retorna <b>False</b> se os parágrafos especificados devem ser excluídos da hifenização automática.</para>
+            <para>Possíveis valores de retorno são <b>True</b>, <b>False</b> e <b>wdUndefined</b>.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-141">
+              <para>This property returns <b>True</b> if the specified paragraphs are included in automatic hyphenation, and <b>False</b> if not. Set the property value to <b>True</b> or <b>False</b> to enable or disable the functionality.</para>
+              <para>This property returns <b>False</b> if the specified paragraphs are to be excluded from automatic hyphenation.</para>
+              <para>Possible return values are <b>True</b>, <b>False</b> and <b>wdUndefined</b>.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IncreaseSpacing">
+      <MemberSignature Language="C#" Value="public void IncreaseSpacing ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void IncreaseSpacing() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Paragraphs.IncreaseSpacing" />
+      <MemberSignature Language="VB.NET" Value="Public Sub IncreaseSpacing ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void IncreaseSpacing();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(335)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="8b278-142">Aumenta o espaçamento antes e depois de parágrafos, em incrementos de seis pontos.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-142">Increases the spacing before and after paragraphs in six-point increments.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Indent">
+      <MemberSignature Language="C#" Value="public void Indent ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Indent() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Paragraphs.Indent" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Indent ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Indent();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(333)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="8b278-143">Recua um ou mais parágrafos em um nível.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-143">Indents one or more paragraphs by one level.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="8b278-144">
+            <para>Usar esse método é equivalente a clicar o botão Aumentar recuo na barra de ferramentas Formatação.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-144">
+              <para>Using this method is equivalent to clicking the Increase Indent button on the Formatting toolbar.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndentCharWidth">
+      <MemberSignature Language="C#" Value="public void IndentCharWidth (short Count);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void IndentCharWidth([in]int16 Count) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Paragraphs.IndentCharWidth(System.Int16)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub IndentCharWidth (Count As Short)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void IndentCharWidth(short Count);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(320)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Count" Type="System.Int16" />
+      </Parameters>
+      <Docs>
+        <param name="Count">
+          <span data-ttu-id="8b278-145">Necessário <b>curta</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-145">Required <b>Short</b>.</span>
+          </span>
+          <span data-ttu-id="8b278-146">O número de caracteres pelo qual os parágrafos especificados devem ser recuados.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-146">The number of characters by which the specified paragraphs are to be indented.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="8b278-147">Recua um ou mais parágrafos por um número especificado de caracteres.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-147">Indents one or more paragraphs by a specified number of characters.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="8b278-148">
+            <para>Usar esse método é equivalente a clicar o botão Aumentar recuo na barra de ferramentas Formatação.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-148">
+              <para>Using this method is equivalent to clicking the Increase Indent button on the Formatting toolbar.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndentFirstLineCharWidth">
+      <MemberSignature Language="C#" Value="public void IndentFirstLineCharWidth (short Count);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void IndentFirstLineCharWidth([in]int16 Count) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Paragraphs.IndentFirstLineCharWidth(System.Int16)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub IndentFirstLineCharWidth (Count As Short)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void IndentFirstLineCharWidth(short Count);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(322)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Count" Type="System.Int16" />
+      </Parameters>
+      <Docs>
+        <param name="Count">
+          <span data-ttu-id="8b278-149">Necessário <b>curta</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-149">Required <b>Short</b>.</span>
+          </span>
+          <span data-ttu-id="8b278-150">O número de caracteres pelo qual os parágrafos especificados devem ser recuados.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-150">The number of characters by which the specified paragraphs are to be indented.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="8b278-151">Recua um ou mais parágrafos por um número especificado de caracteres.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-151">Indents one or more paragraphs by a specified number of characters.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="8b278-152">
+            <para>Usar esse método é equivalente a clicar o botão Aumentar recuo na barra de ferramentas Formatação.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-152">
+              <para>Using this method is equivalent to clicking the Increase Indent button on the Formatting toolbar.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Paragraph this[int Index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Paragraph Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Integer) As Paragraph" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Paragraph ^ default[int] { Microsoft::Office::Interop::Word::Paragraph ^ get(int Index); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Paragraph</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="Index">
+          <span data-ttu-id="8b278-153">Um <b>inteiro</b> que indica a posição ordinal do objeto individual.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-153">An <b>Integer</b> indicating the ordinal position of the individual object.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="8b278-154">Retorna um objeto individual de uma coleção.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-154">Returns an individual object in a collection.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeepTogether">
+      <MemberSignature Language="C#" Value="public int KeepTogether { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 KeepTogether" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.KeepTogether" />
+      <MemberSignature Language="VB.NET" Value="Public Property KeepTogether As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int KeepTogether { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(102)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(102)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(102)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="8b278-155">Determina se todas as linhas nos parágrafos especificados permanecem na mesma página quando o Microsoft Word repaginar o documento.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-155">Determines if all lines in the specified paragraphs remain on the same page when Microsoft Word repaginates the document.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="8b278-156">
+            <para>Esta propriedade retorna <b>True</b> se todas as linhas nos parágrafos especificados permanecerem na mesma página quando o Word repaginar o documento e <b>False</b> se não. Defina o valor da propriedade como <b>True</b> ou <b>False</b> para habilitar ou desabilitar a funcionalidade.</para>
+            <para>Valores possíveis são <b>True</b>, <b>False</b>e <b>wdUndefined</b>.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-156">
+              <para>This property returns <b>True</b> if all lines in the specified paragraphs remain on the same page when Word repaginates the document, and <b>False</b> if not. Set the property value to <b>True</b> or <b>False</b> to enable or disable the functionality.</para>
+              <para>Possible values are <b>True</b>, <b>False</b>, and <b>wdUndefined</b>.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeepWithNext">
+      <MemberSignature Language="C#" Value="public int KeepWithNext { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 KeepWithNext" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.KeepWithNext" />
+      <MemberSignature Language="VB.NET" Value="Public Property KeepWithNext As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int KeepWithNext { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(103)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(103)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(103)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="8b278-157">Determina se o parágrafo especificado permanecer na mesma página que o parágrafo seguinte quando o Microsoft Word repaginar o documento.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-157">Determines if the specified paragraph remains on the same page as the paragraph that follows it when Microsoft Word repaginates the document.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="8b278-158">
+            <para>Esta propriedade retorna <b>True</b> se o parágrafo especificado permanecer na mesma página que o parágrafo seguinte quando o Microsoft Word repaginar o documento e <b>False</b> se não. Defina o valor da propriedade como <b>True</b> ou <b>False</b> para habilitar ou desabilitar a funcionalidade.</para>
+            <para>Valores possíveis são <b>True</b>, <b>False</b>ou <b>wdUndefined</b>.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-158">
+              <para>This property returns <b>True</b> if the specified paragraph remains on the same page as the paragraph that follows it when Microsoft Word repaginates the document, and <b>False</b> if not. Set the property value to <b>True</b> or <b>False</b> to enable or disable the functionality.</para>
+              <para>Possible values are <b>True</b>, <b>False</b>, or <b>wdUndefined</b>.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Last">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Paragraph Last { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Paragraph Last" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.Last" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Last As Paragraph" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Paragraph ^ Last { Microsoft::Office::Interop::Word::Paragraph ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Paragraph</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="8b278-159">Retorna o último item no <see cref="T:Microsoft.Office.Interop.Word.Paragraphs" /> coleção como um <see cref="T:Microsoft.Office.Interop.Word.Paragraph" /> objeto.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-159">Returns the last item in the <see cref="T:Microsoft.Office.Interop.Word.Paragraphs" /> collection as a <see cref="T:Microsoft.Office.Interop.Word.Paragraph" /> object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LeftIndent">
+      <MemberSignature Language="C#" Value="public float LeftIndent { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 LeftIndent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.LeftIndent" />
+      <MemberSignature Language="VB.NET" Value="Public Property LeftIndent As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float LeftIndent { float get(); void set(float value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(107)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(107)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(107)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="8b278-160">Retorna ou define um valor <b>único</b> que representa o valor de recuo à esquerda (em pontos) para os parágrafos especificados.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-160">Returns or sets a <b>Single</b> that represents the left indent value (in points) for the specified paragraphs.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LineSpacing">
+      <MemberSignature Language="C#" Value="public float LineSpacing { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 LineSpacing" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.LineSpacing" />
+      <MemberSignature Language="VB.NET" Value="Public Property LineSpacing As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float LineSpacing { float get(); void set(float value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(109)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(109)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(109)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="8b278-161">Retorna ou define o espaçamento de linha (em pontos) para os parágrafos especificados.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-161">Returns or sets the line spacing (in points) for the specified paragraphs.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="8b278-162">
+            <para>A propriedade <b>LineSpacing</b> pode ser definida após o <see cref="P:Microsoft.Office.Interop.Word.Paragraphs.LineSpacingRule" /> propriedade tiver sido definida como o seguinte:</para>
+            <para>
+              <b>wdLineSpaceAtLeast</b> - o espaçamento entre linhas pode ser maior que ou igual a, mas nunca menor, o valor especificado de <b>LineSpacing</b> .</para>
+            <para>
+              <b>wdLineSpaceExactly</b> - o espaçamento entre linhas nunca é alterado do valor especificado de <b>LineSpacing</b> , mesmo se uma fonte maior for usada dentro do parágrafo.</para>
+            <para>
+              <b>wdLineSpaceMultiple</b> - um valor de propriedade <b>LineSpacing</b> deve ser especificado, em pontos.</para>
+            <para>Uso o <see cref="M:Microsoft.Office.Interop.Word._Application.LinesToPoints(System.Single)" /> método para converter um número de linhas com o valor correspondente em pontos.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-162">
+              <para>The <b>LineSpacing</b> property can be set after the <see cref="P:Microsoft.Office.Interop.Word.Paragraphs.LineSpacingRule" /> property has been set to the following:</para>
+              <para>
+                <b>wdLineSpaceAtLeast</b> - The line spacing can be greater than or equal to, but never less than, the specified <b>LineSpacing</b> value.</para>
+              <para>
+                <b>wdLineSpaceExactly</b> - The line spacing never changes from the specified <b>LineSpacing</b> value, even if a larger font is used within the paragraph.</para>
+              <para>
+                <b>wdLineSpaceMultiple</b> - A <b>LineSpacing</b> property value must be specified, in points.</para>
+              <para>Use the <see cref="M:Microsoft.Office.Interop.Word._Application.LinesToPoints(System.Single)" /> method to convert a number of lines to the corresponding value in points.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LineSpacingRule">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.WdLineSpacing LineSpacingRule { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Word.WdLineSpacing LineSpacingRule" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.LineSpacingRule" />
+      <MemberSignature Language="VB.NET" Value="Public Property LineSpacingRule As WdLineSpacing" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdLineSpacing LineSpacingRule { Microsoft::Office::Interop::Word::WdLineSpacing get(); void set(Microsoft::Office::Interop::Word::WdLineSpacing value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(110)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(110)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(110)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.WdLineSpacing</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="8b278-163">Retorna ou define o espaçamento de linha dos parágrafos especificados.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-163">Returns or sets the line spacing for the specified paragraphs.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="8b278-164">
+            <para>
+              <see cref="T:Microsoft.Office.Interop.Word.WdLineSpacing" /> pode ser uma das seguintes constantes:</para>
+            <para>
+              <b>wdLineSpace1pt5</b>
+            </para>
+            <para>
+              <b>wdLineSpaceAtLeast</b>
+            </para>
+            <para>
+              <b>wdLineSpaceDouble</b>
+            </para>
+            <para>
+              <b>wdLineSpaceExactly</b>
+            </para>
+            <para>
+              <b>wdLineSpaceMultiple</b>
+            </para>
+            <para>
+              <b>wdLineSpaceSingle</b>
+            </para> Uso de 
+          <para><b>wdLineSpaceSingle</b>, <b>wdLineSpace1pt5</b>ou <b>wdLineSpaceDouble</b> para definir o espaçamento entre linhas como um desses valores. Para definir o espaçamento entre linhas como um número exato de pontos ou com um número múltiplo de linhas, você também deve definir o <see cref="P:Microsoft.Office.Interop.Word.Paragraphs.LineSpacing" /> propriedade.</para><para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-164">
+              <para>
+                <see cref="T:Microsoft.Office.Interop.Word.WdLineSpacing" /> can be one of the following constants: </para>
+              <para>
+                <b>wdLineSpace1pt5</b>
+              </para>
+              <para>
+                <b>wdLineSpaceAtLeast</b>
+              </para>
+              <para>
+                <b>wdLineSpaceDouble</b>
+              </para>
+              <para>
+                <b>wdLineSpaceExactly</b>
+              </para>
+              <para>
+                <b>wdLineSpaceMultiple</b>
+              </para>
+              <para>
+                <b>wdLineSpaceSingle</b>
+              </para>
+              <para>Use <b>wdLineSpaceSingle</b>, <b>wdLineSpace1pt5</b>, or <b>wdLineSpaceDouble</b> to set the line spacing to one of these values. To set the line spacing to an exact number of points or to a multiple number of lines, you must also set the <see cref="P:Microsoft.Office.Interop.Word.Paragraphs.LineSpacing" /> property.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LineUnitAfter">
+      <MemberSignature Language="C#" Value="public float LineUnitAfter { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 LineUnitAfter" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.LineUnitAfter" />
+      <MemberSignature Language="VB.NET" Value="Public Property LineUnitAfter As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float LineUnitAfter { float get(); void set(float value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(130)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(130)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(130)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="8b278-165">Retorna ou define a quantidade de espaçamento (em linhas de grade) após os parágrafos especificados.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-165">Returns or sets the amount of spacing (in gridlines) after the specified paragraphs.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LineUnitBefore">
+      <MemberSignature Language="C#" Value="public float LineUnitBefore { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 LineUnitBefore" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.LineUnitBefore" />
+      <MemberSignature Language="VB.NET" Value="Public Property LineUnitBefore As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float LineUnitBefore { float get(); void set(float value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(129)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(129)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(129)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="8b278-166">Retorna ou define a quantidade de espaçamento (em linhas de grade) antes dos parágrafos especificados.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-166">Returns or sets the amount of spacing (in gridlines) before the specified paragraphs.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NoLineNumber">
+      <MemberSignature Language="C#" Value="public int NoLineNumber { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 NoLineNumber" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.NoLineNumber" />
+      <MemberSignature Language="VB.NET" Value="Public Property NoLineNumber As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NoLineNumber { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(105)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(105)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(105)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="8b278-167">Determina se os números de linha forem suprimidos para os parágrafos especificados.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-167">Determines if line numbers are repressed for the specified paragraphs.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="8b278-168">
+            <para>Esta propriedade retorna <b>True</b> se os números de linha forem suprimidos para os parágrafos especificados e <b>False</b> se não. Defina o valor da propriedade como <b>True</b> ou <b>False</b> para habilitar ou desabilitar a funcionalidade.</para>
+            <para>Valores possíveis são <b>True</b>, <b>False</b>e <b>wdUndefined</b>.</para>
+            <para>Uso o <see cref="P:Microsoft.Office.Interop.Word.PageSetup.LineNumbering" /> propriedade para definir números de linha.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-168">
+              <para>This property returns <b>True</b> if line numbers are repressed for the specified paragraphs, and <b>False</b> if not. Set the property value to <b>True</b> or <b>False</b> to enable or disable the functionality.</para>
+              <para>Possible values are <b>True</b>, <b>False</b>, and <b>wdUndefined</b>. </para>
+              <para>Use the <see cref="P:Microsoft.Office.Interop.Word.PageSetup.LineNumbering" /> property to set line numbers.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenOrCloseUp">
+      <MemberSignature Language="C#" Value="public void OpenOrCloseUp ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OpenOrCloseUp() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Paragraphs.OpenOrCloseUp" />
+      <MemberSignature Language="VB.NET" Value="Public Sub OpenOrCloseUp ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void OpenOrCloseUp();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(303)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="8b278-p104">Quando o espaçamento antes dos parágrafos especificados é 0 (zero), esse método define o espaçamento como sendo 12 pontos. Quando o espaçamento antes dos parágrafos é maior que 0 (zero), esse método define o espaçamento como 0 (zero).</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-p104">If spacing before the specified paragraphs is 0 (zero), this method sets spacing to 12 points. If spacing before the paragraphs is greater than 0 (zero), this method sets spacing to 0 (zero).</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenUp">
+      <MemberSignature Language="C#" Value="public void OpenUp ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OpenUp() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Paragraphs.OpenUp" />
+      <MemberSignature Language="VB.NET" Value="Public Sub OpenUp ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void OpenUp();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(302)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="8b278-171">Define como 12 pontos o espaçamento antes dos parágrafos especificados.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-171">Sets spacing before the specified paragraphs to 12 points.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Outdent">
+      <MemberSignature Language="C#" Value="public void Outdent ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Outdent() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Paragraphs.Outdent" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Outdent ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Outdent();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(334)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="8b278-172">Remove um nível de recuo de um ou mais parágrafos.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-172">Removes one level of indent for one or more paragraphs.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="8b278-173">
+            <para>Usar esse método é equivalente a clicar o botão Diminuir recuo na barra de ferramentas Formatação.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-173">
+              <para>Using this method is equivalent to clicking the Decrease Indent button on the Formatting toolbar.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OutlineDemote">
+      <MemberSignature Language="C#" Value="public void OutlineDemote ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OutlineDemote() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Paragraphs.OutlineDemote" />
+      <MemberSignature Language="VB.NET" Value="Public Sub OutlineDemote ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void OutlineDemote();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(325)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="8b278-174">Aplica o próximo estilo de nível de título (Título 1 até Título 8) ao parágrafo ou parágrafos especificados.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-174">Applies the next heading level style (Heading 1 through Heading 8) to the specified paragraph or paragraphs.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="8b278-175">
+            <para>Se um parágrafo estiver formatado com o estilo Título 2, esse método rebaixa o parágrafo alterando o estilo para Título 3.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-175">
+              <para>If a paragraph is formatted with the Heading 2 style, this method demotes the paragraph by changing the style to Heading 3.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OutlineDemoteToBody">
+      <MemberSignature Language="C#" Value="public void OutlineDemoteToBody ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OutlineDemoteToBody() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Paragraphs.OutlineDemoteToBody" />
+      <MemberSignature Language="VB.NET" Value="Public Sub OutlineDemoteToBody ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void OutlineDemoteToBody();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(326)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="8b278-176">Rebaixa o parágrafo ou parágrafos especificados para corpo de texto aplicando o estilo Normal.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-176">Demotes the specified paragraph or paragraphs to body text by applying the Normal style.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OutlineLevel">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.WdOutlineLevel OutlineLevel { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Word.WdOutlineLevel OutlineLevel" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.OutlineLevel" />
+      <MemberSignature Language="VB.NET" Value="Public Property OutlineLevel As WdOutlineLevel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdOutlineLevel OutlineLevel { Microsoft::Office::Interop::Word::WdOutlineLevel get(); void set(Microsoft::Office::Interop::Word::WdOutlineLevel value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(202)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(202)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(202)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.WdOutlineLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="8b278-177">Retorna ou define o nível de estrutura de tópicos para os parágrafos especificados.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-177">Returns or sets the outline level for the specified paragraphs.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="8b278-178">
+            <para>O retorno vale pode ser uma das seguintes opções <see cref="T:Microsoft.Office.Interop.Word.WdOutlineLevel" /> constantes:</para>
+            <para>
+              <b>wdOutLineLevel1</b>
+            </para>
+            <para>
+              <b>wdOutLineLevel2</b>
+            </para>
+            <para>
+              <b>wdOutLineLevel3</b>
+            </para>
+            <para>
+              <b>wdOutLineLevel4</b>
+            </para>
+            <para>
+              <b>wdOutLineLevel5</b>
+            </para>
+            <para>
+              <b>wdOutLineLevel6</b>
+            </para>
+            <para>
+              <b> wdOutLineLevel7</b>
+            </para>
+            <para>
+              <b>wdOutLineLevel8</b>
+            </para>
+            <para>
+              <b>wdOutLineLevel9</b>
+            </para>
+            <para>
+              <b>wdOutLineLevelBodyText</b>
+            </para>
+            <para>se um parágrafo tiver um estilo de título aplicado (título 1 até Título 9), o nível de estrutura de tópicos é o mesmo que o estilo de título e não pode ser alterada.</para>
+            <para>Níveis de estrutura de tópicos são visíveis apenas no modo de exibição de estrutura de tópicos ou no painel de mapa do documento.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-178">
+              <para>The return vale can be one of the following <see cref="T:Microsoft.Office.Interop.Word.WdOutlineLevel" /> constants:</para>
+              <para>
+                <b>wdOutLineLevel1</b>
+              </para>
+              <para>
+                <b>wdOutLineLevel2</b>
+              </para>
+              <para>
+                <b>wdOutLineLevel3</b>
+              </para>
+              <para>
+                <b>wdOutLineLevel4</b>
+              </para>
+              <para>
+                <b>wdOutLineLevel5</b>
+              </para>
+              <para>
+                <b>wdOutLineLevel6</b>
+              </para>
+              <para>
+                <b>wdOutLineLevel7</b>
+              </para>
+              <para>
+                <b>wdOutLineLevel8</b>
+              </para>
+              <para>
+                <b>wdOutLineLevel9</b>
+              </para>
+              <para>
+                <b>wdOutLineLevelBodyText</b>
+              </para>
+              <para>If a paragraph has a heading style applied to it (Heading 1 through Heading 9), the outline level is the same as the heading style and cannot be changed.</para>
+              <para>Outline levels are visible only in outline view or the document map pane.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OutlinePromote">
+      <MemberSignature Language="C#" Value="public void OutlinePromote ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OutlinePromote() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Paragraphs.OutlinePromote" />
+      <MemberSignature Language="VB.NET" Value="Public Sub OutlinePromote ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void OutlinePromote();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(324)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="8b278-179">Aplica o estilo de nível de título anterior (Título 1 a Título 8) ao parágrafo ou parágrafos especificados.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-179">Applies the previous heading level style (Heading 1 through Heading 8) to the specified paragraph or paragraphs.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="8b278-180">
+            <para>Se um parágrafo estiver formatado com o estilo Título 2, esse método elevará o parágrafo alterando o estilo para título 1.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-180">
+              <para>If a paragraph is formatted with the Heading 2 style, this method promotes the paragraph by changing the style to Heading 1.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PageBreakBefore">
+      <MemberSignature Language="C#" Value="public int PageBreakBefore { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 PageBreakBefore" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.PageBreakBefore" />
+      <MemberSignature Language="VB.NET" Value="Public Property PageBreakBefore As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PageBreakBefore { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(104)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(104)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(104)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="8b278-181">Determina se uma quebra de página é forçada antes dos parágrafos especificados.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-181">Determines if a page break is forced before the specified paragraphs.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="8b278-182">
+            <para>Esta propriedade retorna <b>True</b> se uma quebra de página é forçada antes dos parágrafos especificados e <b>False</b> se não. Defina o valor da propriedade como <b>True</b> ou <b>False</b> para habilitar ou desabilitar a funcionalidade.</para>
+            <para>Possíveis valores de retorno são <b>True</b>, <b>False</b>e <b>wdUndefined</b>.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-182">
+              <para>This property returns <b>True</b> if a page break is forced before the specified paragraphs, and <b>False</b> if not. Set the property value to <b>True</b> or <b>False</b> to enable or disable the functionality.</para>
+              <para>Possible return values are <b>True</b>, <b>False</b>, and <b>wdUndefined</b>.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1002)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="8b278-183">Retorna um objeto que representa o objeto pai do objeto especificado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-183">Returns an object that represents the parent object of the specified object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadingOrder">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.WdReadingOrder ReadingOrder { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Word.WdReadingOrder ReadingOrder" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.ReadingOrder" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReadingOrder As WdReadingOrder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdReadingOrder ReadingOrder { Microsoft::Office::Interop::Word::WdReadingOrder get(); void set(Microsoft::Office::Interop::Word::WdReadingOrder value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(131)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(131)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(131)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.WdReadingOrder</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="8b278-184">Retorna ou define o sentido de leitura dos parágrafos especificados sem alterar o alinhamento.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-184">Returns or sets the reading order of the specified paragraphs without changing their alignment.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="8b278-185">
+            <para>
+              <see cref="T:Microsoft.Office.Interop.Word.WdReadingOrder" />pode ser uma das seguintes constantes <b>WdReadingOrder</b> :</para>
+            <para>
+              <b>wdReadingOrderLtr </b>
+            </para>
+            <para>
+              <b>wdReadingOrderRtl</b>
+            </para>
+            <para>uso o <see cref="M:Microsoft.Office.Interop.Word.Selection.LtrPara" />, <see cref="M:Microsoft.Office.Interop.Word.Selection.LtrRun" />, <see cref="M:Microsoft.Office.Interop.Word.Selection.RtlPara" />, e <see cref="M:Microsoft.Office.Interop.Word.Selection.RtlRun" /> métodos para alterar o alinhamento do parágrafo juntamente com a leitura ordem.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-185">
+              <para>
+                <see cref="T:Microsoft.Office.Interop.Word.WdReadingOrder" /> can be one of the following <b>WdReadingOrder</b> constants:</para>
+              <para>
+                <b>wdReadingOrderLtr </b>
+              </para>
+              <para>
+                <b>wdReadingOrderRtl</b>
+              </para>
+              <para>Use the <see cref="M:Microsoft.Office.Interop.Word.Selection.LtrPara" />, <see cref="M:Microsoft.Office.Interop.Word.Selection.LtrRun" />, <see cref="M:Microsoft.Office.Interop.Word.Selection.RtlPara" />, and <see cref="M:Microsoft.Office.Interop.Word.Selection.RtlRun" /> methods to change the paragraph alignment along with the reading order.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Reset">
+      <MemberSignature Language="C#" Value="public void Reset ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Reset() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Paragraphs.Reset" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Reset ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Reset();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(312)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="8b278-186">Remove a formatação de parágrafo manual (formatação não aplicada usando um estilo).</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-186">Removes manual paragraph formatting (formatting not applied using a style).</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="8b278-187">
+            <para>Se alinhar um parágrafo à direita manualmente e o estilo básico tiver um alinhamento diferente, o método <b>Reset</b> altera o alinhamento para coincidir com a formatação do estilo básico.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-187">
+              <para>If you manually right align a paragraph and the underlying style has a different alignment, the <b>Reset</b> method changes the alignment to match the formatting of the underlying style.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RightIndent">
+      <MemberSignature Language="C#" Value="public float RightIndent { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 RightIndent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.RightIndent" />
+      <MemberSignature Language="VB.NET" Value="Public Property RightIndent As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float RightIndent { float get(); void set(float value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(106)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(106)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(106)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="8b278-188">Retorna ou define o recuo à direita (em pontos) para os parágrafos especificados.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-188">Returns or sets the right indent (in points) for the specified paragraphs.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Shading">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Shading Shading { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.Shading Shading" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.Shading" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Shading As Shading" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Shading ^ Shading { Microsoft::Office::Interop::Word::Shading ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(116)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(116)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.Shading</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="8b278-189">Retorna um <see cref="T:Microsoft.Office.Interop.Word.Shading" /> objeto referente à formatação de sombreamento do objeto especificado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-189">Returns a <see cref="T:Microsoft.Office.Interop.Word.Shading" /> object that refers to the shading formatting for the specified object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Space1">
+      <MemberSignature Language="C#" Value="public void Space1 ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Space1() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Paragraphs.Space1" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Space1 ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Space1();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(313)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="8b278-190">Aplica espaçamento simples entre as linhas dos parágrafos selecionados.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-190">Single-spaces the specified paragraphs.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="8b278-191">
+            <para>O espaçamento exato é determinado pelo tamanho da fonte dos maiores caracteres de cada parágrafo.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-191">
+              <para>The exact spacing is determined by the font size of the largest characters in each paragraph.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Space15">
+      <MemberSignature Language="C#" Value="public void Space15 ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Space15() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Paragraphs.Space15" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Space15 ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Space15();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(314)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="8b278-192">Formata os parágrafos especificados com espaçamento de 1,5 linha.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-192">Formats the specified paragraphs with 1.5-line spacing.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="8b278-193">
+            <para>O espaçamento exato é determinado adicionando-se 6 pontos ao tamanho da fonte do maior caractere em cada parágrafo.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-193">
+              <para>The exact spacing is determined by adding 6 points to the font size of the largest character in each paragraph.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Space2">
+      <MemberSignature Language="C#" Value="public void Space2 ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Space2() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Paragraphs.Space2" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Space2 ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Space2();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(315)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="8b278-194">Formata os parágrafos especificados com espaçamento duplo.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-194">Double-spaces the specified paragraphs.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="8b278-195">
+            <para>O espaçamento exato é determinado adicionando-se 12 pontos ao tamanho da fonte do maior caractere em cada parágrafo.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-195">
+              <para>The exact spacing is determined by adding 12 points to the font size of the largest character in each paragraph.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SpaceAfter">
+      <MemberSignature Language="C#" Value="public float SpaceAfter { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 SpaceAfter" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.SpaceAfter" />
+      <MemberSignature Language="VB.NET" Value="Public Property SpaceAfter As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float SpaceAfter { float get(); void set(float value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(112)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(112)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(112)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="8b278-196">Retorna ou define a quantidade de espaçamento (em pontos) após a coluna de texto ou de parágrafo especificado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-196">Returns or sets the amount of spacing (in points) after the specified paragraph or text column.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SpaceAfterAuto">
+      <MemberSignature Language="C#" Value="public int SpaceAfterAuto { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 SpaceAfterAuto" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.SpaceAfterAuto" />
+      <MemberSignature Language="VB.NET" Value="Public Property SpaceAfterAuto As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SpaceAfterAuto { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(133)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(133)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(133)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="8b278-197">Determina se o Microsoft Word definirá automaticamente a quantidade de espaçamento após os parágrafos especificados.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-197">Determines if Microsoft Word automatically sets the amount of spacing after the specified paragraphs.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="8b278-198">
+            <para>Esta propriedade retorna <b>True</b> se o Word define automaticamente a quantidade de espaçamento após os parágrafos especificados e <b>False</b> se não. Defina o valor da propriedade como <b>True</b> ou <b>False</b> para habilitar ou desabilitar a funcionalidade.</para>
+            <para>Esta propriedade retornará <b>wdUndefined</b> se a propriedade <b>SpaceAfterAuto</b> estiver definida como <b>True</b> para apenas alguns dos parágrafos especificados.</para>
+            <para>Quando você abre um documento HTML sem folhas de estilo em cascata, o Word define automaticamente a propriedade <b>SpaceAfterAuto</b> como <b>True</b> para tornar o espaçamento de parágrafo exatamente como apareceria em um navegador da Web.</para>
+            <para>Se <b>SpaceAfterAuto</b> estiver definida como <b>True</b>, o <see cref="P:Microsoft.Office.Interop.Word.Paragraphs.SpaceAfter" /> propriedade será ignorada.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-198">
+              <para>This property returns <b>True</b> if Word automatically sets the amount of spacing after the specified paragraphs, and <b>False</b> if not. Set the property value to <b>True</b> or <b>False</b> to enable or disable the functionality.</para>
+              <para>This property returns <b>wdUndefined</b> if the <b>SpaceAfterAuto</b> property is set to <b>True</b> for only some of the specified paragraphs.</para>
+              <para>When you open an HTML document without cascading style sheets, Word automatically sets the <b>SpaceAfterAuto</b> property to <b>True</b> to render the paragraph spacing exactly as it would appear in a Web browser.</para>
+              <para>If <b>SpaceAfterAuto</b> is set to <b>True</b>, the <see cref="P:Microsoft.Office.Interop.Word.Paragraphs.SpaceAfter" /> property is ignored.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SpaceBefore">
+      <MemberSignature Language="C#" Value="public float SpaceBefore { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 SpaceBefore" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.SpaceBefore" />
+      <MemberSignature Language="VB.NET" Value="Public Property SpaceBefore As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float SpaceBefore { float get(); void set(float value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(111)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(111)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(111)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="8b278-199">Retorna ou define o espaçamento (em pontos) antes dos parágrafos especificados.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-199">Returns or sets the spacing (in points) before the specified paragraphs.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SpaceBeforeAuto">
+      <MemberSignature Language="C#" Value="public int SpaceBeforeAuto { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 SpaceBeforeAuto" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.SpaceBeforeAuto" />
+      <MemberSignature Language="VB.NET" Value="Public Property SpaceBeforeAuto As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SpaceBeforeAuto { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(132)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(132)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(132)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="8b278-200">Determina se o Microsoft Word definirá automaticamente a quantidade de espaçamento antes dos parágrafos especificados.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-200">Determines if Microsoft Word automatically sets the amount of spacing before the specified paragraphs.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="8b278-201">
+            <para>Esta propriedade retorna <b>True</b> se o Word define automaticamente a quantidade de espaçamento antes dos parágrafos especificados e <b>False</b> se não. Defina o valor da propriedade como <b>True</b> ou <b>False</b> para habilitar ou desabilitar a funcionalidade.</para>
+            <para>Esta propriedade retornará <b>wdUndefined</b> se a propriedade <b>SpaceBeforeAuto</b> estiver definida como True para apenas alguns dos parágrafos especificados.</para>
+            <para>Quando você abre um documento HTML sem folhas de estilo em cascata, o Word define automaticamente a propriedade <b>SpaceBeforeAuto</b> como <b>True</b> para tornar o espaçamento de parágrafo exatamente como apareceria em um navegador da Web.</para>
+            <para>Se <b>SpaceBeforeAuto</b> estiver definida como <b>True</b>, o <see cref="P:Microsoft.Office.Interop.Word.Paragraphs.SpaceBefore" /> propriedade será ignorada.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-201">
+              <para>This property returns <b>True</b> if Word automatically sets the amount of spacing before the specified paragraphs, and <b>False</b> if not. Set the property value to <b>True</b> or <b>False</b> to enable or disable the functionality.</para>
+              <para>This property returns <b>wdUndefined</b> if the <b>SpaceBeforeAuto</b> property is set to True for only some of the specified paragraphs.</para>
+              <para>When you open an HTML document without cascading style sheets, Word automatically sets the <b>SpaceBeforeAuto</b> property to <b>True</b> to render the paragraph spacing exactly as it would appear in a Web browser.</para>
+              <para>If <b>SpaceBeforeAuto</b> is set to <b>True</b>, the <see cref="P:Microsoft.Office.Interop.Word.Paragraphs.SpaceBefore" /> property is ignored.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Style">
+      <MemberSignature Language="C#" Value="public object Style { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Style" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.Style" />
+      <MemberSignature Language="VB.NET" Value="Public Property Style As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Style { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(100)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(100)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(100)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="8b278-202">Retorna ou define o estilo do objeto especificado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-202">Returns or sets the style for the specified object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="8b278-203">
+            <para>Para definir essa propriedade, especifique o nome local do estilo, um inteiro, uma <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" /> constante ou um objeto que represente o estilo.</para>
+            <para>Quando você retorna o estilo de um intervalo que inclui mais de um estilo, apenas o primeiro estilo de caractere ou parágrafo é retornado.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-203">
+              <para>To set this property, specify the local name of the style, an integer, a <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" /> constant, or an object that represents the style.</para>
+              <para>When you return the style for a range that includes more than one style, only the first character or paragraph style is returned.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TabHangingIndent">
+      <MemberSignature Language="C#" Value="public void TabHangingIndent (short Count);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void TabHangingIndent([in]int16 Count) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Paragraphs.TabHangingIndent(System.Int16)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub TabHangingIndent (Count As Short)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void TabHangingIndent(short Count);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(304)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Count" Type="System.Int16" />
+      </Parameters>
+      <Docs>
+        <param name="Count">
+          <span data-ttu-id="8b278-204">Necessário <b>curta</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-204">Required <b>Short</b>.</span>
+          </span>
+          <span data-ttu-id="8b278-205">O número de paradas de tabulação a serem recuadas (se positivo) ou o número de paradas de tabulação a serem removidas do recuo (se negativo).</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-205">The number of tab stops to indent (if positive) or the number of tab stops to remove from the indent (if negative).</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="8b278-206">Define um recuo deslocado conforme um número especificado de paradas de tabulação.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-206">Sets a hanging indent to a specified number of tab stops.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="8b278-207">
+            <para>Pode ser usado para remover paradas de tabulação de um recuo deslocado se o valor da <paramref name="Count" /> for um número negativo.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-207">
+              <para>Can be used to remove tab stops from a hanging indent if the value of <paramref name="Count" /> is a negative number.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TabIndent">
+      <MemberSignature Language="C#" Value="public void TabIndent (short Count);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void TabIndent([in]int16 Count) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Paragraphs.TabIndent(System.Int16)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub TabIndent (Count As Short)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void TabIndent(short Count);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(306)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Count" Type="System.Int16" />
+      </Parameters>
+      <Docs>
+        <param name="Count">
+          <span data-ttu-id="8b278-208">Necessário <b>curta</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-208">Required <b>Short</b>.</span>
+          </span>
+          <span data-ttu-id="8b278-209">O número de paradas de tabulação a serem recuadas (se positivo) ou o número de paradas de tabulação a serem removidas do recuo (se negativo).</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-209">The number of tab stops to indent (if positive) or the number of tab stops to remove from the indent (if negative).</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="8b278-210">Define o recuo à esquerda dos parágrafos especificados com um número especificado de paradas de tabulação.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-210">Sets the left indent for the specified paragraphs to a specified number of tab stops.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="8b278-211">
+            <para>Também pode ser usado para remover o recuo se o valor da <paramref name="Count" /> for um número negativo.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-211">
+              <para>Can also be used to remove the indent if the value of <paramref name="Count" /> is a negative number.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TabStops">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.TabStops TabStops { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Word.TabStops TabStops" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.TabStops" />
+      <MemberSignature Language="VB.NET" Value="Public Property TabStops As TabStops" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::TabStops ^ TabStops { Microsoft::Office::Interop::Word::TabStops ^ get(); void set(Microsoft::Office::Interop::Word::TabStops ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1103)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1103)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1103)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Word.TabStops</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="8b278-212">Retorna ou define um <see cref="T:Microsoft.Office.Interop.Word.TabStops" /> para de coleção que representa a guia personalizada para os parágrafos especificados.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-212">Returns or sets a <see cref="T:Microsoft.Office.Interop.Word.TabStops" /> collection that represents all the custom tab stops for the specified paragraphs.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WidowControl">
+      <MemberSignature Language="C#" Value="public int WidowControl { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 WidowControl" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.WidowControl" />
+      <MemberSignature Language="VB.NET" Value="Public Property WidowControl As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int WidowControl { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(114)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(114)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(114)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="8b278-213">Determina se a primeira e última linhas no parágrafo especificado permanecerem na mesma página que o resto do parágrafo quando o Microsoft Word repaginar o documento.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-213">Determines if the first and last lines in the specified paragraph remain on the same page as the rest of the paragraph when Microsoft Word repaginates the document.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="8b278-214">
+            <para>Esta propriedade retorna <b>True</b> se a primeira e última linhas no parágrafo especificado permanecerem na mesma página que o resto do parágrafo quando o Word repaginar o documento e <b>False</b> se não. Defina o valor da propriedade como <b>True</b> ou <b>False</b> para habilitar ou desabilitar a funcionalidade.</para>
+            <para>Possíveis valores de retorno são <b>True</b>, <b>False</b> e <b>wdUndefined</b>.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-214">
+              <para>This property returns <b>True</b> if the first and last lines in the specified paragraph remain on the same page as the rest of the paragraph when Word repaginates the document, and <b>False</b> if not. Set the property value to <b>True</b> or <b>False</b> to enable or disable the functionality.</para>
+              <para>Possible return values are <b>True</b>, <b>False</b> and <b>wdUndefined</b>.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WordWrap">
+      <MemberSignature Language="C#" Value="public int WordWrap { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 WordWrap" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Paragraphs.WordWrap" />
+      <MemberSignature Language="VB.NET" Value="Public Property WordWrap As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int WordWrap { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(118)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(118)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(118)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="8b278-215">Determina se o Microsoft Word quebra o texto latino no meio de uma palavra no quadros de texto ou parágrafos especificados.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-215">Determines if Microsoft Word wraps Latin text in the middle of a word in the specified paragraphs or text frames.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="8b278-216">
+            <para>Esta propriedade retorna <b>True</b> se o Word distribui o texto latino no meio de uma palavra nos parágrafos especificados ou quadros de texto e <b>False</b> se não. Defina o valor da propriedade como <b>True</b> ou <b>False</b> para habilitar ou desabilitar a funcionalidade.</para>
+            <para>Esta propriedade retornará <b>wdUndefined</b> se definida como <b>True</b> para apenas alguns dos parágrafos especificados ou quadros de texto.</para>
+            <para>Este uso pode não estar disponível, dependendo do suporte a idioma (inglês americano, por exemplo) que você selecionou ou instalou.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="8b278-216">
+              <para>This property returns <b>True</b> if Word wraps Latin text in the middle of a word in the specified paragraphs or text frames, and <b>False</b> if not. Set the property value to <b>True</b> or <b>False</b> to enable or disable the functionality.</para>
+              <para>This property returns <b>wdUndefined</b> if set to <b>True</b> for only some of the specified paragraphs or text frames.</para>
+              <para>This usage may not be available to you, depending on the language support (U.S. English, for example) that you’ve selected or installed.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
