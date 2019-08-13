@@ -1,13 +1,5 @@
 <Type Name="Language" FullName="Microsoft.Office.Interop.Word.Language">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="040fc6fe1bbe3d61841dfc8c2ab0322e89c441c7" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20664511" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Language" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="6a420e980d31a95af3eadfbd098d98e9a7886930" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146658" /></Metadata><TypeSignature Language="C#" Value="public interface Language" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Language" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Language" />
   <TypeSignature Language="VB.NET" Value="Public Interface Language" />
@@ -26,40 +18,17 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-      <span data-ttu-id="997c7-101">Representa um idioma usado para verificação e formatação no Microsoft Word.</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="997c7-101">Represents a language used for proofing or formatting in Microsoft Word.</span>
-      </span>
-    </summary>
-    <remarks>
-      <span data-ttu-id="997c7-102">
-        <para>O objeto de <b>idioma</b> é um membro do <see cref="T:Microsoft.Office.Interop.Word.Languages" /> conjunto.</para>
-        <para>Uso de <b>idiomas</b>(<paramref name="index" />) para retornar um único objeto de <b>idioma</b> , onde <paramref name="index" /> pode ser o valor do <see cref="P:Microsoft.Office.Interop.Word.Language.Name" /> propriedade, o valor do <see cref="P:Microsoft.Office.Interop.Word.Language.NameLocal" /> propriedade, uma do <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> constantes ou uma do <see cref="T:Microsoft.Office.Core.MsoLanguageID" /> constantes.</para>
-        <para>o <see cref="P:Microsoft.Office.Interop.Word.Language.Name" /> propriedade retorna o nome de um idioma, enquanto o <see cref="P:Microsoft.Office.Interop.Word.Language.NameLocal" /> propriedade retorna o nome de um idioma no idioma do usuário.</para>
-        <para>Para cada idioma para o qual os revisores estão instalados, você pode usar o <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveGrammarDictionary" />, <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveHyphenationDictionary" />, <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveSpellingDictionary" />, e <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveThesaurusDictionary" /> propriedades para retornar a correspondente <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> objeto.</para>
-        <para>o estilo de texto é o conjunto de regras usado pelo verificador gramatical. O <see cref="P:Microsoft.Office.Interop.Word.Language.WritingStyleList" /> propriedade retorna uma matriz de cadeias de caracteres que representam os estilos de texto disponíveis para o idioma especificado.</para>
-        <para>Usar o <see cref="P:Microsoft.Office.Interop.Word.Language.DefaultWritingStyle" /> propriedade para definir o estilo de texto você deseja que o Word para usar o padrão.</para>
-        <para>, Você pode substituir o texto do estilo com padrão a <see cref="P:Microsoft.Office.Interop.Word._Document.ActiveWritingStyle(System.Object@)" /> propriedade. Essa propriedade é aplicada a um documento especificado para o texto marcado em um idioma especificado.</para>
-        <para>Você deve ter as ferramentas de revisão de texto instaladas para cada idioma que você pretende verificar.</para>
-        <para>Quando você marca um texto como <b>wdNoProofing</b>, o Word ignora o texto marcado ao executar uma verificação ortográfica ou gramatical.</para>
-        <para />
-      </span>
-      <span class="sxs-lookup">
-        <span data-stu-id="997c7-102">
-          <para>The <b>Language</b> object is a member of the <see cref="T:Microsoft.Office.Interop.Word.Languages" /> collection.</para>
-          <para>Use <b>Languages</b>(<paramref name="index" />) to return a single <b>Language</b> object, where <paramref name="index" /> can be the value of the <see cref="P:Microsoft.Office.Interop.Word.Language.Name" /> property, the value of the <see cref="P:Microsoft.Office.Interop.Word.Language.NameLocal" /> property, one of the <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> constants, or one of the <see cref="T:Microsoft.Office.Core.MsoLanguageID" /> constants.</para>
-          <para>The <see cref="P:Microsoft.Office.Interop.Word.Language.Name" /> property returns the name of a language, whereas the <see cref="P:Microsoft.Office.Interop.Word.Language.NameLocal" /> property returns the name of a language in the language of the user.</para>
-          <para>For each language for which proofing tools are installed, you can use the <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveGrammarDictionary" />, <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveHyphenationDictionary" />, <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveSpellingDictionary" />, and <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveThesaurusDictionary" /> properties to return the corresponding <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> object.</para>
-          <para>The writing style is the set of rules used by the grammar checker. The <see cref="P:Microsoft.Office.Interop.Word.Language.WritingStyleList" /> property returns an array of strings that represent the available writing styles for the specified language.</para>
-          <para>Use the <see cref="P:Microsoft.Office.Interop.Word.Language.DefaultWritingStyle" /> property to set the default writing style you want Word to use.</para>
-          <para>You can override the default writing style with the <see cref="P:Microsoft.Office.Interop.Word._Document.ActiveWritingStyle(System.Object@)" /> property. This property is applied to a specified document for text marked in a specified language.</para>
-          <para>You must have the proofing tools installed for each language you intend to check.</para>
-          <para>If you mark text as <b>wdNoProofing</b>, Word skips the marked text when running a spelling or grammar check.</para>
-          <para />
-        </span>
-      </span>
-    </remarks>
+    <summary><span data-ttu-id="1ba0b-101">Representa um idioma usado para verificação e formatação no Microsoft Word.</span><span class="sxs-lookup"><span data-stu-id="1ba0b-101">Represents a language used for proofing or formatting in Microsoft Word.</span></span></summary>
+    <remarks><para><span data-ttu-id="1ba0b-102">O objeto <b>Language</b> é um membro da <see cref="T:Microsoft.Office.Interop.Word.Languages" /> coleção.</span><span class="sxs-lookup"><span data-stu-id="1ba0b-102">The <b>Language</b> object is a member of the <see cref="T:Microsoft.Office.Interop.Word.Languages" /> collection.</span></span></para>
+      <para><span data-ttu-id="1ba0b-103">Use <b></b>Languages<paramref name="index" />() para retornar um único objeto <b>Language</b> , <paramref name="index" /> onde pode ser o valor da <see cref="P:Microsoft.Office.Interop.Word.Language.Name" /> Propriedade, o valor da <see cref="P:Microsoft.Office.Interop.Word.Language.NameLocal" /> Propriedade, uma das <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> constantes ou uma das <see cref="T:Microsoft.Office.Core.MsoLanguageID" /> constantes.</span><span class="sxs-lookup"><span data-stu-id="1ba0b-103">Use <b>Languages</b>(<paramref name="index" />) to return a single <b>Language</b> object, where <paramref name="index" /> can be the value of the <see cref="P:Microsoft.Office.Interop.Word.Language.Name" /> property, the value of the <see cref="P:Microsoft.Office.Interop.Word.Language.NameLocal" /> property, one of the <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> constants, or one of the <see cref="T:Microsoft.Office.Core.MsoLanguageID" /> constants.</span></span></para>
+      <para><span data-ttu-id="1ba0b-104">A <see cref="P:Microsoft.Office.Interop.Word.Language.Name" /> propriedade retorna o nome de um idioma, enquanto a <see cref="P:Microsoft.Office.Interop.Word.Language.NameLocal" /> propriedade retorna o nome de um idioma no idioma do usuário.</span><span class="sxs-lookup"><span data-stu-id="1ba0b-104">The <see cref="P:Microsoft.Office.Interop.Word.Language.Name" /> property returns the name of a language, whereas the <see cref="P:Microsoft.Office.Interop.Word.Language.NameLocal" /> property returns the name of a language in the language of the user.</span></span></para>
+      <para><span data-ttu-id="1ba0b-105">Para cada idioma para o qual as ferramentas de revisão são instaladas, você <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveGrammarDictionary" />pode <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveHyphenationDictionary" />usar <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveSpellingDictionary" />as propriedades <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveThesaurusDictionary" /> ,, e para retornar <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> o objeto correspondente.</span><span class="sxs-lookup"><span data-stu-id="1ba0b-105">For each language for which proofing tools are installed, you can use the <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveGrammarDictionary" />, <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveHyphenationDictionary" />, <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveSpellingDictionary" />, and <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveThesaurusDictionary" /> properties to return the corresponding <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> object.</span></span></para>
+      <para><span data-ttu-id="1ba0b-106">O estilo de texto é o conjunto de regras usado pelo verificador gramatical.</span><span class="sxs-lookup"><span data-stu-id="1ba0b-106">The writing style is the set of rules used by the grammar checker.</span></span> <span data-ttu-id="1ba0b-107">A <see cref="P:Microsoft.Office.Interop.Word.Language.WritingStyleList" /> propriedade retorna uma matriz de cadeias de caracteres que representam os estilos de texto disponíveis para o idioma especificado.</span><span class="sxs-lookup"><span data-stu-id="1ba0b-107">The <see cref="P:Microsoft.Office.Interop.Word.Language.WritingStyleList" /> property returns an array of strings that represent the available writing styles for the specified language.</span></span></para>
+      <para><span data-ttu-id="1ba0b-108">Use a <see cref="P:Microsoft.Office.Interop.Word.Language.DefaultWritingStyle" /> propriedade para definir o estilo de texto padrão que você deseja que o Word use.</span><span class="sxs-lookup"><span data-stu-id="1ba0b-108">Use the <see cref="P:Microsoft.Office.Interop.Word.Language.DefaultWritingStyle" /> property to set the default writing style you want Word to use.</span></span></para>
+      <para><span data-ttu-id="1ba0b-109">Você pode substituir o estilo de texto padrão pela <see cref="P:Microsoft.Office.Interop.Word._Document.ActiveWritingStyle(System.Object@)" /> propriedade.</span><span class="sxs-lookup"><span data-stu-id="1ba0b-109">You can override the default writing style with the <see cref="P:Microsoft.Office.Interop.Word._Document.ActiveWritingStyle(System.Object@)" /> property.</span></span> <span data-ttu-id="1ba0b-110">Essa propriedade é aplicada a um documento especificado para o texto marcado em um idioma especificado.</span><span class="sxs-lookup"><span data-stu-id="1ba0b-110">This property is applied to a specified document for text marked in a specified language.</span></span></para>
+      <para><span data-ttu-id="1ba0b-111">[!OBSERVAçãO] É necessário que você tenha os revisores de texto instalados para cada idioma que você pretende verificar.</span><span class="sxs-lookup"><span data-stu-id="1ba0b-111">You must have the proofing tools installed for each language you intend to check.</span></span></para>
+      <para><span data-ttu-id="1ba0b-112">Quando você marca um texto como <b>wdNoProofing</b>, o Word ignora o texto marcado ao executar uma verificação ortográfica ou gramatical.</span><span class="sxs-lookup"><span data-stu-id="1ba0b-112">If you mark text as <b>wdNoProofing</b>, Word skips the marked text when running a spelling or grammar check.</span></span></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="ActiveGrammarDictionary">
@@ -85,25 +54,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Dictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="997c7-103">Retorna um <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> object que representa o dicionário gramatical ativo para o idioma especificado.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="997c7-103">Returns a <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> object that represents the active grammar dictionary for the specified language.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="1ba0b-113">Retorna um <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> objeto que representa o dicionário gramatical ativo para o idioma especificado.</span><span class="sxs-lookup"><span data-stu-id="1ba0b-113">Returns a <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> object that represents the active grammar dictionary for the specified language.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="997c7-104">
-            <para>Se não houver dicionário gramatical instalado para o idioma especificado, essa propriedade retornará <b>Nothing</b>.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="997c7-104">
-              <para>If there's no grammar dictionary installed for the specified language, this property returns <b>Nothing</b>.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="1ba0b-114">Se não houver nenhum dicionário de gramática instalado para o idioma especificado, essa propriedade retornará <b>Nothing</b>.</span><span class="sxs-lookup"><span data-stu-id="1ba0b-114">If there's no grammar dictionary installed for the specified language, this property returns <b>Nothing</b>.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ActiveHyphenationDictionary">
@@ -129,25 +83,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Dictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="997c7-105">Retorna um <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> object que representa o dicionário de hifenização ativo para o idioma especificado.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="997c7-105">Returns a <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> object that represents the active hyphenation dictionary for the specified language.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="1ba0b-115">Retorna um <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> objeto que representa o dicionário de hifenização ativo para o idioma especificado.</span><span class="sxs-lookup"><span data-stu-id="1ba0b-115">Returns a <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> object that represents the active hyphenation dictionary for the specified language.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="997c7-106">
-            <para>Se não houver nenhum dicionário de hifenização instalado para o idioma especificado, essa propriedade retornará <b>Nothing</b>.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="997c7-106">
-              <para>If there's no hyphenation dictionary installed for the specified language, this property returns <b>Nothing</b>.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="1ba0b-116">Se não houver nenhum dicionário de hifenização instalado para o idioma especificado, essa propriedade retornará <b>Nothing</b>.</span><span class="sxs-lookup"><span data-stu-id="1ba0b-116">If there's no hyphenation dictionary installed for the specified language, this property returns <b>Nothing</b>.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ActiveSpellingDictionary">
@@ -173,25 +112,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Dictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="997c7-107">Retorna um <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> object que representa o dicionário de ortografia ativo para o idioma especificado.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="997c7-107">Returns a <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> object that represents the active spelling dictionary for the specified language.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="1ba0b-117">Retorna um <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> objeto que representa o dicionário de ortografia ativo para o idioma especificado.</span><span class="sxs-lookup"><span data-stu-id="1ba0b-117">Returns a <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> object that represents the active spelling dictionary for the specified language.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="997c7-108">
-            <para>Se não houver nenhum dicionário de ortografia instalado para o idioma especificado, essa propriedade retornará <b>Nothing</b>.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="997c7-108">
-              <para>If there's no spelling dictionary installed for the specified language, this property returns <b>Nothing</b>.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="1ba0b-118">Se não houver nenhum dicionário de ortografia instalado para o idioma especificado, essa propriedade retornará <b>Nothing</b>.</span><span class="sxs-lookup"><span data-stu-id="1ba0b-118">If there's no spelling dictionary installed for the specified language, this property returns <b>Nothing</b>.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ActiveThesaurusDictionary">
@@ -217,25 +141,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Dictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="997c7-109">Retorna um <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> object que representa o dicionário de sinônimos ativo para o idioma especificado.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="997c7-109">Returns a <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> object that represents the active thesaurus dictionary for the specified language.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="1ba0b-119">Retorna um <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> objeto que representa o dicionário de sinônimos ativo para o idioma especificado.</span><span class="sxs-lookup"><span data-stu-id="1ba0b-119">Returns a <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> object that represents the active thesaurus dictionary for the specified language.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="997c7-110">
-            <para>Se não houver nenhum dicionário de sinônimos instalado para o idioma especificado, essa propriedade retornará <b>Nothing</b>.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="997c7-110">
-              <para>If there's no thesaurus dictionary installed for the specified language, this property returns <b>Nothing</b>.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="1ba0b-120">Se não houver um dicionário de sinônimos instalado para o idioma especificado, essa propriedade retornará <b>Nothing</b>.</span><span class="sxs-lookup"><span data-stu-id="1ba0b-120">If there's no thesaurus dictionary installed for the specified language, this property returns <b>Nothing</b>.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -261,12 +170,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="997c7-111">Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="997c7-111">Returns a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="1ba0b-121">Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</span><span class="sxs-lookup"><span data-stu-id="1ba0b-121">Returns a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -294,25 +198,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="997c7-112">Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="997c7-112">Returns a 32-bit integer that indicates the application in which the specified object was created.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="1ba0b-122">Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</span><span class="sxs-lookup"><span data-stu-id="1ba0b-122">Returns a 32-bit integer that indicates the application in which the specified object was created.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="997c7-113">
-            <para>Se o objeto foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
-          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></span>
-          <span class="sxs-lookup">
-            <span data-stu-id="997c7-113">
-              <para>If the object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD." This value can also be represented by the constant <b>wdCreatorCode</b>.</para>
-              <para>The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code. For example, Microsoft Word has the creator code MSWD. For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="1ba0b-123">Se o objeto foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD".</span><span class="sxs-lookup"><span data-stu-id="1ba0b-123">If the object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span> <span data-ttu-id="1ba0b-124">[!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</span><span class="sxs-lookup"><span data-stu-id="1ba0b-124">This value can also be represented by the constant <b>wdCreatorCode</b>.</span></span></para>
+          <para><span data-ttu-id="1ba0b-125">A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres.</span><span class="sxs-lookup"><span data-stu-id="1ba0b-125">The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="1ba0b-126">Por exemplo, o Microsoft Word tem o código de criador MSWD.</span><span class="sxs-lookup"><span data-stu-id="1ba0b-126">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="1ba0b-127">Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</span><span class="sxs-lookup"><span data-stu-id="1ba0b-127">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultWritingStyle">
@@ -341,31 +231,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="997c7-114">Retorna ou define o estilo usado pelo verificador gramatical para o idioma especificado de texto padrão.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="997c7-114">Returns or sets the default writing style used by the grammar checker for the specified language.</span>
-          </span>
-          <span data-ttu-id="997c7-115">O nome do estilo escrita é o nome localizado para o idioma especificado.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="997c7-115">The name of the writing style is the localized name for the specified language.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="1ba0b-128">Retorna ou define o estilo usado pelo verificador gramatical para o idioma especificado de texto padrão.</span><span class="sxs-lookup"><span data-stu-id="1ba0b-128">Returns or sets the default writing style used by the grammar checker for the specified language.</span></span> <span data-ttu-id="1ba0b-129">The name of the writing style is the localized name for the specified language.</span><span class="sxs-lookup"><span data-stu-id="1ba0b-129">The name of the writing style is the localized name for the specified language.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="997c7-116">
-            <para>Esta propriedade controlará a configuração global para o estilo de texto. Ao definir essa propriedade, você deve usar o nome exato encontrado na caixa de estilo de escrita na ortografia &amp; guia gramática na caixa de diálogo Opções (menu Ferramentas).</para>
-            <para>o <see cref="P:Microsoft.Office.Interop.Word._Document.ActiveWritingStyle(System.Object@)" /> propriedade define o estilo de texto para cada idioma em um documento. A configuração de <b>ActiveWritingStyle</b> sobrescreve a configuração <b>DefaultWritingStyle</b> .</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="997c7-116">
-              <para>This property controls the global setting for the writing style. When setting this property, you must use the exact name found in the Writing style box on the Spelling &amp; Grammar tab in the Options dialog box (Tools menu).</para>
-              <para>The <see cref="P:Microsoft.Office.Interop.Word._Document.ActiveWritingStyle(System.Object@)" /> property sets the writing style for each language in a document. The <b>ActiveWritingStyle</b> setting overrides the <b>DefaultWritingStyle</b> setting.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="1ba0b-130">This property controls the global setting for the writing style.</span><span class="sxs-lookup"><span data-stu-id="1ba0b-130">This property controls the global setting for the writing style.</span></span> <span data-ttu-id="1ba0b-131">Ao definir essa propriedade, você deve usar o nome exato encontrado na caixa estilo de texto na guia gramática &amp; ortográfica da caixa de diálogo Opções (menu ferramentas).</span><span class="sxs-lookup"><span data-stu-id="1ba0b-131">When setting this property, you must use the exact name found in the Writing style box on the Spelling &amp; Grammar tab in the Options dialog box (Tools menu).</span></span></para>
+          <para><span data-ttu-id="1ba0b-132">A <see cref="P:Microsoft.Office.Interop.Word._Document.ActiveWritingStyle(System.Object@)" /> propriedade define o estilo de texto para cada idioma em um documento.</span><span class="sxs-lookup"><span data-stu-id="1ba0b-132">The <see cref="P:Microsoft.Office.Interop.Word._Document.ActiveWritingStyle(System.Object@)" /> property sets the writing style for each language in a document.</span></span> <span data-ttu-id="1ba0b-133">A configuração de <b>ActiveWritingStyle</b> sobrescreve a configuração <b>DefaultWritingStyle</b>.</span><span class="sxs-lookup"><span data-stu-id="1ba0b-133">The <b>ActiveWritingStyle</b> setting overrides the <b>DefaultWritingStyle</b> setting.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ID">
@@ -391,25 +261,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdLanguageID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="997c7-117">Retorna um número que identifica o idioma especificado.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="997c7-117">Returns a number that identifies the specified language.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="1ba0b-134">Retorna um número que identifica o idioma especificado.</span><span class="sxs-lookup"><span data-stu-id="1ba0b-134">Returns a number that identifies the specified language.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="997c7-118">
-            <para>A propriedade <b>ID</b> pode ser uma do <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> constantes.</para>
-            <para />
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="997c7-118">
-              <para>The <b>ID</b> property can be one of the <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> constants.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="1ba0b-135">A propriedade <b>ID</b> pode ser uma das <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> constantes.</span><span class="sxs-lookup"><span data-stu-id="1ba0b-135">The <b>ID</b> property can be one of the <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> constants.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -435,12 +290,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="997c7-119">Retorna ou define o nome do objeto especificado.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="997c7-119">Returns or sets the name of the specified object.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="1ba0b-136">Retorna ou define o nome do objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="1ba0b-136">Returns or sets the name of the specified object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -468,12 +318,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="997c7-120">Retorna o nome de um idioma de ferramenta de revisão de texto no idioma do usuário.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="997c7-120">Returns the name of a proofing tool language in the language of the user.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="1ba0b-137">Retorna o nome de um idioma de ferramenta de revisão de texto no idioma do usuário.</span><span class="sxs-lookup"><span data-stu-id="1ba0b-137">Returns the name of a proofing tool language in the language of the user.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -501,12 +346,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="997c7-121">Retorna um objeto que representa o objeto pai do objeto especificado.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="997c7-121">Returns an object that represents the parent object of the specified object.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="1ba0b-138">Retorna um objeto que representa o objeto pai do objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="1ba0b-138">Returns an object that represents the parent object of the specified object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -537,29 +377,11 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdDictionaryType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="997c7-122">Retorna ou define o tipo de ferramenta de revisão de texto.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="997c7-122">Returns or sets the proofing tool type.</span>
-          </span>
-          <span data-ttu-id="997c7-123">Leitura/gravação.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="997c7-123">Read/write.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="1ba0b-139">Retorna ou define o tipo de ferramenta de revisão de texto.</span><span class="sxs-lookup"><span data-stu-id="1ba0b-139">Returns or sets the proofing tool type.</span></span> <span data-ttu-id="1ba0b-140">Leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="1ba0b-140">Read/write.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <span data-ttu-id="997c7-124">
-            <para>, Você pode usar essa propriedade para alterar o dicionário de ortografia ativo para um dos dicionários suplementares disponíveis que funcionam com o Microsoft Word. Por exemplo, existem dicionários de ortografia de legais, médicos e completa, você pode usar em vez do dicionário padrão.</para> Propriedade 
-          <para>o <b>SpellingDictionaryType</b> pode ser uma do <see cref="T:Microsoft.Office.Interop.Word.WdDictionaryType" /> constantes. Algumas dessas constantes podem não estar disponíveis para você, dependendo do suporte a idioma (inglês americano, por exemplo) que você selecionou ou instalou.</para><para /></span>
-          <span class="sxs-lookup">
-            <span data-stu-id="997c7-124">
-              <para>You can use this property to change the active spelling dictionary to one of the available add-on dictionaries that work with Microsoft Word. For example, there are legal, medical, and complete spelling dictionaries you can use instead of the standard dictionary.</para>
-              <para>The <b>SpellingDictionaryType</b> property can be one of the <see cref="T:Microsoft.Office.Interop.Word.WdDictionaryType" /> constants. Some of these constants may not be available to you, depending on the language support (U.S. English, for example) that you’ve selected or installed.</para>
-              <para />
-            </span>
-          </span>
-        </remarks>
+        <remarks><para><span data-ttu-id="1ba0b-141">Você pode usar essa propriedade para alterar o dicionário de ortografia ativo para um dos dicionários complementares disponíveis que funcionam com o Microsoft Word.</span><span class="sxs-lookup"><span data-stu-id="1ba0b-141">You can use this property to change the active spelling dictionary to one of the available add-on dictionaries that work with Microsoft Word.</span></span> <span data-ttu-id="1ba0b-142">Por exemplo, existem dicionários de ortografia completos, jurídicos e médicos que você pode usar em vez do dicionário padrão.</span><span class="sxs-lookup"><span data-stu-id="1ba0b-142">For example, there are legal, medical, and complete spelling dictionaries you can use instead of the standard dictionary.</span></span></para>
+          <para><span data-ttu-id="1ba0b-143">A propriedade <b>SpellingDictionaryType</b> pode ser uma das <see cref="T:Microsoft.Office.Interop.Word.WdDictionaryType" /> constantes.</span><span class="sxs-lookup"><span data-stu-id="1ba0b-143">The <b>SpellingDictionaryType</b> property can be one of the <see cref="T:Microsoft.Office.Interop.Word.WdDictionaryType" /> constants.</span></span> <span data-ttu-id="1ba0b-144">Algumas dessas constantes podem não estar disponíveis, dependendo do suporte a idioma (português do Brasil, por exemplo) que você selecionou ou instalou.</span><span class="sxs-lookup"><span data-stu-id="1ba0b-144">Some of these constants may not be available to you, depending on the language support (U.S. English, for example) that you’ve selected or installed.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="WritingStyleList">
@@ -585,12 +407,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="997c7-125">Retorna uma matriz de cadeia de caracteres que contém os nomes de todos os estilos de texto disponíveis para o idioma especificado.</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="997c7-125">Returns a string array that contains the names of all writing styles available for the specified language.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="1ba0b-145">Retorna uma matriz de cadeia de caracteres que contém os nomes de todos os estilos de texto disponíveis para o idioma especificado.</span><span class="sxs-lookup"><span data-stu-id="1ba0b-145">Returns a string array that contains the names of all writing styles available for the specified language.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
