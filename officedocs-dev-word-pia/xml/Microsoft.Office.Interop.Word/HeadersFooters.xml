@@ -1,13 +1,5 @@
 <Type Name="HeadersFooters" FullName="Microsoft.Office.Interop.Word.HeadersFooters">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="32606f0e2fa1a2e01b68a8926235fb029c8bcf6a" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20665434" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface HeadersFooters : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="bbb3145635811002276f2778bca17d7fa3c40db1" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147995" /></Metadata><TypeSignature Language="C#" Value="public interface HeadersFooters : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract HeadersFooters implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.HeadersFooters" />
   <TypeSignature Language="VB.NET" Value="Public Interface HeadersFooters&#xA;Implements IEnumerable" />
@@ -31,14 +23,15 @@
   </Attributes>
   <Docs>
     <summary>Uma coleção de <see cref="T:Microsoft.Office.Interop.Word.HeaderFooter" /> objetos que representam os cabeçalhos ou rodapés na seção especificada de um documento.</summary>
-    <remarks>
-      <para>Use o <see cref="P:Microsoft.Office.Interop.Word.Section.Headers" /> ou <see cref="P:Microsoft.Office.Interop.Word.Section.Footers" /> propriedade para retornar a coleção <b>HeadersFooters</b> .</para>
+    <remarks><para>Use a <see cref="P:Microsoft.Office.Interop.Word.Section.Headers" /> propriedade <see cref="P:Microsoft.Office.Interop.Word.Section.Footers" /> ou para retornar a coleção <b>HeadersFooters</b> .</para>
       <para>
-        <b>Observação</b>: você não pode adicionar objetos <b>HeaderFooter</b> à coleção <b>HeadersFooters</b> .</para>
-      <para>Usar <b>cabeçalhos</b>(<paramref name="index" />) ou <b>rodapés</b>(<paramref name="index" />), onde <paramref name="index" /> é uma do <see cref="T:Microsoft.Office.Interop.Word.WdHeaderFooterIndex" /> constantes (<b>wdHeaderFooterEvenPages</b>, <b>wdHeaderFooterFirstPage</b>ou <b>wdHeaderFooterPrimary</b>), a retornar um único objeto <b>HeaderFooter</b> .</para>
-      <para>Você também pode retornar um único objeto <b>HeaderFooter</b> usando a <see cref="P:Microsoft.Office.Interop.Word.Selection.HeaderFooter" /> propriedade com um <see cref="T:Microsoft.Office.Interop.Word.Selection" /> objeto.</para>
-      <para>Uso o <see cref="P:Microsoft.Office.Interop.Word.PageSetup.DifferentFirstPageHeaderFooter" /> propriedade com a <see cref="T:Microsoft.Office.Interop.Word.PageSetup" /> objeto para especificar uma primeira página diferente.</para> Uso de 
-      <para>o <see cref="P:Microsoft.Office.Interop.Word.PageSetup.OddAndEvenPagesHeaderFooter" /> propriedade com o objeto <b>PageSetup</b> para especificar diferentes e até mesmo página cabeçalhos e rodapés ímpares. Se a propriedade <b>OddAndEvenPagesHeaderFooter</b> for <b>True</b>, você pode retornar um cabeçalho ou rodapé ímpar usando <b>wdHeaderFooterPrimary</b>e você pode retornar um cabeçalho ou rodapé usando <b>wdHeaderFooterEvenPages</b>.</para><para>Uso o <see cref="M:Microsoft.Office.Interop.Word.PageNumbers.Add(System.Object@,System.Object@)" /> método com o <see cref="T:Microsoft.Office.Interop.Word.PageNumbers" /> objeto para adicionar um número de página a um cabeçalho ou rodapé.</para><para /></remarks>
+        <b>Observação</b>: não é possível adicionar objetos <b>HeaderFooter</b> à coleção <b>HeadersFooters</b> .</para>
+      <para>Use <b>cabeçalhos</b>(<paramref name="index" />) ou <b>rodapés</b>(<paramref name="index" />), onde <paramref name="index" /> é uma <see cref="T:Microsoft.Office.Interop.Word.WdHeaderFooterIndex" /> das constantes (<b>wdHeaderFooterEvenPages</b>, <b>wdHeaderFooterFirstPage</b>ou <b>wdHeaderFooterPrimary</b>), para retornar um único <b> Objeto HeaderFooter</b> .</para>
+      <para>Você também pode retornar um único objeto <b>HeaderFooter</b> usando a <see cref="P:Microsoft.Office.Interop.Word.Selection.HeaderFooter" /> Propriedade com um <see cref="T:Microsoft.Office.Interop.Word.Selection" /> objeto.</para>
+      <para>Use a <see cref="P:Microsoft.Office.Interop.Word.PageSetup.DifferentFirstPageHeaderFooter" /> Propriedade com o <see cref="T:Microsoft.Office.Interop.Word.PageSetup" /> objeto para especificar uma primeira página diferente.</para>
+      <para>Use a <see cref="P:Microsoft.Office.Interop.Word.PageSetup.OddAndEvenPagesHeaderFooter" /> Propriedade com o objeto <b>PageSetup</b> para especificar cabeçalhos e rodapés de páginas ímpares e pares diferentes. Quando a propriedade <b>OddAndEvenPagesHeaderFooter</b> é <b>verdadeira</b>, você pode retornar um cabeçalho ou rodapé ímpar usando <b>wdHeaderFooterPrimary</b> e é possível retornar um cabeçalho ou rodapé usando <b>wdHeaderFooterEvenPages</b>.</para>
+      <para>Use o <see cref="M:Microsoft.Office.Interop.Word.PageNumbers.Add(System.Object@,System.Object@)" /> método com o <see cref="T:Microsoft.Office.Interop.Word.PageNumbers" /> objeto para adicionar um número de página a um cabeçalho ou rodapé.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -64,7 +57,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -122,9 +115,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
-          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". [!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
+          <para>A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -185,7 +178,7 @@
         <Parameter Name="Index" Type="Microsoft.Office.Interop.Word.WdHeaderFooterIndex" />
       </Parameters>
       <Docs>
-        <param name="Index">Necessário <see cref="T:Microsoft.Office.Interop.Word.WdHeaderFooterIndex" />. Uma constante que especifica o cabeçalho ou rodapé da seleção. Pode ser uma das seguintes constantes <b>WdHeaderFooterIndex</b> :<b>wdHeaderFooterEvenPages</b><b>wdHeaderFooterFirstPage</b><b>wdHeaderFooterPrimary</b></param>
+        <param name="Index">Necessário <see cref="T:Microsoft.Office.Interop.Word.WdHeaderFooterIndex" />. Uma constante que especifica o cabeçalho ou rodapé na seleção. Pode ser uma das seguintes constantes <b>WdHeaderFooterIndex</b> :<b>wdHeaderFooterEvenPages</b><b>wdHeaderFooterFirstPage</b><b>wdHeaderFooterPrimary</b></param>
         <summary>Retorna um cabeçalho ou rodapé em um intervalo ou seleção.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

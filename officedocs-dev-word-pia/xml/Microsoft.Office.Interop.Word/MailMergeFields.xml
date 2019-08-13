@@ -1,13 +1,5 @@
 <Type Name="MailMergeFields" FullName="Microsoft.Office.Interop.Word.MailMergeFields">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="81695bc0d7c2fa5c37720ad879012f8adc13b827" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20663832" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface MailMergeFields : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="3120d6713fa67507a7ea299781a6f722aba24386" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147876" /></Metadata><TypeSignature Language="C#" Value="public interface MailMergeFields : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract MailMergeFields implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.MailMergeFields" />
   <TypeSignature Language="VB.NET" Value="Public Interface MailMergeFields&#xA;Implements IEnumerable" />
@@ -30,14 +22,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Uma coleção de <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> objetos que representam a mala direta relacionados a campos em um documento.</summary>
-    <remarks>
-      <para>Use o <see cref="P:Microsoft.Office.Interop.Word.MailMerge.Fields" /> propriedade para retornar a coleção <b>MailMergeFields</b> .</para>
-      <para>Uso o <see cref="M:Microsoft.Office.Interop.Word.MailMergeFields.Add(Microsoft.Office.Interop.Word.Range,System.String)" /> método para adicionar um campo de mesclagem à coleção <b>MailMergeFields</b> .</para>
-      <para>Uso de <b>campos</b>(<paramref name="index" />), onde <paramref name="index" /> é o número de índice, para retornar um único objeto <b>MailMergeField</b> .</para>
-      <para>a coleção <b>MailMergeFields</b> tem métodos adicionais, como <see cref="M:Microsoft.Office.Interop.Word.MailMergeFields.AddAsk(Microsoft.Office.Interop.Word.Range,System.String,System.Object@,System.Object@,System.Object@)" /> e <see cref="M:Microsoft.Office.Interop.Word.MailMergeFields.AddFillIn(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@)" />, para adicionar campos relacionados a uma operação de mala direta.</para>
-      <para />
-    </remarks>
+    <summary>Uma coleção de <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> objetos que representa os campos relacionados à mala direta em um documento.</summary>
+    <remarks><para>Use a <see cref="P:Microsoft.Office.Interop.Word.MailMerge.Fields" /> propriedade para retornar a coleção <b>MailMergeFields</b> .</para>
+      <para>Use o <see cref="M:Microsoft.Office.Interop.Word.MailMergeFields.Add(Microsoft.Office.Interop.Word.Range,System.String)" /> método para adicionar um campo de mesclagem à coleção <b>MailMergeFields</b> .</para>
+      <para>Use <b></b>Fields<paramref name="index" />(), <paramref name="index" /> onde é o número de índice, para retornar um único objeto <b>MailMergeField</b> .</para>
+      <para>A coleção <b>MailMergeFields</b> tem métodos adicionais, como <see cref="M:Microsoft.Office.Interop.Word.MailMergeFields.AddAsk(Microsoft.Office.Interop.Word.Range,System.String,System.Object@,System.Object@,System.Object@)" /> e <see cref="M:Microsoft.Office.Interop.Word.MailMergeFields.AddFillIn(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@)" />, para adicionar campos relacionados a uma operação de mala direta.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -63,10 +53,9 @@
         <Parameter Name="Name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Range">Necessário <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto. O intervalo onde você deseja que o campo apareça. Esse campo substitui o intervalo, caso o intervalo não esteja recolhido.</param>
-        <param name="Name">
-          <b>String</b> necessário. O nome do campo.</param>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> objeto que representa um campo de mala direta adicionado ao documento de origem de dados.</summary>
+        <param name="Range">Objeto <see cref="T:Microsoft.Office.Interop.Word.Range" /> necessário. O intervalo onde você deseja que o campo apareça. Esse campo substitui o intervalo, caso o intervalo não esteja recolhido.</param>
+        <param name="Name"><b>String</b> necessário. O nome do campo.</param>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> objeto que representa um campo de mala direta adicionado ao documento de fonte de dados.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -96,21 +85,15 @@
         <Parameter Name="AskOnce" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">Necessário <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto. A localização do campo ASK.</param>
-        <param name="Name">
-          <b>String</b> necessário. O nome do indicador que o texto de resposta ou padrão é atribuído a. Use um campo REF com o nome do indicador para exibir o resultado em um documento.</param>
-        <param name="Prompt">
-          <b>Objeto</b>de opcional. O texto exibido na caixa de diálogo.</param>
-        <param name="DefaultAskText">
-          <b>Objeto</b>de opcional. A resposta padrão que aparece na caixa de texto quando a caixa de diálogo é exibida. Corresponde à opção \d de um campo ASK.</param>
-        <param name="AskOnce">
-          <b>Objeto</b>de opcional. <b>True</b> para exibir a caixa de diálogo somente uma vez, em vez de cada vez que um novo registro de dados é mesclado. Corresponde à opção \o de um campo ASK.</param>
+        <param name="Range">Objeto <see cref="T:Microsoft.Office.Interop.Word.Range" /> necessário. A localização do campo ASK.</param>
+        <param name="Name"><b>String</b> necessário. O nome do indicador ao qual a resposta ou o texto padrão será atribuído. Use um campo REF com o nome do indicador para exibir o resultado em um documento.</param>
+        <param name="Prompt"><b>Objeto</b>opcional. O texto exibido na caixa de diálogo.</param>
+        <param name="DefaultAskText"><b>Objeto</b>opcional. A resposta padrão que aparece na caixa de texto quando a caixa de diálogo é exibida. Corresponde à opção \d para um campo ASK.</param>
+        <param name="AskOnce"><b>Objeto</b>opcional. <b>True</b> para exibir a caixa de diálogo somente uma vez, em vez de cada vez que um novo registro de dados é mesclado. Corresponde à opção \o de um campo ASK.</param>
         <summary>Adiciona um campo ASK a um documento principal de mala direta. Retorna um <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> objeto.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Quando atualizado, um campo ASK exibe uma caixa de diálogo solicitando que você texto atribuir ao indicador especificado.</para>
-          <para />
-        </remarks>
+        <remarks><para>Quando atualizado, um campo ASK exibe uma caixa de diálogo solicitando um texto para atribuir ao indicador especificado.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddFillIn">
@@ -137,20 +120,15 @@
         <Parameter Name="AskOnce" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">Necessário <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto. A posição do campo FILLIN.</param>
-        <param name="Prompt">
-          <b>Objeto</b>de opcional. O texto exibido na caixa de diálogo.</param>
-        <param name="DefaultFillInText">
-          <b>Objeto</b>de opcional. A resposta padrão que aparece na caixa de texto quando a caixa de diálogo é exibida. Corresponde à opção \d de um campo FILLIN.</param>
-        <param name="AskOnce">
-          <b>Objeto</b>de opcional. <b>True</b> para exibir o prompt de uma única vez, em vez de cada vez que um novo registro de dados é mesclado. Corresponde à opção \o de um campo FILLIN. O valor padrão é <b>False</b>.</param>
+        <param name="Range">Objeto <see cref="T:Microsoft.Office.Interop.Word.Range" /> necessário. A posição do campo FILLIN.</param>
+        <param name="Prompt"><b>Objeto</b>opcional. O texto exibido na caixa de diálogo.</param>
+        <param name="DefaultFillInText"><b>Objeto</b>opcional. A resposta padrão que aparece na caixa de texto quando a caixa de diálogo é exibida. Corresponde à opção \d de um campo FILLIN.</param>
+        <param name="AskOnce"><b>Objeto</b>opcional. <b>True</b> para exibir o prompt somente uma vez, em vez de cada vez que um novo registro de dados é mesclado. Corresponde à opção \o de um campo FILLIN. O valor padrão é <b>False</b>.</param>
         <summary>Adiciona um campo FILLIN a um documento principal de mala direta. Retorna um <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> objeto.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Quando atualizado, um campo FILLIN exibe uma caixa de diálogo que solicita a texto inserir no documento no local do campo FILLIN.</para>
-          <para>Uso o <see cref="M:Microsoft.Office.Interop.Word.Fields.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@)" /> método com o <see cref="T:Microsoft.Office.Interop.Word.Fields" /> objeto da coleção para adicionar um campo FILLIN a um documento que não seja um documento principal de mala direta.</para>
-          <para />
-        </remarks>
+        <remarks><para>Quando atualizado, um campo FILLIN exibe uma caixa de diálogo que solicita a texto inserir no documento no local do campo FILLIN.</para>
+          <para>Use o <see cref="M:Microsoft.Office.Interop.Word.Fields.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@)" /> método com o <see cref="T:Microsoft.Office.Interop.Word.Fields" /> objeto coleção para adicionar um campo FILLIN a um documento que não seja um documento principal de mala direta.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddIf">
@@ -181,26 +159,18 @@
         <Parameter Name="FalseText" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">Necessário <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto. A posição do campo IF.</param>
-        <param name="MergeField">
-          <b>String</b> necessário. O nome do campo de mala direta.</param>
-        <param name="Comparison">Necessário <see cref="T:Microsoft.Office.Interop.Word.WdMailMergeComparison" />. O operador usado na comparação.</param>
-        <param name="CompareTo">
-          <b>Objeto</b>de opcional. O texto a ser comparado com o conteúdo do <paramref name="MergeField" />.</param>
-        <param name="TrueAutoText">
-          <b>Objeto</b>de opcional. A entrada de AutoTexto que é inserida quando a comparação é verdadeira. Se esse argumento for especificado, <paramref name="TrueText" /> será ignorado.</param>
-        <param name="TrueText">
-          <b>Objeto</b>de opcional. O texto que é inserido quando a comparação é verdadeira.</param>
-        <param name="FalseAutoText">
-          <b>Objeto</b>de opcional. A entrada de AutoTexto que é inserida quando a comparação é falsa. Se esse argumento for especificado, <paramref name="FalseText" /> será ignorado.</param>
-        <param name="FalseText">
-          <b>Objeto</b>de opcional. O texto que é inserido quando a comparação é falsa.</param>
+        <param name="Range">Objeto <see cref="T:Microsoft.Office.Interop.Word.Range" /> necessário. A posição do campo IF.</param>
+        <param name="MergeField"><b>String</b> necessário. O nome do campo de mala direta.</param>
+        <param name="Comparison">Necessário <see cref="T:Microsoft.Office.Interop.Word.WdMailMergeComparison" />. O operador utilizado na comparação.</param>
+        <param name="CompareTo"><b>Objeto</b>opcional. O texto a ser comparado com o conteúdo <paramref name="MergeField" />de.</param>
+        <param name="TrueAutoText"><b>Objeto</b>opcional. A entrada de AutoTexto que é inserida quando a comparação é verdadeira. Se esse argumento for especificado, <paramref name="TrueText" /> será ignorado.</param>
+        <param name="TrueText"><b>Objeto</b>opcional. O texto que é inserido quando a comparação é verdadeira.</param>
+        <param name="FalseAutoText"><b>Objeto</b>opcional. A entrada de AutoTexto que é inserida quando a comparação é falsa. Se esse argumento for especificado, <paramref name="FalseText" /> será ignorado.</param>
+        <param name="FalseText"><b>Objeto</b>opcional. O texto que é inserido quando a comparação é falsa.</param>
         <summary>Adiciona um campo IF a um documento principal de mala direta. Retorna um <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> objeto.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Quando atualizado, um campo IF compara um campo em um registro de dados com um valor especificado e insere o texto apropriado conforme o resultado da comparação.</para>
-          <para />
-        </remarks>
+        <remarks><para>Quando atualizado, um campo IF compara um campo em um registro de dados com um valor especificado e insere o texto apropriado de acordo com o resultado da comparação.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddMergeRec">
@@ -225,13 +195,11 @@
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
       </Parameters>
       <Docs>
-        <param name="Range">Necessário <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto. A posição do campo MERGEREC.</param>
+        <param name="Range">Objeto <see cref="T:Microsoft.Office.Interop.Word.Range" /> necessário. A posição do campo MERGEREC.</param>
         <summary>Adiciona um campo MERGEREC a um documento principal de mala direta. Retorna um <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> objeto.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Um campo MERGEREC insere o número do registro de dados atual (a posição do registro de dados no resultado da consulta atual) durante uma mala direta.</para>
-          <para />
-        </remarks>
+        <remarks><para>Um campo MERGEREC insere o número do registro de dados atual (a posição do registro de dados no resultado da consulta atual) durante uma mala direta.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddMergeSeq">
@@ -256,13 +224,11 @@
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
       </Parameters>
       <Docs>
-        <param name="Range">Necessário <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto. A posição do campo MERGESEQ.</param>
+        <param name="Range">Objeto <see cref="T:Microsoft.Office.Interop.Word.Range" /> necessário. A posição do campo MERGESEQ.</param>
         <summary>Adiciona um campo MERGESEQ a um documento principal de mala direta. Retorna um <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> objeto.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Um campo MERGESEQ insere um número baseado na sequência na qual os dados registros são mesclados (por exemplo, quando o registro 50 dos registros de 50 a 100 é mesclado, MERGESEQ insere o número 1).</para>
-          <para />
-        </remarks>
+        <remarks><para>Um campo MERGESEQ insere um número com base na sequência em que os registros de dados são mesclados (por exemplo, quando o registro 50 de registros 50 a 100 é mesclado, MERGESEQ insere o número 1).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddNext">
@@ -287,13 +253,11 @@
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
       </Parameters>
       <Docs>
-        <param name="Range">Necessário <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto. A posição do campo NEXT.</param>
+        <param name="Range">Objeto <see cref="T:Microsoft.Office.Interop.Word.Range" /> necessário. A posição do campo NEXT.</param>
         <summary>Adiciona um campo NEXT a um documento principal de mala direta. Retorna um <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> objeto.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Um campo NEXT avança para o próximo registro de dados para que os dados de mais de um registro podem ser mesclados do mesmo documento de mala direta (por exemplo, uma folha de etiquetas de endereçamento).</para>
-          <para />
-        </remarks>
+        <remarks><para>Um campo NEXT avança para o próximo registro de dados para que os dados de mais de um registro possam ser mesclados no mesmo documento de mala direta (por exemplo, uma folha de etiquetas de endereçamento).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddNextIf">
@@ -320,18 +284,14 @@
         <Parameter Name="CompareTo" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">Necessário <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto. A posição do campo NEXTIF.</param>
-        <param name="MergeField">
-          <b>String</b> necessário. O nome do campo de mala direta.</param>
-        <param name="Comparison">Necessário <see cref="T:Microsoft.Office.Interop.Word.WdMailMergeComparison" />. O operador usado na comparação.</param>
-        <param name="CompareTo">
-          <b>String</b> necessário. O texto a ser comparado com o conteúdo do <paramref name="MergeField" />.</param>
+        <param name="Range">Objeto <see cref="T:Microsoft.Office.Interop.Word.Range" /> necessário. A posição do campo NEXTIF.</param>
+        <param name="MergeField"><b>String</b> necessário. O nome do campo de mala direta.</param>
+        <param name="Comparison">Necessário <see cref="T:Microsoft.Office.Interop.Word.WdMailMergeComparison" />. O operador utilizado na comparação.</param>
+        <param name="CompareTo"><b>String</b> necessário. O texto a ser comparado com o conteúdo <paramref name="MergeField" />de.</param>
         <summary>Adiciona um campo NEXTIF a um documento principal de mala direta. Retorna um <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> objeto.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Um campo NEXTIF compara duas expressões e, quando a comparação é verdadeira, o próximo registro de dados é mesclado no documento de mala direta atual.</para>
-          <para />
-        </remarks>
+        <remarks><para>Um campo de atualizado compara duas expressões e, se a comparação for true, o próximo registro de dados é mesclado no documento de mesclagem atual.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddSet">
@@ -358,19 +318,14 @@
         <Parameter Name="ValueAutoText" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">Necessário <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto. A posição para o campo SET.</param>
-        <param name="Name">
-          <b>String</b> necessário. O nome do indicador que <paramref name="ValueText" /> é atribuída a.</param>
-        <param name="ValueText">
-          <b>Objeto</b>de opcional. O texto associado ao indicador especificado pelo <paramref name="Name" /> argumento.</param>
-        <param name="ValueAutoText">
-          <b>Objeto</b>de opcional. A entrada de AutoTexto que inclui o texto associado ao indicador especificado pelo <paramref name="Name" /> argumento. Se esse argumento for especificado, <paramref name="ValueText" /> será ignorado.</param>
+        <param name="Range">Objeto <see cref="T:Microsoft.Office.Interop.Word.Range" /> necessário. A posição para o campo SET.</param>
+        <param name="Name"><b>String</b> necessário. O nome <paramref name="ValueText" /> do indicador atribuído a.</param>
+        <param name="ValueText"><b>Objeto</b>opcional. O texto associado ao indicador especificado pelo <paramref name="Name" /> argumento.</param>
+        <param name="ValueAutoText"><b>Objeto</b>opcional. A entrada de AutoTexto que inclui o texto associado ao indicador especificado <paramref name="Name" /> pelo argumento. Se esse argumento for especificado, <paramref name="ValueText" /> será ignorado.</param>
         <summary>Adiciona um campo SET a um documento principal de mala direta. Retorna um <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> objeto.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Um campo SET determina o texto do indicador especificado.</para>
-          <para />
-        </remarks>
+        <remarks><para>Um campo SET determina o texto do indicador especificado.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddSkipIf">
@@ -397,18 +352,14 @@
         <Parameter Name="CompareTo" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">Necessário <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto. A posição do campo SKIPIF.</param>
-        <param name="MergeField">
-          <b>String</b> necessário. O nome do campo de mala direta.</param>
-        <param name="Comparison">Necessário <see cref="T:Microsoft.Office.Interop.Word.WdMailMergeComparison" />. O operador usado na comparação.</param>
-        <param name="CompareTo">
-          <b>Objeto</b>de opcional. O texto a ser comparado com o conteúdo do <paramref name="MergeField" />.</param>
+        <param name="Range">Objeto <see cref="T:Microsoft.Office.Interop.Word.Range" /> necessário. A posição do campo SKIPIF.</param>
+        <param name="MergeField"><b>String</b> necessário. O nome do campo de mala direta.</param>
+        <param name="Comparison">Necessário <see cref="T:Microsoft.Office.Interop.Word.WdMailMergeComparison" />. O operador utilizado na comparação.</param>
+        <param name="CompareTo"><b>Objeto</b>opcional. O texto a ser comparado com o conteúdo <paramref name="MergeField" />de.</param>
         <summary>Adiciona um campo SKIPIF a um documento principal de mala direta. Retorna um <see cref="T:Microsoft.Office.Interop.Word.MailMergeField" /> objeto.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Um campo SKIPIF compara duas expressões e, quando a comparação é verdadeira, SKIPIF move para o próximo registro de dados na fonte de dados e inicia um novo documento de mala direta.</para>
-          <para />
-        </remarks>
+        <remarks><para>Um campo SKIPIF compara duas expressões e, se a comparação for true, o SKIPIF será movido para o próximo registro de dados na fonte de dados e iniciará um novo documento de mala direta.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -434,7 +385,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -492,9 +443,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
-          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". [!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
+          <para>A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">

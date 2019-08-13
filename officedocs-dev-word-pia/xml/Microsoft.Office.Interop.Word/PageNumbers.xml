@@ -1,13 +1,5 @@
 <Type Name="PageNumbers" FullName="Microsoft.Office.Interop.Word.PageNumbers">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="adb56d4e750693d1d8699cecc33bae23d2bf773c" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20664392" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface PageNumbers : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a31fe618fee1b2b001540181189751da6020270b" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144209" /></Metadata><TypeSignature Language="C#" Value="public interface PageNumbers : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PageNumbers implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.PageNumbers" />
   <TypeSignature Language="VB.NET" Value="Public Interface PageNumbers&#xA;Implements IEnumerable" />
@@ -31,13 +23,11 @@
   </Attributes>
   <Docs>
     <summary>Uma coleção de <see cref="T:Microsoft.Office.Interop.Word.PageNumber" /> objetos que representam os números de página em um único cabeçalho ou rodapé.</summary>
-    <remarks>
-      <para>Use o <see cref="P:Microsoft.Office.Interop.Word.HeaderFooter.PageNumbers" /> propriedade para retornar a coleção <b>PageNumbers</b> .</para>
-      <para>Uso o <see cref="M:Microsoft.Office.Interop.Word.PageNumbers.Add(System.Object@,System.Object@)" /> método para adicionar números de página a um cabeçalho ou rodapé.</para>
-      <para>Para adicionar ou alterar números de página em um documento com várias seções, modifique os números de página em cada seção ou defina o <see cref="P:Microsoft.Office.Interop.Word.HeaderFooter.LinkToPrevious" /> propriedade como <b>True</b>.</para>
-      <para>Uso <b>PageNumbers</b>(<paramref name="index" />), onde <paramref name="index" /> é o número de índice, para retornar um único objeto <b>PageNumber</b> . Na maioria dos casos, um cabeçalho ou rodapé contém apenas um número de página, que é o número de índice 1.</para>
-      <para />
-    </remarks>
+    <remarks><para>Use a <see cref="P:Microsoft.Office.Interop.Word.HeaderFooter.PageNumbers" /> propriedade para retornar a <b></b> coleção PageNumbers.</para>
+      <para>Use o <see cref="M:Microsoft.Office.Interop.Word.PageNumbers.Add(System.Object@,System.Object@)" /> método para adicionar números de página a um cabeçalho ou rodapé.</para>
+      <para>Para adicionar ou alterar números de página em um documento com várias seções, modifique os números de página em cada seção ou <see cref="P:Microsoft.Office.Interop.Word.HeaderFooter.LinkToPrevious" /> defina a propriedade como <b>true</b>.</para>
+      <para>Use <b>PageNumbers</b>(<paramref name="index" />), onde <paramref name="index" /> é o número de índice, para retornar um único objeto <b>PageNumber</b> . Na maioria dos casos, um cabeçalho ou rodapé contém número apenas uma página que é número de índice 1.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -63,16 +53,12 @@
         <Parameter Name="FirstPage" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="PageNumberAlignment">
-          <b>Objeto</b>de opcional. Pode ser qualquer <see cref="T:Microsoft.Office.Interop.Word.WdPageNumberAlignment" /> constante.</param>
-        <param name="FirstPage">
-          <b>Objeto</b>de opcional. <b>False</b> para tornar o cabeçalho da primeira página e o rodapé da primeira página diferentes dos cabeçalhos e rodapés em todas as páginas subsequentes no documento. Se <paramref name="FirstPage" /> estiver definida como <b>False</b>, um número de página não será adicionado à primeira página. Se esse argumento for omitido, a configuração é controlada pelo <see cref="P:Microsoft.Office.Interop.Word.PageSetup.DifferentFirstPageHeaderFooter" /> propriedade.</param>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.PageNumber" /> do objeto que representa os números adicionados a um cabeçalho ou rodapé em uma seção de página.</summary>
+        <param name="PageNumberAlignment"><b>Objeto</b>opcional. Pode ser qualquer <see cref="T:Microsoft.Office.Interop.Word.WdPageNumberAlignment" /> constante.</param>
+        <param name="FirstPage"><b>Objeto</b>opcional. <b>False</b> para tornar o cabeçalho e o rodapé da primeira página diferentes dos cabeçalhos e rodapés de todas as páginas subsequentes no documento. Se <paramref name="FirstPage" /> for definido como <b>false</b>, um número de página não será adicionado à primeira página. Se esse argumento for omitido, a configuração será controlada pela <see cref="P:Microsoft.Office.Interop.Word.PageSetup.DifferentFirstPageHeaderFooter" /> propriedade.</param>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.PageNumber" /> objeto que representa os números de página adicionados a um cabeçalho ou rodapé em uma seção.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Se o <see cref="P:Microsoft.Office.Interop.Word.HeaderFooter.LinkToPrevious" /> propriedade para o <see cref="T:Microsoft.Office.Interop.Word.HeaderFooter" /> objeto for definido como <b>True</b>, os números de página continuarão em sequência de uma seção para o próximo ao longo do documento.</para>
-          <para />
-        </remarks>
+        <remarks><para>Se a <see cref="P:Microsoft.Office.Interop.Word.HeaderFooter.LinkToPrevious" /> Propriedade do <see cref="T:Microsoft.Office.Interop.Word.HeaderFooter" /> objeto for definida como <b>true</b>, os números de página continuarão em sequência de uma seção para a próxima ao longo do documento.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -98,7 +84,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -129,12 +115,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdSeparatorType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define o caractere separador usado entre o número do capítulo e o número de página. Pode ser uma do <see cref="T:Microsoft.Office.Interop.Word.WdSeparatorType" /> constantes.</summary>
+        <summary>Retorna ou define o caractere separador usado entre o número do capítulo e o número da página. Pode ser uma das <see cref="T:Microsoft.Office.Interop.Word.WdSeparatorType" /> constantes.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Antes de criar os números de página que incluem números de capítulo, os títulos do documento devem ter um formato de estrutura de tópicos numerados aplicada que usa styles de marcadores e numeração de caixa de diálogo. Para fazer isso programaticamente, use o método <b>ApplyListTemplate</b> da <see cref="T:Microsoft.Office.Interop.Word.List" /> ou <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> objeto.</para>
-          <para />
-        </remarks>
+        <remarks><para>Antes de criar os números de página que incluem números de capítulo, os títulos do documento devem ter um formato de estrutura de tópicos numerados aplicado que usa os estilos de caixa de diálogo marcadores e numeração. Para fazer isso programaticamente, <b></b> use o método ApplyListTemplate <see cref="T:Microsoft.Office.Interop.Word.List" /> do <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> objeto or.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -190,9 +174,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
-          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". [!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
+          <para>A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DoubleQuote">
@@ -221,13 +205,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> se o Microsoft Word fecha especificado <see cref="T:Microsoft.Office.Interop.Word.PageNumbers" /> objeto aspas duplas (").</summary>
+        <summary><b>True</b> se o Microsoft Word inclui o objeto especificado <see cref="T:Microsoft.Office.Interop.Word.PageNumbers" /> entre aspas duplas (").</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Para definir o Word para colocar os números de página em aspas duplas por padrão, use o <see cref="P:Microsoft.Office.Interop.Word.Options.AddHebDoubleQuote" /> propriedade.</para>
-          <para />
-        </remarks>
+        <remarks><para>Para configurar o Word para colocar os números de página entre aspas duplas por padrão <see cref="P:Microsoft.Office.Interop.Word.Options.AddHebDoubleQuote" /> , use a propriedade.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -288,12 +269,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define o estilo de nível de título que é aplicado aos títulos de capítulo no documento. Pode ser um número de 0 (zero) a 8, correspondendo aos níveis de título 1 a 9.</summary>
+        <summary>Retorna ou define o estilo de nível de título que é aplicado aos títulos de capítulo no documento. Pode ser um número de 0 (zero) a 8, correspondente aos níveis de título 1 a 9.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Antes de criar os números de página que incluem números de capítulo, os títulos do documento devem ter um formato de estrutura de tópicos numerados aplicada que usa styles de marcadores e numeração de caixa de diálogo. Para fazer isso programaticamente, use o método <b>ApplyListTemplate</b> da <see cref="T:Microsoft.Office.Interop.Word.List" /> ou <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> objeto.</para>
-          <para />
-        </remarks>
+        <remarks><para>Antes de criar os números de página que incluem números de capítulo, os títulos do documento devem ter um formato de estrutura de tópicos numerados aplicado que usa os estilos de caixa de diálogo marcadores e numeração. Para fazer isso programaticamente, <b></b> use o método ApplyListTemplate <see cref="T:Microsoft.Office.Interop.Word.List" /> do <see cref="T:Microsoft.Office.Interop.Word.ListFormat" /> objeto or.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IncludeChapterNumber">
@@ -322,8 +301,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> se um número de capítulo é incluído com números de página ou um nome de legenda.</summary>
+        <summary><b>True</b> se um número de capítulo é incluído com números de página ou um nome de legenda.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -386,12 +364,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdPageNumberStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define o estilo de número para o <see cref="T:Microsoft.Office.Interop.Word.PageNumbers" /> objeto.</summary>
+        <summary>Retorna ou define o estilo de número para <see cref="T:Microsoft.Office.Interop.Word.PageNumbers" /> o objeto.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>A propriedade <b>NumberStyle</b> pode ser uma do <see cref="T:Microsoft.Office.Interop.Word.WdPageNumberStyle" /> constantes. Algumas dessas constantes podem não estar disponíveis para você, dependendo do suporte a idioma (inglês americano, por exemplo) que você selecionou ou instalou.</para>
-          <para />
-        </remarks>
+        <remarks><para>A <b></b> Propriedade NumberStyle pode ser uma das <see cref="T:Microsoft.Office.Interop.Word.WdPageNumberStyle" /> constantes. Algumas dessas constantes podem não estar disponíveis, dependendo do suporte a idioma (português do Brasil, por exemplo) que você selecionou ou instalou.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -448,13 +424,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> se a numeração de página começa em 1 no início da seção especificada.</summary>
+        <summary><b>True</b> se a numeração de página começa em 1 no início da seção especificada.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se definido como <b>False</b>, a propriedade <b>RestartNumberingAtSection</b> substituirá o <see cref="P:Microsoft.Office.Interop.Word.PageNumbers.StartingNumber" /> propriedade para numeração de página que possa continuar da seção anterior.</para>
-          <para />
-        </remarks>
+        <remarks><para>Se definido como <b>false</b>, a propriedade <b>RestartNumberingAtSection</b> substituirá a <see cref="P:Microsoft.Office.Interop.Word.PageNumbers.StartingNumber" /> propriedade para que a numeração de página possa continuar da seção anterior.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowFirstPageNumber">
@@ -483,13 +456,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> se o número de página aparece na primeira página da seção.</summary>
+        <summary><b>True</b> se o número de página aparece na primeira página da seção.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>A definição dessa propriedade como <b>True</b> automaticamente adiciona números de página a uma seção.</para>
-          <para />
-        </remarks>
+        <remarks><para>A definição dessa propriedade como <b>True</b> automaticamente adiciona números de página a uma seção.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="StartingNumber">
@@ -520,11 +490,9 @@
       <Docs>
         <summary>Retorna ou define o número inicial de anotação, número de linha ou número de página.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Você deve estar no modo de exibição de layout de impressão para ver a numeração de linhas.</para>
-          <para>Quando aplicado aos números de página, essa propriedade retorna ou define o número de página inicial para especificado <see cref="T:Microsoft.Office.Interop.Word.HeaderFooter" /> objeto. Esse número pode ou não ser visível na primeira página, dependendo da configuração do <see cref="P:Microsoft.Office.Interop.Word.PageNumbers.ShowFirstPageNumber" /> propriedade. O <see cref="P:Microsoft.Office.Interop.Word.PageNumbers.RestartNumberingAtSection" /> propriedade, se definida como <b>False</b>, a propriedade <b>StartingNumber</b> para que a numeração de páginas de substituição pode continuará da seção anterior.</para>
-          <para />
-        </remarks>
+        <remarks><para>Você precisa estar no modo de layout de impressão para ver a numeração de linhas.</para>
+          <para>Quando aplicado aos números de página, essa propriedade retorna ou define o número de página inicial do <see cref="T:Microsoft.Office.Interop.Word.HeaderFooter" /> objeto especificado. Esse número pode ou não ser visível na primeira página, dependendo da configuração da <see cref="P:Microsoft.Office.Interop.Word.PageNumbers.ShowFirstPageNumber" /> propriedade. A <see cref="P:Microsoft.Office.Interop.Word.PageNumbers.RestartNumberingAtSection" /> Propriedade, se definida como <b>false</b>, substituirá a propriedade <b>StartingNumber</b> para que a numeração de página possa continuar da seção anterior.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

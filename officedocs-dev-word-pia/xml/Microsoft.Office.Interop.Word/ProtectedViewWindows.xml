@@ -1,13 +1,5 @@
 <Type Name="ProtectedViewWindows" FullName="Microsoft.Office.Interop.Word.ProtectedViewWindows">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="506d1829c1c4c6385365d719f17a17c3f44c87a3" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20665140" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ProtectedViewWindows : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="2e9ac6ba9dba7949a597ac1a0f57c956ed0366db" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144152" /></Metadata><TypeSignature Language="C#" Value="public interface ProtectedViewWindows : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ProtectedViewWindows implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ProtectedViewWindows" />
   <TypeSignature Language="VB.NET" Value="Public Interface ProtectedViewWindows&#xA;Implements IEnumerable" />
@@ -30,12 +22,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Uma coleção de todos os <see cref="T:Microsoft.Office.Interop.Word.ProtectedViewWindow" /> objetos que estão atualmente abertos no Word 2010.</summary>
-    <remarks>
-      <para>Documentos exibidos em uma janela de modo de exibição protegido não podem ser editados e são impedidos de executar conteúdo ativo como macros e conexões de dados.</para>
-      <para>Use <b>ProtectedViewWindows</b>(<paramref name="Index" />), onde <paramref name="Index" /> é o número de índice para retornar um único <see cref="T:Microsoft.Office.Interop.Word.ProtectedViewWindow" /> objeto.</para>
-      <para />
-    </remarks>
+    <summary>Uma coleção de todos os <see cref="T:Microsoft.Office.Interop.Word.ProtectedViewWindow" /> objetos atualmente abertos no Word 2010.</summary>
+    <remarks><para>Os documentos exibidos em uma janela de modo de exibição protegido não podem ser editados e são impedidos de executar conteúdo ativo como macros e conexões de dados.</para>
+      <para>Use <b>ProtectedViewWindows</b>(<paramref name="Index" />), onde <paramref name="Index" /> é o número de índice para retornar um <see cref="T:Microsoft.Office.Interop.Word.ProtectedViewWindow" /> único objeto.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -61,12 +51,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</summary>
-        <value>Um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</value>
-        <remarks>
-          <para>Somente leitura.</para>
-          <para />
-        </remarks>
+        <summary>Obtém um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
+        <value>Um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</value>
+        <remarks><para>Somente leitura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -92,12 +80,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém o número de janelas do modo de exibição protegido na coleção.</summary>
-        <value>O número de janelas do modo de exibição protegido na coleção.</value>
-        <remarks>
-          <para>Somente leitura.</para>
-          <para />
-        </remarks>
+        <summary>Obtém o número de janelas de modo de exibição protegido na coleção.</summary>
+        <value>O número de janelas de modo de exibição protegido na coleção.</value>
+        <remarks><para>Somente leitura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -125,12 +111,10 @@
       <Docs>
         <summary>Obtém um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</summary>
         <value>Um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</value>
-        <remarks>
-          <para>Somente leitura <b>long</b>. Se o objeto foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". Essa propriedade principalmente foi projetada para ser usado no Apple Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Word tem o código de criador MSWD.</para>
+        <remarks><para><b>Long</b>somente leitura. Se o objeto foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". Essa propriedade principalmente foi projetada para ser usado no Apple Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Word tem o código de criador MSWD.</para>
           <para>
             <b>Cuidado</b>: esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -224,19 +208,14 @@
       </Parameters>
       <Docs>
         <param name="FileName">O nome do documento (caminhos são aceitos).</param>
-        <param name="AddToRecentFiles">
-          <b>true</b> para adicionar o nome de arquivo à lista de arquivos usados recentemente na parte inferior do menu Arquivo; Caso contrário, <b>false</b>.</param>
+        <param name="AddToRecentFiles"><b>true</b> para adicionar o nome de arquivo à lista de arquivos usados recentemente na parte inferior do menu arquivo; caso contrário, <b>false</b>.</param>
         <param name="PasswordDocument">A senha para abertura do documento.</param>
-        <param name="Visible">
-          <b>true</b> se o documento é aberto em uma janela visível; Caso contrário, <b>false</b>. O valor padrão é True.</param>
-        <param name="OpenAndRepair">
-          <b>true</b> para reparar o documento para impedir danos ao documento; Caso contrário, <b>false</b>.</param>
+        <param name="Visible"><b>true</b> se o documento é aberto em uma janela visível; caso contrário, <b>false</b>. O valor padrão é True.</param>
+        <param name="OpenAndRepair"><b>true</b> para reparar o documento para evitar a corrupção do documento; caso contrário, <b>false</b>.</param>
         <summary>Abre o documento especificado em uma nova janela de modo de exibição protegido.</summary>
-        <returns>Uma <see cref="T:Microsoft.Office.Interop.Word.ProtectedViewWindow" /> objeto.</returns>
-        <remarks>
-          <para>Evite usar senhas codificadas em seus aplicativos. Se uma senha for necessária em um procedimento, solicitar a senha do usuário, armazene em uma variável e, em seguida, use a variável no código.</para>
-          <para />
-        </remarks>
+        <returns>Um <see cref="T:Microsoft.Office.Interop.Word.ProtectedViewWindow" /> objeto.</returns>
+        <remarks><para>Evite usar senhas codificadas em seus aplicativos. Se uma senha for necessária em um procedimento, solicite a senha do usuário, armazene-a em uma variável e, em seguida, use a variável no código.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -262,8 +241,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém um <see cref="T:System.Object" /> que representa o objeto pai do especificado <see cref="T:Microsoft.Office.Interop.Word.ProtectedViewWindows" /> objeto.</summary>
-        <value>Um <see cref="T:System.Object" /> que representa o objeto pai do especificado <see cref="T:Microsoft.Office.Interop.Word.ProtectedViewWindows" /> objeto.</value>
+        <summary>Obtém um <see cref="T:System.Object" /> que representa o objeto pai do objeto especificado <see cref="T:Microsoft.Office.Interop.Word.ProtectedViewWindows" /> .</summary>
+        <value>Um <see cref="T:System.Object" /> que representa o objeto pai do objeto especificado <see cref="T:Microsoft.Office.Interop.Word.ProtectedViewWindows" /> .</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

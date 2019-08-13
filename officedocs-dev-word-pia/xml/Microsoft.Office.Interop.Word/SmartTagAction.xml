@@ -1,13 +1,5 @@
 <Type Name="SmartTagAction" FullName="Microsoft.Office.Interop.Word.SmartTagAction">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="e5c4bc9e1f8c1df339fe6ea64518ce507e0f8afe" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20663933" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface SmartTagAction" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ec49e7fe750928cbb025ed46930bedb2516ad95e" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143991" /></Metadata><TypeSignature Language="C#" Value="public interface SmartTagAction" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SmartTagAction" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.SmartTagAction" />
   <TypeSignature Language="VB.NET" Value="Public Interface SmartTagAction" />
@@ -26,10 +18,14 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Representa uma ação única de uma marca inteligente.</summary>
-    <remarks>
-      <para>Ações de marcas inteligentes são processos programados nas marcas inteligentes que permitem que os usuários realizem determinadas funções relacionadas à marca inteligente. Por exemplo, uma ação para uma marca inteligente pode ser para acessar um site, enquanto outra ação insere informações de contato no Microsoft Outlook, e outra ainda exibe um mapa e indicações.</para> Ações de marcas inteligentes 
-      <para>também estão relacionadas a ações incorporadas a documentos inteligentes e aos controles no painel de tarefas ações do documento. Por exemplo, você pode ter um controle textbox exibido no painel de tarefas para um documento inteligente que realiza uma ação quando um usuário altera o conteúdo da caixa de texto.</para><para><see cref="T:Microsoft.Office.Interop.Word.SmartTagRecognizer" />, <b>SmartTagAction</b>, e <see cref="T:Microsoft.Office.Interop.Word.SmartTagType" /> objetos estão relacionados a cada item que um componente de marca inteligente identifica um <see cref="T:Microsoft.Office.Interop.Word.SmartTagType" /> objeto. Por exemplo, "city" no componente de marca inteligente endereço é um objeto <b>SmartTagType</b> específico. O tipo de marca inteligente cidade possui <b>SmartTagRecognizer</b> objetos relacionados (a parte do componente de marca inteligente que reconhece as marcas inteligentes do tipo "city" nos documentos) e objetos <b>SmartTagAction</b> (a parte do componente de marca inteligente que fornece as ações relacionadas ao tipo de marca inteligente específico, que pode incluir a busca de uma cidade identificada em Microsoft MapPoint no MSN). Resumindo, o identificador faz os rótulos, o manipulador de ação fornece a funcionalidade do usuário final e o que os agrupa é o tipo de marca inteligente que trabalham.</para><para>Uso o <see cref="P:Microsoft.Office.Interop.Word.SmartTagActions.Item(System.Object@)" /> método para retornar um objeto <b>Smarttagactionindividual</b> de uma <see cref="T:Microsoft.Office.Interop.Word.SmartTagActions" /> conjunto.</para><para>Uso o <see cref="P:Microsoft.Office.Interop.Word.SmartTagAction.Type" /> propriedade para determinar o tipo de controle associado a um objeto <b>SmartTagAction</b> .</para><para /></remarks>
+    <summary>Representa uma única ação para uma marca inteligente.</summary>
+    <remarks><para>As ações com marcas inteligentes são processos programados nas marcas inteligentes que permitem que os usuários realizem determinadas funções relacionadas à marca inteligente, por exemplo, acessar um site, inserir informações de contato no Microsoft Outlook ou exibir um mapa e referências de local. Por exemplo, uma ação para uma marca inteligente pode ser para acessar um site, enquanto outra ação insere informações de contato no Microsoft Outlook, enquanto outra exibe um mapa e indicações de local.</para>
+      <para>As ações de marca inteligente também se relacionam a ações incorporadas a documentos inteligentes e aos controles no painel de tarefas ações do documento. Por exemplo, é possível haver um controle de caixa de texto exibido no painel de tarefas para um documento inteligente que realize uma ação quando o usuário alterar o conteúdo dessa caixa.</para>
+      <para>
+        <see cref="T:Microsoft.Office.Interop.Word.SmartTagRecognizer" />, <b>SmartTagAction</b>e <see cref="T:Microsoft.Office.Interop.Word.SmartTagType" /> objetos estão relacionados em que cada item que um componente de marca inteligente reconhece é um <see cref="T:Microsoft.Office.Interop.Word.SmartTagType" /> objeto. Por exemplo, "city" no componente de marca inteligente Address é um objeto <b>SmartTagType</b> específico. O tipo de marca inteligente city possui objetos <b>SmartTagRecognizer</b> relacionados (a parte do componente de marca inteligente que reconhece marcas inteligentes do tipo "city" nos documentos) e objetos <b>SmartTagAction</b> (a parte do componente de marca inteligente que disponibiliza ações relacionadas ao tipo de marca inteligente específico, que pode incluir a pesquisa de uma cidade identificada no Microsoft MapPoint, no MSN). No entanto, o reconhecedor faz o rotulamento, o manipulador de ações fornece a funcionalidade do usuário final e o que o une juntos é o tipo de marca inteligente em que eles trabalham.</para>
+      <para>Use o <see cref="P:Microsoft.Office.Interop.Word.SmartTagActions.Item(System.Object@)" /> método para retornar um objeto <b>SmartTagAction</b> individual de uma <see cref="T:Microsoft.Office.Interop.Word.SmartTagActions" /> coleção.</para>
+      <para>Use a <see cref="P:Microsoft.Office.Interop.Word.SmartTagAction.Type" /> propriedade para determinar o tipo de controle associado a um <b></b> objeto SmartTagAction.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="ActiveXControl">
@@ -60,10 +56,8 @@
       <Docs>
         <summary>Retorna um <b>objeto</b> que representa um controle ActiveX exibido no painel de tarefas ações do documento.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Para obter mais informações sobre documentos inteligentes, consulte o Smart Document Software Development Kit no site Microsoft Developer Network (MSDN).</para>
-          <para />
-        </remarks>
+        <remarks><para>Para obter mais informações sobre documentos inteligentes, consulte o Smart Document SDK no site MSDN (Microsoft Developer Network).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -92,7 +86,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -131,11 +125,9 @@
       <Docs>
         <summary>Retorna ou define um <b>Boolean</b> que indica se uma caixa de seleção em um documento inteligente está selecionada.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Essa propriedade retorna <b>True</b> se a caixa de seleção selecionada é marcada e <b>False</b> caso esteja desmarcada.</para>
-          <para>Para obter mais informações sobre documentos inteligentes, consulte o Smart Document Software Development Kit no site Microsoft Developer Network (MSDN).</para>
-          <para />
-        </remarks>
+        <remarks><para>Essa propriedade retorna <b>true</b> se a caixa de seleção selecionada estiver marcada e <b>false</b> se estiver desmarcada.</para>
+          <para>Para obter mais informações sobre documentos inteligentes, consulte o Smart Document SDK no site MSDN (Microsoft Developer Network).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -166,9 +158,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto especificado foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
-          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Se o objeto especificado foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". [!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
+          <para>A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -231,13 +223,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define um <b>Boolean</b> que indica se o controle de fragmento do documento especificado é expandido ou recolhido no painel de tarefas ações do documento.</summary>
+        <summary>Retorna ou define um <b>Boolean</b> que indica se o controle de fragmento de documento especificado está expandido ou recolhido no painel de tarefas ações do documento.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Essa propriedade retorna <b>True</b> para indicar que o controle está expandido e <b>False</b> para indicar que o controle é recolhido.</para>
-          <para>Para obter mais informações sobre documentos inteligentes, consulte o Smart Document Software Development Kit no site Microsoft Developer Network (MSDN).</para>
-          <para />
-        </remarks>
+        <remarks><para>Essa propriedade retorna <b>true</b> para indicar que o controle está expandido e <b>false</b> para indicar que o controle está recolhido.</para>
+          <para>Para obter mais informações sobre documentos inteligentes, consulte o Smart Document SDK no site MSDN (Microsoft Developer Network).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ExpandHelp">
@@ -272,13 +262,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define um <b>Boolean</b> que indica se o controle de texto de Ajuda do documento inteligente especificado é expandido ou recolhido no painel de tarefas ações do documento.</summary>
+        <summary>Retorna ou define um <b>Boolean</b> que indica se o controle de texto de ajuda do documento inteligente especificado está expandido ou recolhido no painel de tarefas ações do documento.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Esta propriedade retorna <b>True</b> para indicar que o controle está expandido, e <b>False</b> para indicar que o controle estiver recolhida.</para>
-          <para>Para obter mais informações sobre documentos inteligentes, consulte o Smart Document Software Development Kit no site Microsoft Developer Network (MSDN).</para>
-          <para />
-        </remarks>
+        <remarks><para>Essa propriedade retorna <b>true</b> para indicar que o controle está expandido e <b>false</b> para indicar que o controle está recolhido.</para>
+          <para>Para obter mais informações sobre os documentos inteligentes, consulte o Smart Document SDK no site MSDN.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ListSelection">
@@ -313,12 +301,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define um <b>inteiro</b> que representa o número de índice do item selecionado em um controle de caixa de listagem do documento inteligente.</summary>
+        <summary>Retorna ou define um <b>inteiro</b> que representa o número de índice do item selecionado em um controle de caixa de listagem de documento inteligente.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Para obter mais informações sobre documentos inteligentes, consulte o Smart Document Software Development Kit no site Microsoft Developer Network (MSDN).</para>
-          <para />
-        </remarks>
+        <remarks><para>Para obter mais informações sobre documentos inteligentes, consulte o Smart Document SDK no site MSDN (Microsoft Developer Network).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -448,10 +434,8 @@
       <Docs>
         <summary>Retorna ou define um <b>inteiro</b> que representa o número de índice do item selecionado em um grupo de controles de botão de opção em um documento inteligente.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Para obter mais informações sobre documentos inteligentes, consulte o Smart Document Software Development Kit no site Microsoft Developer Network (MSDN).</para>
-          <para />
-        </remarks>
+        <remarks><para>Para obter mais informações sobre documentos inteligentes, consulte o Smart Document SDK no site MSDN (Microsoft Developer Network).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TextboxText">
@@ -486,12 +470,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define um <b>String</b> que representa o texto em um controle textbox de documento inteligente.</summary>
+        <summary>Retorna ou define um <b>String</b> que representa o texto em um controle de caixa de texto de documento inteligente.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Para obter mais informações sobre documentos inteligentes, consulte o Smart Document Software Development Kit no site Microsoft Developer Network (MSDN).</para>
-          <para />
-        </remarks>
+        <remarks><para>Para obter mais informações sobre documentos inteligentes, consulte o Smart Document SDK no site MSDN (Microsoft Developer Network).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -522,9 +504,8 @@
       <Docs>
         <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.WdSmartTagControlType" /> que representa o tipo de controle de documento inteligente exibido no painel de tarefas ações do documento.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdSmartTagControlType" /> pode ser uma das seguintes constantes:</para>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdSmartTagControlType" />pode ser uma das seguintes constantes: </para>
           <para>
             <b>wdControlActiveX</b>
           </para>
@@ -573,8 +554,7 @@
           <para>
             <b>wdControlTextbox</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

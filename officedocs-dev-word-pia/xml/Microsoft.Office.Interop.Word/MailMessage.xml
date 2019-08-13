@@ -1,13 +1,5 @@
 <Type Name="MailMessage" FullName="Microsoft.Office.Interop.Word.MailMessage">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f1bc7701ac4bfc8d2bb8fe6029a2d018dfdd0031" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20664720" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface MailMessage" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="79cb7fd3ce8a5755942cbbc77c5979e3c87edcf8" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144439" /></Metadata><TypeSignature Language="C#" Value="public interface MailMessage" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract MailMessage" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.MailMessage" />
   <TypeSignature Language="VB.NET" Value="Public Interface MailMessage" />
@@ -26,12 +18,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Representa a mensagem de email ativa se você estiver usando o Microsoft Word como editor de email.</summary>
-    <remarks>
-      <para>Use o <see cref="P:Microsoft.Office.Interop.Word._Application.MailMessage" /> propriedade para retornar o objeto <b>MailMessage</b> .</para>
-      <para>Os métodos do objeto <b>MailMessage</b> requerem que você está usando o Word como editor de email e que uma mensagem de email está ativa. Se qualquer uma das seguintes condições não for true, ocorrerá um erro.</para>
-      <para />
-    </remarks>
+    <summary>Representa a mensagem de email ativa se você estiver usando o Microsoft Word como seu editor de email.</summary>
+    <remarks><para>Use a <see cref="P:Microsoft.Office.Interop.Word._Application.MailMessage" /> propriedade para retornar o objeto <b>MailMessage</b> .</para>
+      <para>Os métodos do objeto <b>MailMessage</b> exigem que você está usando o Word como seu email editor e que uma mensagem de email está ativa. Se qualquer uma dessas condições não for verdadeira, ocorrerá um erro.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -57,7 +47,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -83,11 +73,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Valida os endereços de email que aparecem no campo para:, Cc: e Cco: linhas na mensagem de email ativa. Este método está disponível somente se você estiver usando o Microsoft Word como seu editor de email.</summary>
-        <remarks>
-          <para>Se os nomes não podem ser validados, a caixa de diálogo Verificar nomes será exibida.</para>
-          <para />
-        </remarks>
+        <summary>Valida os endereços de email que aparecem nas linhas para:, CC: e Cco: na mensagem de email ativa. Este método só estará disponível se você estiver usando o Microsoft Word como seu editor de email.</summary>
+        <remarks><para>Se os nomes não puderem ser validados, a caixa de diálogo Verificar nomes será exibida.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -115,9 +103,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
-          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". [!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
+          <para>A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -166,7 +154,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Exibe a caixa de diálogo Mover, na qual o usuário pode especificar um novo local para a mensagem de email ativa em um repositório de mensagens disponível. Este método está disponível somente se você estiver usando o Microsoft Word como seu editor de email.</summary>
+        <summary>Exibe a caixa de diálogo Mover, na qual o usuário pode especificar um novo local para a mensagem de email ativa em um repositório de mensagens disponível. Este método só estará disponível se você estiver usando o Microsoft Word como seu editor de email.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -191,7 +179,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Exibe a caixa de diálogo Propriedades para a mensagem de email ativa. Este método está disponível somente se você estiver usando o Microsoft Word como seu editor de email.</summary>
+        <summary>Exibe a caixa de diálogo Propriedades para a mensagem de email ativa. Este método só estará disponível se você estiver usando o Microsoft Word como seu editor de email.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -216,7 +204,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Exibe a caixa de diálogo Selecionar nomes, nas quais o usuário pode adicionar endereços para:, Cc: e Cco: linhas na mensagem de email ativa, não enviados. Este método está disponível somente se você estiver usando o Microsoft Word como seu editor de email.</summary>
+        <summary>Exibe a caixa de diálogo Selecionar nomes, na qual o usuário pode adicionar endereços às linhas para:, CC: e Cco: na mensagem de email ativa, não enviada. Este método só estará disponível se você estiver usando o Microsoft Word como seu editor de email.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -241,7 +229,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Abre uma nova mensagem de email com um para em branco: linha para encaminhamento da mensagem ativa. Este método está disponível somente se você estiver usando o Microsoft Word como seu editor de email.</summary>
+        <summary>Abre uma nova mensagem de email com uma linha para: vazia para encaminhamento da mensagem ativa. Este método só estará disponível se você estiver usando o Microsoft Word como seu editor de email.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -266,7 +254,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Exibe a mensagem de email seguinte se você estiver usando o Microsoft Word como editor de email.</summary>
+        <summary>Exibe a mensagem de email seguinte se você estiver usando o Microsoft Word como seu editor de email.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -291,7 +279,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Exibe a mensagem de email anterior se você estiver usando o Microsoft Word como editor de email.</summary>
+        <summary>Exibe a mensagem de email anterior se você estiver usando o Microsoft Word como seu editor de email.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -344,7 +332,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Abre uma nova mensagem de email — com o endereço do remetente em até: linha — para responder à mensagem ativa.</summary>
+        <summary>Abre uma nova mensagem de email — com o endereço do remetente na linha para: — para responder à mensagem ativa.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -369,7 +357,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Abre uma nova mensagem de email — com endereços do remetente e todos os demais recebedores para: e Cc: linhas, conforme apropriado — para responder à mensagem ativa.</summary>
+        <summary>Abre uma nova mensagem de email — com os endereços do remetente e de todos os outros destinatários nas linhas para: e CC:, conforme apropriado, para responder à mensagem ativa.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

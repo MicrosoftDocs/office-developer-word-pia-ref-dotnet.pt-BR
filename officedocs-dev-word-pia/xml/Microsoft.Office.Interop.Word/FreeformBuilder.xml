@@ -1,13 +1,5 @@
 <Type Name="FreeformBuilder" FullName="Microsoft.Office.Interop.Word.FreeformBuilder">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="9f076c5ec7da9dca39ea0d028830ee6df1330893" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20665197" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface FreeformBuilder" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="f7da0a16c045e6dc0d03c5438ac63fb5b3f441a0" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34148043" /></Metadata><TypeSignature Language="C#" Value="public interface FreeformBuilder" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract FreeformBuilder" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.FreeformBuilder" />
   <TypeSignature Language="VB.NET" Value="Public Interface FreeformBuilder" />
@@ -27,10 +19,8 @@
   </Attributes>
   <Docs>
     <summary>Representa a geometria de uma forma livre enquanto ela está sendo construída.</summary>
-    <remarks>
-      <para>Use o <see cref="M:Microsoft.Office.Interop.Word.Shapes.BuildFreeform(Microsoft.Office.Core.MsoEditingType,System.Single,System.Single)" /> método para retornar um objeto <b>FreeformBuilder</b> . Use o <see cref="M:Microsoft.Office.Interop.Word.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" /> método para adicionar nós à forma livre. Use o <see cref="M:Microsoft.Office.Interop.Word.FreeformBuilder.ConvertToShape(System.Object@)" /> método para criar a forma definida no objeto <b>FreeformBuilder</b> e adicioná-lo para o <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> conjunto.</para>
-      <para />
-    </remarks>
+    <remarks><para>Use o <see cref="M:Microsoft.Office.Interop.Word.Shapes.BuildFreeform(Microsoft.Office.Core.MsoEditingType,System.Single,System.Single)" /> método para retornar um objeto <b>FreeformBuilder</b> . Use o <see cref="M:Microsoft.Office.Interop.Word.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" /> método para adicionar nós à forma livre. Use o <see cref="M:Microsoft.Office.Interop.Word.FreeformBuilder.ConvertToShape(System.Object@)" /> método para criar a forma definida no objeto <b>FreeformBuilder</b> e adicioná-lo à <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> coleção.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="AddNodes">
@@ -63,20 +53,16 @@
       </Parameters>
       <Docs>
         <param name="SegmentType">Necessário <see cref="T:Microsoft.Office.Core.MsoSegmentType" />. O tipo de segmento a ser adicionado.</param>
-        <param name="EditingType">Necessário <see cref="T:Microsoft.Office.Core.MsoEditingType" />. A propriedade de edição do vértice. Se <paramref name="SegmentType" /> for <b>msoSegmentLine</b>, <paramref name="EditingType" /> deve ser <b>msoEditingAuto</b>.</param>
-        <param name="X1">
-          <b>Single</b>obrigatório. Se o <paramref name="EditingType" /> do novo segmento for <b>msoEditingAuto</b>, este argumento especificará a distância horizontal (em pontos) do canto superior esquerdo do documento até o ponto final do novo segmento. Se o <paramref name="EditingType" /> do novo nó for <b>msoEditingCorner</b>, este argumento especificará a distância horizontal (em pontos) do canto superior esquerdo do documento até o primeiro ponto de controle do novo segmento.</param>
-        <param name="Y1">
-          <b>Single</b>obrigatório. Se o <paramref name="EditingType" /> do novo segmento for <b>msoEditingAuto</b>, este argumento especificará a distância vertical (em pontos) do canto superior esquerdo do documento até o ponto final do novo segmento. Se o <paramref name="EditingType" /> do novo nó for <b>msoEditingCorner</b>, este argumento especificará a distância vertical (em pontos) do canto superior esquerdo do documento até o primeiro ponto de controle do novo segmento.</param>
-        <param name="X2">Opcional <b>único</b>. Se o <paramref name="EditingType" /> do novo segmento for <b>msoEditingCorner</b>, este argumento especificará a distância horizontal (em pontos) do canto superior esquerdo do documento até o segundo ponto de controle do novo segmento. Se o <paramref name="EditingType" /> do novo segmento for <b>msoEditingAuto</b>, não especifique um valor para este argumento.</param>
-        <param name="Y2">Opcional <b>único</b>. Se o <paramref name="EditingType" /> do novo segmento for <b>msoEditingCorner</b>, este argumento especificará a distância vertical (em pontos) do canto superior esquerdo do documento até o segundo ponto de controle do novo segmento. Se o <paramref name="EditingType" /> do novo segmento for <b>msoEditingAuto</b>, não especifique um valor para este argumento.</param>
-        <param name="X3">Opcional <b>único</b>. Se o <paramref name="EditingType" /> do novo segmento for <b>msoEditingCorner</b>, este argumento especificará a distância horizontal (em pontos) do canto superior esquerdo do documento até o ponto final do novo segmento. Se o <paramref name="EditingType" /> do novo segmento for <b>msoEditingAuto</b>, não especifique um valor para este argumento.</param>
-        <param name="Y3">Opcional <b>único</b>. Se o <paramref name="EditingType" /> do novo segmento for <b>msoEditingCorner</b>, este argumento especificará a distância vertical (em pontos) do canto superior esquerdo do documento até o ponto final do novo segmento. Se o <paramref name="EditingType" /> do novo segmento for <b>msoEditingAuto</b>, não especifique um valor para este argumento.</param>
-        <summary>Insere um novo segmento no final da forma livre que está sendo criado e adiciona os nós que definem o segmento.</summary>
-        <remarks>
-          <para>Você pode usar esse método tantas vezes quantas você deseja adicionar nós à forma livre que está criando. Quando terminar de adicionar nós, use o <see cref="M:Microsoft.Office.Interop.Word.FreeformBuilder.ConvertToShape(System.Object@)" /> método para criar a forma livre que você definiu. Para adicionar nós a uma forma livre após ele ter sido criado, use o <see cref="M:Microsoft.Office.Interop.Word.ShapeNodes.Insert(System.Int32,Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" /> método do <see cref="T:Microsoft.Office.Interop.Word.ShapeNodes" /> conjunto.</para>
-          <para />
-        </remarks>
+        <param name="EditingType">Necessário <see cref="T:Microsoft.Office.Core.MsoEditingType" />. A propriedade de edição do vértice. Se <paramref name="SegmentType" /> for <b>msoSegmentLine</b>, <paramref name="EditingType" /> deverá ser <b>msoEditingAuto</b>.</param>
+        <param name="X1"><b>Único</b>necessário. Se o <paramref name="EditingType" /> do novo segmento for <b>msoEditingAuto</b>, este argumento especificará a distância horizontal (em pontos) do canto superior esquerdo do documento até o ponto final do novo segmento. Se o <paramref name="EditingType" /> do novo nó for <b>msoEditingCorner</b>, este argumento especificará a distância horizontal (em pontos) do canto superior esquerdo do documento até o primeiro ponto de controle do novo segmento.</param>
+        <param name="Y1"><b>Único</b>necessário. Se o <paramref name="EditingType" /> do novo segmento for <b>msoEditingAuto</b>, este argumento especificará a distância vertical (em pontos) do canto superior esquerdo do documento até o ponto final do novo segmento. Se o <paramref name="EditingType" /> do novo nó for <b>msoEditingCorner</b>, este argumento especificará a distância vertical (em pontos) do canto superior esquerdo do documento até o primeiro ponto de controle do novo segmento.</param>
+        <param name="X2"><b>Único</b>opcional. Se o <paramref name="EditingType" /> do novo segmento for <b>msoEditingCorner</b>, este argumento especificará a distância horizontal (em pontos) do canto superior esquerdo do documento até o segundo ponto de controle do novo segmento. Se o <paramref name="EditingType" /> do novo segmento for <b>msoEditingAuto</b>, não especifique um valor para este argumento.</param>
+        <param name="Y2"><b>Único</b>opcional. Se o <paramref name="EditingType" /> do novo segmento for <b>msoEditingCorner</b>, este argumento especificará a distância vertical (em pontos) do canto superior esquerdo do documento até o segundo ponto de controle do novo segmento. Se o <paramref name="EditingType" /> do novo segmento for <b>msoEditingAuto</b>, não especifique um valor para este argumento.</param>
+        <param name="X3"><b>Único</b>opcional. Se o <paramref name="EditingType" /> do novo segmento for <b>msoEditingCorner</b>, este argumento especificará a distância horizontal (em pontos) do canto superior esquerdo do documento até o ponto final do novo segmento. Se o <paramref name="EditingType" /> do novo segmento for <b>msoEditingAuto</b>, não especifique um valor para este argumento.</param>
+        <param name="Y3"><b>Único</b>opcional. Se o <paramref name="EditingType" /> do novo segmento for <b>msoEditingCorner</b>, este argumento especificará a distância vertical (em pontos) do canto superior esquerdo do documento até o ponto final do novo segmento. Se o <paramref name="EditingType" /> do novo segmento for <b>msoEditingAuto</b>, não especifique um valor para este argumento.</param>
+        <summary>Insere um novo segmento no final da forma livre que está sendo criada e adiciona os nós que definem o segmento.</summary>
+        <remarks><para>Você pode usar esse método tantas vezes quantas você deseja adicionar nós à forma livre que está criando. Quando terminar de adicionar nós, use o <see cref="M:Microsoft.Office.Interop.Word.FreeformBuilder.ConvertToShape(System.Object@)" /> método para criar a forma livre que você acabou de definir. Para adicionar nós a uma forma livre após ele ter sido criado, use <see cref="M:Microsoft.Office.Interop.Word.ShapeNodes.Insert(System.Int32,Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" /> o método do <see cref="T:Microsoft.Office.Interop.Word.ShapeNodes" /> conjunto.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -102,7 +88,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -129,14 +115,11 @@
         <Parameter Name="Anchor" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Anchor">
-          <b>Objeto</b>de opcional. Uma <see cref="T:Microsoft.Office.Interop.Word.Range" /> object que representa o texto ao qual a forma está vinculada. Se <paramref name="Anchor" /> for especificado, a âncora será posicionada no início do primeiro parágrafo no intervalo de ancoragem. Se esse argumento for omitido, o intervalo de ancoragem é selecionado automaticamente e a forma é posicionada em relação às bordas superior e esquerdas da página.</param>
-        <summary>Cria uma forma que tem as características geométricas do objeto especificado. Retorna um <see cref="T:Microsoft.Office.Interop.Word.Shape" /> object que representa a nova forma.</summary>
+        <param name="Anchor"><b>Objeto</b>opcional. Um <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto que representa o texto ao qual a forma está vinculada. Se <paramref name="Anchor" /> for especificado, a âncora será posicionada no início do primeiro parágrafo no intervalo de ancoragem. Se esse argumento for omitido, o intervalo de ancoragem é selecionado automaticamente e a forma é posicionada em relação às bordas superior e esquerdas da página.</param>
+        <summary>Cria uma forma que tem as características geométricas do objeto especificado. Retorna um <see cref="T:Microsoft.Office.Interop.Word.Shape" /> objeto que representa a nova forma.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Você deve aplicar o <see cref="M:Microsoft.Office.Interop.Word.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" /> método para um <see cref="T:Microsoft.Office.Interop.Word.FreeformBuilder" /> do objeto pelo menos uma vez antes de usar o método <b>ConvertToShape</b> .</para>
-          <para />
-        </remarks>
+        <remarks><para>Você deve aplicar o <see cref="M:Microsoft.Office.Interop.Word.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" /> método a um <see cref="T:Microsoft.Office.Interop.Word.FreeformBuilder" /> objeto pelo menos uma vez antes de usar o método <b>ConvertToShape</b> .</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -164,9 +147,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
-          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". [!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
+          <para>A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">

@@ -1,13 +1,5 @@
 <Type Name="MailMergeDataFields" FullName="Microsoft.Office.Interop.Word.MailMergeDataFields">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f58ae1284d9489d9a8a782ed4399362a0986a576" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20665094" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface MailMergeDataFields : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="155897d713a836ac770479c6b90e80d9c3067f1a" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144474" /></Metadata><TypeSignature Language="C#" Value="public interface MailMergeDataFields : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract MailMergeDataFields implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.MailMergeDataFields" />
   <TypeSignature Language="VB.NET" Value="Public Interface MailMergeDataFields&#xA;Implements IEnumerable" />
@@ -31,12 +23,10 @@
   </Attributes>
   <Docs>
     <summary>Uma coleção de <see cref="T:Microsoft.Office.Interop.Word.MailMergeDataField" /> objetos que representam os campos de dados em uma fonte de dados de mala direta.</summary>
-    <remarks>
-      <para>Use o <see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.DataFields" /> propriedade para retornar a coleção <b>MailMergeDataFields</b> .</para>
-      <para>Não é possível adicionar campos à coleção <b>MailMergeDataFields</b> . Quando um campo de dados é adicionado a uma fonte de dados, o campo é incluído automaticamente na coleção <b>MailMergeDataFields</b> . Use o <see cref="M:Microsoft.Office.Interop.Word.MailMerge.EditDataSource" /> método para editar o conteúdo de uma fonte de dados.</para>
-      <para>Uso <b>DataFields</b>(<paramref name="index" />), onde <paramref name="index" /> é o nome do campo de dados ou o número de índice, para retornar um único objeto <b>MailMergeDataField</b> . O número de índice representa a posição do campo de dados na fonte de dados de mala direta.</para>
-      <para />
-    </remarks>
+    <remarks><para>Use a <see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.DataFields" /> propriedade para retornar a coleção <b>MailMergeDataFields</b> .</para>
+      <para>Você não pode adicionar campos à coleção <b>MailMergeDataFields</b>. Quando um campo de dados é adicionado a uma fonte de dados, o campo é incluído automaticamente na coleção <b>MailMergeDataFields</b>. Use o <see cref="M:Microsoft.Office.Interop.Word.MailMerge.EditDataSource" /> método para editar o conteúdo de uma fonte de dados.</para>
+      <para>Use <b></b>DataFields (<paramref name="index" />), onde <paramref name="index" /> é o nome do campo de dados ou o número de índice, para retornar um único objeto <b>MailMergeDataField</b> . O número de índice representa a posição do campo de dados na fonte de dados de mala direta.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -62,7 +52,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -120,9 +110,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
-          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". [!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
+          <para>A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">

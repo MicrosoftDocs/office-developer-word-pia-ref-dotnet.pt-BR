@@ -1,13 +1,5 @@
 <Type Name="Category" FullName="Microsoft.Office.Interop.Word.Category">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="60d6731499991e5423f388f2cbbb54d084722c37" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20664039" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Category" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d4ebcc53d5d821839f9a81aad950abc6d855e17c" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142324" /></Metadata><TypeSignature Language="C#" Value="public interface Category" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Category" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Category" />
   <TypeSignature Language="VB.NET" Value="Public Interface Category" />
@@ -27,9 +19,11 @@
   </Attributes>
   <Docs>
     <summary>Representa uma categoria individual de um tipo de bloco de construção.</summary>
-    <remarks>
-      <para>Microsoft Office Word usa tipos e categorias para organizar os blocos de construção. Cada tipo de bloco de construção é representado por um <see cref="T:Microsoft.Office.Interop.Word.WdBuildingBlockTypes" /> constante. Cada categoria é uma cadeia de caracteres exclusiva que define um usuário. O Word vem com duas categorias já definidas: "Geral" e "Custom"; Você pode criar categorias adicionais conforme necessário.</para> Uso de 
-      <para>o <see cref="P:Microsoft.Office.Interop.Word.Category.Type" /> propriedade para acessar o tipo de bloco de construção associado a uma categoria específica.  Use o <see cref="P:Microsoft.Office.Interop.Word.Category.BuildingBlocks" /> propriedade para acessar a coleção de blocos de construção para uma categoria. </para><para>Uso o <see cref="M:Microsoft.Office.Interop.Word.Categories.Item(System.Object@)" /> método do <see cref="T:Microsoft.Office.Interop.Word.Categories" /> conjunto para acessar uma categoria exising; para criar uma nova categoria, use o <see cref="M:Microsoft.Office.Interop.Word.BuildingBlockEntries.Add(System.String,Microsoft.Office.Interop.Word.WdBuildingBlockTypes,System.String,Microsoft.Office.Interop.Word.Range,System.Object@,Microsoft.Office.Interop.Word.WdDocPartInsertOptions)" /> método do <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" /> conjunto. Definir o valor de <paramref name="Category" /> parâmetro. </para><para>Para obter mais informações sobre os blocos de construção, consulte <a href="HV10120827">Trabalhando com blocos de construção</a></para><para /></remarks>
+    <remarks><para>O Microsoft Office Word usa tipos e categorias para organizar os blocos de construção. Cada tipo de bloco de construção é representado <see cref="T:Microsoft.Office.Interop.Word.WdBuildingBlockTypes" /> por uma constante. Cada categoria é uma cadeia de caracteres exclusiva definida pelo usuário. O Word é fornecido com duas categorias já definidas: "Geral" e "Personalizar"; você pode criar categorias adicionais, conforme necessário.</para>
+      <para>Use a <see cref="P:Microsoft.Office.Interop.Word.Category.Type" /> propriedade para acessar o tipo de bloco de construção associado a uma categoria específica.  Use a <see cref="P:Microsoft.Office.Interop.Word.Category.BuildingBlocks" /> propriedade para acessar a coleção de blocos de construção para uma categoria. </para>
+      <para>Use o <see cref="M:Microsoft.Office.Interop.Word.Categories.Item(System.Object@)" /> método da <see cref="T:Microsoft.Office.Interop.Word.Categories" /> coleção para acessar uma categoria de exising; para criar uma nova categoria, use o <see cref="M:Microsoft.Office.Interop.Word.BuildingBlockEntries.Add(System.String,Microsoft.Office.Interop.Word.WdBuildingBlockTypes,System.String,Microsoft.Office.Interop.Word.Range,System.Object@,Microsoft.Office.Interop.Word.WdDocPartInsertOptions)" /> método do <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" /> conjunto. Defina o valor do <paramref name="Category" /> parâmetro. </para>
+      <para>Para obter mais informações sobre blocos de construção, consulte <a href="HV10120827">trabalhando com blocos de construção</a></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -55,10 +49,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word._Application" /> object que representa o aplicativo Microsoft Word.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word._Application" />
-        </value>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word._Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,9 +78,7 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna os blocos de construção para uma categoria. Somente leitura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.BuildingBlocks" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Word.BuildingBlocks" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -116,15 +106,11 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado. Somente leitura.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Word, a propriedade <b>Creator</b> retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD."  Essa propriedade principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+        <value><b>Integer</b></value>
+        <remarks><para>Se o objeto foi criado no Microsoft Word, a propriedade <b>Creator</b> retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD".  Essa propriedade foi projetada inicialmente para ser usada no Macintosh, no qual cada aplicativo tem um código de criador com quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
           <para>
             <b>Observação</b>: esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -151,9 +137,7 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna a posição de um item em uma coleção. Somente leitura.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -181,9 +165,7 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna o nome do objeto especificado. Somente leitura.</summary>
-        <value>
-          <b>String</b>
-        </value>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -211,9 +193,7 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna o objeto pai do objeto <b>Category</b> especificado.</summary>
-        <value>
-          <b>Object</b>
-        </value>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -241,9 +221,7 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna o tipo de bloco de construção para uma categoria de bloco de construção. Somente leitura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockType" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Word.BuildingBlockType" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

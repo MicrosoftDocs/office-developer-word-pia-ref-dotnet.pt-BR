@@ -1,13 +1,5 @@
 <Type Name="Styles" FullName="Microsoft.Office.Interop.Word.Styles">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="7a71905f55e855c91dd6e6e6d6e8a0f9e7b1cc7a" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20664739" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Styles : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="eb701dd3171af93b44fe6b5810f09450463725fa" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143935" /></Metadata><TypeSignature Language="C#" Value="public interface Styles : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Styles implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Styles" />
   <TypeSignature Language="VB.NET" Value="Public Interface Styles&#xA;Implements IEnumerable" />
@@ -31,13 +23,13 @@
   </Attributes>
   <Docs>
     <summary>Uma coleção de <see cref="T:Microsoft.Office.Interop.Word.Style" /> objetos que representam os estilos internos e definidos pelo usuário em um documento.</summary>
-    <remarks>
-      <para>Use o <see cref="P:Microsoft.Office.Interop.Word._Document.Styles" /> propriedade para retornar a coleção <b>Styles</b> .</para>
-      <para>Uso o <see cref="M:Microsoft.Office.Interop.Word.Styles.Add(System.String,System.Object@)" /> método para criar um novo estilo definido pelo usuário e adicioná-lo à coleção <b>Styles</b> .</para>
-      <para>Usam <b>estilos</b>(<paramref name="index" />), onde <paramref name="index" /> é o nome do estilo, um <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" /> constante ou número de índice, para retornar um único objeto <b>Style</b> . Você deve corresponder exatamente a ortografia e o espaçamento do nome do estilo, mas não necessariamente sua capitalização.</para>
-      <para>o número de índice do estilo representa a posição do estilo na lista classificada em ordem alfabética de nomes de estilos.</para> Objeto 
-      <para>os <b>estilos</b> não está disponível na <see cref="T:Microsoft.Office.Interop.Word.Template" /> objeto. No entanto, você pode usar o <see cref="M:Microsoft.Office.Interop.Word.Template.OpenAsDocument" /> método para abrir um modelo como um documento para que você possa modificar os estilos do modelo.</para> Uso de 
-      <para>o <see cref="M:Microsoft.Office.Interop.Word._Application.OrganizerCopy(System.String,System.String,System.String,Microsoft.Office.Interop.Word.WdOrganizerObject)" /> método para copiar estilos entre modelos e documentos. Use o <see cref="M:Microsoft.Office.Interop.Word._Document.UpdateStyles" /> método para atualizar os estilos do documento ativo para coincidir com as definições de estilo no modelo anexado.</para><para /></remarks>
+    <remarks><para>Use a <see cref="P:Microsoft.Office.Interop.Word._Document.Styles" /> propriedade para retornar a <b></b> coleção Styles.</para>
+      <para>Use o <see cref="M:Microsoft.Office.Interop.Word.Styles.Add(System.String,System.Object@)" /> método para criar um novo estilo definido pelo usuário e adicioná-lo à <b></b> coleção Styles.</para>
+      <para>Use <b></b>Styles<paramref name="index" />(), <paramref name="index" /> onde é o nome do estilo <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" /> , uma constante ou um número de índice, para retornar um único objeto <b>Style</b> . Você deve corresponder exatamente a ortografia e o espaçamento do nome do estilo, mas não necessariamente seu uso de maiusculas.</para>
+      <para>O número de índice do estilo representa a posição do estilo na lista classificada em ordem alfabética de nomes de estilo. </para>
+      <para>O <b></b> objeto Styles não está disponível <see cref="T:Microsoft.Office.Interop.Word.Template" /> a partir do objeto. No entanto, você pode <see cref="M:Microsoft.Office.Interop.Word.Template.OpenAsDocument" /> usar o método para abrir um modelo como um documento para que você possa modificar estilos no modelo.</para>
+      <para>Use o <see cref="M:Microsoft.Office.Interop.Word._Application.OrganizerCopy(System.String,System.String,System.String,Microsoft.Office.Interop.Word.WdOrganizerObject)" /> método para copiar estilos entre documentos e modelos. Use o <see cref="M:Microsoft.Office.Interop.Word._Document.UpdateStyles" /> método para atualizar os estilos no documento ativo para coincidir com as definições de estilo no modelo anexado.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -63,11 +55,9 @@
         <Parameter Name="Type" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Name">
-          <b>String</b> necessário. O nome da cadeia de caracteres para o novo estilo.</param>
-        <param name="Type">
-          <b>Objeto</b>de opcional. O tipo de estilo do novo estilo. Pode ser uma das seguintes opções <see cref="T:Microsoft.Office.Interop.Word.WdStyleType" /> constantes: <b>wdStyleTypeParagraph</b>, <b>wdStyleTypeCharacter</b>, <b>wdStyleTypeList</b>ou <b>wdStyleTypeTable</b>.</param>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Style" /> object que representa um novo estilo definido pelo usuário adicionado à lista de estilos.</summary>
+        <param name="Name"><b>String</b> necessário. O nome da cadeia de caracteres para o novo estilo.</param>
+        <param name="Type"><b>Objeto</b>opcional. O tipo de estilo do novo estilo. Pode ser uma <see cref="T:Microsoft.Office.Interop.Word.WdStyleType" /> das seguintes constantes: <b>wdStyleTypeParagraph</b>, <b>wdStyleTypeCharacter</b>, <b>wdStyleTypeList</b>ou <b>wdStyleTypeTable</b>.</param>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Style" /> objeto que representa um novo estilo definido pelo usuário adicionado à lista de estilos.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -95,7 +85,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -153,9 +143,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado. <b>Integer</b> somente leitura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
-          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". [!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
+          <para>A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">

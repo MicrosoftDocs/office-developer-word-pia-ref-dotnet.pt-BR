@@ -1,13 +1,5 @@
 <Type Name="SmartTagType" FullName="Microsoft.Office.Interop.Word.SmartTagType">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="42dcabef8b7b97589d5327b23896d8ea6d46375a" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20664839" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface SmartTagType" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="be0009d07ada538632f62700e62de5b182eb910c" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143984" /></Metadata><TypeSignature Language="C#" Value="public interface SmartTagType" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SmartTagType" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.SmartTagType" />
   <TypeSignature Language="VB.NET" Value="Public Interface SmartTagType" />
@@ -27,11 +19,11 @@
   </Attributes>
   <Docs>
     <summary>Representa um tipo de marca inteligente.</summary>
-    <remarks>
-      <para>Um tipo de marca inteligente é um único item em uma lista de marca inteligente. Listas de marca inteligente podem conter vários tipos de marcas inteligentes. Por exemplo, a lista de marca inteligente endereços instalada em sistemas em inglês, por padrão contém um tipo de marca inteligente nome, tipo de rua marca inteligente e um tipo de marca inteligente cidade, para citar apenas alguns.</para>
+    <remarks><para>Um tipo de marca inteligente é um único item em uma lista de marcas inteligentes. Essas listas podem conter vários tipos de marcas inteligentes. Por exemplo, a lista de marcas inteligentes Address instalada em sistemas em inglês, por padrão, contém os tipos de marcas inteligentes name, street e city, para citar apenas alguns.</para>
       <para>
-        <see cref="T:Microsoft.Office.Interop.Word.SmartTagRecognizer" />, <see cref="T:Microsoft.Office.Interop.Word.SmartTagAction" />, e <see cref="T:Microsoft.Office.Interop.Word.SmartTagType" /> objetos estão relacionados a cada item que identifica um componente de marca inteligente é um objeto <b>SmartTagType</b> . Por exemplo, "city" no componente de marca inteligente endereço é um objeto <b>SmartTagType</b> específico. O tipo de marca inteligente cidade possui relacionados, em seguida, objetos <b>SmartTagRecognizer</b> (a parte do componente de marca inteligente que reconhece as marcas inteligentes do tipo "city" nos documentos) e objetos <b>SmartTagAction</b> (a parte do componente de marca inteligente que fornece o ações relacionadas ao tipo de marca inteligente específico, que pode incluir a busca de uma cidade identificada em Microsoft MapPoint no MSN). Resumindo, o identificador faz os rótulos, o manipulador de ação fornece a funcionalidade do usuário final e o que os agrupa é o tipo de marca inteligente que trabalham.</para> Uso de 
-      <para>o <see cref="P:Microsoft.Office.Interop.Word.SmartTagTypes.Item(System.Object@)" /> método para retornar um tipo de marca inteligente específico em uma coleção de tipos de marcas inteligentes. Use o <see cref="P:Microsoft.Office.Interop.Word.SmartTagType.SmartTagRecognizers" /> propriedade para retornar todos os identificadores de marcas inteligentes associado a um tipo especificado de marca inteligente e use o <see cref="P:Microsoft.Office.Interop.Word.SmartTagType.SmartTagActions" /> propriedade para retornar todas as ações de marca inteligente associadas a um tipo especificado de marca inteligente.</para><para /></remarks>
+        <see cref="T:Microsoft.Office.Interop.Word.SmartTagRecognizer" />, <see cref="T:Microsoft.Office.Interop.Word.SmartTagAction" />e <see cref="T:Microsoft.Office.Interop.Word.SmartTagType" /> objetos estão relacionados em que cada item que um componente de marca inteligente reconhece é um objeto <b>smartTagType</b> . Por exemplo, "city" no componente de marca inteligente Address é um objeto <b>SmartTagType</b> específico. O tipo de marca inteligente city possui objetos <b>SmartTagRecognizer</b> relacionados (a parte do componente de marca inteligente que reconhece marcas inteligentes do tipo "city" nos documentos) e objetos <b>SmartTagAction</b> (a parte do componente de marca inteligente que disponibiliza ações relacionadas ao tipo de marca inteligente específico, que pode incluir a pesquisa de uma cidade identificada no Microsoft MapPoint, no MSN). No entanto, o reconhecedor faz o rotulamento, o manipulador de ações fornece a funcionalidade do usuário final e o que o une juntos é o tipo de marca inteligente em que eles trabalham.</para>
+      <para>Use o <see cref="P:Microsoft.Office.Interop.Word.SmartTagTypes.Item(System.Object@)" /> método para retornar um tipo de marca inteligente específico em uma coleção de tipos de marca inteligente. Em seguida, <see cref="P:Microsoft.Office.Interop.Word.SmartTagType.SmartTagRecognizers" /> use a propriedade para retornar todos os identificadores de marcas inteligentes associados a um tipo especificado de marca inteligente <see cref="P:Microsoft.Office.Interop.Word.SmartTagType.SmartTagActions" /> e use a propriedade para retornar todas as ações de marcas inteligentes associadas a um tipo especificado de marca inteligente.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -60,7 +52,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -93,9 +85,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto especificado foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
-          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Se o objeto especificado foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". [!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
+          <para>A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FriendlyName">
@@ -126,13 +118,11 @@
       <Docs>
         <summary>Retorna uma <b>cadeia de caracteres</b> que representa um nome amigável para um tipo de marca inteligente.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Inteligente de nomes de tipo de marca, conforme definido no <see cref="P:Microsoft.Office.Interop.Word.SmartTagType.Name" /> propriedade, são formatados como Uniform Resource Names (URNs). O nome amigável remove o URN e deixa o nome após o sinal de cerquilha (#). Por exemplo, o tipo de marca inteligente endereço retorna o seguinte URN para o <see cref="P:Microsoft.Office.Interop.Word.SmartTagType.Name" /> propriedade.</para>
-          <para>urn: schemas-microsoft-com:office:smarttags #address</para>
-          <para>a propriedade <b>FriendlyName</b> remove tudo até e incluindo o sinal de cerquilha (#) e deixa a <b>cadeia de caracteres</b>a seguir:</para>
-          <para>endereço</para>
-          <para />
-        </remarks>
+        <remarks><para>Nomes de tipo de marca inteligente, conforme definido <see cref="P:Microsoft.Office.Interop.Word.SmartTagType.Name" /> na propriedade, são formatados como nomes de recursos uniformes (urns). O nome amigável remove o URN e deixa o nome após o sinal de sustenido (#). Por exemplo, o tipo de marca inteligente endereço retorna o seguinte URN para <see cref="P:Microsoft.Office.Interop.Word.SmartTagType.Name" /> a propriedade.</para>
+          <para>urn: schemas-microsoft-com: Office: SmartTags # endereço</para>
+          <para>A <b></b> Propriedade FriendlyName remove tudo até e incluindo o sinal de sustenido (#) e deixa a seguinte <b>cadeia de caracteres</b>:</para>
+          <para>address</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -223,7 +213,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.SmartTagActions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.SmartTagActions" /> coleção que representa a coleção de ações disponíveis em uma marca inteligente.</summary>
+        <summary>Retorna uma <see cref="T:Microsoft.Office.Interop.Word.SmartTagActions" /> coleção que representa a coleção de ações disponíveis em uma marca inteligente.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -254,7 +244,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.SmartTagRecognizers</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.SmartTagRecognizers" /> coleção para um aplicativo.</summary>
+        <summary>Retorna uma <see cref="T:Microsoft.Office.Interop.Word.SmartTagRecognizers" /> coleção para um aplicativo.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

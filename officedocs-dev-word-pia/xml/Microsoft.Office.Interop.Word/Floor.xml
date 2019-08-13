@@ -1,13 +1,5 @@
 <Type Name="Floor" FullName="Microsoft.Office.Interop.Word.Floor">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="e51bfd41910dd108a47cc5c58662203f57270306" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20665157" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Floor" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="7c5ab0fbff13f74aea8c14502c3695da408e721d" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34148107" /></Metadata><TypeSignature Language="C#" Value="public interface Floor" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Floor" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Floor" />
   <TypeSignature Language="VB.NET" Value="Public Interface Floor" />
@@ -26,11 +18,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Representa a base de um gráfico 3D.</summary>
+    <summary>Representa o piso de um gráfico 3D.</summary>
     <remarks>To be added.</remarks>
-    <example>
-      <para>Use o <see cref="P:Microsoft.Office.Interop.Word.Chart.Floor" /> propriedade para retornar o <see cref="T:Microsoft.Office.Interop.Word.Floor" /> objeto. O exemplo a seguir define a cor de base do gráfico incorporado um como ciano. O exemplo falhará se o gráfico não for um gráfico 3D.</para>
-    </example>
+    <example><para>Use a <see cref="P:Microsoft.Office.Interop.Word.Chart.Floor" /> propriedade para retornar o <see cref="T:Microsoft.Office.Interop.Word.Floor" /> objeto. O exemplo a seguir define como ciano a cor da base no gráfico incorporado um. O exemplo falhará se o gráfico não for um gráfico 3D.</para></example>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -56,10 +46,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Quando usado sem um qualificador de objeto, essa propriedade retorna uma <see cref="T:Microsoft.Office.Interop.Word._Application" /> object que representa o aplicativo Microsoft Word. Quando usada com um qualificador de objeto, essa propriedade retornará um objeto <b>Application</b> que representa o criador do objeto especificado (você pode usar essa propriedade com um objeto Automation do OLE para retornar o aplicativo desse objeto). Somente leitura.</summary>
-        <value>
-          <b>Object</b>
-        </value>
+        <summary>Quando usado sem um qualificador de objeto, essa propriedade <see cref="T:Microsoft.Office.Interop.Word._Application" /> retorna um objeto que representa o aplicativo Microsoft Word. Quando usada com um qualificador de objeto, essa propriedade retornará um objeto <b>Application</b> que representa o criador do objeto especificado (você pode usar essa propriedade com um objeto Automation do OLE para retornar o aplicativo desse objeto). Somente leitura.</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,10 +77,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartBorder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Border" /> object que representa a borda do objeto.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartBorder" />
-        </value>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Border" /> objeto que representa a borda do objeto.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartBorder" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -118,9 +104,7 @@
       <Parameters />
       <Docs>
         <summary>Limpa a formatação do objeto.</summary>
-        <returns>
-          <b>Object</b>
-        </returns>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -148,13 +132,9 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado. <b>Integer</b> somente leitura.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Word, o <see cref="P:Microsoft.Office.Interop.Word.Floor.Creator" /> propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD."  Essa propriedade principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <value><b>Integer</b></value>
+        <remarks><para>Se o objeto foi criado no Microsoft Word, a <see cref="P:Microsoft.Office.Interop.Word.Floor.Creator" /> propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD".  Essa propriedade foi projetada inicialmente para ser usada no Macintosh, no qual cada aplicativo tem um código de criador com quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Fill">
@@ -183,10 +163,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartFillFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.FillFormat" /> objeto para uma forma especificada ou um <see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" /> objeto para um gráfico especificado que contém as propriedades para a forma ou o gráfico de formatação de preenchimento.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" />
-        </value>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.FillFormat" /> objeto de uma forma especificada ou de <see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" /> um objeto para um gráfico especificado que contém propriedades de formatação de preenchimento para a forma ou o gráfico.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartFillFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -214,10 +192,8 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna a linha, preenchimento e efeito da formatação do objeto.
-Somente leitura <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />
-        </value>
+Somente <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />leitura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -247,10 +223,8 @@ Somente leitura <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</sum
         <ReturnType>Microsoft.Office.Interop.Word.Interior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Interior" /> object que representa o interior do objeto especificado.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Interior" />
-        </value>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Interior" /> objeto que representa o interior do objeto especificado.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Interior" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -278,9 +252,7 @@ Somente leitura <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</sum
       </ReturnValue>
       <Docs>
         <summary>Retorna um valor <b>String</b> que representa o nome do objeto.</summary>
-        <value>
-          <b>String</b>
-        </value>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -308,9 +280,7 @@ Somente leitura <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</sum
       </ReturnValue>
       <Docs>
         <summary>Retorna o pai do objeto especificado. Somente leitura <b>objeto</b>.</summary>
-        <value>
-          <b>Object</b>
-        </value>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -336,10 +306,8 @@ Somente leitura <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</sum
       <Parameters />
       <Docs>
         <summary>Cola uma imagem da Área de Transferência na base do gráfico especificado.</summary>
-        <remarks>
-          <para>Este método pode ser usado em gráficos de radar, barra, linha ou coluna.</para>
-          <para />
-        </remarks>
+        <remarks><para>Este método pode ser usado em gráficos de colunas, de barras, de linhas ou de radar.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PictureType">
@@ -368,14 +336,10 @@ Somente leitura <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</sum
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define um valor <b>objeto</b> que representa a maneira como as imagens são exibidas nas paredes e faces de um gráfico 3D.</summary>
-        <value>
-          <b>Object</b>
-        </value>
-        <remarks>
-          <para>Essa propriedade pode ser definida como um dos seguintes <see cref="T:Microsoft.Office.Interop.Word.XlChartPictureType" /> constantes: <see cref="F:Microsoft.Office.Interop.Word.XlChartPictureType.xlStack" /> ou<see cref="F:Microsoft.Office.Interop.Word.XlChartPictureType.xlStretch" /></para>
-          <para />
-        </remarks>
+        <summary>Retorna ou define um valor <b>Object</b> que representa a maneira como as imagens são exibidas nas paredes e faces de um gráfico 3D.</summary>
+        <value><b>Object</b></value>
+        <remarks><para>Essa propriedade pode ser definida como uma das seguintes <see cref="T:Microsoft.Office.Interop.Word.XlChartPictureType" /> constantes: ou <see cref="F:Microsoft.Office.Interop.Word.XlChartPictureType.xlStack" /><see cref="F:Microsoft.Office.Interop.Word.XlChartPictureType.xlStretch" /></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -400,9 +364,7 @@ Somente leitura <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</sum
       <Parameters />
       <Docs>
         <summary>Seleciona o objeto.</summary>
-        <returns>
-          <b>Object</b>
-        </returns>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -433,13 +395,9 @@ Somente leitura <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />.</sum
       </ReturnValue>
       <Docs>
         <summary>Retorna ou define um <b>inteiro</b>, especificando a espessura da base. Leitura/gravação.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Use essa propriedade para definir a espessura da base.  A espessura padrão é zero (0).</para>
-          <para />
-        </remarks>
+        <value><b>Integer</b></value>
+        <remarks><para>Use essa propriedade para definir a espessura do piso.  A espessura padrão é zero (0).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

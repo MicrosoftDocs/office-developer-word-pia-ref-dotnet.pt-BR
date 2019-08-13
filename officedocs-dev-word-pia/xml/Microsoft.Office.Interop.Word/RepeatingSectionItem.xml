@@ -1,13 +1,5 @@
 <Type Name="RepeatingSectionItem" FullName="Microsoft.Office.Interop.Word.RepeatingSectionItem">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="e951aef451ef7f40156f1704b3da559404614c0f" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20664627" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface RepeatingSectionItem" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a9f459112b2a15f59477147b596dc386a138bb6a" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144096" /></Metadata><TypeSignature Language="C#" Value="public interface RepeatingSectionItem" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract RepeatingSectionItem" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.RepeatingSectionItem" />
   <TypeSignature Language="VB.NET" Value="Public Interface RepeatingSectionItem" />
@@ -26,7 +18,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Representa um item de seção de repetição em um controle de conteúdo.</summary>
+    <summary>Representa um item de seção recorrente em um controle de conteúdo.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -53,7 +45,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Word.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -81,14 +73,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado. Somente leitura <b>inteiro</b> (<b>int</b> em c#).</summary>
+        <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado. <b>Integer</b> somente leitura (<b>int</b> em C#).</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Word, a propriedade <b>Creator</b> retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Essa propriedade principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Office Macintosh Edition.</para>
+        <remarks><para>Se o objeto foi criado no Word, a propriedade <b>Creator</b> retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". Essa propriedade principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem ajuda incluída no Office Macintosh Edition.</para>
           <para>
             <b>Observação</b>: esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -139,11 +129,9 @@
       <Docs>
         <summary>Adiciona um item de seção recorrente depois do item especificado e retorna o novo item.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Você pode chamar esse método em somente a controles de conteúdo de item de seção de repetição.</para>
-          <para>Se o <see cref="P:Microsoft.Office.Interop.Word.ContentControl.AllowInsertDeleteSection" /> propriedade estiver definida como <b>False</b>, este método retornará um erro.</para>
-          <para />
-        </remarks>
+        <remarks><para>Você pode chamar este método somente em controles de conteúdo de item de seção de repetição.</para>
+          <para>Se a <see cref="P:Microsoft.Office.Interop.Word.ContentControl.AllowInsertDeleteSection" /> propriedade for definida como <b>false</b>, este método retornará um erro.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InsertItemBefore">
@@ -169,11 +157,9 @@
       <Docs>
         <summary>Adiciona um item de seção recorrente antes do item especificado e retorna o novo item.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Você pode chamar esse método em somente a controles de conteúdo de item de seção de repetição.</para>
-          <para>Se o <see cref="P:Microsoft.Office.Interop.Word.ContentControl.AllowInsertDeleteSection" /> propriedade estiver definida como <b>False</b>, este método retornará um erro.</para>
-          <para />
-        </remarks>
+        <remarks><para>Você pode chamar este método somente em controles de conteúdo de item de seção de repetição.</para>
+          <para>Se a <see cref="P:Microsoft.Office.Interop.Word.ContentControl.AllowInsertDeleteSection" /> propriedade for definida como <b>false</b>, este método retornará um erro.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -227,7 +213,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o intervalo de repetição seção item especificado, excluindo as marcas de início e término. Somente leitura.</summary>
+        <summary>Retorna o intervalo do item de seção recorrente especificado, excluindo as marcas de início e de fim. Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -1,13 +1,5 @@
 <Type Name="PictureFormat" FullName="Microsoft.Office.Interop.Word.PictureFormat">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="7533126a34adfedd4e31baade1a3e4d7b7ecdbc5" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20664589" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface PictureFormat" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="47daacc6dd5e59ccb2bda07ea680b3bf997208f5" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144180" /></Metadata><TypeSignature Language="C#" Value="public interface PictureFormat" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PictureFormat" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.PictureFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface PictureFormat" />
@@ -27,11 +19,9 @@
   </Attributes>
   <Docs>
     <summary>Contém propriedades e métodos que se aplicam a figuras e objetos OLE.</summary>
-    <remarks>
-      <para>O <see cref="T:Microsoft.Office.Interop.Word.LinkFormat" /> objeto contém propriedades e métodos que se aplicam a objetos OLE vinculados somente. O <see cref="T:Microsoft.Office.Interop.Word.OLEFormat" /> objeto contém propriedades e métodos que se aplicam a objetos OLE, estejam vinculados ou não.</para>
-      <para>Uso o <see cref="P:Microsoft.Office.Interop.Word.Shape.PictureFormat" /> propriedade para retornar um objeto <b>PictureFormat</b> .</para>
-      <para />
-    </remarks>
+    <remarks><para>O <see cref="T:Microsoft.Office.Interop.Word.LinkFormat" /> objeto contém propriedades e métodos que se aplicam somente a objetos OLE vinculados. O <see cref="T:Microsoft.Office.Interop.Word.OLEFormat" /> objeto contém propriedades e métodos que se aplicam a objetos OLE, estejam eles vinculados ou não.</para>
+      <para>Use a <see cref="P:Microsoft.Office.Interop.Word.Shape.PictureFormat" /> propriedade para retornar um objeto <b>PictureFormat</b> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -57,7 +47,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -180,9 +170,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
-          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". [!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
+          <para>A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Crop">
@@ -211,12 +201,10 @@
         <ReturnType>Microsoft.Office.Core.Crop</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém ou define um <see cref="T:Microsoft.Office.Core.Crop" /> object que representa um corte da imagem.</summary>
-        <value>Uma <see cref="T:Microsoft.Office.Core.Crop" /> object que representa um corte da imagem.</value>
-        <remarks>
-          <para>Leitura/gravação. A definição dessa propriedade tem o mesmo efeito que selecionar um item na lista suspensa na caixa de diálogo do Word 2010Options (guia Avançado, opções de edição, atualizando o estilo para corresponder à seleção:.</para>
-          <para />
-        </remarks>
+        <summary>Obtém ou define um <see cref="T:Microsoft.Office.Core.Crop" /> objeto que representa um corte de imagem.</summary>
+        <value>Um <see cref="T:Microsoft.Office.Core.Crop" /> objeto que representa um corte de imagem.</value>
+        <remarks><para>Leitura/gravação. A definição dessa propriedade tem o mesmo efeito que selecionar um item na lista suspensa na caixa de diálogo Word 2010options (guia Avançado, opções de edição, atualizando o estilo para corresponder à seleção:.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CropBottom">
@@ -247,10 +235,8 @@
       <Docs>
         <summary>Retorna ou define o número de pontos cortados da parte inferior da imagem ou do objeto OLE especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Corte é calculado em relação ao tamanho original da imagem. Por exemplo, se você insere uma imagem que é originalmente 100 pontos de altura, redimensioná-la de forma que ele fique 200 pontos de altura e, em seguida, defina a propriedade <b>CropBottom</b> como 50, 100 pontos (e não 50) serão cortados da parte inferior da sua imagem.</para>
-          <para />
-        </remarks>
+        <remarks><para>Corte é calculado em relação ao tamanho original da imagem. Por exemplo, se você inserir uma imagem originalmente 100 pontos de altura, redimensione-a para que ela tenha 200 pontos de altura e, em seguida, defina a propriedade <b>CropBottom</b> como 50, 100 pontos (não 50) serão cortados da parte inferior da imagem.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CropLeft">
@@ -281,10 +267,8 @@
       <Docs>
         <summary>Retorna ou define o número de pontos que são cortadas do lado esquerdo da imagem especificada ou objeto OLE.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Corte é calculado em relação ao tamanho original da imagem. Por exemplo, se você insere uma imagem que é originalmente 100 pontos de largura, redimensioná-la de forma que ele fique 200 pontos de largura e, em seguida, defina a propriedade <b>CropLeft</b> como 50, 100 pontos (e não 50) serão cortados do lado esquerdo da sua imagem.</para>
-          <para />
-        </remarks>
+        <remarks><para>Corte é calculado em relação ao tamanho original da imagem. Por exemplo, se você inserir uma imagem originalmente 100 pontos de largura, redimensione-a para que ela tenha 200 pontos de largura e, em seguida, defina a propriedade <b>CropLeft</b> como 50, 100 pontos (não 50) serão cortados do lado esquerdo da imagem.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CropRight">
@@ -315,10 +299,8 @@
       <Docs>
         <summary>Retorna ou define o número de pontos que são cortadas do lado direito da imagem especificada ou objeto OLE.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Corte é calculado em relação ao tamanho original da imagem. Por exemplo, se você insere uma imagem que é originalmente 100 pontos de largura, redimensioná-la de forma que ele fique 200 pontos de largura e, em seguida, defina a propriedade <b>CropRight</b> como 50, 100 pontos (e não 50) serão cortados do lado direito da sua imagem.</para>
-          <para />
-        </remarks>
+        <remarks><para>Corte é calculado em relação ao tamanho original da imagem. Por exemplo, se você inserir uma imagem originalmente 100 pontos de largura, redimensione-a para que ela tenha 200 pontos de largura e, em seguida, defina a propriedade <b>CropRight</b> como 50, 100 pontos (não 50) serão cortados do lado direito da imagem.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CropTop">
@@ -349,10 +331,8 @@
       <Docs>
         <summary>Retorna ou define o número de pontos que são cortadas da parte superior da imagem especificada ou objeto OLE.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Corte é calculado em relação ao tamanho original da imagem. Por exemplo, se você insere uma imagem que é originalmente 100 pontos de altura, redimensioná-la de forma que ele fique 200 pontos de altura e, em seguida, defina a propriedade <b>CropTop</b> como 50, 100 pontos (e não 50) serão cortados da parte superior da sua imagem.</para>
-          <para />
-        </remarks>
+        <remarks><para>Corte é calculado em relação ao tamanho original da imagem. Por exemplo, se você inserir uma imagem originalmente 100 pontos de altura, redimensione-a para que ela tenha 200 pontos de altura e, em seguida, defina a propriedade <b>CropTop</b> como 50, 100 pontos (não 50) serão cortados da parte superior da imagem.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IncrementBrightness">
@@ -378,13 +358,10 @@
         <Parameter Name="Increment" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Increment">
-          <b>Single</b>obrigatório. Especifica quanto para alterar o valor da propriedade <b>brilho</b> da imagem. Um valor positivo torna a figura mais brilhante; um valor negativo torna a imagem mais escura.</param>
-        <summary>Altera o brilho da figura pelo valor especificado. Use o <see cref="P:Microsoft.Office.Interop.Word.PictureFormat.Brightness" /> propriedade para definir o brilho absoluto da imagem.</summary>
-        <remarks>
-          <para>Você não pode ajustar o brilho de uma figura além do limite superior ou inferior para a propriedade <b>Brightness</b> . Por exemplo, se a propriedade <b>Brightness</b> é inicialmente definida como 0,9 e você especificar 0,3 para o <paramref name="Increment" /> argumento, o nível de brilho resultante será 1,0, que é o limite superior para a propriedade <b>Brightness</b> , em vez de 1,2.</para>
-          <para />
-        </remarks>
+        <param name="Increment"><b>Único</b>necessário. Especifica quanto para alterar o valor da propriedade <b>brilho</b> da imagem. Um valor positivo torna a figura mais brilhante; um valor negativo torna a imagem mais escura.</param>
+        <summary>Altera o brilho da figura pelo valor especificado. Use a <see cref="P:Microsoft.Office.Interop.Word.PictureFormat.Brightness" /> propriedade para definir o brilho absoluto da imagem.</summary>
+        <remarks><para>Você não pode ajustar o brilho de uma figura além do limite superior ou inferior para a propriedade <b>Brightness</b>. Por exemplo, se a <b></b> Propriedade Brightness for inicialmente definida como 0,9 e você especificar 0,3 para <paramref name="Increment" /> o argumento, o nível de brilho resultante será 1,0, que é o limite superior para <b></b> a propriedade brightness, em vez de 1,2.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IncrementContrast">
@@ -410,13 +387,10 @@
         <Parameter Name="Increment" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Increment">
-          <b>Single</b>obrigatório. Especifica quanto para alterar o valor da propriedade <b>contraste</b> da imagem. Um valor positivo aumenta o contraste; um valor negativo diminui o contraste.</param>
-        <summary>Altera o contraste da figura pelo valor especificado. Use o <see cref="P:Microsoft.Office.Interop.Word.PictureFormat.Contrast" /> propriedade para definir o contraste absoluto da imagem.</summary>
-        <remarks>
-          <para>Você não pode ajustar o contraste de uma imagem além do limite superior ou inferior para a propriedade <b>Contrast</b> . Por exemplo, se a propriedade <b>Contrast</b> é inicialmente definida como 0,9 e você especificar 0,3 para o <paramref name="Increment" /> argumento, o nível de contraste resultante será 1,0, que é o limite superior para a propriedade <b>Contrast</b> , em vez de 1,2.</para>
-          <para />
-        </remarks>
+        <param name="Increment"><b>Único</b>necessário. Especifica quanto para alterar o valor da propriedade <b>contraste</b> da imagem. Um valor positivo aumenta o contraste; um valor negativo diminui o contraste.</param>
+        <summary>Altera o contraste da figura pelo valor especificado. Use a <see cref="P:Microsoft.Office.Interop.Word.PictureFormat.Contrast" /> propriedade para definir o contraste absoluto da imagem.</summary>
+        <remarks><para>Você não pode ajustar o contraste de uma imagem além do limite superior ou inferior para a propriedade <b>Contrast</b>. Por exemplo, se a propriedade <b>Contrast</b> é inicialmente definida como 0,9 e você especificar 0,3 para o <paramref name="Increment" /> argumento, o nível de contraste resultante será 1,0, que é o limite superior para a propriedade <b>Contrast</b> , em vez de 1,2.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -475,11 +449,9 @@
       <Docs>
         <summary>Retorna ou define a cor transparente para a imagem especificada como um valor vermelho-verde-azul (RGB). Aplica-se somente a bitmaps.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Para essa propriedade tenha efeito, a <see cref="P:Microsoft.Office.Interop.Word.PictureFormat.TransparentBackground" /> propriedade deve ser definida como <b>True</b>.</para>
-          <para>Se você quiser poderão ver através das partes transparentes da imagem totalmente para os objetos por trás da figura, você deve definir o <see cref="P:Microsoft.Office.Interop.Word.FillFormat.Visible" /> propriedade da imagem <see cref="T:Microsoft.Office.Interop.Word.FillFormat" /> objeto como <b>False</b>. Se sua imagem tiver uma cor transparente e a propriedade <b>Visible</b> do objeto <b>FillFormat</b> da figura é definida como <b>True</b>, o preenchimento da figura será visível através da cor transparente, mas os objetos por trás da figura ficarão obscurecidos.</para>
-          <para />
-        </remarks>
+        <remarks><para>Para que essa propriedade tenha efeito, a <see cref="P:Microsoft.Office.Interop.Word.PictureFormat.TransparentBackground" /> propriedade deve ser definida como <b>true</b>.</para>
+          <para>Se você quiser ver as partes transparentes da imagem em toda a forma para os objetos atrás da imagem, deverá definir a <see cref="P:Microsoft.Office.Interop.Word.FillFormat.Visible" /> Propriedade do objeto da <see cref="T:Microsoft.Office.Interop.Word.FillFormat" /> imagem como <b>false</b>. Se sua imagem tiver uma cor transparente e a propriedade <b>Visible</b> do objeto <b>FillFormat</b> da figura estiver definida como <b>True</b>, o preenchimento da figura será visível através da cor transparente, mas os objetos por trás da figura ficarão obscurecidos.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TransparentBackground">
@@ -508,14 +480,11 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>MsoTrue</b> se realmente as partes da imagem que são definidas com uma cor transparente aparecem transparentes. Aplica-se somente a bitmaps.</summary>
+        <summary><b>MsoTrue</b> se realmente as partes da imagem que são definidas com uma cor transparente aparecem transparentes. Aplica-se somente a bitmaps.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Use o <see cref="P:Microsoft.Office.Interop.Word.PictureFormat.TransparencyColor" /> propriedade para definir a cor transparente. </para>
-          <para>Se você quiser poderão ver através das partes transparentes da imagem totalmente para os objetos por trás da figura, você deve definir o <see cref="P:Microsoft.Office.Interop.Word.FillFormat.Visible" /> propriedade da imagem <see cref="T:Microsoft.Office.Interop.Word.FillFormat" /> objeto como <b>False</b>. Se sua imagem tiver uma cor transparente e a propriedade <b>Visible</b> do objeto <b>FillFormat</b> da figura é definida como <b>True</b>, o preenchimento da figura será visível através da cor transparente, mas os objetos por trás da figura ficarão obscurecidos.</para>
-          <para />
-        </remarks>
+        <remarks><para>Use a <see cref="P:Microsoft.Office.Interop.Word.PictureFormat.TransparencyColor" /> propriedade para definir a cor transparente. </para>
+          <para>Se você quiser ver as partes transparentes da imagem em toda a forma para os objetos atrás da imagem, deverá definir a <see cref="P:Microsoft.Office.Interop.Word.FillFormat.Visible" /> Propriedade do objeto da <see cref="T:Microsoft.Office.Interop.Word.FillFormat" /> imagem como <b>false</b>. Se sua imagem tiver uma cor transparente e a propriedade <b>Visible</b> do objeto <b>FillFormat</b> da figura estiver definida como <b>True</b>, o preenchimento da figura será visível através da cor transparente, mas os objetos por trás da figura ficarão obscurecidos.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

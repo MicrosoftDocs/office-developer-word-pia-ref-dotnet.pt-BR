@@ -1,13 +1,5 @@
 <Type Name="Trendlines" FullName="Microsoft.Office.Interop.Word.Trendlines">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="4677ea796f02bb8de0655ac078e65a42f7c9be02" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20663952" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Trendlines : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d5d8e0ba867d614dca0f443355bc975b7ca84d93" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143739" /></Metadata><TypeSignature Language="C#" Value="public interface Trendlines : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Trendlines implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Trendlines" />
   <TypeSignature Language="VB.NET" Value="Public Interface Trendlines&#xA;Implements IEnumerable" />
@@ -31,10 +23,8 @@
   </Attributes>
   <Docs>
     <summary>Uma coleção de todos os <see cref="T:Microsoft.Office.Interop.Word.Trendline" /> objetos para a série especificada.</summary>
-    <remarks>
-      <para>Cada <see cref="T:Microsoft.Office.Interop.Word.Trendline" /> objeto representa uma linha de tendência em um gráfico. Uma linha de tendência mostra a tendência ou direção dos dados em uma série.</para>
-      <para />
-    </remarks>
+    <remarks><para>Cada <see cref="T:Microsoft.Office.Interop.Word.Trendline" /> objeto representa uma tendência em um gráfico. Uma linha de tendência mostra a tendência ou direção dos dados em uma série.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -99,26 +89,16 @@
       </Parameters>
       <Docs>
         <param name="Type">Opcional <see cref="T:Microsoft.Office.Interop.Word.XlTrendlineType" />. O tipo de linha de tendência.</param>
-        <param name="Order">
-          <b>Objeto</b>de opcional. Obrigatório se Type for <see cref="F:Microsoft.Office.Interop.Word.XlTrendlineType.xlPolynomial" />. A ordem da linha de tendência. Deve ser um inteiro de 2 a 6, inclusive.</param>
-        <param name="Period">
-          <b>Objeto</b>de opcional. Obrigatório se Type for <see cref="F:Microsoft.Office.Interop.Word.XlTrendlineType.xlMovingAvg" />. O período de linha de tendência. Deve ser um inteiro maior que 1 e menor que o número de pontos de dados na série que estiver adicionando uma linha de tendência.</param>
-        <param name="Forward">
-          <b>Objeto</b>de opcional. O número de períodos (ou unidades em um gráfico de dispersão) pelos quais a linha de tendência se estende para frente.</param>
-        <param name="Backward">
-          <b>Objeto</b>de opcional. O número de períodos (ou unidades em um gráfico de dispersão) pelos quais uma linha de tendência se estende para trás.</param>
-        <param name="Intercept">
-          <b>Objeto</b>de opcional. A intercepção da linha de tendência. Se esse argumento for omitido, a interseção será automaticamente definida pela regressão.</param>
-        <param name="DisplayEquation">
-          <b>Objeto</b>de opcional. <b>True</b> para exibir a equação da linha de tendência no gráfico (no mesmo rótulo de dados como o valor quadrada). O valor padrão é <b>False</b>.</param>
-        <param name="DisplayRSquared">
-          <b>Objeto</b>de opcional. True para exibir o valor quadrada da linha de tendência no gráfico (no mesmo rótulo de dados que a equação). O valor padrão é <b>False</b>.</param>
-        <param name="Name">
-          <b>Objeto</b>de opcional. O nome da linha de tendência como texto. Se esse argumento for omitido, o Microsoft Excel gerará um nome.</param>
+        <param name="Order"><b>Objeto</b>opcional. Obrigatório se Type for <see cref="F:Microsoft.Office.Interop.Word.XlTrendlineType.xlPolynomial" />. A ordem da linha de tendência. Deve ser um número inteiro de 2 a 6, inclusive.</param>
+        <param name="Period"><b>Objeto</b>opcional. Obrigatório se Type for <see cref="F:Microsoft.Office.Interop.Word.XlTrendlineType.xlMovingAvg" />. O período da linha de tendência. Deve ser um número inteiro maior que 1 e menor que o número de pontos de dados da série à qual você está adicionando uma linha de tendência.</param>
+        <param name="Forward"><b>Objeto</b>opcional. O número de períodos (ou unidades em um gráfico de dispersão) pelos quais a linha de tendência se estende para frente.</param>
+        <param name="Backward"><b>Objeto</b>opcional. O número de períodos (ou unidades em um gráfico de dispersão) pelos quais uma linha de tendência se estende para trás.</param>
+        <param name="Intercept"><b>Objeto</b>opcional. A interseção da linha de tendência. Se este argumento for omitido, a interseção será definida automaticamente pela regressão.</param>
+        <param name="DisplayEquation"><b>Objeto</b>opcional. <b>True</b> para exibir a equação da linha de tendência no gráfico (no mesmo rótulo de dados como o valor quadrada). O valor padrão é <b>False</b>.</param>
+        <param name="DisplayRSquared"><b>Objeto</b>opcional. True para exibir o valor quadrada da linha de tendência no gráfico (no mesmo rótulo de dados que a equação). O valor padrão é <b>False</b>.</param>
+        <param name="Name"><b>Objeto</b>opcional. O nome da linha de tendência como texto. Se este argumento for omitido, o Microsoft Excel gerará um nome.</param>
         <summary>Cria uma nova linha de tendência. Retorna um <see cref="T:Microsoft.Office.Interop.Word.Trendline" /> objeto.</summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Word.Trendline" />
-        </returns>
+        <returns><see cref="T:Microsoft.Office.Interop.Word.Trendline" /></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -145,9 +125,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Quando usado sem um qualificador de objeto, essa propriedade retorna uma <see cref="T:Microsoft.Office.Interop.Word._Application" /> object que representa o aplicativo Microsoft Word. Quando usada com um qualificador de objeto, essa propriedade retornará um objeto <b>Application</b> que representa o criador do objeto especificado (você pode usar essa propriedade com um objeto Automation do OLE para retornar o aplicativo desse objeto). Somente leitura.</summary>
-        <value>
-          <b>Aplicativo</b> (consulte acima)</value>
+        <summary>Quando usado sem um qualificador de objeto, essa propriedade <see cref="T:Microsoft.Office.Interop.Word._Application" /> retorna um objeto que representa o aplicativo Microsoft Word. Quando usada com um qualificador de objeto, essa propriedade retornará um objeto <b>Application</b> que representa o criador do objeto especificado (você pode usar essa propriedade com um objeto Automation do OLE para retornar o aplicativo desse objeto). Somente leitura.</summary>
+        <value><b>Aplicativo</b> (veja acima)</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -174,10 +153,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um valor <b>inteiro</b> que representa o número de objetos na coleção.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>Retorna um valor <b>Integer</b> que representa o número de objetos na coleção.</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -205,13 +182,9 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado. <b>Integer</b> somente leitura.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Word, o <see cref="P:Microsoft.Office.Interop.Word.Trendlines.Creator" /> propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD."  Essa propriedade principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <value><b>Integer</b></value>
+        <remarks><para>Se o objeto foi criado no Microsoft Word, a <see cref="P:Microsoft.Office.Interop.Word.Trendlines.Creator" /> propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD".  Essa propriedade foi projetada inicialmente para ser usada no Macintosh, no qual cada aplicativo tem um código de criador com quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -272,11 +245,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objeto</b>necessário. O nome ou número de índice do objeto.</param>
+        <param name="Index"><b>Objeto</b>necessário. O nome ou número de índice do objeto.</param>
         <summary>Retorna um único objeto da coleção.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Trendline" />.</value>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Trendline" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -304,9 +275,7 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna o pai do objeto especificado. Somente leitura <b>objeto</b>.</summary>
-        <value>
-          <b>Object</b>
-        </value>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

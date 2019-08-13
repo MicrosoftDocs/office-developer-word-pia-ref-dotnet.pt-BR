@@ -1,13 +1,5 @@
 <Type Name="ListGallery" FullName="Microsoft.Office.Interop.Word.ListGallery">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="966516dad1e0dd08ab38c58e333200e586d28db7" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20665301" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ListGallery" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5bd7ff965569856360b744ab132d1fadf6ac4b2d" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147883" /></Metadata><TypeSignature Language="C#" Value="public interface ListGallery" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ListGallery" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ListGallery" />
   <TypeSignature Language="VB.NET" Value="Public Interface ListGallery" />
@@ -27,12 +19,10 @@
   </Attributes>
   <Docs>
     <summary>Representa uma única galeria de formatos de lista.</summary>
-    <remarks>
-      <para>O objeto <b>ListGallery</b> é um membro do <see cref="T:Microsoft.Office.Interop.Word.ListGalleries" /> conjunto. Cada objeto <b>ListGallery</b> representa uma das três guias da marcadores e numeração caixa de diálogo.</para>
+    <remarks><para>O objeto <b>ListGallery</b> é um membro da <see cref="T:Microsoft.Office.Interop.Word.ListGalleries" /> coleção. Cada objeto <b>ListGallery</b> representa uma das três guias da caixa de diálogo marcadores e numeração.</para>
       <para>Use <b>ListGalleries</b>(<paramref name="index" />), onde <paramref name="index" /> é <b>wdBulletGallery</b>, <b>wdNumberGallery</b>ou <b>wdOutlineNumberGallery</b>, para retornar um único objeto <b>ListGallery</b> .</para>
-      <para>Para ver se o modelo de lista especificado contém a formatação interna do Microsoft Word, use o <see cref="P:Microsoft.Office.Interop.Word.ListGallery.Modified(System.Int32)" /> propriedade para o objeto <b>ListGallery</b> . Para redefinir a formatação para o formato de lista original, use o <see cref="M:Microsoft.Office.Interop.Word.ListGallery.Reset(System.Int32)" /> método do objeto <b>ListGallery</b> .</para>
-      <para />
-    </remarks>
+      <para>Para ver se o modelo de lista especificado contém a formatação interna do Microsoft Word, use <see cref="P:Microsoft.Office.Interop.Word.ListGallery.Modified(System.Int32)" /> a propriedade para o objeto <b>ListGallery</b> . Para redefinir a formatação para o formato de lista original, <see cref="M:Microsoft.Office.Interop.Word.ListGallery.Reset(System.Int32)" /> use o método para o objeto <b>ListGallery</b> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -58,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -88,9 +78,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
-          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". [!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
+          <para>A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ListTemplates">
@@ -116,7 +106,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ListTemplates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.ListTemplates" /> coleção que representa a lista de todos os formatos para a Galeria de listas especificada.</summary>
+        <summary>Retorna uma <see cref="T:Microsoft.Office.Interop.Word.ListTemplates" /> coleção que representa todos os formatos de lista para a Galeria de listas especificada.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -147,15 +137,11 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Integer</b>necessário. Um número de 1 a 7 que corresponde à posição do modelo no marcadores e a caixa de diálogo de numeração (menu Formatar). Excluindo a nenhum opção, os modelos são numerados da esquerda para a direita, começando com a linha superior.</param>
-        <summary>
-          <b>True</b> se o modelo de lista especificado não é o modelo de lista interno para esta posição na Galeria de listas.</summary>
+        <param name="Index">Obrigatório <b>Integer</b>. Um número de 1 a 7 que corresponde à posição do modelo na caixa de diálogo Marcadores e numeração (menu Formatar). Excluindo a opção nenhum, os modelos são numerados da esquerda para a direita, começando com a linha superior.</param>
+        <summary><b>True</b> se o modelo de lista especificado não é o modelo de lista interno para esta posição na Galeria de listas.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Use o <see cref="M:Microsoft.Office.Interop.Word.ListGallery.Reset(System.Int32)" /> método para definir um modelo de lista em uma galeria de listas volta para o modelo de lista interno.</para>
-          <para />
-        </remarks>
+        <remarks><para>Use o <see cref="M:Microsoft.Office.Interop.Word.ListGallery.Reset(System.Int32)" /> método para definir um modelo de lista em uma galeria de lista de volta para o modelo de lista interno.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -209,8 +195,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Integer</b>necessário.</param>
+        <param name="Index">Obrigatório <b>Integer</b>.</param>
         <summary>Redefine o modelo de lista especificado para a Galeria de lista para o formato de modelo de lista interno.</summary>
         <remarks>To be added.</remarks>
       </Docs>

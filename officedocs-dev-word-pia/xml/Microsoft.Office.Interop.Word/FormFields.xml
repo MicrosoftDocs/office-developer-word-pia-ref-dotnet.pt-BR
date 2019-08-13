@@ -1,13 +1,5 @@
 <Type Name="FormFields" FullName="Microsoft.Office.Interop.Word.FormFields">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="46b21510386a35e4547b988b64b574860cd58ca2" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20664384" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface FormFields : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="89a396030811c12cb95f62e8636d76407d533478" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34148079" /></Metadata><TypeSignature Language="C#" Value="public interface FormFields : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract FormFields implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.FormFields" />
   <TypeSignature Language="VB.NET" Value="Public Interface FormFields&#xA;Implements IEnumerable" />
@@ -31,13 +23,11 @@
   </Attributes>
   <Docs>
     <summary>Uma coleção de <see cref="T:Microsoft.Office.Interop.Word.FormField" /> objetos que representam todos os campos de formulário em uma seleção, intervalo ou documento.</summary>
-    <remarks>
-      <para>Use a propriedade <b>FormFields</b> para retornar a coleção <b>FormFields</b> .</para>
-      <para>Uso o <see cref="M:Microsoft.Office.Interop.Word.FormFields.Add(Microsoft.Office.Interop.Word.Range,Microsoft.Office.Interop.Word.WdFieldType)" /> método com o objeto <b>FormFields</b> para adicionar um campo de formulário.</para>
-      <para>Uso <b>FormFields</b>(<paramref name="index" />), onde <paramref name="index" /> é um nome de indicador ou o número de índice, para retornar um único objeto <b>FormField</b> .</para>
-      <para>o número de índice representa a posição do campo de formulário na seleção, intervalo ou documento.</para>
-      <para />
-    </remarks>
+    <remarks><para>Use a propriedade <b>FormFields</b> para retornar a coleção <b>FormFields</b>.</para>
+      <para>Use o <see cref="M:Microsoft.Office.Interop.Word.FormFields.Add(Microsoft.Office.Interop.Word.Range,Microsoft.Office.Interop.Word.WdFieldType)" /> método com o objeto <b>FormFields</b> para adicionar um campo de formulário.</para>
+      <para>Use <b>FormFields</b>(<paramref name="index" />), onde <paramref name="index" /> é um nome de indicador ou número de índice, para retornar um único objeto <b>FormField</b> .</para>
+      <para>O número de índice representa a posição do campo de formulário na seleção, intervalo ou documento.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -63,9 +53,9 @@
         <Parameter Name="Type" Type="Microsoft.Office.Interop.Word.WdFieldType" />
       </Parameters>
       <Docs>
-        <param name="Range">Necessário <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto. O intervalo onde você deseja adicionar o campo de formulário. Se o intervalo não estiver recolhido, o campo de formulário substitui o intervalo.</param>
+        <param name="Range">Objeto <see cref="T:Microsoft.Office.Interop.Word.Range" /> necessário. O intervalo no qual você deseja adicionar o campo de formulário. Se o intervalo não estiver recolhido, o campo de formulário substituirá o intervalo.</param>
         <param name="Type">Necessário <see cref="T:Microsoft.Office.Interop.Word.WdFieldType" />. O tipo de campo de formulário a ser adicionado.</param>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.FormField" /> object que representa um novo campo de formulário é adicionado a um intervalo.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.FormField" /> objeto que representa um novo campo de formulário adicionado em um intervalo.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -93,7 +83,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -151,9 +141,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto especificado foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
-          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Se o objeto especificado foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". [!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
+          <para>A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -276,11 +266,9 @@
       <Docs>
         <summary>Determina se o sombreamento é aplicado aos campos de formulário.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Essa propriedade retorna <b>True</b> se o sombreamento é aplicado aos campos de formulário e <b>False</b> se não. Defina o valor da propriedade como <b>True</b> ou <b>False</b> para habilitar ou desabilitar a funcionalidade.</para>
-          <para>Sombreamento torna os campos de formulário mais fáceis de localizar em um documento e não afeta o resultado da impressão.</para>
-          <para />
-        </remarks>
+        <remarks><para>Essa propriedade retorna <b>true</b> se o sombreamento é aplicado aos campos de formulário e <b>false</b> se não. Defina o valor da propriedade como <b>true</b> ou <b>false</b> para habilitar ou desabilitar a funcionalidade.</para>
+          <para>O sombreamento torna os campos de formulário mais fáceis de localizar em um documento e não afeta o resultado da impressão.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,13 +1,5 @@
 <Type Name="OMaths" FullName="Microsoft.Office.Interop.Word.OMaths">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="685a42bfb173039e651b1919cc37c2f65e9a3fae" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20664916" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface OMaths : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="e14145376576379dc979fb6bbad86cad132778d8" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144222" /></Metadata><TypeSignature Language="C#" Value="public interface OMaths : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract OMaths implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.OMaths" />
   <TypeSignature Language="VB.NET" Value="Public Interface OMaths&#xA;Implements IEnumerable" />
@@ -30,11 +22,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Uma coleção de equações. Use o <see cref="T:Microsoft.Office.Interop.Word.OMaths" /> objeto para acessar os membros individuais da coleção.</summary>
-    <remarks>
-      <para>Use o <see cref="M:Microsoft.Office.Interop.Word.OMaths.Add(Microsoft.Office.Interop.Word.Range)" />método para criar uma equação e adicioná-lo a um documento, seleção ou intervalo.  O exemplo a seguir cria uma equação e usa o <see cref="M:Microsoft.Office.Interop.Word.OMaths.BuildUp" /> método do <see cref="T:Microsoft.Office.Interop.Word.OMaths" /> coleção converter a equação para formato profissional.</para>
-      <para />
-    </remarks>
+    <summary>Uma coleção de equações. Use o <see cref="T:Microsoft.Office.Interop.Word.OMaths" /> objeto para acessar membros individuais da coleção.</summary>
+    <remarks><para>Use o <see cref="M:Microsoft.Office.Interop.Word.OMaths.Add(Microsoft.Office.Interop.Word.Range)" />método para criar uma equação e adicioná-lo a um documento, seleção ou intervalo.  O exemplo a seguir cria uma equação e usa <see cref="M:Microsoft.Office.Interop.Word.OMaths.BuildUp" /> o método da <see cref="T:Microsoft.Office.Interop.Word.OMaths" /> coleção para converter a equação para o formato profissional.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -61,11 +51,9 @@
       <Docs>
         <param name="Range">Especifica um intervalo que contém uma equação de texto.</param>
         <summary>Cria uma equação, da equação de texto contida no intervalo especificado e retorna um objeto <b>Range</b> que contém a nova equação.</summary>
-        <returns>Range</returns>
+        <returns>Intervalo</returns>
         <remarks>To be added.</remarks>
-        <example>
-          <para>O exemplo a seguir insere uma equação no documento no cursor ou substitui o texto selecionado.</para>
-        </example>
+        <example><para>O exemplo a seguir insere uma equação no documento no cursor ou substitui o texto selecionado.</para></example>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -91,10 +79,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word._Application" /> object que representa o aplicativo Microsoft Word.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word._Application" />
-        </value>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word._Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -120,10 +106,8 @@
       <Parameters />
       <Docs>
         <summary>Converte todas as equações na coleção para o formato profissional.</summary>
-        <remarks>
-          <para>Para alterar as equações para o formato linear, use o <see cref="M:Microsoft.Office.Interop.Word.OMaths.Linearize" /> método.</para>
-          <para />
-        </remarks>
+        <remarks><para>Para alterar as equações para o formato linear, use <see cref="M:Microsoft.Office.Interop.Word.OMaths.Linearize" /> o método.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -149,10 +133,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o número de itens a <see cref="T:Microsoft.Office.Interop.Word.OMaths" /> conjunto. <b>Integer</b> somente leitura.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>Retorna o número de itens na <see cref="T:Microsoft.Office.Interop.Word.OMaths" /> coleção. <b>Integer</b> somente leitura.</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -180,15 +162,11 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o suplemento foi criado. <b>Integer</b> somente leitura.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Word, o <see cref="P:Microsoft.Office.Interop.Word.OMaths.Creator" /> propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD."  Essa propriedade principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+        <value><b>Integer</b></value>
+        <remarks><para>Se o objeto foi criado no Microsoft Word, a <see cref="P:Microsoft.Office.Interop.Word.OMaths.Creator" /> propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD".  Essa propriedade foi projetada inicialmente para ser usada no Macintosh, no qual cada aplicativo tem um código de criador com quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
           <para>
             <b>Observação</b>: esse valor também pode ser representado pela constante <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -250,10 +228,8 @@
       </Parameters>
       <Docs>
         <param name="Index">To be added.</param>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.OMath" /> object que representa o item especificado na coleção.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.OMath" />
-        </value>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.OMath" /> objeto que representa o item especificado na coleção.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.OMath" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -278,11 +254,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Converte todas as equações na coleção para o formato linear. .</summary>
-        <remarks>
-          <para>Para alterar as equações para o formato profissional, use o <see cref="M:Microsoft.Office.Interop.Word.OMaths.BuildUp" /> método.</para>
-          <para />
-        </remarks>
+        <summary>Converte todas as equações na coleção para o formato linear.
+.</summary>
+        <remarks><para>Para alterar as equações para o formato profissional, use <see cref="M:Microsoft.Office.Interop.Word.OMaths.BuildUp" /> o método.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -308,7 +283,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <b>objeto</b> que representa o objeto pai do especificado <see cref="T:Microsoft.Office.Interop.Word.OMaths" /> objeto.</summary>
+        <summary>Retorna um <b>objeto</b> que representa o objeto pai do objeto especificado <see cref="T:Microsoft.Office.Interop.Word.OMaths" /> .</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

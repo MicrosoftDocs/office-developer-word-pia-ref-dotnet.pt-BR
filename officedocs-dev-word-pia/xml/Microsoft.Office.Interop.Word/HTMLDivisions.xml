@@ -1,13 +1,5 @@
 <Type Name="HTMLDivisions" FullName="Microsoft.Office.Interop.Word.HTMLDivisions">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="28896873e2658bb7fdc695f17420fa74ec5aca73" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20664038" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface HTMLDivisions : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="c52a948104a42d913fb69b854f16407eab688443" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34148002" /></Metadata><TypeSignature Language="C#" Value="public interface HTMLDivisions : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract HTMLDivisions implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.HTMLDivisions" />
   <TypeSignature Language="VB.NET" Value="Public Interface HTMLDivisions&#xA;Implements IEnumerable" />
@@ -30,11 +22,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Uma coleção de <see cref="T:Microsoft.Office.Interop.Word.HTMLDivision" /> objetos que representa as divisões de HTML que existem em um documento da Web.</summary>
-    <remarks>
-      <para>Use o <see cref="P:Microsoft.Office.Interop.Word.HTMLDivision.HTMLDivisions" /> propriedade para retornar a coleção <b>HTMLDivisions</b> . Use o <see cref="M:Microsoft.Office.Interop.Word.HTMLDivisions.Add(System.Object@)" /> método para adicionar uma divisão de HTML a um documento da Web.</para>
-      <para />
-    </remarks>
+    <summary>Uma coleção de <see cref="T:Microsoft.Office.Interop.Word.HTMLDivision" /> objetos que representa as divisões HTML existentes em um documento da Web.</summary>
+    <remarks><para>Use a <see cref="P:Microsoft.Office.Interop.Word.HTMLDivision.HTMLDivisions" /> propriedade para retornar a coleção <b>HTMLDivisions</b> . Use o <see cref="M:Microsoft.Office.Interop.Word.HTMLDivisions.Add(System.Object@)" /> método para adicionar uma divisão de HTML a um documento da Web.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -59,9 +49,8 @@
         <Parameter Name="Range" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">
-          <b>Objeto</b>de opcional. Uma divisão de HTML existente, em torno da qual será colocada a nova divisão de HTML.</param>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.HTMLDivision" /> object que representa uma nova divisão de HTML adicionada a um documento da Web.</summary>
+        <param name="Range"><b>Objeto</b>opcional. Uma divisão de HTML existente, em torno da qual será colocada a nova divisão de HTML.</param>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.HTMLDivision" /> objeto que representa uma nova divisão de HTML adicionada a um documento da Web.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -89,7 +78,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -147,9 +136,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
-          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". [!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
+          <para>A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -239,12 +228,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o nível de aninhamento das divisões HTML especificados.</summary>
+        <summary>Retorna o nível de aninhamento das divisões HTML especificadas.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>A tabela mais externa tem um nível de aninhamento 1. O nível de aninhamento de cada tabela aninhada sucessivamente é uma maior do que a tabela anterior.</para>
-          <para />
-        </remarks>
+        <remarks><para>A tabela externa tem o nível de aninhamento 1. O nível de aninhamento de cada tabela aninhada sucessivamente é um acima do da tabela anterior.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">

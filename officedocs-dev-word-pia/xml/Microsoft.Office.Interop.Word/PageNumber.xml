@@ -1,13 +1,5 @@
 <Type Name="PageNumber" FullName="Microsoft.Office.Interop.Word.PageNumber">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="84335aeefbe91fe9d5f4003bc39813a7196ba593" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20664622" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface PageNumber" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="b811b0b2c2b1792d369b2150ed58810310943396" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144208" /></Metadata><TypeSignature Language="C#" Value="public interface PageNumber" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PageNumber" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.PageNumber" />
   <TypeSignature Language="VB.NET" Value="Public Interface PageNumber" />
@@ -27,12 +19,10 @@
   </Attributes>
   <Docs>
     <summary>Representa o número de página em um cabeçalho ou rodapé.</summary>
-    <remarks>
-      <para>O objeto <b>PageNumber</b> é um membro do <see cref="T:Microsoft.Office.Interop.Word.PageNumbers" /> conjunto. A coleção <b>PageNumbers</b> inclui todos os números de página em um único cabeçalho ou rodapé.</para>
-      <para>Uso <b>PageNumbers</b>(<paramref name="index" />), onde <paramref name="index" /> é o número de índice, para retornar um único objeto <b>PageNumber</b> . Na maioria dos casos, um cabeçalho ou rodapé irá conter apenas um número de página, que é o número de índice 1.</para>
-      <para>Uso o <see cref="M:Microsoft.Office.Interop.Word.PageNumbers.Add(System.Object@,System.Object@)" /> método para adicionar um número de página (um campo de página) a um cabeçalho ou rodapé.</para>
-      <para />
-    </remarks>
+    <remarks><para>O objeto <b>PageNumber</b> é um membro da <see cref="T:Microsoft.Office.Interop.Word.PageNumbers" /> coleção. A coleção <b>PageNumbers</b> inclui todos os números de página em um único cabeçalho ou rodapé.</para>
+      <para>Use <b>PageNumbers</b>(<paramref name="index" />), onde <paramref name="index" /> é o número de índice, para retornar um único objeto <b>PageNumber</b> . Na maioria dos casos, um cabeçalho ou rodapé irá conter o número de apenas uma página, que é o número de índice 1.</para>
+      <para>Use o <see cref="M:Microsoft.Office.Interop.Word.PageNumbers.Add(System.Object@,System.Object@)" /> método para adicionar um número de página (um campo de página) a um cabeçalho ou rodapé.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Alignment">
@@ -61,7 +51,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdPageNumberAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define um <see cref="T:Microsoft.Office.Interop.Word.WdPageNumberAlignment" /> constante que representa o alinhamento para o número da página.</summary>
+        <summary>Retorna ou define uma <see cref="T:Microsoft.Office.Interop.Word.WdPageNumberAlignment" /> constante que representa o alinhamento do número de página.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -89,7 +79,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -144,9 +134,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
-          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". [!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
+          <para>A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Cut">
@@ -277,10 +267,8 @@
       <Parameters />
       <Docs>
         <summary>Seleciona o objeto especificado.</summary>
-        <remarks>
-          <para>Depois de usar esse método, use o <see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> propriedade para trabalhar com os itens selecionados.</para>
-          <para />
-        </remarks>
+        <remarks><para>Depois de usar esse método, use <see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> a propriedade para trabalhar com os itens selecionados.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

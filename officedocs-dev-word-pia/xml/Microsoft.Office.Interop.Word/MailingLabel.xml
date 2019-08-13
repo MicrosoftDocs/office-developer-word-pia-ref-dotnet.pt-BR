@@ -1,13 +1,5 @@
 <Type Name="MailingLabel" FullName="Microsoft.Office.Interop.Word.MailingLabel">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ea639f9554460c830e5274ddb6a737859278d9e9" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20664536" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface MailingLabel" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="4afda2d9ebd64dca6130b11e02d6aa6915201036" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144432" /></Metadata><TypeSignature Language="C#" Value="public interface MailingLabel" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract MailingLabel" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.MailingLabel" />
   <TypeSignature Language="VB.NET" Value="Public Interface MailingLabel" />
@@ -27,12 +19,10 @@
   </Attributes>
   <Docs>
     <summary>Representa uma etiqueta de endereçamento.</summary>
-    <remarks>
-      <para>Use o <see cref="P:Microsoft.Office.Interop.Word._Application.MailingLabel" /> propriedade para retornar o <see cref="T:Microsoft.Office.Interop.Word.MailingLabel" /> objeto.</para>
-      <para>Uso o <see cref="M:Microsoft.Office.Interop.Word.MailingLabel.PrintOut(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> método para imprimir uma etiqueta de endereçamento listada na caixa número de produto na caixa de diálogo Opções de etiqueta.</para>
-      <para>Uso o <see cref="P:Microsoft.Office.Interop.Word.MailingLabel.CustomLabels" /> propriedade para formatar ou imprimir uma etiqueta de endereçamento personalizada.</para>
-      <para />
-    </remarks>
+    <remarks><para>Use a <see cref="P:Microsoft.Office.Interop.Word._Application.MailingLabel" /> propriedade para retornar o <see cref="T:Microsoft.Office.Interop.Word.MailingLabel" /> objeto.</para>
+      <para>Use o <see cref="M:Microsoft.Office.Interop.Word.MailingLabel.PrintOut(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> método para imprimir uma etiqueta de endereçamento listada na caixa número do produto na caixa de diálogo opções de etiqueta.</para>
+      <para>Use a <see cref="P:Microsoft.Office.Interop.Word.MailingLabel.CustomLabels" /> propriedade para formatar ou imprimir uma etiqueta de endereçamento personalizada.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -58,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -91,21 +81,14 @@
         <Parameter Name="Vertical" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Name">
-          <b>Objeto</b>de opcional. O nome da etiqueta de endereçamento.</param>
-        <param name="Address">
-          <b>Objeto</b>de opcional. O texto da etiqueta de endereçamento.</param>
-        <param name="AutoText">
-          <b>Objeto</b>de opcional. O nome da entrada de AutoTexto que inclui o texto da etiqueta de endereçamento.</param>
-        <param name="ExtractAddress">
-          <b>Objeto</b>de opcional. <b>True</b> para usar o texto do endereço de marcado pelo indicador definido pelo usuário chamado "EnvelopeAddress" em vez de usar o <paramref name="Address" /> argumento.</param>
-        <param name="LaserTray">
-          <b>Objeto</b>de opcional. A bandeja da impressora a laser. Pode ser uma do <see cref="T:Microsoft.Office.Interop.Word.WdPaperTray" /> constantes.</param>
-        <param name="PrintEPostageLabel">
-          <b>Objeto</b>de opcional. <b>True</b> para imprimir postagem usando um fornecedor de postagem eletrônica de Internet.</param>
-        <param name="Vertical">
-          <b>Objeto</b>de opcional. <b>True</b> formata o texto verticalmente na etiqueta. Usado para etiquetas de endereçamento de idioma asiático.</param>
-        <summary>Cria um novo documento de etiquetas usando as opções de rótulo padrão ou aquelas que você especificar. Retorna um <see cref="T:Microsoft.Office.Interop.Word.Document" /> object que representa o novo documento.</summary>
+        <param name="Name"><b>Objeto</b>opcional. O nome da etiqueta de endereçamento.</param>
+        <param name="Address"><b>Objeto</b>opcional. O texto da etiqueta de endereçamento.</param>
+        <param name="AutoText"><b>Objeto</b>opcional. O nome da entrada de AutoTexto que inclui o texto da etiqueta de endereçamento.</param>
+        <param name="ExtractAddress"><b>Objeto</b>opcional. <b>True</b> para usar o texto de endereço marcado pelo indicador definido pelo usuário chamado "EnvelopeAddress" em vez de usar <paramref name="Address" /> o argumento.</param>
+        <param name="LaserTray"><b>Objeto</b>opcional. A bandeja da impressora a laser. Pode ser uma das <see cref="T:Microsoft.Office.Interop.Word.WdPaperTray" /> constantes.</param>
+        <param name="PrintEPostageLabel"><b>Objeto</b>opcional. <b>True</b> para imprimir postagem usando um fornecedor de postagem eletrônica de Internet.</param>
+        <param name="Vertical"><b>Objeto</b>opcional. <b>True</b> formata o texto verticalmente na etiqueta. Usado para etiquetas de endereçamento de idioma asiático.</param>
+        <summary>Cria um novo documento de etiquetas usando as opções de rótulo padrão ou aquelas que você especificar. Retorna um <see cref="T:Microsoft.Office.Interop.Word.Document" /> objeto que representa o novo documento.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -180,17 +163,12 @@
         <param name="LabelID">A identificação da etiqueta de endereçamento.</param>
         <param name="Address">O texto da etiqueta de endereçamento.</param>
         <param name="AutoText">O nome da entrada de AutoTexto que inclui o texto da etiqueta de endereçamento.</param>
-        <param name="ExtractAddress">
-          <b>True</b> para usar o texto do endereço de marcado pelo indicador definido pelo usuário chamado "EnvelopeAddress" em vez de usar o <paramref name="Address" /> argumento.</param>
-        <param name="LaserTray">A bandeja da impressora a laser. Pode ser uma do <see cref="T:Microsoft.Office.Interop.Word.WdPaperTray" /> constantes.</param>
-        <param name="PrintEPostageLabel">
-          <b>True</b> para imprimir postagem usando um fornecedor de postagem eletrônica de Internet.</param>
-        <param name="Vertical">
-          <b>True</b> formata o texto verticalmente na etiqueta. Usado para etiquetas de endereçamento de idioma asiático. </param>
-        <summary>Cria um novo documento de etiquetas usando as opções de rótulo padrão ou aquelas que você especificar. Retorna um <see cref="T:Microsoft.Office.Interop.Word._Document" /> object que representa o novo documento.</summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Word._Document" />
-        </returns>
+        <param name="ExtractAddress"><b>True</b> para usar o texto de endereço marcado pelo indicador definido pelo usuário chamado "EnvelopeAddress" em vez de usar <paramref name="Address" /> o argumento.</param>
+        <param name="LaserTray">A bandeja da impressora a laser. Pode ser uma das <see cref="T:Microsoft.Office.Interop.Word.WdPaperTray" /> constantes.</param>
+        <param name="PrintEPostageLabel"><b>True</b> para imprimir postagem usando um fornecedor de postagem eletrônica de Internet.</param>
+        <param name="Vertical"><b>True</b> formata o texto verticalmente na etiqueta. Usado para etiquetas de endereçamento de idioma asiático.</param>
+        <summary>Cria um novo documento de etiquetas usando as opções de rótulo padrão ou aquelas que você especificar. Retorna um <see cref="T:Microsoft.Office.Interop.Word._Document" /> objeto que representa o novo documento.</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Word._Document" /></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -219,9 +197,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
-          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". [!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
+          <para>A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CustomLabels">
@@ -247,7 +225,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.CustomLabels</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.CustomLabels" /> coleção que representa as etiquetas de endereçamento personalizadas disponíveis.</summary>
+        <summary>Retorna uma <see cref="T:Microsoft.Office.Interop.Word.CustomLabels" /> coleção que representa as etiquetas de endereçamento personalizadas disponíveis.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -278,13 +256,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define o nome de etiqueta de endereçamento padrão.</summary>
+        <summary>Retorna ou define o nome da etiqueta de endereçamento padrão.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Para localizar a cadeia de caracteres da etiqueta interna especificada, selecione o rótulo na caixa de diálogo Opções de etiqueta (menu Ferramentas, caixa de diálogo Envelopes e etiquetas, guia etiquetas, botão de opções). Em seguida, clique em detalhes e examine a caixa de nome de rótulo, que contém a cadeia de caracteres correta a ser usado para essa propriedade. Para definir uma etiqueta personalizada como etiqueta de endereçamento padrão, use o nome de rótulo que aparece na caixa de diálogo detalhes ou use o <see cref="P:Microsoft.Office.Interop.Word.CustomLabel.Name" /> propriedade com um <see cref="T:Microsoft.Office.Interop.Word.CustomLabel" /> objeto.</para>
-          <para>Criar um novo documento de etiqueta a partir de um objeto <b>CustomLabel</b> automaticamente define a propriedade <b>DefaultLabelName</b> como o nome do objeto <b>CustomLabel</b> .</para>
-          <para />
-        </remarks>
+        <remarks><para>Para encontrar a cadeia de caracteres da etiqueta interna especificada, selecione a etiqueta na caixa de diálogo Opções de Etiqueta (menu Ferramentas, caixa de diálogo Envelopes e Etiquetas, guia Etiquetas, botão Opções). Em seguida, clique em detalhes e examine a caixa nome do rótulo, que contém a cadeia de caracteres correta a ser usada para essa propriedade. Para definir uma etiqueta personalizada como etiqueta de endereçamento padrão, use o nome do rótulo que aparece na caixa de diálogo detalhes ou use a <see cref="P:Microsoft.Office.Interop.Word.CustomLabel.Name" /> Propriedade com um <see cref="T:Microsoft.Office.Interop.Word.CustomLabel" /> objeto.</para>
+          <para>A criação de um novo documento de etiqueta a partir de um objeto <b>CustomLabel</b> define automaticamente a propriedade <b>DefaultLabelName</b> como o nome do objeto <b>CustomLabel</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultLaserTray">
@@ -315,10 +291,8 @@
       <Docs>
         <summary>Retorna ou define a bandeja de papel padrão que contém folhas de etiquetas de endereçamento.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>A propriedade <b>DefaultLaserTray</b> pode ser uma do <see cref="T:Microsoft.Office.Interop.Word.WdPaperTray" /> constantes.</para>
-          <para />
-        </remarks>
+        <remarks><para>A propriedade <b>DefaultLaserTray</b> pode ser uma das <see cref="T:Microsoft.Office.Interop.Word.WdPaperTray" /> constantes.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultPrintBarCode">
@@ -353,13 +327,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> se um código de barras POSTNET é adicionado a envelopes ou etiquetas de endereçamento, por padrão.</summary>
+        <summary><b>True</b> se um código de barras POSTNET for acrescentado como padrão a envelopes ou etiquetas de endereçamento.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Somente para correio americano. Para envelopes, essa propriedade deverá ser definida como <b>True</b> antes do <see cref="P:Microsoft.Office.Interop.Word.Envelope.DefaultPrintFIMA" /> propriedade estiver definida.</para>
-          <para />
-        </remarks>
+        <remarks><para>Somente para correio americano. Para envelopes, essa propriedade deve ser definida como <b>true</b> antes da <see cref="P:Microsoft.Office.Interop.Word.Envelope.DefaultPrintFIMA" /> Propriedade ser definida.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LabelOptions">
@@ -384,10 +355,8 @@
       <Parameters />
       <Docs>
         <summary>Exibe a caixa de diálogo Opções de etiqueta.</summary>
-        <remarks>
-          <para>O método <b>LabelOptions</b> funcionará somente se o documento for o documento principal de uma mala direta.</para>
-          <para />
-        </remarks>
+        <remarks><para>O método <b>LabelOptions</b> funcionará somente se o documento for o documento principal de uma mala direta.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -448,24 +417,15 @@
         <Parameter Name="Vertical" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Name">
-          <b>Objeto</b>de opcional. O nome da etiqueta de endereçamento.</param>
-        <param name="Address">
-          <b>Objeto</b>de opcional. O texto do endereço da etiqueta.</param>
-        <param name="ExtractAddress">
-          <b>Objeto</b>de opcional. <b>True</b> para usar o texto marcado pelo indicador "EnvelopeAddress" (um indicador definido pelo usuário) como o texto do rótulo. Se esse argumento for especificado, <paramref name="Address" /> e <paramref name="AutoText" /> são ignorados.</param>
-        <param name="LaserTray">
-          <b>Objeto</b>de opcional. A bandeja de impressora a laser a ser usada. Pode ser qualquer <see cref="T:Microsoft.Office.Interop.Word.WdPaperTray" /> constante.</param>
-        <param name="SingleLabel">
-          <b>Objeto</b>de opcional. <b>True</b> para imprimir uma única etiqueta; <b>False</b> para imprimir uma página inteira da mesma etiqueta.</param>
-        <param name="Row">
-          <b>Objeto</b>de opcional. A linha da etiqueta para uma única etiqueta. Não é válida se <paramref name="SingleLabel" /> é <b>False</b>.</param>
-        <param name="Column">
-          <b>Objeto</b>de opcional. A coluna de rótulo para uma única etiqueta. Não é válida se <paramref name="SingleLabel" /> é <b>False</b>.</param>
-        <param name="PrintEPostageLabel">
-          <b>Objeto</b>de opcional. <b>True</b> para imprimir postagem usando um fornecedor de postagem eletrônica de Internet.</param>
-        <param name="Vertical">
-          <b>Objeto</b>de opcional. <b>True</b> imprime texto verticalmente o rótulo. Usado para etiquetas de endereçamento de idioma asiático.</param>
+        <param name="Name"><b>Objeto</b>opcional. O nome da etiqueta de endereçamento.</param>
+        <param name="Address"><b>Objeto</b>opcional. O texto do endereço da etiqueta.</param>
+        <param name="ExtractAddress"><b>Objeto</b>opcional. <b>True</b> para usar o texto marcado pelo indicador "EnvelopeAddress" (um indicador definido pelo usuário) como o texto do rótulo. Se esse argumento for especificado, <paramref name="Address" /> e <paramref name="AutoText" /> serão ignorados.</param>
+        <param name="LaserTray"><b>Objeto</b>opcional. A bandeja de impressora a laser a ser usada. Pode ser qualquer <see cref="T:Microsoft.Office.Interop.Word.WdPaperTray" /> constante.</param>
+        <param name="SingleLabel"><b>Objeto</b>opcional. <b>True</b> para imprimir uma única etiqueta; <b>False</b> para imprimir uma página inteira da mesma etiqueta.</param>
+        <param name="Row"><b>Objeto</b>opcional. A linha da etiqueta para uma única etiqueta. Inválido se <paramref name="SingleLabel" /> for <b>falso</b>.</param>
+        <param name="Column"><b>Objeto</b>opcional. A coluna de rótulo para uma única etiqueta. Inválido se <paramref name="SingleLabel" /> for <b>falso</b>.</param>
+        <param name="PrintEPostageLabel"><b>Objeto</b>opcional. <b>True</b> para imprimir postagem usando um fornecedor de postagem eletrônica de Internet.</param>
+        <param name="Vertical"><b>Objeto</b>opcional. <b>True</b> imprime texto verticalmente o rótulo. Usado para etiquetas de endereçamento de idioma asiático.</param>
         <summary>Imprime uma etiqueta ou uma página de etiquetas com o mesmo endereço.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -544,17 +504,13 @@
       <Docs>
         <param name="LabelID">A identificação da etiqueta de endereçamento.</param>
         <param name="Address">O texto do endereço da etiqueta.</param>
-        <param name="ExtractAddress">
-          <b>True</b> para usar o texto marcado pelo indicador "EnvelopeAddress" (um indicador definido pelo usuário) como o texto do rótulo. Se esse argumento for especificado, <paramref name="Address" /> e <paramref name="AutoText" /> são ignorados.</param>
-        <param name="LaserTray">A bandeja da impressora a laser. Pode ser uma do <see cref="T:Microsoft.Office.Interop.Word.WdPaperTray" /> constantes.</param>
-        <param name="SingleLabel">
-          <b>True</b> para imprimir uma única etiqueta; <b>False</b> para imprimir uma página inteira da mesma etiqueta.</param>
-        <param name="Row">A linha da etiqueta para uma única etiqueta. Não é válida se <paramref name="SingleLabel" /> é <b>False</b>.</param>
-        <param name="Column">A coluna de rótulo para uma única etiqueta. Não é válida se <paramref name="SingleLabel" /> é <b>False</b>.</param>
-        <param name="PrintEPostageLabel">
-          <b>True</b> para imprimir postagem usando um fornecedor de postagem eletrônica de Internet.</param>
-        <param name="Vertical">
-          <b>True</b> imprime texto verticalmente o rótulo. Usado para etiquetas de endereçamento de idioma asiático. </param>
+        <param name="ExtractAddress"><b>True</b> para usar o texto marcado pelo indicador "EnvelopeAddress" (um indicador definido pelo usuário) como o texto do rótulo. Se esse argumento for especificado, <paramref name="Address" /> e <paramref name="AutoText" /> serão ignorados.</param>
+        <param name="LaserTray">A bandeja da impressora a laser. Pode ser uma das <see cref="T:Microsoft.Office.Interop.Word.WdPaperTray" /> constantes.</param>
+        <param name="SingleLabel"><b>True</b> para imprimir uma única etiqueta; <b>False</b> para imprimir uma página inteira da mesma etiqueta.</param>
+        <param name="Row">A linha da etiqueta para uma única etiqueta. Inválido se <paramref name="SingleLabel" /> for <b>falso</b>.</param>
+        <param name="Column">A coluna de rótulo para uma única etiqueta. Inválido se <paramref name="SingleLabel" /> for <b>falso</b>.</param>
+        <param name="PrintEPostageLabel"><b>True</b> para imprimir postagem usando um fornecedor de postagem eletrônica de Internet.</param>
+        <param name="Vertical"><b>True</b> imprime texto verticalmente o rótulo. Usado para etiquetas de endereçamento de idioma asiático.</param>
         <summary>Imprime uma etiqueta ou uma página de etiquetas com o mesmo endereço.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -585,13 +541,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> orienta texto verticalmente em asiáticos envelopes e etiquetas de endereçamento.</summary>
+        <summary><b>True</b> orienta texto verticalmente em envelopes e etiquetas de endereçamento asiáticos.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Essa propriedade funciona somente com etiquetas de endereçamento ou envelopes que são configurados para uma mala direta e só se aplica aos idiomas asiáticos.</para>
-          <para />
-        </remarks>
+        <remarks><para>Essa propriedade funciona apenas com etiquetas de endereçamento ou envelopes configurados para uma mala direta e aplica-se apenas aos idiomas asiáticos.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

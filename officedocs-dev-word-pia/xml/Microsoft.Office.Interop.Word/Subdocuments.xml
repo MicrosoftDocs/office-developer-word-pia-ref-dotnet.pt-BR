@@ -1,13 +1,5 @@
 <Type Name="Subdocuments" FullName="Microsoft.Office.Interop.Word.Subdocuments">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a21d5c2632a3938485eff78ac0f2f1d8a922befc" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20664060" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Subdocuments : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ddd1247b7607cf6fdec9c86653bd6de16fa1156f" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143914" /></Metadata><TypeSignature Language="C#" Value="public interface Subdocuments : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Subdocuments implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Subdocuments" />
   <TypeSignature Language="VB.NET" Value="Public Interface Subdocuments&#xA;Implements IEnumerable" />
@@ -30,13 +22,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Uma coleção de <see cref="T:Microsoft.Office.Interop.Word.Subdocument" /> objetos que representam os subdocumentos de um intervalo ou documento.</summary>
-    <remarks>
-      <para>Use a propriedade <b>subdocumentos</b> de um <see cref="T:Microsoft.Office.Interop.Word.Range" /> ou <see cref="T:Microsoft.Office.Interop.Word.Document" /> objeto para retornar a coleção de <b>subdocumentos</b> .</para>
-      <para>Uso a <see cref="M:Microsoft.Office.Interop.Word.Subdocuments.AddFromFile(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> ou <see cref="M:Microsoft.Office.Interop.Word.Subdocuments.AddFromRange(Microsoft.Office.Interop.Word.Range)" /> método para adicionar um subdocumento a um documento.</para>
-      <para>Uso <b>subdocumentos</b>(<paramref name="index" />), onde <paramref name="index" /> é o número de índice, para retornar um único objeto <b>Subdocument</b> .</para>
-      <para />
-    </remarks>
+    <summary>Uma coleção de <see cref="T:Microsoft.Office.Interop.Word.Subdocument" /> objetos que representa os subdocumentos em um intervalo ou documento.</summary>
+    <remarks><para>Use a <b></b> Propriedade Subdocuments de um <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto <see cref="T:Microsoft.Office.Interop.Word.Document" /> or para retornar a <b></b> coleção Subdocuments.</para>
+      <para>Use o <see cref="M:Microsoft.Office.Interop.Word.Subdocuments.AddFromFile(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> método <see cref="M:Microsoft.Office.Interop.Word.Subdocuments.AddFromRange(Microsoft.Office.Interop.Word.Range)" /> ou para adicionar um subdocumento a um documento.</para>
+      <para>Use <b></b>subdocumentos (<paramref name="index" />), onde <paramref name="index" /> é o número de índice, para retornar um único objeto Subdocument. <b></b></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="AddFromFile">
@@ -68,29 +58,19 @@
         <Parameter Name="WritePasswordTemplate" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Name">
-          <b>Objeto</b>necessário. O nome de arquivo do subdocumento a ser inserido no documento mestre.</param>
-        <param name="ConfirmConversions">
-          <b>Objeto</b>de opcional. <b>True</b> para confirmar a conversão de arquivo na caixa de diálogo Converter arquivo se o arquivo não estiver no formato do Microsoft Word.</param>
-        <param name="ReadOnly">
-          <b>Objeto</b>de opcional. <b>True</b> para inserir o subdocumento como um documento somente leitura.</param>
-        <param name="PasswordDocument">
-          <b>Objeto</b>de opcional. A senha necessária para abrir o subdocumento se ele estiver protegido por senha.</param>
-        <param name="PasswordTemplate">
-          <b>Objeto</b>de opcional. A senha necessária para abrir o modelo anexado ao subdocumento se o modelo for protegido por senha.</param>
-        <param name="Revert">
-          <b>Objeto</b>de opcional. Controla o que acontece se <paramref name="Name" /> é o nome de arquivo de um documento aberto. <b>True</b> para inserir a versão salva do subdocumento. <b>False</b> para inserir a versão aberta do subdocumento, que pode conter alterações não salvas.</param>
-        <param name="WritePasswordDocument">
-          <b>Objeto</b>de opcional. A senha necessária para salvar alterações no arquivo do documento se ele estiver protegido contra gravação.</param>
-        <param name="WritePasswordTemplate">
-          <b>Objeto</b>de opcional. A senha necessária para salvar alterações no modelo anexado ao subdocumento se o modelo estiver protegido contra gravação.</param>
+        <param name="Name"><b>Objeto</b>necessário. O nome de arquivo do subdocumento a ser inserido no documento mestre.</param>
+        <param name="ConfirmConversions"><b>Objeto</b>opcional. <b>True</b> para confirmar a conversão de arquivo na caixa de diálogo Converter arquivo se o arquivo não estiver no formato do Microsoft Word.</param>
+        <param name="ReadOnly"><b>Objeto</b>opcional. <b>True</b> para inserir o subdocumento como um documento somente leitura.</param>
+        <param name="PasswordDocument"><b>Objeto</b>opcional. A senha necessária para abrir o subdocumento se ele estiver protegido por senha.</param>
+        <param name="PasswordTemplate"><b>Objeto</b>opcional. A senha necessária para abrir o modelo anexado ao subdocumento se o modelo for protegido por senha.</param>
+        <param name="Revert"><b>Objeto</b>opcional. Controla o que acontece <paramref name="Name" /> se for o nome de arquivo de um documento aberto. <b>True</b> para inserir a versão salva do subdocumento. <b>False</b> para inserir a versão aberta do subdocumento, que pode conter alterações não salvas.</param>
+        <param name="WritePasswordDocument"><b>Objeto</b>opcional. A senha necessária para salvar alterações no arquivo de documento se ele estiver protegido contra gravação.</param>
+        <param name="WritePasswordTemplate"><b>Objeto</b>opcional. A senha necessária para salvar alterações no modelo anexado ao subdocumento se o modelo estiver protegido contra gravação.</param>
         <summary>Adiciona o subdocumento especificado ao documento mestre no início da seleção e retorna um <see cref="T:Microsoft.Office.Interop.Word.Subdocument" /> objeto.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>
-            <b>Observação</b>  Se o modo de exibição ativo não for o modo de exibição de estrutura de tópicos ou modo de exibição de documento mestre, ocorrerá um erro.</para>
-          <para />
-        </remarks>
+        <remarks><para>
+            <b>Observação</b>  Se o modo de exibição ativo não for o modo de estrutura de tópicos ou de documento mestre, ocorrerá um erro.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddFromRange">
@@ -115,14 +95,12 @@
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
       </Parameters>
       <Docs>
-        <param name="Range">Necessário <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto. O objeto de <b>intervalo</b> usado para criar um ou mais subdocumentos.</param>
+        <param name="Range">Objeto <see cref="T:Microsoft.Office.Interop.Word.Range" /> necessário. O objeto de <b>intervalo</b> usado para criar um ou mais subdocumentos.</param>
         <summary>Cria um ou mais subdocumentos a partir do texto no intervalo especificado e retorna um <see cref="T:Microsoft.Office.Interop.Word.Subdocument" /> objeto.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>
-            <b>Observação</b>  O intervalo deve começar com um dos estilos de nível (por exemplo, título 1) de título internos. Os subdocumentos são criados em cada parágrafo formatado com o mesmo formato de título usado no início do intervalo. Arquivos de subdocumento são salvos quando o documento mestre é salvo e são automaticamente nomeados usando texto da primeira linha no arquivo.</para>
-          <para />
-        </remarks>
+        <remarks><para>
+            <b>Observação</b>  O intervalo deve começar com um dos estilos de nível de título internos (por exemplo, título 1). Os subdocumentos são criados em cada parágrafo formatado com o mesmo formato de título usado no início do intervalo. Os arquivos de subdocumento são salvos quando o documento mestre é salvo e são automaticamente nomeados usando texto da primeira linha do arquivo.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -148,7 +126,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -206,9 +184,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
-          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". [!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
+          <para>A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -262,8 +240,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> se os subdocumentos do documento especificado são expandidos.</summary>
+        <summary><b>True</b> se os subdocumentos do documento especificado são expandidos.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -355,10 +332,8 @@
         <Parameter Name="LastSubdocument" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="FirstSubdocument">
-          <b>Objeto</b>de opcional. O caminho e o nome de arquivo do documento original com o qual você deseja mesclar revisões.</param>
-        <param name="LastSubdocument">
-          <b>Objeto</b>de opcional. O último subdocumento de um intervalo de subdocumentos a serem mesclados.</param>
+        <param name="FirstSubdocument"><b>Objeto</b>opcional. O caminho e o nome de arquivo do documento original com o qual você deseja mesclar revisões.</param>
+        <param name="LastSubdocument"><b>Objeto</b>opcional. O último subdocumento de um intervalo de subdocumentos a serem mesclados.</param>
         <summary>Mescla os subdocumentos especificados de um documento mestre em um único documento.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -413,11 +388,9 @@
       <Parameters />
       <Docs>
         <summary>Seleciona o objeto especificado.</summary>
-        <remarks>
-          <para>
+        <remarks><para>
             <b>Observação</b>  Depois de usar esse método, use a propriedade <b>Selection</b> para trabalhar com os itens selecionados.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

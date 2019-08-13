@@ -1,13 +1,5 @@
 <Type Name="TextFrame" FullName="Microsoft.Office.Interop.Word.TextFrame">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="43a95d54648a4f84b9738139489698d0d40d0080" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20663958" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface TextFrame" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="9dc205fa2eb96a394cd184a865635344805cf9be" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143816" /></Metadata><TypeSignature Language="C#" Value="public interface TextFrame" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TextFrame" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.TextFrame" />
   <TypeSignature Language="VB.NET" Value="Public Interface TextFrame" />
@@ -26,13 +18,14 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Representa o quadro de texto em uma <see cref="T:Microsoft.Office.Interop.Word.Shape" /> objeto. Contém o texto no quadro de texto, bem como as propriedades que controlam as margens e a orientação do quadro de texto.</summary>
-    <remarks>
-      <para>Use o <see cref="P:Microsoft.Office.Interop.Word.Shape.TextFrame" /> propriedade para retornar o objeto <b>TextFrame</b> para uma forma. O <see cref="P:Microsoft.Office.Interop.Word.TextFrame.TextRange" /> propriedade retornará uma <see cref="T:Microsoft.Office.Interop.Word.Range" /> object que representa o intervalo de texto dentro do quadro de texto especificado.</para>
+    <summary>Representa o quadro de texto em <see cref="T:Microsoft.Office.Interop.Word.Shape" /> um objeto. Contém o texto no quadro de texto, bem como as propriedades que controlam as margens e a orientação do quadro de texto.</summary>
+    <remarks><para>Use a <see cref="P:Microsoft.Office.Interop.Word.Shape.TextFrame" /> propriedade para retornar o <b></b> objeto TextFrame para uma forma. A <see cref="P:Microsoft.Office.Interop.Word.TextFrame.TextRange" /> propriedade retorna um <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto que representa o intervalo de texto dentro do quadro de texto especificado.</para>
       <para>
-        <b>Observação</b> algumas formas não aceitam anexados texto (linhas, formas livres, figuras e objetos OLE, por exemplo). Se você tentar retornar ou definir propriedades que controlam o texto em um quadro de texto para esses objetos, ocorrerá um erro.</para>
-      <para>Uso o <see cref="P:Microsoft.Office.Interop.Word.TextFrame.HasText" /> propriedade para determinar se o quadro de texto contém texto.</para> Quadros de texto 
-      <para>podem ser vinculados juntos para que o texto flui do quadro de texto de uma forma para o quadro de texto de outra forma. Use o <see cref="P:Microsoft.Office.Interop.Word.TextFrame.Next" /> e <see cref="P:Microsoft.Office.Interop.Word.TextFrame.Previous" /> propriedades para vincular quadros de texto.</para><para>Uso o <see cref="P:Microsoft.Office.Interop.Word.TextFrame.ContainingRange" /> propriedade para retornar um <see cref="T:Microsoft.Office.Interop.Word.Range" /> quadros de texto do objeto que representa o texto inteiro que flui entre vinculados.</para><para /></remarks>
+        <b>Observação</b>  Algumas formas não dão suporte a texto anexado (linhas, formas livres, imagens e objetos OLE, por exemplo). Se você tentar retornar ou definir propriedades que controlam texto em um quadro de texto para esses objetos, ocorrerá um erro.</para>
+      <para>Use a <see cref="P:Microsoft.Office.Interop.Word.TextFrame.HasText" /> propriedade para determinar se o quadro de texto contém texto.</para>
+      <para>Quadros de texto podem ser vinculados juntos, para que o texto flui do quadro de texto de uma forma para o quadro de texto, de outra forma. Use as <see cref="P:Microsoft.Office.Interop.Word.TextFrame.Next" /> propriedades <see cref="P:Microsoft.Office.Interop.Word.TextFrame.Previous" /> e para vincular quadros de texto.</para>
+      <para>Use a <see cref="P:Microsoft.Office.Interop.Word.TextFrame.ContainingRange" /> propriedade para retornar um <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto que representa o texto inteiro que flui entre quadros de texto vinculados.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -58,7 +51,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -89,7 +82,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define um <b>inteiro</b> que representa se um quadro de texto é ajustado automaticamente.</summary>
+        <summary>Retorna ou define um <b>inteiro</b> que indica se um quadro de texto é dimensionado automaticamente.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -116,10 +109,8 @@
       <Parameters />
       <Docs>
         <summary>Rompe o vínculo sequencial com o quadro de texto especificado, se este vínculo existir.</summary>
-        <remarks>
-          <para>A aplicação desse método a uma forma no meio de uma cadeia de formas com quadros de texto vinculados irá quebrar a cadeia, deixando dois conjuntos de formas vinculadas. Todo o texto, no entanto, permanecerá na primeira série de formas vinculadas.</para>
-          <para />
-        </remarks>
+        <remarks><para>A aplicação deste método a uma forma no meio de uma cadeia de formas com quadros de texto vinculados romperá a cadeia, deixando dois conjuntos de formas vinculadas. Todo o texto, entretanto, continuará na primeira série de formas vinculadas.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Column">
@@ -145,12 +136,10 @@
         <ReturnType>Microsoft.Office.Core.TextColumn2</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém o <see cref="T:Microsoft.Office.Core.TextColumn2" /> object que representa as colunas do quadro de texto especificado.</summary>
-        <value>O <see cref="T:Microsoft.Office.Core.TextColumn2" /> object que representa as colunas do quadro de texto especificado.</value>
-        <remarks>
-          <para>Somente leitura.</para>
-          <para />
-        </remarks>
+        <summary>Obtém o <see cref="T:Microsoft.Office.Core.TextColumn2" /> objeto que representa as colunas do quadro de texto especificado.</summary>
+        <value>O <see cref="T:Microsoft.Office.Core.TextColumn2" /> objeto que representa as colunas do quadro de texto especificado.</value>
+        <remarks><para>Somente leitura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ContainingRange">
@@ -176,7 +165,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Range" /> object que representa todo o texto em uma série de formas com quadros de texto vinculadas qual pertence o quadro de texto especificado.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto que representa todo o texto em uma série de formas com quadros de texto vinculados ao qual o quadro de texto especificado pertence.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -206,9 +195,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
-          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". [!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
+          <para>A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DeleteText">
@@ -259,8 +248,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> se a forma especificada tem texto associado a ela.</summary>
+        <summary><b>True</b> se a forma especificada tiver texto associado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -293,10 +281,8 @@
       <Docs>
         <summary>Obtém ou define o alinhamento horizontal do texto em um quadro de texto.</summary>
         <value>O alinhamento horizontal do texto em um quadro de texto.</value>
-        <remarks>
-          <para>Leitura/gravação <see cref="T:Microsoft.Office.Core.MsoHorizontalAnchor" />.</para>
-          <para />
-        </remarks>
+        <remarks><para>Leitura/gravação <see cref="T:Microsoft.Office.Core.MsoHorizontalAnchor" />.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MarginBottom">
@@ -325,7 +311,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define a distância (em pontos) entre a parte inferior do quadro de texto e a parte superior do retângulo inscrito que contém o texto.</summary>
+        <summary>Retorna ou define a distância (em pontos) entre a parte inferior do quadro de texto e a parte inferior do retângulo inscrito da forma que contém o texto.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -387,7 +373,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define a distância (em pontos) entre a borda direita do quadro de texto e a borda direita do retângulo inscrito que contém o texto.</summary>
+        <summary>Retorna ou define a distância (em pontos) entre a borda direita do quadro de texto e a borda direita do retângulo inscrito da forma que contém o texto.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -449,7 +435,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.TextFrame</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o próximo objeto do conjunto.</summary>
+        <summary>Retorna o próximo objeto da coleção.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -480,12 +466,10 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém ou define se o texto no quadro de texto não deve girar quando a forma for girada.</summary>
-        <value>Uma <see cref="T:Microsoft.Office.Core.MsoTriState" /> objeto.</value>
-        <remarks>
-          <para>Leitura/gravação <see cref="T:Microsoft.Office.Core.MsoTriState" />. Somente as constantes de <b>MsoTriState</b><b>msoFalse</b> e <b>msoTrue</b> podem ser usados para definir essa propriedade.</para>
-          <para />
-        </remarks>
+        <summary>Obtém ou define se o texto no quadro de texto não deve girar quando a forma é girada.</summary>
+        <value>Um <see cref="T:Microsoft.Office.Core.MsoTriState" /> objeto.</value>
+        <remarks><para>Leitura/gravação <see cref="T:Microsoft.Office.Core.MsoTriState" />. Somente as constantes de <b>MsoTriState</b> <b>msoFalse</b> e <b>msoTrue</b> podem ser usados para definir essa propriedade.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Orientation">
@@ -516,34 +500,32 @@
       <Docs>
         <summary>Retorna ou define a orientação do texto dentro do quadro.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
+        <remarks><para>
             <see cref="T:Microsoft.Office.Core.MsoTextOrientation" />pode ser uma destas constantes <b>MsoTextOrientation</b> . </para>
           <para>
-            <b>msoTextOrientationDownward </b>
+            <b>msoTextOrientationDownward</b>
           </para>
           <para>
-            <b>msoTextOrientationHorizontal </b>
+            <b>msoTextOrientationHorizontal</b>
           </para>
           <para>
-            <b>msoTextOrientationHorizontalRotatedFarEast </b>
+            <b>msoTextOrientationHorizontalRotatedFarEast</b>
           </para>
           <para>
-            <b>msoTextOrientationMixed </b>
+            <b>msoTextOrientationMixed</b>
           </para>
           <para>
             <b>msoTextOrientationUpward</b>
           </para>
           <para>
-            <b> msoTextOrientationVertical </b>
+            <b>msoTextOrientationVertical</b>
           </para>
           <para>
             <b>msoTextOrientationVerticalFarEast</b>
           </para>
-          <para>algumas das constantes listadas acima podem não estar disponíveis para você, dependendo do suporte a idioma (inglês americano, por exemplo) que você selecionou ou instalou.</para>
-          <para>Você pode definir a orientação para um quadro de texto ou para um intervalo ou seleção que acontece ocorra dentro de um quadro de texto. Para obter informações sobre a diferença entre um quadro de texto e uma caixa de texto, consulte o <see cref="T:Microsoft.Office.Interop.Word.TextFrame" /> objeto.</para>
-          <para />
-        </remarks>
+          <para>Algumas constantes listadas acima podem não estar disponíveis para você, dependendo do suporte a idioma (por exemplo, português do Brasil) que tiver sido selecionado ou instalado.</para>
+          <para>Você pode definir a orientação para um quadro de texto ou para um intervalo ou seleção que acontece ocorra dentro de um quadro de texto. Para obter informações sobre a diferença entre um quadro de texto e uma caixa de texto <see cref="T:Microsoft.Office.Interop.Word.TextFrame" /> , consulte o objeto.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Overflowing">
@@ -569,8 +551,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> se o texto dentro do quadro de texto especificado não caibam todos dentro do quadro.</summary>
+        <summary><b>True</b> se o texto dentro do quadro de texto especificado não caibam todos dentro do quadro.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -631,8 +612,7 @@
       <Docs>
         <summary>Obtém ou define o tipo de caminho para o quadro de texto especificado.</summary>
         <value>O tipo de caminho para o quadro de texto especificado.</value>
-        <remarks>
-          <para>O valor dessa propriedade pode ser um dos seguintes <see cref="T:Microsoft.Offic.Core.MsoPathType" /> constantes:</para>
+        <remarks><para>O valor dessa propriedade pode ser uma das seguintes <see cref="T:Microsoft.Offic.Core.MsoPathType" /> constantes:</para>
           <list type="bullet">
             <item>
               <para>
@@ -665,8 +645,7 @@
               </para>
             </item>
           </list>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Previous">
@@ -695,7 +674,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.TextFrame</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o objeto anterior do conjunto.</summary>
+        <summary>Retorna o objeto anterior da coleção.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -723,7 +702,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Range" /> object que representa o texto no quadro de texto especificado.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto que representa o texto no quadro de texto especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -751,12 +730,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.ThreeDFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém um <see cref="T:Microsoft.Office.Interop.Word.ThreeDFormat" /> objeto que contém as propriedades do quadro de texto especificado de formatação de efeitos 3D.</summary>
-        <value>Uma <see cref="T:Microsoft.Office.Interop.Word.ThreeDFormat" /> objeto que contém as propriedades do quadro de texto especificado de formatação de efeitos 3D.</value>
-        <remarks>
-          <para>Somente leitura.</para>
-          <para />
-        </remarks>
+        <summary>Obtém um <see cref="T:Microsoft.Office.Interop.Word.ThreeDFormat" /> objeto que contém propriedades de formatação de efeito 3D para o quadro de texto especificado.</summary>
+        <value>Um <see cref="T:Microsoft.Office.Interop.Word.ThreeDFormat" /> objeto que contém propriedades de formatação de efeito 3D para o quadro de texto especificado.</value>
+        <remarks><para>Somente leitura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ValidLinkTarget">
@@ -782,13 +759,11 @@
         <Parameter Name="TargetTextFrame" Type="Microsoft.Office.Interop.Word.TextFrame" />
       </Parameters>
       <Docs>
-        <param name="TargetTextFrame">Necessário <see cref="T:Microsoft.Office.Interop.Word.TextFrame" /> objeto. O quadro de texto de destino ao qual você deseja vincular o quadro de texto especificado.</param>
+        <param name="TargetTextFrame">Objeto <see cref="T:Microsoft.Office.Interop.Word.TextFrame" /> necessário. O quadro de texto de destino no qual você deseja vincular o quadro de texto especificado.</param>
         <summary>Determina se o quadro de texto de uma forma pode ser vinculado ao quadro de texto de outra forma.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>A propriedade <b>TextFrame</b> retorna <b>True</b> se <paramref name="TargetTextFrame" /> é um destino válido. Ele retornará <b>False</b> se <paramref name="TargetTextFrame" /> já contiver texto ou já está vinculado ou se a forma não tem suporte para texto de anexado.</para>
-          <para />
-        </remarks>
+        <remarks><para>A <b></b> Propriedade TextFrame retorna <b>true</b> se <paramref name="TargetTextFrame" /> for um destino válido. Ele retornará <b>false</b> se <paramref name="TargetTextFrame" /> já contiver texto ou já estiver vinculado ou se a forma não oferecer suporte a texto anexado.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="VerticalAnchor">
@@ -818,9 +793,7 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna ou define uma constante <b>MsoVerticalAnchor</b> que representa o alinhamento vertical do texto dentro de uma forma. Leitura/gravação.</summary>
-        <value>
-          <b>MsoVerticalAnchor</b>
-        </value>
+        <value><b>MsoVerticalAnchor</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -850,12 +823,10 @@
         <ReturnType>Microsoft.Office.Core.MsoWarpFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém ou define o formato de encurvamento (como o texto é distorcido) para o quadro de texto especificado.</summary>
-        <value>O formato de encurvamento (como o texto é distorcido) para o quadro de texto especificado.</value>
-        <remarks>
-          <para>Leitura/gravação <see cref="T:Microsoft.Office.Core.MsoWarpFormat" />.</para>
-          <para />
-        </remarks>
+        <summary>Obtém ou define o formato Warp (como o texto é distorcedo) para o quadro de texto especificado.</summary>
+        <value>O formato Warp (como o texto é distorcedo) para o quadro de texto especificado.</value>
+        <remarks><para>Leitura/gravação <see cref="T:Microsoft.Office.Core.MsoWarpFormat" />.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="WordWrap">
@@ -884,14 +855,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> se o Microsoft Word quebra o texto latino no meio de uma palavra no quadros de texto ou parágrafos especificados.</summary>
+        <summary><b>True</b> se o Microsoft Word quebrar o texto latino no meio de uma palavra nos parágrafos ou nos quadros de texto especificados.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>à propriedade <b>WordWrap</b> retornará <b>wdUndefined</b> se ela for definida como <b>True</b> para apenas alguns dos quadros de texto ou parágrafos especificados.</para>
-          <para>Este uso pode não estar disponível, dependendo do suporte a idioma (inglês americano, por exemplo) que você selecionou ou instalou.</para>
-          <para />
-        </remarks>
+        <remarks><para>A propriedade <b>WordWrap</b> retornará <b>wdUndefined</b> se ela estiver definida como <b>true</b> para apenas alguns dos parágrafos especificados ou quadros de texto.</para>
+          <para>Esse uso pode não estar disponível, dependendo do suporte a idioma (Português do Brasil, por exemplo) que você selecionou ou instalou.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

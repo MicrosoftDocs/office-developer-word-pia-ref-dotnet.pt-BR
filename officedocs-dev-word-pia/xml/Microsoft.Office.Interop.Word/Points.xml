@@ -1,13 +1,5 @@
 <Type Name="Points" FullName="Microsoft.Office.Interop.Word.Points">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="e6ec73c293d015a6238b804a975848286853fb8c" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20665132" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Points : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5975220702129151c3928a376d05fe3cd4618651" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147715" /></Metadata><TypeSignature Language="C#" Value="public interface Points : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Points implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Points" />
   <TypeSignature Language="VB.NET" Value="Public Interface Points&#xA;Implements IEnumerable" />
@@ -31,10 +23,8 @@
   </Attributes>
   <Docs>
     <summary>Uma coleção de todos os <see cref="T:Microsoft.Office.Interop.Word.Point" /> objetos na série especificada em um gráfico.</summary>
-    <remarks>
-      <para>Uso <see cref="M:Microsoft.Office.Interop.Word.Series.Points(System.Object)" />(<paramref name="Index" />), onde <paramref name="Index" /> é o número de índice do ponto, para retornar um único <see cref="T:Microsoft.Office.Interop.Word.Point" /> objeto. Pontos são numerados da esquerda para direita na série. Points(1) é o ponto mais à esquerda e Points(Points.Count) é o ponto mais à direita.</para>
-      <para />
-    </remarks>
+    <remarks><para>Use <see cref="M:Microsoft.Office.Interop.Word.Series.Points(System.Object)" />(<paramref name="Index" />), onde <paramref name="Index" /> é o número de índice do ponto, para retornar <see cref="T:Microsoft.Office.Interop.Word.Point" /> um único objeto. Pontos são numerados da esquerda para direita na série. Points(1) é o ponto mais à esquerda e Points(Points.Count) é o ponto mais à direita.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -92,9 +82,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Quando usado sem um qualificador de objeto, essa propriedade retorna uma <see cref="T:Microsoft.Office.Interop.Word._Application" /> object que representa o aplicativo Microsoft Word. Quando usada com um qualificador de objeto, essa propriedade retornará um objeto <b>Application</b> que representa o criador do objeto especificado (você pode usar essa propriedade com um objeto Automation do OLE para retornar o aplicativo desse objeto). Somente leitura.</summary>
-        <value>
-          <b>Aplicativo</b> (consulte acima)</value>
+        <summary>Quando usado sem um qualificador de objeto, essa propriedade <see cref="T:Microsoft.Office.Interop.Word._Application" /> retorna um objeto que representa o aplicativo Microsoft Word. Quando usada com um qualificador de objeto, essa propriedade retornará um objeto <b>Application</b> que representa o criador do objeto especificado (você pode usar essa propriedade com um objeto Automation do OLE para retornar o aplicativo desse objeto). Somente leitura.</summary>
+        <value><b>Aplicativo</b> (veja acima)</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,9 +111,7 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna um valor <b>Integer</b> que representa o número de objetos na coleção.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -152,13 +139,9 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado. <b>Integer</b> somente leitura.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Word, a propriedade <b>Creator</b> retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD."  Essa propriedade principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <value><b>Integer</b></value>
+        <remarks><para>Se o objeto foi criado no Microsoft Word, a propriedade <b>Creator</b> retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD".  Essa propriedade foi projetada inicialmente para ser usada no Macintosh, no qual cada aplicativo tem um código de criador com quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -219,12 +202,9 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Integer</b>necessário. O número de índice do objeto.</param>
+        <param name="Index">Obrigatório <b>Integer</b>. O número de índice do objeto.</param>
         <summary>Retorna um único objeto da coleção.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Point" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Point" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -252,9 +232,7 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna o pai do objeto especificado. Somente leitura <b>objeto</b>.</summary>
-        <value>
-          <b>Object</b>
-        </value>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

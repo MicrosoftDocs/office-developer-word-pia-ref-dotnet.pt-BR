@@ -1,13 +1,5 @@
 <Type Name="Pane" FullName="Microsoft.Office.Interop.Word.Pane">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a6da467368e532f2064abfe444b232f810bf1434" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20664529" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Pane" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="2c6d2b532972458c15ddcaf3f76f72a0ddd27d36" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147736" /></Metadata><TypeSignature Language="C#" Value="public interface Pane" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Pane" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Pane" />
   <TypeSignature Language="VB.NET" Value="Public Interface Pane" />
@@ -26,9 +18,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Representa um painel de janela. Objeto <b>Pane</b> é um membro da coleção <b>Panes</b>. O <see cref="Panes#SameCHM" /> coleção inclui todos os painéis da janela de uma única janela.</summary>
-    <remarks>
-      <para>Use <b>Panes</b>(<paramref name="Index" />), onde <paramref name="Index" /> é o número de índice, para retornar um único objeto <b>Pane</b> . O exemplo a seguir fecha o painel ativo.</para>
+    <summary>Representa um painel de janela. Objeto <b>Pane</b> é um membro da coleção <b>Panes</b>. A <see cref="Panes#SameCHM" /> coleção inclui todos os painéis de janela de uma única janela.</summary>
+    <remarks><para>Use <b>panes</b>(<paramref name="Index" />), em <paramref name="Index" /> que é o número de índice, para retornar um único objeto <b>pane</b> . O exemplo a seguir fecha o painel ativo.</para>
       <code>&lt;span class="label"&gt;If ActiveDocument.ActiveWindow.Panes.Count &amp;gt;= 2 Then _ 
 
 
@@ -285,9 +276,14 @@
 
 
 
-    ActiveDocument.ActiveWindow.ActivePane.Close&lt;/span&gt;</code>Método 
-      <para>uso <b>Add</b> ou a propriedade <b>Split</b> para adicionar um painel de janela. O exemplo a seguir divide a janela ativa em 20% do tamanho atual da janela.</para><code>&lt;span class="label"&gt;ActiveDocument.ActiveWindow.Panes.Add SplitVertical:=20&lt;/span&gt;</code><para>o exemplo a seguir divide a janela ativa ao meio.</para><code>&lt;span class="label"&gt;ActiveDocument.ActiveWindow.Split = True&lt;/span&gt;</code><para>Você pode usar a propriedade <b>SplitSpecial</b> para mostrar comentários, notas de rodapé ou notas de fim em um painel separado.</para> Janela de uma 
-      <para>tem mais de um painel, se a janela estiver dividida ou o modo não é o modo de exibição de layout de impressão e informações como notas de rodapé ou comentários são exibidos. O exemplo a seguir exibe o painel de comentários no modo normal e solicita que o usuário feche o painel.</para><code>&lt;span class="label"&gt;ActiveDocument.ActiveWindow.View.Type = wdNormalView 
+    ActiveDocument.ActiveWindow.ActivePane.Close&lt;/span&gt;</code>
+      <para>Use o método <b>Add</b> ou a propriedade <b>Split</b> para adicionar um painel de janela. O exemplo a seguir divide a janela ativa em 20% do tamanho atual da janela.</para>
+      <code>&lt;span class="label"&gt;ActiveDocument.ActiveWindow.Panes.Add SplitVertical:=20&lt;/span&gt;</code>
+      <para>O exemplo a seguir divide a janela ativa ao meio.</para>
+      <code>&lt;span class="label"&gt;ActiveDocument.ActiveWindow.Split = True&lt;/span&gt;</code>
+      <para>Você pode usar a propriedade <b>SplitSpecial</b> para mostrar comentários, notas de rodapé ou notas de fim em um painel separado.</para>
+      <para>Uma janela tem mais de um painel quando está dividida ou quando o modo de exibição é diferente de layout de impressão e são exibidas informações, como notas de rodapé ou comentários. O exemplo a seguir exibe o painel de comentários no modo de exibição normal e, em seguida, solicita que o usuário feche o painel.</para>
+      <code>&lt;span class="label"&gt;ActiveDocument.ActiveWindow.View.Type = wdNormalView 
 
 
 
@@ -2079,7 +2075,8 @@ If ActiveDocument.Comments.Count &amp;gt;= 1 Then
 
 
 
-End If&lt;/span&gt;</code><para /></remarks>
+End If&lt;/span&gt;</code>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Activate">
@@ -2105,8 +2102,7 @@ End If&lt;/span&gt;</code><para /></remarks>
       <Docs>
         <summary>Ativa o painel especificado.</summary>
         <remarks>To be added.</remarks>
-        <example>
-          <para>Este exemplo divide a janela ativa e ativa o primeiro painel.</para>
+        <example><para>Este exemplo divide a janela ativa e ativa o primeiro painel.</para>
           <code>&lt;span class="label"&gt;Sub SplitWindow() 
 
 
@@ -2877,8 +2873,7 @@ End If&lt;/span&gt;</code><para /></remarks>
 
     .Panes(1).&lt;/span&gt;
 &lt;span class="label"&gt;Activate&lt;/span&gt;
-&lt;span class="label"&gt;End WithEnd Sub&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;End WithEnd Sub&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -2904,12 +2899,10 @@ End If&lt;/span&gt;</code><para /></remarks>
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Os CreateObject e GetObject do Visual Basic funciona lhe dão acesso a um objeto de automação OLE de um projeto Visual Basic for Applications.</para>
-          <para />
-        </remarks>
+        <remarks><para>As funções CreateObject e GetObject do Visual Basic lhe dão acesso a um objeto de automação OLE de um projeto Visual Basic for Applications.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoScroll">
@@ -3002,10 +2995,8 @@ End If&lt;/span&gt;</code><para /></remarks>
       <Docs>
         <summary>Retorna a largura (em pontos) da área na qual o texto quebre no painel especificado. Somente leitura <b>Long</b>.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Essa propriedade funciona apenas quando você está no modo de layout da Web.</para>
-          <para />
-        </remarks>
+        <remarks><para>Essa propriedade funciona apenas quando você está no modo de exibição de layout da Web.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -3031,8 +3022,7 @@ End If&lt;/span&gt;</code><para /></remarks>
       <Docs>
         <summary>Fecha a fonte de dados, painel ou tarefas especificadas da mala direta.</summary>
         <remarks>To be added.</remarks>
-        <example>
-          <para>Este exemplo fecha o painel ativo se a janela ativa estiver dividida.</para>
+        <example><para>Este exemplo fecha o painel ativo se a janela ativa estiver dividida.</para>
           <code>&lt;span class="label"&gt;If ActiveDocument.ActiveWindow.Panes.Count &amp;gt;= 2 Then _ 
 
 
@@ -3290,8 +3280,7 @@ End If&lt;/span&gt;</code><para /></remarks>
 
 
     ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
-&lt;span class="label"&gt;Close&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;Close&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -3317,12 +3306,10 @@ End If&lt;/span&gt;</code><para /></remarks>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado. Somente leitura <b>Long</b>.</summary>
+        <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado. <b>Long</b> somente leitura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Word, a propriedade <b>Creator</b> retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD."  Essa propriedade principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Word, a propriedade <b>Creator</b> retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD".  Essa propriedade foi projetada inicialmente para ser usada no Macintosh, no qual cada aplicativo tem um código de criador com quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayRulers">
@@ -3351,15 +3338,11 @@ End If&lt;/span&gt;</code><para /></remarks>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> se réguas são exibidas para o painel especificado. Leitura/gravação <b>booleano</b>.</summary>
+        <summary><b>True</b> se réguas são exibidas para o painel especificado. <b>Boolean</b> de leitura/gravação.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>A propriedade <b>DisplayRulers</b> é equivalente ao comando régua no menu Exibir. Se <b>DisplayRulers</b> for <b>Falso</b>, as réguas horizontais e vertical não serão exibidas, independentemente do estado da propriedade <b>DisplayVerticalRuler</b> .</para>
-          <para />
-        </remarks>
-        <example>
-          <para>Este exemplo alterna o painel ativo para o modo de exibição de layout de impressão e exibe as réguas horizontais e verticais.</para>
+        <remarks><para>A propriedade <b>DisplayRulers</b> é equivalente ao comando régua no menu Exibir. Se <b>DisplayRulers</b> for <b>Falso</b>, as réguas horizontais e vertical não serão exibidas, independentemente do estado da propriedade <b>DisplayVerticalRuler</b>.</para>
+          <para> </para></remarks>
+        <example><para>Este exemplo alterna o painel ativo para o modo de layout de impressão e exibe as réguas horizontal e vertical.</para>
           <code>&lt;span class="label"&gt;With ActiveDocument.ActiveWindow.ActivePane 
 
 
@@ -3874,8 +3857,7 @@ End If&lt;/span&gt;</code><para /></remarks>
 
     .&lt;/span&gt;
 &lt;span class="label"&gt;DisplayRulers&lt;/span&gt;
-&lt;span class="label"&gt;= True    .DisplayVerticalRuler = TrueEnd With&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;= True    .DisplayVerticalRuler = TrueEnd With&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="DisplayVerticalRuler">
@@ -3904,15 +3886,11 @@ End If&lt;/span&gt;</code><para /></remarks>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> se uma régua vertical é exibida para o painel especificado. Leitura/gravação <b>booleano</b>.</summary>
+        <summary><b>True</b> se uma régua vertical é exibida para o painel especificado. Leitura/gravação <b>booleano</b>.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Uma régua vertical só aparece no modo de exibição de layout de impressão, e somente se a propriedade <b>DisplayRulers</b> estiver definida como <b>True</b>.</para>
-          <para />
-        </remarks>
-        <example>
-          <para>Este exemplo alterna o painel ativo para o modo de exibição de layout de impressão e exibe as réguas horizontais e verticais.</para>
+        <remarks><para>Uma régua vertical só aparece no modo de exibição de layout de impressão, e somente se a propriedade <b>DisplayRulers</b> estiver definida como <b>True</b>.</para>
+          <para> </para></remarks>
+        <example><para>Este exemplo alterna o painel ativo para o modo de layout de impressão e exibe as réguas horizontal e vertical.</para>
           <code>&lt;span class="label"&gt;With ActiveDocument.ActiveWindow.ActivePane 
 
 
@@ -4683,8 +4661,7 @@ End If&lt;/span&gt;</code><para /></remarks>
 
     .&lt;/span&gt;
 &lt;span class="label"&gt;DisplayVerticalRuler&lt;/span&gt;
-&lt;span class="label"&gt;= TrueEnd With&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;= TrueEnd With&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="Document">
@@ -4710,7 +4687,7 @@ End If&lt;/span&gt;</code><para /></remarks>
         <ReturnType>Microsoft.Office.Interop.Word.Document</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Document" /> objeto associado com o painel especificado. Somente leitura.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Document" /> objeto associado ao painel especificado. Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4740,17 +4717,13 @@ End If&lt;/span&gt;</code><para /></remarks>
       <Docs>
         <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Frameset" /> objeto que representa uma página de quadros inteira ou um único quadro em uma página de quadros. Somente leitura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Para obter mais informações sobre como criar páginas de quadros, consulte <see cref="Creatingframespages#SameCHM" />.</para>
-          <para />
-          <para />
-        </remarks>
-        <example>
-          <para>Este exemplo adiciona um novo quadro imediatamente à direita do quadro especificado.</para>
+        <remarks><para>Para obter mais informações sobre como criar páginas de <see cref="Creatingframespages#SameCHM" />quadros, consulte.</para>
+          <para> </para>
+          <para> </para></remarks>
+        <example><para>Este exemplo adiciona um novo quadro imediatamente à direita do quadro especificado.</para>
           <code>&lt;span class="label"&gt;ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
 &lt;span class="label"&gt;Frameset&lt;/span&gt;
-&lt;span class="label"&gt;_    .AddNewFrame wdFramesetNewRight&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;_    .AddNewFrame wdFramesetNewRight&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="HorizontalPercentScrolled">
@@ -4782,8 +4755,7 @@ End If&lt;/span&gt;</code><para /></remarks>
         <summary>Retorna ou define a posição de rolagem horizontal como um percentual da largura do documento. Leitura/gravação <b>longa</b>.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <example>
-          <para>Este exemplo rola horizontalmente o painel ativo da janela de Document1 totalmente para a esquerda.</para>
+        <example><para>Este exemplo rola horizontalmente o painel ativo da janela de Document1 totalmente para a esquerda.</para>
           <code>&lt;span class="label"&gt;With Windows("Document1") 
 
 
@@ -5298,8 +5270,7 @@ End If&lt;/span&gt;</code><para /></remarks>
 
     .ActivePane.&lt;/span&gt;
 &lt;span class="label"&gt;HorizontalPercentScrolled&lt;/span&gt;
-&lt;span class="label"&gt;= 0End With&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;= 0End With&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -5360,10 +5331,8 @@ End If&lt;/span&gt;</code><para /></remarks>
         <param name="ToRight">O número de telas pelas quais rolar a janela para a direita.</param>
         <param name="ToLeft">O número de telas pelas quais rolar a janela para a esquerda.</param>
         <summary>Rola uma janela ou painel pelo número especificado de telas.</summary>
-        <remarks>
-          <para>Esse método é equivalente a clicar imediatamente antes ou depois das caixas de rolagem nas barras de rolagem horizontal e vertical.</para>
-          <para />
-        </remarks>
+        <remarks><para>Esse método é equivalente a clicar imediatamente antes ou depois das caixas de rolagem nas barras de rolagem horizontal e vertical.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MinimumFontSize">
@@ -5392,14 +5361,11 @@ End If&lt;/span&gt;</code><para /></remarks>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define o tamanho de fonte mínimo (em pontos) exibido para o painel especificado. Leitura/gravação <b>longa</b>.</summary>
+        <summary>Retorna ou define o tamanho de fonte mínimo (em pontos) exibido para o painel especificado. <b>Long</b> de leitura/gravação.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Essa propriedade afeta somente o texto conforme mostrado na exibição de layout da Web. Os tamanhos de ponto que são exibidos na barra de ferramentas Formatação e usados para impressão não são alterados.</para>
-          <para />
-        </remarks>
-        <example>
-          <para>Este exemplo define a janela ativa para o modo online e, em seguida, define o tamanho de fonte mínimo para o painel ativo como 12 pontos.</para>
+        <remarks><para>Essa propriedade afeta apenas o texto mostrado no modo de exibição de layout da Web. Os tamanhos em pontos exibidos na barra de ferramentas Formatação e usados para impressão não são alterados.</para>
+          <para> </para></remarks>
+        <example><para>Este exemplo define a janela ativa no modo online e, em seguida, define como 12 pontos o tamanho de fonte mínimo para o painel ativo.</para>
           <code>&lt;span class="label"&gt;With ActiveDocument.ActiveWindow 
 
 
@@ -6173,8 +6139,7 @@ End If&lt;/span&gt;</code><para /></remarks>
 
 
     ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
-&lt;span class="label"&gt;MinimumFontSize&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;MinimumFontSize&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="NewFrameset">
@@ -6199,12 +6164,9 @@ End If&lt;/span&gt;</code><para /></remarks>
       <Parameters />
       <Docs>
         <summary>Cria uma nova página de quadros com base no painel especificado.</summary>
-        <remarks>
-          <para>Para obter mais informações sobre como criar páginas de quadros, consulte <see cref="Creatingframespages#SameCHM" />.</para>
-          <para />
-        </remarks>
-        <example>
-          <para>Este exemplo abre um documento chamado "Temp" e, em seguida, cria uma nova página de quadros cujo único quadro contém "Temp".</para>
+        <remarks><para>Para obter mais informações sobre como criar páginas de <see cref="Creatingframespages#SameCHM" />quadros, consulte.</para>
+          <para> </para></remarks>
+        <example><para>Este exemplo abre um documento chamado "Temp.doc" e cria uma nova página de quadros cujo único quadro contém "Temp.doc".</para>
           <code>&lt;span class="label"&gt;Documents.Open "C:\Documents\Temp.doc" 
 
 
@@ -6462,8 +6424,7 @@ End If&lt;/span&gt;</code><para /></remarks>
 
 
 ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
-&lt;span class="label"&gt;NewFrameset&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;NewFrameset&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="Next">
@@ -6517,7 +6478,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
         <ReturnType>Microsoft.Office.Interop.Word.Pages</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Pages" /> coleção que representa as páginas em um documento.</summary>
+        <summary>Retorna uma <see cref="T:Microsoft.Office.Interop.Word.Pages" /> coleção que representa as páginas em um documento.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6690,12 +6651,9 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
       <Parameters />
       <Docs>
         <summary>Cria um sumário baseado no documento especificado e coloca-o em um novo quadro do lado esquerdo de uma página de quadros.</summary>
-        <remarks>
-          <para>Para obter mais informações sobre como criar páginas de quadros, consulte <see cref="Creatingframespages#SameCHM" />.</para>
-          <para />
-        </remarks>
-        <example>
-          <para>Este exemplo abre um arquivo chamado "Proposta. doc", cria uma página de quadros baseada no arquivo e adiciona um quadro (no lado esquerdo da página) contendo um índice de conteúdo para o arquivo.</para>
+        <remarks><para>Para obter mais informações sobre como criar páginas de <see cref="Creatingframespages#SameCHM" />quadros, consulte.</para>
+          <para> </para></remarks>
+        <example><para>Este exemplo abre um arquivo chamado "Proposal.doc", cria uma página de quadros baseada no arquivo e adiciona um quadro (do lado esquerdo da página) contendo um sumário do arquivo.</para>
           <code>&lt;span class="label"&gt;Documents.Open "C:\Documents\Proposal.doc" 
 
 
@@ -7209,8 +7167,7 @@ ActiveDocument.ActiveWindow.ActivePane.NewFrameset
 
 
 ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
-&lt;span class="label"&gt;TOCInFrameset&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;TOCInFrameset&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="VerticalPercentScrolled">
@@ -7239,11 +7196,10 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define a posição de rolagem vertical como um percentual do comprimento do documento. Leitura/gravação <b>longa</b>.</summary>
+        <summary>Retorna ou define a posição de rolagem vertical como um percentual do comprimento do documento. <b>Long</b> de leitura/gravação.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <example>
-          <para>Este exemplo rola verticalmente o painel ativo da janela de Document1 ao final.</para>
+        <example><para>Este exemplo rola o painel ativo da janela de Document1 verticalmente até o fim.</para>
           <code>&lt;span class="label"&gt;With Windows("Document1") 
 
 
@@ -7758,8 +7714,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
 
     .ActivePane.&lt;/span&gt;
 &lt;span class="label"&gt;VerticalPercentScrolled&lt;/span&gt;
-&lt;span class="label"&gt;= 100End With&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;= 100End With&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="View">
@@ -7788,8 +7743,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
         <summary>Retorna um objeto <b>View</b> que representa o modo de exibição para o painel especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <example>
-          <para>Este exemplo mostra todos os caracteres não-imprimíveis de painéis associados a primeira janela na coleção <b>Windows</b> .</para>
+        <example><para>Este exemplo mostra todos os caracteres não-imprimíveis de painéis associados a primeira janela na coleção <b>Windows</b>.</para>
           <code>&lt;span class="label"&gt;For Each myPane In Windows(1).Panes 
 
 
@@ -8048,8 +8002,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
 
     myPane.&lt;/span&gt;
 &lt;span class="label"&gt;View&lt;/span&gt;
-&lt;span class="label"&gt;.ShowAll = TrueNext myPane&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;.ShowAll = TrueNext myPane&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="Zooms">
@@ -8075,14 +8028,11 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
         <ReturnType>Microsoft.Office.Interop.Word.Zooms</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="Zooms#SameCHM" /> coleção que representa as opções de ampliação para cada modo de exibição (por exemplo, modo de exibição normal, modo de exibição de estrutura de tópicos ou modo de exibição de layout de impressão).</summary>
+        <summary>Retorna uma <see cref="Zooms#SameCHM" /> coleção que representa as opções de ampliação de cada modo de exibição (como modo de exibição normal, modo de estrutura de tópicos ou modo de layout de impressão).</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Para obter informações sobre como retornar um único membro de uma coleção, consulte <see cref="ReturninganObjectfromaCollection#SameCHM" />.</para>
-          <para />
-        </remarks>
-        <example>
-          <para>Este exemplo define a ampliação no modo de exibição normal para 100% para cada janela aberta.</para>
+        <remarks><para>Para obter informações sobre como retornar um único membro de uma coleção <see cref="ReturninganObjectfromaCollection#SameCHM" />, consulte.</para>
+          <para> </para></remarks>
+        <example><para>Este exemplo define a ampliação como 100% no modo normal para cada janela aberta.</para>
           <code>&lt;span class="label"&gt;Dim wndLoop as Window 
 
 
@@ -8854,11 +8804,10 @@ For Each wndLoop In Windows
     wndLoop.ActivePane.&lt;/span&gt;
 &lt;span class="label"&gt;Zooms&lt;/span&gt;
 &lt;span class="label"&gt;(wdNormalView).Percentage = 100Next wndLoop&lt;/span&gt;</code>
-          <para>Este exemplo define a ampliação no modo de exibição de layout de impressão para que uma página inteira fique visível.</para>
+          <para>Este exemplo define a ampliação no modo de layout de impressão de forma que uma página inteira fique visível.</para>
           <code>&lt;span class="label"&gt;ActiveDocument.ActiveWindow.Panes(1).&lt;/span&gt;
 &lt;span class="label"&gt;Zooms&lt;/span&gt;
-&lt;span class="label"&gt;(wdPrintView).PageFit = _    wdPageFitFullPage&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;(wdPrintView).PageFit = _    wdPageFitFullPage&lt;/span&gt;</code></example>
       </Docs>
     </Member>
   </Members>

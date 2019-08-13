@@ -1,13 +1,5 @@
 <Type Name="StoryRanges" FullName="Microsoft.Office.Interop.Word.StoryRanges">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="8d88da35103c95cabcdd68d3af81c9af0d429c7d" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20664059" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface StoryRanges : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="b1737872c1ea38c8e74f55ed04f58b48e1c4b7f2" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143956" /></Metadata><TypeSignature Language="C#" Value="public interface StoryRanges : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract StoryRanges implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.StoryRanges" />
   <TypeSignature Language="VB.NET" Value="Public Interface StoryRanges&#xA;Implements IEnumerable" />
@@ -30,10 +22,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Uma coleção de <see cref="T:Microsoft.Office.Interop.Word.Range" /> objetos que representam textos de um documento.</summary>
-    <remarks>
-      <para>Use o <see cref="P:Microsoft.Office.Interop.Word._Document.StoryRanges" /> propriedade para retornar a coleção <b>StoryRanges</b> .</para> Método 
-      <para><b>Adicionar</b> não está disponível para a coleção <b>StoryRanges</b> . O número de textos na coleção <b>StoryRanges</b> é finito.</para><para>Uso <b>StoryRanges</b>(<paramref name="index" />), onde <paramref name="index" /> é um <see cref="T:Microsoft.Office.Interop.Word.WdStoryType" /> constante, para retornar um único texto como um objeto <b>Range</b> .</para><para>Se você tentar retornar um texto que não está disponível no documento especificado, ocorrerá um erro.</para><para>Uso o <see cref="P:Microsoft.Office.Interop.Word.Range.NextStoryRange" /> propriedade efetuar um loop por todos os textos em um documento.</para><para /></remarks>
+    <summary>Uma coleção de <see cref="T:Microsoft.Office.Interop.Word.Range" /> objetos que representam matérias em um documento.</summary>
+    <remarks><para>Use a <see cref="P:Microsoft.Office.Interop.Word._Document.StoryRanges" /> propriedade para retornar a coleção <b>StoryRanges</b> .</para>
+      <para>O método <b>Add</b> não está disponível para a coleção <b>StoryRanges</b> . O número de histórias da coleção <b>StoryRanges</b> é finito.</para>
+      <para>Use <b>StoryRanges</b>(<paramref name="index" />), onde <paramref name="index" /> é uma <see cref="T:Microsoft.Office.Interop.Word.WdStoryType" /> constante, para retornar um único texto como um objeto <b>Range</b> .</para>
+      <para>Se você tentar retornar um texto que não esteja disponível no documento especificado, ocorrerá um erro.</para>
+      <para>Use a <see cref="P:Microsoft.Office.Interop.Word.Range.NextStoryRange" /> propriedade para executar um loop em todos os textos de um documento.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -59,7 +54,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -117,9 +112,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
-          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". [!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
+          <para>A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -180,8 +175,8 @@
         <Parameter Name="Index" Type="Microsoft.Office.Interop.Word.WdStoryType" />
       </Parameters>
       <Docs>
-        <param name="Index">Necessário <see cref="T:Microsoft.Office.Interop.Word.WdStoryType" />. O tipo de texto especificado. Pode ser uma destas constantes <b>WdStoryType</b> . <b>Ewdcommentsstory</b><b>wdEndnotesStory</b><b>wdEvenPagesFooterStory</b><b>wdEvenPagesHeaderStory</b><b>wdFirstPageFooterStory</b><b>wdFirstPageHeaderStory</b><b>wdFootnotesStory</b><b>wdMainTextStory</b><b>Wdprimaryfooterstorywdprimaryfooterstory</b><b>wdPrimaryHeaderStory</b><b>wdTextFrameStory</b></param>
-        <summary>Retorna um texto isolado de um intervalo ou seleção como um <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto.</summary>
+        <param name="Index">Necessário <see cref="T:Microsoft.Office.Interop.Word.WdStoryType" />. O tipo de texto especificado. Pode ser uma destas constantes <b>WdStoryType</b> . <b>wdCommentsStory</b> <b>wdEndnotesStory</b> <b>wdEvenPagesFooterStory</b> <b>wdEvenPagesHeaderStory</b> <b>wdFirstPageFooterStory</b> <b>wdFirstPageHeaderStory</b> <b>wdFootnotesStory</b> <b>wdMainTextStory</b> <b>wdprimaryfooterstorywdprimaryfooterstory</b> <b>wdPrimaryHeaderStory</b> <b>wdTextFrameStory</b></param>
+        <summary>Retorna um único texto de um intervalo ou seleção como um <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

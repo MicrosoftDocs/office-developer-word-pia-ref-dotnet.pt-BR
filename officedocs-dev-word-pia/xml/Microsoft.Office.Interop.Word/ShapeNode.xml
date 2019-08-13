@@ -1,13 +1,5 @@
 <Type Name="ShapeNode" FullName="Microsoft.Office.Interop.Word.ShapeNode">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="dea0f3f64b98c01fd58dabd1cbdfd93db788f7c5" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20663931" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ShapeNode" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="86c2673d3a1bd61e13b1505a88e585abcef62547" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147638" /></Metadata><TypeSignature Language="C#" Value="public interface ShapeNode" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ShapeNode" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ShapeNode" />
   <TypeSignature Language="VB.NET" Value="Public Interface ShapeNode" />
@@ -27,11 +19,9 @@
   </Attributes>
   <Docs>
     <summary>Representa a geometria e as propriedades de edição de geometria dos nós em uma forma livre definida pelo usuário.</summary>
-    <remarks>
-      <para>Nós incluem os vértices entre os segmentos da forma livre e os pontos de controle para os segmentos curvos. O objeto <b>ShapeNode</b> é membro do <see cref="T:Microsoft.Office.Interop.Word.ShapeNodes" /> conjunto. A coleção <b>ShapeNodes</b> contém todos os nós de uma forma livre.</para>
-      <para>Uso <b>nós</b>(<paramref name="index" />), onde <paramref name="index" /> é o número de índice do nó, para retornar um único objeto <b>ShapeNode</b> .</para>
-      <para />
-    </remarks>
+    <remarks><para>Nós incluem os vértices entre os segmentos da forma livre e os pontos de controle para os segmentos curvos. O objeto <b>ShapeNode</b> é um membro da <see cref="T:Microsoft.Office.Interop.Word.ShapeNodes" /> coleção. A coleção <b>ShapeNodes</b> contém todos os nós de uma forma livre.</para>
+      <para>Use <b></b>Nodes<paramref name="index" />(), <paramref name="index" /> onde é o número de índice do nó, para retornar um único objeto <b>ShapeNode</b> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -57,7 +47,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -87,9 +77,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
-          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". [!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
+          <para>A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EditingType">
@@ -117,10 +107,8 @@
       <Docs>
         <summary>Se o nó especificado for um vértice, esta propriedade retornará um valor que indica como as alterações feitas no nó afetam os dois segmentos conectados ao nó. Se o nó for um ponto de controle de um segmento curvo, esta propriedade retornará o tipo de edição do vértice adjacente.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Use o <see cref="M:Microsoft.Office.Interop.Word.ShapeNodes.SetEditingType(System.Int32,Microsoft.Office.Core.MsoEditingType)" /> método para definir o valor dessa propriedade.</para>
-          <para />
-        </remarks>
+        <remarks><para>Use o <see cref="M:Microsoft.Office.Interop.Word.ShapeNodes.SetEditingType(System.Int32,Microsoft.Office.Core.MsoEditingType)" /> método para definir o valor dessa propriedade.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -176,10 +164,8 @@
       <Docs>
         <summary>Retorna a posição do nó especificado como um par de coordenadas. Cada coordenada é expressa em pontos.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Use o <see cref="M:Microsoft.Office.Interop.Word.ShapeNodes.SetPosition(System.Int32,System.Single,System.Single)" /> método para definir a localização do nó.</para>
-          <para />
-        </remarks>
+        <remarks><para>Use o <see cref="M:Microsoft.Office.Interop.Word.ShapeNodes.SetPosition(System.Int32,System.Single,System.Single)" /> método para definir o local do nó.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SegmentType">
@@ -207,11 +193,9 @@
       <Docs>
         <summary>Retorna um valor que indica se o segmento associado com o nó especificado é reto ou curvo.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o nó especificado for um ponto de controle de um segmento curvo, essa propriedade retornará <b>msoSegmentCurve</b>.</para>
-          <para>Uso o <see cref="M:Microsoft.Office.Interop.Word.ShapeNodes.SetSegmentType(System.Int32,Microsoft.Office.Core.MsoSegmentType)" /> método para definir o valor dessa propriedade.</para>
-          <para />
-        </remarks>
+        <remarks><para>Se o nó especificado for um ponto de controle de um segmento curvo, essa propriedade retornará <b>msoSegmentCurve</b>.</para>
+          <para>Use o <see cref="M:Microsoft.Office.Interop.Word.ShapeNodes.SetSegmentType(System.Int32,Microsoft.Office.Core.MsoSegmentType)" /> método para definir o valor dessa propriedade.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

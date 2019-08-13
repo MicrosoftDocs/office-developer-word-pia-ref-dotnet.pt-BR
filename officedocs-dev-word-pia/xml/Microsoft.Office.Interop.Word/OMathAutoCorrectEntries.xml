@@ -1,13 +1,5 @@
 <Type Name="OMathAutoCorrectEntries" FullName="Microsoft.Office.Interop.Word.OMathAutoCorrectEntries">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d58a8ffaf591069c193d93e4ce28b69fe92bac84" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20664388" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface OMathAutoCorrectEntries : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="35cd1a7cab040433579eb73434d2c6b194d3661b" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147827" /></Metadata><TypeSignature Language="C#" Value="public interface OMathAutoCorrectEntries : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract OMathAutoCorrectEntries implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.OMathAutoCorrectEntries" />
   <TypeSignature Language="VB.NET" Value="Public Interface OMathAutoCorrectEntries&#xA;Implements IEnumerable" />
@@ -30,7 +22,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Representa uma coleção de entradas de Correção Automática de Matemática. Use o <see cref="T:Microsoft.Office.Interop.Word.OMathAutoCorrectEntry" /> objeto para acessar as entradas de AutoCorreção individuais.</summary>
+    <summary>Representa uma coleção de entradas de Correção Automática de Matemática. Use o <see cref="T:Microsoft.Office.Interop.Word.OMathAutoCorrectEntry" /> objeto para acessar entradas individuais de AutoCorreção.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -58,14 +50,10 @@
         <Parameter Name="Value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Name">
-          <b>Cadeia de caracteres</b> do nome da entrada da AutoCorreção necessário. Corresponde ao <see cref="P:Microsoft.Office.Interop.Word.OMathAutoCorrectEntry.Name" /> propriedade do <see cref="T:Microsoft.Office.Interop.Word.OMathAutoCorrectEntry" /> objeto.</param>
-        <param name="Value">
-          <b>Cadeia de caracteres</b> o valor da entrada da AutoCorreção necessário. Corresponde ao <see cref="P:Microsoft.Office.Interop.Word.OMathAutoCorrectEntry.Value" /> propriedade do <see cref="T:Microsoft.Office.Interop.Word.OMathAutoCorrectEntry" /> objeto.</param>
-        <summary>Cria uma entrada de AutoCorreção da equação e retorna um <see cref="T:Microsoft.Office.Interop.Word.OMathAutoCorrectEntry" /> objeto.</summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Word.OMathAutoCorrectEntry" />
-        </returns>
+        <param name="Name"><b>Cadeia de caracteres</b> obrigatória o nome da entrada da AutoCorreção. Corresponde à <see cref="P:Microsoft.Office.Interop.Word.OMathAutoCorrectEntry.Name" /> Propriedade do <see cref="T:Microsoft.Office.Interop.Word.OMathAutoCorrectEntry" /> objeto.</param>
+        <param name="Value"><b>Cadeia de caracteres</b> obrigatória o valor da entrada da AutoCorreção. Corresponde à <see cref="P:Microsoft.Office.Interop.Word.OMathAutoCorrectEntry.Value" /> Propriedade do <see cref="T:Microsoft.Office.Interop.Word.OMathAutoCorrectEntry" /> objeto.</param>
+        <summary>Cria uma entrada de correção automática de equação e <see cref="T:Microsoft.Office.Interop.Word.OMathAutoCorrectEntry" /> retorna um objeto.</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Word.OMathAutoCorrectEntry" /></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -93,9 +81,7 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna um objeto que representa o aplicativo Microsoft Word.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word._Application" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,10 +108,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o número de itens a <see cref="T:Microsoft.Office.Interop.Word.OMathAutoCorrectEntries" /> conjunto. Somente leitura.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>Retorna o número de itens na <see cref="T:Microsoft.Office.Interop.Word.OMathAutoCorrectEntries" /> coleção. Somente leitura.</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -153,14 +137,10 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o suplemento foi criado. Somente leitura.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Word, o <see cref="P:Microsoft.Office.Interop.Word.OMathAutoCorrectEntries.Creator" /> propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD".  Esse valor também pode ser representado pela constante <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />.</para>
-          <para>Essa propriedade foi criada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <value><b>Integer</b></value>
+        <remarks><para>Se o objeto foi criado no Microsoft Word, a <see cref="P:Microsoft.Office.Interop.Word.OMathAutoCorrectEntries.Creator" /> propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD".  Esse valor também pode ser representado pela constante <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />.</para>
+          <para>Essa propriedade foi projetada inicialmente para ser usada no Macintosh, no qual cada aplicativo tem um código de criador com quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -221,11 +201,9 @@
         <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index">Obrigatório <b>String</b> ou <b>Integer</b> que representa o nome ou a posição ordinal do objeto na coleção.</param>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.OmathAutoCorrectEntry" /> object que representa o item especificado na coleção.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.OmathAutoCorrectEntry" />
-        </value>
+        <param name="Index"><b>Cadeia de caracteres</b> ou <b>inteiro</b> obrigatório que representa o nome ou a posição ordinal do objeto na coleção.</param>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.OmathAutoCorrectEntry" /> objeto que representa o item especificado na coleção.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.OmathAutoCorrectEntry" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -252,10 +230,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o objeto pai do especificado <see cref="T:Microsoft.Office.Interop.Word.OMathAutoCorrectEntries" /> objeto.</summary>
-        <value>
-          <b>Object</b>
-        </value>
+        <summary>Retorna o objeto pai do objeto especificado <see cref="T:Microsoft.Office.Interop.Word.OMathAutoCorrectEntries" /> .</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

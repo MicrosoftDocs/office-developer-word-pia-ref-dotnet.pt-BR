@@ -1,13 +1,5 @@
 <Type Name="KeyBinding" FullName="Microsoft.Office.Interop.Word.KeyBinding">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="fc64b4fc8db5345fc3e67c15c1eeed23c8027af5" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20665116" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface KeyBinding" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="df71ed001e9153c7b8aaaebf2ea2bd7c4f797a38" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147946" /></Metadata><TypeSignature Language="C#" Value="public interface KeyBinding" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract KeyBinding" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.KeyBinding" />
   <TypeSignature Language="VB.NET" Value="Public Interface KeyBinding" />
@@ -27,12 +19,10 @@
   </Attributes>
   <Docs>
     <summary>Representa uma atribuição de tecla personalizada no contexto atual.</summary>
-    <remarks>
-      <para>O objeto <b>KeyBinding</b> é um membro do <see cref="T:Microsoft.Office.Interop.Word.KeyBindings" /> conjunto. Atribuições de teclas personalizadas são feitas na caixa de diálogo Personalizar teclado.</para>
-      <para>Uso <b>KeyBindings</b>(<paramref name="index" />), onde <paramref name="index" /> é o número de índice, para retornar um único objeto <b>KeyBinding</b> .</para>
-      <para>Você também pode usar o <see cref="P:Microsoft.Office.Interop.Word._Application.FindKey(System.Int32,System.Object@)" /> propriedade e o <see cref="M:Microsoft.Office.Interop.Word.KeyBindings.Key(System.Int32,System.Object@)" /> método para retornar um objeto <b>KeyBinding</b> .</para>
-      <para />
-    </remarks>
+    <remarks><para>O objeto <b>KeyBinding</b> é um membro da <see cref="T:Microsoft.Office.Interop.Word.KeyBindings" /> coleção. Atribuições de teclas personalizadas são feitas na caixa de diálogo Personalizar teclado.</para>
+      <para>Use <b></b>keybindings (<paramref name="index" />), onde <paramref name="index" /> é o número de índice, para retornar um único objeto <b>KeyBinding</b> .</para>
+      <para>Você também pode usar a <see cref="P:Microsoft.Office.Interop.Word._Application.FindKey(System.Int32,System.Object@)" /> Propriedade e o <see cref="M:Microsoft.Office.Interop.Word.KeyBindings.Key(System.Int32,System.Object@)" /> método para retornar um objeto <b>KeyBinding</b> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -58,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -84,7 +74,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Remove a vinculação de teclas da <see cref="T:Microsoft.Office.Interop.Word.KeyBindings" /> conjunto e redefine um comando interno com sua atribuição de teclas padrão.</summary>
+        <summary>Remove a associação de teclas da <see cref="T:Microsoft.Office.Interop.Word.KeyBindings" /> coleção e redefine um comando interno com sua atribuição de teclas padrão.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -141,10 +131,8 @@
       <Docs>
         <summary>Retorna o parâmetro de comando atribuído à tecla de atalho especificada.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Para obter informações sobre comandos que usam parâmetros, consulte o <see cref="M:Microsoft.Office.Interop.Word.KeyBindings.Add(Microsoft.Office.Interop.Word.WdKeyCategory,System.String,System.Int32,System.Object@,System.Object@)" /> método do <see cref="T:Microsoft.Office.Interop.Word.KeyBindings" /> objeto. Use o <see cref="P:Microsoft.Office.Interop.Word.KeyBinding.Command" /> propriedade para retornar o nome do comando atribuído à tecla de atalho especificada.</para>
-          <para />
-        </remarks>
+        <remarks><para>Para obter informações sobre comandos que usam parâmetros, consulte <see cref="M:Microsoft.Office.Interop.Word.KeyBindings.Add(Microsoft.Office.Interop.Word.WdKeyCategory,System.String,System.Int32,System.Object@,System.Object@)" /> o método do <see cref="T:Microsoft.Office.Interop.Word.KeyBindings" /> objeto. Use a <see cref="P:Microsoft.Office.Interop.Word.KeyBinding.Command" /> propriedade para retornar o nome do comando atribuído à tecla de atalho especificada.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Context">
@@ -170,12 +158,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um objeto que representa o local de armazenamento de vinculação de teclas especificada. Essa propriedade pode retornar um <see cref="T:Microsoft.Office.Interop.Word.Document" />, <see cref="T:Microsoft.Office.Interop.Word.Template" />, ou <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto.</summary>
+        <summary>Retorna um objeto que representa o local de armazenamento da Associação de teclas especificada. Esta propriedade pode retornar um <see cref="T:Microsoft.Office.Interop.Word.Document" />objeto <see cref="T:Microsoft.Office.Interop.Word.Template" />, ou <see cref="T:Microsoft.Office.Interop.Word.Application" /> ou.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Atribuições de teclas internas (por exemplo, CTRL + I para <b>itálico</b>) retornam o objeto de <b>aplicativo</b> como o contexto. Qualquer ligações de tecla que você adicionar irá retornar um objeto <b>Document</b> ou <b>Template</b> , dependendo do contexto da personalização em efeito quando o <see cref="T:Microsoft.Office.Interop.Word.KeyBinding" /> objeto foi adicionado.</para>
-          <para />
-        </remarks>
+        <remarks><para>As atribuições de teclas internas (por exemplo, CTRL+I para <b>Itálico</b>) retornam o objeto <b>Application</b> como contexto. Quaisquer associações de teclas adicionadas retornarão um objeto <b>Document</b> ou <b>Template</b> , dependendo do contexto de personalização em vigor quando o <see cref="T:Microsoft.Office.Interop.Word.KeyBinding" /> objeto foi adicionado.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -203,9 +189,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
-          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". [!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
+          <para>A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Disable">
@@ -229,10 +215,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Remove a combinação de teclas especificada se ela está atualmente atribuída a um comando.</summary>
-        <remarks>
-          <para>Depois de usar esse método, a combinação de teclas não tem efeito. Usar esse método é equivalente a clicar no botão Remover na caixa de diálogo Personalizar teclado (menu Ferramentas).</para> Uso de 
-          <para>o <see cref="M:Microsoft.Office.Interop.Word.KeyBinding.Clear" /> método com um <see cref="T:Microsoft.Office.Interop.Word.KeyBinding" /> objeto para redefinir um comando interno com sua atribuição de teclas padrão. Você não precisa remover ou rebind um objeto <b>KeyBinding</b> antes de adicioná-lo em outros lugares.</para><para /></remarks>
+        <summary>Remove a combinação de teclas especificada se ela estiver atribuída a um comando no momento.</summary>
+        <remarks><para>Após o uso deste método, a combinação de teclas perderá o efeito. O uso desse método equivale a clicar no botão remover da caixa de diálogo Personalizar teclado (menu ferramentas).</para>
+          <para>Use o <see cref="M:Microsoft.Office.Interop.Word.KeyBinding.Clear" /> método com um <see cref="T:Microsoft.Office.Interop.Word.KeyBinding" /> objeto para redefinir um comando interno com sua atribuição de teclas padrão. Você não precisa remover ou rebind um objeto <b>KeyBinding</b> antes de adicioná-lo em outros lugares.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -313,10 +299,8 @@
       <Docs>
         <summary>Retorna um número exclusivo para a primeira chave em vinculação de teclas especificada.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Você cria esse número usando o <see cref="M:Microsoft.Office.Interop.Word._Application.BuildKeyCode(Microsoft.Office.Interop.Word.WdKey,System.Object@,System.Object@,System.Object@)" /> método quando você está adicionando ligações de tecla usando o <see cref="M:Microsoft.Office.Interop.Word.KeyBindings.Add(Microsoft.Office.Interop.Word.WdKeyCategory,System.String,System.Int32,System.Object@,System.Object@)" /> método do <see cref="T:Microsoft.Office.Interop.Word.KeyBindings" /> objeto.</para>
-          <para />
-        </remarks>
+        <remarks><para>Você cria esse número usando o <see cref="M:Microsoft.Office.Interop.Word._Application.BuildKeyCode(Microsoft.Office.Interop.Word.WdKey,System.Object@,System.Object@,System.Object@)" /> método quando estiver adicionando associações de teclas usando o <see cref="M:Microsoft.Office.Interop.Word.KeyBindings.Add(Microsoft.Office.Interop.Word.WdKeyCategory,System.String,System.Int32,System.Object@,System.Object@)" /> método do <see cref="T:Microsoft.Office.Interop.Word.KeyBindings" /> objeto.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="KeyCode2">
@@ -426,13 +410,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> se você não pode alterar a vinculação de teclas especificada na caixa de diálogo Personalizar teclado (no menu Ferramentas, clique em Personalizar e, em seguida, clique no botão teclado).</summary>
+        <summary><b>True</b> se você não pode alterar a vinculação de teclas especificada na caixa de diálogo Personalizar teclado (no menu ferramentas, clique em Personalizar e, em seguida, clique no botão teclado).</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Use o <see cref="M:Microsoft.Office.Interop.Word.KeyBindings.Add(Microsoft.Office.Interop.Word.WdKeyCategory,System.String,System.Int32,System.Object@,System.Object@)" /> método do <see cref="T:Microsoft.Office.Interop.Word.KeyBindings" /> objeto para adicionar uma vinculação de teclas independentemente do status de proteção.</para>
-          <para />
-        </remarks>
+        <remarks><para>Use o <see cref="M:Microsoft.Office.Interop.Word.KeyBindings.Add(Microsoft.Office.Interop.Word.WdKeyCategory,System.String,System.Int32,System.Object@,System.Object@)" /> método do <see cref="T:Microsoft.Office.Interop.Word.KeyBindings" /> objeto para adicionar uma associação de chave independentemente do status protegido.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Rebind">
@@ -460,10 +441,8 @@
       </Parameters>
       <Docs>
         <param name="KeyCategory">Necessário <see cref="T:Microsoft.Office.Interop.Word.WdKeyCategory" />. A categoria da chave da vinculação da chave especificada.</param>
-        <param name="Command">
-          <b>String</b> necessário. O nome do comando especificado.</param>
-        <param name="CommandParameter">
-          <b>Objeto</b>de opcional. Texto adicional, se houver, necessários para o comando especificado por <paramref name="Command" />. Para obter informações sobre os valores para este argumento, consulte o <see cref="M:Microsoft.Office.Interop.Word.KeyBindings.Add(Microsoft.Office.Interop.Word.WdKeyCategory,System.String,System.Int32,System.Object@,System.Object@)" /> método para o <see cref="T:Microsoft.Office.Interop.Word.KeyBindings" /> objeto.</param>
+        <param name="Command"><b>String</b> necessário. O nome do comando especificado.</param>
+        <param name="CommandParameter"><b>Objeto</b>opcional. Texto adicional, se houver, necessário para o comando especificado por <paramref name="Command" />. Para obter informações sobre valores para esse argumento, consulte <see cref="M:Microsoft.Office.Interop.Word.KeyBindings.Add(Microsoft.Office.Interop.Word.WdKeyCategory,System.String,System.Int32,System.Object@,System.Object@)" /> o método para <see cref="T:Microsoft.Office.Interop.Word.KeyBindings" /> o objeto.</param>
         <summary>Altera o comando atribuído à vinculação de teclas especificada.</summary>
         <remarks>To be added.</remarks>
       </Docs>

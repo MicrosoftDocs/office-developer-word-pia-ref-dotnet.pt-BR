@@ -1,13 +1,5 @@
 <Type Name="OMathRecognizedFunctions" FullName="Microsoft.Office.Interop.Word.OMathRecognizedFunctions">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="2dd61c72117652e19beb2691742b4b0671001ec3" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20664076" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface OMathRecognizedFunctions : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="c8fd1be39d686c2e086ff3f03c01186d279dbe9a" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147750" /></Metadata><TypeSignature Language="C#" Value="public interface OMathRecognizedFunctions : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract OMathRecognizedFunctions implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.OMathRecognizedFunctions" />
   <TypeSignature Language="VB.NET" Value="Public Interface OMathRecognizedFunctions&#xA;Implements IEnumerable" />
@@ -30,12 +22,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Representa uma coleção de funções reconhecidas. Use o <see cref="T:Microsoft.Office.Interop.Word.OMathRecognizedFunction" /> objeto para acessar os membros individuais da coleção.</summary>
-    <remarks>
-      <para>
-        <see cref="T:Microsoft.Office.Interop.Word.OMathRecognizedFunctions" />é uma coleção de nomes contidos na caixa de diálogo funções reconhecidas.</para>
-      <para />
-    </remarks>
+    <summary>Representa uma coleção de funções reconhecidas. Use o <see cref="T:Microsoft.Office.Interop.Word.OMathRecognizedFunction" /> objeto para acessar membros individuais da coleção.</summary>
+    <remarks><para>
+        <see cref="T:Microsoft.Office.Interop.Word.OMathRecognizedFunctions" />é uma coleção dos nomes contidos na caixa de diálogo funções reconhecidas.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -61,12 +51,9 @@
         <Parameter Name="Name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Name">
-          <b>Cadeia de caracteres</b> do nome da função reconhecida necessário.</param>
+        <param name="Name"><b>Cadeia de caracteres</b> obrigatória o nome da função reconhecida.</param>
         <summary>Cria uma nova função reconhecida e retorna um <see cref="T:Microsoft.Office.Interop.Word.OMathRecognizedFunction" /> objeto.</summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Word.OMathRecognizedFunction" />
-        </returns>
+        <returns><see cref="T:Microsoft.Office.Interop.Word.OMathRecognizedFunction" /></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -93,10 +80,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word._Application" /> object que representa o aplicativo Microsoft Word.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word._Application" />
-        </value>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word._Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -123,10 +108,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o número de itens a <see cref="T:Microsoft.Office.Interop.Word.OMathRecognizedFunctions" /> conjunto. Somente leitura.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>Retorna o número de itens na <see cref="T:Microsoft.Office.Interop.Word.OMathRecognizedFunctions" /> coleção. Somente leitura.</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -154,14 +137,10 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna um <b>inteiro</b> de 32 bits que indica o aplicativo no qual o suplemento foi criado. Somente leitura.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Word, o <see cref="P:Microsoft.Office.Interop.Word.OMathRecognizedFunctions.Creator" /> propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD".  Esse valor também pode ser representado pela constante <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />. </para>
-          <para>Essa propriedade foi criada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <value><b>Integer</b></value>
+        <remarks><para>Se o objeto foi criado no Microsoft Word, a <see cref="P:Microsoft.Office.Interop.Word.OMathRecognizedFunctions.Creator" /> propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD".  Esse valor também pode ser representado pela constante <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />. </para>
+          <para>Essa propriedade foi projetada inicialmente para ser usada no Macintosh, no qual cada aplicativo tem um código de criador com quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -222,11 +201,9 @@
         <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index">Necessário <b>inteiro</b> Especifica a posição ordinal do objeto dentro da coleção.</param>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.OMathRecognizedFunction" /> object que representa o item especificado na coleção.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.OMathRecognizedFunction" />
-        </value>
+        <param name="Index"><b>Integer</b> obrigatório especifica a posição ordinal do objeto dentro da coleção.</param>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.OMathRecognizedFunction" /> objeto que representa o item especificado na coleção.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.OMathRecognizedFunction" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -253,10 +230,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o pai de especificado <see cref="T:Microsoft.Office.Interop.Word.OMathRecognizedFunctions" /> objeto.</summary>
-        <value>
-          <b>Object</b>
-        </value>
+        <summary>Retorna o pai do objeto especificado <see cref="T:Microsoft.Office.Interop.Word.OMathRecognizedFunctions" /> .</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,13 +1,5 @@
 <Type Name="Replacement" FullName="Microsoft.Office.Interop.Word.Replacement">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="4985169de481c1ed3cf3fdc2889fc8652b1a9f74" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20665142" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Replacement" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="9c7eadfe1a27659ab4f508fb009a9a7a299dace9" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144124" /></Metadata><TypeSignature Language="C#" Value="public interface Replacement" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Replacement" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Replacement" />
   <TypeSignature Language="VB.NET" Value="Public Interface Replacement" />
@@ -27,12 +19,10 @@
   </Attributes>
   <Docs>
     <summary>Representa o critério de substituição para uma operação de localizar e substituir.</summary>
-    <remarks>
-      <para>As propriedades e métodos do objeto <b>Replacement</b> correspondem às opções da caixa de diálogo Localizar e substituir.</para>
-      <para>Uso o <see cref="P:Microsoft.Office.Interop.Word.Find.Replacement" /> propriedade para retornar um objeto <b>Replacement</b> .</para>
-      <para>Para localizar e substituir formatação, defina o texto de localizar e substituir texto como cadeias de caracteres vazias ("") e defina o <paramref name="Format" /> argumento do <see cref="M:Microsoft.Office.Interop.Word.Find.Execute(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> método como <b>True</b>.</para>
-      <para />
-    </remarks>
+    <remarks><para>As propriedades e métodos do objeto <b>Replacement</b> correspondem às opções da caixa de diálogo Localizar e substituir.</para>
+      <para>Use a <see cref="P:Microsoft.Office.Interop.Word.Find.Replacement" /> propriedade para retornar um <b></b> objeto Replacement.</para>
+      <para>Para localizar e substituir formatação, defina o texto de localização e o texto de substituição como cadeias de caracteres vazias (" <paramref name="Format" /> ") e <see cref="M:Microsoft.Office.Interop.Word.Find.Execute(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> defina o argumento do método como <b>true</b>.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -58,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -84,11 +74,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Remove a partir de uma seleção ou a formatação especificada em uma operação de localização ou substituição de formatação de parágrafo e texto.</summary>
-        <remarks>
-          <para>Para garantir que a formatação não incluído como critérios em um localizar ou substituir a operação, use esse método antes de executar a operação.</para>
-          <para />
-        </remarks>
+        <summary>Remove a formatação de parágrafo e texto de uma seleção ou da formatação especificada em uma operação de localização ou substituição.</summary>
+        <remarks><para>Para garantir que a formatação não seja incluída como critério em uma operação de localização ou substituição, use esse método antes de executar a operação.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -116,9 +104,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
-          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". [!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
+          <para>A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Font">
@@ -147,12 +135,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define um <see cref="T:Microsoft.Office.Interop.Word.Font" /> object que representa a formatação de caractere do objeto especificado.</summary>
+        <summary>Retorna ou define um <see cref="T:Microsoft.Office.Interop.Word.Font" /> objeto que representa a formatação de caractere do objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Para definir essa propriedade, especifique uma expressão que retorna um objeto <b>Font</b> .</para>
-          <para />
-        </remarks>
+        <remarks><para>Para definir essa propriedade, especifique uma expressão que retorne um objeto <b>Font</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Frame">
@@ -178,7 +164,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Frame</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Frame" /> object que representa a formatação do estilo especificado ou a operação de localização e substituição de quadro.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Frame" /> objeto que representa a formatação de quadro para o estilo especificado ou para a operação de localizar e substituir.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -209,8 +195,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> se a formatação de realce aplicada ao texto de substituição. Pode retornar ou ser definida como <b>True</b>, <b>False</b> ou <b>wdUndefined</b>.</summary>
+        <summary><b>True</b> se a formatação de realce aplicada ao texto de substituição. Pode retornar ou ser definida como <b>True</b>, <b>False</b> ou <b>wdUndefined</b>.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -243,10 +228,8 @@
       <Docs>
         <summary>Retorna ou define o idioma do objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Propriedade <b>LanguageID</b> pode ser uma do <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> constantes. Essas constantes podem não estar disponíveis para você, dependendo do suporte a idioma (inglês americano, por exemplo) que você selecionou ou instalou.</para>
-          <para />
-        </remarks>
+        <remarks><para>A <b></b> propriedade LanguageID pode ser uma das <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> constantes. Essas constantes podem não estar disponíveis para você, dependendo do suporte a idioma (português do Brasil, por exemplo) que você selecionou ou instalou.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LanguageIDFarEast">
@@ -277,11 +260,9 @@
       <Docs>
         <summary>Retorna ou define um idioma do Leste Asiático para o objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>a propriedade <b>LanuageIDFarEast</b> pode ser uma do <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> constantes.</para>
-          <para>Essa é a maneira recomendada de retornar ou definir o idioma do texto do Leste Asiático em um documento criado em uma versão do Leste Asiático do Microsoft Word.</para>
-          <para />
-        </remarks>
+        <remarks><para>A propriedade <b>LanuageIDFarEast</b> pode ser uma das <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> constantes.</para>
+          <para>Essa é a maneira recomendada de retornar ou definir o idioma do texto do Leste Asiático em um documento criado em uma versão do Microsoft Word para Leste Asiático.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NoProofing">
@@ -310,8 +291,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> se o Microsoft Word localizar ou substituir o texto que o verificador ortográfico e gramatical ignora.</summary>
+        <summary><b>True</b> se o Microsoft Word localizar ou substituir o texto que o verificador ortográfico e gramatical ignora.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -342,7 +322,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ParagraphFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define um <see cref="T:Microsoft.Office.Interop.Word.ParagraphFormat" /> object que representa as configurações de parágrafo para a operação de substituição especificada.</summary>
+        <summary>Retorna ou define um <see cref="T:Microsoft.Office.Interop.Word.ParagraphFormat" /> objeto que representa as configurações de parágrafo para a operação de substituição especificada.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -403,10 +383,8 @@
       <Docs>
         <summary>Retorna ou define o estilo do objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Para definir essa propriedade, especifique o nome local do estilo, um inteiro, uma <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" /> constante ou um objeto que represente o estilo.</para>
-          <para />
-        </remarks>
+        <remarks><para>Para definir essa propriedade, especifique o nome local do estilo, um inteiro, uma <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" /> constante ou um objeto que represente o estilo.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -435,12 +413,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define o texto para localizar ou substituir na seleção ou intervalo especificado.</summary>
+        <summary>Retorna ou define o texto a ser localizado ou substituído no intervalo ou seleção especificada.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>A propriedade <b>Text</b> retorna o texto não formatado, simples da seleção ou do intervalo. Quando você define essa propriedade, o texto do intervalo ou seleção é substituído.</para>
-          <para />
-        </remarks>
+        <remarks><para>A propriedade <b>Text</b> retorna o texto não formatado, simples da seleção ou do intervalo. Quando você define essa propriedade, o texto do intervalo ou seleção é substituído.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

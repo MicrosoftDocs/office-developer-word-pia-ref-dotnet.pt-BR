@@ -1,13 +1,5 @@
 <Type Name="SmartTags" FullName="Microsoft.Office.Interop.Word.SmartTags">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="48b9a46976fc40ea2e4c681e6c129534480095b5" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20664057" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface SmartTags : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="bfd50651b1e8f6cb8ea8dd99dcfa5aa199718e35" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143963" /></Metadata><TypeSignature Language="C#" Value="public interface SmartTags : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SmartTags implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.SmartTags" />
   <TypeSignature Language="VB.NET" Value="Public Interface SmartTags&#xA;Implements IEnumerable" />
@@ -31,11 +23,9 @@
   </Attributes>
   <Docs>
     <summary>Uma coleção de <see cref="T:Microsoft.Office.Interop.Word.SmartTag" /> objetos que representa o texto em um documento marcado como contendo informações de tipo reconhecido.</summary>
-    <remarks>
-      <para>Coleção <b>SmartTags</b> contém todas as marcas inteligentes em um documento ou intervalo de texto dentro de um documento. Microsoft Word usa um arquivo identificador para identificar marcas inteligentes e usa um arquivo de ação para executar ações relacionadas às marcas inteligentes, como links para sites da Web.</para>
-      <para>Use o método <b>Item</b> — ou <see cref="T:Microsoft.Office.Interop.Word.SmartTags" /> (<paramref name="index" />), onde <paramref name="index" /> representa o número da marca inteligente — para retornar um único objeto <b>SmartTag</b> .</para>
-      <para />
-    </remarks>
+    <remarks><para>A coleção <b>SmartTags</b> contém todas as marcas inteligentes de um documento ou de um intervalo de texto de um documento. O Microsoft Word usa um arquivo identificador para rotular marcas inteligentes e um arquivo de ações para executar ações relacionadas a essas marcas inteligentes, por exemplo, vinculá-las a sites.</para>
+      <para>Use o método <b>Item</b> — ou <see cref="T:Microsoft.Office.Interop.Word.SmartTags" /> (<paramref name="index" />), onde <paramref name="index" /> representa o número da marca inteligente, para retornar um único objeto <b>SmartTag</b> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -65,13 +55,10 @@
         <Parameter Name="Properties" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Name">
-          <b>String</b> necessário. O nome da marca inteligente.</param>
-        <param name="Range">
-          <b>Objeto</b>de opcional. O intervalo ao qual será aplicada a marca inteligente.</param>
-        <param name="Properties">
-          <b>Objeto</b>de opcional. Propriedades que se aplicam à marca inteligente.</param>
-        <summary>Obtém um <see cref="T:Microsoft.Office.Interop.Word.SmartTag" /> object que representa uma nova marca inteligente adicionada a um documento.</summary>
+        <param name="Name"><b>String</b> necessário. O nome da marca inteligente.</param>
+        <param name="Range"><b>Objeto</b>opcional. O intervalo ao qual a marca inteligente será aplicada.</param>
+        <param name="Properties"><b>Objeto</b>opcional. Propriedades que se aplicam à marca inteligente.</param>
+        <summary>Obtém um <see cref="T:Microsoft.Office.Interop.Word.SmartTag" /> objeto que representa uma nova marca inteligente adicionada a um documento.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -102,7 +89,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -166,9 +153,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto especificado foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
-          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Se o objeto especificado foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". [!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
+          <para>A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -295,9 +282,8 @@
         <Parameter Name="Name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Name">
-          <b>String</b> necessário. O nome do tipo de marca inteligente.</param>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.SmartTags" /> coleção que representa todas as marcas inteligentes instaladas no computador de um usuário do tipo especificado.</summary>
+        <param name="Name"><b>String</b> necessário. O nome do tipo de marca inteligente.</param>
+        <summary>Retorna uma <see cref="T:Microsoft.Office.Interop.Word.SmartTags" /> coleção que representa todas as marcas inteligentes instaladas no computador de um usuário do tipo especificado.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>

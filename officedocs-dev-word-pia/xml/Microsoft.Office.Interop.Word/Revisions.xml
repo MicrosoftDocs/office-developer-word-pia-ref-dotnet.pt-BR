@@ -1,13 +1,5 @@
 <Type Name="Revisions" FullName="Microsoft.Office.Interop.Word.Revisions">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="05758c729b81dbb4be141a7989f2b0e4ff125db8" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20664631" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Revisions : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="dcf957961a05e06b776741ff11ebc85cce0581a2" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147659" /></Metadata><TypeSignature Language="C#" Value="public interface Revisions : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Revisions implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Revisions" />
   <TypeSignature Language="VB.NET" Value="Public Interface Revisions&#xA;Implements IEnumerable" />
@@ -30,10 +22,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Uma coleção de <see cref="T:Microsoft.Office.Interop.Word.Revision" /> objetos que representam as alterações marcadas com marcas de revisão em um intervalo ou documento.</summary>
-    <remarks>
-      <para>Use a propriedade <b>revisões</b> de um <see cref="T:Microsoft.Office.Interop.Word.Document" /> ou <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto para retornar a coleção <b>Revisions</b> .</para> Método 
-      <para><b>Adicionar</b> não está disponível para a coleção <b>Revisions</b> . Objetos de <b>revisão</b> são adicionados quando o controle de alterações estiver habilitada. Definir o <see cref="P:Microsoft.Office.Interop.Word._Document.TrackRevisions" /> propriedade como <b>True</b> para controlar revisões feitas para o texto do documento.</para><para>Uso <b>revisões</b>(<paramref name="index" />), onde <paramref name="index" /> é o número de índice, para retornar um único objeto <b>Revision</b> . O número de índice representa a posição da revisão no intervalo ou documento.</para><para>o <see cref="P:Microsoft.Office.Interop.Word.Revisions.Count" /> propriedade dessa coleção em um documento retorna o número de itens no texto principal. Para contar itens em outros textos usam a coleção com o objeto <b>Range</b> .</para><para /></remarks>
+    <summary>Uma coleção de <see cref="T:Microsoft.Office.Interop.Word.Revision" /> objetos que representa as alterações marcadas com marcas de revisão em um intervalo ou documento.</summary>
+    <remarks><para>Use a <b></b> Propriedade Revisions de um <see cref="T:Microsoft.Office.Interop.Word.Document" /> objeto <see cref="T:Microsoft.Office.Interop.Word.Range" /> or para retornar a <b></b> coleção Revisions.</para>
+      <para>O método <b>Add</b> não está disponível para a coleção <b>Revisions</b>. Objetos de <b>revisão</b> são adicionados quando o controle de alterações estiver habilitada. Defina a <see cref="P:Microsoft.Office.Interop.Word._Document.TrackRevisions" /> Propriedade como <b>true</b> para rastrear revisões feitas no texto do documento.</para>
+      <para>Use <b>revisões</b>(<paramref name="index" />), em que <paramref name="index" /> é o número de índice, para retornar um único objeto Revision. <b></b> O número de índice representa a posição da revisão no intervalo ou documento.</para>
+      <para>A <see cref="P:Microsoft.Office.Interop.Word.Revisions.Count" /> Propriedade dessa coleção em um documento retorna o número de itens somente no texto principal. Para contar itens em outros textos usam a coleção com o objeto de <b>intervalo</b>.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="AcceptAll">
@@ -57,11 +51,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Aceita todas as alterações controladas em um documento ou intervalo. As marcas de revisão são removidas e as alterações são incorporadas ao documento.</summary>
-        <remarks>
-          <para>Use o <see cref="M:Microsoft.Office.Interop.Word._Document.AcceptAllRevisions" /> método para aceitar todas as revisões em um documento.</para>
-          <para />
-        </remarks>
+        <summary>Aceita todas as alterações controladas em um documento ou intervalo. As marcas de revisão são removidas e as alterações são incorporadas no documento.</summary>
+        <remarks><para>Use o <see cref="M:Microsoft.Office.Interop.Word._Document.AcceptAllRevisions" /> método para aceitar todas as revisões em um documento.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -87,12 +79,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Os <b>CreateObject</b> e <b>GetObject</b> funções do Visual Basic lhe dão acesso a um objeto de automação OLE de um Visual Basic para o projeto de aplicativos.</para>
-          <para />
-        </remarks>
+        <remarks><para>As funções <b>CreateObject</b> e <b>GetObject</b> do Visual Basic lhe dão acesso a um objeto de automação OLE de um projeto Visual Basic for Applications.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -148,9 +138,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
-          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". [!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
+          <para>A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -267,10 +257,8 @@
       <Parameters />
       <Docs>
         <summary>Rejeita todas as alterações controladas em um intervalo. As marcas de revisão são removidas, deixando o texto original intacto.</summary>
-        <remarks>
-          <para>Use o <see cref="M:Microsoft.Office.Interop.Word._Document.RejectAllRevisions" /> método para rejeitar todas as revisões em um documento. Alterações de formatação não podem ser rejeitadas.</para>
-          <para />
-        </remarks>
+        <remarks><para>Use o <see cref="M:Microsoft.Office.Interop.Word._Document.RejectAllRevisions" /> método para rejeitar todas as revisões em um documento. As alterações de formatação não podem ser rejeitadas.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,13 +1,5 @@
 <Type Name="RecentFiles" FullName="Microsoft.Office.Interop.Word.RecentFiles">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="68c5a0e1fbcd245eba8883440686f818351a23f1" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20664909" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface RecentFiles : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="dbecbe85386c489b7ea85c8fdd7d013d03d7c878" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144110" /></Metadata><TypeSignature Language="C#" Value="public interface RecentFiles : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract RecentFiles implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.RecentFiles" />
   <TypeSignature Language="VB.NET" Value="Public Interface RecentFiles&#xA;Implements IEnumerable" />
@@ -31,13 +23,11 @@
   </Attributes>
   <Docs>
     <summary>Uma coleção de <see cref="T:Microsoft.Office.Interop.Word.RecentFile" /> objetos que representa os arquivos que foram usados recentemente. Os itens da coleção <b>RecentFiles</b> são exibidos na parte inferior do menu arquivo.</summary>
-    <remarks>
-      <para>Use o <see cref="P:Microsoft.Office.Interop.Word._Application.RecentFiles" /> propriedade para retornar a coleção <b>RecentFiles</b> .</para>
-      <para>Use o método Add para adicionar um arquivo à coleção <b>RecentFiles</b> .</para>
-      <para>Uso <b>RecentFiles</b>(<paramref name="index" />), onde <paramref name="index" /> é o número de índice, para retornar um único objeto <b>RecentFile</b> . O número de índice representa a posição do arquivo no menu arquivo.</para>
-      <para>o <see cref="M:Microsoft.Office.Interop.Word._Document.SaveAs(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> e <see cref="M:Microsoft.Office.Interop.Word.Documents.Open(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> métodos incluem um <paramref name="AddToRecentFiles" /> argumento que controla se é ou não um arquivo é adicionado à lista recentemente arquivos usados quando o arquivo é aberto ou salvo.</para>
-      <para />
-    </remarks>
+    <remarks><para>Use a <see cref="P:Microsoft.Office.Interop.Word._Application.RecentFiles" /> propriedade para retornar a <b></b> coleção RecentFiles.</para>
+      <para>Use o método Add para adicionar um arquivo à coleção <b>RecentFiles</b>.</para>
+      <para>Use <b></b>RecentFiles (<paramref name="index" />) <paramref name="index" /> , onde é o número de índice, para <b></b> retornar um único objeto RecentFile. O número de índice representa a posição do arquivo no menu arquivo.</para>
+      <para>Os <see cref="M:Microsoft.Office.Interop.Word._Document.SaveAs(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> métodos <see cref="M:Microsoft.Office.Interop.Word.Documents.Open(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> e incluem um <paramref name="AddToRecentFiles" /> argumento que controla se um arquivo é ou não adicionado à lista de arquivos usados recentemente quando o arquivo é aberto ou salvo.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -63,11 +53,9 @@
         <Parameter Name="ReadOnly" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Document">
-          <b>Objeto</b>necessário. O documento que você deseja adicionar à lista de arquivos usados recentemente. Você pode especificar esse argumento usando o nome de cadeia de caracteres para o documento ou um <see cref="T:Microsoft.Office.Interop.Word.Document" /> objeto.</param>
-        <param name="ReadOnly">
-          <b>Objeto</b>de opcional. <b>True</b> para tornar o documento somente leitura.</param>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.RecentFile" /> arquivos do objeto que representa um arquivo adicionado à lista de recentemente utilizados.</summary>
+        <param name="Document"><b>Objeto</b>necessário. O documento que você deseja adicionar à lista de arquivos usados recentemente. Você pode especificar esse argumento usando o nome de cadeia de caracteres para o documento ou <see cref="T:Microsoft.Office.Interop.Word.Document" /> um objeto.</param>
+        <param name="ReadOnly"><b>Objeto</b>opcional. <b>True</b> para tornar o documento somente leitura.</param>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.RecentFile" /> objeto que representa um arquivo adicionado à lista de arquivos usados recentemente.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -95,7 +83,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -153,9 +141,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
-          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". [!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
+          <para>A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">

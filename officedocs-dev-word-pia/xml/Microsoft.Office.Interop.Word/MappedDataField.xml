@@ -1,13 +1,5 @@
 <Type Name="MappedDataField" FullName="Microsoft.Office.Interop.Word.MappedDataField">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ad9be617499eec01e5a31a469501445354966e87" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20664965" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface MappedDataField" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="dc041533103e222b636ea93cb4c8248a9eb022ba" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147912" /></Metadata><TypeSignature Language="C#" Value="public interface MappedDataField" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract MappedDataField" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.MappedDataField" />
   <TypeSignature Language="VB.NET" Value="Public Interface MappedDataField" />
@@ -27,12 +19,10 @@
   </Attributes>
   <Docs>
     <summary>Representa um campo de dados mapeados único.</summary>
-    <remarks>
-      <para>O objeto <b>MappedDataField</b> é um membro do <see cref="T:Microsoft.Office.Interop.Word.MappedDataFields" /> conjunto. A coleção <b>MappedDataFields</b> inclui todos os campos de dados mapeados disponíveis no Microsoft Word.</para>
-      <para>Um campo de dados mapeado é um campo contido no Word que representa comumente usadas informações de nome ou endereço, como "Name". Se uma fonte de dados contiver um campo "Nome" ou uma variação (como "Nome", "FirstName", "Primeiro" ou "FName"), o campo na fonte de dados será automaticamente mapeado para o campo de dados mapeados correspondente no Word. Se um documento ou modelo deve ser mesclada com mais de uma fonte de dados, os campos de dados mapeados fazem desnecessário digitar os campos no documento de acordo com os nomes dos campos no banco de dados.</para>
-      <para>Uso o <see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.MappedDataFields" /> propriedade para retornar um objeto <b>MappedDataField</b> .</para>
-      <para />
-    </remarks>
+    <remarks><para>O objeto <b>MappedDataField</b> é um membro da <see cref="T:Microsoft.Office.Interop.Word.MappedDataFields" /> coleção. A coleção <b>MappedDataFields</b> inclui todos os campos de dados mapeados disponíveis no Microsoft Word.</para>
+      <para>Um campo de dados mapeado é um campo contido no Word que representa informações de nome ou endereço comumente usadas, como "primeiro nome". Se uma fonte de dados contiver um campo "First Name" ou uma variação dele (por exemplo, "First_Name," "FirstName," "First" ou "FName"), o campo na fonte de dados será mapeado automaticamente para o campo de dados mapeado correspondente no Word. Se for necessário mesclar um documento ou um modelo com mais de uma fonte de dados, os campos de dados mapeados tornarão desnecessário redigitar os campos no documento de acordo com os nomes dos campos no banco de dados.</para>
+      <para>Use a <see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.MappedDataFields" /> propriedade para retornar um objeto <b>MappedDataField</b> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -58,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -88,9 +78,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
-          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". [!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
+          <para>A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DataFieldIndex">
@@ -119,12 +109,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define um <b>inteiro</b> que representa o número do campo correspondente na fonte de dados de mala direta para o qual um campo de dados mapeados mapeado.</summary>
+        <summary>Retorna ou define um <b>inteiro</b> que representa o número do campo correspondente na fonte de dados de mala direta para o qual um campo de dados mapeado mapeia.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>A propriedade <b>MappedDataField</b> retorna zero se o campo de dados especificado não for mapeado em um campo de dados mapeado.</para>
-          <para />
-        </remarks>
+        <remarks><para>A propriedade <b>MappedDataField</b> retornará zero se o campo de dados especificado não for mapeado para um campo de dados mapeado.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DataFieldName">
@@ -152,10 +140,8 @@
       <Docs>
         <summary>Define ou retorna uma <b>cadeia de caracteres</b> que representa o nome do campo na fonte de dados de mala direta para o qual um campo de dados mapeados mapeado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>A propriedade DataFieldName retorna uma cadeia de caracteres vazia se o campo de dados especificado não for mapeado em um campo de dados mapeado.</para>
-          <para />
-        </remarks>
+        <remarks><para>A propriedade DataFieldName retornará uma cadeia de caracteres em branco se o campo de dados especificado não for mapeado para um campo de dados mapeado.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -267,10 +253,8 @@
       <Docs>
         <summary>Retorna o conteúdo do campo de dados de mala direta ou campo de dados mapeado para o registro atual.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Use o <see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.ActiveRecord" /> propriedade para definir o registro ativo em uma fonte de dados de mala direta.</para>
-          <para />
-        </remarks>
+        <remarks><para>Use a <see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.ActiveRecord" /> propriedade para definir o registro ativo em uma fonte de dados de mala direta.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

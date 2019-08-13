@@ -1,13 +1,5 @@
 <Type Name="SeriesCollection" FullName="Microsoft.Office.Interop.Word.SeriesCollection">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="fdd1aa630560e78742fe57a7803702308e5da8a7" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20663932" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface SeriesCollection : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="f6dd45f5fe33b8e5a1ece1fafb9e3ad6bbeab62c" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144005" /></Metadata><TypeSignature Language="C#" Value="public interface SeriesCollection : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SeriesCollection implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.SeriesCollection" />
   <TypeSignature Language="VB.NET" Value="Public Interface SeriesCollection&#xA;Implements IEnumerable" />
@@ -30,12 +22,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Uma coleção de todos os <see cref="T:Microsoft.Office.Interop.Word.Series" /> objetos no gráfico especificado ou grupo de gráficos.</summary>
-    <remarks>
-      <para>Use o <see cref="M:Microsoft.Office.Interop.Word.Chart.SeriesCollection(System.Object)" /> método para retornar o <see cref="T:Microsoft.Office.Interop.Word.SeriesCollection" /> conjunto.</para>
-      <para>Uso o <see cref="M:Microsoft.Office.Interop.Word.SeriesCollection.Extend(System.Object,System.Object,System.Object)" /> método para estender uma série existente.</para>
-      <para />
-    </remarks>
+    <summary>Uma coleção de todos os <see cref="T:Microsoft.Office.Interop.Word.Series" /> objetos no gráfico ou grupo de gráficos especificado.</summary>
+    <remarks><para>Use o <see cref="M:Microsoft.Office.Interop.Word.Chart.SeriesCollection(System.Object)" /> método para retornar a <see cref="T:Microsoft.Office.Interop.Word.SeriesCollection" /> coleção.</para>
+      <para>Use o <see cref="M:Microsoft.Office.Interop.Word.SeriesCollection.Extend(System.Object,System.Object,System.Object)" /> método para estender uma série existente.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -96,19 +86,15 @@
         <Parameter Name="Replace" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Source">Os novos dados em uma cadeia de caracteres contidos na propriedade Workbook do objeto ChartData do gráfico.</param>
+        <param name="Source">Os novos dados como uma representação de cadeia de caracteres de um intervalo contido na propriedade Workbook do objeto ChartData do gráfico.</param>
         <param name="Rowcol">Especifica se os novos valores estão nas linhas ou colunas do intervalo especificado.</param>
-        <param name="SeriesLabels">
-          <b>True</b> se a primeira linha ou coluna contém o nome da série de dados. <b>False</b> se a primeira linha ou coluna contiver o primeiro ponto de dados da série. Se esse argumento for omitido, o Microsoft Word tenta determinar o local do nome da série a partir do conteúdo da primeira linha ou coluna. </param>
-        <param name="CategoryLabels">
-          <b>True</b> se a primeira linha ou coluna contém o nome dos rótulos de categoria. <b>False</b> se a primeira linha ou coluna contiver o primeiro ponto de dados da série. Se esse argumento for omitido, o Microsoft Word tenta determinar a localização dos rótulos de categoria a partir do conteúdo da primeira linha ou coluna.</param>
-        <param name="Replace">Se <paramref name="CategoryLabels" /> for <b>True</b> e <paramref name="Replace" /> for <b>True</b>, a substituição de categorias especificadas as categorias existem que estão atualmente na série. Se <paramref name="Replace" /> for <b>False</b>, as categorias existentes não serão substituídas. O valor padrão é <b>False</b>.</param>
+        <param name="SeriesLabels"><b>True</b> se a primeira linha ou coluna contém o nome da série de dados. <b>False</b> se a primeira linha ou coluna contiver o primeiro ponto de dados da série. Se esse argumento for omitido, o Microsoft Word tenta determinar o local do nome da série a partir do conteúdo da primeira linha ou coluna. </param>
+        <param name="CategoryLabels"><b>True</b> se a primeira linha ou coluna contém o nome dos rótulos de categoria. <b>False</b> se a primeira linha ou coluna contiver o primeiro ponto de dados da série. Se esse argumento for omitido, o Microsoft Word tentará determinar o local do rótulo de categoria a partir do conteúdo da primeira linha ou coluna.</param>
+        <param name="Replace">Se <paramref name="CategoryLabels" /> for <b>true</b> e <paramref name="Replace" /> for <b>true</b>, as categorias especificadas substituirão as categorias que existem atualmente para a série. Se <paramref name="Replace" /> for <b>falso</b>, as categorias existentes não serão substituídas. O valor padrão é <b>False</b>.</param>
         <summary>Adiciona uma ou mais séries novas à coleção.</summary>
-        <returns>Uma <see cref="T:Microsoft.Office.Interop.Word.SeriesCollection" /> object que representa a nova série.</returns>
-        <remarks>
-          <para>Este método não retorna um <see cref="T:Microsoft.Office.Interop.Word.Series" /> conforme mencionado no Pesquisador de objetos.</para>
-          <para />
-        </remarks>
+        <returns>Um <see cref="T:Microsoft.Office.Interop.Word.SeriesCollection" /> objeto que representa a nova série.</returns>
+        <remarks><para>No entanto, esse método não <see cref="T:Microsoft.Office.Interop.Word.Series" /> retorna um objeto como declarado no Pesquisador de objetos.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -134,9 +120,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Quando usado sem um qualificador de objeto, essa propriedade retorna uma <see cref="T:Microsoft.Office.Interop.Word._Application" /> object que representa o aplicativo Microsoft Word. Quando usada com um qualificador de objeto, essa propriedade retornará um objeto <b>Application</b> que representa o criador do objeto especificado (você pode usar essa propriedade com um objeto Automation do OLE para retornar o aplicativo desse objeto). Somente leitura.</summary>
-        <value>
-          <b>Aplicativo</b> (consulte acima)</value>
+        <summary>Quando usado sem um qualificador de objeto, essa propriedade <see cref="T:Microsoft.Office.Interop.Word._Application" /> retorna um objeto que representa o aplicativo Microsoft Word. Quando usada com um qualificador de objeto, essa propriedade retornará um objeto <b>Application</b> que representa o criador do objeto especificado (você pode usar essa propriedade com um objeto Automation do OLE para retornar o aplicativo desse objeto). Somente leitura.</summary>
+        <value><b>Aplicativo</b> (veja acima)</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -163,10 +148,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um valor <b>inteiro</b> que representa o número de objetos na coleção.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>Retorna um valor <b>Integer</b> que representa o número de objetos na coleção.</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -194,13 +177,9 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado. <b>Integer</b> somente leitura.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Word, a propriedade <b>Creator</b> retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD."  Essa propriedade principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <value><b>Integer</b></value>
+        <remarks><para>Se o objeto foi criado no Microsoft Word, a propriedade <b>Creator</b> retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD".  Essa propriedade foi projetada inicialmente para ser usada no Macintosh, no qual cada aplicativo tem um código de criador com quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Extend">
@@ -227,16 +206,13 @@
         <Parameter Name="CategoryLabels" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Source">Os novos dados a ser adicionado ao <see cref="T:Microsoft.Office.Interop.Word.SeriesCollection" /> objeto, representado como uma referência de intervalo de estilo A1.</param>
-        <param name="Rowcol">Especifica se os novos valores estão nas linhas ou colunas da fonte de dado intervalo. Pode ser uma das seguintes opções <see cref="T:Microsoft.Office.Interop.Word.XlRowCol" /> constantes: <see cref="F:Microsoft.Office.Interop.Word.XlRowCol.xlRows" /> ou <see cref="F:Microsoft.Office.Interop.Word.XlRowCol.xlColumns" />. Se esse argumento for omitido, o Microsoft Word tentará determinar a localização dos valores pelo tamanho e a orientação do intervalo selecionado ou pelas dimensões da matriz.</param>
-        <param name="CategoryLabels">
-          <b>True</b> para que a primeira linha ou coluna contenha o nome dos rótulos de categoria. <b>False</b> para que a primeira linha ou coluna contenha o primeiro ponto de dados da série. Se esse argumento for omitido, o Microsoft Word tenta determinar a localização dos rótulos de categoria a partir do conteúdo da primeira linha ou coluna.</param>
-        <summary>Adiciona novos pontos de dados a uma coleção de séries existente.</summary>
+        <param name="Source">Os novos dados a serem adicionados ao <see cref="T:Microsoft.Office.Interop.Word.SeriesCollection" /> objeto, representados como uma referência de intervalo de estilo a1.</param>
+        <param name="Rowcol">Especifica se os novos valores estão nas linhas ou colunas de uma determinada fonte do intervalo. Pode ser uma das seguintes <see cref="T:Microsoft.Office.Interop.Word.XlRowCol" /> constantes: <see cref="F:Microsoft.Office.Interop.Word.XlRowCol.xlRows" /> ou. <see cref="F:Microsoft.Office.Interop.Word.XlRowCol.xlColumns" /> Se esse argumento for omitido, o Microsoft Word tentará determinar onde os valores estão pelo tamanho e orientação do intervalo selecionado ou pelas dimensões da matriz.</param>
+        <param name="CategoryLabels"><b>True</b> para que a primeira linha ou coluna contenha o nome dos rótulos de categoria. <b>False</b> para que a primeira linha ou coluna contenha o primeiro ponto de dados da série. Se esse argumento for omitido, o Microsoft Word tentará determinar o local do rótulo de categoria a partir do conteúdo da primeira linha ou coluna.</param>
+        <summary>Adiciona novos pontos de dados à coleção de séries existente.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Este método não está disponível para relatórios de gráfico dinâmico.</para>
-          <para />
-        </remarks>
+        <remarks><para>Este método não está disponível para relatórios de gráfico dinâmico.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -325,11 +301,9 @@
       <Parameters />
       <Docs>
         <summary>Cria uma nova série.</summary>
-        <returns>Uma <see cref="T:Microsoft.Office.Interop.Word.Series" /> object que representa a nova série.</returns>
-        <remarks>
-          <para>Este método não está disponível para gráficos dinâmicos.</para>
-          <para />
-        </remarks>
+        <returns>Um <see cref="T:Microsoft.Office.Interop.Word.Series" /> objeto que representa a nova série.</returns>
+        <remarks><para>Este método não está disponível para gráficos de gráfico dinâmico.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -356,9 +330,7 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna o pai do objeto especificado. Somente leitura <b>objeto</b>.</summary>
-        <value>
-          <b>Object</b>
-        </value>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

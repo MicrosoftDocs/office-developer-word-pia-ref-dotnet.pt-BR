@@ -1,13 +1,5 @@
 <Type Name="Zooms" FullName="Microsoft.Office.Interop.Word.Zooms">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="df6017bf6f1646554effe774f780500331186037" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20663813" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Zooms" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="e190583a23d362ac7b11375f86aca595c1df450a" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142030" /></Metadata><TypeSignature Language="C#" Value="public interface Zooms" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Zooms" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Zooms" />
   <TypeSignature Language="VB.NET" Value="Public Interface Zooms" />
@@ -26,10 +18,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Uma coleção de <see cref="T:Microsoft.Office.Interop.Word.Zoom" /> objetos que representa as opções de ampliação para cada modo de exibição (estrutura de tópicos, normal, layout da página e assim por diante).</summary>
-    <remarks>
-      <para>Use o <see cref="P:Microsoft.Office.Interop.Word.Pane.Zooms" /> propriedade para retornar a coleção <b>Zooms</b> .</para> Método 
-      <para><b>Adicionar</b> não está disponível para a coleção <b>Zooms</b> . A coleção <b>Zooms</b> inclui um único objeto <b>Zoom</b> para cada um dos vários tipos de exibição (estrutura de tópicos, normal, layout da página e assim por diante). Você não pode enumerar a coleção <b>Zooms</b> usando um <b>para cada … Próximo</b> loop.</para><para>Uso <b>Zooms</b>(<paramref name="index" />), onde <paramref name="index" /> identifica o tipo de exibição, para retornar um único objeto <b>Zoom</b> . O tipo de exibição especificado pelo parâmetro index pode ser uma das seguintes opções <see cref="T:Microsoft.Office.Interop.Word.WdViewType" /> constantes: <b>wdMasterView</b>, <b>wdNormalView</b>, <b>wdOutlineView</b>, <b>wdPrintPreview</b>, <b>wdPrintView</b>ou <b>wdWebView</b>.</para><para>Você também pode usar o <see cref="P:Microsoft.Office.Interop.Word.View.Zoom" /> propriedade do <see cref="T:Microsoft.Office.Interop.Word.View" /> objeto para retornar um único objeto <b>Zoom</b> .</para><para /></remarks>
+    <summary>Uma coleção de <see cref="T:Microsoft.Office.Interop.Word.Zoom" /> objetos que representa as opções de ampliação para cada modo de exibição (estrutura de tópicos, normal, layout de impressão e assim por diante).</summary>
+    <remarks><para>Use a <see cref="P:Microsoft.Office.Interop.Word.Pane.Zooms" /> propriedade para retornar a <b></b> coleção zooms.</para>
+      <para>O método <b>Add</b> não está disponível para a coleção <b>Zooms</b>. A <b></b> coleção zooms inclui um único objeto <b>zoom</b> para cada um dos vários tipos de exibição (estrutura de tópicos, normal, layout da página e assim por diante). Você não pode enumerar a coleção <b>zooms</b> usando um <b>para cada... Próximo</b> loop.</para>
+      <para>Use <b>zooms</b>(<paramref name="index" />), onde <paramref name="index" /> identifica o tipo de exibição, para retornar um único objeto <b>zoom</b> . O tipo de exibição especificado por index pode ser uma das seguintes <see cref="T:Microsoft.Office.Interop.Word.WdViewType" /> constantes: <b>wdMasterView</b>, <b>wdNormalView</b>, <b>wdOutlineView</b>, <b>wdPrintPreview</b>, <b>wdPrintView</b>ou <b>wdWebView</b>.</para>
+      <para>Você também pode usar a <see cref="P:Microsoft.Office.Interop.Word.View.Zoom" /> Propriedade do <see cref="T:Microsoft.Office.Interop.Word.View" /> objeto para retornar um único objeto <b>zoom</b> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -55,7 +49,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -85,9 +79,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
-          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". [!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
+          <para>A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -114,7 +108,7 @@
       </Parameters>
       <Docs>
         <param name="Index">Necessário <see cref="T:Microsoft.Office.Interop.Word.WdViewType" />. O tipo de zoom especificado.</param>
-        <summary>Retorna o especificado <see cref="T:Microsoft.Office.Interop.Word.Zoom" /> objeto.</summary>
+        <summary>Retorna o objeto <see cref="T:Microsoft.Office.Interop.Word.Zoom" /> especificado.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>

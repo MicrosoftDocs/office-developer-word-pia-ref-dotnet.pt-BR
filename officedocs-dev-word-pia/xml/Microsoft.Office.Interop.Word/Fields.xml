@@ -1,13 +1,5 @@
 <Type Name="Fields" FullName="Microsoft.Office.Interop.Word.Fields">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="2fdd77cf26598c9ff9a9d497e81fbed99577fb24" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20664586" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Fields : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="57c76419b1fbb163aa0a4e6e8b8649d94596aa1d" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34148072" /></Metadata><TypeSignature Language="C#" Value="public interface Fields : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Fields implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Fields" />
   <TypeSignature Language="VB.NET" Value="Public Interface Fields&#xA;Implements IEnumerable" />
@@ -31,10 +23,12 @@
   </Attributes>
   <Docs>
     <summary>Uma coleção de <see cref="T:Microsoft.Office.Interop.Word.Field" /> objetos que representam todos os campos em uma seleção, intervalo ou documento.</summary>
-    <remarks>
-      <para>Use a propriedade <b>Fields</b> para retornar a coleção <b>Fields</b> .</para>
-      <para>Uso o <see cref="M:Microsoft.Office.Interop.Word.Fields.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@)" /> método para adicionar um campo à coleção <b>Fields</b> .</para> Uso de <b>campos</b>de 
-      <para>(<paramref name="index" />), onde index é o <paramref name="index" /> número, para retornar um único objeto <b>Field</b> . O número de índice representa a posição do campo na seleção, intervalo ou documento.</para><para>Use a propriedade <b>Fields</b> com um objeto <b>MailMerge</b> para retornar a coleção <b>MailMergeFields</b> .</para><para>o <see cref="P:Microsoft.Office.Interop.Word.Fields.Count" /> propriedade dessa coleção em um documento retorna o número de itens no texto principal. Para contar itens em outros textos use a coleção com o <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto.</para><para /></remarks>
+    <remarks><para>Use a propriedade <b>Fields</b> para retornar a coleção <b>Fields</b>.</para>
+      <para>Use o <see cref="M:Microsoft.Office.Interop.Word.Fields.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@)" /> método para adicionar um campo à coleção <b>Fields</b> .</para>
+      <para>Use <b>campos</b>(<paramref name="index" />), onde índice é o <paramref name="index" /> número, para retornar um único objeto <b>Field</b> . O número de índice representa a posição do campo na seleção, intervalo ou documento.</para>
+      <para>Use a <b></b> Propriedade Fields com um objeto <b>MailMerge</b> para retornar a coleção <b>MailMergeFields</b> .</para>
+      <para>A <see cref="P:Microsoft.Office.Interop.Word.Fields.Count" /> Propriedade dessa coleção em um documento retorna o número de itens somente no texto principal. Para contar itens em outros textos, use a coleção com <see cref="T:Microsoft.Office.Interop.Word.Range" /> o objeto.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -61,18 +55,15 @@
         <Parameter Name="PreserveFormatting" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">Necessário <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto. O intervalo onde você deseja adicionar o campo. Se o intervalo não estiver recolhido, o campo substitui o intervalo.</param>
-        <param name="Type">
-          <b>Objeto</b>de opcional. Pode ser qualquer <see cref="T:Microsoft.Office.Interop.Word.WdFieldType" /> constante. Para obter uma lista de constantes válidas, consulte o Pesquisador de objetos. O valor padrão é <b>wdFieldEmpty</b>.</param>
-        <param name="Text">
-          <b>Objeto</b>de opcional. Texto adicional necessário para o campo. Por exemplo, se você deseja especificar um comutador para o campo, seria adicioná-lo aqui.</param>
-        <param name="PreserveFormatting">
-          <b>Objeto</b>de opcional. <b>True</b> para fazer com que a formatação aplicada ao campo seja preservada durante as atualizações.</param>
-        <summary>Adiciona um <see cref="T:Microsoft.Office.Interop.Word.Field" /> o objeto para o <see cref="T:Microsoft.Office.Interop.Word.Fields" /> conjunto.</summary>
+        <param name="Range">Objeto <see cref="T:Microsoft.Office.Interop.Word.Range" /> necessário. O intervalo no qual você deseja incluir o campo. Se o intervalo não estiver recolhido, o campo substituirá o intervalo.</param>
+        <param name="Type"><b>Objeto</b>opcional. Pode ser qualquer <see cref="T:Microsoft.Office.Interop.Word.WdFieldType" /> constante. Para obter uma lista de constantes válidas, consulte o Pesquisador de objetos do Microsoft Visual Basic. O valor padrão é <b>wdFieldEmpty</b>.</param>
+        <param name="Text"><b>Objeto</b>opcional. Texto adicional necessário para o campo. Por exemplo, se quiser especificar uma opção para o campo, você deve acrescentá-la aqui.</param>
+        <param name="PreserveFormatting"><b>Objeto</b>opcional. <b>True</b> para fazer com que a formatação aplicada ao campo seja preservada durante as atualizações.</param>
+        <summary>Adiciona um <see cref="T:Microsoft.Office.Interop.Word.Field" /> objeto à <see cref="T:Microsoft.Office.Interop.Word.Fields" /> coleção.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Esse método retorna o objeto <b>Field</b> no intervalo especificado.</para> Você não pode inserir alguns campos (por exemplo, <b>wdFieldOCX</b> e <b>wdFieldFormCheckBox</b>) usando o método <b>Add</b> da coleção <b>Fields</b> de 
-          <para>. Em vez disso, você deve usar os métodos específicos como o <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddOLEControl(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> método e o método <b>Add</b> para o <see cref="T:Microsoft.Office.Interop.Word.FormFields" /> conjunto.</para><para /></remarks>
+        <remarks><para>Este método retorna o objeto <b>Field</b> no intervalo especificado.</para>
+          <para>Não é possível inserir alguns campos (como <b>wdFieldOCX</b> e <b>wdFieldFormCheckBox</b>) usando o método <b>Add</b> da coleção <b>Fields</b>. Em vez disso, você deve usar métodos específicos como <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddOLEControl(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> o método e o método <b>Add</b> para <see cref="T:Microsoft.Office.Interop.Word.FormFields" /> a coleção.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -98,7 +89,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -156,9 +147,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto especificado foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
-          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Se o objeto especificado foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". [!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
+          <para>A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -251,12 +242,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Determina se todos os campos a <see cref="T:Microsoft.Office.Interop.Word.Fields" /> coleção estiverem bloqueados.</summary>
+        <summary>Determina se todos os campos da <see cref="T:Microsoft.Office.Interop.Word.Fields" /> coleção são bloqueados.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Esta propriedade retorna <b>True</b> se todos os campos no <see cref="T:Microsoft.Office.Interop.Word.Fields" /> coleção estiverem bloqueados e <b>False</b> se não.</para>
-          <para />
-        </remarks>
+        <remarks><para>Essa propriedade retorna <b>true</b> se todos os campos da <see cref="T:Microsoft.Office.Interop.Word.Fields" /> coleção estiverem bloqueados e <b>false</b> se não.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -309,10 +298,8 @@
       <Parameters />
       <Docs>
         <summary>Alterna a exibição dos campos entre códigos de campo e resultados de campo.</summary>
-        <remarks>
-          <para>Use o <see cref="P:Microsoft.Office.Interop.Word.Field.ShowCodes" /> propriedade para controlar a exibição de um campo individual.</para>
-          <para />
-        </remarks>
+        <remarks><para>Use a <see cref="P:Microsoft.Office.Interop.Word.Field.ShowCodes" /> propriedade para controlar a exibição de um campo individual.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Unlink">
@@ -336,11 +323,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Substitui todos os campos a <see cref="T:Microsoft.Office.Interop.Word.Fields" /> coleção com seus resultados mais recentes.</summary>
-        <remarks>
-          <para>Quando você retira o vínculo de um campo, seu resultado atual é convertido em texto ou imagem gráfica e não pode ser atualizado automaticamente. Observe que alguns campos — como campos XE (entrada de índice) e os campos SEQ (sequência) — não pode ser desvinculada.</para>
-          <para />
-        </remarks>
+        <summary>Substitui todos os campos na <see cref="T:Microsoft.Office.Interop.Word.Fields" /> coleção por seus resultados mais recentes.</summary>
+        <remarks><para>Quando você retira o vínculo de um campo, o seu resultado atual é convertido em texto ou imagem gráfica e não pode ser mais atualizado automaticamente. Observe que alguns campos, como XE (entrada de índice) e campos SEQ (sequência), não podem ser desvinculados.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Update">
@@ -366,10 +351,8 @@
       <Docs>
         <summary>Atualiza o resultado do objeto de campos.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Quando aplicado a um <see cref="T:Microsoft.Office.Interop.Word.Fields" /> conjunto, retornará 0 (zero) se nenhum erro ocorrer quando os campos são atualizados ou retorna um <b>inteiro</b> que representa o índice do primeiro campo que contém um erro.</para>
-          <para />
-        </remarks>
+        <remarks><para>Quando aplicado a uma <see cref="T:Microsoft.Office.Interop.Word.Fields" /> coleção, retorna 0 (zero) se nenhum erro ocorrer quando os campos são atualizados ou retorna um <b>inteiro</b> que representa o índice do primeiro campo que contém um erro.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="UpdateSource">
@@ -394,10 +377,8 @@
       <Parameters />
       <Docs>
         <summary>Salva as alterações feitas nos resultados de um campo INCLUDETEXT de volta para o documento de origem.</summary>
-        <remarks>
-          <para>O documento de origem precisa estar formatado como um documento do Microsoft Word.</para>
-          <para />
-        </remarks>
+        <remarks><para>O documento de origem deve ser formatado como um documento do Microsoft Word.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

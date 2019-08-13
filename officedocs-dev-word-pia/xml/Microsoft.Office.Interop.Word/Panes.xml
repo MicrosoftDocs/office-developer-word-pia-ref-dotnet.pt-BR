@@ -1,13 +1,5 @@
 <Type Name="Panes" FullName="Microsoft.Office.Interop.Word.Panes">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d90b242373bbbcaf3d57c22154e720e2f2e43252" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20664462" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Panes : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="c93e1f96de2b3c9480f4dadee3a64fe30ee9c1e5" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144173" /></Metadata><TypeSignature Language="C#" Value="public interface Panes : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Panes implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Panes" />
   <TypeSignature Language="VB.NET" Value="Public Interface Panes&#xA;Implements IEnumerable" />
@@ -30,14 +22,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Uma coleção de <see cref="T:Microsoft.Office.Interop.Word.Pane" /> objetos que representam os painéis da janela de uma única janela.</summary>
-    <remarks>
-      <para>Use o <see cref="P:Microsoft.Office.Interop.Word.Window.Panes" /> propriedade para retornar a coleção <b>Panes</b> .</para>
-      <para>Uso o <see cref="M:Microsoft.Office.Interop.Word.Panes.Add(System.Object@)" /> método ou o <see cref="P:Microsoft.Office.Interop.Word.Window.Split" /> propriedade para adicionar um painel de janela.</para>
-      <para>Você pode usar o <see cref="P:Microsoft.Office.Interop.Word.View.SplitSpecial" /> propriedade para mostrar comentários, notas de rodapé ou notas de fim em um painel separado.</para>
-      <para>Uma janela tem mais de um painel, se ele estiver dividido, ou se o modo de exibição ativo não for o modo de exibição de layout de impressão e informações como notas de rodapé ou comentários são exibidas.</para>
-      <para />
-    </remarks>
+    <summary>Uma coleção de <see cref="T:Microsoft.Office.Interop.Word.Pane" /> objetos que representam os painéis de janela de uma única janela.</summary>
+    <remarks><para>Use a <see cref="P:Microsoft.Office.Interop.Word.Window.Panes" /> propriedade para retornar a <b></b> coleção panes.</para>
+      <para>Use o <see cref="M:Microsoft.Office.Interop.Word.Panes.Add(System.Object@)" /> método ou a <see cref="P:Microsoft.Office.Interop.Word.Window.Split" /> propriedade para adicionar um painel de janela.</para>
+      <para>Você pode usar a <see cref="P:Microsoft.Office.Interop.Word.View.SplitSpecial" /> propriedade para mostrar comentários, notas de rodapé ou notas de fim em um painel separado.</para>
+      <para>Uma janela tem mais de um painel quando é dividida, ou se o modo de exibição ativo não é o modo de layout de impressão e informações como notas de rodapé ou comentários são exibidas.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -62,14 +52,11 @@
         <Parameter Name="SplitVertical" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="SplitVertical">
-          <b>Objeto</b>de opcional. Um número que representa o percentual da janela, de cima para baixo, que você deseja que apareça acima da divisão.</param>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Pane" /> object que representa um novo painel para uma janela.</summary>
+        <param name="SplitVertical"><b>Objeto</b>opcional. Um número que representa o percentual da janela, de cima para baixo, que você deseja que apareça acima da divisão.</param>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Pane" /> objeto que representa um novo painel para uma janela.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Esse método irá falhar se for aplicado a uma janela que já esteja dividida.</para>
-          <para />
-        </remarks>
+        <remarks><para>Esse método irá falhar se for aplicado a uma janela que já foi dividida.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -95,7 +82,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -153,9 +140,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
-          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". [!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
+          <para>A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">

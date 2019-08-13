@@ -1,13 +1,5 @@
 <Type Name="ShapeNodes" FullName="Microsoft.Office.Interop.Word.ShapeNodes">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="eb27a6ee4cc769c6d56e3162447fcc10ee349303" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20665337" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ShapeNodes : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="35df8d05c8a08728b7df796ac68fa68a69de02c2" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143998" /></Metadata><TypeSignature Language="C#" Value="public interface ShapeNodes : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ShapeNodes implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ShapeNodes" />
   <TypeSignature Language="VB.NET" Value="Public Interface ShapeNodes&#xA;Implements IEnumerable" />
@@ -30,14 +22,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Uma coleção de todos os <see cref="T:Microsoft.Office.Interop.Word.ShapeNode" /> objetos especificado forma livre.</summary>
-    <remarks>
-      <para>Cada objeto <b>ShapeNode</b> representa um nó entre segmentos em uma forma livre ou um ponto de controle de um segmento curvo de uma forma livre. Você pode criar uma forma livre manualmente ou usando o <see cref="M:Microsoft.Office.Interop.Word.Shapes.BuildFreeform(Microsoft.Office.Core.MsoEditingType,System.Single,System.Single)" /> e <see cref="M:Microsoft.Office.Interop.Word.InlineShape.ConvertToShape" /> métodos.</para>
-      <para>Uso o <see cref="P:Microsoft.Office.Interop.Word.Shape.Nodes" /> propriedade para retornar a coleção <b>ShapeNodes</b> .</para>
-      <para>Uso o <see cref="M:Microsoft.Office.Interop.Word.ShapeNodes.Insert(System.Int32,Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" /> método para criar um novo nó e adicioná-lo à coleção <b>ShapeNodes</b> .</para>
-      <para>Uso <b>nós</b>(<paramref name="index" />), onde <paramref name="index" /> é o número de índice do nó, para retornar um único objeto <b>ShapeNode</b> .</para>
-      <para />
-    </remarks>
+    <summary>Uma coleção de todos os <see cref="T:Microsoft.Office.Interop.Word.ShapeNode" /> objetos da forma livre especificada.</summary>
+    <remarks><para>Cada objeto <b>ShapeNode</b> representa um nó entre segmentos em uma forma livre ou um ponto de controle de um segmento curvo de uma forma livre. Você pode criar uma forma livre manualmente ou usando os <see cref="M:Microsoft.Office.Interop.Word.Shapes.BuildFreeform(Microsoft.Office.Core.MsoEditingType,System.Single,System.Single)" /> métodos <see cref="M:Microsoft.Office.Interop.Word.InlineShape.ConvertToShape" /> e.</para>
+      <para>Use a <see cref="P:Microsoft.Office.Interop.Word.Shape.Nodes" /> propriedade para retornar a coleção <b>ShapeNodes</b> .</para>
+      <para>Use o <see cref="M:Microsoft.Office.Interop.Word.ShapeNodes.Insert(System.Int32,Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" /> método para criar um novo nó e adicioná-lo à coleção <b>ShapeNodes</b> .</para>
+      <para>Use <b></b>Nodes<paramref name="index" />(), <paramref name="index" /> onde é o número de índice do nó, para retornar um único objeto <b>ShapeNode</b> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -63,7 +53,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -121,9 +111,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
-          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". [!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
+          <para>A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -149,8 +139,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Integer</b>necessário. O número do nó da forma a ser excluído.</param>
+        <param name="Index">Obrigatório <b>Integer</b>. O número do nó da forma a ser excluído.</param>
         <summary>Exclui o objeto especificado.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -217,18 +206,15 @@
         <Parameter Name="Y3" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Integer</b>necessário. O número do nó da forma após do qual será inserido um novo nó.</param>
+        <param name="Index">Obrigatório <b>Integer</b>. O número do nó da forma após do qual será inserido um novo nó.</param>
         <param name="SegmentType">Necessário <see cref="T:Microsoft.Office.Core.MsoSegmentType" />. O tipo de linha que conecta o nó inserido aos nós vizinhos.</param>
         <param name="EditingType">Necessário <see cref="T:Microsoft.Office.Core.MsoEditingType" />. A propriedade de edição do nó inserido.</param>
-        <param name="X1">
-          <b>Single</b>obrigatório. Se o <paramref name="EditingType" /> do novo segmento for <b>msoEditingAuto</b>, este argumento especificará a distância horizontal, medida em pontos, do canto superior esquerdo do documento até o ponto final do novo segmento. Se o <paramref name="EditingType" /> do novo nó for <b>msoEditingCorner</b>, este argumento especificará a distância horizontal, medida em pontos, do canto superior esquerdo do documento até o primeiro ponto de controle do novo segmento.</param>
-        <param name="Y1">
-          <b>Single</b>obrigatório. Se o <paramref name="EditingType" /> do novo segmento for <b>msoEditingAuto</b>, este argumento especificará a distância vertical, medida em pontos, do canto superior esquerdo do documento até o ponto final do novo segmento. Se o <paramref name="EditingType" /> do novo nó for <b>msoEditingCorner</b>, este argumento especificará a distância vertical, medida em pontos, do canto superior esquerdo do documento até o primeiro ponto de controle do novo segmento.</param>
-        <param name="X2">Opcional <b>único</b>. Se o <paramref name="EditingType" /> do novo segmento for <b>msoEditingCorner</b>, este argumento especificará a distância horizontal, medida em pontos, do canto superior esquerdo do documento até o segundo ponto de controle do novo segmento. Se o <paramref name="EditingType" /> do novo segmento for <b>msoEditingAuto</b>, não especifique um valor para este argumento.</param>
-        <param name="Y2">Opcional <b>único</b>. Se o <paramref name="EditingType" /> do novo segmento for <b>msoEditingCorner</b>, este argumento especificará a distância vertical, medida em pontos, do canto superior esquerdo do documento até o segundo ponto de controle do novo segmento. Se o <paramref name="EditingType" /> do novo segmento for <b>msoEditingAuto</b>, não especifique um valor para este argumento.</param>
-        <param name="X3">Opcional <b>único</b>. Se o <paramref name="EditingType" /> do novo segmento for <b>msoEditingCorner</b>, este argumento especificará a distância horizontal, medida em pontos, do canto superior esquerdo do documento até o ponto final do novo segmento. Se o <paramref name="EditingType" /> do novo segmento for <b>msoEditingAuto</b>, não especifique um valor para este argumento.</param>
-        <param name="Y3">Opcional <b>único</b>. Se o <paramref name="EditingType" /> do novo segmento for <b>msoEditingCorner</b>, este argumento especificará a distância vertical, medida em pontos, do canto superior esquerdo do documento até o ponto final do novo segmento. Se o <paramref name="EditingType" /> do novo segmento for <b>msoEditingAuto</b>, não especifique um valor para este argumento.</param>
+        <param name="X1"><b>Único</b>necessário. Se o <paramref name="EditingType" /> do novo segmento for <b>msoEditingAuto</b>, este argumento especificará a distância horizontal, medida em pontos, do canto superior esquerdo do documento até o ponto final do novo segmento. Se o <paramref name="EditingType" /> do novo nó for <b>msoEditingCorner</b>, este argumento especificará a distância horizontal, medida em pontos, do canto superior esquerdo do documento para o primeiro ponto de controle do novo segmento.</param>
+        <param name="Y1"><b>Único</b>necessário. Se o <paramref name="EditingType" /> do novo segmento for <b>msoEditingAuto</b>, este argumento especificará a distância vertical, medida em pontos, do canto superior esquerdo do documento até o ponto final do novo segmento. Se o <paramref name="EditingType" /> do novo nó for <b>msoEditingCorner</b>, este argumento especificará a distância vertical, medida em pontos, do canto superior esquerdo do documento para o primeiro ponto de controle do novo segmento.</param>
+        <param name="X2"><b>Único</b>opcional. Se o <paramref name="EditingType" /> do novo segmento for <b>msoEditingCorner</b>, este argumento especificará a distância horizontal, medida em pontos, do canto superior esquerdo do documento até o segundo ponto de controle do novo segmento. Se o <paramref name="EditingType" /> do novo segmento for <b>msoEditingAuto</b>, não especifique um valor para este argumento.</param>
+        <param name="Y2"><b>Único</b>opcional. Se o <paramref name="EditingType" /> do novo segmento for <b>msoEditingCorner</b>, este argumento especificará a distância vertical, medida em pontos, do canto superior esquerdo do documento até o segundo ponto de controle do novo segmento. Se o <paramref name="EditingType" /> do novo segmento for <b>msoEditingAuto</b>, não especifique um valor para este argumento.</param>
+        <param name="X3"><b>Único</b>opcional. Se o <paramref name="EditingType" /> do novo segmento for <b>msoEditingCorner</b>, este argumento especificará a distância horizontal, medida em pontos, do canto superior esquerdo do documento até o ponto final do novo segmento. Se o <paramref name="EditingType" /> do novo segmento for <b>msoEditingAuto</b>, não especifique um valor para este argumento.</param>
+        <param name="Y3"><b>Único</b>opcional. Se o <paramref name="EditingType" /> do novo segmento for <b>msoEditingCorner</b>, este argumento especificará a distância vertical, medida em pontos, do canto superior esquerdo do documento até o ponto final do novo segmento. Se o <paramref name="EditingType" /> do novo segmento for <b>msoEditingAuto</b>, não especifique um valor para este argumento.</param>
         <summary>Insere um nó em uma forma livre.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -317,14 +303,11 @@
         <Parameter Name="EditingType" Type="Microsoft.Office.Core.MsoEditingType" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Integer</b>necessário. O nó cujo tipo de edição será definido.</param>
+        <param name="Index">Obrigatório <b>Integer</b>. O nó cujo tipo de edição será definido.</param>
         <param name="EditingType">Necessário <see cref="T:Microsoft.Office.Core.MsoEditingType" />. A propriedade de edição do vértice.</param>
         <summary>Define o tipo de edição do nó especificado.</summary>
-        <remarks>
-          <para>Se o nó for um ponto de controle de um segmento curvo, este método define o tipo de edição do nó adjacente a ele que une dois segmentos. Observe que, dependendo do tipo de edição, esse método pode afetar a posição de nós adjacentes.</para>
-          <para />
-        </remarks>
+        <remarks><para>Se o nó for um ponto de controle de um segmento curvo, este método definirá o tipo de edição do nó adjacente para que una dois segmentos. Observe que, dependendo do tipo de edição, esse método pode afetar a posição dos nós adjacentes.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetPosition">
@@ -352,17 +335,12 @@
         <Parameter Name="Y1" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Integer</b>necessário. O nó cuja posição será definida.</param>
-        <param name="X1">
-          <b>Single</b>obrigatório. A posição (em pontos) do novo nó em relação ao canto superior esquerdo do documento.</param>
-        <param name="Y1">
-          <b>Single</b>obrigatório. A posição (em pontos) do novo nó em relação ao canto superior esquerdo do documento.</param>
+        <param name="Index">Obrigatório <b>Integer</b>. O nó cuja posição será definida.</param>
+        <param name="X1"><b>Único</b>necessário. A posição (em pontos) do novo nó em relação ao canto superior esquerdo do documento.</param>
+        <param name="Y1"><b>Único</b>necessário. A posição (em pontos) do novo nó em relação ao canto superior esquerdo do documento.</param>
         <summary>Define o local do nó especificado.</summary>
-        <remarks>
-          <para>Observe que, dependendo do tipo de edição do nó, este método pode afetar a posição de nós adjacentes.</para>
-          <para />
-        </remarks>
+        <remarks><para>Observe que, dependendo do tipo de edição do nó, este método pode afetar a posição dos nós adjacentes.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetSegmentType">
@@ -389,14 +367,11 @@
         <Parameter Name="SegmentType" Type="Microsoft.Office.Core.MsoSegmentType" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Integer</b>necessário. O nó cujo tipo de segmento será definido.</param>
-        <param name="SegmentType">Necessário <see cref="T:Microsoft.Office.Core.MsoSegmentType" />. Especifica se o segmento é reto ou curvo.</param>
+        <param name="Index">Obrigatório <b>Integer</b>. O nó cujo tipo de segmento será definido.</param>
+        <param name="SegmentType">Necessário <see cref="T:Microsoft.Office.Core.MsoSegmentType" />. Especifica se o segmento tem a forma de uma reta ou curva.</param>
         <summary>Define o tipo de segmento que acompanha o nó especificado.</summary>
-        <remarks>
-          <para>Se o nó for um ponto de controle de um segmento curvo, esse método define o tipo de segmento para essa curva. Observe que isso pode afetar o número total de nós pela inserção ou exclusão de nós adjacentes.</para>
-          <para />
-        </remarks>
+        <remarks><para>Se o nó for um ponto de controle de um segmento curvo, esse método definirá o tipo de segmento dessa curva. Observe que isso pode afetar o número total de nós determinado pela inserção ou exclusão de nós adjacentes.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

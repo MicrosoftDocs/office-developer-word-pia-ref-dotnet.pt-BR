@@ -1,13 +1,5 @@
 <Type Name="StyleSheet" FullName="Microsoft.Office.Interop.Word.StyleSheet">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="72919b7cdf16361f5caf5cd5a9ed121ce0c8383c" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20664791" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface StyleSheet" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="3e2da0d0a53e0f2e767486bea8385d1ef59128f2" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143942" /></Metadata><TypeSignature Language="C#" Value="public interface StyleSheet" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract StyleSheet" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.StyleSheet" />
   <TypeSignature Language="VB.NET" Value="Public Interface StyleSheet" />
@@ -26,14 +18,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Representa uma única folha de estilo em cascata anexada a um documento da web.</summary>
-    <remarks>
-      <para>O objeto <b>StyleSheet</b> é um membro do <see cref="T:Microsoft.Office.Interop.Word.StyleSheets" /> conjunto. Coleção <b>StyleSheets</b> contém todas as folhas de estilos em cascata anexadas a um documento especificado.</para>
-      <para>Uso o <see cref="P:Microsoft.Office.Interop.Word.StyleSheets.Item(System.Object@)" /> propriedade ou <b>folhas de estilo</b>(<paramref name="index" />), onde <paramref name="index" /> é o nome ou número da folha de estilos, da coleção <b>StyleSheets</b> , para retornar um objeto <b>StyleSheet</b> .</para>
-      <para>Uso o <see cref="P:Microsoft.Office.Interop.Word.StyleSheet.Index" /> propriedade para determinar a precedência de folhas de estilo em cascata.</para>
-      <para>Uso o <see cref="M:Microsoft.Office.Interop.Word.StyleSheet.Move(Microsoft.Office.Interop.Word.WdStyleSheetPrecedence)" /> método para reordenar a precedência de folhas de estilos de anexadas.</para>
-      <para />
-    </remarks>
+    <summary>Representa uma única folha de estilo em cascata anexada a um documento da Web.</summary>
+    <remarks><para>O objeto <b>StyleSheet</b> é um membro da <see cref="T:Microsoft.Office.Interop.Word.StyleSheets" /> coleção. Coleção <b>StyleSheets</b> contém todas as folhas de estilos em cascata anexadas a um documento especificado.</para>
+      <para>Use a <see cref="P:Microsoft.Office.Interop.Word.StyleSheets.Item(System.Object@)" /> propriedade ou <b>folhas</b>de estilo<paramref name="index" />(), <paramref name="index" /> onde é o nome ou número da folha de estilos, da <b></b> coleção stylesheets para retornar um objeto <b>StyleSheet</b> .</para>
+      <para>Use a <see cref="P:Microsoft.Office.Interop.Word.StyleSheet.Index" /> propriedade para determinar a precedência de folhas de estilo em cascata.</para>
+      <para>Use o <see cref="M:Microsoft.Office.Interop.Word.StyleSheet.Move(Microsoft.Office.Interop.Word.WdStyleSheetPrecedence)" /> método para reordenar a precedência de folhas de estilo anexadas.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -59,7 +49,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -89,9 +79,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
-          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". [!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
+          <para>A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -144,10 +134,8 @@
       <Docs>
         <summary>Especifica o nome de uma folha de estilo em cascata, incluindo a unidade ou o caminho da Web.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>O uso desta propriedade é equivalente ao uso de <see cref="P:Microsoft.Office.Interop.Word.StyleSheet.Path" />, <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" />, e <see cref="P:Microsoft.Office.Interop.Word.StyleSheet.Name" /> propriedades na sequência.</para>
-          <para />
-        </remarks>
+        <remarks><para>Usar essa propriedade é equivalente a usar as <see cref="P:Microsoft.Office.Interop.Word.StyleSheet.Path" />propriedades <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" />, e <see cref="P:Microsoft.Office.Interop.Word.StyleSheet.Name" /> e em sequência.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -287,12 +275,10 @@
       <Docs>
         <summary>Retorna o disco ou o caminho da Web para o objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>O caminho não inclui um caractere precedente — por exemplo, "C:\MSOffice" ou "http://MyServer". Use o <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" /> propriedade para adicionar o caractere que separa pastas e letras de unidade. Use o <see cref="P:Microsoft.Office.Interop.Word.StyleSheet.Name" /> propriedade para retornar o nome de arquivo sem o caminho e o uso do <see cref="P:Microsoft.Office.Interop.Word.StyleSheet.FullName" /> propriedade para retornar o nome do arquivo e o caminho juntos.</para>
+        <remarks><para>O caminho não inclui um caractere precedente  por exemplo, "C:\MSOffice" ou "http://MyServer". Use a <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" /> propriedade para adicionar o caractere que separa pastas e letras de unidade. Use a <see cref="P:Microsoft.Office.Interop.Word.StyleSheet.Name" /> propriedade para retornar o nome de arquivo sem o caminho e use <see cref="P:Microsoft.Office.Interop.Word.StyleSheet.FullName" /> a propriedade para retornar o nome de arquivo e o caminho juntos.</para>
           <para>
-            <b>Observação</b> você pode usar a propriedade <b>PathSeparator</b> para construir endereços da Web, mesmo que eles contenham barras (/) e a propriedade <b>PathSeparator</b> assume como padrão uma barra invertida (\).</para>
-          <para />
-        </remarks>
+            <b>Observação</b>  Você pode usar a propriedade <b>PathSeparator</b> para criar endereços da Web, mesmo que eles contenham barras (/) e a propriedade <b>PathSeparator</b> seja padronizada como uma\)barra invertida (.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Title">
@@ -321,7 +307,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna uma <b>cadeia de caracteres</b> representando o título de uma folha de estilo da Web.</summary>
+        <summary>Retorna uma <b>cadeia de caracteres</b> que representa o título de uma folha de estilos da Web.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -354,9 +340,8 @@
       <Docs>
         <summary>Retorna o tipo de modelo.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdTemplateType" />.can ser uma das seguintes constantes:</para>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdTemplateType" />. pode ser uma das seguintes constantes:</para>
           <para>
             <b>wdAttachedTemplate</b>
           </para>
@@ -366,8 +351,7 @@
           <para>
             <b>wdNormalTemplate</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

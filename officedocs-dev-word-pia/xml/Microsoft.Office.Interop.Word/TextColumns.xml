@@ -1,13 +1,5 @@
 <Type Name="TextColumns" FullName="Microsoft.Office.Interop.Word.TextColumns">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="8dbb16690af8ebe16762e0c55b824b7bfb1c1353" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20664047" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface TextColumns : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="c1d6c908a7e72752109b1c98cf6bbd36a0e9196e" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143823" /></Metadata><TypeSignature Language="C#" Value="public interface TextColumns : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TextColumns implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.TextColumns" />
   <TypeSignature Language="VB.NET" Value="Public Interface TextColumns&#xA;Implements IEnumerable" />
@@ -30,10 +22,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Uma coleção de <see cref="T:Microsoft.Office.Interop.Word.TextColumn" /> objetos que representam todas as colunas de texto em um documento ou seção de um documento.</summary>
-    <remarks>
-      <para>Use o <see cref="P:Microsoft.Office.Interop.Word.PageSetup.TextColumns" /> propriedade para retornar a coleção <b>TextColumns</b> .</para> Uso de 
-      <para>o <see cref="M:Microsoft.Office.Interop.Word.TextColumns.Add(System.Object@,System.Object@,System.Object@)" /> método para adicionar uma coluna à coleção de colunas. Por padrão, há uma coluna de texto na coleção <b>TextColumns</b> .</para><para>Uso o <see cref="M:Microsoft.Office.Interop.Word.TextColumns.SetCount(System.Int32)" /> método para organizar o texto em colunas.</para><para /></remarks>
+    <summary>Uma coleção de <see cref="T:Microsoft.Office.Interop.Word.TextColumn" /> objetos que representa todas as colunas de texto em um documento ou uma seção de um documento.</summary>
+    <remarks><para>Use a <see cref="P:Microsoft.Office.Interop.Word.PageSetup.TextColumns" /> propriedade para retornar a <b></b> coleção TextColumns.</para>
+      <para>Use o <see cref="M:Microsoft.Office.Interop.Word.TextColumns.Add(System.Object@,System.Object@,System.Object@)" /> método para adicionar uma coluna à coleção de colunas. Por padrão, há uma coluna de texto na coleção <b></b> TextColumns.</para>
+      <para>Use o <see cref="M:Microsoft.Office.Interop.Word.TextColumns.SetCount(System.Int32)" /> método para organizar o texto em colunas.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -60,13 +53,10 @@
         <Parameter Name="EvenlySpaced" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Width">
-          <b>Objeto</b>de opcional. A largura da nova coluna de texto do documento, em pontos.</param>
-        <param name="Spacing">
-          <b>Objeto</b>de opcional. O espaçamento entre as colunas de texto no documento, em pontos.</param>
-        <param name="EvenlySpaced">
-          <b>Objeto</b>de opcional. <b>True</b> para espaçar uniformemente todas as colunas de texto seja no documento.</param>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.TextColumn" /> object que representa uma nova coluna de texto adicionada a um documento ou seção.</summary>
+        <param name="Width"><b>Objeto</b>opcional. A largura da nova coluna de texto do documento, em pontos.</param>
+        <param name="Spacing"><b>Objeto</b>opcional. O espaçamento entre as colunas de texto no documento, em pontos.</param>
+        <param name="EvenlySpaced"><b>Objeto</b>opcional. <b>True</b> para espaçar uniformemente todas as colunas de texto seja no documento.</param>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.TextColumn" /> objeto que representa uma nova coluna de texto adicionada a uma seção ou um documento.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -94,7 +84,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -152,9 +142,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
-          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". [!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
+          <para>A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EvenlySpaced">
@@ -183,13 +173,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> se as colunas de texto fiquem uniformemente espaçadas. Pode ser <b>True</b>, <b>False</b> ou <b>wdUndefined</b>.</summary>
+        <summary><b>True</b> se as colunas de texto fiquem uniformemente espaçadas. Pode ser <b>True</b>, <b>False</b> ou <b>wdUndefined</b>.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se você definir a <see cref="P:Microsoft.Office.Interop.Word.TextColumns.Spacing" /> ou <see cref="P:Microsoft.Office.Interop.Word.TextColumns.Width" /> propriedade do <see cref="T:Microsoft.Office.Interop.Word.TextColumns" /> do objeto, a propriedade <b>EvenlySpaced</b> é automaticamente definida como <b>True</b>. Além disso, a configuração da propriedade <b>EvenlySpaced</b> pode alterar as configurações das propriedades de <b>espaçamento</b> e a <b>largura</b> do objeto <b>TextColumns</b> .</para>
-          <para />
-        </remarks>
+        <remarks><para>Se você definir a <see cref="P:Microsoft.Office.Interop.Word.TextColumns.Spacing" /> propriedade <see cref="P:Microsoft.Office.Interop.Word.TextColumns.Width" /> ou do <see cref="T:Microsoft.Office.Interop.Word.TextColumns" /> objeto, a propriedade <b>EvenlySpaced</b> será definida automaticamente como <b>true</b>. Além disso, a configuração da propriedade <b>EvenlySpaced</b> pode alterar as configurações das propriedades de <b>espaçamento</b> e a <b>largura</b> do objeto <b>TextColumns</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FlowDirection">
@@ -220,15 +207,13 @@
       <Docs>
         <summary>Retorna ou define a direção na qual o texto flui de uma coluna de texto para a próxima.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
+        <remarks><para>
             <see cref="T:Microsoft.Office.Interop.Word.WdFlowDirection" />pode ser uma destas constantes <b>WdFlowDirection</b> : </para>
           <para>
-            <b>wdFlowLtr </b>– o texto nas colunas flui da esquerda para a direita.</para>
+            <b>wdFlowLtr </b>– o texto nas colunas flui da esquerda para a direita. </para>
           <para>
-            <b>wdFlowRtl </b>– o texto nas colunas flui da direita para esquerda.</para>
-          <para />
-        </remarks>
+            <b>wdFlowRtl </b>– o texto nas colunas flui da direita para a esquerda.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -321,8 +306,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> se linhas verticais aparecerem entre todas as colunas no <see cref="T:Microsoft.Office.Interop.Word.TextColumns" /> conjunto. Pode ser <b>True</b>, <b>False</b> ou <b>wdUndefined</b>.</summary>
+        <summary><b>True</b> se linhas verticais aparecerem entre todas as colunas na <see cref="T:Microsoft.Office.Interop.Word.TextColumns" /> coleção. Pode ser <b>True</b>, <b>False</b> ou <b>wdUndefined</b>.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -378,14 +362,11 @@
         <Parameter Name="NumColumns" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="NumColumns">
-          <b>Integer</b>necessário. O número de colunas nas quais o texto será organizado.</param>
+        <param name="NumColumns">Obrigatório <b>Integer</b>. O número de colunas nas quais o texto será organizado.</param>
         <summary>Organiza texto no número especificado de colunas de texto.</summary>
-        <remarks>
-          <para>
-            <b>Observação</b>  Você também pode usar o <see cref="M:Microsoft.Office.Interop.Word.TextColumns.Add(System.Object@,System.Object@,System.Object@)" /> método do <see cref="T:Microsoft.Office.Interop.Word.TextColumns" /> objeto a ser adicionado a uma única coluna à coleção <b>TextColumns</b> .</para>
-          <para />
-        </remarks>
+        <remarks><para>
+            <b>Observação</b>  Você também pode usar o <see cref="M:Microsoft.Office.Interop.Word.TextColumns.Add(System.Object@,System.Object@,System.Object@)" /> método do <see cref="T:Microsoft.Office.Interop.Word.TextColumns" /> objeto para adicionar uma única coluna à coleção TextColumns. <b></b></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Spacing">
@@ -414,12 +395,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define o espaçamento (em pontos) entre as colunas de um <see cref="T:Microsoft.Office.Interop.Word.TextColumns" /> objeto.</summary>
+        <summary>Retorna ou define o espaçamento (em pontos) entre as colunas <see cref="T:Microsoft.Office.Interop.Word.TextColumns" /> de um objeto.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Depois que essa propriedade for definida para um objeto <b>TextColumns</b> , o <see cref="P:Microsoft.Office.Interop.Word.TextColumns.EvenlySpaced" /> propriedade estiver definida como <b>True</b>. Para retornar ou definir o espaçamento de uma única coluna de texto quando <see cref="P:Microsoft.Office.Interop.Word.TextColumns.EvenlySpaced" /> for <b>False</b>, use o <see cref="P:Microsoft.Office.Interop.Word.TextColumn.SpaceAfter" /> propriedade do <see cref="T:Microsoft.Office.Interop.Word.TextColumn" /> objeto.</para>
-          <para />
-        </remarks>
+        <remarks><para>Depois que essa propriedade for definida para um <b></b> objeto TextColumns, a <see cref="P:Microsoft.Office.Interop.Word.TextColumns.EvenlySpaced" /> propriedade será definida como <b>true</b>. Para retornar ou definir o espaçamento de uma única coluna de <see cref="P:Microsoft.Office.Interop.Word.TextColumns.EvenlySpaced" /> texto quando for <b>false</b>, <see cref="P:Microsoft.Office.Interop.Word.TextColumn.SpaceAfter" /> use a propriedade <see cref="T:Microsoft.Office.Interop.Word.TextColumn" /> do objeto.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Width">
