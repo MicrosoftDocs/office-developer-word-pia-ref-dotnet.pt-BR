@@ -1,13 +1,5 @@
 <Type Name="Endnotes" FullName="Microsoft.Office.Interop.Word.Endnotes">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="106a420cd9bef3a857395aa622ff27a222b3fb61" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20665439" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Endnotes : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a74d0528b197f8c97921c1994c703d6aec5f9941" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146882" /></Metadata><TypeSignature Language="C#" Value="public interface Endnotes : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Endnotes implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Endnotes" />
   <TypeSignature Language="VB.NET" Value="Public Interface Endnotes&#xA;Implements IEnumerable" />
@@ -31,12 +23,10 @@
   </Attributes>
   <Docs>
     <summary>Uma coleção de <see cref="T:Microsoft.Office.Interop.Word.Endnote" /> objetos que representa todas as notas de fim em uma seleção, intervalo ou documento.</summary>
-    <remarks>
-      <para>Use a propriedade <b>Endnotes</b> do <see cref="T:Microsoft.Office.Interop.Word.Selection" />, <see cref="T:Microsoft.Office.Interop.Word.Range" />, ou <see cref="T:Microsoft.Office.Interop.Word.Document" /> objetos para retornar a coleção <b>Endnotes</b> .</para>
-      <para>Uso o <see cref="M:Microsoft.Office.Interop.Word.Endnotes.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@)" /> método para adicionar uma nota de fim à coleção <b>Endnotes</b> .</para>
-      <para>Uso <b>Endnotes</b>(<paramref name="index" />), onde <paramref name="index" /> é o número de índice, para retornar um único objeto de <b>nota de fim</b> . O número de índice representa a posição da nota de fim em uma seleção, intervalo ou documento.</para>
-      <para />
-    </remarks>
+    <remarks><para>Use a <b></b> Propriedade Endnotes dos objetos <see cref="T:Microsoft.Office.Interop.Word.Selection" />, <see cref="T:Microsoft.Office.Interop.Word.Range" />ou <see cref="T:Microsoft.Office.Interop.Word.Document" /> para retornar a coleção Endnotes. <b></b></para>
+      <para>Use o <see cref="M:Microsoft.Office.Interop.Word.Endnotes.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@)" /> método para adicionar uma nota de fim <b></b> à coleção Endnotes.</para>
+      <para>Use <b></b>Endnotes (<paramref name="index" />), onde <paramref name="index" /> é o número de índice, para retornar um único objeto <b>EndNote</b> . O número de índice representa a posição da nota de fim em uma seleção, intervalo ou documento.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -62,17 +52,13 @@
         <Parameter Name="Text" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">Objeto de <b>intervalo</b> necessário. O intervalo marcado para a nota de fim. Pode ser um intervalo recolhido.</param>
-        <param name="Reference">
-          <b>Objeto</b>de opcional. O texto da marca de referência personalizada. Se esse argumento for omitido, o Word irá inserir automaticamente uma marca de referência numerada.</param>
-        <param name="Text">
-          <b>Objeto</b>de opcional. O texto da nota de fim.</param>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Endnote" /> object que representa uma nota de fim adicionada a um intervalo.</summary>
+        <param name="Range">Objeto <b>Range</b> necessário. O intervalo marcado para a nota de fim. Pode ser um intervalo recolhido.</param>
+        <param name="Reference"><b>Objeto</b>opcional. O texto da marca de referência personalizada. Se esse argumento for omitido, o Word irá inserir automaticamente uma marca de referência numerada.</param>
+        <param name="Text"><b>Objeto</b>opcional. O texto da nota de fim.</param>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Endnote" /> objeto que representa uma nota de fim adicionada a um intervalo.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Para especificar um símbolo para o <paramref name="Reference" /> argumento, use a sintaxe {<paramref name="FontName CharNum" />}. <paramref name="FontName" /> é o nome da fonte que contém o símbolo. Nomes de fontes decorativas aparecem na caixa fonte na caixa de diálogo Símbolo (menu Inserir). <paramref name="CharNum" /> é a soma de 31 e o número correspondente à posição do símbolo que deseja inserir, contando da esquerda para a direita na tabela de símbolos. Por exemplo, para especificar um símbolo de ômega (ω) na posição 56 na tabela de símbolos na fonte Symbol, o argumento seria "{Symbol 87}".</para>
-          <para />
-        </remarks>
+        <remarks><para>Para especificar um símbolo para o <paramref name="Reference" /> argumento, use a sintaxe {<paramref name="FontName CharNum" />}. <paramref name="FontName" />é o nome da fonte que contém o símbolo. Os nomes das fontes decorativas aparecem na caixa Fonte da caixa de diálogo Símbolo (menu Inserir). <paramref name="CharNum" />é a soma de 31 e o número correspondente à posição do símbolo que você deseja inserir, contando da esquerda para a direita na tabela de símbolos. Por exemplo, para especificar um símbolo de ômega (ω) na posição 56 na tabela de símbolos na fonte Symbol, o argumento seria "{Symbol 87}".</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -98,7 +84,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="P:Microsoft.Office.Interop.Word.Endnotes.Application" /> object que representa o aplicativo Microsoft Word.</summary>
+        <summary>Retorna um <see cref="P:Microsoft.Office.Interop.Word.Endnotes.Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -126,7 +112,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Range" /> object que representa o aviso de continuação de nota de rodapé ou nota de fim.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto que representa o aviso de continuação de nota de rodapé ou nota de fim.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -154,7 +140,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Range" /> object que representa o separador de continuação de nota de rodapé ou nota de fim.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto que representa o separador de continuação de nota de rodapé ou nota de fim.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -237,9 +223,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto especificado foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
-          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Se o objeto especificado foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". [!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
+          <para>A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -449,10 +435,8 @@
       <Parameters />
       <Docs>
         <summary>Redefine o aviso de continuação de nota de fim para o aviso padrão.</summary>
-        <remarks>
-          <para>O aviso padrão é em branco, que representa um aviso sem texto.</para>
-          <para />
-        </remarks>
+        <remarks><para>O aviso padrão está em branco, que representa um aviso sem texto.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ResetContinuationSeparator">
@@ -477,10 +461,8 @@
       <Parameters />
       <Docs>
         <summary>Redefine o separador de continuação de nota de fim para o separador padrão.</summary>
-        <remarks>
-          <para>O separador padrão é uma linha horizontal longa que separa o texto do documento das notas continuadas da página anterior.</para>
-          <para />
-        </remarks>
+        <remarks><para>O separador padrão é uma linha horizontal longa que separa o texto do documento das notas continuadas da página anterior.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ResetSeparator">
@@ -505,10 +487,8 @@
       <Parameters />
       <Docs>
         <summary>Redefine o separador de nota de fim para o separador padrão.</summary>
-        <remarks>
-          <para>O separador padrão é uma linha horizontal curta que separa o texto do documento das notas.</para>
-          <para />
-        </remarks>
+        <remarks><para>O separador padrão é uma linha horizontal curta que separa o texto do documento das notas.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Separator">
@@ -534,7 +514,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Range" /> object que representa o separador de nota de fim ou nota de rodapé.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto que representa o separador de notas de rodapé ou nota de rodapé.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -565,7 +545,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define o número inicial de nota.</summary>
+        <summary>Retorna ou define o número de nota inicial.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -592,10 +572,8 @@
       <Parameters />
       <Docs>
         <summary>Converte todas as notas de fim de um documento em notas de rodapé e vice-versa.</summary>
-        <remarks>
-          <para>Para converter um intervalo de notas de fim em notas de rodapé, use o <see cref="M:Microsoft.Office.Interop.Word.Endnotes.Convert" /> método.</para>
-          <para />
-        </remarks>
+        <remarks><para>Para converter um intervalo de notas de fim em notas de rodapé, use <see cref="M:Microsoft.Office.Interop.Word.Endnotes.Convert" /> o método.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

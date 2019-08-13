@@ -1,13 +1,5 @@
 <Type Name="CoAuthUpdates" FullName="Microsoft.Office.Interop.Word.CoAuthUpdates">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="7983db44fc17c631b58b37400b9b392ffaf1679e" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20663968" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface CoAuthUpdates : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="221cb78f9c2c699018cfe37e064f54c683778e79" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147211" /></Metadata><TypeSignature Language="C#" Value="public interface CoAuthUpdates : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CoAuthUpdates implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.CoAuthUpdates" />
   <TypeSignature Language="VB.NET" Value="Public Interface CoAuthUpdates&#xA;Implements IEnumerable" />
@@ -30,12 +22,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Uma coleção de <see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdate" /> objetos que representam as atualizações disponíveis no documento.</summary>
-    <remarks>
-      <para>Quando um documento com coautoria habilitada simultaneamente for editado, as alterações feitas por um coautor estão disponíveis para outras coautores como atualizações. Cada alteração é representada por um único objeto <b>CoAuthUpdate</b> . Quando um coautor salva suas versões do documento, as alterações feitas por outros coautores são mescladas na versão que co-do autor do documento. Antes do coautor salvar sua versão do documento, as alterações feitas por outros coautores estão disponíveis como atualizações.</para>
-      <para>Por exemplo: duas pessoas estão editando a um documento que inicialmente contém um parágrafo único com o texto "Fox marrom." Se o primeiro coautor edita a frase para ler, "raposa marrom pula sobre o log" e, em seguida, salva o documento, as palavras "rápidas" e "sobre o log" estão disponíveis para o segundo coautor como duas atualizações ao documento. Essas duas atualizações são representadas no modelo de objeto do Microsoft Word 2010 como dois objetos <b>CoAuthUpdate</b> . Quando o segundo coautor salva o documento, as atualizações do primeiro coautor são mescladas no documento.</para>
-      <para />
-    </remarks>
+    <summary>Uma coleção de <see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdate" /> objetos que representa as atualizações disponíveis no documento.</summary>
+    <remarks><para>Quando um documento com coautoria habilitada é editado simultaneamente, as alterações feitas por um coautor ficam disponíveis para outros coautores como atualizações. Cada alteração é representada por um único objeto <b>CoAuthUpdate</b>. Quando um coautor salva sua versão do documento, as alterações feitas por outros coautores são mescladas na versão do documento desse coautor. Antes que o coautor salve sua versão do documento, as alterações feitas por outros coautores ficam disponíveis como atualizações.</para>
+      <para>Por exemplo: duas pessoas estão editando um documento que inicialmente contém um único parágrafo com o texto "The Brown raposa". Se o primeiro coautor editar a sentença para "A rápida raposa marrom salta sobre a tora" e salvar o documento, as palavras "rápida" e "sobre a tora" ficarão disponíveis para o segundo coautor como duas atualizações do documento. Essas duas atualizações são representadas no modelo de objeto do Microsoft Word 2010 como dois objetos <b>CoAuthUpdate</b> . Quando o segundo coautor salvar o documento, as atualizações do primeiro coautor serão mescladas no documento.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -61,12 +51,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</summary>
-        <value>Um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</value>
-        <remarks>
-          <para>Somente leitura.</para>
-          <para />
-        </remarks>
+        <summary>Obtém um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
+        <value>Um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</value>
+        <remarks><para>Somente leitura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -92,12 +80,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém o número de itens a <see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdates" /> conjunto.</summary>
-        <value>O número de itens no <see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdates" /> conjunto.</value>
-        <remarks>
-          <para>Somente leitura.</para>
-          <para />
-        </remarks>
+        <summary>Obtém o número de itens na <see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdates" /> coleção.</summary>
+        <value>O número de itens na <see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdates" /> coleção.</value>
+        <remarks><para>Somente leitura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -125,12 +111,10 @@
       <Docs>
         <summary>Obtém um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</summary>
         <value>Um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</value>
-        <remarks>
-          <para>Somente leitura <b>long</b>. Se o objeto foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". Essa propriedade principalmente foi projetada para ser usado no Apple Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Word tem o código de criador MSWD.</para>
+        <remarks><para><b>Long</b>somente leitura. Se o objeto foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". Essa propriedade principalmente foi projetada para ser usado no Apple Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Word tem o código de criador MSWD.</para>
           <para>
             <b>Cuidado</b>: esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -220,8 +204,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém um <see cref="T:System.Object" /> que representa o objeto pai do especificado <see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdates" /> objeto.</summary>
-        <value>Um <see cref="T:System.Object" /> que representa o objeto pai do especificado <see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdates" /> objeto.</value>
+        <summary>Obtém um <see cref="T:System.Object" /> que representa o objeto pai do objeto especificado <see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdates" /> .</summary>
+        <value>Um <see cref="T:System.Object" /> que representa o objeto pai do objeto especificado <see cref="T:Microsoft.Office.Interop.Word.CoAuthUpdates" /> .</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

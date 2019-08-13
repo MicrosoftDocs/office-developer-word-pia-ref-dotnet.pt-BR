@@ -1,13 +1,5 @@
 <Type Name="Versions" FullName="Microsoft.Office.Interop.Word.Versions">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="b695f096473801bedfdf026b8a3b1f096e8b7122" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20664433" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Versions : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="77d68bb41e562599683947b60a2a34bd29554998" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143725" /></Metadata><TypeSignature Language="C#" Value="public interface Versions : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Versions implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Versions" />
   <TypeSignature Language="VB.NET" Value="Public Interface Versions&#xA;Implements IEnumerable" />
@@ -30,13 +22,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Uma coleção de <see cref="T:Microsoft.Office.Interop.Word.Version" /> objetos que representam todas as versões de um documento. Corresponde aos itens listados na caixa de diálogo versões (menu Arquivo).</summary>
-    <remarks>
-      <para>Use o <see cref="P:Microsoft.Office.Interop.Word._Document.Versions" /> propriedade para retornar a coleção de <b>versões</b> .</para>
-      <para>Uso o <see cref="M:Microsoft.Office.Interop.Word.Versions.Save(System.Object@)" /> método para adicionar um item à coleção <b>Versions</b> .</para>
-      <para>Uso <b>versões</b>(<paramref name="index" />), onde <paramref name="index" /> é o número de índice, para retornar um único objeto da <b>versão</b> . O número de índice representa a posição da versão na coleção de <b>versões</b> . A primeira versão adicionada à coleção de <b>versões</b> é o número de índice 1.</para>
-      <para />
-    </remarks>
+    <summary>Uma coleção de <see cref="T:Microsoft.Office.Interop.Word.Version" /> objetos que representam todas as versões de um documento. Corresponde aos itens listados na caixa de diálogo versões (menu arquivo).</summary>
+    <remarks><para>Use a <see cref="P:Microsoft.Office.Interop.Word._Document.Versions" /> propriedade para retornar a <b></b> coleção Versions.</para>
+      <para>Use o <see cref="M:Microsoft.Office.Interop.Word.Versions.Save(System.Object@)" /> método para adicionar um item à coleção <b>Versions</b> .</para>
+      <para>Use <b></b>Versions<paramref name="index" />(), <paramref name="index" /> em que é o número de índice, para retornar um único objeto <b>version</b> . O número de índice representa a posição da versão na coleção de <b>versões</b>. A primeira versão adicionada à coleção de <b>versões</b> é o número de índice 1.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -62,7 +52,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -93,21 +83,19 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdAutoVersions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define o estado da opção para gravação automática de versões do documento.</summary>
+        <summary>Retorna ou define o estado da opção para salvar automaticamente versões de documento.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
+        <remarks><para>
             <see cref="T:Microsoft.Office.Interop.Word.WdAutoVersions" />pode ser uma destas constantes <b>WdAutoVersions</b> : </para>
           <para>
-            <b>wdAutoVersionOff </b>
+            <b>wdAutoVersionOff</b>
           </para>
           <para>
             <b>wdAutoVersionOnClose</b>
           </para>
           <para>
-            <b>Observação</b> quando a propriedade <b>versão automática</b> estiver definida como <b>wdAutoVersionOnClose</b>, é de uma versão do documento salvas automaticamente quando o documento é fechado.</para>
-          <para />
-        </remarks>
+            <b>Observação</b>  Quando a <b></b> Propriedade AutoVersion é definida como <b>wdAutoVersionOnClose</b>, uma versão do documento é automaticamente salva quando o documento é fechado.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -163,9 +151,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
-          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". [!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
+          <para>A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -282,8 +270,7 @@
         <Parameter Name="Comment" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Comment">
-          <b>Objeto</b>de opcional.</param>
+        <param name="Comment"><b>Objeto</b>opcional.</param>
         <summary>Salva uma versão do documento especificado com um comentário.</summary>
         <remarks>To be added.</remarks>
       </Docs>

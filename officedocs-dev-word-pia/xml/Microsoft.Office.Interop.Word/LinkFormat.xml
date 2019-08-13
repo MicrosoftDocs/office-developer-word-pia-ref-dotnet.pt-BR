@@ -1,13 +1,5 @@
 <Type Name="LinkFormat" FullName="Microsoft.Office.Interop.Word.LinkFormat">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f8294bafcd1f6920b3ef713f96dedbabca82b54c" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20664732" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface LinkFormat" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="c971517dcfc20eb4687dbc3c18cb470ffe6557a7" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146595" /></Metadata><TypeSignature Language="C#" Value="public interface LinkFormat" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract LinkFormat" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.LinkFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface LinkFormat" />
@@ -27,12 +19,10 @@
   </Attributes>
   <Docs>
     <summary>Representa as características de vinculação de uma figura ou objeto OLE.</summary>
-    <remarks>
-      <para>Use a propriedade <b>LinkFormat</b> de um <see cref="T:Microsoft.Office.Interop.Word.Shape" />, <see cref="T:Microsoft.Office.Interop.Word.InlineShape" />, ou <see cref="T:Microsoft.Office.Interop.Word.Field" /> objeto para retornar o objeto <b>LinkFormat</b> .</para>
-      <para>Não todos os tipos de formas, formas embutidas e campos podem ser vinculados a uma fonte. Use a propriedade <b>Type</b> de um objeto <b>Shape</b> ou <b>InlineShape</b> para determinar se uma determinada forma pode ser vinculada. A propriedade <b>Type</b> para um objeto <b>Field</b> retorna o tipo de campo.</para>
-      <para>Que você pode usar ambos os <see cref="M:Microsoft.Office.Interop.Word.LinkFormat.Update" /> método e a <see cref="P:Microsoft.Office.Interop.Word.LinkFormat.AutoUpdate" /> propriedade para atualizar os vínculos. Para retornar ou definir o caminho completo para o arquivo de origem de um determinado vínculo, use o <see cref="P:Microsoft.Office.Interop.Word.LinkFormat.SourceFullName" /> propriedade.</para>
-      <para />
-    </remarks>
+    <remarks><para>Use a propriedade <b>LinkFormat</b> de um <see cref="T:Microsoft.Office.Interop.Word.Shape" />objeto <see cref="T:Microsoft.Office.Interop.Word.InlineShape" />, ou <see cref="T:Microsoft.Office.Interop.Word.Field" /> , para retornar o objeto <b>LinkFormat</b> .</para>
+      <para>Nem todos os tipos de formas, formas embutidas e campos podem ser vinculados a uma fonte. Use a propriedade <b>Type</b> de uma <b>forma</b> ou de um objeto <b>InlineShape</b> para determinar se uma determinada forma pode ser vinculada. A propriedade <b>Type</b> para um objeto <b>Field</b> retorna o tipo de campo.</para>
+      <para>Você pode usar o método <see cref="M:Microsoft.Office.Interop.Word.LinkFormat.Update" /> e a <see cref="P:Microsoft.Office.Interop.Word.LinkFormat.AutoUpdate" /> propriedade para atualizar os vínculos. Para retornar ou definir o caminho completo para o arquivo de origem de um link específico, <see cref="P:Microsoft.Office.Interop.Word.LinkFormat.SourceFullName" /> use a propriedade.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -58,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -89,8 +79,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> se o vínculo especificado é atualizado automaticamente quando o arquivo de contêiner é aberto ou quando o arquivo de origem for alterado.</summary>
+        <summary><b>True</b> se o vínculo especificado é atualizado automaticamente quando o arquivo de contêiner é aberto ou quando o arquivo de origem for alterado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -117,10 +106,8 @@
       <Parameters />
       <Docs>
         <summary>Quebra o vínculo entre o arquivo de origem e o objeto OLE, figura ou campo vinculado especificado.</summary>
-        <remarks>
-          <para>Depois de usar esse método, o resultado do vínculo não será atualizado automaticamente se o arquivo de origem for alterado.</para>
-          <para />
-        </remarks>
+        <remarks><para>Após você usar este método, o resultado do vínculo não será atualizado automaticamente se o arquivo de origem for alterado.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -148,9 +135,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
-          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". [!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
+          <para>A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Locked">
@@ -179,13 +166,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> se um <see cref="T:Microsoft.Office.Interop.Word.Field" />, <see cref="T:Microsoft.Office.Interop.Word.InlineShape" />, ou <see cref="T:Microsoft.Office.Interop.Word.Shape" /> o objeto está bloqueado para impedir atualização automática.</summary>
+        <summary><b>True</b> se um <see cref="T:Microsoft.Office.Interop.Word.Field" />, <see cref="T:Microsoft.Office.Interop.Word.InlineShape" />ou <see cref="T:Microsoft.Office.Interop.Word.Shape" /> objeto é bloqueado para impedir a atualização automática.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se você usar essa propriedade com um objeto de <b>forma</b> que é uma imagem vinculada flutuante (uma imagem adicionada com o <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddPicture(System.String,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> método do <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> objeto), ocorrerá um erro.</para>
-          <para />
-        </remarks>
+        <remarks><para>Se você usar essa propriedade com um objeto <b>Shape</b> que é uma imagem vinculada flutuante (uma imagem adicionada com <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddPicture(System.String,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> o método do <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> objeto), ocorrerá um erro.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -242,13 +226,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> se a imagem especificada é salvo com o documento.</summary>
+        <summary><b>True</b> se a imagem especificada é salvo com o documento.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Essa propriedade só funciona com formas e formas embutidas que são imagens vinculadas.</para>
-          <para />
-        </remarks>
+        <remarks><para>Essa propriedade funciona apenas com formas e formas embutidas que são imagens vinculadas.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SourceFullName">
@@ -279,10 +260,8 @@
       <Docs>
         <summary>Retorna ou define o caminho e o nome do arquivo de origem do campo, imagem ou objeto OLE vinculado especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>O uso desta propriedade é equivalente ao uso em uma sequência de <see cref="P:Microsoft.Office.Interop.Word.LinkFormat.SourcePath" />, <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" />, e <see cref="P:Microsoft.Office.Interop.Word.LinkFormat.SourceName" /> propriedades.</para>
-          <para />
-        </remarks>
+        <remarks><para>O uso dessa propriedade é equivalente a usar na sequência <see cref="P:Microsoft.Office.Interop.Word.LinkFormat.SourcePath" />as <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" />Propriedades, <see cref="P:Microsoft.Office.Interop.Word.LinkFormat.SourceName" /> e.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SourceName">
@@ -310,10 +289,8 @@
       <Docs>
         <summary>Retorna o nome do arquivo de origem do campo, imagem ou objeto OLE vinculado especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Essa propriedade não retorna o caminho para o arquivo de origem.</para>
-          <para />
-        </remarks>
+        <remarks><para>Essa propriedade não retorna o caminho do arquivo de origem.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SourcePath">
@@ -341,10 +318,8 @@
       <Docs>
         <summary>Retorna o caminho do arquivo de origem do campo, imagem ou objeto OLE vinculado especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>O caminho não inclui um caractere precedente (por exemplo, "C:\MSOffice"). Use o <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" /> propriedade para adicionar o caractere que separa pastas e letras de unidade. Use o <see cref="P:Microsoft.Office.Interop.Word.LinkFormat.SourceName" /> propriedade para retornar o nome de arquivo sem o caminho e o uso do <see cref="P:Microsoft.Office.Interop.Word.LinkFormat.SourceFullName" /> propriedade para retornar o nome de arquivo e o caminho juntos.</para>
-          <para />
-        </remarks>
+        <remarks><para>O caminho não inclui um caractere precedente (por exemplo, "C:\MSOffice"). Use a <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" /> propriedade para adicionar o caractere que separa pastas e letras de unidade. Use a <see cref="P:Microsoft.Office.Interop.Word.LinkFormat.SourceName" /> propriedade para retornar o nome de arquivo sem o caminho e use <see cref="P:Microsoft.Office.Interop.Word.LinkFormat.SourceFullName" /> a propriedade para retornar o caminho e o nome do arquivo juntos.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -372,10 +347,8 @@
       <Docs>
         <summary>Retorna o tipo de vínculo.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>A propriedade <b>Type</b> pode ser uma do <see cref="T:Microsoft.Office.Interop.Word.WdLinkType" /> constantes.</para>
-          <para />
-        </remarks>
+        <remarks><para>A propriedade <b>Type</b> pode ser uma das <see cref="T:Microsoft.Office.Interop.Word.WdLinkType" /> constantes.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Update">
@@ -399,7 +372,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Atualiza o vínculo especificado.</summary>
+        <summary>Atualiza o link especificado.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

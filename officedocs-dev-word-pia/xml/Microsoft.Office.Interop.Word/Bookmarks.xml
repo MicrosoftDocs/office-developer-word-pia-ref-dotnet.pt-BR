@@ -1,13 +1,5 @@
 <Type Name="Bookmarks" FullName="Microsoft.Office.Interop.Word.Bookmarks">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="559e2005557e5b0811ba9d6921064eb66efff775" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20664371" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Bookmarks : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="164f4a022f0e0f2ed1514f8a343f3dcbfd3f7cef" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146329" /></Metadata><TypeSignature Language="C#" Value="public interface Bookmarks : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Bookmarks implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Bookmarks" />
   <TypeSignature Language="VB.NET" Value="Public Interface Bookmarks&#xA;Implements IEnumerable" />
@@ -30,15 +22,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Uma coleção de <see cref="T:Microsoft.Office.Interop.Word.Bookmark" /> objetos que representam os indicadores na seleção especificada, intervalo ou documento.</summary>
-    <remarks>
-      <para>Use o <see cref="P:Microsoft.Office.Interop.Word._Document.Bookmarks" /> propriedade para retornar a coleção <b>Bookmarks</b> .</para>
-      <para>Uso o <see cref="M:Microsoft.Office.Interop.Word.Bookmarks.Add(System.String,System.Object@)" /> método para definir um indicador para um intervalo em um documento.</para>
-      <para>Uso <b>indicadores</b>(<paramref name="index" />), onde <paramref name="index" /> é o nome do indicador ou número de índice, para retornar um único objeto <b>Bookmark</b> . Você deve coincidir exatamente a ortografia (mas não necessariamente as maiusculas/minúsculas) do nome do indicador.</para>
-      <para>o número de índice representa a posição do indicador na <see cref="T:Microsoft.Office.Interop.Word.Selection" /> ou <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto. Para o <see cref="T:Microsoft.Office.Interop.Word.Document" /> do objeto, o número de índice representa a posição do indicador na lista alfabética de indicadores na caixa de diálogo indicadores (clique em nome para classificar a lista de indicadores em ordem alfabética). </para>
-      <para>o <see cref="P:Microsoft.Office.Interop.Word.Bookmarks.ShowHidden" /> propriedade afeta o número de elementos na coleção <b>Bookmarks</b> . Se <b>ShowHidden</b> for <b>True</b>, os indicadores ocultos estão incluídos na coleção <b>Bookmarks</b> .</para>
-      <para />
-    </remarks>
+    <summary>Uma coleção de <see cref="T:Microsoft.Office.Interop.Word.Bookmark" /> objetos que representam os indicadores na seleção, intervalo ou documento especificado.</summary>
+    <remarks><para>Use a <see cref="P:Microsoft.Office.Interop.Word._Document.Bookmarks" /> propriedade para retornar a <b></b> coleção bookmarks.</para>
+      <para>Use o <see cref="M:Microsoft.Office.Interop.Word.Bookmarks.Add(System.String,System.Object@)" /> método para definir um indicador para um intervalo em um documento.</para>
+      <para>Use <b>bookmarks</b>(<paramref name="index" />), onde <paramref name="index" /> é o nome do indicador ou número de índice, para retornar um único objeto <b>Bookmark</b> . Você deve coincidir exatamente a ortografia (mas não necessariamente as maiusculas/minúsculas) do nome do indicador.</para>
+      <para>O número de índice representa a posição do indicador no objeto <see cref="T:Microsoft.Office.Interop.Word.Selection" /> ou <see cref="T:Microsoft.Office.Interop.Word.Range" /> . Para o <see cref="T:Microsoft.Office.Interop.Word.Document" /> objeto, o número de índice representa a posição do indicador na lista alfabética de indicadores na caixa de diálogo Bookmarks (clique em nome para classificar a lista de indicadores alfabeticamente). </para>
+      <para>A <see cref="P:Microsoft.Office.Interop.Word.Bookmarks.ShowHidden" /> propriedade afeta o número de elementos na coleção <b>bookmarks</b> . Se <b>ShowHidden</b> for <b>True</b>, os indicadores ocultos estão incluídos na coleção <b>Bookmarks</b>.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -67,7 +57,7 @@
         <param name="Name">O nome do indicador. O nome não pode ter mais de uma palavra.</param>
         <param name="Range">O intervalo de texto marcado pelo indicador. Um indicador pode ser definido com um intervalo recolhido (o ponto de inserção).</param>
         <summary>Adiciona um indicador a um intervalo.</summary>
-        <returns>Uma <see cref="T:Microsoft.Office.Interop.Word.Bookmark" /> object que representa o indicador adicionado ao intervalo.</returns>
+        <returns>Um <see cref="T:Microsoft.Office.Interop.Word.Bookmark" /> objeto que representa o indicador adicionado ao intervalo.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,7 +84,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o criador do objeto especificado.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o criador do objeto especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -152,9 +142,9 @@
       <Docs>
         <summary>Retorna um valor que indica o aplicativo no qual o objeto especificado foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto especificado foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
-          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Se o objeto especificado foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". [!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
+          <para>A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultSorting">
@@ -185,10 +175,8 @@
       <Docs>
         <summary>Retorna ou define a opção de classificação para nomes de indicadores exibidos na caixa de diálogo indicador (menuInserir ).</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Essa propriedade não afeta a ordem dos objetos Bookmark no <see cref="T:Microsoft.Office.Interop.Word.Bookmarks" /> conjunto.</para>
-          <para />
-        </remarks>
+        <remarks><para>Essa propriedade não afeta a ordem dos objetos Bookmark na <see cref="T:Microsoft.Office.Interop.Word.Bookmarks" /> coleção.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Exists">
@@ -216,8 +204,7 @@
       <Docs>
         <param name="Name">Nome do indicador.</param>
         <summary>Determina se o indicador especificado existe.</summary>
-        <returns>
-          <b>True</b> se o indicador especificado existe, <b>False</b> caso não.</returns>
+        <returns><b>True</b> se o indicador especificado existir, <b>false</b> se não.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -339,13 +326,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define um valor que indica se os indicadores ocultos serão incluídos no <see cref="T:Microsoft.Office.Interop.Word.Bookmarks" /> conjunto.</summary>
+        <summary>Retorna ou define um valor que indica se os <see cref="T:Microsoft.Office.Interop.Word.Bookmarks" /> indicadores ocultos estão incluídos na coleção.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Esta propriedade também controla se os indicadores ocultos estão listados na caixa de diálogo indicador (menu Inserir).</para>
-          <para>Oculto indicadores são automaticamente inseridos quando referências cruzadas são inseridas no documento.</para>
-          <para />
-        </remarks>
+        <remarks><para>Essa propriedade também controla se os indicadores ocultos estão listados na caixa de diálogo indicador (menu Inserir).</para>
+          <para>Os indicadores ocultos são automaticamente inseridos quando referências cruzadas são inseridas no documento.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

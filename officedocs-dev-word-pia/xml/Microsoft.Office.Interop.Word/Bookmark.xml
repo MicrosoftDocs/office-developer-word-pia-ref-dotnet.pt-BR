@@ -1,13 +1,5 @@
 <Type Name="Bookmark" FullName="Microsoft.Office.Interop.Word.Bookmark">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="2164b8c51939ffb7e00b90163ced95a4db5c49d8" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20665220" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Bookmark" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="4d16f348543910c5ebcb48db2c87d1c11e3f73c5" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146343" /></Metadata><TypeSignature Language="C#" Value="public interface Bookmark" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Bookmark" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Bookmark" />
   <TypeSignature Language="VB.NET" Value="Public Interface Bookmark" />
@@ -27,15 +19,13 @@
   </Attributes>
   <Docs>
     <summary>Representa um único indicador.</summary>
-    <remarks>
-      <para>O objeto <b>indicador</b> é um membro do <see cref="T:Microsoft.Office.Interop.Word.Bookmarks" /> conjunto. A coleção Bookmarks inclui todos os indicadores listados na caixa de diálogo indicador (menu Inserir).</para>
-      <para>Uso <b>indicadores</b>(<paramref name="index" />), onde <paramref name="index" /> é o nome do indicador ou número de índice, para retornar um único objeto <b>Bookmark</b> . Você deve coincidir exatamente a ortografia (mas não necessariamente as maiusculas/minúsculas) do nome do indicador.</para>
-      <para>o número de índice representa a posição do indicador na <see cref="T:Microsoft.Office.Interop.Word.Selection" /> ou <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto. Para o <see cref="T:Microsoft.Office.Interop.Word.Document" /> do objeto, o número de índice representa a posição do indicador na lista alfabética de indicadores na caixa de diálogo indicadores (clique em nome para classificar a lista de indicadores em ordem alfabética).</para>
-      <para>Uso o <see cref="M:Microsoft.Office.Interop.Word.Bookmarks.Add(System.String,System.Object@)" /> método para adicionar um indicador a um intervalo de documento.</para>
-      <para>Uso o <see cref="P:Microsoft.Office.Interop.Word.Range.BookmarkID" /> propriedade com um objeto range ou selection para retornar o número de índice do objeto <b>Bookmark</b> na coleção <b>Bookmarks</b> .</para>
-      <para>Uso o <see cref="M:Microsoft.Office.Interop.Word.Bookmarks.Exists(System.String)" /> método para determinar se um indicador já existe na seleção, intervalo ou documento.</para>
-      <para />
-    </remarks>
+    <remarks><para>O objeto <b>Bookmark</b> é um membro da <see cref="T:Microsoft.Office.Interop.Word.Bookmarks" /> coleção. A coleção Bookmarks inclui todos os indicadores listados na caixa de diálogo indicador (menuInserir ).</para>
+      <para>Use <b>bookmarks</b>(<paramref name="index" />), onde <paramref name="index" /> é o nome do indicador ou número de índice, para retornar um único objeto <b>Bookmark</b> . Você deve coincidir exatamente a ortografia (mas não necessariamente as maiusculas/minúsculas) do nome do indicador.</para>
+      <para>O número de índice representa a posição do indicador no objeto <see cref="T:Microsoft.Office.Interop.Word.Selection" /> ou <see cref="T:Microsoft.Office.Interop.Word.Range" /> . Para o <see cref="T:Microsoft.Office.Interop.Word.Document" /> objeto, o número de índice representa a posição do indicador na lista alfabética de indicadores na caixa de diálogo Bookmarks (clique em nome para classificar a lista de indicadores alfabeticamente).</para>
+      <para>Use o <see cref="M:Microsoft.Office.Interop.Word.Bookmarks.Add(System.String,System.Object@)" /> método para adicionar um indicador a um intervalo de documentos.</para>
+      <para>Use a <see cref="P:Microsoft.Office.Interop.Word.Range.BookmarkID" /> Propriedade com um objeto Range ou Selection para retornar o número de índice do objeto <b>Bookmark</b> na coleção <b>bookmarks</b> .</para>
+      <para>Use o <see cref="M:Microsoft.Office.Interop.Word.Bookmarks.Exists(System.String)" /> método para determinar se um indicador já existe na seleção, intervalo ou documento.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -61,7 +51,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o criador do objeto especificado.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o criador do objeto especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -118,7 +108,7 @@
       </Parameters>
       <Docs>
         <param name="Name">O nome do novo indicador.</param>
-        <summary>Define um novo indicador identificado pelo <paramref name="Name" /> argumento para o local marcado pelo especificado <see cref="T:Microsoft.Office.Interop.Word.Bookmark" /> objeto.</summary>
+        <summary>Define um novo indicador identificado pelo <paramref name="Name" /> argumento para o local marcado pelo objeto especificado. <see cref="T:Microsoft.Office.Interop.Word.Bookmark" /></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -148,9 +138,9 @@
       <Docs>
         <summary>Retorna um valor que indica o aplicativo no qual o objeto especificado foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto especificado foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
-          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Se o objeto especificado foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". [!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
+          <para>A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -174,7 +164,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Exclui o especificado <see cref="T:Microsoft.Office.Interop.Word.Bookmark" /> objeto.</summary>
+        <summary>Exclui o objeto <see cref="T:Microsoft.Office.Interop.Word.Bookmark" /> especificado.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -203,11 +193,9 @@
       <Docs>
         <summary>Retorna um valor que indica se o indicador especificado está vazio.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Um indicador vazio marca um local (uma seleção recolhida); ele não marca qualquer texto.</para>
-          <para>Um erro ocorrerá se o indicador especificado não existe. Use o <see cref="M:Microsoft.Office.Interop.Word.Bookmarks.Exists(System.String)" /> método para determinar se o indicador existe.</para>
-          <para />
-        </remarks>
+        <remarks><para>Um indicador vazio identifica uma posição (uma seleção recolhida), sem marcar texto algum.</para>
+          <para>Se o indicador especificado não existir, ocorrerá um erro. Use o <see cref="M:Microsoft.Office.Interop.Word.Bookmarks.Exists(System.String)" /> método para determinar se o indicador existe.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="End">
@@ -238,12 +226,10 @@
       <Docs>
         <summary>Retorna ou define a posição de caractere final de um indicador.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>O <see cref="T:Microsoft.Office.Interop.Word.Bookmark" /> objeto tem uma posição inicial e uma posição final. A posição final é o ponto mais afastado do início da história.</para>
-          <para>Essa propriedade retorna a posição de caractere final em relação ao início da história. O texto do documento principal (<b>wdMainTextStory</b>) começa com a posição de caractere 0 (zero). Você pode alterar o tamanho de um indicador, definindo esta propriedade.</para>
-          <para>Se essa propriedade for definida como um valor menor que o <see cref="P:Microsoft.Office.Interop.Word.Bookmark.Start" /> propriedade, a propriedade <b>Start</b> será definida com o mesmo valor (ou seja, a <b>Iniciar</b> e <see cref="P:Microsoft.Office.Interop.Word.Bookmark.End" /> propriedade são iguais).</para>
-          <para />
-        </remarks>
+        <remarks><para>O <see cref="T:Microsoft.Office.Interop.Word.Bookmark" /> objeto tem uma posição inicial e uma posição final. A posição final é o ponto mais afastado do início da história.</para>
+          <para>Essa propriedade retorna a posição de caractere final em relação ao início da história. O texto do documento principal (<b>wdMainTextStory</b>) começa com a posição de caractere 0 (zero). Você pode alterar o tamanho de um indicador definindo essa propriedade.</para>
+          <para>Se essa propriedade for definida como um valor menor do que <see cref="P:Microsoft.Office.Interop.Word.Bookmark.Start" /> a propriedade, a propriedade <b>Start</b> será definida com o mesmo valor (ou seja, <b></b> o início <see cref="P:Microsoft.Office.Interop.Word.Bookmark.End" /> e a propriedade serão iguais).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -269,7 +255,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o nome do grupo de contas <see cref="T:Microsoft.Office.Interop.Word.Bookmark" /> objeto.</summary>
+        <summary>Retorna o nome do objeto especificado <see cref="T:Microsoft.Office.Interop.Word.Bookmark" /> .</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -297,7 +283,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o objeto pai do especificado <see cref="T:Microsoft.Office.Interop.Word.Bookmark" /> objeto.</summary>
+        <summary>Retorna o objeto pai do objeto especificado <see cref="T:Microsoft.Office.Interop.Word.Bookmark" /> .</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -325,12 +311,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Range" /> object que representa a parte de um documento que tenha contida no especificado <see cref="T:Microsoft.Office.Interop.Word.Bookmark" /> objeto.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto que representa a parte de um documento que está contida no objeto especificado <see cref="T:Microsoft.Office.Interop.Word.Bookmark" /> .</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Para obter informações sobre como retornar um intervalo de um documento, consulte o <see cref="M:Microsoft.Office.Interop.Word.DocumentClass.Range(System.Object@,System.Object@)" /> método.</para>
-          <para />
-        </remarks>
+        <remarks><para>Para obter informações sobre como retornar um intervalo de um documento, <see cref="M:Microsoft.Office.Interop.Word.DocumentClass.Range(System.Object@,System.Object@)" /> consulte o método.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -354,11 +338,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Seleciona especificado <see cref="T:Microsoft.Office.Interop.Word.Bookmark" /> objeto.</summary>
-        <remarks>
-          <para>Depois de usar esse método, use o <see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> propriedade para trabalhar com os itens selecionados.</para>
-          <para />
-        </remarks>
+        <summary>Seleciona o objeto <see cref="T:Microsoft.Office.Interop.Word.Bookmark" /> especificado.</summary>
+        <remarks><para>Depois de usar esse método, use <see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> a propriedade para trabalhar com os itens selecionados. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Start">
@@ -389,12 +371,10 @@
       <Docs>
         <summary>Retorna ou define a posição de caractere inicial de um indicador.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>O <see cref="T:Microsoft.Office.Interop.Word.Bookmark" /> objeto tem uma posição inicial e uma posição final. A posição final é o ponto mais afastado do início da história.</para>
-          <para>Essa propriedade retorna a posição de caractere final em relação ao início da história. O texto do documento principal (<b>wdMainTextStory</b>) começa com a posição de caractere 0 (zero). Você pode alterar o tamanho de um indicador, definindo esta propriedade.</para>
-          <para>Se essa propriedade é definida como um valor maior do que o <see cref="P:Microsoft.Office.Interop.Word.Bookmark.End" /> propriedade, a propriedade <b>End</b> é definida com o mesmo valor de <see cref="P:Microsoft.Office.Interop.Word.Bookmark.Start" /> propriedade.</para>
-          <para />
-        </remarks>
+        <remarks><para>O <see cref="T:Microsoft.Office.Interop.Word.Bookmark" /> objeto tem uma posição inicial e uma posição final. A posição final é o ponto mais afastado do início da história.</para>
+          <para>Essa propriedade retorna a posição de caractere final em relação ao início da história. O texto do documento principal (<b>wdMainTextStory</b>) começa com a posição de caractere 0 (zero). Você pode alterar o tamanho de um indicador definindo essa propriedade.</para>
+          <para>Se essa propriedade for definida como um valor maior que o da <see cref="P:Microsoft.Office.Interop.Word.Bookmark.End" /> Propriedade, a propriedade <b>end</b> será definida com o mesmo valor que a <see cref="P:Microsoft.Office.Interop.Word.Bookmark.Start" /> propriedade.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="StoryType">
@@ -420,7 +400,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdStoryType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o tipo de texto para o indicador especificado.</summary>
+        <summary>Retorna o tipo de texto do indicador especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

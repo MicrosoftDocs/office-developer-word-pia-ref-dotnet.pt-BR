@@ -1,13 +1,5 @@
 <Type Name="XSLTransform" FullName="Microsoft.Office.Interop.Word.XSLTransform">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="5afe73d6a3b568590a9d71b5f56818207a8810b5" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20665391" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface XSLTransform" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="324dfb612385ddd52c1fa1790b0f5a2a602515b4" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34145398" /></Metadata><TypeSignature Language="C#" Value="public interface XSLTransform" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract XSLTransform" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.XSLTransform" />
   <TypeSignature Language="VB.NET" Value="Public Interface XSLTransform" />
@@ -27,11 +19,9 @@
   </Attributes>
   <Docs>
     <summary>Representa uma única XSLT (Transformação em XSL) registrada.</summary>
-    <remarks>
-      <para>Use o <see cref="M:Microsoft.Office.Interop.Word.XSLTransforms.Add(System.String,System.Object@,System.Boolean)" /> método do <see cref="T:Microsoft.Office.Interop.Word.XSLTransforms" /> conjunto para adicionar um XSLT individual à lista de XSLTs disponíveis para um esquema.</para>
-      <para>Uso o <see cref="P:Microsoft.Office.Interop.Word.XSLTransforms.Item(System.Object@)" /> propriedade do <see cref="T:Microsoft.Office.Interop.Word.XSLTransforms" /> coleção, para retornar um único objeto <b>XSLTransform</b> .</para>
-      <para />
-    </remarks>
+    <remarks><para>Use o <see cref="M:Microsoft.Office.Interop.Word.XSLTransforms.Add(System.String,System.Object@,System.Boolean)" /> método da <see cref="T:Microsoft.Office.Interop.Word.XSLTransforms" /> coleção para adicionar um XSLT individual à lista de XSLTs disponíveis para um esquema.</para>
+      <para>Use a <see cref="P:Microsoft.Office.Interop.Word.XSLTransforms.Item(System.Object@)" /> propriedade da <see cref="T:Microsoft.Office.Interop.Word.XSLTransforms" /> coleção para retornar um único objeto <b>XSLTransform</b> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Alias">
@@ -63,8 +53,7 @@
         <Parameter Name="AllUsers" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="AllUsers">
-          <b>true</b> para armazenar o alias na chave do Registro HKEY_LOCAL_MACHINE; <b>false</b> para armazenar o alias na chave do registro HKEY_CURRENT_USER. Só use esse parâmetro para definir o <see cref="P:Microsoft.Office.Interop.Word.XSLTransform.Alias(System.Boolean)" />  valor de propriedade, não para obter o <see cref="P:Microsoft.Office.Interop.Word.XSLTransform.Alias(System.Boolean)" />  o valor da propriedade.</param>
+        <param name="AllUsers"><b>true</b> para armazenar o alias na chave do registro HKEY_LOCAL_MACHINE; <b>false</b> para armazenar o alias na chave do registro HKEY_CURRENT_USER. Use este parâmetro somente para definir o <see cref="P:Microsoft.Office.Interop.Word.XSLTransform.Alias(System.Boolean)" />  valor da propriedade, não para obter <see cref="P:Microsoft.Office.Interop.Word.XSLTransform.Alias(System.Boolean)" />  o valor da propriedade.</param>
         <summary>Retorna uma <b>cadeia de caracteres</b> que representa o nome amigável para o objeto especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -93,7 +82,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -123,9 +112,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
-          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". [!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
+          <para>A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -210,8 +199,8 @@
         <Parameter Name="AllUsers" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="AllUsers">Opcional <b>booleano</b>. <b>True</b> se todos os usuários têm acesso ao objeto especificado.</param>
-        <summary>Retorna ou define o local da transformação especificado.</summary>
+        <param name="AllUsers"><b>Boolean</b>opcional. <b>True</b> se todos os usuários têm acesso ao objeto especificado.</param>
+        <summary>Retorna ou define o local da transformação especificada.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

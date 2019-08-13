@@ -1,13 +1,5 @@
 <Type Name="HiLoLines" FullName="Microsoft.Office.Interop.Word.HiLoLines">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="af256d7ae1512ad6a01e146843aaae0af2968b6b" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20664230" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface HiLoLines" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="86e78de88b6fb0a6e3ca7ee038ce84a4f725e468" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146721" /></Metadata><TypeSignature Language="C#" Value="public interface HiLoLines" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract HiLoLines" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.HiLoLines" />
   <TypeSignature Language="VB.NET" Value="Public Interface HiLoLines" />
@@ -27,7 +19,10 @@
   </Attributes>
   <Docs>
     <summary>Representa as linhas de máximo/mínimo em um grupo de gráficos.</summary>
-    <remarks>As linhas de máximo/mínimo de <para>conectam o ponto mais alto com o ponto mais baixo de cada categoria do grupo de gráficos. Grupos de linha somente 2D podem ter linhas de máximo/mínimo. Este objeto não é uma coleção. Não há nenhum objeto que representa uma linha de máximo/mínimo único; você tiver ativadas para todos os pontos em um grupo de gráficos de linhas de máximo/mínimo ou você as desativados.</para><para>Se o <see cref="P:Microsoft.Office.Interop.Word.ChartGroup.HasHiLoLines" /> propriedade for <b>False</b>, a maioria das propriedades do <see cref="T:Microsoft.Office.Interop.Word.HiLoLines" />objeto estão desabilitadas.</para><para>Você pode usar o <see cref="P:Microsoft.Office.Interop.Word.ChartGroup.HiLoLines" /> propriedade para retornar o <see cref="T:Microsoft.Office.Interop.Word.HiLoLines" /> objeto.</para><para /></remarks>
+    <remarks><para>As linhas de máximo/mínimo conectam o ponto mais elevado ao ponto mais baixo em cada uma das categorias do grupo de gráficos. Somente grupos de linhas 2D podem ter linhas de máximo/mínimo. Este objeto não é uma coleção. Não há um objeto que represente uma única linha de máximo/mínimo; Você tem linhas de máximo/mínimo ativadas para todos os pontos em um grupo de gráficos ou você as desativa.</para>
+      <para>Se a <see cref="P:Microsoft.Office.Interop.Word.ChartGroup.HasHiLoLines" /> propriedade for <b>false</b>, a maioria das propriedades <see cref="T:Microsoft.Office.Interop.Word.HiLoLines" />do objeto estará desabilitada.</para>
+      <para>Você pode usar a <see cref="P:Microsoft.Office.Interop.Word.ChartGroup.HiLoLines" /> propriedade para retornar o <see cref="T:Microsoft.Office.Interop.Word.HiLoLines" /> objeto.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -53,10 +48,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Quando usado sem um qualificador de objeto, essa propriedade retorna uma <see cref="T:Microsoft.Office.Interop.Word._Application" /> object que representa o aplicativo Microsoft Word. Quando usada com um qualificador de objeto, essa propriedade retornará um objeto <b>Application</b> que representa o criador do objeto especificado (você pode usar essa propriedade com um objeto Automation do OLE para retornar o aplicativo desse objeto). Somente leitura.</summary>
-        <value>
-          <b>Object</b>
-        </value>
+        <summary>Quando usado sem um qualificador de objeto, essa propriedade <see cref="T:Microsoft.Office.Interop.Word._Application" /> retorna um objeto que representa o aplicativo Microsoft Word. Quando usada com um qualificador de objeto, essa propriedade retornará um objeto <b>Application</b> que representa o criador do objeto especificado (você pode usar essa propriedade com um objeto Automation do OLE para retornar o aplicativo desse objeto). Somente leitura.</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,9 +77,7 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna a borda do objeto. Somente leitura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartBorder" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartBorder" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -114,13 +105,9 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna um <b>inteiro</b> de 32 bits que indica o aplicativo no qual o objeto especificado foi criado. Somente leitura.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Word, a propriedade <b>Creator</b> retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD".  Essa propriedade principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <value><b>Integer</b></value>
+        <remarks><para>Se o objeto foi criado no Microsoft Word, a propriedade <b>Creator</b> retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD".  Essa propriedade principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -173,9 +160,7 @@
       <Docs>
         <summary>Retorna a linha, preenchimento e efeito da formatação do objeto.
 Somente leitura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -203,9 +188,7 @@ Somente leitura.</summary>
       </ReturnValue>
       <Docs>
         <summary>Retorna o nome do objeto.</summary>
-        <value>
-          <b>String</b>
-        </value>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -233,9 +216,7 @@ Somente leitura.</summary>
       </ReturnValue>
       <Docs>
         <summary>Retorna o pai do objeto especificado. Somente leitura.</summary>
-        <value>
-          <b>Object</b>
-        </value>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,13 +1,5 @@
 <Type Name="WebOptions" FullName="Microsoft.Office.Interop.Word.WebOptions">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="0dd920613af1fb3693498c891ecd9ed8d8ff5348" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20663830" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface WebOptions" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="f88f221df7d67e0a725679f57bd1b9a883ba6147" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142728" /></Metadata><TypeSignature Language="C#" Value="public interface WebOptions" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract WebOptions" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.WebOptions" />
   <TypeSignature Language="VB.NET" Value="Public Interface WebOptions" />
@@ -27,11 +19,9 @@
   </Attributes>
   <Docs>
     <summary>Contém atributos no nível do documento usados pelo Microsoft Word quando você salva um documento como uma página da Web ou abre uma página da Web.</summary>
-    <remarks>
-      <para>Você pode retornar ou definir atributos no nível do aplicativo (global) ou no nível do documento. (Observe que os valores de atributo podem ser diferentes de um documento para outro, dependendo do valor do atributo no momento em que o documento foi salvo). Definições de atributo de nível de documento substituem as definições de atributo de nível de aplicativo. Atributos de nível de aplicativo estão contidos no <see cref="T:Microsoft.Office.Interop.Word.DefaultWebOptions" /> objeto.</para>
-      <para>Uso o <see cref="P:Microsoft.Office.Interop.Word._Document.WebOptions" /> propriedade para retornar o objeto <b>WebOptions</b> .</para>
-      <para />
-    </remarks>
+    <remarks><para>Você pode retornar ou definir atributos no nível do aplicativo (global) ou no nível do documento. (Observe que os valores de atributo podem ser diferentes de um documento para outro, dependendo do valor do atributo no momento em que o documento foi salvo.) Configurações de atributo de nível de documento substituem as configurações de atributo no nível do aplicativo. Os atributos no nível do <see cref="T:Microsoft.Office.Interop.Word.DefaultWebOptions" /> aplicativo estão contidos no objeto.</para>
+      <para>Use a <see cref="P:Microsoft.Office.Interop.Word._Document.WebOptions" /> propriedade para retornar o <b></b> objeto WebOptions.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="AllowPNG">
@@ -60,13 +50,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> se o formato PNG (Portable Network Graphics) é permitido como um formato de imagem quando você salva um documento como uma página da Web. <b>False</b> se o PNG não é permitido como um formato de saída. O valor padrão é <b>False</b>.</summary>
+        <summary><b>True</b> se o formato PNG (Portable Network Graphics) é permitido como um formato de imagem quando você salva um documento como uma página da Web. <b>False</b> se o PNG não é permitido como um formato de saída. O valor padrão é <b>False</b>.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se você salvar imagens no formato PNG e se os navegadores da Web que você está direcionando suporte ao formato PNG, você pode melhorar a qualidade da imagem ou reduzir o tamanho dos arquivos de imagem e, portanto, diminuir o tempo de download.</para>
-          <para />
-        </remarks>
+        <remarks><para>Se você salvar imagens no formato PNG e se os navegadores da Web de destino oferecerem suporte ao formato PNG, você poderá melhorar a qualidade das imagens ou reduzir o tamanho delas, diminuindo assim o tempo de download.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -92,7 +79,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -125,21 +112,19 @@
       <Docs>
         <summary>Retorna ou define uma constante que representa o nível do navegador da Web no qual você deseja direcionar a página da Web especificada.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Essa propriedade é ignorada se a <see cref="P:Microsoft.Office.Interop.Word.WebOptions.OptimizeForBrowser" /> propriedade estiver definida como <b>False</b>. </para>
+        <remarks><para>Essa propriedade será ignorada se <see cref="P:Microsoft.Office.Interop.Word.WebOptions.OptimizeForBrowser" /> a propriedade for definida como <b>false</b>. </para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdBrowserLevel" /> pode ser uma destas constantes <b>WdBrowserLevel</b> : </para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdBrowserLevel" />pode ser uma destas constantes <b>WdBrowserLevel</b> : </para>
           <para>
-            <b>wdBrowserLevelMicrosoftInternetExplorer6 </b>
+            <b>wdBrowserLevelMicrosoftInternetExplorer6</b>
           </para>
           <para>
-            <b>wdBrowserLevelMicrosoftInternetExplorer5 </b>
+            <b>wdBrowserLevelMicrosoftInternetExplorer5</b>
           </para>
           <para>
             <b>wdBrowserLevelV4</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -167,9 +152,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
-          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". [!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
+          <para>A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Encoding">
@@ -226,30 +211,31 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o sufixo de pasta que o Microsoft Word usa quando você salva um documento como uma página da Web, use nomes longos de arquivos e opta por salvar os arquivos de suporte em uma pasta separada (ou seja, se o <see cref="P:Microsoft.Office.Interop.Word.WebOptions.UseLongFileNames" /> e <see cref="P:Microsoft.Office.Interop.Word.WebOptions.OrganizeInFolder" /> propriedades são definidas como <b>True</b>).</summary>
+        <summary>Retorna o sufixo de pasta que o Microsoft Word usa quando você salva um documento como uma página da Web, usa nomes de arquivo longos e escolhe salvar arquivos de suporte em uma pasta separada (ou seja <see cref="P:Microsoft.Office.Interop.Word.WebOptions.UseLongFileNames" /> , <see cref="P:Microsoft.Office.Interop.Word.WebOptions.OrganizeInFolder" /> se as propriedades e estiverem definidas como <b>true</b>).</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Documentos criados recentemente usam o sufixo retornado pelo <see cref="P:Microsoft.Office.Interop.Word.DefaultWebOptions.FolderSuffix" /> propriedade do <see cref="T:Microsoft.Office.Interop.Word.DefaultWebOptions" /> objeto. O valor da propriedade <b>FolderSuffix</b> do <see cref="T:Microsoft.Office.Interop.Word.WebOptions" /> objeto pode ser diferente do objeto <b>DefaultWebOptions</b> se o documento foi editado anteriormente em uma versão de idioma diferente do Microsoft Word. Você pode usar o <see cref="M:Microsoft.Office.Interop.Word.WebOptions.UseDefaultFolderSuffix" /> método para alterar o sufixo para o idioma que você está usando no Microsoft Office.</para>
-          <para>Por padrão, o nome da pasta de suporte é o nome de página da Web mais um sublinhado (_), um ponto (.) ou um hífen (-) e a palavra "files" (aparecendo no idioma da versão do Word no qual o arquivo foi salvo como página da Web). Por exemplo, suponha que você use a versão do idioma holandês do Word para salvar um arquivo chamado "Page1" como uma página da Web. O nome padrão da pasta de suporte é Page1_bestanden.</para>
-          <para>a seguinte tabela lista cada versão de idioma do Office e dá correspondente <see cref="P:Microsoft.Office.Core.LanguageSettings.LanguageID(Microsoft.Office.Core.MsoAppLanguageID)" /> sufixo de pasta e o valor da propriedade. Para os idiomas que não estejam listados na tabela, o sufixo "Files" é usado.</para>
+        <remarks><para>Os documentos criados recentemente usam o sufixo retornado pela <see cref="P:Microsoft.Office.Interop.Word.DefaultWebOptions.FolderSuffix" /> Propriedade do <see cref="T:Microsoft.Office.Interop.Word.DefaultWebOptions" /> objeto. O valor da propriedade <b>FolderSuffix</b> do <see cref="T:Microsoft.Office.Interop.Word.WebOptions" /> objeto pode ser diferente do objeto <b>DefaultWebOptions</b> se o documento tiver sido editado anteriormente em uma versão de idioma diferente do Microsoft Word. Você pode usar o <see cref="M:Microsoft.Office.Interop.Word.WebOptions.UseDefaultFolderSuffix" /> método para alterar o sufixo para o idioma que você está usando no Microsoft Office.</para>
+          <para>Por padrão, o nome da pasta de suporte é o nome da página da Web mais um sublinhado (_), um ponto (.) ou um hífen (-) e a palavra "files" (exibida no idioma da versão do Word na qual o arquivo foi salvo como página da Web). Por exemplo, suponha que você use a versão do idioma holandês do Word para salvar um arquivo chamado "Page1" como página da Web. O nome padrão da pasta de suporte será Page1_bestanden.</para>
+          <para>A tabela a seguir lista cada versão de idioma do Office e fornece <see cref="P:Microsoft.Office.Core.LanguageSettings.LanguageID(Microsoft.Office.Core.MsoAppLanguageID)" /> seu valor de propriedade correspondente e o sufixo de pasta. Para os idiomas que não estejam listados na tabela, o sufixo "Files" é usado.</para>
           <list type="table">
             <item>
               <description>Árabe</description>
               <description>1025</description>
-              <description>. Files</description>
+              <description>. arquivos</description>
             </item>
             <item>
-              <description>basco</description>
+              <description>Basco (Basco)</description>
               <description>1069</description>
               <description>_fitxategiak</description>
             </item>
             <item>
-              <description>brasileiro</description>de
-              <description>1046</description><description>_arquivos</description></item>
+              <description>Português</description>
+              <description>1046</description>
+              <description>_arquivos</description>
+            </item>
             <item>
-              <description>búlgaro</description>
+              <description>Búlgaro</description>
               <description>1026</description>
-              <description>. Files</description>
+              <description>. arquivos</description>
             </item>
             <item>
               <description>Catalão</description>
@@ -257,18 +243,20 @@
               <description>_fitxers</description>
             </item>
             <item>
-              <description>Chinês - simplificado</description>
+              <description>Chinês - Simplificado</description>
               <description>2052</description>
-              <description>. Files</description>
+              <description>. arquivos</description>
             </item>
             <item>
-              <description>Chinês - tradicional</description>
+              <description>Chinês - Tradicional</description>
               <description>1028</description>
-              <description>. Files</description>
+              <description>. arquivos</description>
             </item>
             <item>
-              <description>Croata</description>de
-              <description>1050</description><description>_datoteke</description></item>
+              <description>Croata</description>
+              <description>1050</description>
+              <description>_datoteke</description>
+            </item>
             <item>
               <description>Tcheco</description>
               <description>1029</description>
@@ -277,20 +265,28 @@
             <item>
               <description>Dinamarquês</description>
               <description>1030</description>
-              <description>-arquivador</description>
+              <description>-filer</description>
             </item>
             <item>
-              <description>Holandês</description>de
-              <description>1043</description><description>_bestanden</description></item>
+              <description>Holandês</description>
+              <description>1043</description>
+              <description>_bestanden</description>
+            </item>
             <item>
-              <description>Inglês</description>de
-              <description>1033</description><description>_files</description></item>
+              <description>Inglês</description>
+              <description>1033</description>
+              <description>_files</description>
+            </item>
             <item>
-              <description>Estoniano</description>de
-              <description>1061</description><description>_failid</description></item>
+              <description>Estoniano</description>
+              <description>1061</description>
+              <description>_failid</description>
+            </item>
             <item>
-              <description>Finlandês</description>de
-              <description>1035</description><description>_tiedostot</description></item>
+              <description>Finlandês</description>
+              <description>1035</description>
+              <description>_tiedostot</description>
+            </item>
             <item>
               <description>Francês</description>
               <description>1036</description>
@@ -304,40 +300,51 @@
             <item>
               <description>Grego</description>
               <description>1032</description>
-              <description>. Files</description>
+              <description>. arquivos</description>
             </item>
             <item>
               <description>Hebraico</description>
               <description>1037</description>
-              <description>. Files</description>
+              <description>. arquivos</description>
             </item>
             <item>
-              <description>Húngaro</description>de
-              <description>1038</description><description>_elemei</description></item>
+              <description>Húngaro</description>
+              <description>1038</description>
+              <description>_elemei</description>
+            </item>
             <item>
-              <description>Italiano</description>de
-              <description>1040</description><description>_file</description></item>
+              <description>Italiano</description>
+              <description>1040</description>
+              <description>_file</description>
+            </item>
             <item>
-              <description>Japonês</description>de
-              <description>1041</description><description>. Files</description></item>
+              <description>Japonês</description>
+              <description>1041</description>
+              <description>. arquivos</description>
+            </item>
             <item>
               <description>Coreano</description>
               <description>1042</description>
-              <description>. Files</description>
+              <description>. arquivos</description>
             </item>
           </list>
-          <para>Valores de propriedade 
-            <b>LanguageID</b></para>
+          <para>
+            <b></b> Valores da propriedade LanguageID</para>
           <list type="table">
-            <item>De
-              <description>1062</description><description>letão</description><description>_fails</description></item>
             <item>
-              <description>lituano</description>de
-              <description>1063</description><description>_bylos</description></item>
+              <description>Letão</description>
+              <description>1062</description>
+              <description>_fails</description>
+            </item>
             <item>
-              <description>norueguês</description>
+              <description>Lituano</description>
+              <description>1063</description>
+              <description>_bylos</description>
+            </item>
+            <item>
+              <description>Norueguês</description>
               <description>1044</description>
-              <description>-arquivador</description>
+              <description>-filer</description>
             </item>
             <item>
               <description>Polonês</description>
@@ -345,20 +352,24 @@
               <description>_pliki</description>
             </item>
             <item>
-              <description>Português</description>
+              <description>Português (Portugal)</description>
               <description>2070</description>
               <description>_ficheiros</description>
             </item>
             <item>
-              <description>Romeno</description>de
-              <description>1048</description><description>. Files</description></item>
+              <description>Romeno</description>
+              <description>1048</description>
+              <description>. arquivos</description>
+            </item>
             <item>
-              <description>Russo</description>de
-              <description>1049</description><description>. Files</description></item>
+              <description>Russo</description>
+              <description>1049</description>
+              <description>. arquivos</description>
+            </item>
             <item>
               <description>Sérvio (cirílico)</description>
               <description>3098</description>
-              <description>. Files</description>
+              <description>. arquivos</description>
             </item>
             <item>
               <description>Sérvio (latino)</description>
@@ -368,7 +379,7 @@
             <item>
               <description>Eslovaco</description>
               <description>1051</description>
-              <description>. Files</description>
+              <description>. arquivos</description>
             </item>
             <item>
               <description>Esloveno</description>
@@ -383,25 +394,30 @@
             <item>
               <description>Sueco</description>
               <description>1053</description>
-              <description>-arquivador</description>
+              <description>-filer</description>
             </item>
             <item>
-              <description>Tailandês</description>de
-              <description>1054</description><description>. Files</description></item>
+              <description>Tailandês</description>
+              <description>1054</description>
+              <description>. arquivos</description>
+            </item>
             <item>
-              <description>Turco</description>de
-              <description>1055</description><description>_dosyalar</description></item>
+              <description>Turco</description>
+              <description>1055</description>
+              <description>_dosyalar</description>
+            </item>
             <item>
               <description>Ucraniano</description>
               <description>1058</description>
-              <description>. Files</description>
+              <description>. arquivos</description>
             </item>
             <item>
-              <description>Vietnamita</description>de
-              <description>1066</description><description>. Files</description></item>
+              <description>Vietnamita</description>
+              <description>1066</description>
+              <description>. arquivos</description>
+            </item>
           </list>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OptimizeForBrowser">
@@ -430,8 +446,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> se o Microsoft Word otimizar as novas páginas da Web criadas no Word para o navegador da Web especificado pelo <see cref="P:Microsoft.Office.Interop.Word.DefaultWebOptions.BrowserLevel" /> propriedade (para o <see cref="T:Microsoft.Office.Interop.Word.DefaultWebOptions" /> objeto). <b>True</b> se o Word otimizar a página da Web especificada para o navegador da Web especificada pelo <see cref="P:Microsoft.Office.Interop.Word.WebOptions.BrowserLevel" /> propriedade (para o <see cref="T:Microsoft.Office.Interop.Word.WebOptions" /> objeto).</summary>
+        <summary><b>True</b> se o Microsoft Word otimiza novas páginas da Web criadas no Word para o navegador da Web especificado <see cref="P:Microsoft.Office.Interop.Word.DefaultWebOptions.BrowserLevel" /> pela propriedade (para <see cref="T:Microsoft.Office.Interop.Word.DefaultWebOptions" /> o objeto). <b>True</b> se o Word otimizar a página da Web especificada para o navegador da Web especificado <see cref="P:Microsoft.Office.Interop.Word.WebOptions.BrowserLevel" /> pela propriedade (para <see cref="T:Microsoft.Office.Interop.Word.WebOptions" /> o objeto).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -462,15 +477,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> se todos os arquivos de suportados, como texturas de plano de fundo e gráficos, são organizados em uma pasta separada quando você salva o documento especificado como uma página da Web. <b>False</b> se os arquivos de suporte são salvos na mesma pasta da página da Web. O valor padrão é <b>True</b>.</summary>
+        <summary><b>True</b> se todos os arquivos de suportados, como texturas de plano de fundo e gráficos, são organizados em uma pasta separada quando você salva o documento especificado como uma página da Web. <b>False</b> se os arquivos de suporte são salvos na mesma pasta da página da Web. O valor padrão é <b>True</b>.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>A nova pasta é criada na pasta onde você salvou a página da Web e é nomeada conforme o documento. Se os nomes de arquivo longos forem usados, um sufixo é adicionado ao nome da pasta. O <see cref="P:Microsoft.Office.Interop.Word.WebOptions.FolderSuffix" /> propriedade retornará se o sufixo de pasta do suporte a idioma selecionado ou instalado ou o sufixo de pasta padrão.</para>
-          <para>Se você salvar um documento que foi salvo anteriormente com a propriedade <b>OrganizeInFolder</b> definida como um valor diferente, o Microsoft Word move automaticamente o suporte arquivos dentro ou fora da pasta, conforme apropriado.</para>
-          <para>Se você não usar nomes de arquivo longos (ou seja, se o <see cref="P:Microsoft.Office.Interop.Word.WebOptions.UseLongFileNames" /> propriedade estiver definida como <b>False</b>), o Word salva automaticamente quaisquer arquivos de suporte em uma pasta separada. Os arquivos não podem ser salvos na mesma pasta da página da Web.</para>
-          <para />
-        </remarks>
+        <remarks><para>A nova pasta é criada na pasta onde você salvou a página da Web e é nomeada conforme o documento. Se os nomes de arquivo longos forem usados, um sufixo é adicionado ao nome da pasta. A <see cref="P:Microsoft.Office.Interop.Word.WebOptions.FolderSuffix" /> propriedade retorna FolderSuffix se o sufixo de pasta do suporte a idioma que você selecionou ou instalou ou o sufixo de pasta padrão.</para>
+          <para>Se você salvar um documento que foi salvo anteriormente com a propriedade <b>OrganizeInFolder</b> definida como um valor diferente, o Microsoft Word move automaticamente os arquivos de suporte para dentro ou fora da pasta, conforme apropriado.</para>
+          <para>Se você não usar nomes de arquivo longos (ou seja, se <see cref="P:Microsoft.Office.Interop.Word.WebOptions.UseLongFileNames" /> a propriedade for definida como <b>false</b>), o Word salvará automaticamente quaisquer arquivos de suporte em uma pasta separada. Os arquivos não podem ser salvos na mesma pasta da página da Web.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -529,12 +541,10 @@
       <Docs>
         <summary>Retorna ou define a densidade (pixels por polegada) das imagens gráficas e células da tabela em uma página da Web.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>o intervalo de configurações é geralmente de 19 a 480 e definições comuns para tamanhos de tela populares são 72, 96 e 120. A configuração padrão é 96.</para>
-          <para>Dessa propriedade determina o tamanho das imagens e células na página da Web especificada relativa ao tamanho do texto sempre que você exibe o documento salvo em um navegador da Web. As dimensões físicas da imagem resultante ou célula são o resultado das dimensões originais (em polegadas) multiplicado pelo número de pixels por polegada.</para>
-          <para>Uso o <see cref="P:Microsoft.Office.Interop.Word.WebOptions.ScreenSize" /> propriedade para definir o tamanho de tela ideal para os navegadores da Web desejados.</para>
-          <para />
-        </remarks>
+        <remarks><para>O intervalo de configurações varia geralmente de 19 a 480, e as configurações comuns para tamanhos de tela normais são 72, 96 e 120. A configuração padrão é 96.</para>
+          <para>Esta propriedade determinará o tamanho das imagens e das células na página da Web especificada em relação ao tamanho do texto sempre que você exibir o documento salvo em um navegador da Web. As dimensões físicas da imagem ou da célula são resultado das dimensões originais (em polegadas) multiplicadas pelo número de pixels por polegada.</para>
+          <para>Use a <see cref="P:Microsoft.Office.Interop.Word.WebOptions.ScreenSize" /> propriedade para definir o tamanho de tela ideal para os navegadores da Web de destino.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RelyOnCSS">
@@ -563,14 +573,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> se folhas de estilo em cascata (CSS) são usadas para formatação de fontes quando você exibe um documento salvo em um navegador da Web.</summary>
+        <summary><b>True</b> se folhas de estilo em cascata (CSS) são usadas para formatação de fontes quando você exibe um documento salvo em um navegador da Web.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Microsoft Word cria um arquivo de folha de estilo em cascata e o salva na pasta especificada ou para a mesma pasta da página da Web, dependendo do valor do <see cref="P:Microsoft.Office.Interop.Word.WebOptions.OrganizeInFolder" /> propriedade. <b>False</b> se HTML &lt;fonte&gt; marcas e folhas de estilo em cascata são usadas. O valor padrão é <b>True</b>.</para>
-          <para>Você deve definir essa propriedade como <b>True</b> se o seu navegador da Web suportar porque isso fornecerá a você um layout mais preciso e a formatação de folhas de estilo em cascata controlam na página da Web e torná-lo a se parecem mais seu documento (como ela aparece no Word).</para>
-          <para />
-        </remarks>
+        <remarks><para>O Microsoft Word cria um arquivo de folha de estilos em cascata e o salva na pasta especificada ou na mesma pasta que a página da Web, dependendo do valor da <see cref="P:Microsoft.Office.Interop.Word.WebOptions.OrganizeInFolder" /> propriedade. <b>False</b> se as &lt;marcas&gt; de fonte HTML e as folhas de estilo em cascata forem usadas. O valor padrão é <b>True</b>.</para>
+          <para>Você deve definir essa propriedade como <b>true</b> se o seu navegador da Web oferecer suporte a folhas de estilo em cascata, pois isso fornecerá mais precisão no layout e no controle de formatação na sua página da Web e a tornará mais parecida com o seu documento (como aparece no Word).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RelyOnVML">
@@ -599,14 +606,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> se os arquivos de imagem não são gerados a partir de objetos desenhados quando você salva um documento como uma página da Web. <b>False</b> se forem geradas imagens. O valor padrão é <b>False</b>.</summary>
+        <summary><b>True</b> se os arquivos de imagem não são gerados a partir de objetos desenhados quando você salva um documento como uma página da Web. <b>False</b> se forem geradas imagens. O valor padrão é <b>False</b>.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>é possível reduzir os tamanhos de arquivo não gerando imagens para objetos de desenho, se o seu navegador da Web suporta vetor VML (Markup Language). Por exemplo, o Microsoft Internet Explorer 5 oferece suporte a esse recurso, e você deve definir a propriedade <b>RelyOnVML</b> como <b>True</b> , se você está direcionando este navegador. Para navegadores que não suportam VML, a imagem não aparecerá quando você exibir uma página da Web salva com essa propriedade habilitada.</para>
-          <para>Não gere imagens se a sua página da Web usa arquivos de imagem gerados anteriormente e se o local onde você salva o documento for diferente do local final da página no servidor Web.</para>
-          <para />
-        </remarks>
+        <remarks><para>Você pode reduzir o tamanho dos arquivos não gerando imagens para objetos de desenho, se o seu navegador da Web suporta vetor VML (Markup Language). Por exemplo, o Microsoft Internet Explorer 5 oferece suporte a esse recurso, e você deve definir a propriedade <b>RelyOnVML</b> como <b>True</b>, se você está direcionando este navegador. Para navegadores que não suportam VML, a imagem não aparecerá quando você visualiza uma página da Web salva com essa propriedade habilitada.</para>
+          <para>Não gere imagens se a página da Web usar arquivos de imagem gerados anteriormente e se o local onde você salva o documento for diferente do local final da página no servidor da Web.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ScreenSize">
@@ -637,43 +641,41 @@
       <Docs>
         <summary>Retorna ou define o tamanho de tela mínimo ideal (largura por altura, em pixels) que você deve usar ao visualizar o documento salvo em um navegador da Web.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
+        <remarks><para>
             <see cref="T:Microsoft.Office.Core.MsoScreenSize" />pode ser uma destas constantes <b>MsoScreenSize</b> : </para>
           <para>
-            <b>msoScreenSize1024x768 </b>
+            <b>msoScreenSize1024x768</b>
           </para>
           <para>
-            <b>msoScreenSize1152x882 </b>
+            <b>msoScreenSize1152x882</b>
           </para>
           <para>
-            <b>msoScreenSize1152x900 </b>
+            <b>msoScreenSize1152x900</b>
           </para>
           <para>
-            <b>msoScreenSize1280x1024 </b>
+            <b>msoScreenSize1280x1024</b>
           </para>
           <para>
             <b>msoScreenSize1600x1200</b>
           </para>
           <para>
-            <b> msoScreenSize1800x1440 </b>
+            <b>msoScreenSize1800x1440</b>
           </para>
           <para>
-            <b>msoScreenSize1920x1200 </b>
+            <b>msoScreenSize1920x1200</b>
           </para>
           <para>
-            <b>msoScreenSize544x376 </b>
+            <b>msoScreenSize544x376</b>
           </para>
           <para>
-            <b>msoScreenSize640x480 </b>
+            <b>msoScreenSize640x480</b>
           </para>
           <para>
-            <b>msoScreenSize720x512 </b>
+            <b>msoScreenSize720x512</b>
           </para>
           <para>
             <b>msoScreenSize800x600</b> padrão</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TargetBrowser">
@@ -702,22 +704,22 @@
         <ReturnType>Microsoft.Office.Core.MsoTargetBrowser</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Define ou retorna uma constante que representa o navegador de destino de documentos exibidos em um navegador da Web.</summary>
+        <summary>Define ou retorna uma constante que representa o navegador de destino para documentos exibidos em um navegador da Web.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
+        <remarks><para>
             <see cref="T:Microsoft.Office.Core.MsoTargetBrowser" />pode ser uma destas constantes <b>MsoTargetBrowser</b> : </para>
           <para>
-            <b>msoTargetBrowserIE4</b> Microsoft Internet Explorer 4.0.</para>
+            <b>msoTargetBrowserIE4</b> Microsoft Internet Explorer 4,0. </para>
           <para>
-            <b>msoTargetBrowserIE5</b> o Internet Explorer 5.</para>
+            <b>msoTargetBrowserIE5</b> Internet Explorer 5. </para>
           <para>
-            <b>msoTargetBrowserIE6</b> Internet Explorer 6.</para>
+            <b>msoTargetBrowserIE6</b> Internet Explorer 6. </para>
           <para>
-            <b>msoTargetBrowserV3</b> Netscape navegador 3. x.</para>
+            <b>msoTargetBrowserV3</b> Netscape Navigator 3. x. </para>
           <para>
-            <b>msoTargetBrowserV4</b> Netscape navegador 4. x.</para> Conjuntos de propriedades 
-          <para>o <b>TargetBrowser</b> o <see cref="P:Microsoft.Office.Interop.Word.WebOptions.BrowserLevel" /> propriedade, mas <b>BrowserLevel</b> somente é importante se o <see cref="P:Microsoft.Office.Interop.Word._Document.DisableFeatures" /> propriedade estiver definida como <b>True</b>. Caso contrário, ele será ignorado. A propriedade <b>TargetBrowser</b> , no entanto, não é ignorada e define o nível de navegador para todos os documentos da Web ou para um único documento da Web.</para><para /></remarks>
+            <b>msoTargetBrowserV4</b> Netscape Navigator 4. x.</para>
+          <para>A propriedade <b>TargetBrowser</b> define a <see cref="P:Microsoft.Office.Interop.Word.WebOptions.BrowserLevel" /> Propriedade, mas <b>BrowserLevel</b> é importante apenas se a <see cref="P:Microsoft.Office.Interop.Word._Document.DisableFeatures" /> propriedade for definida como <b>true</b>. Caso contrário, será ignorado. No entanto, a propriedade <b>TargetBrowser</b> não é ignorada e define o nível do navegador para todos os documentos da Web ou para um único documento da Web.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="UseDefaultFolderSuffix">
@@ -742,11 +744,9 @@
       <Parameters />
       <Docs>
         <summary>Define o sufixo de pasta para o documento especificado com o sufixo padrão do suporte a idioma selecionado ou instalado.</summary>
-        <remarks>
-          <para>Microsoft Word usa o sufixo de pasta quando você salva um documento como uma página da Web, use nomes longos de arquivos e opta por salvar os arquivos de suporte em uma pasta separada (ou seja, se o <see cref="P:Microsoft.Office.Interop.Word.WebOptions.UseLongFileNames" /> e <see cref="P:Microsoft.Office.Interop.Word.WebOptions.OrganizeInFolder" /> propriedades são definidas como <b>True</b>).</para>
-          <para>o sufixo aparece no nome da pasta após o nome do documento. Por exemplo, se o documento é chamado "Doc1" e o idioma for inglês, o nome da pasta é Doc1_files. Os sufixos de pasta disponíveis estão listados no <see cref="P:Microsoft.Office.Interop.Word.WebOptions.FolderSuffix" /> tópico da propriedade.</para>
-          <para />
-        </remarks>
+        <remarks><para>O Microsoft Word usa o sufixo de pasta quando você salva um documento como uma página da Web, usa nomes de arquivo longos e escolhe salvar arquivos de suporte em uma pasta separada (ou seja <see cref="P:Microsoft.Office.Interop.Word.WebOptions.UseLongFileNames" /> , <see cref="P:Microsoft.Office.Interop.Word.WebOptions.OrganizeInFolder" /> se as propriedades e estiverem definidas como <b>true</b>).</para>
+          <para>O sufixo é exibido no nome da pasta depois do nome do documento. Por exemplo, se o documento for "Doc1" e o idioma for inglês, o nome da pasta será Doc1_files. Os sufixos de pasta disponíveis estão listados <see cref="P:Microsoft.Office.Interop.Word.WebOptions.FolderSuffix" /> no tópico da propriedade.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="UseLongFileNames">
@@ -775,13 +775,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> se os nomes de arquivo longos são usados quando você salva o documento como uma página da Web. <b>False</b> se não são utilizados nomes longos de arquivos e o formato de nome de arquivo do DOS (8.3) é usado. O valor padrão é <b>True</b>.</summary>
+        <summary><b>True</b> se os nomes de arquivo longos são usados quando você salva o documento como uma página da Web. <b>False</b> se não são utilizados nomes longos de arquivos e o formato de nome de arquivo do DOS (8.3) é usado. O valor padrão é <b>True</b>.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se você não usar nomes de arquivo longos e seu documento tiver arquivos de suporte, o Microsoft Word organiza automaticamente esses arquivos em uma pasta separada. Caso contrário, use o <see cref="P:Microsoft.Office.Interop.Word.WebOptions.UseLongFileNames" /> propriedade para determinar se os arquivos de suporte são organizados em uma pasta separada.</para>
-          <para />
-        </remarks>
+        <remarks><para>Se você não usar nomes de arquivo longos e seu documento tiver arquivos de suporte, o Microsoft Word organiza automaticamente esses arquivos em uma pasta separada. Caso contrário, use <see cref="P:Microsoft.Office.Interop.Word.WebOptions.UseLongFileNames" /> a propriedade para determinar se os arquivos de suporte são organizados em uma pasta separada.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

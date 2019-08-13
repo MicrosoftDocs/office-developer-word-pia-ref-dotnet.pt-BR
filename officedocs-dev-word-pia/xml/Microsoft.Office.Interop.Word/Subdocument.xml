@@ -1,13 +1,5 @@
 <Type Name="Subdocument" FullName="Microsoft.Office.Interop.Word.Subdocument">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="474871ab0e9bcec0803236bb55c332236b2e7d60" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20664176" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Subdocument" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="c62a47b9e81261c6e830b9e0cc33dec363fa4210" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146070" /></Metadata><TypeSignature Language="C#" Value="public interface Subdocument" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Subdocument" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Subdocument" />
   <TypeSignature Language="VB.NET" Value="Public Interface Subdocument" />
@@ -26,13 +18,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Representa um subdocumento dentro de um documento ou intervalo.</summary>
-    <remarks>
-      <para>Objeto <b>Subdocument</b> é um membro do <see cref="T:Microsoft.Office.Interop.Word.Subdocuments" /> conjunto. A coleção de <b>subdocumentos</b> inclui todos os subdocumentos de um intervalo ou documento.</para>
-      <para>Uso <b>subdocumentos</b>(<paramref name="index" />), onde <paramref name="index" /> é o número de índice, para retornar um único objeto <b>Subdocument</b> .</para>
-      <para>Uso a <see cref="M:Microsoft.Office.Interop.Word.Subdocuments.AddFromFile(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> ou <see cref="M:Microsoft.Office.Interop.Word.Subdocuments.AddFromRange(Microsoft.Office.Interop.Word.Range)" /> método para adicionar um subdocumento a um documento.</para>
-      <para />
-    </remarks>
+    <summary>Representa um subdocumento de um documento ou de um intervalo.</summary>
+    <remarks><para>O <b></b> objeto Subdocument é um membro da <see cref="T:Microsoft.Office.Interop.Word.Subdocuments" /> coleção. A <b></b> coleção Subdocuments inclui todos os subdocumentos em um intervalo ou documento.</para>
+      <para>Use <b></b>subdocumentos (<paramref name="index" />), onde <paramref name="index" /> é o número de índice, para retornar um único objeto Subdocument. <b></b></para>
+      <para>Use o <see cref="M:Microsoft.Office.Interop.Word.Subdocuments.AddFromFile(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> método <see cref="M:Microsoft.Office.Interop.Word.Subdocuments.AddFromRange(Microsoft.Office.Interop.Word.Range)" /> ou para adicionar um subdocumento a um documento.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -58,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -88,9 +78,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
-          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". [!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
+          <para>A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -141,8 +131,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> se o subdocumento especificado tiver sido salvo em um arquivo.</summary>
+        <summary><b>True</b> se o subdocumento especificado tiver sido salvo em um arquivo.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -313,12 +302,10 @@
       <Docs>
         <summary>Retorna o disco ou o caminho da Web para o objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>O caminho não inclui um caractere precedente — por exemplo, "C:\MSOffice" ou "http://MyServer". Use o <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" /> propriedade para adicionar o caractere que separa pastas e letras de unidade. Use o <see cref="P:Microsoft.Office.Interop.Word.Subdocument.Name" /> propriedade para retornar o nome de arquivo sem o caminho.</para>
+        <remarks><para>O caminho não inclui um caractere precedente  por exemplo, "C:\MSOffice" ou "http://MyServer". Use a <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" /> propriedade para adicionar o caractere que separa pastas e letras de unidade. Use a <see cref="P:Microsoft.Office.Interop.Word.Subdocument.Name" /> propriedade para retornar o nome do arquivo sem o caminho.</para>
           <para>
-            <b>Observação</b> você pode usar a propriedade <b>PathSeparator</b> para construir endereços da Web, mesmo que eles contenham barras (/) e a propriedade <b>PathSeparator</b> assume como padrão uma barra invertida (\).</para>
-          <para />
-        </remarks>
+            <b>Observação</b>  Você pode usar a propriedade <b>PathSeparator</b> para criar endereços da Web, mesmo que eles contenham barras (/) e a propriedade <b>PathSeparator</b> seja padronizada como uma\)barra invertida (.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Range">
@@ -344,12 +331,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Range" /> object que representa a parte de um documento que está contida no objeto especificado.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto que representa a parte de um documento que está contida no objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Para obter informações sobre como retornar um intervalo de um documento ou um intervalo de formas de uma coleção de formas, consulte o método <b>Range</b> de um <see cref="T:Microsoft.Office.Interop.Word.Document" /> ou <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> objeto.</para>
-          <para />
-        </remarks>
+        <remarks><para>Para obter informações sobre como retornar um intervalo de um documento ou retornar um intervalo de formas de uma coleção de formas <b></b> , consulte o método <see cref="T:Microsoft.Office.Interop.Word.Document" /> Range <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> de um objeto or.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Split">
@@ -374,12 +359,10 @@
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
       </Parameters>
       <Docs>
-        <param name="Range">Necessário <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto. O intervalo que, se torna um subdocumento separado quando o subdocumento é divido.</param>
+        <param name="Range">Objeto <see cref="T:Microsoft.Office.Interop.Word.Range" /> necessário. O intervalo que, se torna um subdocumento separado quando o subdocumento é divido.</param>
         <summary>Divide um subdocumento existente em dois subdocumentos no mesmo nível em modo de documento mestre ou modo de estrutura de tópicos.</summary>
-        <remarks>
-          <para>A divisão é no início do intervalo especificado. Se o documento ativo não estiver no documento mestre ou modo de exibição de estrutura de tópicos ou se o intervalo não está no início de um parágrafo em um subdocumento, ocorrerá um erro.</para>
-          <para />
-        </remarks>
+        <remarks><para>A divisão ocorre no início do intervalo especificado. Se o documento ativo não estiver em um modo de estrutura de tópicos ou de documento mestre, ou se o intervalo não estiver no início de um parágrafo em um subdocumento, ocorrerá um erro.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

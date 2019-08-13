@@ -1,13 +1,5 @@
 <Type Name="Columns" FullName="Microsoft.Office.Interop.Word.Columns">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c007cc7ae474302abe84669e0809beb36b236122" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20664165" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Columns : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="3ae32a4fd4b94ca8c949579a32bc324ed5723ab8" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147253" /></Metadata><TypeSignature Language="C#" Value="public interface Columns : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Columns implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Columns" />
   <TypeSignature Language="VB.NET" Value="Public Interface Columns&#xA;Implements IEnumerable" />
@@ -31,12 +23,10 @@
   </Attributes>
   <Docs>
     <summary>Uma coleção de <see cref="T:Microsoft.Office.Interop.Word.Column" /> objetos que representam as colunas em uma tabela.</summary>
-    <remarks>
-      <para>Use a propriedade <b>Columns</b> para retornar a coleção <b>Columns</b> .</para>
-      <para>Uso o <see cref="M:Microsoft.Office.Interop.Word.Columns.Add(System.Object@)" /> método para adicionar uma coluna a uma tabela.</para>
-      <para>Usar <b>colunas</b>(<paramref name="index" />), onde <b>índice</b> é o número de índice, para retornar um único objeto <b>Column</b> .</para>
-      <para />
-    </remarks>
+    <remarks><para>Use a propriedade <b>Columns</b> para retornar a coleção <b>Columns</b>.</para>
+      <para>Use o <see cref="M:Microsoft.Office.Interop.Word.Columns.Add(System.Object@)" /> método para adicionar uma coluna a uma tabela.</para>
+      <para>Use <b>Columns</b>(<paramref name="index" />), onde <b>index</b> é o número de índice, para retornar um único objeto <b>Column</b> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -61,7 +51,7 @@
         <Parameter Name="BeforeColumn" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="BeforeColumn">Uma <see cref="T:Microsoft.Office.Interop.Word.Column" /> object que representa a coluna que irá aparecer imediatamente à direita da nova coluna.</param>
+        <param name="BeforeColumn">Um <see cref="T:Microsoft.Office.Interop.Word.Column" /> objeto que representa a coluna que será exibida imediatamente à direita da nova coluna.</param>
         <summary>Adiciona uma coluna a uma tabela.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -90,7 +80,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o criador do objeto especificado.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o criador do objeto especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -117,10 +107,8 @@
       <Parameters />
       <Docs>
         <summary>Altera a largura de uma coluna de tabela para acomodar a largura do texto sem alterar a disposição do texto nas células.</summary>
-        <remarks>
-          <para>Se a tabela já for tão grande quanto a distância entre as margens esquerdas e direita, esse método não terá efeito.</para>
-          <para />
-        </remarks>
+        <remarks><para>Se a tabela já for tão larga quanto a distância entre as margens esquerda e direita, este método não terá efeito.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Borders">
@@ -149,7 +137,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Borders</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define um <see cref="T:Microsoft.Office.Interop.Word.Borders" /> coleção que representa todas as bordas do objeto especificado.</summary>
+        <summary>Retorna ou define uma <see cref="T:Microsoft.Office.Interop.Word.Borders" /> coleção que representa todas as bordas do objeto especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -207,9 +195,9 @@
       <Docs>
         <summary>Retorna um valor que indica o aplicativo no qual o objeto especificado foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto especificado foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
-          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Se o objeto especificado foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". [!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
+          <para>A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -258,7 +246,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Ajusta a largura das colunas especificadas para que sejam iguais.</summary>
+        <summary>Ajusta a largura das colunas especificadas para que elas sejam iguais.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -285,7 +273,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Column</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Column" /> object que representa o primeiro item no <see cref="T:Microsoft.Office.Interop.Word.Columns" /> conjunto.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Column" /> objeto que representa o primeiro item na <see cref="T:Microsoft.Office.Interop.Word.Columns" /> coleção.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -377,7 +365,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Column</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Column" /> object que representa o último item no <see cref="T:Microsoft.Office.Interop.Word.Columns" /> conjunto.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Column" /> objeto que representa o último item na <see cref="T:Microsoft.Office.Interop.Word.Columns" /> coleção.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -407,10 +395,8 @@
       <Docs>
         <summary>Retorna o nível de aninhamento das colunas especificadas.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>A tabela mais externa tem um nível de aninhamento 1. O nível de aninhamento de cada tabela aninhada sucessivamente é uma maior do que a tabela anterior.</para>
-          <para />
-        </remarks>
+        <remarks><para>A tabela externa tem o nível de aninhamento 1. O nível de aninhamento de cada tabela aninhada sucessivamente é um acima do da tabela anterior.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -498,7 +484,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdPreferredWidthType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define a unidade preferida de medida a ser usado para a largura das colunas especificadas.</summary>
+        <summary>Retorna ou define a unidade preferida de medida a ser usada para a largura das colunas especificadas.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -525,10 +511,8 @@
       <Parameters />
       <Docs>
         <summary>Seleciona o objeto especificado.</summary>
-        <remarks>
-          <para>Depois de usar esse método, use o <see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> propriedade para trabalhar com os itens selecionados.</para>
-          <para />
-        </remarks>
+        <remarks><para>Depois de usar esse método, use <see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> a propriedade para trabalhar com os itens selecionados.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetWidth">
@@ -556,12 +540,10 @@
       </Parameters>
       <Docs>
         <param name="ColumnWidth">A largura das colunas especificadas em pontos.</param>
-        <param name="RulerStyle">Um valor que controla como o Microsoft Word ajusta larguras de células.</param>
+        <param name="RulerStyle">Um valor que controla a maneira como o Microsoft Word ajusta as larguras de célula.</param>
         <summary>Define a largura das colunas em uma tabela.</summary>
-        <remarks>
-          <para>O <see cref="T:Microsoft.Office.Interop.Word.WdRulerStyle" /> comportamento se aplica a tabelas alinhado à esquerda. O comportamento de <b>WdRulerStyle</b> para tabelas centralizado e direita pode ser inesperado; Nesses casos, o método <b>SetWidth</b> deve ser usado com cuidado.</para>
-          <para />
-        </remarks>
+        <remarks><para>O <see cref="T:Microsoft.Office.Interop.Word.WdRulerStyle" /> comportamento se aplica a tabelas alinhadas à esquerda. O comportamento de <b>WdRulerStyle</b> para tabelas centralizado e direita pode ser inesperado; Nesses casos, o método <b>SetWidth</b> deve ser usado com cuidado.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Shading">

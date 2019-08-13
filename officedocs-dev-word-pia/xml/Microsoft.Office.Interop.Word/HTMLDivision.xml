@@ -1,13 +1,5 @@
 <Type Name="HTMLDivision" FullName="Microsoft.Office.Interop.Word.HTMLDivision">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="3861a1c400fb9ef70e58f5cbffdfea69dd87900f" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20665276" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface HTMLDivision" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="1cbb721e6a10380b8f09b2c8c1caf2d2e48ca5de" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146784" /></Metadata><TypeSignature Language="C#" Value="public interface HTMLDivision" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract HTMLDivision" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.HTMLDivision" />
   <TypeSignature Language="VB.NET" Value="Public Interface HTMLDivision" />
@@ -26,11 +18,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Representa uma única divisão de HTML que pode ser adicionada a um documento da Web.</summary>
-    <remarks>
-      <para>O objeto <b>HTMLDivision</b> é um membro do <see cref="T:Microsoft.Office.Interop.Word.HTMLDivisions" /> conjunto.</para> Uso de 
-      <para><see cref="T:Microsoft.Office.Interop.Word.HTMLDivisions" />(<paramref name="index" />), onde <paramref name="index" /> se refere à divisão HTML no documento, para retornar um único objeto <b>HTMLDivision</b> . Use o <see cref="P:Microsoft.Office.Interop.Word.HTMLDivision.Borders" /> propriedade para formatar propriedades de bordas para uma divisão HTML.</para> Divisões de HTML 
-      <para>podem ser aninhadas dentro de várias divisões HTML. Use o <see cref="M:Microsoft.Office.Interop.Word.HTMLDivision.HTMLDivisionParent(System.Object@)" /> método para acessar uma divisão HTML pai da divisão HTML atual.</para><para /></remarks>
+    <summary>Representa uma única divisão HTML que pode ser adicionada a um documento da Web.</summary>
+    <remarks><para>O objeto <b>HTMLDivision</b> é um membro da <see cref="T:Microsoft.Office.Interop.Word.HTMLDivisions" /> coleção.</para>
+      <para>Use <see cref="T:Microsoft.Office.Interop.Word.HTMLDivisions" />(<paramref name="index" />), em <paramref name="index" /> que se refere à divisão HTML no documento, para retornar um único objeto <b>HTMLDivision</b> . Use a <see cref="P:Microsoft.Office.Interop.Word.HTMLDivision.Borders" /> propriedade para formatar as propriedades de borda de uma divisão de HTML.</para>
+      <para>Divisões HTML podem ser aninhadas dentro de várias divisões HTML. Use o <see cref="M:Microsoft.Office.Interop.Word.HTMLDivision.HTMLDivisionParent(System.Object@)" /> método para acessar uma divisão HTML pai da divisão HTML atual.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -56,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -84,7 +76,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Borders</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Borders" /> coleção que representa todas as bordas do objeto especificado.</summary>
+        <summary>Retorna uma <see cref="T:Microsoft.Office.Interop.Word.Borders" /> coleção que representa todas as bordas do objeto especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -114,9 +106,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
-          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". [!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
+          <para>A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -166,8 +158,8 @@
         <Parameter Name="LevelsUp" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="LevelsUp">Opcional <b>inteiro</b>. O número de divisões a contar voltar retornar à divisão desejada. Se o <paramref name="LevelsUp" /> argumento for omitido, a divisão HTML retornada está um nível acima da divisão HTML atual.</param>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.HTMLDivision" /> object que representa a divisão pai da divisão HTML atual.</summary>
+        <param name="LevelsUp"><b>Inteiro</b>opcional. O número de divisões a contar de volta até retornar à divisão desejada. Se o <paramref name="LevelsUp" /> argumento for omitido, a divisão HTML retornada será um nível acima da divisão HTML atual.</param>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.HTMLDivision" /> objeto que representa uma divisão pai da divisão HTML atual.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -195,7 +187,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.HTMLDivisions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.HTMLDivisions" /> object que representa uma divisão HTML em um documento da Web.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.HTMLDivisions" /> objeto que representa uma divisão de HTML em um documento da Web.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -226,7 +218,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define um valor <b>único</b> que representa o valor de recuo à esquerda (em pontos) para a divisão HTML especificada.</summary>
+        <summary>Retorna ou define um <b>Single</b> que representa o valor de recuo esquerdo (em pontos) da divisão HTML especificada.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -282,12 +274,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Range" /> object que representa a parte de um documento que está contida no objeto especificado.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto que representa a parte de um documento que está contida no objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Para obter informações sobre como retornar um intervalo de um documento ou um intervalo de formas de uma coleção de formas, consulte o método <b>Range</b> de um <see cref="T:Microsoft.Office.Interop.Word.Document" /> ou <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> objeto.</para>
-          <para />
-        </remarks>
+        <remarks><para>Para obter informações sobre como retornar um intervalo de um documento ou retornar um intervalo de formas de uma coleção de formas <b></b> , consulte o método <see cref="T:Microsoft.Office.Interop.Word.Document" /> Range <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> de um objeto or.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RightIndent">
@@ -316,7 +306,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define o recuo à direita (em pontos) para os parágrafos especificados.</summary>
+        <summary>Retorna ou define o recuo à direita (em pontos) dos parágrafos especificados.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

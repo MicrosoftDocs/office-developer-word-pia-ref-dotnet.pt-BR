@@ -1,13 +1,5 @@
 <Type Name="ContentControlListEntries" FullName="Microsoft.Office.Interop.Word.ContentControlListEntries">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a961b46486a0ec821d76f588800bb27c7ac81740" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20664480" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ContentControlListEntries : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="2a65daa51ebf37c0bb3b93d5a9f9094e1b8a6931" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147281" /></Metadata><TypeSignature Language="C#" Value="public interface ContentControlListEntries : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ContentControlListEntries implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ContentControlListEntries" />
   <TypeSignature Language="VB.NET" Value="Public Interface ContentControlListEntries&#xA;Implements IEnumerable" />
@@ -30,11 +22,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>O <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntries" /> coleção contém <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntry" /> controle de conteúdo de objetos que representam os itens em uma caixa de combinação ou lista suspensa.</summary>
-    <remarks>
-      <para>Use o <see cref="M:Microsoft.Office.Interop.Word.ContentControlListEntries.Add(System.String,System.String,System.Int32)" /> método para adicionar um item a uma caixa de combinação ou lista suspensa. </para>
-      <para>Uso o <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntries.Item(System.Int32)" /> método ou o <see cref="P:Microsoft.Office.Interop.Word.ContentControl.DropdownListEntries" /> propriedade de um <see cref="T:Microsoft.Office.Interop.Word.ContentControl" /> objeto para acessar um item de lista individuais dentro de uma coleção.</para> Uso de 
-      <para>o <see cref="M:Microsoft.Office.Interop.Word.ContentControlListEntries.Clear" /> método para remover todos os itens de uma caixa de combinação ou lista suspensa. O exemplo a seguir limpa todos os itens do primeiro controle de conteúdo do documento ativo.</para><para /></remarks>
+    <summary>A <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntries" /> coleção contém <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntry" /> objetos que representam os itens em um controle de conteúdo de caixa de combinação ou lista suspensa.</summary>
+    <remarks><para>Use o <see cref="M:Microsoft.Office.Interop.Word.ContentControlListEntries.Add(System.String,System.String,System.Int32)" /> método para adicionar um item a uma lista suspensa ou caixa de combinação. </para>
+      <para>Use o <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntries.Item(System.Int32)" /> método ou a <see cref="P:Microsoft.Office.Interop.Word.ContentControl.DropdownListEntries" /> propriedade de um <see cref="T:Microsoft.Office.Interop.Word.ContentControl" /> objeto para acessar um item de lista individual dentro de uma coleção. </para>
+      <para>Use o <see cref="M:Microsoft.Office.Interop.Word.ContentControlListEntries.Clear" /> método para remover todos os itens de uma caixa de combinação ou lista suspensa. O exemplo a seguir limpa todos os itens do primeiro controle de conteúdo do documento ativo.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -61,17 +53,13 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Text">Especifica o texto de exibição do item de lista. Corresponde ao <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Text" /> propriedade para um <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntry" /> objeto.</param>
-        <param name="Value">Especifica o valor do item da lista.  Corresponde ao <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Value" /> propriedade para um <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntry" /> objeto. Se for omitido, o <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Value" /> propriedade for igual ao <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Text" /> propriedade.</param>
+        <param name="Text">Especifica o texto de exibição do item de lista. Corresponde à <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Text" /> propriedade de um <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntry" /> objeto.</param>
+        <param name="Value">Especifica o valor do item da lista.  Corresponde à <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Value" /> propriedade de um <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntry" /> objeto. Se for omitido <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Value" /> , a propriedade será igual <see cref="P:Microsoft.Office.Interop.Word.ContentControlListEntry.Text" /> à propriedade.</param>
         <param name="Index">Especifica a posição ordinal do novo item na lista. Se existir um item na posição especificada, o item existente será colocado em uma posição posterior na lista. Se for omitido, o novo item será adicionado ao final da lista.</param>
-        <summary>Adiciona um novo item de lista em uma lista suspensa combinação ou lista caixa controle de conteúdo e retorna um <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntry" /> objeto.</summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntry" />
-        </returns>
-        <remarks>
-          <para>Entradas da lista devem ter nomes para exibição exclusivos.  Ao tentar adicionar um item de lista que já existe gera um erro em tempo de execução.</para>
-          <para />
-        </remarks>
+        <summary>Adiciona um novo item de lista a um controle de conteúdo de caixa de combinação ou lista suspensa e <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntry" /> retorna um objeto.</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntry" /></returns>
+        <remarks><para>[!OBSERVAçãO] Entradas da lista devem ter nomes para exibição exclusivos.  Ao tentar adicionar um item de lista que já existe gera um erro em tempo de execução.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -97,10 +85,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word._Application" /> object que representa o aplicativo Microsoft Word.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word._Application" />
-        </value>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word._Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -152,10 +138,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o número de itens a <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntries" /> conjunto. Somente leitura.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>Retorna o número de itens na <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntries" /> coleção. Somente leitura.</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -183,15 +167,11 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o suplemento foi criado. Somente leitura.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Word, a propriedade <b>Creator</b> retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD."  Essa propriedade principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+        <value><b>Integer</b></value>
+        <remarks><para>Se o objeto foi criado no Microsoft Word, a propriedade <b>Creator</b> retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD".  Essa propriedade foi projetada inicialmente para ser usada no Macintosh, no qual cada aplicativo tem um código de criador com quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
           <para>
             <b>Observação</b>: esse valor também pode ser representado pela constante <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -254,9 +234,7 @@
       <Docs>
         <param name="Index">Especifica a posição ordinal do objeto na coleção.</param>
         <summary>Retorna o item especificado na coleção.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntry" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntry" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -283,10 +261,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o objeto pai do especificado <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntries" /> objeto.</summary>
-        <value>
-          <b>Object</b>
-        </value>
+        <summary>Retorna o objeto pai do objeto especificado <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntries" /> .</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

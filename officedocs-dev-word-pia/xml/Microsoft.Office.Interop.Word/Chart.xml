@@ -1,13 +1,5 @@
 <Type Name="Chart" FullName="Microsoft.Office.Interop.Word.Chart">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="616cb136ed9c6470acdef04821482823dc95523f" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20665346" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Chart" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="b01d3cd03a0e6d162566e25b45eaa2b405ccb58a" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147302" /></Metadata><TypeSignature Language="C#" Value="public interface Chart" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Chart" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Chart" />
   <TypeSignature Language="VB.NET" Value="Public Interface Chart" />
@@ -27,26 +19,22 @@
   </Attributes>
   <Docs>
     <summary>Representa um documento em uma pasta de trabalho.</summary>
-    <remarks>
-      <para>As propriedades e métodos para retornar um objeto de <b>gráfico</b> a seguir são descritos na seção de exemplos:</para>
-      <para />
+    <remarks><para>As propriedades e os métodos a seguir para retornar um objeto <b>Chart</b> são descritos na seção de exemplo:</para>
+      <para> </para>
       <list type="bullet">
         <item>
-          <para>propriedade
+          <para>Propriedade 
             <b>Chart</b></para>
         </item>
         <item>
-          <para>método
-            <b>AddChart</b></para>
+          <para>
+            <b></b> Método AddChart</para>
         </item>
       </list>
-      <para />
-      <para />
-    </remarks>
-    <example>
-      <para>O <see cref="T:Microsoft.Office.Interop.Word.InlineShapes" /> coleção contém um objeto para cada forma embutida, incluindo gráficos, em um documento. Use <b>InlineShapes</b>(<paramref name="Index" />), onde <paramref name="Index" /> é o número de índice de uma forma embutida, para retornar um único objeto <b>InlineShape</b> . Use o <see cref="P:Microsoft.Office.Interop.Word.InlineShape.HasChart" /> propriedade para determinar se o objeto <b>InlineShape</b> representa um gráfico. Se a propriedade <b>HasChart</b> estiver definida como <b>True</b>, use o <see cref="P:Microsoft.Office.Interop.Word.InlineShape.Chart" /> propriedade para retornar um objeto <b>Chart</b> .</para>
-      <para>Que você pode usar também o <see cref="P:Microsoft.Office.Interop.Word.InlineShape.Type" /> propriedade para determinar se o objeto <b>InlineShape</b> representa um gráfico. Se a propriedade <b>Type</b> está definida como <b>WdInlineShapeChart</b>, a forma embutida representa um gráfico.</para>
-    </example>
+      <para> </para>
+      <para> </para></remarks>
+    <example><para>A <see cref="T:Microsoft.Office.Interop.Word.InlineShapes" /> coleção contém um objeto para cada forma embutida, incluindo gráficos, em um documento. Use <b>InlineShapes</b>(<paramref name="Index" />), onde <paramref name="Index" /> é o número de índice de uma forma embutida, para retornar um único objeto <b>InlineShape</b> . Use a <see cref="P:Microsoft.Office.Interop.Word.InlineShape.HasChart" /> propriedade para determinar se o objeto <b>InlineShape</b> representa um gráfico. Se a propriedade <b>HasChart</b> estiver definida como <b>true</b>, use a <see cref="P:Microsoft.Office.Interop.Word.InlineShape.Chart" /> propriedade para retornar um objeto <b>Chart</b> .</para>
+      <para>Você também pode usar a <see cref="P:Microsoft.Office.Interop.Word.InlineShape.Type" /> propriedade para determinar se o objeto <b>InlineShape</b> representa um gráfico. Se a propriedade <b>Type</b> está definida como <b>WdInlineShapeChart</b>, a forma embutida representa um gráfico.</para></example>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -72,10 +60,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Quando usado sem um qualificador de objeto, essa propriedade retorna uma <see cref="T:Microsoft.Office.Interop.Word._Application" /> object que representa o aplicativo Microsoft Word. Quando usada com um qualificador de objeto, essa propriedade retornará um objeto <b>Application</b> que representa o criador do objeto especificado (você pode usar essa propriedade com um objeto Automation do OLE para retornar o aplicativo desse objeto). Somente leitura.</summary>
-        <value>
-          <b>Object</b>
-        </value>
+        <summary>Quando usado sem um qualificador de objeto, essa propriedade <see cref="T:Microsoft.Office.Interop.Word._Application" /> retorna um objeto que representa o aplicativo Microsoft Word. Quando usada com um qualificador de objeto, essa propriedade retornará um objeto <b>Application</b> que representa o criador do objeto especificado (você pode usar essa propriedade com um objeto Automation do OLE para retornar o aplicativo desse objeto). Somente leitura.</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -102,13 +88,10 @@
         <Parameter Name="FileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="FileName">
-          <b>Cadeia de caracteres</b> de nome de arquivo para um modelo de gráfico necessário.</param>
+        <param name="FileName"><b>Cadeia de caracteres</b> obrigatória o nome de arquivo de um modelo de gráfico.</param>
         <summary>Aplica um tipo de gráfico personalizado ou padrão a um gráfico.</summary>
-        <remarks>
-          <para>Este método não oferece suporte a constantes assumir para nativo ou combinação de gráficos.</para>
-          <para />
-        </remarks>
+        <remarks><para>Esse método não oferece suporte ao uso de constantes para gráficos nativos ou de combinação.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ApplyCustomType">
@@ -137,8 +120,8 @@
         <Parameter Name="TypeName" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="ChartType">Necessário <see cref="T:Microsoft.Office.Core.XlChartType" /> um tipo de gráfico padrão</param>
-        <param name="TypeName">Obrigatório o tipo de gráfico padrão do <b>objeto</b> uma</param>
+        <param name="ChartType">Obrigatório <see cref="T:Microsoft.Office.Core.XlChartType" /> um tipo de gráfico padrão</param>
+        <param name="TypeName"><b>Objeto</b> obrigatório um tipo de gráfico padrão</param>
         <summary>Aplica um tipo de gráfico personalizado ou padrão a um gráfico.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -178,20 +161,17 @@
       </Parameters>
       <Docs>
         <param name="Type">Necessário <see cref="T:Microsoft.Office.Interop.Word.XlDataLabelsType" /> o tipo de rótulo de dados a ser aplicado.</param>
-        <param name="LegendKey">
-          <b>True</b> para exibir o código de legenda próximo ao ponto. O valor padrão é <b>False</b>.</param>
-        <param name="AutoText">
-          <b>True</b> se o objeto gerar automaticamente o texto adequado com base no conteúdo.</param>
-        <param name="HasLeaderLines">Para o <see cref="T:Microsoft.Office.Interop.Word.Chart" /> e <see cref="T:Microsoft.Office.Interop.Word.Series" /> objetos, <b>True</b> se a série tiver linhas tracejadas.</param>
+        <param name="LegendKey"><b>True</b> para mostrar o código da legenda ao lado do ponto. O valor padrão é <b>False</b>.</param>
+        <param name="AutoText"><b>True</b> se o objeto gerar automaticamente o texto adequado com base no conteúdo.</param>
+        <param name="HasLeaderLines">Para os <see cref="T:Microsoft.Office.Interop.Word.Chart" /> objetos <see cref="T:Microsoft.Office.Interop.Word.Series" /> e, <b>true</b> se a série tiver linhas de preenchimento.</param>
         <param name="ShowSeriesName">Passe um valor booleano para habilitar ou desabilitar o nome da série do rótulo de dados.</param>
         <param name="ShowCategoryName">Passe um valor booleano para habilitar ou desabilitar o nome da categoria do rótulo de dados.</param>
         <param name="ShowValue">Passe um valor booleano para habilitar ou desabilitar o valor do rótulo de dados.</param>
-        <param name="ShowPercentage">um valor booleano para habilitar ou desabilitar a porcentagem do rótulo de dados.</param>
+        <param name="ShowPercentage">um valor booliano para habilitar ou desabilitar a porcentagem para o rótulo de dados.</param>
         <param name="ShowBubbleSize">Passe um valor booleano para habilitar ou desabilitar o tamanho da bolha do rótulo de dados.</param>
         <param name="Separator">O separador para o rótulo de dados.</param>
         <summary>Aplica rótulos de dados a todas as séries em um gráfico.</summary>
-        <remarks>
-          <para>A tabela a seguir mostra o <see cref="T:Microsoft.Office.Interop.Word.XlDataLabelsType" /> argumentos que podem ser passados para o <paramref name="Type" /> parâmetro de um <see cref="M:Microsoft.Office.Interop.Word.Chart.ApplyDataLabels(Microsoft.Office.Interop.Word.XlDataLabelsType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> método.</para>
+        <remarks><para>A tabela a seguir mostra <see cref="T:Microsoft.Office.Interop.Word.XlDataLabelsType" /> os argumentos que podem ser passados para <paramref name="Type" /> o parâmetro de <see cref="M:Microsoft.Office.Interop.Word.Chart.ApplyDataLabels(Microsoft.Office.Interop.Word.XlDataLabelsType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> um método.</para>
           <list type="table">
             <item>
               <description>
@@ -199,15 +179,15 @@
             </item>
             <item>
               <description>
-                <b>xlDataLabelsShowLabelAndPercent</b>.  Porcentagem do total e categoria do ponto. Disponível somente para gráficos de pizza e gráficos de rosca.</description>
+                <b>xlDataLabelsShowLabelAndPercent</b>.  Porcentagem do total e categoria para o ponto. Disponível somente para gráficos de pizza e de rosca.</description>
             </item>
             <item>
               <description>
-                <b>xlDataLabelsShowPercent</b>. Porcentagem do total. Disponível somente para gráficos de pizza e gráficos de rosca.</description>
+                <b>xlDataLabelsShowPercent</b>. Porcentagem do total. Disponível somente para gráficos de pizza e de rosca.</description>
             </item>
             <item>
               <description>
-                <b>xlDataLabelsShowLabel</b>. Categoria do ponto.</description>
+                <b>xlDataLabelsShowLabel</b>. Categoria para o ponto.</description>
             </item>
             <item>
               <description>
@@ -215,11 +195,10 @@
             </item>
             <item>
               <description>
-                <b>xlDataLabelsShowValue</b>. padrão. Valor do ponto (assumido se esse argumento não for especificado).</description>
+                <b>xlDataLabelsShowValue</b>. Padrão. Valor do ponto (supondo que este argumento não foi especificado).</description>
             </item>
           </list>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ApplyLayout">
@@ -245,15 +224,11 @@
         <Parameter Name="ChartType" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Layout">
-          <b>Inteiro</b> Especifica o tipo de layout.  O tipo de layout é indicado por um número de 1 a 10.</param>
-        <param name="ChartType">
-          <b>Objeto</b> que contém uma constante <b>XlChartType</b> que representa o tipo de gráfico.</param>
+        <param name="Layout"><b>Número inteiro</b> Especifica o tipo de layout.  O tipo de layout é indicado por um número de 1 a 10.</param>
+        <param name="ChartType"><b>Objeto</b> que contém uma constante <b>XlChartType</b> que representa o tipo de gráfico.</param>
         <summary>Aplica os layouts mostrados na faixa de opções.</summary>
-        <remarks>
-          <para>Quando você usa um layout no tipo de gráfico atual, um número de 1 a 10 é aplicado ao tipo de gráfico.  Você também pode aplicar o layout de um tipo de gráfico em outro tipo de gráfico.  Por exemplo, você pode aplicar os layouts que estão disponíveis a partir de um gráfico de linhas em um gráfico de colunas.  O layout apenas adiciona os elementos do gráfico que estão disponíveis para esse tipo de gráfico específico.</para>
-          <para />
-        </remarks>
+        <remarks><para>Quando você usa um layout no tipo de gráfico atual, um número de 1 a 10 é aplicado ao tipo de gráfico.  Você também pode aplicar o layout de um tipo de gráfico em outro tipo de gráfico.  Por exemplo, você pode aplicar os layouts que estão disponíveis de um gráfico de linha em um gráfico de coluna.  O layout adiciona somente elementos de gráfico que estão disponíveis para esse tipo de gráfico em particular.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Area3DGroup">
@@ -286,9 +261,7 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna o grupo de gráficos de área em um gráfico 3D.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -320,12 +293,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objeto</b> o número do grupo gráfico opcional.</param>
-        <summary>Em um gráfico 2D, retorna um objeto representando um um grupo de gráficos de área única (um <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /> objeto) ou uma coleção dos grupos de gráficos de área (um <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> conjunto).</summary>
-        <returns>
-          <b>Object</b>
-        </returns>
+        <param name="Index"><b>Objeto</b> opcional o número do grupo de gráficos.</param>
+        <summary>Em um gráfico 2D, retorna um objeto que representa um único grupo de gráficos de área (um <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /> objeto) ou uma coleção dos grupos de gráficos de área (uma <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> coleção).</summary>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -355,13 +325,9 @@
         <Parameter Name="Format" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Gallery">
-          <b>Integer</b>
-        </param>
-        <param name="Format">
-          <b>Object</b>
-        </param>
-        <summary>Essa API suporta o Visual Studio Tools para a infra-estrutura do Office e não se destina a ser usado diretamente do seu código.</summary>
+        <param name="Gallery"><b>Integer</b></param>
+        <param name="Format"><b>Object</b></param>
+        <summary>Essa API oferece suporte à infraestrutura do Visual Studio Tools for Office e não se destina a ser usado diretamente do seu código.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -397,10 +363,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Dimensiona a um gráfico 3D para que ele seja um tamanho mais próximo do gráfico 2D equivalente. O <see cref="P:Microsoft.Office.Interop.Word.Chart.RightAngleAxes" /> propriedade deve ser <b>verdadeiras</b>. Leitura/gravação.</summary>
-        <value>
-          <b>Boolean</b>
-          <b>True</b> se o Microsoft Word dimensiona um gráfico 3-d para que ele seja um tamanho mais próximo do gráfico 2D equivalente; Caso contrário, <b>False</b>.</value>
+        <summary>Dimensiona um gráfico 3D para que fique mais próximo do tamanho do gráfico 2D equivalente. A <see cref="P:Microsoft.Office.Interop.Word.Chart.RightAngleAxes" /> propriedade deve ser <b>true</b>. Leitura/gravação.</summary>
+        <value><b>Boolean</b> 
+          <b>True</b> se o Microsoft Word dimensiona um gráfico 3D para que fique mais perto do tamanho do gráfico de 2D equivalente; caso contrário, <b>false</b>.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -430,12 +395,10 @@
         <Parameter Name="AxisGroup" Type="Microsoft.Office.Interop.Word.XlAxisGroup" />
       </Parameters>
       <Docs>
-        <param name="Type">Necessário Especifica o eixo do <b>objeto</b> retornar. Pode ser uma das seguintes opções <see cref="T:Microsoft.Office.Interop.Word.XlAxisType" /> constantes: <b>xlValue</b>, <b>xlCategory</b>ou <b>xlSeriesAxis</b> (<b>xlSeriesAxis</b> é válida somente para gráficos 3D).</param>
-        <param name="AxisGroup">Opcional <see cref="T:Microsoft.Office.Interop.Word.XlAxisGroup" /> Especifica o grupo do eixo. Se esse argumento for omitido, o grupo primário é usado. Gráficos 3D possuem somente um grupo de eixos.</param>
-        <summary>Obtém um objeto que um representa um único eixo ou uma coleção de eixos em um gráfico.</summary>
-        <returns>
-          <b>Object</b>
-        </returns>
+        <param name="Type"><b>Objeto</b> Required especifica o eixo a ser retornado. Pode ser uma <see cref="T:Microsoft.Office.Interop.Word.XlAxisType" /> das seguintes constantes: <b>xlValue</b>, <b>xlCategory</b>ou <b>xlSeriesAxis</b> (<b>xlSeriesAxis</b> é válida somente para gráficos 3D).</param>
+        <param name="AxisGroup">Opcional <see cref="T:Microsoft.Office.Interop.Word.XlAxisGroup" /> especifica o grupo de eixos. Se este argumento for omitido, o grupo primário será usado. Os gráficos 3D têm apenas um grupo de eixos.</param>
+        <summary>Obtém um objeto que representa um único eixo ou uma coleção de eixos no gráfico.</summary>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -462,10 +425,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Walls</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Walls" /> objeto que permite ao usuário formatar individualmente a parede traseira de um gráfico 3D. Somente leitura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Walls" />
-        </value>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Walls" /> objeto que permite que o usuário formate individualmente a parede traseira de um gráfico 3D. Somente leitura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Walls" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -499,9 +460,7 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna o grupo de gráficos de barras em um gráfico 3D.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -533,11 +492,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Opcional <b>objeto</b> Especifica o grupo de gráficos.</param>
-        <summary>Em um gráfico 2D, retorna um objeto representando um um grupo de gráficos de barras único (um <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /> objeto) ou uma coleção dos grupos de gráficos de barras (um <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> conjunto).</summary>
-        <returns>
-          <b>Object</b>
-        </returns>
+        <param name="Index"><b>Objeto</b> opcional especifica o grupo de gráficos.</param>
+        <summary>Em um gráfico 2D, retorna um objeto que representa um único grupo de gráficos de barras (um <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /> objeto) ou uma coleção dos grupos de gráficos de barras (uma <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> coleção).</summary>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -568,9 +525,7 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna ou define a forma usada para cada série em um gráfico de barras ou colunas 3D. Leitura/gravação.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.XlBarShape" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Word.XlBarShape" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -600,7 +555,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.XlCategoryLabelLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define um <see cref="T:Microsoft.Office.Interop.Word.XlCategoryLabelLevel" /> constante que especifica o nível da origem dos rótulos de categoria de gráfico. Leitura e gravação.</summary>
+        <summary>Retorna ou define uma <see cref="T:Microsoft.Office.Interop.Word.XlCategoryLabelLevel" /> constante que especifica o nível de origem dos rótulos de categoria do gráfico. Leitura e gravação.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -631,10 +586,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartArea</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.ChartArea" /> object que representa toda a área do gráfico. Somente leitura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartArea" />
-        </value>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.ChartArea" /> objeto que representa a área completa do gráfico para o gráfico. Somente leitura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartArea" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -664,12 +617,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define um inteiro que representa o esquema de cores do gráfico. Leitura e gravação.</summary>
+        <summary>Retorna ou define um valor inteiro que representa a esquema de cores do gráfico. Leitura e gravação.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Esquemas de cores do gráfico são numerados de 1 a 17; a configuração dessa propriedade corresponde aos esquemas de cores mostrados na Galeria alterar cores na guia Design de ferramentas de gráfico da faixa de opções.</para>
-          <para />
-        </remarks>
+        <remarks><para>Os esquemas de cores do gráfico são numerados de 1 a 17; a configuração dessa propriedade corresponde aos esquemas de cores mostrados na Galeria alterar cores da guia Design da faixa de opções do gráfico.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ChartData">
@@ -696,9 +647,7 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna as informações sobre os dados vinculados ou integrados associados a um gráfico. Somente leitura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartData" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartData" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -731,11 +680,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">O número do grupo de gráficos. Se especificado, um único <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /> objeto é retornado. Se for omitido, um <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> objeto é retornado, que contém uma coleção de todos os <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /> objeto para esse gráfico.</param>
+        <param name="Index">O número do grupo de gráficos. Se especificado, um único <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /> objeto é retornado. Se for omitido <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> , será retornado um objeto que contém uma coleção <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /> de todos os objetos desse gráfico.</param>
         <summary>Retorna um objeto que representa um único grupo de gráficos ou uma coleção de todos os grupos de gráficos no gráfico.</summary>
-        <value>
-          <b>Object</b>
-        </value>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -765,14 +712,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define o estilo de gráfico do gráfico. <b>Objeto</b> de leitura/gravação.</summary>
-        <value>
-          <b>Object</b>
-        </value>
-        <remarks>
-          <para>Você pode usar um número de 1 a 48 para definir o estilo do gráfico.</para>
-          <para />
-        </remarks>
+        <summary>Retorna ou define o estilo do gráfico para o gráfico. <b>Objeto</b> de leitura/gravação.</summary>
+        <value><b>Object</b></value>
+        <remarks><para>Você pode usar um número de 1 a 48 para definir o estilo do gráfico.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ChartTitle">
@@ -801,14 +744,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartTitle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.ChartTitle" /> object que representa o título do gráfico especificado. Somente leitura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartTitle" />
-        </value>
-        <remarks>
-          <para>O <see cref="T:Microsoft.Office.Interop.Word.ChartTitle" /> objeto não existe e não pode ser usado a menos que o <see cref="P:Microsoft.Office.Interop.Word.Chart.HasTitle" /> propriedade para o gráfico seja <b>True</b>.</para>
-          <para />
-        </remarks>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.ChartTitle" /> objeto que representa o título do gráfico especificado. Somente leitura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartTitle" /></value>
+        <remarks><para>O <see cref="T:Microsoft.Office.Interop.Word.ChartTitle" /> objeto não existe e não pode ser usado, <see cref="P:Microsoft.Office.Interop.Word.Chart.HasTitle" /> a menos que a propriedade do gráfico seja <b>true</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ChartType">
@@ -838,13 +777,9 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna ou define o tipo de gráfico. Leitura/gravação.</summary>
-        <value>
-          <b>XlChartType</b>
-        </value>
-        <remarks>
-          <para>Alguns tipos de gráfico não estão disponíveis para relatórios de gráfico dinâmico.</para>
-          <para />
-        </remarks>
+        <value><b>XlChartType</b></value>
+        <remarks><para>Alguns tipos de gráfico não estão disponíveis para relatórios de tabela dinâmica.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ChartWizard">
@@ -882,27 +817,20 @@
         <Parameter Name="ExtraTitle" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Source">
-          <b>Objeto</b> o intervalo que contém os dados de origem para o novo gráfico opcional. Se esse argumento for omitido, o Microsoft Word editará a planilha de gráfico ativa ou o gráfico selecionado na planilha ativa.</param>
-        <param name="Gallery">Opcional <b>objeto</b> contém uma das seguintes constantes de <see cref="T:Microsoft.Office.Interop.Excel.XlChartType" /> especificando o tipo de gráfico.</param>
-        <param name="Format">
-          <b>Objeto</b> o número de opção para as autoformatações internas opcional. Pode ser um número de 1 até 10, dependendo do tipo de galeria. Se esse argumento for omitido, o Microsoft Word escolhe um valor padrão com base na fonte de dados e o tipo de galeria.</param>
-        <param name="PlotBy">Opcional <b>objeto</b> Especifica se os dados de cada série em linhas ou colunas. Pode ser uma das seguintes opções <see cref="T:Microsoft.Office.Interop.Word.XlRowCol" /> constantes: <b>xlRows</b> ou <b>xlColumns</b>.</param>
-        <param name="CategoryLabels">Opcional <b>objeto</b> contém um <b>inteiro</b> que especifica o número de linhas ou colunas dentro do intervalo de origem que contêm os rótulos de categoria. Valores válidos são de 0 (zero) a menos que o número máximo das categorias correspondentes ou série.</param>
-        <param name="SeriesLabels">Opcional <b>objeto</b> contém um <b>inteiro</b> que especifica o número de linhas ou colunas dentro do intervalo de origem que contêm os rótulos de série. Valores válidos são de 0 (zero) a menos que o número máximo das categorias correspondentes ou série.</param>
-        <param name="HasLegend">Opcional <b>objeto</b> definido como <b>True</b> para incluir uma legenda.</param>
-        <param name="Title">
-          <b>Objeto</b> o texto do título de gráfico opcional.</param>
-        <param name="CategoryTitle">
-          <b>Objeto</b> o texto de título do eixo de categoria opcional.</param>
-        <param name="ValueTitle">
-          <b>Objeto</b> o texto de título do eixo de valor opcional.</param>
-        <param name="ExtraTitle">Opcional <b>objeto</b> o título do eixo das séries para gráficos 3D ou o título do segundo eixo de valores para gráficos 2D.</param>
-        <summary>Modifica as propriedades do gráfico especificado. Você pode usar esse método para formatar rapidamente um gráfico sem definir todas as propriedades individuais. Esse método não é interativo, e ele altera apenas as propriedades especificadas.</summary>
-        <remarks>
-          <para>Se <paramref name="Source" /> for omitido e a seleção não for um gráfico no documento ativo, este método falhará e ocorrerá um erro.</para>
-          <para />
-        </remarks>
+        <param name="Source"><b>Objeto</b> opcional o intervalo que contém os dados de origem para o novo gráfico. Se esse argumento for omitido, o Microsoft Word editará a planilha de gráfico ativa ou o gráfico selecionado na planilha ativa.</param>
+        <param name="Gallery"><b>Objeto</b> opcional contém uma das constantes de <see cref="T:Microsoft.Office.Interop.Excel.XlChartType" /> especificar o tipo de gráfico.</param>
+        <param name="Format"><b>Objeto</b> opcional o número de opção para as autoformatações internas. Pode ser um número de 1 até 10, dependendo do tipo de galeria. Se esse argumento for omitido, o Microsoft Word escolherá um valor padrão com base no tipo de galeria e na fonte de dados.</param>
+        <param name="PlotBy"><b>Objeto</b> opcional especifica se os dados de cada série estão em linhas ou colunas. Pode ser uma das seguintes <see cref="T:Microsoft.Office.Interop.Word.XlRowCol" /> constantes: <b>xlRows</b> ou <b>xlColumns</b>.</param>
+        <param name="CategoryLabels"><b>Objeto</b> opcional contém um <b>inteiro</b> que especifica o número de linhas ou colunas dentro do intervalo de origem que contém rótulos de categoria. Os valores válidos são de 0 (zero) ao número máximo das categorias ou séries correspondentes menos um.</param>
+        <param name="SeriesLabels"><b>Objeto</b> opcional contém um <b>inteiro</b> que especifica o número de linhas ou colunas dentro do intervalo de origem que contém rótulos de série. Os valores válidos são de 0 (zero) ao número máximo das categorias ou séries correspondentes menos um.</param>
+        <param name="HasLegend"><b>Objeto</b> opcional definido como <b>true</b> para incluir uma legenda.</param>
+        <param name="Title"><b>Objeto</b> opcional o texto do título do gráfico.</param>
+        <param name="CategoryTitle"><b>Objeto</b> opcional o texto do título do eixo das categorias.</param>
+        <param name="ValueTitle"><b>Objeto</b> opcional o texto do título do eixo dos valores.</param>
+        <param name="ExtraTitle"><b>Objeto</b> opcional o título do eixo das séries para gráficos 3D ou o título do segundo eixo de valores para gráficos 2D.</param>
+        <summary>Modifica as propriedades do gráfico especificado. Você pode usar esse método para formatar rapidamente um gráfico sem definir todas as propriedades individuais. Este método não é interativo e altera apenas as propriedades especificadas.</summary>
+        <remarks><para>Se <paramref name="Source" /> for omitido e a seleção não for um gráfico do documento ativo, este método falhará e ocorrerá um erro.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ClearToMatchColorStyle">
@@ -926,11 +854,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Limpa todas as cores que não seguem o estilo de cor aplicado ao gráfico no gráfico especificado.</summary>
-        <remarks>
-          <para>Use esse método para redefinir todos os a cor do gráfico formatação como o estilo de cor aplicado ao gráfico.</para>
-          <para />
-        </remarks>
+        <summary>Limpa todas as cores no gráfico especificado que não seguem o estilo de cor aplicado ao gráfico.</summary>
+        <remarks><para>Use este método para redefinir toda a formatação de cores do gráfico para o estilo de cor aplicado ao gráfico.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ClearToMatchStyle">
@@ -955,10 +881,8 @@
       <Parameters />
       <Docs>
         <summary>Limpa a formatação dos elementos gráficos para automático.</summary>
-        <remarks>
-          <para>Use esse método para redefinir os formatação para automático dos elementos gráficos.    Se você usar esse método em um gráfico, toda a formatação (incluindo substituições) serão redefinidas.</para>
-          <para />
-        </remarks>
+        <remarks><para>Use esse método para redefinir a formatação dos elementos do gráfico como automática.    Se você usar esse método em um gráfico, toda a formatação (incluindo substituições) será redefinida.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Column3DGroup">
@@ -991,9 +915,7 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna o grupo de gráficos de coluna em um gráfico 3D.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1025,12 +947,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objeto</b>de opcional. Especifica o grupo de gráficos.</param>
-        <summary>Em um gráfico 2D, retorna um objeto representando um um grupo de gráficos de coluna simples (um <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /> objeto) ou uma coleção dos grupos de gráficos de coluna (um <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> conjunto).</summary>
-        <returns>
-          <b>Object</b>
-        </returns>
+        <param name="Index"><b>Objeto</b>opcional. Especifica o grupo de gráficos.</param>
+        <summary>Em um gráfico 2D, retorna um objeto que representa um único grupo de gráficos de coluna (um <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /> objeto) ou uma coleção dos grupos de gráficos de coluna (uma <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> coleção).</summary>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1060,9 +979,9 @@
         <Parameter Name="After" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Before">Não aceito para este objeto.</param>
-        <param name="After">Não aceito para este objeto.</param>
-        <summary>Não aceito para este objeto.</summary>
+        <param name="Before">Não é suportado por este objeto.</param>
+        <param name="After">Não é suportado por este objeto.</param>
+        <summary>Não é suportado por este objeto.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1093,9 +1012,9 @@
         <Parameter Name="Size" Type="Microsoft.Office.Interop.Word.XlPictureAppearance" />
       </Parameters>
       <Docs>
-        <param name="Appearance">Opcional <see cref="T:Microsoft.Office.Interop.Word.XlPictureAppearance" /> Especifica como a imagem deve ser copiada. O valor padrão é <see cref="F:Microsoft.Office.Interop.Word.XlPictureAppearance.xlScreen" />.</param>
+        <param name="Appearance">Opcional <see cref="T:Microsoft.Office.Interop.Word.XlPictureAppearance" /> especifica como a imagem deve ser copiada. O valor padrão é <see cref="F:Microsoft.Office.Interop.Word.XlPictureAppearance.xlScreen" />.</param>
         <param name="Format">Opcional <see cref="T:Microsoft.Office.Interop.Word.XlCopyPictureFormat" /> o formato da imagem. O valor padrão é <see cref="F:Microsoft.Office.Interop.Word.XlCopyPictureFormat.xlPicture" />.</param>
-        <param name="Size">Opcional <see cref="T:Microsoft.Office.Interop.Word.XlPictureAppearance" /> o tamanho da imagem copiada quando o objeto for um gráfico em uma planilha de gráfico (não incorporado em uma planilha). O valor padrão é <see cref="F:Microsoft.Office.Interop.Word.XlPictureAppearance.xlPrinter" />.</param>
+        <param name="Size">Opcional <see cref="T:Microsoft.Office.Interop.Word.XlPictureAppearance" /> o tamanho da imagem copiada quando o objeto é um gráfico em uma planilha de gráfico (não incorporado em uma planilha). O valor padrão é <see cref="F:Microsoft.Office.Interop.Word.XlPictureAppearance.xlPrinter" />.</param>
         <summary>Copia o objeto selecionado para a Área de Transferência como uma imagem.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1130,8 +1049,7 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna os cantos de um gráfico 3D.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Corners" />cantos</value>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Corners" />cantos</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1159,13 +1077,9 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna um <b>inteiro</b> de 32 bits que indica o aplicativo no qual o objeto especificado foi criado. Somente leitura.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Word, o <see cref="P:Microsoft.Office.Interop.Word.Chart.Creator" /> propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD".  Essa propriedade principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <value><b>Integer</b></value>
+        <remarks><para>Se o objeto foi criado no Microsoft Word, a <see cref="P:Microsoft.Office.Interop.Word.Chart.Creator" /> propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD".  Essa propriedade foi projetada inicialmente para ser usada no Macintosh, no qual cada aplicativo tem um código de criador com quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DataTable">
@@ -1191,10 +1105,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.DataTable</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.DataTable" /> object que representa a tabela de dados do gráfico. Somente leitura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.DataTable" />
-        </value>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.DataTable" /> objeto que representa a tabela de dados do gráfico. Somente leitura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.DataTable" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1223,9 +1135,7 @@
       <Parameters />
       <Docs>
         <summary>Exclui o objeto.</summary>
-        <returns>
-          <b>Object</b>
-        </returns>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1290,13 +1200,9 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna ou define a profundidade de um gráfico 3D como um percentual da largura do gráfico (entre 20 e 2.000%). Leitura/gravação.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Essa propriedade só se aplica a gráficos 3D.</para>
-          <para />
-        </remarks>
+        <value><b>Integer</b></value>
+        <remarks><para>Essa propriedade se aplica somente a gráficos 3D.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayBlanksAs">
@@ -1331,10 +1237,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.XlDisplayBlanksAs</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define a forma com que as células vazias são plotadas em um gráfico. Pode ser uma do <see cref="T:Microsoft.Office.Interop.Word.XlDisplayBlanksAs" /> constantes. Leitura/gravação.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.XlDisplayBlanksAs" />
-        </value>
+        <summary>Retorna ou define a maneira como as células em branco são plotadas em um gráfico. Pode ser uma das <see cref="T:Microsoft.Office.Interop.Word.XlDisplayBlanksAs" /> constantes. Leitura/gravação.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.XlDisplayBlanksAs" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1366,12 +1270,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objeto</b>de opcional. Especifica o grupo de gráficos.</param>
-        <summary>Em um gráfico 2D, retorna um objeto representando um um grupo de gráficos de rosca único (um <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /> objeto) ou uma coleção dos grupos de gráficos de rosca (um <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> conjunto).</summary>
-        <returns>
-          <b>Object</b>
-        </returns>
+        <param name="Index"><b>Objeto</b>opcional. Especifica o grupo de gráficos.</param>
+        <summary>Em um gráfico 2D, retorna um objeto que representa um único grupo de gráficos de rosca (um <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /> objeto) ou uma coleção dos grupos de gráficos de rosca (uma <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> coleção).</summary>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1407,16 +1308,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define a elevação do modo de exibição gráfico 3D, em graus. Leitura/gravação.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>a elevação do gráfico é a altura na qual você visualiza o gráfico, em graus. O padrão é 15 para a maioria dos tipos de gráfico. O valor dessa propriedade deve estar entre -90 e 90, exceto para gráficos de barras 3D, onde ele deve estar entre 0 e 44.</para>
+        <summary>Retorna ou define a elevação da visualização de gráfico 3D, em graus. Leitura/gravação.</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>A elevação do gráfico é a altura da qual você visualiza o gráfico, em graus. O padrão é 15 na maioria dos tipos de gráfico. O valor dessa propriedade precisa estar entre -90 e 90, exceto nos gráficos de barras 3D, onde ele precisa estar entre 0 e 44.</para>
           <para>
-            <b>Observação</b>: essa propriedade se aplica somente a gráficos 3D.</para>
-          <para />
-        </remarks>
+            <b>Observação</b>: essa propriedade só se aplica a gráficos 3D.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Export">
@@ -1443,14 +1340,11 @@
         <Parameter Name="Interactive" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="FileName">
-          <b>Cadeia de caracteres</b> do nome do arquivo exportado necessário.</param>
-        <param name="FilterName">Nome do <b>objeto</b> independente do idioma opcional do filtro gráfico como ele aparece no registro.</param>
-        <param name="Interactive">Opcional <b>objeto</b><b>True</b> para exibir a caixa de diálogo que contém as opções específicas de filtro. Se esse argumento for <b>False</b>, o Microsoft Word usará os valores padrão para o filtro. O valor padrão é <b>False</b>.</param>
-        <summary>Exporta o gráfico em um formato gráfico. Esse método retorna um valor <b>Boolean</b> que indica se a exportação foi bem-sucedida.</summary>
-        <returns>
-          <b>Boolean</b>
-        </returns>
+        <param name="FileName"><b>Cadeia de caracteres</b> obrigatória o nome do arquivo exportado.</param>
+        <param name="FilterName"><b>Objeto</b> opcional o nome independente do idioma do filtro gráfico como aparece no registro.</param>
+        <param name="Interactive"><b>Objeto</b>opcional<b>true</b> para exibir a caixa de diálogo que contém as opções específicas de filtro. Se esse argumento for <b>false</b>, o Microsoft Word usará os valores padrão para o filtro. O valor padrão é <b>False</b>.</param>
+        <summary>Exporta o gráfico em um formato gráfico. Este método retorna um valor <b>Boolean</b> que indica se a exportação foi bem-sucedida.</summary>
+        <returns><b>Boolean</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1480,10 +1374,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Floor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Floor" /> object que representa a base do gráfico 3D. Somente leitura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Floor" />
-        </value>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Floor" /> objeto que representa a base do gráfico 3D. Somente leitura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Floor" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1512,7 +1404,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">O número de índice na coleção de séries da série para retornar.</param>
+        <param name="Index">O número de índice na coleção de séries da série a ser retornada.</param>
         <summary>Retorna a coleção de todas as séries no gráfico especificado ou a série especificada.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -1551,14 +1443,10 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna ou define a distância entre a série de dados em um gráfico 3D, como um percentual da largura do marcador. O valor dessa propriedade precisa estar entre 0 e 500. Leitura/gravação.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>
-            <b>Observação</b>: essa propriedade se aplica somente a gráficos 3D.</para>
-          <para />
-        </remarks>
+        <value><b>Integer</b></value>
+        <remarks><para>
+            <b>Observação</b>: essa propriedade só se aplica a gráficos 3D.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetChartElement">
@@ -1588,17 +1476,13 @@
         <Parameter Name="Arg2" Type="System.Int32&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="x">Necessário <b>inteiro</b> a coordenada X do elemento do gráfico.</param>
-        <param name="y">Necessário <b>inteiro</b> a coordenada Y do elemento do gráfico.</param>
-        <param name="ElementID">
-          <b>Inteiro</b> Quando o método retorna, esse argumento contém o <see cref="T:Microsoft.Office.Interop.Word.XlChartItem" /> o valor do elemento de gráfico nas coordenadas especificadas. Para obter mais informações, consulte a seção "Comentários".</param>
-        <param name="Arg1">
-          <b>Inteiro</b> Quando o método retorna, esse argumento contém informações relacionadas ao elemento do gráfico. Para obter mais informações, consulte a seção "Comentários".</param>
-        <param name="Arg2">
-          <b>Inteiro</b> Quando o método retorna, esse argumento contém informações relacionadas ao elemento do gráfico. Para obter mais informações, consulte a seção "Comentários".</param>
-        <summary>Retorna informações sobre o elemento de gráfico nas especificadas coordenadas X e Y. Esse método é incomum porque você especifica valores apenas para os dois primeiros argumentos. O Microsoft Word preenche os outros argumentos e o seu código deverá examinar esses valores quando o método retornar.</summary>
-        <remarks>
-          <para>O valor da <paramref name="ElementID" /> após o método retornar determina se <paramref name="Arg1" /> e <paramref name="Arg2" /> contêm alguma informação, conforme mostrado na tabela a seguir.</para>
+        <param name="x"><b>Inteiro</b> obrigatório a coordenada X do elemento do gráfico.</param>
+        <param name="y"><b>Inteiro</b> obrigatório a coordenada Y do elemento do gráfico.</param>
+        <param name="ElementID"><b>Número inteiro</b> Quando o método retorna, este argumento contém o <see cref="T:Microsoft.Office.Interop.Word.XlChartItem" /> valor do elemento de gráfico nas coordenadas especificadas. Para obter mais informações, consulte a seção "Comentários".</param>
+        <param name="Arg1"><b>Número inteiro</b> Quando o método retorna, este argumento contém informações relacionadas ao elemento de gráfico. Para obter mais informações, consulte a seção "Comentários".</param>
+        <param name="Arg2"><b>Número inteiro</b> Quando o método retorna, este argumento contém informações relacionadas ao elemento de gráfico. Para obter mais informações, consulte a seção "Comentários".</param>
+        <summary>Retorna informações sobre o elemento de gráfico nas coordenadas X e Y especificadas. Esse método é incomum porque você especifica valores apenas para os dois primeiros argumentos. O Microsoft Word preenche os outros argumentos e o seu código deverá examinar esses valores quando o método retornar.</summary>
+        <remarks><para>O valor de <paramref name="ElementID" /> após o método retorna determina se <paramref name="Arg1" /> e <paramref name="Arg2" /> contém qualquer informação, conforme mostrado na tabela a seguir.</para>
           <list type="table">
             <item>
               <description>
@@ -1612,7 +1496,7 @@
               <description>
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlAxisTitle" />
               </description>
-              <description>17</description>
+              <description>17.07.06</description>
               <description>AxisIndex</description>
               <description>AxisType</description>
             </item>
@@ -1620,7 +1504,7 @@
               <description>
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlDisplayUnitLabel" />
               </description>
-              <description>30</description>
+              <description>até</description>
               <description>AxisIndex</description>
               <description>AxisType</description>
             </item>
@@ -1636,7 +1520,7 @@
               <description>
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlMinorGridlines" />
               </description>
-              <description>16</description>
+              <description>dezesseis</description>
               <description>AxisIndex</description>
               <description>AxisType</description>
             </item>
@@ -1660,7 +1544,7 @@
               <description>
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlDownBars" />
               </description>
-              <description>20</description>
+              <description>508</description>
               <description>GroupIndex</description>
               <description>Nenhum</description>
             </item>
@@ -1668,7 +1552,7 @@
               <description>
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlDropLines" />
               </description>
-              <description>26</description>
+              <description>660</description>
               <description>GroupIndex</description>
               <description>Nenhum</description>
             </item>
@@ -1700,7 +1584,7 @@
               <description>
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlUpBars" />
               </description>
-              <description> 18</description>
+              <description>anos</description>
               <description>GroupIndex</description>
               <description>Nenhum</description>
             </item>
@@ -1708,7 +1592,7 @@
               <description>
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlChartArea" />
               </description>
-              <description>2</description>
+              <description>duas</description>
               <description>Nenhum</description>
               <description>Nenhum</description>
             </item>
@@ -1716,7 +1600,7 @@
               <description>
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlChartTitle" />
               </description>
-              <description>4</description>
+              <description>quatro</description>
               <description>Nenhum</description>
               <description>Nenhum</description>
             </item>
@@ -1732,7 +1616,7 @@
               <description>
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlDataTable" />
               </description>
-              <description>7</description>
+              <description>178</description>
               <description>Nenhum</description>
               <description>Nenhum</description>
             </item>
@@ -1748,7 +1632,7 @@
               <description>
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlLeaderLines" />
               </description>
-              <description>29</description>
+              <description>anos</description>
               <description>Nenhum</description>
               <description>Nenhum</description>
             </item>
@@ -1756,7 +1640,7 @@
               <description>
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlLegend" />
               </description>
-              <description>24</description>
+              <description>dia</description>
               <description>Nenhum</description>
               <description>Nenhum</description>
             </item>
@@ -1780,7 +1664,7 @@
               <description>
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlWalls" />
               </description>
-              <description>5</description>
+              <description>0,5</description>
               <description>Nenhum</description>
               <description>Nenhum</description>
             </item>
@@ -1788,7 +1672,7 @@
               <description>
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlDataLabel" />
               </description>
-              <description>7</description>
+              <description>178</description>
               <description>SeriesIndex</description>
               <description>PointIndex</description>
             </item>
@@ -1796,31 +1680,31 @@
               <description>
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlErrorBars" />
               </description>
-              <description>9</description>
+              <description>9 </description>
               <description>SeriesIndex</description>
-              <description>Nenhum</description>
+              <description>Nenhuma</description>
             </item>
             <item>
               <description>
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlLegendEntry" />
               </description>
-              <description>12</description>
+              <description>3,6</description>
               <description>SeriesIndex</description>
-              <description>Nenhum</description>
+              <description>Nenhuma</description>
             </item>
             <item>
               <description>
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlLegendKey" />
               </description>
-              <description>13</description>
+              <description>Treze</description>
               <description>SeriesIndex</description>
-              <description>Nenhum</description>
+              <description>Nenhuma</description>
             </item>
             <item>
               <description>
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlSeries" />
               </description>
-              <description>3</description>
+              <description>3D</description>
               <description>SeriesIndex</description>
               <description>PointIndex</description>
             </item>
@@ -1836,7 +1720,7 @@
               <description>
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlTrendline" />
               </description>
-              <description>8</description>
+              <description>8 </description>
               <description>SeriesIndex</description>
               <description>TrendLineIndex</description>
             </item>
@@ -1844,9 +1728,9 @@
               <description>
                 <see cref="F:Microsoft.Office.Interop.Word.XlChartItem.xlXErrorBars" />
               </description>
-              <description>10</description>
+              <description>10 </description>
               <description>SeriesIndex</description>
-              <description>Nenhum</description>
+              <description>Nenhuma</description>
             </item>
             <item>
               <description>
@@ -1854,46 +1738,45 @@
               </description>
               <description>11</description>
               <description>SeriesIndex</description>
-              <description>Nenhum</description>
+              <description>Nenhuma</description>
             </item>
           </list>
-          <para>a tabela a seguir descreve o significado dos <paramref name="Arg1" /> e <paramref name="Arg2" /> após o método retornar.</para>
+          <para>A tabela a seguir descreve o significado <paramref name="Arg1" /> de <paramref name="Arg2" /> e após o método retornar.</para>
           <list type="table">
             <item>
               <description>AxisIndex</description>
-              <description>Especifica se o eixo é primário ou secundário. Pode ser uma das seguintes opções <see cref="T:Microsoft.Office.Interop.Word.XlAxisGroup" /> constantes: <b>xlPrimary</b> ou <b>xlSecondary</b>.</description>
+              <description>Especifica se o eixo é primário ou secundário. Pode ser uma das seguintes <see cref="T:Microsoft.Office.Interop.Word.XlAxisGroup" /> constantes: <b>xlPrimary</b> ou <b>xlSecondary</b>.</description>
             </item>
             <item>
               <description>AxisType</description>
-              <description>Especifica o tipo de eixo. Pode ser uma das seguintes opções <see cref="T:Microsoft.Office.Interop.Word.XlAxisType" /> constantes: <b>xlCategory</b>, <b>xlSeriesAxis</b>ou <b>xlValue</b>.</description>
+              <description>Especifica o tipo de eixo. Pode ser <see cref="T:Microsoft.Office.Interop.Word.XlAxisType" /> uma das seguintes constantes: <b>xlCategory</b>, <b>xlSeriesAxis</b>ou <b>xlValue</b>.</description>
             </item>
             <item>
               <description>DropZoneType</description>
-              <description>Especifica o tipo de zona de recebimento: coluna, dados, página ou campo de linha. Pode ser uma das seguintes opções <see cref="T:Microsoft.Office.Interop.Word.XlPivotFieldOrientation" /> constantes: <b>xlColumnField</b>, <b>xlDataField</b>, <b>xlPageField</b>ou <b>xlRowField</b>. As constantes de campo de coluna e linha especificam os campos de série e categoria, respectivamente.</description>
+              <description>Especifica o tipo de zona soltar: campo de linha, dados, página ou coluna. Pode ser uma <see cref="T:Microsoft.Office.Interop.Word.XlPivotFieldOrientation" /> das seguintes constantes: <b>xlColumnField</b>, <b>xlDataField</b>, <b>xlPageField</b>ou <b>xlRowField</b>. As constantes de campo de coluna e linha especificam os campos de série e categoria, respectivamente.</description>
             </item>
             <item>
               <description>GroupIndex</description>
-              <description>Especifica o deslocamento dentro do <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> coleção para um grupo de gráficos específico.</description>
+              <description>Especifica o deslocamento dentro da <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> coleção para um grupo de gráficos específico.</description>
             </item>
             <item>
               <description>PointIndex</description>
-              <description>Especifica o deslocamento dentro do <see cref="T:Microsoft.Office.Interop.Word.Points" /> conjunto para um ponto específico dentro de uma série. Um valor de – 1 indica de que todos os pontos de dados estão selecionados.</description>
+              <description>Especifica o deslocamento dentro da <see cref="T:Microsoft.Office.Interop.Word.Points" /> coleção para um ponto específico dentro de uma série. Um valor de – 1 indica que todos os pontos de dados estão selecionados.</description>
             </item>
             <item>
               <description>SeriesIndex</description>
-              <description>Especifica o deslocamento dentro do <see cref="T:Microsoft.Office.Interop.Word.Series" /> coleção para uma série específica.</description>
+              <description>Especifica o deslocamento dentro da <see cref="T:Microsoft.Office.Interop.Word.Series" /> coleção para uma série específica.</description>
             </item>
             <item>
               <description>ShapeIndex</description>
-              <description>Especifica o deslocamento dentro do <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> coleção para uma forma específica.</description>
+              <description>Especifica o deslocamento dentro da <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> coleção para uma forma específica.</description>
             </item>
             <item>
               <description>TrendlineIndex</description>
-              <description>Especifica o deslocamento dentro do <see cref="T:Microsoft.Office.Interop.Word.Trendlines" /> coleção para uma linha de tendência específica dentro de uma série.</description>
+              <description>Especifica o deslocamento dentro da <see cref="T:Microsoft.Office.Interop.Word.Trendlines" /> coleção para uma tendência específica dentro de uma série.</description>
             </item>
           </list>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HasAxis">
@@ -1932,18 +1815,13 @@
         <Parameter Name="Index2" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index1">O <b>objeto</b> do tipo de eixo necessário. Eixos de série se aplicam somente a gráficos 3D. Pode ser uma do <see cref="T:Microsoft.Office.Interop.Word.XlAxisType" /> constantes.</param>
-        <param name="Index2">
-          <b>Objeto</b> o grupo do eixo opcional. Gráficos 3D possuem somente um conjunto de eixos. Pode ser uma do <see cref="T:Microsoft.Office.Interop.Word.XlAxisGroup" /> constantes.</param>
+        <param name="Index1"><b>Objeto</b> obrigatório o tipo de eixo. Eixos de série se aplicam somente a gráficos 3D. Pode ser uma das <see cref="T:Microsoft.Office.Interop.Word.XlAxisType" /> constantes.</param>
+        <param name="Index2"><b>Objeto</b> opcional o grupo de eixos. Gráficos 3D possuem somente um conjunto de eixos. Pode ser uma das <see cref="T:Microsoft.Office.Interop.Word.XlAxisGroup" /> constantes.</param>
         <summary>Retorna ou define quais eixos existem no gráfico. Leitura/gravação.</summary>
-        <value>
-          <b>Object</b>
-        </value>
-        <remarks>
-          <para>Você deve inserir um valor para pelo menos um dos parâmetros ao definir essa propriedade.</para>
-          <para>Microsoft Word pode criar ou excluir eixos se você alterar o tipo de gráfico ou a <see cref="P:Microsoft.Office.Interop.Word.Axis.AxisGroup" /> propriedade.</para>
-          <para />
-        </remarks>
+        <value><b>Object</b></value>
+        <remarks><para>É necessário inserir um valor para pelo menos um dos parâmetros ao definir essa propriedade.</para>
+          <para>O Microsoft Word pode criar ou excluir eixos se você alterar o tipo de <see cref="P:Microsoft.Office.Interop.Word.Axis.AxisGroup" /> gráfico ou a propriedade.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HasDataTable">
@@ -1973,9 +1851,8 @@
       </ReturnValue>
       <Docs>
         <summary>Obtém ou define um valor que indica se o <see cref="T:Microsoft.Office.Interop.Word.Chart" /> tem uma tabela de dados. Leitura/gravação.</summary>
-        <value>
-          <b>Boolean</b>
-          <b>True</b> se o gráfico tiver uma tabela de dados. Caso contrário<b>False</b></value>
+        <value><b>Boolean</b> 
+          <b>True</b> se o gráfico tem uma tabela de dados. Caso contrário,<b>false</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2042,10 +1919,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna <b>True</b> se o gráfico tiver uma legenda. Leitura/gravação.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary>Retorna <b>true</b> se o gráfico tem uma legenda. Leitura/gravação.</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2082,12 +1957,9 @@
       </ReturnValue>
       <Docs>
         <summary>Determina se os controles de gráfico dinâmico são exibidos no relatório de gráfico dinâmico especificado</summary>
-        <value>
-          <b>Boolean</b> Para um gráfico normal, essa propriedade sempre retorna <b>False</b> e não pode ser definida.</value>
-        <remarks>
-          <para>O valor padrão é <b>True</b></para>
-          <para />
-        </remarks>
+        <value><b>Boolean</b> Para um gráfico normal, essa propriedade sempre retorna <b>false</b> e não pode ser definida.</value>
+        <remarks><para>O valor padrão é <b>True</b></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HasTitle">
@@ -2122,15 +1994,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> se o eixo ou o gráfico tem um título visível. Leitura/gravação.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>Um título de gráfico é representado por um <see cref="T:Microsoft.Office.Interop.Word.ChartTitle" /> objeto.</para>
-          <para />
-        </remarks>
+        <summary><b>True</b> se o eixo ou o gráfico tem um título visível. Leitura/gravação.</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>O título de um gráfico é representado <see cref="T:Microsoft.Office.Interop.Word.ChartTitle" /> por um objeto.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HeightPercent">
@@ -2165,10 +2032,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define a altura de um gráfico 3D como um percentual da largura do gráfico (entre 5 e 500 por cento). Leitura/gravação.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>Retorna ou define a altura de um gráfico 3D como um percentual da largura do gráfico (entre 5 e 500%). Leitura/gravação.</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2198,10 +2063,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Legend</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Legend" /> object que representa a legenda do gráfico. Somente leitura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Legend" />
-        </value>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Legend" /> objeto que representa a legenda do gráfico. Somente leitura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Legend" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2234,10 +2097,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartGroup</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o grupo de gráficos de linha em um gráfico 3D.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />
-        </value>
+        <summary>Retorna o grupo de gráficos de linhas em um gráfico 3D.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2269,11 +2130,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Opcional <b>objeto</b> Especifica o grupo de gráficos.</param>
-        <summary>Em um gráfico 2D, retorna um objeto representando um um grupo de gráficos de linha única (um <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /> objeto) ou uma coleção dos grupos de gráficos de linha (uma <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> conjunto).</summary>
-        <returns>
-          <b>Object</b>
-        </returns>
+        <param name="Index"><b>Objeto</b> opcional especifica o grupo de gráficos.</param>
+        <summary>Em um gráfico 2D, retorna um objeto que representa um único grupo de gráficos de linha (um <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /> objeto) ou uma coleção dos grupos de gráficos de linhas (uma <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> coleção).</summary>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2301,9 +2160,7 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna o pai do objeto especificado. Somente leitura.</summary>
-        <value>
-          <b>Object</b>
-        </value>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2332,7 +2189,7 @@
         <Parameter Name="Type" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Type">Especifica as informações de gráfico a serem coladas se um gráfico estiver na Área de Transferência. Pode ser uma das seguintes opções <see cref="T:Microsoft.Office.Interop.Excel.XlPasteType" /><b>xlPasteFormats</b>, <b>xlPasteFormulas</b>ou <b>xlPasteAll</b>. O valor padrão é <b>xlPasteAll</b>. Se não houver dados que não seja um gráfico da área de transferência, esse argumento não pode ser usado. Colar</param>
+        <param name="Type">Especifica as informações de gráfico a serem coladas se um gráfico estiver na Área de Transferência. Pode ser uma das seguintes <see cref="T:Microsoft.Office.Interop.Excel.XlPasteType" /> <b>xlPasteFormats</b>, <b>xlPasteFormulas</b>ou <b>xlPasteAll</b>. O valor padrão é <b>xlPasteAll</b>. Se existirem outros dados que não sejam de um gráfico na Área de Transferência, este argumento não poderá ser usado. colagens</param>
         <summary>Cola dados de gráfico da Área de Transferência para o gráfico especificado.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2369,14 +2226,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define um valor <b>Integer</b> que representa a perspectiva para o modo de exibição do gráfico 3D.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>O valor dessa propriedade deve estar entre 0 e 100. Essa propriedade é ignorada se a <see cref="P:Microsoft.Office.Interop.Word.Chart.RightAngleAxes" /> propriedade estiver definida como <b>True</b>.</para>
-          <para />
-        </remarks>
+        <summary>Retorna ou define um valor <b>inteiro</b> que representa a perspectiva para o modo de exibição de gráfico 3D.</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>O valor dessa propriedade deve estar entre 0 e 100. Essa propriedade será ignorada se <see cref="P:Microsoft.Office.Interop.Word.Chart.RightAngleAxes" /> a propriedade for definida como <b>true</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Pie3DGroup">
@@ -2409,9 +2262,7 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna o grupo de gráficos de pizza em um gráfico 3D.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2443,11 +2294,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Opcional <b>objeto</b> Especifica o grupo de gráficos.</param>
-        <summary>Em um gráfico 2D, retorna um objeto representando um grupo de um único gráfico de pizza (um <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /> objeto) ou uma coleção dos grupos de gráficos de pizza (um <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> conjunto).</summary>
-        <returns>
-          <b>Object</b>
-        </returns>
+        <param name="Index"><b>Objeto</b> opcional especifica o grupo de gráficos.</param>
+        <summary>Em um gráfico 2D, retorna um objeto que representa um único grupo de gráficos de pizza (um <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /> objeto) ou uma coleção dos grupos de gráficos de pizza (uma <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> coleção).</summary>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2474,7 +2323,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Não aceito para este objeto.</summary>
+        <summary>Não é suportado por este objeto.</summary>
         <value>Retorna <see cref="T:System.Object" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2505,10 +2354,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.PlotArea</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.PlotArea" /> object que representa a área de plotagem de um gráfico. Somente leitura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.PlotArea" />
-        </value>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.PlotArea" /> objeto que representa a área de plotagem de um gráfico. Somente leitura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.PlotArea" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2538,14 +2385,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.XlRowCol</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define a maneira como as linhas ou colunas são usadas como série de dados no gráfico. Pode ser uma das seguintes opções <see cref="T:Microsoft.Office.Interop.Word.XlRowCol" /> constantes: <b>xlColumns</b> ou <b>xlRows</b>. Leitura/gravação.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.XlRowCol" />
-        </value>
-        <remarks>
-          <para>Para relatórios de gráfico dinâmico, essa propriedade é somente leitura e sempre retorna <b>xlColumns</b>.</para>
-          <para />
-        </remarks>
+        <summary>Retorna ou define como as colunas ou linhas são usadas como séries de dados no gráfico. Pode ser uma das seguintes <see cref="T:Microsoft.Office.Interop.Word.XlRowCol" /> constantes: <b>xlColumns</b> ou <b>xlRows</b>. Leitura/gravação.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.XlRowCol" /></value>
+        <remarks><para>Para relatórios de gráfico dinâmico, essa propriedade é somente leitura e sempre retorna <b>xlColumns</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PlotVisibleOnly">
@@ -2581,8 +2424,7 @@
       </ReturnValue>
       <Docs>
         <summary>Obtém ou define um valor que indica se somente as células visíveis são plotadas. Leitura/gravação.</summary>
-        <value>
-          <b>Boolean</b>
+        <value><b>Boolean</b> 
           <b>True</b> se somente as células visíveis são plotadas. <b>False</b> se as células visíveis quanto ocultas são plotadas.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2615,11 +2457,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Opcional <b>objeto</b> Especifica o grupo de gráficos.</param>
-        <summary>Em um gráfico 2D, retorna um objeto representando um um grupo de gráficos de radar único (um <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /> objeto) ou uma coleção dos grupos de gráficos de radar (um <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> conjunto).</summary>
-        <returns>
-          <b>Object</b>
-        </returns>
+        <param name="Index"><b>Objeto</b> opcional especifica o grupo de gráficos.</param>
+        <summary>Em um gráfico 2D, retorna um objeto que representa um único grupo de gráficos de radar (um <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /> objeto) ou uma coleção dos grupos de gráficos de radar (uma <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> coleção).</summary>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2680,15 +2520,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> se os eixos do gráfico estiverem em reto, independentemente de rotação de gráfico ou a elevação. Aplica a gráficos de barras, colunas e linhas somente para 3D. Leitura/gravação.</summary>
-        <value>
-          <b>Object</b>
-        </value>
-        <remarks>
-          <para>Se essa propriedade for definida como <b>True</b>, o <see cref="P:Microsoft.Office.Interop.Word.Chart.Perspective" /> propriedade será ignorada.</para>
-          <para />
-        </remarks>
+        <summary><b>True</b> se os eixos do gráfico estiverem em ângulo reto, independentemente da rótulo ou da elevação do gráfico. Só se aplica a gráficos de linhas, colunas e barras 3D. Leitura/gravação.</summary>
+        <value><b>Object</b></value>
+        <remarks><para>Se essa propriedade for definida como <b>true</b>, a <see cref="P:Microsoft.Office.Interop.Word.Chart.Perspective" /> propriedade será ignorada.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Rotation">
@@ -2723,14 +2558,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define a rotação da exibição do gráfico 3D (a rotação da área de plotagem ao redor do eixo z, em graus). O valor dessa propriedade deve ser de 0 a 360, exceto para gráficos de barras 3D, onde o valor deve estar entre 0 e 44. O valor padrão é 20. Aplica-se somente a gráficos 3D. Leitura/gravação.</summary>
-        <value>
-          <b>Object</b>
-        </value>
-        <remarks>
-          <para>Rotações são sempre arredondadas para o inteiro mais próximo.</para>
-          <para />
-        </remarks>
+        <summary>Retorna ou define a rotação da exibição do gráfico 3D (a rotação da área de plotagem ao redor do eixo z, em graus). O valor dessa propriedade precisa estar entre 0 e 360, exceto para gráficos de barras 3D, onde o valor precisa estar entre 0 e 44. O valor padrão é 20. Aplica-se somente a gráficos 3D. Leitura/gravação.</summary>
+        <value><b>Object</b></value>
+        <remarks><para>Rotações são sempre arredondadas para o inteiro mais próximo.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SaveChartTemplate">
@@ -2756,13 +2587,10 @@
         <Parameter Name="FileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="FileName">
-          <b>Cadeia de caracteres</b> do nome do modelo de gráfico necessário.</param>
+        <param name="FileName"><b>Cadeia de caracteres</b> obrigatória o nome do modelo de gráfico.</param>
         <summary>Salva um modelo de gráfico personalizado na lista de modelos de gráficos disponíveis.</summary>
-        <remarks>
-          <para>Por padrão, esse método salva o gráfico ativo para o diretório de modelo de gráfico do usuário.  Se um caminho UNC ou URL for especificado, o gráfico serão salvas no local especificado em vez disso.</para>
-          <para />
-        </remarks>
+        <remarks><para>Por padrão, este método salva o gráfico ativo no diretório de modelos de gráficos do usuário. Se um UNC ou URL for especificado, o gráfico será salvo no local especificado. </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -2790,11 +2618,9 @@
         <Parameter Name="Replace" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Replace">(usado somente com planilhas). Opcional <b>objeto</b><b>True</b> para substituir a seleção atual pelo objeto especificado. <b>False</b> para estender a seleção atual para incluir qualquer selecionada anteriormente objetos e o objeto especificado.</param>
+        <param name="Replace">(usado somente com planilhas). <b>Objeto</b>opcional<b>true</b> para substituir a seleção atual pelo objeto especificado. <b>False</b> para estender a seleção atual para incluir qualquer selecionada anteriormente objetos e o objeto especificado.</param>
         <summary>Seleciona o objeto.</summary>
-        <returns>
-          <b>Object</b>
-        </returns>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2823,12 +2649,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objeto</b> necessário o nome ou número da série.</param>
+        <param name="Index"><b>Objeto</b> obrigatório o nome ou o número da série.</param>
         <summary>Retorna um <b>objeto</b> que representa todas as séries no gráfico.</summary>
-        <returns>
-          <b>Object</b>
-        </returns>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2858,7 +2681,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.XlSeriesNameLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define um <see cref="T:Microsoft.Office.Interop.Word.XlSeriesNameLevel" /> constante que especifica o nível da origem dos nomes de série. Leitura e gravação.</summary>
+        <summary>Retorna ou define uma <see cref="T:Microsoft.Office.Interop.Word.XlSeriesNameLevel" /> constante que especifica o nível de origem dos nomes das séries. Leitura e gravação.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2886,8 +2709,7 @@
         <Parameter Name="FileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="FileName">
-          <b>Cadeia de caracteres</b> do nome do arquivo gráfico necessário.</param>
+        <param name="FileName"><b>Cadeia de caracteres</b> obrigatória o nome do arquivo gráfico.</param>
         <summary>Define um gráfico de plano de fundo para um gráfico.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2915,7 +2737,7 @@
         <Parameter Name="Name" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Name">Obrigatório. <b>Objeto</b> Especifica o nome do modelo de gráfico padrão que será usado ao criar novos gráficos.  Esse nome pode ser definido como o nome de um modelo de gráfico definido pelo usuário na Galeria de ou um especial <see cref="T:Microsoft.Office.Interop.Word.XlChartGallery" /> constante, <see cref="F:Microsoft.Office.Interop.Word.XlChartGallery.xlBuiltIn" />, para especificar um modelo de gráfico interno.</param>
+        <param name="Name">Obrigatório. <b>Objeto</b> Especifica o nome do modelo de gráfico padrão que será usado durante a criação de novos gráficos.  Esse nome pode ser definido como o nome de um modelo de gráfico definido pelo usuário na galeria ou uma constante especial <see cref="T:Microsoft.Office.Interop.Word.XlChartGallery" /> , <see cref="F:Microsoft.Office.Interop.Word.XlChartGallery.xlBuiltIn" />para especificar um modelo de gráfico interno.</param>
         <summary>Especifica o nome do modelo de gráfico que o Microsoft Word usa ao criar novos gráficos.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2943,13 +2765,12 @@
         <Parameter Name="Element" Type="Microsoft.Office.Core.MsoChartElementType" />
       </Parameters>
       <Docs>
-        <param name="Element">Necessário <see cref="T:Microsoft.Office.Core.MsoChartElementType" /> Especifica o tipo de elemento do gráfico.</param>
+        <param name="Element">Obrigatório <see cref="T:Microsoft.Office.Core.MsoChartElementType" /> especifica o tipo de elemento do gráfico.</param>
         <summary>Conjuntos de elementos em um gráfico do gráfico. Leitura/gravação.</summary>
-        <remarks>
-          <para>Para gráficos, os seguintes comandos na guia Layout correspondem ao <see cref="M:Microsoft.Office.Interop.Word.Chart.SetElement(Microsoft.Office.Core.MsoChartElementType)" /> método:</para>
+        <remarks><para>Para gráficos, os seguintes comandos na guia layout correspondem ao <see cref="M:Microsoft.Office.Interop.Word.Chart.SetElement(Microsoft.Office.Core.MsoChartElementType)" /> método:</para>
           <list type="bullet">
             <item>
-              <para>tudo no grupo Labels.</para>
+              <para>Tudo no grupo Labels.</para>
             </item>
             <item>
               <para>Tudo no grupo Axes.</para>
@@ -2958,13 +2779,12 @@
               <para>Tudo no grupo Analysis.</para>
             </item>
             <item>
-              <para>Botões PlotArea, Chart Wall e base do gráfico.</para>
+              <para>Botões PlotArea, Chart Wall e Chart Floor.</para>
             </item>
           </list>
           <para>
-            <see cref="T:Microsoft.Office.Core.MsoChartElementType" /> é uma enumeração de constantes que se referem a todos os comandos acima.</para>
-          <para />
-        </remarks>
+            <see cref="T:Microsoft.Office.Core.MsoChartElementType" />é uma enumeração de constantes que se referem a todos os comandos acima.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetSourceData">
@@ -2990,10 +2810,9 @@
         <Parameter Name="PlotBy" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Source">
-          <b>Cadeia de caracteres</b> o endereço do intervalo de dados de gráfico que contém os dados de origem necessário.</param>
-        <param name="PlotBy">Opcional <b>objeto</b> Especifica a maneira como os dados deve ser plotados. Pode ser um dos seguintes <see cref="T:Microsoft.Office.Interop.Word.XlRowCol" /> constantes: <b>xlColumns</b> ou <b>xlRows</b>.</param>
-        <summary>Define o intervalo de dados de origem para o <see cref="T:Microsoft.Office.Interop.Word.Chart" />.</summary>
+        <param name="Source"><b>Cadeia de caracteres</b> obrigatória o endereço do intervalo de dados do gráfico que contém os dados de origem.</param>
+        <param name="PlotBy"><b>Objeto</b> opcional especifica a maneira como os dados serão plotados. Pode ser uma das seguintes <see cref="T:Microsoft.Office.Interop.Word.XlRowCol" /> constantes: <b>xlColumns</b> ou <b>xlRows</b>.</param>
+        <summary>Define o intervalo de dados de origem <see cref="T:Microsoft.Office.Interop.Word.Chart" />para o.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3020,10 +2839,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> coleção que representa todas as formas na planilha de gráfico. Somente leitura.</summary>
-        <value>
-          <b>Object</b>
-        </value>
+        <summary>Retorna uma <see cref="T:Microsoft.Office.Interop.Word.Shapes" /> coleção que representa todas as formas na planilha de gráfico. Somente leitura.</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3054,8 +2871,7 @@
       </ReturnValue>
       <Docs>
         <summary>This object, member, or enumeration is deprecated and is not intended to be used in your code.</summary>
-        <value>
-          <b>true</b> se todos os botões em um gráfico dinâmico de campo devem ser exibidos; Caso contrário, <b>false</b>.</value>
+        <value><b>true</b> se todos os botões de campo em um gráfico dinâmico devem ser exibidos; caso contrário, <b>false</b>.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3116,14 +2932,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define se deseja mostrar os rótulos de dados quando o valor é maior que o valor máximo no eixo dos valores.  Leitura/gravação.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>Se você alterar o eixo dos valores de tal forma que se tornou menor que o tamanho dos pontos de dados, você pode usar essa propriedade para definir se deve mostrar os rótulos de dados. Essa propriedade se aplica somente a gráficos 2D.</para>
-          <para />
-        </remarks>
+        <summary>Retorna ou define se os rótulos de dados devem ser mostrados quando o valor for maior do que o valor máximo no eixo dos valores.  Leitura/gravação.</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>Se você alterar o eixo dos valores de forma que ele se tornou menor do que o tamanho dos pontos de dados, você pode usar essa propriedade para definir se os rótulos de dados devem ser exibidos. Essa propriedade se aplica somente a gráficos 2D.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowLegendFieldButtons">
@@ -3153,8 +2965,7 @@
       </ReturnValue>
       <Docs>
         <summary>This object, member, or enumeration is deprecated and is not intended to be used in your code.</summary>
-        <value>
-          <b>true</b> se o campo legenda botões em um gráfico dinâmico deve ser exibido; Caso contrário, <b>false</b>.</value>
+        <value><b>true</b> se os botões de campo de legenda em um gráfico dinâmico devem ser exibidos; caso contrário, <b>false</b>.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3184,9 +2995,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Este objeto, membro ou enumeração foi preterida e não se destina a ser usado em seu código..</summary>
-        <value>
-          <b>true</b> se o campo de filtro de relatório botões em um gráfico dinâmico deve ser exibido; Caso contrário, <b>false</b>.</value>
+        <summary>Este objeto, membro ou enumeração foi preterido e não se destina a ser usado em seu código..</summary>
+        <value><b>true</b> se os botões de campo de filtro de relatório em um gráfico dinâmico devem ser exibidos; caso contrário, <b>false</b>.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3216,9 +3026,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Este objeto, membro ou enumeração foi preterida e não se destina a ser usado em seu código..</summary>
-        <value>
-          <b>true</b> se o campo de valor botões em um gráfico dinâmico deve ser exibido; Caso contrário, <b>false</b>.</value>
+        <summary>Este objeto, membro ou enumeração foi preterido e não se destina a ser usado em seu código..</summary>
+        <value><b>true</b> se os botões de campo de valor em um gráfico dinâmico devem ser exibidos; caso contrário, <b>false</b>.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3245,10 +3054,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Walls</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Walls" /> objeto que permite ao usuário formatar individualmente a parede lateral de um gráfico 3D.  Somente leitura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Walls" />
-        </value>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Walls" /> objeto que permite que o usuário formate individualmente a parede lateral de um gráfico 3D.  Somente leitura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Walls" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3290,10 +3097,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Essa API suporta o Visual Studio Tools para a infra-estrutura do Office e não se destina a ser usado diretamente do seu código.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>Essa API oferece suporte à infraestrutura do Visual Studio Tools for Office e não se destina a ser usado diretamente do seu código.</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3327,9 +3132,7 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna o grupo de gráficos de superfície de um gráfico 3D.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3372,9 +3175,7 @@
       </ReturnValue>
       <Docs>
         <summary>Reservado para uso interno.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3404,10 +3205,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Walls</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Walls" /> object que representa as paredes do gráfico 3D. Somente leitura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Walls" />
-        </value>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Walls" /> objeto que representa as paredes do gráfico 3D. Somente leitura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Walls" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3439,11 +3238,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Opcional <b>objeto</b> Especifica o grupo de gráficos.</param>
-        <summary>Em um gráfico 2D, retorna um objeto representando um um grupo de gráficos de dispersão único (um <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /> objeto) ou uma coleção dos grupos de gráficos de dispersão (um <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> conjunto).</summary>
-        <returns>
-          <b>Object</b>
-        </returns>
+        <param name="Index"><b>Objeto</b> opcional especifica o grupo de gráficos.</param>
+        <summary>Em um gráfico 2D, retorna um objeto que representa um único grupo de gráficos de dispersão (um <see cref="T:Microsoft.Office.Interop.Word.ChartGroup" /> objeto) ou uma coleção de grupos de gráficos de dispersão (uma <see cref="T:Microsoft.Office.Interop.Word.ChartGroups" /> coleção).</summary>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

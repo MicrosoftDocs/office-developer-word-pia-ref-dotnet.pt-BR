@@ -1,13 +1,5 @@
 <Type Name="Find" FullName="Microsoft.Office.Interop.Word.Find">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f63dc36acb8e1cf56f86311f5fd23d30d0daa392" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20664535" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Find" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="771250bff76eecefd95fd6cad7906709cfc8f69c" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146840" /></Metadata><TypeSignature Language="C#" Value="public interface Find" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Find" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Find" />
   <TypeSignature Language="VB.NET" Value="Public Interface Find" />
@@ -27,13 +19,11 @@
   </Attributes>
   <Docs>
     <summary>Representa o critério para uma operação de localização.</summary>
-    <remarks>
-      <para>As propriedades e métodos do objeto <b>Find</b> correspondem às opções da caixa de diálogo Localizar e substituir.</para>
-      <para>Use a propriedade <b>Find</b> para retornar um objeto <b>Find</b> .</para>
-      <para>Se você tiver chegado ao objeto <b>Find</b> do <see cref="T:Microsoft.Office.Interop.Word.Selection" /> do objeto, a seleção é alterada quando o texto coincidente o critério de localização for encontrado.</para>
-      <para>Se você tiver chegado ao objeto <b>Find</b> do <see cref="T:Microsoft.Office.Interop.Word.Range" /> do objeto, a seleção não é alterada quando o texto coincidente o critério de localização for encontrado, mas o objeto de <b>intervalo</b> será redefinido.</para>
-      <para />
-    </remarks>
+    <remarks><para>As propriedades e métodos do objeto <b>Find</b> correspondem às opções da caixa de diálogo Localizar e substituir.</para>
+      <para>Use a propriedade <b>Find</b> para retornar um objeto <b>Find</b>.</para>
+      <para>Se você tiver chegado ao objeto <b>Find</b> do <see cref="T:Microsoft.Office.Interop.Word.Selection" /> objeto, a seleção será alterada quando o texto correspondente ao critério de localização for encontrado.</para>
+      <para>Se você tiver chegado ao objeto <b>Find</b> do <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto, a seleção não será alterada quando o texto correspondente ao critério de localização for encontrado, mas o objeto <b>Range</b> for redefinido.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -59,7 +49,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -86,8 +76,7 @@
       <Parameters />
       <Docs>
         <summary>Limpa todas as opções de pesquisa não específicas associadas ao texto em japonês.</summary>
-        <remarks>
-          <para>Este método define o valor das propriedades a seguir como <b>False</b>:</para>
+        <remarks><para>Este método define o valor das seguintes propriedades como <b>false</b>:</para>
           <para>
             <see cref="P:Microsoft.Office.Interop.Word.Options.MatchFuzzyAY" />
           </para>
@@ -142,8 +131,7 @@
           <para>
             <see cref="P:Microsoft.Office.Interop.Word.Options.MatchFuzzyZJ" />
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ClearFormatting">
@@ -167,11 +155,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Remove a partir de uma seleção ou a formatação especificada em uma operação de localização ou substituição de formatação de parágrafo e texto.</summary>
-        <remarks>
-          <para>Para garantir que a formatação não incluído como critérios em um localizar ou substituir a operação, use esse método antes de executar a operação.</para>
-          <para />
-        </remarks>
+        <summary>Remove a formatação de parágrafo e texto de uma seleção ou da formatação especificada em uma operação de localização ou substituição.</summary>
+        <remarks><para>Para garantir que a formatação não seja incluída como critério em uma operação de localização ou substituição, use esse método antes de executar a operação.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ClearHitHighlight">
@@ -196,13 +182,9 @@
       <Parameters />
       <Docs>
         <summary>Remove o realce de todo o texto localizado em uma operação localizar com realce e retorna um <b>Boolean</b> que indica se a operação foi bem-sucedida.</summary>
-        <returns>
-          <b>Boolean</b>
-        </returns>
-        <remarks>
-          <para>Use o <see cref="M:Microsoft.Office.Interop.Word.Find.HitHighlight(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> método para realçar o texto localizado.</para>
-          <para />
-        </remarks>
+        <returns><b>Boolean</b></returns>
+        <remarks><para>Use o <see cref="M:Microsoft.Office.Interop.Word.Find.HitHighlight(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> método para realçar o texto localizado.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CorrectHangulEndings">
@@ -231,12 +213,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Determina se o Microsoft Word corrigir automaticamente terminações Hangul ao substituir texto Hangul.</summary>
+        <summary>Determina se o Microsoft Word corrige automaticamente terminações Hangul ao substituir texto Hangul.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Esta propriedade retorna <b>True</b> se o Microsoft Word corrigir automaticamente terminações Hangul ao substituir texto Hangul e <b>False</b> se não.</para>
-          <para />
-        </remarks>
+        <remarks><para>Essa propriedade retorna <b>true</b> se o Microsoft Word corrigir automaticamente terminações Hangul ao substituir texto Hangul e <b>false</b> se não.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -264,9 +244,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto especificado foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
-          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Se o objeto especificado foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". [!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
+          <para>A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -305,46 +285,29 @@
         <Parameter Name="MatchControl" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="FindText">
-          <b>Objeto</b>de opcional. O texto a ser localizado. Use uma cadeia de caracteres vazia ("") para procurar somente a formatação. Você pode procurar por caracteres especiais especificando os códigos de caracteres apropriados. Por exemplo, "^ p" corresponde a uma marca de parágrafo e "^ t" corresponde a um caractere de tabulação.</param>
-        <param name="MatchCase">
-          <b>Objeto</b>de opcional. <b>True</b> para especificar que o texto a ser diferencia maiúsculas de minúsculas. Corresponde à caixa de seleção Diferenciar maiusculas na caixa de diálogo Localizar e substituir (menu Editar).</param>
-        <param name="MatchWholeWord">
-          <b>Objeto</b>de opcional. <b>True</b> para que a operação de localizar encontre somente palavras inteiras, não o texto que faz parte de uma palavra maior. Corresponde à caixa de seleção somente palavras inteiras na caixa de diálogo Localizar e substituir.</param>
-        <param name="MatchWildcards">
-          <b>Objeto</b>de opcional. <b>True</b> para que o texto de pesquisa seja um operador especial de pesquisa. Corresponde à caixa de seleção usar caracteres curinga na caixa de diálogo Localizar e substituir.</param>
-        <param name="MatchSoundsLike">
-          <b>Objeto</b>de opcional. <b>True</b> para que a operação de localização localize palavras aquele som semelhante ao texto Localizar. Corresponde à caixa de seleção semelhantes na caixa de diálogo Localizar e substituir.</param>
-        <param name="MatchAllWordForms">
-          <b>Objeto</b>de opcional. <b>True</b> para que a operação de localizar Encontre todas as formas do texto find (por exemplo, "sit" localiza "sentado" e "sat"). Corresponde à caixa de seleção todas as formas na caixa de diálogo Localizar e substituir.</param>
-        <param name="Forward">
-          <b>Objeto</b>de opcional. <b>True</b> para pesquisa registros posteriores (até o final do documento).</param>
-        <param name="Wrap">
-          <b>Objeto</b>de opcional. Controla o que acontece se a pesquisa começa em um ponto que não seja o início do documento e o final do documento for atingido (ou vice-versa se <paramref name="Forward" /> estiver definida como <b>False</b>). Este argumento também controla o que acontece se há uma seleção ou intervalo e o texto de pesquisa não for encontrado na seleção ou intervalo. Pode ser uma das seguintes opções <see cref="T:Microsoft.Office.Interop.Word.WdFindWrap" /> constantes:<b>wdFindAsk</b> depois de pesquisar a seleção ou o intervalo, o Microsoft Word exibe uma mensagem perguntando se deve pesquisar o restante do documento. <b>wdFindContinue</b> A operação de pesquisa continua se o início ou fim do intervalo de pesquisa for atingido. <b>wdFindStop</b> A operação de localização é encerrada se o início ou fim do intervalo de pesquisa for atingido.</param>
-        <param name="Format">
-          <b>Objeto</b>de opcional. <b>True</b> para que a operação de pesquisa localize formatação além ou em vez do texto de pesquisa.</param>
-        <param name="ReplaceWith">
-          <b>Objeto</b>de opcional. O texto de substituição. Para excluir o texto especificado pelo <paramref name="Find" /> argumento, use uma sequência vazia (""). Especificar caracteres especiais e critérios de pesquisa avançada apenas como faria para o <paramref name="Find" /> argumento. Para especificar um objeto gráfico ou outro item de não texto, como a substituição, mova o item para a área de transferência e especifique "^ c" para <paramref name="ReplaceWith" />.</param>
-        <param name="Replace">
-          <b>Objeto</b>de opcional. Especifica quantas substituições devem ser feitas: uma, todas ou nenhuma. Pode ser qualquer <see cref="T:Microsoft.Office.Interop.Word.WdReplace" /> constante:<b>wdReplaceAll </b><b>wdReplaceNone </b><b>wdReplaceOne</b></param>
-        <param name="MatchKashida">
-          <b>Objeto</b>de opcional. <b>True</b> se localizar operações coincidirem texto com correspondência de kashidas em um documento de idioma árabe. Esse argumento pode não estar disponível, dependendo do suporte a idioma (português do Brasil, por exemplo) que tiver sido selecionado ou instalado.</param>
-        <param name="MatchDiacritics">
-          <b>Objeto</b>de opcional. <b>True</b> se localizar operações coincidirem texto com correspondência diacríticos em um documento em idioma da direita para a esquerda. Esse argumento pode não estar disponível, dependendo do suporte a idioma (português do Brasil, por exemplo) que tiver sido selecionado ou instalado.</param>
-        <param name="MatchAlefHamza">
-          <b>Objeto</b>de opcional. <b>True</b> se localizar operações coincidirem texto com alef hamzas em um documento de idioma árabe coincidentes. Esse argumento pode não estar disponível, dependendo do suporte a idioma (português do Brasil, por exemplo) que tiver sido selecionado ou instalado.</param>
-        <param name="MatchControl">
-          <b>Objeto</b>de opcional. <b>True</b> se localizar operações coincidirem texto com correspondência de caracteres de controle bidirecionais em um documento de idioma da direita para a esquerda. Esse argumento pode não estar disponível, dependendo do suporte a idioma (português do Brasil, por exemplo) que tiver sido selecionado ou instalado.</param>
+        <param name="FindText"><b>Objeto</b>opcional. O texto a ser localizado. Use uma cadeia de caracteres vazia ("") para procurar somente a formatação. Você pode procurar caracteres especiais especificando os códigos de caracteres apropriados. Por exemplo, "^p" corresponde a uma marca de parágrafo e "^t" corresponde a um caractere de tabulação.</param>
+        <param name="MatchCase"><b>Objeto</b>opcional. <b>True</b> para especificar que o texto a ser diferencia maiúsculas de minúsculas. Corresponde à caixa de seleção "Diferenciar maiúsculas de minúsculas", na caixa de diálogo "Localizar e substituir" (menu Editar).</param>
+        <param name="MatchWholeWord"><b>Objeto</b>opcional. <b>True</b> para que a operação de localização Localize apenas palavras inteiras, e não o texto que faz parte de uma palavra maior. Corresponde à caixa de seleção "Localizar apenas palavras inteiras", na caixa de diálogo "Localizar e substituir".</param>
+        <param name="MatchWildcards"><b>Objeto</b>opcional. <b>True</b> para que localizar texto seja um operador especial de pesquisa. Corresponde à caixa de seleção "Usar caracteres curinga", na caixa de diálogo "Localizar e substituir".</param>
+        <param name="MatchSoundsLike"><b>Objeto</b>opcional. <b>True</b> para que a operação de localizar obtenha palavras semelhantes ao texto de localização. Corresponde à caixa de seleção semelhantes na caixa de diálogo Localizar e substituir.</param>
+        <param name="MatchAllWordForms"><b>Objeto</b>opcional. <b>True</b> para que a operação "localizar" obtenha todas as formas de localizar texto (por exemplo, "sentar" localiza "sentado" e "sentou"). Corresponde à caixa de seleção todas as formas na caixa de diálogo Localizar e substituir.</param>
+        <param name="Forward"><b>Objeto</b>opcional. <b>True</b> para pesquisa registros posteriores (até o final do documento).</param>
+        <param name="Wrap"><b>Objeto</b>opcional. Controla o que acontece se a pesquisa começa em um ponto que não o início do documento e o final do documento é alcançado (ou vice-versa, se <paramref name="Forward" /> estiver definido como <b>false</b>). Esse argumento também controla o que acontece se houver uma seleção ou intervalo e o texto de pesquisa não for encontrado na seleção ou no intervalo. Pode ser uma das seguintes <see cref="T:Microsoft.Office.Interop.Word.WdFindWrap" /> constantes:<b>wdFindAsk</b> após pesquisar a seleção ou o intervalo, o Microsoft Word exibe uma mensagem perguntando se deseja pesquisar o restante do documento. <b>wdFindContinue</b> A operação de localização continua se o início ou o fim do intervalo de pesquisa for atingido. <b>wdFindStop</b> A operação de localização termina se o início ou o fim do intervalo de pesquisa for atingido.</param>
+        <param name="Format"><b>Objeto</b>opcional. <b>True</b> para que a operação de localizar encontre formatação além ou em vez do texto de localização.</param>
+        <param name="ReplaceWith"><b>Objeto</b>opcional. O texto de substituição. Para excluir o texto especificado pelo <paramref name="Find" /> argumento, use uma cadeia de caracteres vazia (""). Você especifica caracteres especiais e critérios de pesquisa avançados da mesma forma como faria <paramref name="Find" /> para o argumento. Para especificar um objeto gráfico ou outro item que não seja de texto como a substituição, mova o item para a área de transferência e especifique " <paramref name="ReplaceWith" />^ c" para o.</param>
+        <param name="Replace"><b>Objeto</b>opcional. Especifica quantas substituições devem ser feitas: uma, todas ou nenhuma. Pode ser qualquer <see cref="T:Microsoft.Office.Interop.Word.WdReplace" /> constante:<b>wdReplaceAll </b> <b>wdReplaceNone </b> <b>wdReplaceOne</b></param>
+        <param name="MatchKashida"><b>Objeto</b>opcional. <b>True</b> se localizar operações coincidirem texto com correspondência de kashidas em um documento de idioma árabe. Esse argumento pode não estar disponível para você, dependendo do suporte a idioma (português do Brasil, por exemplo) que tiver sido selecionado ou instalado.</param>
+        <param name="MatchDiacritics"><b>Objeto</b>opcional. <b>True</b> se as operações de localização coincidirem texto com diacrítico em um documento da direita para a esquerda. Esse argumento pode não estar disponível para você, dependendo do suporte a idioma (português do Brasil, por exemplo) que tiver sido selecionado ou instalado.</param>
+        <param name="MatchAlefHamza"><b>Objeto</b>opcional. <b>True</b> se localizar operações coincidirem texto com alef hamzas em um documento de idioma árabe coincidentes. Esse argumento pode não estar disponível para você, dependendo do suporte a idioma (português do Brasil, por exemplo) que tiver sido selecionado ou instalado.</param>
+        <param name="MatchControl"><b>Objeto</b>opcional. <b>True</b> se localizar operações coincidirem texto com correspondência de caracteres de controle bidirecionais em um documento de idioma da direita para a esquerda. Esse argumento pode não estar disponível para você, dependendo do suporte a idioma (português do Brasil, por exemplo) que tiver sido selecionado ou instalado.</param>
         <summary>Operação de localização de execuções especificadas.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Esse método retorna <b>True</b> se a operação de localização for bem-sucedida.</para>
-          <para>Se <paramref name="MatchWildcards" /> for <b>True</b>, você pode especificar caracteres curinga e outros critérios de pesquisa avançada para o <paramref name="FindText" /> argumento. Por exemplo, "* (ER)" encontra qualquer palavra que termina em "ER."</para>
-          <para>Para procurar por um caractere de símbolo, digite um acento circunflexo (^), um zero (0) e, em seguida, o código de caractere do símbolo. Por exemplo, "^ 0151" corresponde a um travessão (—).</para>
-          <para>, A menos que especificado em contrário, o texto de substituição herda a formatação do texto ele substitui no documento. Por exemplo, se você substituir a cadeia de caracteres "abc" por "xyz", as ocorrências de "abc" com a formatação em negrito serão substituídas com a cadeia de caracteres "xyz" com formatação negrito.</para>
-          <para>Além disso, se <paramref name="MatchCase" /> for <b>False</b>, ocorrências do texto da pesquisa com letras maiusculas serão substituídas por uma versão em maiusculas do texto de substituição sem maiusculas de minúsculas do texto de pesquisa e substituição. Usando o exemplo anterior, ocorrências de "ABC" são substituídas por "XYZ."</para>
-          <para />
-        </remarks>
+        <remarks><para>Este método retornará <b>true</b> se a operação de localização for bem-sucedida.</para>
+          <para>Se <paramref name="MatchWildcards" /> for <b>true</b>, você poderá especificar os caracteres curinga e outros critérios de pesquisa avançada <paramref name="FindText" /> para o argumento. Por exemplo, "* (er)" encontra qualquer palavra que termina em "er".</para>
+          <para>Para procurar um caractere de símbolo, digite um acento circunflexo (^), um zero (0) e, em seguida, o código de caractere do símbolo. Por exemplo, "^ 0151" corresponde a um travessão (-).</para>
+          <para>A menos que seja especificado algo em contrário, o texto de substituição herda a formatação do texto que ele substitui no documento. Por exemplo, se você substituir a cadeia de caracteres "ABC" por "XYZ", as ocorrências de "ABC" com formatação negrito serão substituídas pela cadeia de caracteres "XYZ" com formatação negrito.</para>
+          <para>Além disso, <paramref name="MatchCase" /> se for <b>falso</b>, as ocorrências do texto de pesquisa que estão em maiúsculas serão substituídas por uma versão em maiúsculas do texto de substituição, independentemente da caixa de texto de pesquisa e substituição. Usando o exemplo anterior, as ocorrências de "ABC" são substituídas por "XYZ".</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Execute2007">
@@ -389,50 +352,32 @@
       </Parameters>
       <Docs>
         <param name="FindText">O texto a ser localizado. Use uma cadeia de caracteres vazia ("") para procurar somente a formatação. Você pode procurar caracteres especiais especificando os códigos de caracteres apropriados. Por exemplo, "^p" corresponde a uma marca de parágrafo e "^t" corresponde a um caractere de tabulação.</param>
-        <param name="MatchCase">
-          <b>True</b> para especificar que o texto da pesquisa diferencia maiúsculas de minúsculas. Corresponde à caixa de seleção Diferenciar maiusculas na caixa de diálogo Localizar e substituir (menu Editar).</param>
-        <param name="MatchWholeWord">
-          <b>True</b> para que a operação de localizar encontre somente palavras inteiras, não o texto que faz parte de uma palavra maior. Corresponde à caixa de seleção somente palavras inteiras na caixa de diálogo Localizar e substituir. </param>
-        <param name="MatchWildcards">
-          <b>True</b> para que o texto de pesquisa seja um operador especial de pesquisa. Corresponde à caixa de seleção usar caracteres curinga na caixa de diálogo Localizar e substituir. </param>
-        <param name="MatchSoundsLike">
-          <b>True</b> para que a operação de localização localize palavras aquele som semelhante ao texto Localizar. Corresponde à caixa de seleção semelhantes na caixa de diálogo Localizar e substituir. </param>
-        <param name="MatchAllWordForms">
-          <b>True</b> para que a operação de localizar Encontre todas as formas do texto find (por exemplo, "sit" localiza "sentado" e "sat"). Corresponde à caixa de seleção todas as formas na caixa de diálogo Localizar e substituir. </param>
-        <param name="Forward">
-          <b>True</b> para pesquisa registros posteriores (até o final do documento).</param>
-        <param name="Wrap">Controla o que acontece se a pesquisa começa em um ponto que não seja o início do documento e o final do documento for atingido (ou vice-versa se <paramref name="Forward" /> estiver definida como <b>False</b>). Este argumento também controla o que acontece se há uma seleção ou intervalo e o texto de pesquisa não for encontrado na seleção ou intervalo. Pode ser uma do <see cref="T:Microsoft.Office.Interop.Word.WdFindWrap" /> valores de enumeração.</param>
-        <param name="Format">
-          <b>True</b> para que a operação "localizar" obtenha formatação além de, ou em vez de, localizar texto.</param>
-        <param name="ReplaceWith">O texto de substituição. Para excluir o texto especificado pelo <paramref name="Find" /> argumento, use uma sequência vazia (""). Especificar caracteres especiais e critérios de pesquisa avançada apenas como faria para o <paramref name="Find" /> argumento. Para especificar um objeto gráfico ou outro item não textual como a substituição, mova o item para a área de transferência e especifique "^ c" para <paramref name="ReplaceWith" />.</param>
-        <param name="Replace">Especifica quantas substituições devem ser feitas: uma, todas ou nenhuma. Pode ser qualquer <see cref="T:Microsoft.Office.Interop.Word.WdReplace" /> o valor de enumeração.</param>
-        <param name="MatchKashida">
-          <b>True</b> se localizar operações coincidirem texto com correspondência de kashidas em um documento de idioma arábico. Este argumento pode não estar disponível, dependendo do suporte a idioma (inglês americano, por exemplo) que você selecionou ou instalou. </param>
-        <param name="MatchDiacritics">
-          <b>True</b> se localizar operações coincidirem texto com correspondência diacríticos em um documento em idioma da direita para a esquerda. Este argumento pode não estar disponível, dependendo do suporte a idioma (inglês americano, por exemplo) que você selecionou ou instalou. </param>
-        <param name="MatchAlefHamza">
-          <b>True</b> se localizar operações coincidirem texto com alef hamzas em um documento de idioma arábico coincidentes. Este argumento pode não estar disponível, dependendo do suporte a idioma (inglês americano, por exemplo) que você selecionou ou instalou. </param>
-        <param name="MatchControl">
-          <b>True</b> se localizar operações coincidirem texto com correspondência de caracteres de controle bidirecionais em um documento de idioma da direita para a esquerda. Este argumento pode não estar disponível, dependendo do suporte a idioma (inglês americano, por exemplo) que você selecionou ou instalou. </param>
-        <param name="MatchPrefix">
-          <b>True</b> para corresponder as palavras que comecem com a cadeia de caracteres de pesquisa. Corresponde à caixa de seleção Coincidir prefixo na caixa de diálogo Localizar e substituir. </param>
-        <param name="MatchSuffix">
-          <b>True</b> para corresponder as palavras que terminem com a cadeia de caracteres de pesquisa.  Corresponde à caixa de seleção Coincidir sufixo na caixa de diálogo Localizar e substituir.</param>
-        <param name="MatchPhrase">
-          <b>True</b> ignora todos os espaços em branco e caracteres de controle entre as palavras.</param>
-        <param name="IgnoreSpace">
-          <b>True</b> ignora todos os espaços em branco entre as palavras. Corresponde à caixa de seleção Ignorar caracteres de espaço em branco na caixa de diálogo Localizar e substituir. </param>
-        <param name="IgnorePunct">
-          <b>True</b> ignora todos os caracteres de pontuação entre as palavras. Corresponde à caixa de seleção Ignorar pontuação, na caixa de diálogo Localizar e substituir. </param>
+        <param name="MatchCase"><b>True</b> para especificar que o texto da pesquisa diferencia maiúsculas de minúsculas. Corresponde à caixa de seleção "Diferenciar maiúsculas de minúsculas", na caixa de diálogo "Localizar e substituir" (menu Editar).</param>
+        <param name="MatchWholeWord"><b>True</b> para que a operação "localizar" obtenha somente palavras inteiras, e não texto que faça parte de uma palavra maior. Corresponde à caixa de seleção "Localizar apenas palavras inteiras", na caixa de diálogo "Localizar e substituir".</param>
+        <param name="MatchWildcards"><b>True</b> para que localizar texto seja um operador especial de pesquisa. Corresponde à caixa de seleção "Usar caracteres curinga", na caixa de diálogo "Localizar e substituir".</param>
+        <param name="MatchSoundsLike"><b>True</b> para que a operação de localizar obtenha palavras semelhantes ao texto de localização. Corresponde à caixa de seleção semelhantes na caixa de diálogo Localizar e substituir.</param>
+        <param name="MatchAllWordForms"><b>True</b> para que a operação "localizar" obtenha todas as formas de localizar texto (por exemplo, "sentar" localiza "sentado" e "sentou"). Corresponde à caixa de seleção todas as formas na caixa de diálogo Localizar e substituir.</param>
+        <param name="Forward"><b>True</b> para pesquisa registros posteriores (até o final do documento).</param>
+        <param name="Wrap">Controla o que acontece se a pesquisa começa em um ponto que não o início do documento e o final do documento é alcançado (ou vice-versa, se <paramref name="Forward" /> estiver definido como <b>false</b>). Este argumento também controla o que acontece se há uma seleção ou intervalo e o texto de pesquisa não for encontrado na seleção ou intervalo. Pode ser um dos valores <see cref="T:Microsoft.Office.Interop.Word.WdFindWrap" /> de enumeração.</param>
+        <param name="Format"><b>True</b> para que a operação "localizar" obtenha formatação além de, ou em vez de, localizar texto.</param>
+        <param name="ReplaceWith">O texto de substituição. Para excluir o texto especificado pelo <paramref name="Find" /> argumento, use uma cadeia de caracteres vazia (""). Você especifica caracteres especiais e critérios de pesquisa avançados da mesma forma como faria <paramref name="Find" /> para o argumento. Para especificar um objeto gráfico ou outro item não texto como a substituição, mova o item para a área de transferência e especifique "^ c <paramref name="ReplaceWith" />" para o.</param>
+        <param name="Replace">Especifica quantas substituições devem ser feitas: uma, todas ou nenhuma. Pode ser qualquer <see cref="T:Microsoft.Office.Interop.Word.WdReplace" /> valor de enumeração.</param>
+        <param name="MatchKashida"><b>True</b> se as operações de localização coincidirem texto com kashidas em um documento do idioma árabe. Esse argumento pode não estar disponível para você, dependendo do suporte de idioma (inglês americano, por exemplo) que você tenha selecionado ou instalado. </param>
+        <param name="MatchDiacritics"><b>True</b> se as operações de localização coincidirem texto com diacrítico em um documento da direita para a esquerda. Esse argumento pode não estar disponível para você, dependendo do suporte de idioma (inglês americano, por exemplo) que você tenha selecionado ou instalado. </param>
+        <param name="MatchAlefHamza"><b>True</b> se as operações de localização coincidirem texto com Alef Hamzas em um documento do idioma árabe. Esse argumento pode não estar disponível para você, dependendo do suporte de idioma (inglês americano, por exemplo) que você tenha selecionado ou instalado. </param>
+        <param name="MatchControl"><b>True</b> se as operações de localização coincidirem texto com caracteres de controle bidirecional em um documento da direita para a esquerda. Esse argumento pode não estar disponível para você, dependendo do suporte de idioma (inglês americano, por exemplo) que você tenha selecionado ou instalado. </param>
+        <param name="MatchPrefix"><b>True</b> para corresponder palavras que comecem com a cadeia de caracteres da pesquisa. Corresponde à caixa de seleção "Coincidir prefixo", na caixa de diálogo "Localizar e substituir".</param>
+        <param name="MatchSuffix"><b>True</b> para corresponder palavras que terminem com a cadeia de caracteres da pesquisa.  Corresponde à caixa de seleção "Coincidir sufixo", na caixa de diálogo "Localizar e substituir".</param>
+        <param name="MatchPhrase"><b>True</b> ignora todos os espaços em branco e caracteres de controle entre palavras.</param>
+        <param name="IgnoreSpace"><b>True</b> ignora todos os espaços em branco entre as palavras. Corresponde à caixa de seleção "Ignorar caracteres de espaço em branco", na caixa de diálogo "Localizar e substituir".</param>
+        <param name="IgnorePunct"><b>True</b> ignora todos os caracteres de pontuação entre as palavras. Corresponde à caixa de seleção "Ignorar caracteres de pontuação", na caixa de diálogo "Localizar e substituir".</param>
         <summary>Operação de localização de execuções especificadas. Retorna <b>True</b> se a operação de localização for bem-sucedida.</summary>
-        <returns>Um valor <b>Boolean</b> que indica se a operação de localização foi bem-sucedida.</returns>
-        <remarks>
-          <para>Se <paramref name="MatchWildcards" /> for <b>True</b>, você pode especificar caracteres curinga e outros critérios de pesquisa avançada para o <paramref name="FindText" /> argumento. Por exemplo, "* (ER)" encontra qualquer palavra que termina em "ER".</para>
-          <para>Para procurar por um caractere de símbolo, digite um acento circunflexo (^), um zero (0) e, em seguida, o código de caractere do símbolo. Por exemplo, "^ 0151" corresponde a um travessão (—).</para>
-          <para>, A menos que especificado em contrário, o texto de substituição herda a formatação do texto ele substitui no documento. Por exemplo, se você substituir a cadeia de caracteres "abc" por "xyz", as ocorrências de "abc" com a formatação em negrito serão substituídas com a cadeia de caracteres "xyz" com formatação negrito.</para>
-          <para>Além disso, se <paramref name="MatchCase" /> for <b>False</b>, ocorrências do texto da pesquisa com letras maiusculas serão substituídas por uma versão em maiusculas do texto de substituição, independentemente do caso do texto de substituição. Usando o exemplo anterior, ocorrências de "ABC" são substituídas por "XYZ".</para>
-          <para />
-        </remarks>
+        <returns>Um <b></b> valor booliano que indica se a operação de localização foi bem-sucedida.</returns>
+        <remarks><para>Se <paramref name="MatchWildcards" /> for <b>true</b>, você poderá especificar os caracteres curinga e outros critérios de pesquisa avançada <paramref name="FindText" /> para o argumento. Por exemplo, "*(er)" encontra qualquer palavra que termina em "er".</para>
+          <para>Para localizar um caractere de símbolo, digite um circunflexo (^), um zero (0) e depois o código de caractere do símbolo. Por exemplo, "^0151" corresponde a um travessão (-).</para>
+          <para>A menos que seja especificado algo em contrário, o texto de substituição herda a formatação do texto que ele substitui no documento. Por exemplo, se você substituir a sequência "abc" por "xyz", as ocorrências de "abc" com a formatação negrito serão substituídas pela sequência "xyz" com formatação negrito.</para>
+          <para>Além disso, <paramref name="MatchCase" /> se for <b>falso</b>, as ocorrências do texto de pesquisa que estão em maiúsculas serão substituídas por uma versão em maiúsculas do texto de substituição, independentemente da caixa de texto de substituição. Usando o exemplo anterior, as ocorrências de "ABC" são substituídas por "XYZ".</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ExecuteOld">
@@ -512,7 +457,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define um <see cref="T:Microsoft.Office.Interop.Word.Font" /> object que representa a formatação de caractere do objeto especificado.</summary>
+        <summary>Retorna ou define um <see cref="T:Microsoft.Office.Interop.Word.Font" /> objeto que representa a formatação de caractere do objeto especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -543,12 +488,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Determine se a formatação será incluído na operação de localização.</summary>
+        <summary>Determine se a formatação está incluída na operação de localização.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Esta propriedade retorna <b>True</b> se a formatação será incluído na operação de localização e <b>False</b> se não. Defina o valor da propriedade como <b>True</b> ou <b>False</b> para habilitar ou desabilitar a funcionalidade.</para>
-          <para />
-        </remarks>
+        <remarks><para>Essa propriedade retorna <b>true</b> se a formatação for incluída na operação Find e <b>false</b> se não. Defina o valor da propriedade como <b>true</b> ou <b>false</b> para habilitar ou desabilitar a funcionalidade.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Forward">
@@ -579,10 +522,8 @@
       <Docs>
         <summary>Determina se a operação de localização pesquisa para frente no documento.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Essa propriedade retorna <b>True</b> se a operação de localização pesquisar em encaminhar o documento e <b>False</b> se ele pesquisará para trás pelo documento. Defina o valor da propriedade como <b>True</b> ou <b>False</b> para habilitar ou desabilitar a funcionalidade.</para>
-          <para />
-        </remarks>
+        <remarks><para>Essa propriedade retorna <b>true</b> se a operação de localização pesquisa para frente no documento e <b>false</b> se ela pesquisa para trás pelo documento. Defina o valor da propriedade como <b>true</b> ou <b>false</b> para habilitar ou desabilitar a funcionalidade.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Found">
@@ -608,12 +549,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Determina se a pesquisa para o objeto especificado tiver produzido uma correspondência.</summary>
+        <summary>Determina se a pesquisa do objeto especificado produziu uma correspondência.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Esta propriedade retorna <b>True</b> se a pesquisa produz uma correspondência e <b>False</b> se não.</para>
-          <para />
-        </remarks>
+        <remarks><para>Essa propriedade retorna <b>true</b> se a pesquisa produz uma correspondência e <b>false</b> se não.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Frame">
@@ -639,7 +578,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Frame</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Frame" /> object que representa a formatação do estilo especificado ou a operação de localização e substituição de quadro.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Frame" /> objeto que representa a formatação de quadro para o estilo especificado ou para a operação de localizar e substituir.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -671,9 +610,7 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna ou define um <b>Boolean</b> que indica se a operação de localização de caracteres em um idioma coreano para localizar fonético Hangul e hanja. Leitura/gravação.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -703,13 +640,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Determina se a formatação de realce estarão incluída nos critérios de localização.</summary>
+        <summary>Determina se a formatação de realce está incluída nos critérios de localização.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>O valor de <b>wdUndefined</b> pode ser usado com o <see cref="T:Microsoft.Office.Interop.Word.Find" /> objeto para ignorar o estado de realce formatação da seleção ou intervalo que é pesquisado.</para>
-          <para>Essa propriedade retorna <b>True</b> se a formatação de realce está incluído nos critérios de localização. Pode retornar ou ser definida como <b>True</b>, <b>False</b>ou <b>wdUndefined</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>O valor <b>wdUndefined</b> pode ser usado com o <see cref="T:Microsoft.Office.Interop.Word.Find" /> objeto para ignorar o estado da formatação de realce na seleção ou no intervalo que é pesquisado.</para>
+          <para>Essa propriedade retorna <b>true</b> se a formatação de realce estiver incluída nos critérios de localização. Pode retornar ou ser definida como <b>True</b>, <b>False</b> ou <b>wdUndefined</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HitHighlight">
@@ -754,48 +689,29 @@
       </Parameters>
       <Docs>
         <param name="FindText">O texto a ser localizado. Use uma cadeia de caracteres vazia ("") para procurar somente pela formatação. Você pode procurar por caracteres especiais especificando os códigos de caracteres apropriados. Por exemplo, o "^p" corresponde a uma marca de parágrafo e "^t" corresponde a um caractere de tabulação.</param>
-        <param name="HighlightColor">Especifica a cor de realce do texto. Pode ser qualquer cor RGB ou uma do <see cref="T:Microsoft.Office.Interop.Word.WdColor" /> valores de enumeração.</param>
-        <param name="TextColor">Especifica a cor do texto. Pode ser qualquer cor RGB ou uma do <see cref="T:Microsoft.Office.Interop.Word.WdColor" /> valores de enumeração.</param>
-        <param name="MatchCase">
-          <b>True</b> para especificar que o texto a ser diferencia maiúsculas de minúsculas. Corresponde à caixa de seleção Diferenciar maiúsculas de minúsculas, na caixa de diálogo Localizar e substituir. </param>
-        <param name="MatchWholeWord">
-          <b>True</b> para que a operação de localizar encontre somente palavras inteiras, não o texto que faz parte de uma palavra maior. Corresponde à caixa de seleção somente palavras inteiras na caixa de diálogo Localizar e substituir. </param>
-        <param name="MatchPrefix">
-          <b>True</b> para corresponder as palavras que comecem com a cadeia de caracteres de pesquisa. Corresponde à caixa de seleção Coincidir prefixo na caixa de diálogo Localizar e substituir. </param>
-        <param name="MatchSuffix">
-          <b>True</b> para corresponder as palavras que terminem com a cadeia de caracteres de pesquisa.  Corresponde à caixa de seleção Coincidir sufixo na caixa de diálogo Localizar e substituir.</param>
-        <param name="MatchPhrase">
-          <b>True</b> ignora todos os espaços em branco e caracteres de controle entre as palavras.</param>
-        <param name="MatchWildcards">
-          <b>True</b> para que o texto de pesquisa seja um operador especial de pesquisa. Corresponde à caixa de seleção usar caracteres curinga na caixa de diálogo Localizar e substituir. </param>
-        <param name="MatchSoundsLike">
-          <b>True</b> para que a operação de localização localize palavras aquele som semelhante ao texto Localizar. Corresponde à caixa de seleção semelhantes na caixa de diálogo Localizar e substituir. </param>
-        <param name="MatchAllWordForms">
-          <b>True</b> para que a operação de localizar Encontre todas as formas do texto find (por exemplo, "sit" localiza "sentado" e "sat"). Corresponde à caixa de seleção todas as formas na caixa de diálogo Localizar e substituir. </param>
-        <param name="MatchByte">
-          <b>True</b> para distinguir entre caracteres ou letras de largura total e largura média durante uma pesquisa.</param>
-        <param name="MatchFuzzy">
-          <b>True</b> para usar as opções de pesquisa não específica para texto em japonês durante uma pesquisa. Leitura/gravação. </param>
-        <param name="MatchKashida">
-          <b>True</b> se localizar operações coincidirem texto com correspondência de kashidas em um documento de idioma arábico. Este argumento pode não estar disponível, dependendo do suporte a idioma (inglês americano, por exemplo) que você selecionou ou instalou. </param>
-        <param name="MatchDiacritics">
-          <b>True</b> se localizar operações coincidirem texto com correspondência diacríticos em um documento em idioma da direita para a esquerda. Este argumento pode não estar disponível, dependendo do suporte a idioma (inglês americano, por exemplo) que você selecionou ou instalou. </param>
-        <param name="MatchAlefHamza">
-          <b>True</b> se localizar operações coincidirem texto com alef hamzas em um documento de idioma arábico coincidentes. Este argumento pode não estar disponível, dependendo do suporte a idioma (inglês americano, por exemplo) que você selecionou ou instalou. </param>
-        <param name="MatchControl">
-          <b>True</b> se localizar operações coincidirem texto com correspondência de caracteres de controle bidirecionais em um documento de idioma da direita para a esquerda. Este argumento pode não estar disponível, dependendo do suporte a idioma (inglês americano, por exemplo) que você selecionou ou instalou. </param>
-        <param name="IgnoreSpace">
-          <b>True</b> ignora todos os espaços em branco entre as palavras. Corresponde à caixa de seleção Ignorar caracteres de espaço em branco na caixa de diálogo Localizar e substituir. </param>
-        <param name="IgnorePunct">
-          <b>True</b> ignora todos os caracteres de pontuação entre as palavras. Corresponde à caixa de seleção Ignorar pontuação, na caixa de diálogo Localizar e substituir. </param>
-        <param name="HanjaPhoneticHangul">
-          <b>True</b> ignora os caracteres fonéticos de hangul e hanja. Disponível somente se você tiver suporte para idiomas coreanos. </param>
+        <param name="HighlightColor">Especifica a cor de realce do texto. Pode ser qualquer cor RGB ou um dos valores <see cref="T:Microsoft.Office.Interop.Word.WdColor" /> de enumeração.</param>
+        <param name="TextColor">Especifica a cor do texto. Pode ser qualquer cor RGB ou um dos valores <see cref="T:Microsoft.Office.Interop.Word.WdColor" /> de enumeração.</param>
+        <param name="MatchCase"><b>True</b> para especificar que o texto a ser diferencia maiúsculas de minúsculas. Corresponde à caixa de seleção diferenciar maiúsculas de minúsculas da caixa de diálogo Localizar e substituir.</param>
+        <param name="MatchWholeWord"><b>True</b> para que a operação "localizar" obtenha somente palavras inteiras, e não texto que faça parte de uma palavra maior. Corresponde à caixa de seleção "Localizar apenas palavras inteiras", na caixa de diálogo "Localizar e substituir".</param>
+        <param name="MatchPrefix"><b>True</b> para corresponder palavras que comecem com a cadeia de caracteres da pesquisa. Corresponde à caixa de seleção "Coincidir prefixo", na caixa de diálogo "Localizar e substituir".</param>
+        <param name="MatchSuffix"><b>True</b> para corresponder palavras que terminem com a cadeia de caracteres da pesquisa.  Corresponde à caixa de seleção "Coincidir sufixo", na caixa de diálogo "Localizar e substituir".</param>
+        <param name="MatchPhrase"><b>True</b> ignora todos os espaços em branco e caracteres de controle entre palavras.</param>
+        <param name="MatchWildcards"><b>True</b> para que localizar texto seja um operador especial de pesquisa. Corresponde à caixa de seleção "Usar caracteres curinga", na caixa de diálogo "Localizar e substituir".</param>
+        <param name="MatchSoundsLike"><b>True</b> para que a operação de localizar obtenha palavras semelhantes ao texto de localização. Corresponde à caixa de seleção semelhantes na caixa de diálogo Localizar e substituir.</param>
+        <param name="MatchAllWordForms"><b>True</b> para que a operação "localizar" obtenha todas as formas de localizar texto (por exemplo, "sentar" localiza "sentado" e "sentou"). Corresponde à caixa de seleção todas as formas na caixa de diálogo Localizar e substituir.</param>
+        <param name="MatchByte"><b>True</b> para distinguir entre caracteres ou letras de largura total e largura média durante uma pesquisa.</param>
+        <param name="MatchFuzzy"><b>True</b> para usar as opções de pesquisa não específica para texto em japonês durante uma pesquisa. Leitura/gravação.</param>
+        <param name="MatchKashida"><b>True</b> se as operações de localização coincidirem texto com kashidas em um documento do idioma árabe. Esse argumento pode não estar disponível para você, dependendo do suporte de idioma (inglês americano, por exemplo) que você tenha selecionado ou instalado. </param>
+        <param name="MatchDiacritics"><b>True</b> se as operações de localização coincidirem texto com diacrítico em um documento da direita para a esquerda. Esse argumento pode não estar disponível para você, dependendo do suporte de idioma (inglês americano, por exemplo) que você tenha selecionado ou instalado. </param>
+        <param name="MatchAlefHamza"><b>True</b> se as operações de localização coincidirem texto com Alef Hamzas em um documento do idioma árabe. Esse argumento pode não estar disponível para você, dependendo do suporte de idioma (inglês americano, por exemplo) que você tenha selecionado ou instalado. </param>
+        <param name="MatchControl"><b>True</b> se as operações de localização coincidirem texto com caracteres de controle bidirecional em um documento da direita para a esquerda. Esse argumento pode não estar disponível para você, dependendo do suporte de idioma (inglês americano, por exemplo) que você tenha selecionado ou instalado. </param>
+        <param name="IgnoreSpace"><b>True</b> ignora todos os espaços em branco entre as palavras. Corresponde à caixa de seleção "Ignorar caracteres de espaço em branco", na caixa de diálogo "Localizar e substituir".</param>
+        <param name="IgnorePunct"><b>True</b> ignora todos os caracteres de pontuação entre as palavras. Corresponde à caixa de seleção "Ignorar caracteres de pontuação", na caixa de diálogo "Localizar e substituir".</param>
+        <param name="HanjaPhoneticHangul"><b>True</b> ignora os caracteres fonéticos de hangul e hanja. Disponível somente se você tiver suporte para idiomas coreanos.</param>
         <summary>Realça todas as correspondências localizadas e retorna um <b>Boolean</b> que indica se as correspondências foram localizadas.</summary>
         <returns>Booliano</returns>
-        <remarks>
-          <para>O método <b>HitHighlight</b> aplica-se principalmente para pesquisar o realce no Microsoft Office Outlook quando o Microsoft Office Word é especificado como o editor de email.  No entanto, você pode usar esse método em documentos do Word dentro do se você quiser realçar o texto localizado.  Caso contrário, use o <see cref="M:Microsoft.Office.Interop.Word.Find.Execute(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> método.</para>
-          <para />
-        </remarks>
+        <remarks><para>O método <b>HitHighlight</b> aplica-se principalmente ao realce de pesquisa no Microsoft Office Outlook quando o Microsoft Office Word é especificado como o editor de email.  No entanto, é possível utilizar esse método nos documentos dentro do Word se deseja realçar o texto localizado.  Caso contrário, use <see cref="M:Microsoft.Office.Interop.Word.Find.Execute(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> o método.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IgnorePunct">
@@ -825,13 +741,9 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna ou define um <b>Boolean</b> que indica se uma operação de localização deve ignorar pontuação no texto localizado. Leitura/gravação.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>Essa propriedade corresponde à caixa de seleção Ignorar pontuação caracteres na caixa de diálogo Localizar e substituir.</para>
-          <para />
-        </remarks>
+        <value><b>Boolean</b></value>
+        <remarks><para>Essa propriedade corresponde à caixa de seleção Ignorar caracteres de pontuação na caixa de diálogo Localizar e Substituir.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IgnoreSpace">
@@ -861,13 +773,9 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna ou define um <b>Boolean</b> que indica se uma operação de localização deve ignorar o espaço em branco extra no texto localizado. Leitura/gravação.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>Essa propriedade corresponde à caixa de seleção Ignorar caracteres de espaço em branco na caixa de diálogo Localizar e substituir.</para>
-          <para />
-        </remarks>
+        <value><b>Boolean</b></value>
+        <remarks><para>Essa propriedade corresponde à caixa de seleção Ignorar caracteres de espaço em branco na caixa de diálogo Localizar e Substituir.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LanguageID">
@@ -898,10 +806,8 @@
       <Docs>
         <summary>Retorna ou define o idioma do objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Algumas das constantes <b>WdLanguageID</b> acima podem não estar disponíveis para você, dependendo do suporte a idioma (inglês americano, por exemplo) que você selecionou ou instalou.</para>
-          <para />
-        </remarks>
+        <remarks><para>Algumas das constantes <b>WdLanguageID</b> acima podem não estar disponíveis para você, dependendo do suporte a idioma (Português do Brasil, por exemplo) que você selecionou ou instalou.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LanguageIDFarEast">
@@ -932,10 +838,8 @@
       <Docs>
         <summary>Retorna ou define um idioma do Leste Asiático para o objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Esta é a maneira recomendada de retornar ou definir o idioma do texto do Leste Asiático em um documento criado em uma versão do Leste Asiático do Microsoft Word.</para>
-          <para />
-        </remarks>
+        <remarks><para>Essa é a maneira recomendada de retornar ou definir o idioma do texto do Leste Asiático em um documento criado em uma versão do Microsoft Word para Leste Asiático.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LanguageIDOther">
@@ -995,12 +899,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Determina se localizar operações coincidirem texto com alef hamzas em um documento de idioma árabe coincidentes.</summary>
+        <summary>Determina se as operações de localização correspondem ao texto com Alef hamzas correspondentes em um documento de idioma árabe.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Essa propriedade retorna <b>True</b> se localizar operações coincidirem texto com alef hamzas em um documento em idioma árabe e <b>False</b> se não coincidentes. Defina o valor da propriedade como <b>True</b> ou <b>False</b> para habilitar ou desabilitar a funcionalidade.</para>
-          <para />
-        </remarks>
+        <remarks><para>Essa propriedade retorna <b>true</b> se as operações de localização coincidirem texto com Alef hamzas correspondentes em um documento de idioma árabe e <b>false</b> se não. Defina o valor da propriedade como <b>true</b> ou <b>false</b> para habilitar ou desabilitar a funcionalidade.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MatchAllWordForms">
@@ -1029,13 +931,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Determina se todas as formas de texto a ser localizado forem encontradas pela operação de localizar (por exemplo, se o texto a ser localizado for "sit", "sat" e "sentado" também serão encontrados).</summary>
+        <summary>Determina se todas as formas do texto a ser localizado serão localizadas pela operação de localização (por exemplo, se o texto a ser localizado for "Sit", "SAT" e "sentado" também serão encontrados).</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Esta propriedade retorna <b>True</b> se todas as formas de texto a ser localizado forem encontradas pela operação de localização (por exemplo, se o texto a ser localizado for "sit", "sat" e "sentado" também serão encontrados) e <b>False</b> se não. Defina o valor da propriedade como <b>True</b> ou <b>False</b> para habilitar ou desabilitar a funcionalidade.</para>
-          <para>Uso o <see cref="P:Microsoft.Office.Interop.Word.Find.Text" /> propriedade do <see cref="T:Microsoft.Office.Interop.Word.Find" /> objeto ou o <paramref name="FindText" /> argumento com o <see cref="M:Microsoft.Office.Interop.Word.Find.Execute(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> método para especificar o texto a ser pesquisado em um documento.</para>
-          <para />
-        </remarks>
+        <remarks><para>Essa propriedade retorna <b>true</b> se todas as formas do texto a ser localizado forem localizadas pela operação de localização (por exemplo, se o texto a ser localizado for "Sit", "SAT" e "sentado" também forem encontrados) e <b>false</b> se não. Defina o valor da propriedade como <b>true</b> ou <b>false</b> para habilitar ou desabilitar a funcionalidade.</para>
+          <para>Use a <see cref="P:Microsoft.Office.Interop.Word.Find.Text" /> Propriedade do <see cref="T:Microsoft.Office.Interop.Word.Find" /> objeto ou o <paramref name="FindText" /> argumento com o <see cref="M:Microsoft.Office.Interop.Word.Find.Execute(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> método para especificar o texto a ser procurado em um documento.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MatchByte">
@@ -1064,12 +964,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Determina se o Microsoft Word distingue entre letras de largura total e de meia largura ou caracteres durante uma pesquisa.</summary>
+        <summary>Determina se o Microsoft Word distingue entre letras ou caracteres de largura total e largura média durante uma pesquisa.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Esta propriedade retorna <b>True</b> se o Word distingue entre letras de largura total e de meia largura ou caracteres durante uma pesquisa e <b>False</b> se não. Defina o valor da propriedade como <b>True</b> ou <b>False</b> para habilitar ou desabilitar a funcionalidade.</para>
-          <para />
-        </remarks>
+        <remarks><para>Essa propriedade retorna <b>true</b> se o Word distingue entre letras ou caracteres de largura total e largura média durante uma pesquisa e <b>false</b> se não. Defina o valor da propriedade como <b>true</b> ou <b>false</b> para habilitar ou desabilitar a funcionalidade.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MatchCase">
@@ -1098,13 +996,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Determina se a operação de localização diferencia maiusculas de minúsculas.</summary>
+        <summary>Determina se a operação de localização diferencia maiúsculas de minúsculas.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Essa propriedade retorna <b>True</b> se a operação de localização diferencia maiusculas de minúsculas e <b>False</b> se não. O valor padrão é <b>False</b>. Defina o valor da propriedade como <b>True</b> ou <b>False</b> para habilitar ou desabilitar a funcionalidade.</para>
-          <para>Usar o <see cref="P:Microsoft.Office.Interop.Word.Find.Text" /> propriedade do <see cref="T:Microsoft.Office.Interop.Word.Find" /> do objeto ou usar o <paramref name="FindText" /> argumento com o <see cref="M:Microsoft.Office.Interop.Word.Find.Execute(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> método para especificar o texto a ser localizado em um documento.</para>
-          <para />
-        </remarks>
+        <remarks><para>Essa propriedade retorna <b>true</b> se a operação de localização diferencia maiúsculas de minúsculas e <b>false</b> se não. O valor padrão é <b>False</b>. Defina o valor da propriedade como <b>true</b> ou <b>false</b> para habilitar ou desabilitar a funcionalidade.</para>
+          <para>Use a <see cref="P:Microsoft.Office.Interop.Word.Find.Text" /> Propriedade do <see cref="T:Microsoft.Office.Interop.Word.Find" /> objeto ou use o <paramref name="FindText" /> argumento com o <see cref="M:Microsoft.Office.Interop.Word.Find.Execute(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> método para especificar o texto a ser localizado em um documento.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MatchControl">
@@ -1133,12 +1029,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Determina se localizar operações coincidirem texto com correspondência de caracteres de controle bidirecionais em um documento de idioma da direita para a esquerda.</summary>
+        <summary>Determina se as operações de localização correspondem ao texto com caracteres de controle bidirecionais correspondentes em um documento de idioma da direita para a esquerda.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Essa propriedade retorna <b>True</b> se localizar operações coincidirem texto com correspondência de caracteres de controle bidirecionais em um documento em idioma da direita para a esquerda e <b>False</b> se não. Defina o valor da propriedade como <b>True</b> ou <b>False</b> para habilitar ou desabilitar a funcionalidade.</para>
-          <para />
-        </remarks>
+        <remarks><para>Essa propriedade retorna <b>true</b> se as operações de localização coincidirem texto com caracteres de controle bidirecionais correspondentes em um documento de idioma da direita para a esquerda e <b>false</b> se não. Defina o valor da propriedade como <b>true</b> ou <b>false</b> para habilitar ou desabilitar a funcionalidade.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MatchDiacritics">
@@ -1167,12 +1061,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Determina se localizar operações coincidirem texto com correspondência diacríticos em um documento em idioma da direita para a esquerda.</summary>
+        <summary>Determina se as operações de localização correspondem ao texto com a correspondência de diacríticos em um documento de idioma da direita para a esquerda.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Essa propriedade retorna <b>True</b> se localizar operações coincidirem texto com sinais diacríticos em um documento em idioma da direita para a esquerda e <b>False</b> se não coincidentes. Defina o valor da propriedade como <b>True</b> ou <b>False</b> para habilitar ou desabilitar a funcionalidade.</para>
-          <para />
-        </remarks>
+        <remarks><para>Essa propriedade retorna <b>true</b> se as operações de localização coincidirem texto com a correspondência de diacríticos em um documento de idioma da direita para a esquerda e <b>false</b> se não. Defina o valor da propriedade como <b>true</b> ou <b>false</b> para habilitar ou desabilitar a funcionalidade.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MatchFuzzy">
@@ -1203,10 +1095,8 @@
       <Docs>
         <summary>Determina se o Microsoft Word usa as opções de pesquisa não específica para texto em japonês durante uma pesquisa.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Essa propriedade retorna <b>True</b> se o Word usa as opções de pesquisa não específica para texto em japonês durante uma pesquisa e <b>False</b> se não. Defina o valor da propriedade como <b>True</b> ou <b>False</b> para habilitar ou desabilitar a funcionalidade.</para>
-          <para />
-        </remarks>
+        <remarks><para>Essa propriedade retorna <b>true</b> se o Word usa as opções de pesquisa não específica para texto em japonês durante uma pesquisa e <b>false</b> se não. Defina o valor da propriedade como <b>true</b> ou <b>false</b> para habilitar ou desabilitar a funcionalidade.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MatchKashida">
@@ -1235,12 +1125,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Determina se localizar operações coincidirem texto com correspondência de kashidas em um documento de idioma árabe.</summary>
+        <summary>Determina se as operações de localização correspondem ao texto com correspondência de kashidas em um documento de idioma árabe.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Essa propriedade retorna <b>True</b> se localizar operações coincidirem texto com correspondência de kashidas em um documento em idioma árabe e <b>False</b> se não. Defina o valor da propriedade como <b>True</b> ou <b>False</b> para habilitar ou desabilitar a funcionalidade.</para>
-          <para />
-        </remarks>
+        <remarks><para>Essa propriedade retornará <b>true</b> se localizar operações coincidirem texto com correspondência de kashidas em um documento de idioma árabe e <b>false</b> se não. Defina o valor da propriedade como <b>true</b> ou <b>false</b> para habilitar ou desabilitar a funcionalidade.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MatchPhrase">
@@ -1269,11 +1157,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> ignora todos os espaços em branco e caracteres de controle entre as palavras. Leitura/gravação.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <summary><b>True</b> ignora todos os espaços em branco e caracteres de controle entre as palavras. Leitura/gravação.</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1303,15 +1188,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> para corresponder as palavras que comecem com a cadeia de caracteres de pesquisa. Leitura/gravação.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>Essa propriedade corresponde à caixa de seleção Coincidir prefixo na caixa de diálogo Localizar e substituir.</para>
-          <para />
-        </remarks>
+        <summary><b>True</b> para corresponder as palavras que comecem com a cadeia de caracteres de pesquisa. Leitura/gravação.</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>Essa propriedade corresponde à caixa de seleção Coincidir prefixo na caixa de diálogo Localizar e Substituir.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MatchSoundsLike">
@@ -1340,13 +1220,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Determina se as palavras que o som semelhantes ao texto a ser localizado serão retornadas pela operação de localização.</summary>
+        <summary>Determina se as palavras que o som semelhantes ao texto a ser localizado são retornadas pela operação de localização.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Esta propriedade retorna <b>True</b> se palavras que o som semelhantes ao texto a ser localizado forem retornadas pela operação de localização e <b>False</b> se não. Defina o valor da propriedade como <b>True</b> ou <b>False</b> para habilitar ou desabilitar a funcionalidade.</para>
-          <para>Uso o <see cref="P:Microsoft.Office.Interop.Word.Find.Text" /> propriedade do <see cref="T:Microsoft.Office.Interop.Word.Find" /> objeto ou o <paramref name="FindText" /> argumento com o <see cref="M:Microsoft.Office.Interop.Word.Find.ExecuteOld(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> método para especificar o texto a ser localizado em um documento.</para>
-          <para />
-        </remarks>
+        <remarks><para>Essa propriedade retorna <b>true</b> se palavras que o som semelhantes ao texto a ser localizado forem retornadas pela operação Find e <b>false</b> se não. Defina o valor da propriedade como <b>true</b> ou <b>false</b> para habilitar ou desabilitar a funcionalidade.</para>
+          <para>Use a <see cref="P:Microsoft.Office.Interop.Word.Find.Text" /> Propriedade do <see cref="T:Microsoft.Office.Interop.Word.Find" /> objeto ou o <paramref name="FindText" /> argumento com o <see cref="M:Microsoft.Office.Interop.Word.Find.ExecuteOld(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> método para especificar o texto a ser localizado em um documento.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MatchSuffix">
@@ -1375,15 +1253,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> para coincidir palavras terminando com a sequência de caracteres da pesquisa. Leitura/gravação.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>Essa propriedade corresponde à caixa de seleção Coincidir sufixo na caixa de diálogo Localizar e substituir.</para>
-          <para />
-        </remarks>
+        <summary><b>True</b> para corresponder palavras que terminem com a cadeia de caracteres da pesquisa.  Leitura/gravação.</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>Essa propriedade corresponde à caixa de seleção Coincidir sufixo na caixa de diálogo Localizar e Substituir.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MatchWholeWord">
@@ -1414,11 +1287,9 @@
       <Docs>
         <summary>Determina se a operação de localização localiza somente palavras inteiras e não o texto que faz parte de uma palavra maior.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Esta propriedade retorna <b>True</b> se a operação de localização localiza somente palavras inteiras e não o texto que é parte de uma palavra maior e <b>False</b> se não. Defina o valor da propriedade como <b>True</b> ou <b>False</b> para habilitar ou desabilitar a funcionalidade.</para>
-          <para>Uso o <see cref="P:Microsoft.Office.Interop.Word.Find.Text" /> propriedade do <see cref="T:Microsoft.Office.Interop.Word.Find" /> objeto ou o <paramref name="FindText" /> argumento com o <see cref="M:Microsoft.Office.Interop.Word.Find.Execute(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> método para especificar o texto a ser localizado em um documento.</para>
-          <para />
-        </remarks>
+        <remarks><para>Essa propriedade retorna <b>true</b> se a operação de localização localiza somente palavras inteiras e não o texto que faz parte de uma palavra maior e <b>false</b> se não. Defina o valor da propriedade como <b>true</b> ou <b>false</b> para habilitar ou desabilitar a funcionalidade.</para>
+          <para>Use a <see cref="P:Microsoft.Office.Interop.Word.Find.Text" /> Propriedade do <see cref="T:Microsoft.Office.Interop.Word.Find" /> objeto ou o <paramref name="FindText" /> argumento com o <see cref="M:Microsoft.Office.Interop.Word.Find.Execute(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> método para especificar o texto a ser localizado em um documento.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MatchWildcards">
@@ -1449,12 +1320,10 @@
       <Docs>
         <summary>Determina se o texto a ser localizado contém caracteres curinga.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Esta propriedade retorna <b>True</b> se o texto a ser localizado contém caracteres curinga e <b>False</b> se não. Defina o valor da propriedade como <b>True</b> ou <b>False</b> para habilitar ou desabilitar a funcionalidade.</para>
-          <para>Corresponds para a caixa de seleção Usar caracteres curinga na caixa de diálogo Localizar e substituir (menu Editar).</para>
-          <para>Usar o <see cref="P:Microsoft.Office.Interop.Word.Find.Text" /> propriedade do <see cref="T:Microsoft.Office.Interop.Word.Find" /> do objeto ou usar o <paramref name="FindText" /> argumento com o <see cref="M:Microsoft.Office.Interop.Word.Find.Execute(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> método para especificar o texto a ser localizado em um documento.</para>
-          <para />
-        </remarks>
+        <remarks><para>Essa propriedade retorna <b>true</b> se o texto a ser localizado contiver curingas e <b>false</b> se não. Defina o valor da propriedade como <b>true</b> ou <b>false</b> para habilitar ou desabilitar a funcionalidade.</para>
+          <para>Corresponde à caixa de seleção usar caracteres curinga na caixa de diálogo Localizar e substituir (menu Editar).</para>
+          <para>Use a <see cref="P:Microsoft.Office.Interop.Word.Find.Text" /> Propriedade do <see cref="T:Microsoft.Office.Interop.Word.Find" /> objeto ou use o <paramref name="FindText" /> argumento com o <see cref="M:Microsoft.Office.Interop.Word.Find.Execute(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> método para especificar o texto a ser localizado em um documento.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NoProofing">
@@ -1483,12 +1352,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Determina se o Microsoft Word localiza ou substitui o texto que ignora o verificador ortográfico e gramatical.</summary>
+        <summary>Determina se o Microsoft Word localizará ou substituirá o texto que o verificador ortográfico e gramatical ignora.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Retorna <b>True</b> se o Word localiza ou substitui o texto que o verificador ortográfico e gramatical ignora e <b>False</b> se não.</para>
-          <para />
-        </remarks>
+        <remarks><para>Retorna <b>true</b> se o Word localizar ou substituir o texto que o verificador ortográfico e gramatical ignora e <b>false</b> se não.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ParagraphFormat">
@@ -1517,7 +1384,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ParagraphFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define um <see cref="T:Microsoft.Office.Interop.Word.ParagraphFormat" /> object que representa as configurações para o intervalo especificado, a seleção, a operação de localização ou substituição ou o estilo de parágrafo.</summary>
+        <summary>Retorna ou define um <see cref="T:Microsoft.Office.Interop.Word.ParagraphFormat" /> objeto que representa as configurações de parágrafo para o intervalo, a seleção, a operação de localização ou substituição, ou o estilo especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1573,7 +1440,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Replacement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Replacement" /> objeto que contém o critério para uma operação de substituição.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Replacement" /> objeto que contém os critérios para uma operação de substituição.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1600,8 +1467,7 @@
       <Parameters />
       <Docs>
         <summary>Ativa as opções de pesquisa não especificadas associadas a texto japonês.</summary>
-        <remarks>
-          <para>Este método define as seguintes propriedades como <b>True</b>:</para>
+        <remarks><para>Este método define as seguintes propriedades como <b>True</b>:</para>
           <para>
             <see cref="P:Microsoft.Office.Interop.Word.Options.MatchFuzzyAY" />
           </para>
@@ -1656,8 +1522,7 @@
           <para>
             <see cref="P:Microsoft.Office.Interop.Word.Options.MatchFuzzyZJ" />
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Style">
@@ -1688,11 +1553,9 @@
       <Docs>
         <summary>Retorna ou define o estilo do objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Para definir essa propriedade, especifique o nome local do estilo, um inteiro, uma <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" /> constante ou um objeto que represente o estilo.</para>
-          <para>Quando você retorna o estilo de um intervalo que inclui mais de um estilo, apenas o primeiro estilo de caractere ou parágrafo é retornado.</para>
-          <para />
-        </remarks>
+        <remarks><para>Para definir essa propriedade, especifique o nome local do estilo, um inteiro, uma <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" /> constante ou um objeto que represente o estilo.</para>
+          <para>Quando você retorna o estilo de um intervalo que inclui mais de um estilo, apenas o primeiro estilo de caractere ou de parágrafo é retornado.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -1721,12 +1584,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define o texto para localizar ou substituir na seleção ou intervalo especificado.</summary>
+        <summary>Retorna ou define o texto a ser localizado ou substituído no intervalo ou seleção especificada.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>A propriedade <b>Text</b> retorna o texto não formatado, simples da seleção ou do intervalo. Quando você define essa propriedade, o texto do intervalo ou seleção é substituído.</para>
-          <para />
-        </remarks>
+        <remarks><para>A propriedade <b>Text</b> retorna o texto não formatado, simples da seleção ou do intervalo. Quando você define essa propriedade, o texto do intervalo ou seleção é substituído.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Wrap">
@@ -1755,19 +1616,17 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdFindWrap</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define o que acontece se a pesquisa começa em um ponto que não seja o início do documento e o final do documento for atingido (ou vice-versa se <see cref="P:Microsoft.Office.Interop.Word.Find.Forward" /> estiver definida como <b>False</b>) ou se o texto de pesquisa não foi encontrado no intervalo ou seleção especificada.</summary>
+        <summary>Retorna ou define o que acontece se a pesquisa começa em um ponto que não o início do documento e o final do documento é alcançado (ou vice-versa se <see cref="P:Microsoft.Office.Interop.Word.Find.Forward" /> for definido como <b>false</b>) ou se o texto de pesquisa não for encontrado na seleção ou no intervalo especificado.</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Word.WdFindWrap" />pode ser uma das seguintes constantes:</para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Word.WdFindWrap" /> pode ser uma das seguintes constantes:</para>
+            <b>wdFindAsk</b> Após pesquisar a seleção ou o intervalo, o Microsoft Word exibe uma mensagem perguntando se deve pesquisar o restante do documento.</para>
           <para>
-            <b>wdFindAsk</b> depois de pesquisar a seleção ou o intervalo, o Microsoft Word exibe uma mensagem perguntando se deve pesquisar o restante do documento.</para>
+            <b>wdFindContinue</b> A operação de localização continua quando o início ou o fim do intervalo de pesquisa é alcançado.</para>
           <para>
-            <b>wdFindContinue</b> a operação de localização continua quando o início ou fim do intervalo de pesquisa for atingido.</para>
-          <para>
-            <b>wdFindStop</b> a operação de localização termina quando o início ou fim do intervalo de pesquisa for atingido.</para>
-          <para />
-        </remarks>
+            <b>wdFindStop</b> A operação de localização termina quando o início ou o fim do intervalo de pesquisa é alcançado.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,13 +1,5 @@
 <Type Name="Zoom" FullName="Microsoft.Office.Interop.Word.Zoom">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="2f2dc9d4d63de913f860ff43cbd70f73c583211b" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20664414" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Zoom" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="b34a8e7ae4961d46b3b63e6a6227446fc79b0348" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34145258" /></Metadata><TypeSignature Language="C#" Value="public interface Zoom" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Zoom" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Zoom" />
   <TypeSignature Language="VB.NET" Value="Public Interface Zoom" />
@@ -27,11 +19,11 @@
   </Attributes>
   <Docs>
     <summary>Contém opções de ampliação (por exemplo, o percentual de zoom) para uma janela ou painel.</summary>
-    <remarks>
-      <para>O objeto <b>Zoom</b> é um membro do <see cref="T:Microsoft.Office.Interop.Word.Zooms" /> conjunto.</para>
-      <para>Uso o <see cref="P:Microsoft.Office.Interop.Word.View.Zoom" /> propriedade do <see cref="T:Microsoft.Office.Interop.Word.View" /> objeto para retornar um único objeto <b>Zoom</b> .</para>
-      <para>Uso <b>Zooms</b>(<paramref name="index" />), onde <paramref name="index" /> identifica o tipo de exibição, para retornar um único objeto <b>Zoom</b> . O tipo de exibição especificado pelo parâmetro index pode ser uma das seguintes opções <see cref="T:Microsoft.Office.Interop.Word.WdViewType" /> constantes: <b>wdMasterView</b>, <b>wdNormalView</b>, <b>wdOutlineView</b>, <b>wdPrintPreview</b>, <b>wdPrintView</b>ou <b>wdWebView</b>.</para> Método 
-      <para><b>Adicionar</b> não está disponível para a coleção <b>Zooms</b> . A coleção <b>Zooms</b> inclui um único objeto <b>Zoom</b> para cada um dos vários tipos de exibição (estrutura de tópicos, normal, layout da página e assim por diante).</para><para /></remarks>
+    <remarks><para>O objeto <b>zoom</b> é um membro da <see cref="T:Microsoft.Office.Interop.Word.Zooms" /> coleção.</para>
+      <para>Use a <see cref="P:Microsoft.Office.Interop.Word.View.Zoom" /> Propriedade do <see cref="T:Microsoft.Office.Interop.Word.View" /> objeto para retornar um único objeto <b>zoom</b> .</para>
+      <para>Use <b>zooms</b>(<paramref name="index" />), onde <paramref name="index" /> identifica o tipo de exibição, para retornar um único objeto <b>zoom</b> . O tipo de exibição especificado por index pode ser uma das seguintes <see cref="T:Microsoft.Office.Interop.Word.WdViewType" /> constantes: <b>wdMasterView</b>, <b>wdNormalView</b>, <b>wdOutlineView</b>, <b>wdPrintPreview</b>, <b>wdPrintView</b>ou <b>wdWebView</b>.</para>
+      <para>O método <b>Add</b> não está disponível para a coleção <b>Zooms</b>. A <b></b> coleção zooms inclui um único objeto <b>zoom</b> para cada um dos vários tipos de exibição (estrutura de tópicos, normal, layout da página e assim por diante).</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -57,7 +49,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -87,9 +79,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
-          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". [!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
+          <para>A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PageColumns">
@@ -149,27 +141,25 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdPageFit</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define a ampliação do modo de exibição de uma janela de modo que toda a página fique visível ou toda a largura da página fique visível.</summary>
+        <summary>Retorna ou define a ampliação da exibição de uma janela de forma que a página inteira ou a largura inteira da página fique visível.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
+        <remarks><para>
             <see cref="T:Microsoft.Office.Interop.Word.WdPageFit" />pode ser uma destas constantes <b>WdPageFit</b> : </para>
           <para>
-            <b>wdPageFitBestFit </b>
+            <b>wdPageFitBestFit</b>
           </para>
           <para>
-            <b>wdPageFitFullPage </b>
+            <b>wdPageFitFullPage</b>
           </para>
           <para>
-            <b>wdPageFitNone </b>
+            <b>wdPageFitNone</b>
           </para>
           <para>
             <b>wdPageFitTextFit</b>
           </para>
-          <para>a constante <b>wdPageFitFullPage</b> não tem efeito se o documento não estiver em modo de impressão.</para>
-          <para>Quando a propriedade <b>PageFit</b> estiver definida como <b>wdPageFitBestFit</b>, o percentual de zoom é recalculado automaticamente toda vez que o tamanho da janela de documento é alterado. A definição dessa propriedade como <b>wdPageFitNone</b> evita o percentual de zoom seja recalculado sempre que isso acontece.</para>
-          <para />
-        </remarks>
+          <para>A constante <b>wdPageFitFullPage</b> não tem efeito algum quando o documento não está no modo de layout de impressão.</para>
+          <para>Quando a propriedade <b>PageFit</b> está definida como <b>wdPageFitBestFit</b>, o percentual de zoom é recalculado automaticamente toda vez que o tamanho da janela de documento é alterado. A configuração dessa propriedade como <b>wdPageFitNone</b> evita que o percentual de zoom seja recalculado sempre que isso acontece.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PageRows">

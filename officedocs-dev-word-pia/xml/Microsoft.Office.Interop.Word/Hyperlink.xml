@@ -1,13 +1,5 @@
 <Type Name="Hyperlink" FullName="Microsoft.Office.Interop.Word.Hyperlink">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="b20d04082a16f963ccc15d9f6d80fa09a9949c11" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20665200" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Hyperlink" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="b605957f028ab3eb567ae3d9d066ecf695f2ce45" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146707" /></Metadata><TypeSignature Language="C#" Value="public interface Hyperlink" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Hyperlink" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Hyperlink" />
   <TypeSignature Language="VB.NET" Value="Public Interface Hyperlink" />
@@ -27,12 +19,10 @@
   </Attributes>
   <Docs>
     <summary>Representa um hyperlink.</summary>
-    <remarks>
-      <para>O objeto <b>Hyperlink</b> é membro do <see cref="T:Microsoft.Office.Interop.Word.Hyperlinks" /> conjunto.</para>
-      <para>Uso o <see cref="P:Microsoft.Office.Interop.Word.Shape.Hyperlink" /> propriedade para retornar um objeto <b>Hyperlink</b> associado a uma forma (uma forma pode ter apenas um hiperlink).</para>
-      <para>Usar <b>hiperlinks</b>(<paramref name="index" />), onde <paramref name="index" /> é o número de índice, para retornar um único objeto <b>Hyperlink</b> a partir de um documento, intervalo ou seleção.</para>
-      <para />
-    </remarks>
+    <remarks><para>O objeto <b>Hyperlink</b> é um membro da <see cref="T:Microsoft.Office.Interop.Word.Hyperlinks" /> coleção.</para>
+      <para>Use a <see cref="P:Microsoft.Office.Interop.Word.Shape.Hyperlink" /> propriedade para retornar um objeto <b>Hyperlink</b> associado a uma forma (uma forma pode ter apenas um hiperlink).</para>
+      <para>Use <b></b>hiperlinks (<paramref name="index" />), onde <paramref name="index" /> é o número de índice, para retornar um único objeto <b>Hyperlink</b> de um documento, intervalo ou seleção.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Address">
@@ -145,7 +135,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -175,11 +165,10 @@
         <Parameter Name="Overwrite" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="FileName">
-          <b>String</b> necessário. O nome de arquivo do documento especificado.</param>
-        <param name="EditNow">Necessário <b>booleano</b>. <b>True</b> para que o documento especificado seja aberto imediatamente em seu ambiente de edição associado. O valor padrão é <b>True</b>.</param>
-        <param name="Overwrite">Necessário <b>booleano</b>. <b>True</b> para substituir qualquer arquivo existente do mesmo nome na mesma pasta. <b>False</b> se qualquer arquivo existente com o mesmo nome for preservado e o <paramref name="FileName" /> argumento especificará um novo nome de arquivo. O valor padrão é <b>False</b>.</param>
-        <summary>Cria um novo documento associado ao hiperlink especificado.</summary>
+        <param name="FileName"><b>String</b> necessário. O nome de arquivo do documento especificado.</param>
+        <param name="EditNow"><b>Booliano</b>necessário. <b>True</b> para fazer com que o documento especificado abra imediatamente em seu ambiente de edição associado. O valor padrão é <b>True</b>.</param>
+        <param name="Overwrite"><b>Booliano</b>necessário. <b>True</b> para sobrescrever qualquer arquivo já existente com o mesmo nome na mesma pasta. <b>False</b> se qualquer arquivo existente com o mesmo nome é preservado e <paramref name="FileName" /> o argumento especifica um novo nome de arquivo. O valor padrão é <b>False</b>.</param>
+        <summary>Cria um novo documento vinculado ao hiperlink especificado.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -208,9 +197,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
-          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". [!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
+          <para>A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -264,12 +253,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define a sequência de texto para a linha de assunto do hiperlink especificado. A linha de assunto é acrescentada ao endereço do hiperlink na Internet ou URL.</summary>
+        <summary>Retorna ou define a cadeia de texto para a linha de assunto do hiperlink especificado. A linha de assunto é anexada ao endereço da Internet do hiperlink ou à URL.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Essa propriedade é geralmente usada com hiperlinks de email. O valor dessa propriedade prevalece sobre qualquer assunto de email especificado no <see cref="P:Microsoft.Office.Interop.Word.Hyperlink.Address" /> propriedade do mesmo <see cref="P:Microsoft.Office.Interop.Word.Shape.Hyperlink" /> objeto.</para>
-          <para />
-        </remarks>
+        <remarks><para>Geralmente, essa propriedade é usada com hiperlinks de email. O valor dessa propriedade tem precedência sobre qualquer assunto de email especificado na <see cref="P:Microsoft.Office.Interop.Word.Hyperlink.Address" /> Propriedade do mesmo <see cref="P:Microsoft.Office.Interop.Word.Shape.Hyperlink" /> objeto.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ExtraInfoRequired">
@@ -295,13 +282,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> se forem necessárias informações extra para resolver o hiperlink especificado.</summary>
+        <summary><b>True</b> se forem necessárias informações extra para resolver o hiperlink especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Você pode especificar informações extras usando o <paramref name="ExtraInfo" /> argumento com o <see cref="M:Microsoft.Office.Interop.Word.Hyperlink.Follow(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> ou <see cref="M:Microsoft.Office.Interop.Word._Document.FollowHyperlink(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> método. Por exemplo, você pode usar <paramref name="ExtraInfo" /> para especificar as coordenadas de um mapa de imagem, o conteúdo de um formulário ou um nome de arquivo FAT.</para>
-          <para />
-        </remarks>
+        <remarks><para>Você pode especificar informações extras usando o <paramref name="ExtraInfo" /> argumento com o <see cref="M:Microsoft.Office.Interop.Word.Hyperlink.Follow(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> método ou <see cref="M:Microsoft.Office.Interop.Word._Document.FollowHyperlink(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> . Por exemplo, você pode usar <paramref name="ExtraInfo" /> para especificar as coordenadas de um mapa de imagem, o conteúdo de um formulário ou um nome de arquivo FAT.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Follow">
@@ -330,21 +314,14 @@
         <Parameter Name="HeaderInfo" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="NewWindow">
-          <b>Objeto</b>de opcional. <b>True</b> para exibir o documento de destino em uma nova janela. O valor padrão é <b>False</b>.</param>
-        <param name="AddHistory">
-          <b>Objeto</b>de opcional. Esse argumento é reservado para uso futuro.</param>
-        <param name="ExtraInfo">
-          <b>Objeto</b>de opcional. Uma matriz de bytes ou de cadeia de caracteres que especifica informações adicionais para HTTP usar para resolver o hiperlink. Por exemplo, você pode usar <paramref name="ExtraInfo" /> para especificar as coordenadas de um mapa de imagem, o conteúdo de um formulário ou um nome de arquivo FAT. A cadeia de caracteres é postada ou acrescentada, dependendo do valor da <paramref name="Method" />. Use o <see cref="P:Microsoft.Office.Interop.Word.Hyperlink.ExtraInfoRequired" /> propriedade para determinar se são necessárias informações extras.</param>
-        <param name="Method">
-          <b>Objeto</b>de opcional. Especifica que as informações de maneira adicionais para HTTP são manipuladas. Pode ser qualquer <see cref="T:Microsoft.Office.Core.MsoExtraInfoMethod" /> constante.</param>
-        <param name="HeaderInfo">
-          <b>Objeto</b>de opcional. Uma string que especifica as informações do cabeçalho para a solicitação de HTTP. O valor padrão é uma string vazia. Você pode combinar várias linhas de cabeçalho em uma única cadeia de caracteres. A string especificada é convertida automaticamente em caracteres ANSI. Observe que o <paramref name="HeaderInfo" /> argumento pode sobrescrever campos de cabeçalho HTTP padrão.</param>
-        <summary>Exibe um documento em cache associado especificado <see cref="T:Microsoft.Office.Interop.Word.Hyperlink" /> do objeto, se já tiver sido baixado. Caso contrário, esse método resolve o hiperlink, baixa o documento alvo e exibe o documento no aplicativo apropriado.</summary>
-        <remarks>
-          <para>Se o hiperlink usa o protocolo de arquivos, esse método abre o documento em vez de baixá-lo.</para>
-          <para />
-        </remarks>
+        <param name="NewWindow"><b>Objeto</b>opcional. <b>True</b> para exibir o documento alvo em uma nova janela. O valor padrão é <b>False</b>.</param>
+        <param name="AddHistory"><b>Objeto</b>opcional. Esse argumento é reservado para uso futuro.</param>
+        <param name="ExtraInfo"><b>Objeto</b>opcional. Uma matriz de bytes ou sequências de caracteres que especifica informações adicionais para que o HTTP resolva o hiperlink. Por exemplo, você pode usar <paramref name="ExtraInfo" /> para especificar as coordenadas de um mapa de imagem, o conteúdo de um formulário ou um nome de arquivo FAT. A cadeia de caracteres é postada ou acrescentada, dependendo do valor de <paramref name="Method" />. Use a <see cref="P:Microsoft.Office.Interop.Word.Hyperlink.ExtraInfoRequired" /> propriedade para determinar se é necessário fornecer informações extras.</param>
+        <param name="Method"><b>Objeto</b>opcional. Especifica a maneira como são manipuladas as informações adicionais para HTTP. Pode ser qualquer <see cref="T:Microsoft.Office.Core.MsoExtraInfoMethod" /> constante.</param>
+        <param name="HeaderInfo"><b>Objeto</b>opcional. Uma string que especifica as informações do cabeçalho para a solicitação de HTTP. O valor padrão é uma sequência de caracteres vazia. Você pode combinar várias linhas de cabeçalho em uma única cadeia de caracteres. A string especificada é convertida automaticamente em caracteres ANSI. Observe que o <paramref name="HeaderInfo" /> argumento pode substituir os campos de cabeçalho HTTP padrão.</param>
+        <summary>Exibe um documento armazenado em cache associado ao objeto <see cref="T:Microsoft.Office.Interop.Word.Hyperlink" /> especificado, caso já tenha sido baixado. Caso contrário, este método resolve o hiperlink, baixa o documento alvo e exibe o documento no aplicativo apropriado.</summary>
+        <remarks><para>Quando o hiperlink usa o protocolo de arquivos, esse método abre o documento em vez de fazer o seu download.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -426,12 +403,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Range" /> object que representa a parte de um documento que está contida no objeto especificado.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto que representa a parte de um documento que está contida no objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Para obter informações sobre como retornar um intervalo de um documento ou um intervalo de formas de uma coleção de formas, consulte o <see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" /> método.</para>
-          <para />
-        </remarks>
+        <remarks><para>Para obter informações sobre como retornar um intervalo de um documento ou retornar um intervalo de formas de uma coleção de formas <see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" /> , consulte o método.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ScreenTip">
@@ -490,10 +465,8 @@
       <Docs>
         <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Shape" /> objeto para o hiperlink especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se um hiperlink não for representado por uma forma, ocorrerá um erro.</para>
-          <para />
-        </remarks>
+        <remarks><para>Se o hiperlink não for representado por uma forma, ocorrerá um erro.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SubAddress">
@@ -524,10 +497,8 @@
       <Docs>
         <summary>Retorna ou define um local nomeado no destino do hiperlink especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>O local nomeado pode ser um indicador em um documento do Microsoft Word, uma célula nomeada ou uma referência de célula em uma planilha do Microsoft Excel, um objeto definido em um banco de dados do Microsoft Access ou um número de slide em uma apresentação do Microsoft PowerPoint.</para>
-          <para />
-        </remarks>
+        <remarks><para>O local definido pode ser um indicador em um documento do Microsoft Word, uma célula definida ou referência de célula em uma planilha do Microsoft Excel, um objeto definido em um banco de dados do Microsoft Access ou o número de um slide em uma apresentação do PowerPoint.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SubAddressOld">
@@ -648,10 +619,8 @@
       <Docs>
         <summary>Retorna o tipo de hiperlink.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>A propriedade <b>Type</b> pode ser uma do <see cref="T:Microsoft.Office.Core.MsoHyperlinkType" /> constantes.</para>
-          <para />
-        </remarks>
+        <remarks><para>A propriedade <b>Type</b> pode ser uma das <see cref="T:Microsoft.Office.Core.MsoHyperlinkType" /> constantes.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

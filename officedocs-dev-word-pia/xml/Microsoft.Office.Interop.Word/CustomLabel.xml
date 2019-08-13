@@ -1,13 +1,5 @@
 <Type Name="CustomLabel" FullName="Microsoft.Office.Interop.Word.CustomLabel">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="fc491a73c52a2fd4e6f048a49a9302b5b1ff748f" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20665459" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface CustomLabel" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="0f214b3428fec4a541bfb576068a5cc01082ae76" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147255" /></Metadata><TypeSignature Language="C#" Value="public interface CustomLabel" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CustomLabel" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.CustomLabel" />
   <TypeSignature Language="VB.NET" Value="Public Interface CustomLabel" />
@@ -27,15 +19,13 @@
   </Attributes>
   <Docs>
     <summary>Representa uma etiqueta de endereçamento personalizada.</summary>
-    <remarks>
-      <para>O objeto <b>CustomLabel</b> é um membro do <see cref="T:Microsoft.Office.Interop.Word.CustomLabels" /> conjunto. A coleção <b>CustomLabels</b> contém todas as etiquetas de endereçamento personalizadas listadas na caixa de diálogo Opções de etiqueta.</para>
-      <para>Uso <b>CustomLabels</b>(<paramref name="index" />), onde <paramref name="index" /> é o nome de rótulo personalizado ou o número de índice, para retornar um único objeto <b>CustomLabel</b> .</para>
-      <para>o número de índice representa a posição da etiqueta de endereçamento personalizada na coleção <b>CustomLabels</b> .</para>
+    <remarks><para>O objeto <b>CustomLabel</b> é um membro da <see cref="T:Microsoft.Office.Interop.Word.CustomLabels" /> coleção. A coleção <b>CustomLabels</b> contém todas as etiquetas de endereçamento personalizadas listadas na caixa de diálogo Opções de etiqueta.</para>
+      <para>Use <b>CustomLabels</b>(<paramref name="index" />), onde <paramref name="index" /> é o nome de rótulo personalizado ou número de índice, para retornar um único objeto <b>CustomLabel</b> .</para>
+      <para>O número de índice representa a posição da etiqueta de endereçamento personalizada na coleção <b>CustomLabels</b>.</para>
       <para>
-        <b>Observação</b>: <b>CustomLabel</b> objetos são classificados em ordem alfabética na coleção <b>CustomLabels</b> e seus números de índice são reatribuídos dinamicamente à medida que o conteúdo da coleção se altera. Por esse motivo, é mais seguro para se referir a um objeto <b>CustomLabel</b> específico pelo nome, e não pelo número de índice.</para>
-      <para>Uso o <see cref="M:Microsoft.Office.Interop.Word.CustomLabels.Add(System.String,System.Object@)" /> método para criar um rótulo personalizado.</para>
-      <para />
-    </remarks>
+        <b>Observação</b>: <b></b> os objetos CustomLabels são classificados alfabeticamente na coleção <b>CustomLabels</b> e seus números de índice são reatribuídos dinamicamente à medida que o conteúdo da coleção é alterado. Por esse motivo, é mais seguro se referir a um objeto <b>CustomLabel</b> específico pelo nome, e não pelo número de índice.</para>
+      <para>Use o <see cref="M:Microsoft.Office.Interop.Word.CustomLabels.Add(System.String,System.Object@)" /> método para criar uma etiqueta personalizada.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -61,7 +51,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -91,9 +81,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
-          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". [!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
+          <para>A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -144,8 +134,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> se o tipo de impressora da etiqueta personalizada especificada for matricial. <b>False</b> se o tipo de impressora for laser ou tinta jet.</summary>
+        <summary><b>True</b> se o tipo de impressora da etiqueta personalizada especificada for matricial. <b>False</b> se o tipo de impressora for laser ou tinta jet.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -176,7 +165,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define a altura das personalizado etiqueta de endereçamento especificada, em pontos.</summary>
+        <summary>Retorna ou define a altura da etiqueta de endereçamento personalizada especificada, em pontos.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -209,10 +198,8 @@
       <Docs>
         <summary>Retorna ou define a distância horizontal (em pontos) entre a borda esquerda de uma etiqueta de endereçamento personalizada e a borda esquerda da próxima etiqueta de endereçamento.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se essa propriedade for alterada para um valor que não seja válido para o layout da etiqueta de endereçamento especificada, ocorrerá um erro.</para>
-          <para />
-        </remarks>
+        <remarks><para>Se essa propriedade for alterada para um valor que não seja válido para o layout da etiqueta de endereçamento especificada, ocorrerá um erro.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -302,10 +289,8 @@
       <Docs>
         <summary>Retorna ou define o número de etiquetas de endereçamento personalizadas em uma página.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se essa propriedade for alterada para um valor que não seja válido para o layout da etiqueta de endereçamento especificada, ocorrerá um erro.</para>
-          <para />
-        </remarks>
+        <remarks><para>Se essa propriedade for alterada para um valor que não seja válido para o layout da etiqueta de endereçamento especificada, ocorrerá um erro.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NumberDown">
@@ -336,10 +321,8 @@
       <Docs>
         <summary>Retorna ou define o número de etiquetas de endereçamento personalizadas para baixo o comprimento de uma página.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se essa propriedade for alterada para um valor que não seja válido para o layout da etiqueta de endereçamento especificada, ocorrerá um erro.</para>
-          <para />
-        </remarks>
+        <remarks><para>Se essa propriedade for alterada para um valor que não seja válido para o layout da etiqueta de endereçamento especificada, ocorrerá um erro.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PageSize">
@@ -370,10 +353,8 @@
       <Docs>
         <summary>Retorna ou define o tamanho de página para a etiqueta de endereçamento personalizada especificada.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Propriedade <b>PageSize</b> pode ser uma do <see cref="T:Microsoft.Office.Interop.Word.WdCustomLabelPageSize" /> constantes. Algumas dessas constantes podem não estar disponíveis para você, dependendo do suporte a idioma (inglês americano, por exemplo) que você selecionou ou instalou.</para>
-          <para />
-        </remarks>
+        <remarks><para>A propriedade <b>PageSize</b> pode ser uma das <see cref="T:Microsoft.Office.Interop.Word.WdCustomLabelPageSize" /> constantes. Algumas dessas constantes podem não estar disponíveis, dependendo do suporte a idioma (português do Brasil, por exemplo) que você selecionou ou instalou.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -432,10 +413,8 @@
       <Docs>
         <summary>Retorna ou define as larguras de margem lateral (em pontos) para a etiqueta de endereçamento personalizada especificada.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se essa propriedade for alterada para um valor que não seja válido para o layout da etiqueta de endereçamento especificada, ocorrerá um erro.</para>
-          <para />
-        </remarks>
+        <remarks><para>Se essa propriedade for alterada para um valor que não seja válido para o layout da etiqueta de endereçamento especificada, ocorrerá um erro.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TopMargin">
@@ -492,8 +471,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> se as várias propriedades (por exemplo, <see cref="P:Microsoft.Office.Interop.Word.CustomLabel.Height" />, <see cref="P:Microsoft.Office.Interop.Word.CustomLabel.Width" />, e <see cref="P:Microsoft.Office.Interop.Word.CustomLabel.NumberDown" />) para o trabalho de etiqueta personalizada especificada produzir uma etiqueta de endereçamento válida.</summary>
+        <summary><b>True</b> se as várias propriedades (por exemplo, <see cref="P:Microsoft.Office.Interop.Word.CustomLabel.Height" /> <see cref="P:Microsoft.Office.Interop.Word.CustomLabel.Width" />, e <see cref="P:Microsoft.Office.Interop.Word.CustomLabel.NumberDown" />) para a etiqueta personalizada especificada trabalham juntas para produzir uma etiqueta de endereçamento válida.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -526,10 +504,8 @@
       <Docs>
         <summary>Retorna ou define a distância vertical entre a parte superior de uma etiqueta de endereçamento e a parte superior da próxima etiqueta de endereçamento.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se essa propriedade for alterada para um valor que não seja válido para o layout da etiqueta de endereçamento especificada, ocorrerá um erro.</para>
-          <para />
-        </remarks>
+        <remarks><para>Se essa propriedade for alterada para um valor que não seja válido para o layout da etiqueta de endereçamento especificada, ocorrerá um erro.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Width">

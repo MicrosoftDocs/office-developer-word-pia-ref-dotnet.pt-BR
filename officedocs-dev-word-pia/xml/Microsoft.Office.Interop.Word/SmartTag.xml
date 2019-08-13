@@ -1,13 +1,5 @@
 <Type Name="SmartTag" FullName="Microsoft.Office.Interop.Word.SmartTag">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d90397c8f538990a390264fd3d1b286f3e023f2a" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20664971" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface SmartTag" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5fa49cb1dcddf81834677aefdc8cd50240fa9578" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146119" /></Metadata><TypeSignature Language="C#" Value="public interface SmartTag" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SmartTag" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.SmartTag" />
   <TypeSignature Language="VB.NET" Value="Public Interface SmartTag" />
@@ -26,12 +18,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Representa uma cadeia de caracteres em um documento ou um intervalo que contém informações de tipo reconhecido.</summary>
-    <remarks>
-      <para>Objeto <b>SmartTag</b> é um membro do <see cref="T:Microsoft.Office.Interop.Word.SmartTags" /> conjunto. Coleção <b>SmartTags</b> contém todas as marcas inteligentes em um documento ou intervalo de texto dentro de um documento. Microsoft Word usa um arquivo identificador para identificar marcas inteligentes e usa um arquivo de ação para executar ações relacionadas às marcas inteligentes, como links para sites da Web.</para>
-      <para>Uso o <see cref="M:Microsoft.Office.Interop.Word.Editors.Item(System.Object@)" /> método — ou <see cref="T:Microsoft.Office.Interop.Word.SmartTags" /> (<paramref name="index" />), onde <paramref name="index" /> representa o número da marca inteligente — para retornar um único objeto <b>SmartTag</b> .</para>
-      <para />
-    </remarks>
+    <summary>Representa uma cadeia de caracteres em um documento ou em um intervalo contendo informações de um tipo reconhecido.</summary>
+    <remarks><para>O objeto <b>SmartTag</b> é um membro da <see cref="T:Microsoft.Office.Interop.Word.SmartTags" /> coleção. A coleção <b>SmartTags</b> contém todas as marcas inteligentes de um documento ou de um intervalo de texto de um documento. O Microsoft Word usa um arquivo identificador para rotular marcas inteligentes e um arquivo de ações para executar ações relacionadas a essas marcas inteligentes, por exemplo, vinculá-las a sites.</para>
+      <para>Use o <see cref="M:Microsoft.Office.Interop.Word.Editors.Item(System.Object@)" /> método — ou <see cref="T:Microsoft.Office.Interop.Word.SmartTags" /> (<paramref name="index" />), onde <paramref name="index" /> representa o número da marca inteligente, para retornar um único objeto <b>SmartTag</b> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -60,7 +50,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -93,9 +83,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto especificado foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
-          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Se o objeto especificado foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". [!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
+          <para>A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -154,10 +144,8 @@
       <Docs>
         <summary>Retorna uma <b>cadeia de caracteres</b> que representa o endereço de URL para uma marca inteligente.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>O endereço da URL é especificado no arquivo de identificador de marca inteligente relacionados. Quando uma parte do texto é reconhecida e marcada, a URL se torna parte das informações contidas na marca inteligente. A propriedade <b>DownloadURL</b> é útil quando um documento é enviado para alguém que não tem os arquivos necessários do identificador e ação instalados em seus computadores. O usuário pode seguir a URL para baixar os arquivos de marca inteligente necessários.</para>
-          <para />
-        </remarks>
+        <remarks><para>O endereço URL é especificado no arquivo reconhecedor de rótulo inteligente correspondente. Quando uma parte do texto é reconhecida e marcada, a URL se torna parte das informações contidas no rótulo inteligente. A propriedade <b>DownloadURL</b> é útil quando um documento é enviado para alguém que não tem o reconhecedor necessário e os arquivos de ação instalados no computador. O usuário pode seguir a URL para baixar os arquivos de rótulo inteligente necessários.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -248,12 +236,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.CustomProperties</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.CustomProperties" /> object que representa as propriedades de uma marca inteligente.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.CustomProperties" /> objeto que representa as propriedades de uma marca inteligente.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Você pode usar o <see cref="M:Microsoft.Office.Interop.Word.SmartTags.Add(System.String,System.Object@,System.Object@)" /> método para adicionar propriedades personalizadas. No entanto, as propriedades personalizadas são geralmente especificadas nos arquivos de identificador e a ação de marca inteligente.</para>
-          <para />
-        </remarks>
+        <remarks><para>Você pode usar o <see cref="M:Microsoft.Office.Interop.Word.SmartTags.Add(System.String,System.Object@,System.Object@)" /> método para adicionar propriedades personalizadas. No entanto, as propriedades personalizadas são geralmente especificadas no identificador de marca inteligente e os arquivos de ação.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Range">
@@ -282,12 +268,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Range" /> object que representa a parte de um documento que está contida no objeto especificado.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto que representa a parte de um documento que está contida no objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Para obter informações sobre como retornar um intervalo de um documento ou um intervalo de formas de uma coleção de formas, consulte o <see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" /> método.</para>
-          <para />
-        </remarks>
+        <remarks><para>Para obter informações sobre como retornar um intervalo de um documento ou retornar um intervalo de formas de uma coleção de formas <see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" /> , consulte o método.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -315,10 +299,8 @@
       <Parameters />
       <Docs>
         <summary>Seleciona o objeto especificado.</summary>
-        <remarks>
-          <para>Depois de usar esse método, use o <see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> propriedade para trabalhar com os itens selecionados.</para>
-          <para />
-        </remarks>
+        <remarks><para>Depois de usar esse método, use <see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> a propriedade para trabalhar com os itens selecionados.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SmartTagActions">
@@ -347,7 +329,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.SmartTagActions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.SmartTagActions" /> coleção que representa a coleção de ações disponíveis em uma marca inteligente.</summary>
+        <summary>Retorna uma <see cref="T:Microsoft.Office.Interop.Word.SmartTagActions" /> coleção que representa a coleção de ações disponíveis em uma marca inteligente.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -409,12 +391,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.XMLNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> object que representa o elemento XML para uma marca inteligente.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> objeto que representa o elemento XML para uma marca inteligente.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Nem todas as marcas inteligentes contêm nós XML; No entanto, a propriedade <b>XMLNode</b> permite que os desenvolvedores acessem os nós XML das marcas inteligentes que contêm nós XML.</para>
-          <para />
-        </remarks>
+        <remarks><para>Nem todas as marcas inteligentes contêm nós XML; no entanto, a propriedade <b>XMLNode</b> permite que os desenvolvedores acessem os nós XML para marcas inteligentes que contenham nós XML.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

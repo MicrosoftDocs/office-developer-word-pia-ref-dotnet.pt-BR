@@ -1,13 +1,5 @@
 <Type Name="AutoCorrectEntries" FullName="Microsoft.Office.Interop.Word.AutoCorrectEntries">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="15161d8d9b96cdc9be82de4a41c0a978915ac25a" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20665209" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface AutoCorrectEntries : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="e9481d541f5385119d68bbf3d4192d324fab9282" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146259" /></Metadata><TypeSignature Language="C#" Value="public interface AutoCorrectEntries : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AutoCorrectEntries implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.AutoCorrectEntries" />
   <TypeSignature Language="VB.NET" Value="Public Interface AutoCorrectEntries&#xA;Implements IEnumerable" />
@@ -31,10 +23,10 @@
   </Attributes>
   <Docs>
     <summary>Uma coleção de <see cref="T:Microsoft.Office.Interop.Word.AutoCorrectEntry" /> objetos que representam todas as entradas de AutoCorreção disponíveis para o Microsoft Word. A coleção AutoCorrectEntries inclui todas as entradas da caixa de diálogo AutoCorreção (menu Ferramentas).</summary>
-    <remarks>
-      <para>Use o <see cref="P:Microsoft.Office.Interop.Word.AutoCorrect.Entries" /> propriedade para retornar a coleção AutoCorrectEntries.</para>
-      <para>Uso a <see cref="M:Microsoft.Office.Interop.Word.AutoCorrectEntries.Add(System.String,System.String)" /> ou o <see cref="M:Microsoft.Office.Interop.Word.AutoCorrectEntries.AddRichText(System.String,Microsoft.Office.Interop.Word.Range)" /> método para adicionar uma entrada de AutoCorreção à lista de entradas disponíveis.</para> Usar <b>entradas</b>de 
-      <para>(<paramref name="index" />), onde <paramref name="index" /> é o nome da entrada de AutoCorreção ou o número de índice, para retornar um único objeto AutoCorrectEntry. Você deve coincidir exatamente a ortografia (mas não necessariamente as maiusculas/minúsculas) do nome, como ele é mostrado em Substituir da caixa de diálogo AutoCorreção.</para><para /></remarks>
+    <remarks><para>Use a <see cref="P:Microsoft.Office.Interop.Word.AutoCorrect.Entries" /> propriedade para retornar a coleção AutoCorrectEntries.</para>
+      <para>Use o <see cref="M:Microsoft.Office.Interop.Word.AutoCorrectEntries.Add(System.String,System.String)" /> ou o <see cref="M:Microsoft.Office.Interop.Word.AutoCorrectEntries.AddRichText(System.String,Microsoft.Office.Interop.Word.Range)" /> método para adicionar uma entrada de AutoCorreção à lista de entradas disponíveis.</para>
+      <para>Use <b>entradas</b>(<paramref name="index" />), em <paramref name="index" /> que é o nome da entrada de AutoCorreção ou o número de índice, para retornar um único objeto AutoCorrectEntry. Você deve corresponder exatamente a ortografia (mas não necessariamente as maiúsculas/minúsculas) do nome, como ele é mostrado em substituir na caixa de diálogo AutoCorreção.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -61,9 +53,9 @@
         <Parameter Name="Value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Name">O texto que você deseja que seja inserido automaticamente sempre que o texto especificado por <paramref name="Name" /> for digitado.</param>
-        <param name="Value">O texto que você deseja que seja automaticamente substituído pelo texto especificado pela <paramref name="Value" />.</param>
-        <summary>Adiciona uma entrada de AutoCorreção de texto sem formatação à lista de entradas de AutoCorreção disponíveis.</summary>
+        <param name="Name">O texto que você deseja que seja inserido automaticamente sempre que o texto <paramref name="Name" /> especificado por for digitado.</param>
+        <param name="Value">O texto que você deseja que seja substituído automaticamente pelo texto especificado por <paramref name="Value" />.</param>
+        <summary>Adiciona uma entrada de AutoCorreção de texto simples à lista de entradas de AutoCorreção disponíveis.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -91,14 +83,12 @@
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
       </Parameters>
       <Docs>
-        <param name="Name">O texto formatado que o Microsoft Word irá inserir automaticamente sempre que <paramref name="Name" /> for digitado.</param>
-        <param name="Range">O texto a ser automaticamente substituído por <paramref name="Range" />.</param>
+        <param name="Name">O texto formatado que o Microsoft Word irá inserir automaticamente <paramref name="Name" /> sempre que for digitado.</param>
+        <param name="Range">O texto a ser substituído automaticamente <paramref name="Range" />por.</param>
         <summary>Cria uma entrada de AutoCorreção formatada, preservando todos os atributos de texto do intervalo especificado.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>O <see cref="P:Microsoft.Office.Interop.Word.AutoCorrectEntry.RichText" /> propriedade entradas adicionadas usando este método retorna <b>True</b>. Se esse método não for usado, entradas de AutoCorreção inseridas em conformidade com o estilo atual.</para>
-          <para />
-        </remarks>
+        <remarks><para>A <see cref="P:Microsoft.Office.Interop.Word.AutoCorrectEntry.RichText" /> propriedade para entradas adicionadas usando esse método retorna <b>true</b>. Se esse método não for usado, as entradas de AutoCorreção inseridas estão de acordo com o estilo atual.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -124,7 +114,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o criador do objeto especificado.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o criador do objeto especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -182,9 +172,9 @@
       <Docs>
         <summary>Retorna um valor que indica o aplicativo no qual o objeto especificado foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
-          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Se o objeto específico tiver sido criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". [!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
+          <para>A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">

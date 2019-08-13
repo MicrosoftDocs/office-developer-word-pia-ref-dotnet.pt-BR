@@ -1,13 +1,5 @@
 <Type Name="ContentControl" FullName="Microsoft.Office.Interop.Word.ContentControl">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="cc2bb690be9293f31f98e8e695e89ae1d1508d27" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20664787" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ContentControl" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="2847f454c15d707ff146dc7c527cbd9a80f88237" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147288" /></Metadata><TypeSignature Language="C#" Value="public interface ContentControl" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ContentControl" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ContentControl" />
   <TypeSignature Language="VB.NET" Value="Public Interface ContentControl" />
@@ -26,11 +18,56 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Um controle de conteúdo individual. Controles de conteúdo são limitados e potencialmente rotulada como regiões que servem como recipientes para tipos específicos de conteúdo em um documento. Controles de conteúdo individuais podem conter conteúdo como datas, listas ou parágrafos de texto formatado. Objeto <b>ContentControl</b> é um membro do <see cref="T:Microsoft.Office.Interop.Word.ContentControls" /> conjunto.</summary>
-    <remarks>
-      <para>Use o <see cref="M:Microsoft.Office.Interop.Word.ContentControls.Add(Microsoft.Office.Interop.Word.WdContentControlType,System.Object@)" /> método do <see cref="T:Microsoft.Office.Interop.Word.ContentControls" /> conjunto para criar um controle de conteúdo. Use o <paramref name="Type" /> parâmetro do método <b>Add</b> para especificar o tipo de controle de conteúdo a ser criado. </para>
-      <para>Uso o <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Type" /> propriedade para alterar o controle de conteúdo para um tipo diferente de controle de conteúdo.  Por exemplo, talvez você queira alterar de um controle de data para um controle de texto. No entanto, você não poderá alterar todos os controles de conteúdo para outro tipo; algumas talvez não permita a alteração de seu tipo.  Além disso, dependendo do conteúdo de um controle de conteúdo, você não poderá alterar o tipo. Por exemplo, se o controle de conteúdo que você deseja alterar para não permitir que o tipo de conteúdo que está no controle de conteúdo existente, a tentativa de alterar o tipo não é permitida e gera um erro em tempo de execução.</para> Uso de 
-      <para>o <see cref="M:Microsoft.Office.Interop.Word.ContentControl.SetPlaceholderText(Microsoft.Office.Interop.Word.BuildingBlock,Microsoft.Office.Interop.Word.Range,System.String)" /> método para alterar o texto do indicador da cadeia de caracteres de padrão para algo mais apropriado para o controle. Use o <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Title" /> propriedade para especificar o texto do título para o controle.  Será exibida acima do controle quando o cursor é posicionado dentro do controle ou o ponteiro do mouse estiver posicionado sobre o controle.</para><para>Dependendo do tipo de controle de conteúdo que você precisa, você pode não ser capazes de usar todas as propriedades e métodos do objeto <b>ContentControl</b> .</para><code /><para>Not all content control properties apply to all the different types of content controls.  The following table lists which properties apply to which types of content controls.</para><list type="table"><item><description><see cref="P:Microsoft.Office.Interop.Word.ContentControl.BuildingBlockCategory" /> property</description><description>BuildingBlock Gallery content controls (<see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlBuildingBlockGallery" />)</description></item><item><description><see cref="P:Microsoft.Office.Interop.Word.ContentControl.BuildingBlockType" /> property</description><description>BuildingBlock Gallery content controls (<see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlBuildingBlockGallery" />)</description></item><item><description><see cref="P:Microsoft.Office.Interop.Word.ContentControl.DateDisplayFormat" /> property</description><description>Date content controls (<see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlDate" />)</description></item><item><description><see cref="P:Microsoft.Office.Interop.Word.ContentControl.DateDisplayLocale" /> property</description><description>Date content controls (<see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlDate" />)</description></item><item><description><see cref="P:Microsoft.Office.Interop.Word.ContentControl.DateStorageFormat" /> property</description><description>Date content controls (<see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlDate" />)</description></item><item><description><see cref="P:Microsoft.Office.Interop.Word.ContentControl.DropdownListEntries" /> property</description><description>Combo box and drop-down list content controls (<see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlComboBox" /> and <see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlDropdownList" />)</description></item><item><description><see cref="P:Microsoft.Office.Interop.Word.ContentControl.MultiLine" /> property</description><description>Plain text content controls (<see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlText" />)</description></item><item><description><see cref="M:Microsoft.Office.Interop.Word.ContentControl.Ungroup" /> method</description><description>Group content controls (<see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlGroup" />)</description></item></list><para /></remarks>
+    <summary>Um controle de conteúdo individual. Os controles de conteúdo são regiões associadas e potencialmente rotuladas em um documento que servem como contêineres para tipos específicos de conteúdo. Controles de conteúdo individuais podem conter conteúdo como datas, listas ou parágrafos de texto formatado. O objeto <b>ContentControl</b> é um membro da <see cref="T:Microsoft.Office.Interop.Word.ContentControls" /> coleção.</summary>
+    <remarks><para>Use o <see cref="M:Microsoft.Office.Interop.Word.ContentControls.Add(Microsoft.Office.Interop.Word.WdContentControlType,System.Object@)" /> método da <see cref="T:Microsoft.Office.Interop.Word.ContentControls" /> coleção para criar um controle de conteúdo. Use o <paramref name="Type" /> parâmetro do método <b>Add</b> para especificar o tipo de controle de conteúdo a ser criado. </para>
+      <para>Use a <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Type" /> propriedade para alterar o controle de conteúdo para um tipo diferente de controle de conteúdo.  Por exemplo, talvez você queira alterar de um controle de data para um controle de texto. No entanto, você não poderá alterar a todos os controles de conteúdo para outro tipo; algumas talvez não permita a alteração de seu tipo.  Além disso, dependendo do conteúdo de um controle de conteúdo, você não poderá alterar o tipo. Por exemplo, se o controle de conteúdo que você deseja alterar para não permitir que o tipo de conteúdo que está no controle de conteúdo existente, a tentativa de alterar o tipo não é permitida e gera um erro em tempo de execução.</para>
+      <para>Use o <see cref="M:Microsoft.Office.Interop.Word.ContentControl.SetPlaceholderText(Microsoft.Office.Interop.Word.BuildingBlock,Microsoft.Office.Interop.Word.Range,System.String)" /> método para alterar o texto do espaço reservado da cadeia de caracteres padrão para algo mais apropriado para o controle. Use a <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Title" /> propriedade para especificar o texto do título do controle.  Isso exibe acima do controle quando o cursor é posicionado dentro do controle ou o ponteiro do mouse estiver posicionado sobre o controle.</para>
+      <para>Dependendo do tipo de controle de conteúdo que você precisa, você pode não ser capazes de usar todas as propriedades e métodos do objeto <b>ContentControl</b>.</para>
+      <code />
+      <para>Not all content control properties apply to all the different types of content controls.  The following table lists which properties apply to which types of content controls.</para>
+      <list type="table">
+        <item>
+          <description>
+            <see cref="P:Microsoft.Office.Interop.Word.ContentControl.BuildingBlockCategory" /> property</description>
+          <description>BuildingBlock Gallery content controls (<see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlBuildingBlockGallery" />)</description>
+        </item>
+        <item>
+          <description>
+            <see cref="P:Microsoft.Office.Interop.Word.ContentControl.BuildingBlockType" /> property</description>
+          <description>BuildingBlock Gallery content controls (<see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlBuildingBlockGallery" />)</description>
+        </item>
+        <item>
+          <description>
+            <see cref="P:Microsoft.Office.Interop.Word.ContentControl.DateDisplayFormat" /> property</description>
+          <description>Date content controls (<see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlDate" />)</description>
+        </item>
+        <item>
+          <description>
+            <see cref="P:Microsoft.Office.Interop.Word.ContentControl.DateDisplayLocale" /> property</description>
+          <description>Date content controls (<see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlDate" />)</description>
+        </item>
+        <item>
+          <description>
+            <see cref="P:Microsoft.Office.Interop.Word.ContentControl.DateStorageFormat" /> property</description>
+          <description>Date content controls (<see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlDate" />)</description>
+        </item>
+        <item>
+          <description>
+            <see cref="P:Microsoft.Office.Interop.Word.ContentControl.DropdownListEntries" /> property</description>
+          <description>Combo box and drop-down list content controls (<see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlComboBox" /> and <see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlDropdownList" />)</description>
+        </item>
+        <item>
+          <description>
+            <see cref="P:Microsoft.Office.Interop.Word.ContentControl.MultiLine" /> property</description>
+          <description>Plain text content controls (<see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlText" />)</description>
+        </item>
+        <item>
+          <description>
+            <see cref="M:Microsoft.Office.Interop.Word.ContentControl.Ungroup" /> method</description>
+          <description>Group content controls (<see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlGroup" />)</description>
+        </item>
+      </list>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="AllowInsertDeleteSection">
@@ -59,12 +96,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém ou define se os usuários podem adicionar ou remover seções do controle de conteúdo de seção de repetição especificado por meio da interface do usuário.</summary>
+        <summary>Obtém ou define se os usuários podem adicionar ou remover seções do controle de conteúdo de seção recorrente especificado usando a interface de usuário.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Você pode usar essa propriedade somente com controles de conteúdo de seção de repetição. Usá-lo com outros conteúdos controles, isso resultará em um efeito de mensagem de erro.</para>
-          <para />
-        </remarks>
+        <remarks><para>Você pode usar essa propriedade somente com controles de conteúdo de seção de repetição. O uso de outros controles de conteúdo resultará em um efeito de mensagem de erro.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Appearance">
@@ -121,10 +156,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word._Application" /> object que representa o aplicativo Microsoft Word.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word._Application" />
-        </value>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word._Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -154,14 +187,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define a categoria para um controle de conteúdo do bloco de construção. Leitura/gravação.</summary>
-        <value>
-          <b>String</b>
-        </value>
-        <remarks>
-          <para>Essa propriedade só se aplica aos controles de conteúdo do bloco de construção e corresponde com a opção de categoria na caixa de diálogo Propriedades de controle de conteúdo. Você pode definir essa propriedade para qualquer cadeia de caracteres; No entanto, se você não defini-la para uma cadeia de caracteres para o qual não há nenhuma categoria correspondente, o valor da opção categoria é definido para "(todas as categorias)".</para>
-          <para />
-        </remarks>
+        <summary>Retorna ou define a categoria de um controle de conteúdo do bloco de construção. Leitura/gravação.</summary>
+        <value><b>String</b></value>
+        <remarks><para>Esta propriedade se aplica somente aos controles do conteúdo de controle do bloco de construção e corresponde à opção Categoria na caixa de diálogo Propriedades de Controle de Conteúdo. Você pode definir esta propriedade para qualquer sequência de caracteres; no entanto, se você defini-la para uma sequência de caracteres na qual não haja categoria correspondente, o valor da opção Categoria será definido para "(Todas as Categorias)".</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BuildingBlockType">
@@ -191,33 +220,29 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna ou define o tipo de bloco de construção para um controle de conteúdo do bloco de construção. Leitura/gravação.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.WdBuildingBlockTypes" />
-        </value>
-        <remarks>
-          <para>Essa propriedade se aplica somente ao conteúdo do bloco de construção controla e corresponde com a opção de galeria na caixa de diálogo Propriedades de controle de conteúdo. Você pode definir essa propriedade somente para os seguintes tipos de bloco de construção:</para>
+        <value><see cref="T:Microsoft.Office.Interop.Word.WdBuildingBlockTypes" /></value>
+        <remarks><para>Esta propriedade se aplica somente aos controles do conteúdo de controle do bloco de construção e corresponde à opção Galeria na caixa de diálogo Propriedades de Controle de Conteúdo. Você pode definir esta propriedade somente para os seguintes tipos de bloco de construção:</para>
           <list type="bullet">
             <item>
-              <para>personalizado 1 a 5 personalizado</para>
+              <para>Personalizado 1 a 5</para>
             </item>
             <item>
-              <para>AutoTexto</para>
+              <para>Autotexto</para>
             </item>
             <item>
               <para>Partes rápidas</para>
             </item>
             <item>
-              <para>Personalizado AutoTexto</para>
+              <para>Autotexto personalizado</para>
             </item>
             <item>
-              <para>Personalizado de partes rápidas</para>
+              <para>Partes rápidas personalizadas</para>
             </item>
             <item>
-              <para>equações</para>
+              <para>Equações</para>
             </item>
           </list>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Checked">
@@ -246,13 +271,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém ou define o estado atual (verificado/desmarcado) para uma caixa de seleção.</summary>
-        <value>
-          <b>true</b> se a caixa de seleção estiver marcada; Caso contrário, <b>false</b>.</value>
-        <remarks>
-          <para>Leitura/gravação. Use essa propriedade para obter ou definir o estado atual de um controle de conteúdo de caixa de seleção. Se o controle não for uma caixa de seleção, tenta acessar a falha de propriedade com o erro de tempo de execução "essa propriedade somente está disponível para os controles de conteúdo de caixa de seleção."</para>
-          <para />
-        </remarks>
+        <summary>Obtém ou define o estado atual (marcado/desmarcado) para uma caixa de seleção.</summary>
+        <value><b>true</b> se a caixa de seleção estiver marcada; outro <b>false</b>.</value>
+        <remarks><para>Leitura/gravação. Use esta propriedade para obter ou definir o estado atual de um controle de conteúdo de caixa de seleção. Se o controle não for uma caixa de seleção, as tentativas de acessar a propriedade falharão com o erro de tempo de execução "esta propriedade só estará disponível para controles de conteúdo de caixa de seleção."</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Color">
@@ -308,10 +330,8 @@
       <Parameters />
       <Docs>
         <summary>Copia o controle de conteúdo do documento ativo para a área de transferência.</summary>
-        <remarks>
-          <para>Quando você usa o método <b>Copy</b> , o controle de conteúdo original permanece no documento ativo, mas uma cópia do controle, incluindo todas as configurações de propriedade e texto, é movido para a área de transferência. Você pode colar o controle de conteúdo em outras seções do documento ativo. Use o <see cref="M:Microsoft.Office.Interop.Word.Selection.Paste" /> método do <see cref="T:Microsoft.Office.Interop.Word.Selection" /> objeto ou o <see cref="M:Microsoft.Office.Interop.Word.Range.Paste" /> método do <see cref="T:Microsoft.Office.Interop.Word.Range" /> para inserir o controle de conteúdo copiado do objeto ou use a função colar de dentro do Microsoft Office Word.</para>
-          <para />
-        </remarks>
+        <remarks><para>Quando você usa o método <b>Copy</b>, o controle de conteúdo original permanece no documento ativo, mas uma cópia do controle, incluindo todas as configurações de propriedade e texto, é movido para a área de transferência. Você pode colar o controle de conteúdo em outras seções do documento ativo. Use o <see cref="M:Microsoft.Office.Interop.Word.Selection.Paste" /> método do <see cref="T:Microsoft.Office.Interop.Word.Selection" /> objeto ou o <see cref="M:Microsoft.Office.Interop.Word.Range.Paste" /> método do <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto para inserir o controle de conteúdo copiado ou use a função paste de dentro do Microsoft Office Word.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -338,15 +358,11 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o suplemento foi criado. Somente leitura.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Word, a propriedade <b>Creator</b> retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD."  Essa propriedade principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+        <value><b>Integer</b></value>
+        <remarks><para>Se o objeto foi criado no Microsoft Word, a propriedade <b>Creator</b> retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD".  Essa propriedade foi projetada inicialmente para ser usada no Macintosh, no qual cada aplicativo tem um código de criador com quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
           <para>
             <b>Observação</b>: esse valor também pode ser representado pela constante <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Cut">
@@ -371,10 +387,8 @@
       <Parameters />
       <Docs>
         <summary>Remove o controle de conteúdo do documento ativo e move o controle de conteúdo para a área de transferência.</summary>
-        <remarks>
-          <para>Quando você usa o método <b>Copy</b> , o controle de conteúdo original permanece no documento ativo, mas uma cópia do controle, incluindo todas as configurações de propriedade e texto, é movido para a área de transferência. Você pode colar o controle de conteúdo em outras seções do documento ativo. Use o <see cref="M:Microsoft.Office.Interop.Word.Selection.Paste" /> método do <see cref="T:Microsoft.Office.Interop.Word.Selection" /> objeto ou o <see cref="M:Microsoft.Office.Interop.Word.Range.Paste" /> método do <see cref="T:Microsoft.Office.Interop.Word.Range" /> para inserir o controle de conteúdo copiado do objeto ou use a função colar de dentro do Microsoft Office Word.</para>
-          <para />
-        </remarks>
+        <remarks><para>Quando você usa o método <b>Copy</b>, o controle de conteúdo original permanece no documento ativo, mas uma cópia do controle, incluindo todas as configurações de propriedade e texto, é movido para a área de transferência. Você pode colar o controle de conteúdo em outras seções do documento ativo. Use o <see cref="M:Microsoft.Office.Interop.Word.Selection.Paste" /> método do <see cref="T:Microsoft.Office.Interop.Word.Selection" /> objeto ou o <see cref="M:Microsoft.Office.Interop.Word.Range.Paste" /> método do <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto para inserir o controle de conteúdo copiado ou use a função paste de dentro do Microsoft Office Word.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DateCalendarType">
@@ -403,10 +417,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdCalendarType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define o tipo de calendário para um controle de conteúdo do calendário.  Leitura/gravação.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.WdCalendarType" />
-        </value>
+        <summary>Retorna ou define o tipo de calendário para um controle de conteúdo de calendário.  Leitura/gravação.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.WdCalendarType" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -437,13 +449,9 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna ou define o formato no qual as datas são exibidas. Leitura/gravação.</summary>
-        <value>
-          <b>String</b>
-        </value>
-        <remarks>
-          <para>O formato padrão é a configuração do formato especificada no Microsoft Office Word no sistema dos usuários, que geralmente depende da configuração de local no Microsoft Windows. Por exemplo, o formato padrão de datas para inglês (EUA) é "mm/dd/aaaa". Use o <see cref="P:Microsoft.Office.Interop.Word.ContentControl.DateDisplayFormat" /> propriedade para especificar um formato de data diferente.</para>
-          <para />
-        </remarks>
+        <value><b>String</b></value>
+        <remarks><para>O formato padrão é a configuração de formato especificada no Microsoft Office Word no sistema de usuários, que geralmente depende da configuração de local no Microsoft Windows. Por exemplo, o formato padrão de datas para inglês (EUA) é "mm/dd/aaaa". Use a <see cref="P:Microsoft.Office.Interop.Word.ContentControl.DateDisplayFormat" /> propriedade para especificar um formato de data diferente.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DateDisplayLocale">
@@ -472,14 +480,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdLanguageID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um o formato de idioma para a data exibido em um controle de conteúdo de data. Leitura/gravação.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" />
-        </value>
-        <remarks>
-          <para>Por padrão, o <see cref="P:Microsoft.Office.Interop.Word.ContentControl.DateDisplayLocale" /> propriedade é definida inicialmente como o idioma de edição especificado no Microsoft Office Word, se for diferente do local especificado no Microsoft Windows.</para>
-          <para />
-        </remarks>
+        <summary>Retorna um formato de idioma para a data exibida em um controle de conteúdo de data. Leitura/gravação.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /></value>
+        <remarks><para>Por padrão, a <see cref="P:Microsoft.Office.Interop.Word.ContentControl.DateDisplayLocale" /> propriedade é inicialmente definida como o idioma de edição especificado no Microsoft Office Word, se for diferente do local especificado no Microsoft Windows.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DateStorageFormat">
@@ -508,14 +512,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdContentControlDateStorageFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define o formato de armazenamento e recuperação de datas quando um controle de conteúdo de data está vinculado ao armazenamento de dados XML do documento ativo. Leitura/gravação.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.WdContentControlDateStorageFormat" />
-        </value>
-        <remarks>
-          <para>O <see cref="P:Microsoft.Office.Interop.Word.ContentControl.DateStorageFormat" /> propriedade permite armazenar datas no formato de data, formato de data/hora ou formato de texto.</para>
-          <para />
-        </remarks>
+        <summary>Retorna ou define o formato de armazenamento e recuperação de datas quando um controle de conteúdo de data é vinculado ao repositório de dados XML do documento ativo. Leitura/gravação.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.WdContentControlDateStorageFormat" /></value>
+        <remarks><para>A <see cref="P:Microsoft.Office.Interop.Word.ContentControl.DateStorageFormat" /> propriedade permite armazenar datas no formato de data, formato de data/hora ou formato de texto.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultTextStyle">
@@ -544,10 +544,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define o nome do estilo de caractere usado para formatar o texto em um controle de conteúdo de texto. Leitura/gravação.</summary>
-        <value>
-          <b>Object</b>
-        </value>
+        <summary>Retorna ou define o nome do estilo de caractere a ser usado para formatar o texto em um controle de conteúdo de texto. Leitura/gravação.</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -601,10 +599,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ContentControlListEntries</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna os itens em um controle de conteúdo de lista suspensa ou em uma combinação controle de conteúdo de caixa. Somente leitura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntries" />
-        </value>
+        <summary>Retorna os itens em um controle de conteúdo de lista suspensa ou em um controle de conteúdo de caixa de combinação. Somente leitura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntries" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -632,13 +628,9 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna a identificação de um controle de conteúdo. Somente leitura.</summary>
-        <value>
-          <b>String</b>
-        </value>
-        <remarks>
-          <para>A propriedade <b>ID</b> é um número interno que você não pode alterar, mas que você pode usar para identificar um controle de conteúdo no código. Esse número é exclusivo para cada controle de conteúdo e não é alterado.</para>
-          <para />
-        </remarks>
+        <value><b>String</b></value>
+        <remarks><para>A propriedade <b>ID</b> é um número interno que você não pode alterar, mas que você pode usar para identificar um controle de conteúdo no código. Esse número é exclusivo para cada controle de conteúdo e não é alterado.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Level">
@@ -664,7 +656,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdContentControlLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o nível de controle de conteúdo — se o controle de conteúdo circunda texto, parágrafos, células da tabela ou linhas de tabela; ou, se ele estiver embutida. Somente leitura <see cref="T:Microsoft.Office.Interop.Word.WdContentControlLevel" />.</summary>
+        <summary>Retorna o nível do controle de conteúdo — se o controle de conteúdo envolve texto, parágrafos, células de tabela ou linhas de tabela; ou se ela estiver embutida. Somente <see cref="T:Microsoft.Office.Interop.Word.WdContentControlLevel" />leitura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -696,15 +688,11 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna ou define um <b>Boolean</b> que indica se o usuário pode excluir um controle de conteúdo do documento ativo. Leitura/gravação.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>O valor padrão dessa propriedade é <b>False</b>.  Essa propriedade corresponde ao conteúdo controle não pode ser excluído de caixa de seleção na caixa de diálogo Propriedades de controle de conteúdo.</para>
+        <value><b>Boolean</b></value>
+        <remarks><para>O valor padrão dessa propriedade é <b>False</b>.  Essa propriedade corresponde à caixa de seleção de conteúdo de controle não pode ser excluído na caixa de diálogo Propriedades de controle de conteúdo.</para>
           <para>
-            <b>Observação</b>: você não pode definir essa propriedade se o <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Temporary" /> propriedade estiver definida como <b>True</b>.</para>
-          <para />
-        </remarks>
+            <b>Observação</b>: você não pode definir essa propriedade se <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Temporary" /> a propriedade for definida como <b>true</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LockContents">
@@ -734,13 +722,9 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna ou define um <b>Boolean</b> que indica se o usuário pode editar o conteúdo de um controle de conteúdo. Leitura/gravação.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>O valor padrão dessa propriedade é <b>False</b>.  Essa propriedade corresponde ao conteúdo não pode ser editada caixa de seleção na caixa de diálogo Propriedades de controle de conteúdo.</para>
-          <para />
-        </remarks>
+        <value><b>Boolean</b></value>
+        <remarks><para>O valor padrão dessa propriedade é <b>False</b>.  Essa propriedade corresponde à caixa de seleção conteúdo não pode ser editado na caixa de diálogo Propriedades de controle de conteúdo.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MultiLine">
@@ -770,13 +754,9 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna um <b>Boolean</b> que indica se um controle de conteúdo de texto permite várias linhas de texto. Leitura/gravação.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>Essa propriedade se aplica apenas aos controles de conteúdo de texto e controles de conteúdo de rich text.</para>
-          <para />
-        </remarks>
+        <value><b>Boolean</b></value>
+        <remarks><para>Essa propriedade é aplicada apenas a controles de conteúdo de texto e controles de conteúdo de rich text.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -802,10 +782,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um que representa o objeto pai do especificado <see cref="T:Microsoft.Office.Interop.Word.ContentControl" /> objeto.</summary>
-        <value>
-          <b>Object</b>
-        </value>
+        <summary>Retorna um que representa o objeto pai do objeto especificado <see cref="T:Microsoft.Office.Interop.Word.ContentControl" /> .</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -832,14 +810,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.ContentControl</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o controle de conteúdo pai para um conteúdo ou seja controlar aninhadas dentro de um controle de grupo ou o controle de rich-text. Somente leitura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ContentControl" />
-        </value>
-        <remarks>
-          <para>Se um controle de conteúdo não for aninhado, esta propriedade retornará um erro.</para>
-          <para />
-        </remarks>
+        <summary>Retorna o controle de conteúdo pai de um controle de conteúdo que está aninhado dentro de um controle de Rich-Text ou controle de grupo. Somente leitura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ContentControl" /></value>
+        <remarks><para>Se um controle de conteúdo não for aninhado, esta propriedade retorna um erro.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PlaceholderText">
@@ -865,12 +839,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.BuildingBlock</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> object que representa o texto de espaço reservado para um controle de conteúdo. Somente leitura.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> objeto que representa o texto do espaço reservado para um controle de conteúdo. Somente leitura.</summary>
         <value>Retorna <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" />.</value>
-        <remarks>
-          <para>Use o <see cref="M:Microsoft.Office.Interop.Word.ContentControl.SetPlaceholderText(Microsoft.Office.Interop.Word.BuildingBlock,Microsoft.Office.Interop.Word.Range,System.String)" /> método para definir o texto de espaço reservado para um controle de conteúdo.</para>
-          <para />
-        </remarks>
+        <remarks><para>Use o <see cref="M:Microsoft.Office.Interop.Word.ContentControl.SetPlaceholderText(Microsoft.Office.Interop.Word.BuildingBlock,Microsoft.Office.Interop.Word.Range,System.String)" /> método para definir o texto do espaço reservado para um controle de conteúdo.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Range">
@@ -896,12 +868,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Range" /> que representa o conteúdo do controle de conteúdo do documento ativo. Somente leitura.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Range" /> que representa o conteúdo do controle de conteúdo no documento ativo. Somente leitura.</summary>
         <value>Retorna <see cref="T:Microsoft.Office.Interop.Word.Range" />.</value>
-        <remarks>
-          <para>Use o <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Range" /> propriedade para acessar o texto, a formatação do texto e outras propriedades de texto.  Para obter mais informações, consulte <a href="HV10056876">Trabalhando com objetos Range</a></para>
-          <para />
-        </remarks>
+        <remarks><para>Use a <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Range" /> propriedade para acessar o texto, a formatação do texto e outras propriedades de texto.  Para obter mais informações, consulte <a href="HV10056876">trabalhar com objetos Range</a></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RepeatingSectionItems">
@@ -927,12 +897,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.RepeatingSectionItemColl</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna a coleção de itens de seção em que o controle de conteúdo de seção de repetição especificado repetidos. Somente leitura.</summary>
+        <summary>Retorna a coleção de itens de seção de repetição no controle de conteúdo de seção recorrente especificado. Somente leitura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Você pode usar essa propriedade com apenas a controles de conteúdo de seção de repetição. Utilizá-lo com outros controles de conteúdo resultará em erro.</para>
-          <para />
-        </remarks>
+        <remarks><para>Você pode usar essa propriedade somente com controles de conteúdo de seção de repetição. O uso de outros controles de conteúdo resultará em um erro.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RepeatingSectionItemTitle">
@@ -961,12 +929,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define o nome dos itens de seção de repetição usados no menu de contexto associado com o controle de conteúdo de seção de repetição especificado. Leitura/gravação.</summary>
+        <summary>Retorna ou define o nome dos itens de seção de repetição usados no menu de contexto associado ao controle de conteúdo de seção recorrente especificado. Leitura/gravação.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Você pode usar essa propriedade com apenas a controles de conteúdo de seção de repetição. Utilizá-lo com outros controles de conteúdo resultará em erro.</para>
-          <para />
-        </remarks>
+        <remarks><para>Você pode usar essa propriedade somente com controles de conteúdo de seção de repetição. O uso de outros controles de conteúdo resultará em um erro.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetCheckedSymbol">
@@ -992,7 +958,7 @@
         <Parameter Name="Font" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="CharacterNumber">O número do caractere Unicode do símbolo especificado. Esse valor será sempre a soma de 31 (o número de símbolos de controle no início da fonte) e o número que corresponde à posição do símbolo na tabela de símbolos (contando da esquerda para direita). Por exemplo, para especificar um caractere delta na posição 37 na tabela de símbolos na fonte Symbol, defina <paramref name="CharacterNumber" /> para 68.</param>
+        <param name="CharacterNumber">O número do caractere Unicode do símbolo especificado. Esse valor será sempre a soma de 31 (o número de símbolos de controle no início da fonte) e o número que corresponde à posição do símbolo na tabela de símbolos (contando da esquerda para direita). Por exemplo, para especificar um caractere Delta na posição 37 na tabela de símbolos na fonte Symbol, defina <paramref name="CharacterNumber" /> como 68.</param>
         <param name="Font">O nome da fonte que contém o símbolo.</param>
         <summary>Define o símbolo usado para representar o estado selecionado de um controle de caixa de seleção de conteúdo.</summary>
         <remarks>To be added.</remarks>
@@ -1021,14 +987,12 @@
         <Parameter Name="Text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="BuildingBlock">Especifica um <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> objeto que contém o conteúdo do texto do indicador.</param>
-        <param name="Range">Especifica um <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto que contém o conteúdo do texto do indicador.</param>
+        <param name="BuildingBlock">Especifica um <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> objeto que contém o conteúdo do texto do espaço reservado.</param>
+        <param name="Range">Especifica um <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto que contém o conteúdo do texto do espaço reservado.</param>
         <param name="Text">Especifica o conteúdo do texto do indicador.</param>
         <summary>Define o texto do indicador exibido no controle de conteúdo até que um usuário digite seu próprio texto.</summary>
-        <remarks>
-          <para>Apenas um dos parâmetros é usado para especificar o texto do espaço reservado.  Se mais de um parâmetro for usado, o Microsoft Office Word usará o texto especificado no parâmetro primeiro. Se todos os parâmetros forem omitidos, o texto do indicador estiver em branco.</para>
-          <para />
-        </remarks>
+        <remarks><para>Apenas um dos parâmetros é utilizado ao especificar o texto do indicador.  Se mais de um parâmetro for usado, o Microsoft Office Word usará o texto especificado no primeiro parâmetro. Se todos os parâmetros forem omitidos, o texto do indicador ficará em branco.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetUncheckedSymbol">
@@ -1054,7 +1018,7 @@
         <Parameter Name="Font" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="CharacterNumber">O número do caractere Unicode do símbolo especificado. Esse valor será sempre a soma de 31 (o número de símbolos de controle no início da fonte) e o número que corresponde à posição do símbolo na tabela de símbolos (contando da esquerda para direita). Por exemplo, para especificar um caractere delta na posição 37 na tabela de símbolos na fonte Symbol, defina <paramref name="CharacterNumber" /> para 68.</param>
+        <param name="CharacterNumber">O número do caractere Unicode do símbolo especificado. Esse valor será sempre a soma de 31 (o número de símbolos de controle no início da fonte) e o número que corresponde à posição do símbolo na tabela de símbolos (contando da esquerda para direita). Por exemplo, para especificar um caractere Delta na posição 37 na tabela de símbolos na fonte Symbol, defina <paramref name="CharacterNumber" /> como 68.</param>
         <param name="Font">O nome da fonte que contém o símbolo.</param>
         <summary>Define o símbolo usado para representar o estado desmarcado de um controle de caixa de seleção de conteúdo.</summary>
         <remarks>To be added.</remarks>
@@ -1084,9 +1048,7 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna um <b>Boolean</b> que indica se o texto de espaço reservado para o controle de conteúdo é exibido. Somente leitura.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1117,13 +1079,9 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna ou define um valor para identificar um controle de conteúdo. Leitura/gravação.</summary>
-        <value>
-          <b>String</b>
-        </value>
-        <remarks>
-          <para>O <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Tag" /> propriedade é diferente do <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Title" /> propriedade em que uma marca nunca é exibida enquanto um usuário edita um documento.  Em vez disso, os desenvolvedores podem usá-lo para armazenar um valor para manipulação programática enquanto o documento é aberto.</para>
-          <para />
-        </remarks>
+        <value><b>String</b></value>
+        <remarks><para>A <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Tag" /> propriedade é diferente da <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Title" /> Propriedade, pois uma marca nunca é exibida enquanto um usuário edita um documento.  Em vez disso, os desenvolvedores podem usá-lo para armazenar um valor para manipulação programática enquanto o documento é aberto.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Temporary">
@@ -1153,15 +1111,11 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna ou define um <b>Boolean</b> que indica se deseja remover um controle de conteúdo do documento ativo quando o usuário edita o conteúdo do controle. Leitura/gravação.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>O valor padrão é <b>False</b>. Essa propriedade corresponde ao controle de conteúdo de remover quando o conteúdo é editada caixa de seleção na caixa de diálogo Propriedades de controle de conteúdo.</para>
+        <value><b>Boolean</b></value>
+        <remarks><para>O valor padrão é <b>False</b>. Essa propriedade corresponde à caixa de seleção Remover o controle de conteúdo ao editar o conteúdo na caixa de diálogo Propriedades de controle de conteúdo.</para>
           <para>
-            <b>Observação</b>: você não pode definir essa propriedade se o <see cref="P:Microsoft.Office.Interop.Word.ContentControl.LockContentControl" /> propriedade estiver definida como <b>True</b>.</para>
-          <para />
-        </remarks>
+            <b>Observação</b>: você não pode definir essa propriedade se <see cref="P:Microsoft.Office.Interop.Word.ContentControl.LockContentControl" /> a propriedade for definida como <b>true</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Title">
@@ -1191,9 +1145,7 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna ou define o título de um controle de conteúdo. Leitura/gravação.</summary>
-        <value>
-          <b>String</b>
-        </value>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1224,13 +1176,9 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna ou define o tipo de um controle de conteúdo. Leitura/gravação.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.WdContentControlType" />
-        </value>
-        <remarks>
-          <para>Você pode usar o <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Type" /> propriedade para alterar o tipo de um controle de conteúdo a partir de um tipo para outro.  No entanto, a capacidade de alterar o tipo de controle depende do tipo original e o conteúdo dentro do controle de conteúdo no momento da alteração.  Todos os controles de conteúdo podem ser alterados para rich text ou bloco de construção Galeria tipo controles de conteúdo porque esses tipos permitem conteúdo arbitrário.  Para outros tipos, se o conteúdo é válido para o tipo que você deseja alterar, em seguida, alterando o tipo é permitido.  Caso contrário, a alteração será rejeitada, resultando em um erro de tempo de execução.</para>
-          <para />
-        </remarks>
+        <value><see cref="T:Microsoft.Office.Interop.Word.WdContentControlType" /></value>
+        <remarks><para>Você pode usar a <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Type" /> propriedade para alterar o tipo de um controle de conteúdo de um tipo para outro.  No entanto, a capacidade de alterar o tipo de controle depende do tipo original e o conteúdo dentro do controle de conteúdo no momento da alteração.  Todos os controles de conteúdo podem ser alterados para rich text ou bloco de construção Galeria tipo controles de conteúdo porque esses tipos permitem conteúdo arbitrário.  Para outros tipos, se o conteúdo é válido para o tipo que você deseja alterar, em seguida, alterando o tipo é permitido.  Caso contrário, a alteração será rejeitada, resultando em um erro de tempo de execução.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Ungroup">
@@ -1254,11 +1202,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Remove um controle de conteúdo de grupo de um documento para que seus controles de conteúdo de filhos não fiquem mais aninhados e possam ser livremente editados.</summary>
-        <remarks>
-          <para>Este método falhará se você executá-lo em um controle que não é do tipo <see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlGroup" />.</para>
-          <para />
-        </remarks>
+        <summary>Remove um controle de conteúdo de grupo de um documento, de forma que seus controles de conteúdo de grupo filhos não fiquem mais aninhados e possam ser livremente editados.</summary>
+        <remarks><para>Este método falhará se você executá-lo em um controle que não seja <see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlGroup" />do tipo.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="XMLMapping">
@@ -1285,9 +1231,7 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna o mapeamento de um controle de conteúdo para dados XML no repositório de dados de um documento. Somente leitura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.XMLMapping" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Word.XMLMapping" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

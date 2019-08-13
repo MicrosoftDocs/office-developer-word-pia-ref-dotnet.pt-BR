@@ -1,13 +1,5 @@
 <Type Name="BuildingBlock" FullName="Microsoft.Office.Interop.Word.BuildingBlock">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="fc15f7587aceebb7da5afc606fbedbd78e590230" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20664779" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface BuildingBlock" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ca9bed40f87117ccf911469b9c1d874a575c9129" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146224" /></Metadata><TypeSignature Language="C#" Value="public interface BuildingBlock" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract BuildingBlock" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.BuildingBlock" />
   <TypeSignature Language="VB.NET" Value="Public Interface BuildingBlock" />
@@ -27,13 +19,15 @@
   </Attributes>
   <Docs>
     <summary>Representa um bloco de construção em um modelo. Um bloco de construção é um conteúdo pré-incorporado, similar ao autotexto, que pode conter texto, imagens e formatação.</summary>
-    <remarks>
-      <para>Cada <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> objeto é um membro do <see cref="T:Microsoft.Office.Interop.Word.BuildingBlocks" /> e <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" /> conjuntos. Blocos de construção são armazenados em modelos do Microsoft Office Word.  Portanto, para acessar os blocos de construção disponíveis para um documento, você precisa acessar um modelo anexado.  Blocos de construção internos são armazenados no modelo denominado "Criando Blocks".</para>
+    <remarks><para>Cada <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> objeto é um membro das coleções <see cref="T:Microsoft.Office.Interop.Word.BuildingBlocks" /> e <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" /> . Os blocos de construção são armazenados nos modelos do Microsoft Office Word.  Portanto, para acessar os blocos de construção disponíveis para um documento, você precisa acessar um modelo anexado.  Blocos de construção internos são armazenados no modelo denominado "Criando Blocks".</para>
       <para>
-        <b>Observação</b>: usar o <see cref="M:Microsoft.Office.Interop.Word.BuildingBlocks.Item(System.Object@)" /> método da coleção ou o <see cref="T:Microsoft.Office.Interop.Word.BuildingBlocks" /> coleção, para retornar um bloco de construção individual. Dependendo de como você pode acessar a coleção, a coleção retornada pode ser alteradas.  Por exemplo, se você acessar uma coleção de blocos de construção com um tipo de <see cref="F:Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeAutoText" /> com uma categoria de "General", a coleção retornada pode ser diferente da coleção retornada se você acessar uma coleção de blocos de construção com um tipo de <see cref="F:Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeAutoText" /> com uma categoria igual a "Custom". Também é diferente da coleção retornada se você acessar a coleção de blocos de construção com um tipo de <see cref="F:Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustomAutoText" /> com uma categoria de "General". Portanto, o primeiro item em uma coleção acessada a partir da coleção <b>BuildingBlockEntries</b> pode ser diferente do primeiro item na coleção acessada a partir da coleção <b>BuildingBlocks</b> .</para>
-      <para>Para criar um novo bloco de construção, você pode usar o método <b>Add</b> da coleção <b>BuildingBlockEntries</b> ou a coleção <b>BuildingBlocks</b> .  No entanto, a maneira recomendada de criar um novo bloco de construção é usando o <see cref="M:Microsoft.Office.Interop.Word.BuildingBlockEntries.Add(System.String,Microsoft.Office.Interop.Word.WdBuildingBlockTypes,System.String,Microsoft.Office.Interop.Word.Range,System.Object@,Microsoft.Office.Interop.Word.WdDocPartInsertOptions)" /> método para a coleção <b>BuildingBlockEntries</b> . </para>
-      <para>Uso o <see cref="M:Microsoft.Office.Interop.Word.BuildingBlock.Insert(Microsoft.Office.Interop.Word.Range,System.Object@)" /> método para inserir um novo bloco de construção em um documento. Use o <see cref="M:Microsoft.Office.Interop.Word.BuildingBlock.Delete" /> método para remover um bloco de construção de um modelo.</para> Blocos de construção de 
-      <para>são organizados por categoria e tipo.  Use o <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockTypes" /> conjunto para acesso indivíduo <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockType" /> objetos. Use o <see cref="T:Microsoft.Office.Interop.Word.Categories" /> conjunto para acesso indivíduo <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Category" /> objetos. Em seguida, use a propriedade <b>BuildingBlocks</b> para acessar a coleção <b>BuildingBlocks</b> para um objeto <b>Category</b> . </para><para>Cada bloco de construção tem propriedades que contêm informações aplicáveis exclusivamente a ele, tais como <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Name" />, <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Description" />, <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Type" />, e <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Value" />.</para><para>Para obter mais informações sobre os blocos de construção, consulte <a href="HV10120827">Trabalhando com blocos de construção</a></para><para /></remarks>
+        <b>Observação</b>: Use o <see cref="M:Microsoft.Office.Interop.Word.BuildingBlocks.Item(System.Object@)" /> método da coleção ou da <see cref="T:Microsoft.Office.Interop.Word.BuildingBlocks" /> coleção para retornar um bloco de construção individual. [!OBSERVAçãO] Dependendo de como você pode acessar a coleção, a coleção retornada pode ser alteradas.  Por exemplo, se você acessar uma coleção de blocos de construção com um tipo <see cref="F:Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeAutoText" /> com uma categoria de "geral", a coleção retornada pode ser diferente da coleção retornada se você acessar uma coleção de blocos de construção com um tipo <see cref="F:Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeAutoText" /> com uma categoria "Custom". Também é diferente da coleção retornada se você acessar a coleção de blocos de construção com um tipo <see cref="F:Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustomAutoText" /> com uma categoria de "General". Portanto, o primeiro item em uma coleção acessada a partir da coleção <b>BuildingBlockEntries</b> pode ser diferente do primeiro item na coleção acessada a partir da coleção <b>BuildingBlocks</b>.</para>
+      <para>Para criar um novo bloco de construção, você pode usar o método <b>Add</b> da coleção <b>BuildingBlockEntries</b> ou da coleção <b>BuildingBlocks</b>.  No entanto, a maneira recomendada de criar um novo bloco de construção é <see cref="M:Microsoft.Office.Interop.Word.BuildingBlockEntries.Add(System.String,Microsoft.Office.Interop.Word.WdBuildingBlockTypes,System.String,Microsoft.Office.Interop.Word.Range,System.Object@,Microsoft.Office.Interop.Word.WdDocPartInsertOptions)" /> usar o método para a coleção <b>BuildingBlockEntries</b> . </para>
+      <para>Use o <see cref="M:Microsoft.Office.Interop.Word.BuildingBlock.Insert(Microsoft.Office.Interop.Word.Range,System.Object@)" /> método para inserir um novo bloco de construção em um documento. Use o <see cref="M:Microsoft.Office.Interop.Word.BuildingBlock.Delete" /> método para remover um bloco de construção de um modelo.</para>
+      <para>Blocos de construção são organizados por categoria e tipo.  Use a <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockTypes" /> coleção para acessar objetos <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockType" /> individuais. Use a <see cref="T:Microsoft.Office.Interop.Word.Categories" /> coleção para acessar objetos <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Category" /> individuais. Use a propriedade <b>BuildingBlocks</b> para acessar a coleção <b>BuildingBlocks</b> para um objeto <b>Category</b>. </para>
+      <para>Cada bloco de construção tem propriedades que contêm informações que se aplicam exclusivamente a ela, <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Name" />como <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Description" />, <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Type" />, e <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.Value" />.</para>
+      <para>Para obter mais informações sobre blocos de construção, consulte <a href="HV10120827">trabalhando com blocos de construção</a></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -59,10 +53,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word._Application" /> object que representa o aplicativo Microsoft Word.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word._Application" />
-        </value>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word._Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,10 +81,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Category</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna a categoria de bloco de construção. Somente leitura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.Category" />
-        </value>
+        <summary>Retorna a categoria de um bloco de construção. Somente leitura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.Category" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -120,15 +110,11 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o suplemento foi criado. Somente leitura.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Word, a propriedade <b>Creator</b> retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD."  Essa propriedade principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+        <value><b>Integer</b></value>
+        <remarks><para>Se o objeto foi criado no Microsoft Word, a propriedade <b>Creator</b> retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD".  Essa propriedade foi projetada inicialmente para ser usada no Macintosh, no qual cada aplicativo tem um código de criador com quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
           <para>
             <b>Observação</b>: esse valor também pode ser representado pela constante <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -183,9 +169,7 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna ou define a descrição de um bloco de construção. Leitura/gravação.</summary>
-        <value>
-          <b>String</b>
-        </value>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -212,14 +196,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o número de identificação interna para um bloco de construção. Somente leitura.</summary>
-        <value>
-          <b>String</b>
-        </value>
-        <remarks>
-          <para>O <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.ID" /> propriedade retornará uma cadeia de caracteres de identificação que está no formato de um GUID.</para>
-          <para />
-        </remarks>
+        <summary>Retorna o número de identificação interna de um bloco de construção. Somente leitura.</summary>
+        <value><b>String</b></value>
+        <remarks><para>A <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.ID" /> propriedade retorna uma cadeia de caracteres de identificação que está na forma de um GUID.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -246,9 +226,7 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna a posição de um item em uma coleção. Somente leitura.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -276,12 +254,9 @@
       </Parameters>
       <Docs>
         <param name="Where">O local onde colocar o conteúdo do bloco de construção.</param>
-        <param name="RichText">
-          <b>True</b> insere o bloco de construção como rich text.  <b>False</b> insere o bloco de construção como texto simples.</param>
-        <summary>Insere o valor de um bloco de construção em um documento e retorna um <see cref="T:Microsoft.Office.Interop.Word.Range" /> object que representa o conteúdo do bloco de construção dentro do documento.</summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Word.Range" />
-        </returns>
+        <param name="RichText"><b>True</b> insere o bloco de construção como rich text.  <b>False</b> insere o bloco de construção como texto simples.</param>
+        <summary>Insere o valor de um bloco de construção em um documento e retorna <see cref="T:Microsoft.Office.Interop.Word.Range" /> um objeto que representa o conteúdo do bloco de construção no documento.</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Word.Range" /></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -312,13 +287,9 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna ou define um <b>inteiro</b> que representa como inserir o conteúdo de um bloco de construção em um documento. Leitura/gravação.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>O valor do <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.InsertOptions" /> propriedade pode ser qualquer um do <see cref="T:Microsoft.Office.Interop.Word.WdDocPartInsertOptions" /> valores de enumeração.</para>
-          <para />
-        </remarks>
+        <value><b>Integer</b></value>
+        <remarks><para>O valor da <see cref="P:Microsoft.Office.Interop.Word.BuildingBlock.InsertOptions" /> propriedade pode ser qualquer um dos valores <see cref="T:Microsoft.Office.Interop.Word.WdDocPartInsertOptions" /> de enumeração.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -348,9 +319,7 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna ou define o nome de um bloco de construção. Leitura/gravação.</summary>
-        <value>
-          <b>String</b>
-        </value>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -377,10 +346,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o objeto pai do especificado <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> objeto.</summary>
-        <value>
-          <b>Object</b>
-        </value>
+        <summary>Retorna o objeto pai do objeto especificado <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> .</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -407,10 +374,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.BuildingBlockType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o tipo de bloco de construção. Somente leitura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockType" />
-        </value>
+        <summary>Retorna o tipo de um bloco de construção. Somente leitura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.BuildingBlockType" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -441,9 +406,7 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna ou define o conteúdo de um bloco de construção. Leitura/gravação.</summary>
-        <value>
-          <b>String</b>
-        </value>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

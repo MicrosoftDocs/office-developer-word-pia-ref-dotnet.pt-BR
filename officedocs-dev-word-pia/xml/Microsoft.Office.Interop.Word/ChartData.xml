@@ -1,13 +1,5 @@
 <Type Name="ChartData" FullName="Microsoft.Office.Interop.Word.ChartData">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="e54b6ef3e865f4d45416239e0540b97861b4eefc" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20665489" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ChartData" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="20de20835218a229a3e2ed120eb0d1a884f4bd73" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147226" /></Metadata><TypeSignature Language="C#" Value="public interface ChartData" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ChartData" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ChartData" />
   <TypeSignature Language="VB.NET" Value="Public Interface ChartData" />
@@ -27,10 +19,8 @@
   </Attributes>
   <Docs>
     <summary>Representa o acesso aos dados vinculados ou internos associados ao gráfico.</summary>
-    <remarks>
-      <para>Use o <see cref="P:Microsoft.Office.Interop.Word.Chart.ChartData" /> propriedade para retornar o <see cref="T:Microsoft.Office.Interop.Word.ChartData" /> objeto.</para>
-      <para />
-    </remarks>
+    <remarks><para>Use a <see cref="P:Microsoft.Office.Interop.Word.Chart.ChartData" /> propriedade para retornar o <see cref="T:Microsoft.Office.Interop.Word.ChartData" /> objeto.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Activate">
@@ -55,12 +45,10 @@
       <Parameters />
       <Docs>
         <summary>Ativa a primeira janela da pasta de trabalho associada ao gráfico.</summary>
-        <remarks>
-          <para>Se o gráfico é vinculado a uma pasta de trabalho do Microsoft Excel, esse método não executa nenhuma macro Ativar_auto ou Desativar_auto que possa estar anexada à pasta de trabalho (use o <see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" /> método para executar essas macros).</para>
+        <remarks><para>Se o gráfico estiver vinculado a uma pasta de trabalho do Microsoft Excel, este método não executará nenhuma macro Auto_Activate ou Auto_Deactivate que possa estar anexada à pasta <see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" /> de trabalho (use o método para executar essas macros).</para>
           <para>
-            <b>Observação</b>: este método deve ser chamado antes de fazer referência a <see cref="P:Microsoft.Office.Interop.Word.ChartData.Workbook" /> propriedade.</para>
-          <para />
-        </remarks>
+            <b>Observação</b>: Este método deve ser chamado antes de fazer <see cref="P:Microsoft.Office.Interop.Word.ChartData.Workbook" /> referência à propriedade.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ActivateChartDataWindow">
@@ -84,12 +72,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Abre uma janela de grade de dados do Excel que contém os dados do código-fonte completo do gráfico especificado.</summary>
-        <remarks>
-          <para>Se a janela de grade de dados já estiver aberta, este método não terá efeito.</para>
-          <para>o método <b>ActivateChartDataWindow</b> difere do <see cref="M:Microsoft.Office.Interop.Word.ChartData.Activate" /> método em que o primeiro abre o gráfico em uma janela dentro do Word, do Excel com o Excel da faixa de opções não estiver disponível, enquanto o último abre uma versão completa do Excel, com a faixa de opções disponível.</para>
-          <para />
-        </remarks>
+        <summary>Abre uma janela de grade de dados do Excel que contém os dados de origem completos do gráfico especificado.</summary>
+        <remarks><para>Se a janela da grade de dados já estiver aberta, este método não terá efeito.</para>
+          <para>O método <b>ActivateChartDataWindow</b> difere do <see cref="M:Microsoft.Office.Interop.Word.ChartData.Activate" /> método no qual o primeiro abre o gráfico em uma janela do Excel no Word, com a faixa de opções do Excel indisponível, enquanto o último abre uma versão completa do Excel, com a faixa de opções disponível.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BreakLink">
@@ -114,10 +100,8 @@
       <Parameters />
       <Docs>
         <summary>Remove o link entre os dados de um gráfico e uma pasta de trabalho do Microsoft Excel.</summary>
-        <remarks>
-          <para>Chamar este método define a <see cref="P:Microsoft.Office.Interop.Word.ChartData.IsLinked" /> propriedade do <see cref="T:Microsoft.Office.Interop.Word.ChartData" /> objeto como <b>False</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Chamar esse método define a <see cref="P:Microsoft.Office.Interop.Word.ChartData.IsLinked" /> Propriedade do <see cref="T:Microsoft.Office.Interop.Word.ChartData" /> objeto como <b>false</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IsLinked">
@@ -143,15 +127,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> se os dados do gráfico estiver vinculados a uma pasta de trabalho do Microsoft Excel externa. Somente leitura.</summary>
-        <value>
-          <b>Boolean</b>
-        </value>
-        <remarks>
-          <para>Usando o <see cref="M:Microsoft.Office.Interop.Word.ChartData.BreakLink" /> método para remover o link para uma pasta de trabalho do Microsoft Excel define essa propriedade como <b>False</b>.</para>
-          <para />
-        </remarks>
+        <summary><b>True</b> se os dados do gráfico estiver vinculados a uma pasta de trabalho do Microsoft Excel externa. Somente leitura.</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>O uso <see cref="M:Microsoft.Office.Interop.Word.ChartData.BreakLink" /> do método para remover o link para uma pasta de trabalho do Microsoft Excel define essa propriedade como <b>false</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Workbook">
@@ -177,15 +156,11 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna a pasta de trabalho que contém os dados do gráfico associados ao gráfico. Somente leitura.</summary>
-        <value>
-          <b>Object</b>
-        </value>
-        <remarks>
-          <para>
-            <b>Observação</b>: O <see cref="M:Microsoft.Office.Interop.Word.ChartData.Activate" /> método deve ser chamado antes de fazer referência a essa propriedade; Caso contrário, ocorrerá um erro.</para>
-          <para />
-        </remarks>
+        <summary>Retorna a pasta de trabalho que contém os dados de gráfico associados ao gráfico. Somente leitura.</summary>
+        <value><b>Object</b></value>
+        <remarks><para>
+            <b>Observação</b>: o <see cref="M:Microsoft.Office.Interop.Word.ChartData.Activate" /> método deve ser chamado antes de fazer referência a essa propriedade; caso contrário, ocorrerá um erro.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

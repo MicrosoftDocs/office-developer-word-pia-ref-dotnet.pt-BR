@@ -1,13 +1,5 @@
 <Type Name="DiagramNodeChildren" FullName="Microsoft.Office.Interop.Word.DiagramNodeChildren">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="4320acfa18b50f692a11a011ff3c369f44d39933" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20664071" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface DiagramNodeChildren : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="e509f1a815f12770b760243945da953cde10fa51" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147085" /></Metadata><TypeSignature Language="C#" Value="public interface DiagramNodeChildren : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract DiagramNodeChildren implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.DiagramNodeChildren" />
   <TypeSignature Language="VB.NET" Value="Public Interface DiagramNodeChildren&#xA;Implements IEnumerable" />
@@ -30,11 +22,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Uma coleção de objetos <b>DiagramNode</b> que representa os nós filho em um diagrama.</summary>
-    <remarks>
-      <para>Use o <see cref="P:Microsoft.Office.Interop.Word.DiagramNode.Children" /> propriedade para retornar os nós em uma coleção <b>DiagramNodeChildren</b> . Use o <see cref="P:Microsoft.Office.Interop.Word.DiagramNodeChildren.FirstChild" /> propriedade para acessar o primeiro nó filho em um diagrama.</para>
-      <para />
-    </remarks>
+    <summary>Uma coleção de objetos <b>DiagramNode</b> que representa os nós filhos em um diagrama.</summary>
+    <remarks><para>Use a <see cref="P:Microsoft.Office.Interop.Word.DiagramNode.Children" /> propriedade para retornar os nós em uma coleção <b>DiagramNodeChildren</b> . Use a <see cref="P:Microsoft.Office.Interop.Word.DiagramNodeChildren.FirstChild" /> propriedade para acessar o primeiro nó filho em um diagrama.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="AddNode">
@@ -60,10 +50,9 @@
         <Parameter Name="NodeType" Type="Microsoft.Office.Core.MsoDiagramNodeType" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>Objeto</b>de opcional. O local do índice onde adicionar o novo nó de diagrama: 0 adiciona antes de todos os nós, -1 adiciona após todos os nós e qualquer outro <paramref name="Index" /> número adicionará após esse nó na coleção.</param>
+        <param name="Index"><b>Objeto</b>opcional. O local do índice onde adicionar o novo nó de diagrama: 0 adiciona antes de todos os nós,-1 adiciona depois de todos os nós <paramref name="Index" /> e qualquer outro número será adicionado após esse nó na coleção.</param>
         <param name="NodeType">Opcional <see cref="T:Microsoft.Office.Core.MsoDiagramNodeType" />. Especifica o tipo de nó.</param>
-        <summary>Adiciona um <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> objeto a uma coleção de nós de diagramas filhos.</summary>
+        <summary>Adiciona um <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> objeto a uma coleção de nós de diagrama filhos.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -91,7 +80,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -149,9 +138,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Por exemplo, se o objeto foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
-          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Por exemplo, se o objeto foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". [!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
+          <para>A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FirstChild">
@@ -177,12 +166,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.DiagramNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> object que representa o primeiro nó filho de um nó pai.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> objeto que representa o primeiro nó filho de um nó pai.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Use o <see cref="P:Microsoft.Office.Interop.Word.DiagramNodeChildren.LastChild" /> propriedade para acessar o último nó filho. Use o <see cref="P:Microsoft.Office.Interop.Word.DiagramNode.Root" /> propriedade para acessar o nó pai em um diagrama.</para>
-          <para />
-        </remarks>
+        <remarks><para>Use a <see cref="P:Microsoft.Office.Interop.Word.DiagramNodeChildren.LastChild" /> propriedade para acessar o último nó filho. Use a <see cref="P:Microsoft.Office.Interop.Word.DiagramNode.Root" /> propriedade para acessar o nó pai em um diagrama.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -272,12 +259,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.DiagramNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> object que representa o último nó filho de um nó pai.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> objeto que representa o último nó filho de um nó pai.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Use o <see cref="P:Microsoft.Office.Interop.Word.DiagramNodeChildren.FirstChild" /> propriedade para acessar o primeiro nó filho em um diagrama. Use o <see cref="P:Microsoft.Office.Interop.Word.DiagramNode.Root" /> propriedade para acessar o nó pai em um diagrama.</para>
-          <para />
-        </remarks>
+        <remarks><para>Use a <see cref="P:Microsoft.Office.Interop.Word.DiagramNodeChildren.FirstChild" /> propriedade para acessar o primeiro nó filho em um diagrama. Use a <see cref="P:Microsoft.Office.Interop.Word.DiagramNode.Root" /> propriedade para acessar o nó pai em um diagrama.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -330,10 +315,8 @@
       <Parameters />
       <Docs>
         <summary>Seleciona todas as formas no texto principal, em uma tela ou em cabeçalhos e rodapés de um documento.</summary>
-        <remarks>
-          <para>Este método não seleciona <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> objetos.</para>
-          <para />
-        </remarks>
+        <remarks><para>Este método não seleciona <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> objetos.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

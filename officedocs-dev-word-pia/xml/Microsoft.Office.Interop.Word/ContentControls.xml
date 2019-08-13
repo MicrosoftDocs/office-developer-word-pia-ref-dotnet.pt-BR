@@ -1,13 +1,5 @@
 <Type Name="ContentControls" FullName="Microsoft.Office.Interop.Word.ContentControls">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="2a6fe745ee4c6ef85a6a96c2f41f77a80cbd76ed" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20665016" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ContentControls : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="3cda051fb250a0a8e28df389d60e93ae84593df0" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147155" /></Metadata><TypeSignature Language="C#" Value="public interface ContentControls : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ContentControls implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ContentControls" />
   <TypeSignature Language="VB.NET" Value="Public Interface ContentControls&#xA;Implements IEnumerable" />
@@ -31,9 +23,9 @@
   </Attributes>
   <Docs>
     <summary>Uma coleção de <see cref="T:Microsoft.Office.Interop.Word.ContentControl" /> objetos.  Os controles de conteúdo são regiões associadas e potencialmente rotuladas em um documento que servem como contêineres para tipos específicos de conteúdo. Controles de conteúdo individuais podem consistir em conteúdo como datas, listas ou parágrafos de texto formatado.</summary>
-    <remarks>
-      <para>Use o <see cref="M:Microsoft.Office.Interop.Word.ContentControls.Add(Microsoft.Office.Interop.Word.WdContentControlType,System.Object@)" /> método para criar um novo controle de conteúdo e inseri-lo em um documento.</para> Uso de 
-      <para>o <see cref="P:Microsoft.Office.Interop.Word.ContentControls.Item(System.Object@)" /> método para acessar um controle de conteúdo específico na coleção. Use o <see cref="T:Microsoft.Office.Interop.Word.ContentControl" /> objeto para trabalhar com controles de conteúdo individuais. Para obter mais informações, consulte <a href="HV10107832">Trabalhando com controles de conteúdo</a></para><para /></remarks>
+    <remarks><para>Use o <see cref="M:Microsoft.Office.Interop.Word.ContentControls.Add(Microsoft.Office.Interop.Word.WdContentControlType,System.Object@)" /> método para criar um novo controle de conteúdo e inseri-lo em um documento.</para>
+      <para>Use o <see cref="P:Microsoft.Office.Interop.Word.ContentControls.Item(System.Object@)" /> método para acessar um controle de conteúdo específico na coleção. Use o <see cref="T:Microsoft.Office.Interop.Word.ContentControl" /> objeto para trabalhar com controles de conteúdo individuais. Para mais informações, consulte <a href="HV10107832">trabalhando com controles de conteúdo</a></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -59,16 +51,12 @@
         <Parameter Name="Range" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Type">Especifica o tipo de controle de conteúdo para inserir no documento ativo. Se for omitido, o Microsoft Office Word insere um controle de conteúdo de rich text.</param>
+        <param name="Type">Especifica o tipo de controle de conteúdo a ser inserido no documento ativo. Se for omitido, o Microsoft Office Word inserirá um controle de conteúdo Rich-Text.</param>
         <param name="Range">Especifica onde será colocado o controle de conteúdo no documento ativo. Se for omitido, o Word coloca o controle de conteúdo na posição do ponto de inserção ou substitui a seleção atual.</param>
-        <summary>Adiciona um novo controle de conteúdo do tipo especificado ao documento ativo e retorna um <see cref="T:Microsoft.Office.Interop.Word.ContentControl" /> object que representa o novo controle de conteúdo.</summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Word.ContentControl" />
-        </returns>
-        <remarks>
-          <para>Você pode aninhar controles de conteúdo somente em controles de conteúdo de rich text, os controles de conteúdo de galeria do bloco de construção e controles de conteúdo de grupo.  Se o ponto de inserção ou seleção atual está dentro de um controle de conteúdo de um tipo diferente, esse método gerará um erro.  Nesse caso, você pode mover o ponto de inserção ou usar o <paramref name="Range" /> parâmetro para especificar um local dentro do documento.</para>
-          <para />
-        </remarks>
+        <summary>Adiciona um novo controle de conteúdo, do tipo especificado, ao documento ativo e retorna um <see cref="T:Microsoft.Office.Interop.Word.ContentControl" /> objeto que representa o novo controle de conteúdo.</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Word.ContentControl" /></returns>
+        <remarks><para>É possível aninhar controles de conteúdo apenas dentro de controles de conteúdo de rich text, controles de conteúdo de galeria de blocos de construção e controles de conteúdo de grupo.  Se o ponto de inserção ou a seleção atual estiver dentro de um controle de conteúdo de um tipo diferente, esse método gera um erro.  Nesse caso, você pode mover o ponto de inserção ou usar o <paramref name="Range" /> parâmetro para especificar um local dentro do documento.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -94,10 +82,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word._Application" /> object que representa o aplicativo Microsoft Word.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word._Application" />
-        </value>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word._Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -124,10 +110,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o número de itens a <see cref="T:Microsoft.Office.Interop.Word.ContentControls" /> conjunto. Somente leitura.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>Retorna o número de itens na <see cref="T:Microsoft.Office.Interop.Word.ContentControls" /> coleção. Somente leitura.</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -155,15 +139,11 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o suplemento foi criado. Somente leitura.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Word, a propriedade <b>Creator</b> retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD."  Essa propriedade principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+        <value><b>Integer</b></value>
+        <remarks><para>Se o objeto foi criado no Microsoft Word, a propriedade <b>Creator</b> retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD".  Essa propriedade foi projetada inicialmente para ser usada no Macintosh, no qual cada aplicativo tem um código de criador com quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
           <para>
             <b>Observação</b>: esse valor também pode ser representado pela constante <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -226,9 +206,7 @@
       <Docs>
         <param name="Index">Especifica a posição ordinal do controle de conteúdo a ser retornado.</param>
         <summary>Retorna o controle de conteúdo especificado dentro da coleção de controles de conteúdo em um documento.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ContentControl" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ContentControl" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -256,9 +234,7 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna o objeto pai do <see cref="T:Microsoft.Office.Interop.Word.ContentControls" /> objeto.</summary>
-        <value>
-          <b>Object</b>
-        </value>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

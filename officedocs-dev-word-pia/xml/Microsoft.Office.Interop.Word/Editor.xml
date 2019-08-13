@@ -1,13 +1,5 @@
 <Type Name="Editor" FullName="Microsoft.Office.Interop.Word.Editor">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c6046e570f2096e2ced3959088626d9cad02b5df" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20664547" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Editor" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="4c3c24b5cd7783a2941b968d06d78d74af20a9dd" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144551" /></Metadata><TypeSignature Language="C#" Value="public interface Editor" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Editor" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Editor" />
   <TypeSignature Language="VB.NET" Value="Public Interface Editor" />
@@ -27,12 +19,10 @@
   </Attributes>
   <Docs>
     <summary>Representa um único usuário ao qual são concedidas permissões específicas para editar partes de um documento.</summary>
-    <remarks>
-      <para>Os usuários que podem ser concedidos permissões incluem colaboradores individuais e grupos de usuários conforme definido para os sites de espaço de trabalho de documento.</para>
-      <para>As permissões atribuídas aos intervalos e seleções entram em vigor somente depois que um documento está protegido. Use o <see cref="T:Microsoft.Office.Interop.Word.Editors" /> coleção e o <b>Editor de</b> objeto para atribuir permissões específicas a seções de um documento. Use o <see cref="M:Microsoft.Office.Interop.Word._Document.Protect(Microsoft.Office.Interop.Word.WdProtectionType,System.Object@,System.Object@,System.Object@,System.Object@)" /> método para proteger o documento.</para>
-      <para>Uso o <see cref="M:Microsoft.Office.Interop.Word.Editors.Add(System.Object@)" /> método do <see cref="T:Microsoft.Office.Interop.Word.Editors" /> conjunto para conceder a um usuário específico ou grupo permissão para modificar um intervalo ou seleção em um documento.</para>
-      <para />
-    </remarks>
+    <remarks><para>Os usuários que podem obter permissões incluem colaboradores individuais e grupos de usuários conforme definido para os sites de Espaço de Trabalho de Documento.</para>
+      <para>As permissões atribuídas aos intervalos e seleções entram em vigor somente depois que um documento está protegido. Use a <see cref="T:Microsoft.Office.Interop.Word.Editors" /> coleção e o objeto <b>Editor</b> para atribuir permissões específicas a seções de um documento. Em seguida, <see cref="M:Microsoft.Office.Interop.Word._Document.Protect(Microsoft.Office.Interop.Word.WdProtectionType,System.Object@,System.Object@,System.Object@,System.Object@)" /> use o método para proteger o documento.</para>
+      <para>Use o <see cref="M:Microsoft.Office.Interop.Word.Editors.Add(System.Object@)" /> método da <see cref="T:Microsoft.Office.Interop.Word.Editors" /> coleção para dar a um usuário ou grupo especificado permissão para modificar um intervalo ou seleção dentro de um documento.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -58,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -88,9 +78,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto especificado foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
-          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Se o objeto especificado foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". [!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
+          <para>A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -168,10 +158,8 @@
       <Docs>
         <summary>Retorna ou define o rótulo de identificação para o objeto especificado quando o documento atual é salvo como uma página da Web.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Com exceção do <see cref="T:Microsoft.Office.Interop.Word.Editor" /> do objeto, você pode usar um rótulo como uma referência de hiperlink a partir de outras páginas da Web ou do documento atual.</para>
-          <para />
-        </remarks>
+        <remarks><para>Com exceção do <see cref="T:Microsoft.Office.Interop.Word.Editor" /> objeto, você pode usar um rótulo como uma referência de hiperlink a partir de outras páginas da Web ou de dentro do documento atual.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -225,12 +213,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Range" /> object que representa o próximo intervalo para o qual um usuário tem permissão para modificar.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto que representa o próximo intervalo para o qual um usuário tem permissões para modificar.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Você também pode usar o método <b>GoToEditableRange</b> do <b>intervalo</b> ou <see cref="T:Microsoft.Office.Interop.Word.Selection" /> objeto para retornar o próximo intervalo para o qual um usuário tem permissão para modificar.</para>
-          <para />
-        </remarks>
+        <remarks><para>Você também pode usar o método <b>GoToEditableRange</b> do <b>intervalo</b> ou <see cref="T:Microsoft.Office.Interop.Word.Selection" /> objeto para retornar o próximo intervalo para o qual um usuário tem permissão para modificar.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -284,12 +270,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Range" /> object que representa a parte de um documento que está contida no objeto especificado.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto que representa a parte de um documento que está contida no objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Para obter informações sobre como retornar um intervalo de um documento ou um intervalo de formas de uma coleção de formas, consulte o <see cref="P:Microsoft.Office.Interop.Word.Editor.Range" /> método.</para>
-          <para />
-        </remarks>
+        <remarks><para>Para obter informações sobre como retornar um intervalo de um documento ou retornar um intervalo de formas de uma coleção de formas <see cref="P:Microsoft.Office.Interop.Word.Editor.Range" /> , consulte o método.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectAll">
@@ -314,10 +298,8 @@
       <Parameters />
       <Docs>
         <summary>Seleciona todas as formas no texto principal, em uma tela ou em cabeçalhos e rodapés de um documento.</summary>
-        <remarks>
-          <para>Este método não seleciona <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> objetos.</para>
-          <para />
-        </remarks>
+        <remarks><para>Este método não seleciona <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> objetos.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

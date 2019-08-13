@@ -1,13 +1,5 @@
 <Type Name="FillFormat" FullName="Microsoft.Office.Interop.Word.FillFormat">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="3af31c574b589a1351974da01aa005e85e0d51af" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20664389" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface FillFormat" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="4807b5d76d632efebdfc8390e89b52ff7e61eae6" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146868" /></Metadata><TypeSignature Language="C#" Value="public interface FillFormat" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract FillFormat" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.FillFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface FillFormat" />
@@ -26,12 +18,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Representa a formatação do preenchimento para uma forma. Uma forma pode ter um preenchimento sólido, gradual, texturizado, padronizado, de figura ou semitransparente.</summary>
-    <remarks>
-      <para>Use a propriedade <b>Fill</b> de um <see cref="T:Microsoft.Office.Interop.Word.Shape" />, <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />, ou <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> objeto para retornar um objeto <b>FillFormat</b> .</para>
+    <summary>Representa a formatação de preenchimento de uma forma. Uma forma pode ter um preenchimento sólido, gradual, texturizado, padronizado, de figura ou semitransparente.</summary>
+    <remarks><para>Use a propriedade <b>Fill</b> de um <see cref="T:Microsoft.Office.Interop.Word.Shape" />objeto <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" />, ou <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> , para retornar um objeto <b>FillFormat</b> .</para>
       <para>Muitas das propriedades do objeto <b>FillFormat</b> são somente leitura. Para definir uma dessas propriedades, você precisa aplicar o método correspondente.</para>
-      <para />
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -57,7 +47,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -85,7 +75,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ColorFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define um <see cref="T:Microsoft.Office.Interop.Word.ColorFormat" /> object que representa a cor de plano de fundo para o preenchimento especificado ou uma linha padronizada.</summary>
+        <summary>Retorna ou define um <see cref="T:Microsoft.Office.Interop.Word.ColorFormat" /> objeto que representa a cor de plano de fundo para o preenchimento especificado ou a linha padronizada.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -143,9 +133,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
-          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". [!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
+          <para>A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ForeColor">
@@ -171,7 +161,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ColorFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define um <see cref="T:Microsoft.Office.Interop.Word.ColorFormat" /> object que representa a cor de primeiro plano do preenchimento.</summary>
+        <summary>Retorna ou define um <see cref="T:Microsoft.Office.Interop.Word.ColorFormat" /> objeto que representa a cor de primeiro plano para o preenchimento.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -204,10 +194,8 @@
       <Docs>
         <summary>Obtém ou define o ângulo do preenchimento de gradiente para o formato de preenchimento especificado.</summary>
         <value>O ângulo do preenchimento de gradiente para o formato de preenchimento especificado.</value>
-        <remarks>
-          <para>Leitura/gravação. Um preenchimento de gradiente podem ser especificado na formatação de vários elementos (shapes) em um gráfico. Por exemplo, você pode usar a caixa de diálogo Formatar série de dados para formatar as colunas em um gráfico de coluna para um preenchimento de gradiente. Nesse caso, essa propriedade corresponde à configuração da caixa Ângulo na categoria de preenchimento da caixa de diálogo Formatar série de dados. O intervalo válido de valores para essa propriedade é de zero por meio de 359.9.</para>
-          <para />
-        </remarks>
+        <remarks><para>Leitura/gravação. Um preenchimento de gradiente podem ser especificado na formatação de vários elementos (shapes) em um gráfico. Por exemplo, você pode usar a caixa de diálogo Formatar série de dados para formatar as colunas em um gráfico de coluna para um preenchimento de gradiente. Nesse caso, essa propriedade corresponde à configuração da caixa ângulo na categoria preenchimento da caixa de diálogo Formatar série de dados. O intervalo válido de valores para essa propriedade é de zero a 359,9.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GradientColorType">
@@ -233,12 +221,10 @@
         <ReturnType>Microsoft.Office.Core.MsoGradientColorType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o tipo de gradiente da cor para o preenchimento especificado.</summary>
+        <summary>Retorna o tipo de cor do gradiente para o preenchimento especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Use o <see cref="M:Microsoft.Office.Interop.Word.FillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" />, <see cref="M:Microsoft.Office.Interop.Word.FillFormat.PresetGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,Microsoft.Office.Core.MsoPresetGradientType)" />, ou <see cref="M:Microsoft.Office.Interop.Word.FillFormat.TwoColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32)" /> método para definir o tipo de gradiente para o preenchimento.</para>
-          <para />
-        </remarks>
+        <remarks><para>Use o <see cref="M:Microsoft.Office.Interop.Word.FillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" />método <see cref="M:Microsoft.Office.Interop.Word.FillFormat.PresetGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,Microsoft.Office.Core.MsoPresetGradientType)" />, ou <see cref="M:Microsoft.Office.Interop.Word.FillFormat.TwoColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32)" /> para definir o tipo de gradiente para o preenchimento.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GradientDegree">
@@ -264,13 +250,11 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um valor que indica o quão escuro ou claro é um preenchimento gradual de uma cor.</summary>
+        <summary>Retorna um valor que indica o quão escuro ou claro um preenchimento gradual de uma cor é.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Um valor 0 (zero) significa que o preto é misturado com o primeiro plano da forma de cores para formar o gradiente; um valor de 1 significa que o branco é misturado; e valores entre 0 e 1 indicam que um sombreamento escurecer ou clarear da cor de primeiro plano misto pol.</para>
-          <para>Uso o <see cref="M:Microsoft.Office.Interop.Word.FillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" /> método para definir o grau do gradiente para o preenchimento.</para>
-          <para />
-        </remarks>
+        <remarks><para>Um valor 0 (zero) significa que é misturado preto com a cor de primeiro plano da forma para formar o gradiente, um valor 1 significa que é misturado branco e valores entre 0 e 1 significam que é misturada uma sombra mais escura ou mais clara da cor de primeiro plano.</para>
+          <para>Use o <see cref="M:Microsoft.Office.Interop.Word.FillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" /> método para definir o grau de gradiente para o preenchimento.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GradientStops">
@@ -296,12 +280,10 @@
         <ReturnType>Microsoft.Office.Core.GradientStops</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém o <see cref="T:Microsoft.Office.Core.GradientStops" /> conjunto associado com o formato de preenchimento especificado.</summary>
-        <value>O <see cref="T:Microsoft.Office.Core.GradientStops" /> conjunto associado com o formato de preenchimento especificado.</value>
-        <remarks>
-          <para>Leitura/gravação. Gradientes são uma transição suave de estado de uma cor para outra. Os pontos de extremidade dessas seções são chamados de paradas. Você pode usar o <b>HYPERLINK "ms-help://AstroNS2/WINWORD. DEV/content/ms-help/HV10343554.htm"Gradientstops</b> método para adicionar paradas de gradiente à coleção <b>GradientStops</b> para o objeto especificado.</para>
-          <para />
-        </remarks>
+        <summary>Obtém a <see cref="T:Microsoft.Office.Core.GradientStops" /> coleção associada ao formato de preenchimento especificado.</summary>
+        <value>A <see cref="T:Microsoft.Office.Core.GradientStops" /> coleção associada ao formato de preenchimento especificado.</value>
+        <remarks><para>Leitura/gravação. Gradientes são uma transição suave de estado de uma cor para outra. Os pontos de extremidade dessas seções são chamados de paradas. Você pode usar o <b>Hiperlink "MS-Help://AstroNS2/Winword. DEV/content/ms-help/HV10343554.htm método "GradientStops. Insert</b> para adicionar paradas de gradiente à coleção <b>GradientStops</b> do objeto especificado.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GradientStyle">
@@ -329,11 +311,9 @@
       <Docs>
         <summary>Retorna o estilo de gradiente para o preenchimento especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Use o <see cref="M:Microsoft.Office.Interop.Word.FillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" /> ou <see cref="M:Microsoft.Office.Interop.Word.FillFormat.TwoColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32)" /> método para definir o estilo de gradiente para o preenchimento.</para>
-          <para>Tentar retornar essa propriedade para um preenchimento que não tem um gradiente gerará um erro. Use o <see cref="P:Microsoft.Office.Interop.Word.FillFormat.Type" /> propriedade para determinar se o preenchimento tem um gradiente.</para>
-          <para />
-        </remarks>
+        <remarks><para>Use o <see cref="M:Microsoft.Office.Interop.Word.FillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" /> método <see cref="M:Microsoft.Office.Interop.Word.FillFormat.TwoColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32)" /> ou para definir o estilo de gradiente para o preenchimento.</para>
+          <para>A tentativa de retornar essa propriedade para um preenchimento que não tenha um gradiente irá gerar um erro. Use a <see cref="P:Microsoft.Office.Interop.Word.FillFormat.Type" /> propriedade para determinar se o preenchimento tem um gradiente.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GradientVariant">
@@ -361,11 +341,9 @@
       <Docs>
         <summary>Retorna a variação de gradiente do preenchimento especificado como um valor inteiro de 1 a 4 para a maioria dos preenchimentos graduais.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o estilo de gradiente for <b>msoGradientFromCenter</b>, essa propriedade retornará 1 ou 2. Os valores dessa propriedade correspondem às variações de gradiente (numeradas da esquerda para a direita e de cima para baixo) na guia gradiente na caixa de diálogo efeitos de preenchimento.</para>
-          <para>Essa propriedade é somente leitura. Use o <see cref="M:Microsoft.Office.Interop.Word.FillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" /> ou <see cref="M:Microsoft.Office.Interop.Word.FillFormat.TwoColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32)" /> método para definir a variante de gradiente para o preenchimento.</para>
-          <para />
-        </remarks>
+        <remarks><para>Se o estilo de gradiente for <b>msoGradientFromCenter</b>, essa propriedade retornará 1 ou 2. Os valores dessa propriedade correspondem às variações de gradiente (numeradas da esquerda para a direita e de cima para baixo) na guia gradiente da caixa de diálogo Efeitos de preenchimento.</para>
+          <para>Essa propriedade é somente leitura. Use o <see cref="M:Microsoft.Office.Interop.Word.FillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" /> método <see cref="M:Microsoft.Office.Interop.Word.FillFormat.TwoColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32)" /> ou para definir a variante de gradiente para o preenchimento.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OneColorGradient">
@@ -393,12 +371,10 @@
         <Parameter Name="Degree" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Style">Necessário <see cref="T:Microsoft.Office.Core.MsoGradientStyle" />. O estilo do gradiente.</param>
-        <param name="Variant">
-          <b>Integer</b>necessário. A variante de gradiente. Pode ser um valor de 1 a 4, correspondente às quatro variações na guia gradiente da caixa de diálogo Efeitos de preenchimento. Se <paramref name="Style" /> for <b>msoGradientFromCenter</b>, esse argumento pode ser 1 ou 2.</param>
-        <param name="Degree">
-          <b>Single</b>obrigatório. A intensidade do gradiente. Pode ser um valor de 0,0 (escuro) a 1,0 (claro).</param>
-        <summary>Define o preenchimento especificado como gradiente de uma cor.</summary>
+        <param name="Style">Necessário <see cref="T:Microsoft.Office.Core.MsoGradientStyle" />. O estilo de gradiente.</param>
+        <param name="Variant">Obrigatório <b>Integer</b>. A variante de gradiente. Pode ser um valor de 1 a 4, correspondente às quatro variações na guia gradiente da caixa de diálogo Efeitos de preenchimento. Se <paramref name="Style" /> for <b>msoGradientFromCenter</b>, esse argumento poderá ser 1 ou 2.</param>
+        <param name="Degree"><b>Único</b>necessário. O grau do gradiente. Pode ser um valor de 0.0 (escuro) a 1.0 (claro).</param>
+        <summary>Define o preenchimento especificado com um gradiente de uma cor.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -455,11 +431,9 @@
       <Docs>
         <summary>Retorna um valor que representa o padrão aplicado ao preenchimento especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Você também pode usar o <see cref="M:Microsoft.Office.Interop.Word.FillFormat.Patterned(Microsoft.Office.Core.MsoPatternType)" /> método para definir o padrão para o preenchimento.</para>
-          <para>Uso o <see cref="P:Microsoft.Office.Interop.Word.FillFormat.BackColor" /> e <see cref="P:Microsoft.Office.Interop.Word.FillFormat.ForeColor" /> propriedades para definir as cores usadas no padrão.</para>
-          <para />
-        </remarks>
+        <remarks><para>Você também pode usar o <see cref="M:Microsoft.Office.Interop.Word.FillFormat.Patterned(Microsoft.Office.Core.MsoPatternType)" /> método para definir o padrão para o preenchimento.</para>
+          <para>Use as <see cref="P:Microsoft.Office.Interop.Word.FillFormat.BackColor" /> propriedades <see cref="P:Microsoft.Office.Interop.Word.FillFormat.ForeColor" /> e para definir as cores usadas no padrão.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Patterned">
@@ -486,11 +460,9 @@
       </Parameters>
       <Docs>
         <param name="Pattern">Necessário <see cref="T:Microsoft.Office.Core.MsoPatternType" />. O padrão a ser usado para o preenchimento especificado.</param>
-        <summary>Define o preenchimento especificado como um padrão.</summary>
-        <remarks>
-          <para>Use o <see cref="P:Microsoft.Office.Interop.Word.FillFormat.BackColor" /> e <see cref="P:Microsoft.Office.Interop.Word.FillFormat.ForeColor" /> propriedades para definir as cores usadas no padrão.</para>
-          <para />
-        </remarks>
+        <summary>Define o preenchimento especificado com um padrão.</summary>
+        <remarks><para>Use as <see cref="P:Microsoft.Office.Interop.Word.FillFormat.BackColor" /> propriedades <see cref="P:Microsoft.Office.Interop.Word.FillFormat.ForeColor" /> e para definir as cores usadas no padrão.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PictureEffects">
@@ -516,12 +488,10 @@
         <ReturnType>Microsoft.Office.Core.PictureEffects</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém um <see cref="T:Microsoft.Office.Core.PictureEffects" /> objeto que pode ser usado para aplicar efeitos de imagem à formatação de preenchimento especificado.</summary>
-        <value>Uma <see cref="T:Microsoft.Office.Core.PictureEffects" /> objeto que pode ser usado para aplicar efeitos de imagem à formatação de preenchimento especificado.</value>
-        <remarks>
-          <para>Somente leitura. Use o <see cref="M:Microsoft.Office.Core.PictureEffects.Insert" /> método do <see cref="T:Microsoft.Office.Core.PictureEffects" /> objeto ao qual aplicar efeitos de imagem. <b>Inserir</b> leva um <see cref="T:Microsoft.Office.Core.MsoPictureEffectType" /> constante da enumeração como um argumento para especificar que tipo de efeito de imagem a ser aplicado.</para>
-          <para />
-        </remarks>
+        <summary>Obtém um <see cref="T:Microsoft.Office.Core.PictureEffects" /> objeto que pode ser usado para aplicar efeitos de imagem à formatação de preenchimento especificada.</summary>
+        <value>Um <see cref="T:Microsoft.Office.Core.PictureEffects" /> objeto que pode ser usado para aplicar efeitos de imagem à formatação de preenchimento especificada.</value>
+        <remarks><para>Somente leitura. Use o <see cref="M:Microsoft.Office.Core.PictureEffects.Insert" /> método do <see cref="T:Microsoft.Office.Core.PictureEffects" /> objeto para aplicar efeitos de imagem. <b>Insert</b> Obtém uma <see cref="T:Microsoft.Office.Core.MsoPictureEffectType" /> constante de enumeração como um argumento para especificar o tipo de efeito de imagem a ser aplicado.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PresetGradient">
@@ -549,11 +519,10 @@
         <Parameter Name="PresetGradientType" Type="Microsoft.Office.Core.MsoPresetGradientType" />
       </Parameters>
       <Docs>
-        <param name="Style">Necessário <see cref="T:Microsoft.Office.Core.MsoGradientStyle" />. O estilo do gradiente.</param>
-        <param name="Variant">
-          <b>Integer</b>necessário. A variante de gradiente. Pode ser um valor de 1 a 4, correspondente às quatro variações na guia gradiente da caixa de diálogo Efeitos de preenchimento. Se <paramref name="Style" /> for <b>msoGradientFromCenter</b>, esse argumento pode ser 1 ou 2.</param>
+        <param name="Style">Necessário <see cref="T:Microsoft.Office.Core.MsoGradientStyle" />. O estilo de gradiente.</param>
+        <param name="Variant">Obrigatório <b>Integer</b>. A variante de gradiente. Pode ser um valor de 1 a 4, correspondente às quatro variações na guia gradiente da caixa de diálogo Efeitos de preenchimento. Se <paramref name="Style" /> for <b>msoGradientFromCenter</b>, esse argumento poderá ser 1 ou 2.</param>
         <param name="PresetGradientType">Necessário <see cref="T:Microsoft.Office.Core.MsoPresetGradientType" />. O tipo de gradiente.</param>
-        <summary>Define o preenchimento especificado como um gradiente predefinido.</summary>
+        <summary>Define o preenchimento especificado com um gradiente predefinido.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -582,10 +551,8 @@
       <Docs>
         <summary>Retorna o tipo de gradiente predefinido para o preenchimento especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Use o <see cref="M:Microsoft.Office.Interop.Word.FillFormat.PresetGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,Microsoft.Office.Core.MsoPresetGradientType)" /> método para definir o tipo de gradiente predefinido para o preenchimento.</para>
-          <para />
-        </remarks>
+        <remarks><para>Use o <see cref="M:Microsoft.Office.Interop.Word.FillFormat.PresetGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,Microsoft.Office.Core.MsoPresetGradientType)" /> método para definir o tipo de gradiente predefinido para o preenchimento.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PresetTexture">
@@ -611,12 +578,10 @@
         <ReturnType>Microsoft.Office.Core.MsoPresetTexture</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna à textura predefinida para o preenchimento especificado.</summary>
+        <summary>Retorna a textura predefinida para o preenchimento especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Use o <see cref="M:Microsoft.Office.Interop.Word.FillFormat.PresetTextured(Microsoft.Office.Core.MsoPresetTexture)" /> método para especificar a textura predefinida para o preenchimento.</para>
-          <para />
-        </remarks>
+        <remarks><para>Use o <see cref="M:Microsoft.Office.Interop.Word.FillFormat.PresetTextured(Microsoft.Office.Core.MsoPresetTexture)" /> método para especificar a textura predefinida para o preenchimento.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PresetTextured">
@@ -643,7 +608,7 @@
       </Parameters>
       <Docs>
         <param name="PresetTexture">Necessário <see cref="T:Microsoft.Office.Core.MsoPresetTexture" />. A textura predefinida.</param>
-        <summary>Define o preenchimento especificado como uma textura predefinida.</summary>
+        <summary>Define o preenchimento especificado com uma textura predefinida.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -674,26 +639,24 @@
       </ReturnValue>
       <Docs>
         <summary>Obtém ou define se o preenchimento gira com a forma especificada.</summary>
-        <value>Uma <see cref="T:Microsoft.Office.Core.MsoTriState" /> objeto.</value>
-        <remarks>
-          <para>Leitura/gravação. O valor retornado por essa propriedade pode ser uma do <see cref="T:Microsoft.Office.Core.MsoTriState" /> constantes listadas na tabela a seguir.</para>
+        <value>Um <see cref="T:Microsoft.Office.Core.MsoTriState" /> objeto.</value>
+        <remarks><para>Leitura/gravação. O valor retornado por essa propriedade pode ser uma das <see cref="T:Microsoft.Office.Core.MsoTriState" /> constantes listadas na tabela a seguir.</para>
           <list type="table">
             <item>
               <description>
                 <b>msoFalse</b>
               </description>
-              <description>o preenchimento não gira com a forma.</description>
+              <description>O preenchimento não gira com a forma.</description>
             </item>
             <item>
               <description>
                 <b>msoTrue</b>
               </description>
-              <description>o preenchimento gira com a forma.</description>
+              <description>O preenchimento gira com a forma.</description>
             </item>
           </list>
-          <para>a configuração dessa propriedade corresponde à configuração da girar com a caixa de forma no painel de preenchimento da caixa de diálogo Formatar imagem na interface de usuário do Microsoft Word 2010 (em ferramentas de desenho, na guia Formatar, no grupo estilos de forma, clique em Formatar forma.) </para>
-          <para />
-        </remarks>
+          <para>A configuração dessa propriedade corresponde à configuração da caixa girar com forma no painel preenchimento da caixa de diálogo Formatar imagem na interface do usuário do Microsoft Word 2010 (em ferramentas de desenho, na guia Formatar, no grupo estilos de forma, clique em Formatar forma).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Solid">
@@ -717,7 +680,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Define o preenchimento especificado como uma cor uniforme. Use este método para converter um preenchimento gradual, texturizado, padronizado ou de plano de fundo em um preenchimento sólido.</summary>
+        <summary>Define o preenchimento especificado como uma cor uniforme. Utilize esse método para converter um preenchimento de gradiente, texturizado, padronizado, ou de plano de fundo de volta a um preenchimento sólido.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -747,10 +710,9 @@
         <ReturnType>Microsoft.Office.Core.MsoTextureAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém ou define o alinhamento (a origem da grade de coordenadas) para o lado a lado do preenchimento com textura.</summary>
-        <value>O alinhamento (a origem da grade de coordenadas) para o lado a lado do preenchimento com textura.</value>
-        <remarks>
-          <para>Leitura/gravação. O valor retornado por essa propriedade pode ser uma das seguintes opções <see cref="T:Microsoft.Office.Core.MsoTextureAlignment" /> constantes:</para>
+        <summary>Obtém ou define o alinhamento (a origem da grade de coordenadas) para a disposição lado a lado do preenchimento de textura.</summary>
+        <value>O alinhamento (a origem da grade de coordenadas) para a disposição lado a lado do preenchimento de textura.</value>
+        <remarks><para>Leitura/gravação. O valor retornado por essa propriedade pode ser uma das seguintes <see cref="T:Microsoft.Office.Core.MsoTextureAlignment" /> constantes:</para>
           <list type="bullet">
             <item>
               <para>
@@ -779,7 +741,7 @@
             </item>
             <item>
               <para>
-                <b> msoTextureRight</b>
+                <b>msoTextureRight</b>
               </para>
             </item>
             <item>
@@ -798,9 +760,8 @@
               </para>
             </item>
           </list>
-          <para>a configuração dessa propriedade corresponde à configuração da caixa de alinhamento em Opções de lado a lado no painel de preenchimento da imagem de formato caixa de diálogo na interface de usuário do Microsoft Word (em ferramentas de desenho, na guia Formatar, expanda o grupo de estilos de forma.)</para>
-          <para />
-        </remarks>
+          <para>A configuração dessa propriedade corresponde à configuração da caixa alinhamento em opções lado a lado no painel preenchimento da caixa de diálogo Formatar imagem na interface do usuário do Microsoft Word (em ferramentas de desenho, na guia Formatar, expanda o grupo estilos de forma.)</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TextureHorizontalScale">
@@ -831,10 +792,8 @@
       <Docs>
         <summary>Obtém ou define um valor que especifica o fator de dimensionamento horizontal para o preenchimento de textura.</summary>
         <value>Especifica o fator de dimensionamento horizontal para o preenchimento de textura.</value>
-        <remarks>
-          <para>Leitura/gravação. A configuração dessa propriedade corresponde à configuração da caixa de texto escala X opções lado a lado no painel de preenchimento da caixa de diálogo Formatar imagem na interface de usuário do Microsoft Word (em ferramentas de desenho, na guia Formatar, expanda o grupo de estilos de forma.)</para>
-          <para />
-        </remarks>
+        <remarks><para>Leitura/gravação. A configuração dessa propriedade corresponde à configuração da caixa escala X em opções lado a lado no painel preenchimento da caixa de diálogo Formatar imagem na interface do usuário do Microsoft Word (em ferramentas de desenho, na guia Formatar, expanda o grupo estilos de forma.)</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TextureName">
@@ -860,12 +819,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o nome do arquivo de textura personalizado do preenchimento especificado.</summary>
+        <summary>Retorna o nome do arquivo de textura personalizada para o preenchimento especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Use o <see cref="M:Microsoft.Office.Interop.Word.FillFormat.UserTextured(System.String)" /> método para definir o arquivo de textura para o preenchimento.</para>
-          <para />
-        </remarks>
+        <remarks><para>Use o <see cref="M:Microsoft.Office.Interop.Word.FillFormat.UserTextured(System.String)" /> método para definir o arquivo de textura para o preenchimento.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TextureOffsetX">
@@ -896,11 +853,9 @@
       <Docs>
         <summary>Obtém ou define um valor que especifica o deslocamento horizontal da textura da origem em pontos.</summary>
         <value>Especifica o deslocamento horizontal da textura da origem em pontos.</value>
-        <remarks>
-          <para>Leitura/gravação. A posição da origem é determinada pela definição do <see cref="P:Microsoft.Office.interop.Word.FillFormat.TextureAlignment" /> propriedade.</para>
-          <para>a configuração dessa propriedade corresponde à configuração da caixa de texto Deslocamento X opções lado a lado no painel de preenchimento da caixa de diálogo Formatar imagem na interface de usuário do Microsoft Word (em ferramentas de desenho, na guia Formatar, expanda o grupo de estilos de forma.)</para>
-          <para />
-        </remarks>
+        <remarks><para>Leitura/gravação. A posição da origem é determinada pela definição da <see cref="P:Microsoft.Office.interop.Word.FillFormat.TextureAlignment" /> propriedade.</para>
+          <para>A configuração dessa propriedade corresponde à configuração da caixa deslocamento de X em opções lado a lado no painel preenchimento da caixa de diálogo Formatar imagem na interface do usuário do Microsoft Word (em ferramentas de desenho, na guia Formatar, expanda o grupo estilos de forma.)</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TextureOffsetY">
@@ -931,11 +886,9 @@
       <Docs>
         <summary>Obtém ou define um valor que especifica o deslocamento vertical da textura da origem em pontos.</summary>
         <value>Especifica o deslocamento vertical da textura da origem em pontos.</value>
-        <remarks>
-          <para>Leitura/gravação. A posição da origem é determinada pela definição do <see cref="P:Microsoft.Office.Interop.Word.FillFormat.TextureAlignment" /> propriedade.</para>
-          <para>a configuração dessa propriedade corresponde à configuração da caixa de texto Deslocamento Y opções lado a lado no painel de preenchimento da caixa de diálogo Formatar imagem na interface de usuário do Microsoft Word (em ferramentas de desenho, na guia Formatar, expanda o grupo de estilos de forma.)</para>
-          <para />
-        </remarks>
+        <remarks><para>Leitura/gravação. A posição da origem é determinada pela definição da <see cref="P:Microsoft.Office.Interop.Word.FillFormat.TextureAlignment" /> propriedade.</para>
+          <para>A configuração dessa propriedade corresponde à configuração da caixa deslocamento Y em opções lado a lado no painel preenchimento da caixa de diálogo Formatar imagem na interface do usuário do Microsoft Word (em ferramentas de desenho, na guia Formatar, expanda o grupo estilos de forma.)</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TextureTile">
@@ -964,27 +917,25 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtém ou define o preenchimento com textura é lado a lado ou centralizado.</summary>
-        <value>Uma <see cref="T:Microsoft.Office.Core.MsoTriState" /> objeto.</value>
-        <remarks>
-          <para>Leitura/gravação. O valor retornado por essa propriedade pode ser uma do <see cref="T:Microsoft.Office.Core.MsoTriState" /> constantes descritos na tabela a seguir.</para>
+        <summary>Obtém ou define se o preenchimento de textura é lado a lado ou centralizado.</summary>
+        <value>Um <see cref="T:Microsoft.Office.Core.MsoTriState" /> objeto.</value>
+        <remarks><para>Leitura/gravação. O valor retornado por essa propriedade pode ser uma das <see cref="T:Microsoft.Office.Core.MsoTriState" /> constantes descritas na tabela a seguir.</para>
           <list type="table">
             <item>
               <description>
                 <b>msoFalse</b>
               </description>
-              <description>o preenchimento de textura é centralizado.</description>
+              <description>O preenchimento com textura é centralizado.</description>
             </item>
             <item>
               <description>
                 <b>msoTrue</b>
               </description>
-              <description>o preenchimento com textura é lado a lado.</description>
+              <description>O preenchimento com textura é lado a lado.</description>
             </item>
           </list>
-          <para>a configuração dessa propriedade corresponde à configuração da imagem lado a lado como caixa de textura em Opções de lado a lado no painel de preenchimento da caixa de diálogo Formatar imagem na interface de usuário do Microsoft Word (em ferramentas de desenho, na guia Formatar, expanda os estilos de forma grupo).</para>
-          <para />
-        </remarks>
+          <para>A configuração dessa propriedade corresponde à configuração da caixa imagem lado a lado em opções lado a lado no painel preenchimento da caixa de diálogo Formatar imagem na interface do usuário do Microsoft Word (em ferramentas de desenho, na guia Formatar, expanda o grupo estilos de forma.)</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TextureType">
@@ -1010,12 +961,10 @@
         <ReturnType>Microsoft.Office.Core.MsoTextureType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o tipo de textura do preenchimento especificado.</summary>
+        <summary>Retorna o tipo de textura para o preenchimento especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Use o <see cref="M:Microsoft.Office.Interop.Word.FillFormat.PresetTextured(Microsoft.Office.Core.MsoPresetTexture)" />, <see cref="M:Microsoft.Office.Interop.Word.FillFormat.UserPicture(System.String)" />, ou <see cref="M:Microsoft.Office.Interop.Word.FillFormat.UserTextured(System.String)" /> método para definir o tipo de textura para o preenchimento.</para>
-          <para />
-        </remarks>
+        <remarks><para>Use o <see cref="M:Microsoft.Office.Interop.Word.FillFormat.PresetTextured(Microsoft.Office.Core.MsoPresetTexture)" />método <see cref="M:Microsoft.Office.Interop.Word.FillFormat.UserPicture(System.String)" />, ou <see cref="M:Microsoft.Office.Interop.Word.FillFormat.UserTextured(System.String)" /> para definir o tipo de textura para o preenchimento.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TextureVerticalScale">
@@ -1046,10 +995,8 @@
       <Docs>
         <summary>Obtém ou define um valor que especifica o fator de dimensionamento vertical para o preenchimento de textura.</summary>
         <value>Especifica o fator de dimensionamento vertical para o preenchimento de textura.</value>
-        <remarks>
-          <para>Leitura/gravação. A configuração dessa propriedade corresponde à configuração da caixa de texto escala no eixo Y opções lado a lado no painel de preenchimento da caixa de diálogo Formatar imagem na interface de usuário do Microsoft Word (em ferramentas de desenho, na guia Formatar, expanda o grupo de estilos de forma.)</para>
-          <para />
-        </remarks>
+        <remarks><para>Leitura/gravação. A configuração dessa propriedade corresponde à configuração da caixa escala Y em opções lado a lado no painel preenchimento da caixa de diálogo Formatar imagem na interface do usuário do Microsoft Word (em ferramentas de desenho, na guia Formatar, expanda o grupo estilos de forma.)</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Transparency">
@@ -1078,12 +1025,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define o grau de transparência de preenchimento especificado como um valor entre 0,0 (opaco) e 1,0 (clear).</summary>
+        <summary>Retorna ou define o grau de transparência do preenchimento especificado como um valor entre 0,0 (opaco) e 1,0 (claro).</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>O valor dessa propriedade afeta a aparência dos preenchimentos sólidos coloridos e linhas apenas; ele não tem efeito sobre a aparência das linhas padronizadas ou de padronizados, gradiente, imagem ou preenchimento texturizado.</para>
-          <para />
-        </remarks>
+        <remarks><para>O valor dessa propriedade afeta somente a aparência de linhas e preenchimentos de cor sólida; Ela não tem efeito sobre a aparência de linhas padronizadas ou de preenchimentos padronizados, gradientes, de imagem ou texturizados.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TwoColorGradient">
@@ -1110,10 +1055,9 @@
         <Parameter Name="Variant" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Style">Necessário <see cref="T:Microsoft.Office.Core.MsoGradientStyle" />. O estilo do gradiente.</param>
-        <param name="Variant">
-          <b>Integer</b>necessário. A variante de gradiente. Pode ser um valor de 1 a 4, correspondente às quatro variações na guia gradiente da caixa de diálogo Efeitos de preenchimento. Se <paramref name="Style" /> for <b>msoGradientFromCenter</b>, esse argumento pode ser 1 ou 2.</param>
-        <summary>Define o preenchimento especificado como gradiente de duas cores.</summary>
+        <param name="Style">Necessário <see cref="T:Microsoft.Office.Core.MsoGradientStyle" />. O estilo de gradiente.</param>
+        <param name="Variant">Obrigatório <b>Integer</b>. A variante de gradiente. Pode ser um valor de 1 a 4, correspondente às quatro variações na guia gradiente da caixa de diálogo Efeitos de preenchimento. Se <paramref name="Style" /> for <b>msoGradientFromCenter</b>, esse argumento poderá ser 1 ou 2.</param>
+        <summary>Define o preenchimento especificado para um gradiente de duas cores.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1168,13 +1112,10 @@
         <Parameter Name="PictureFile" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="PictureFile">
-          <b>String</b> necessário. O nome do arquivo da imagem.</param>
+        <param name="PictureFile"><b>String</b> necessário. O nome de arquivo da figura.</param>
         <summary>Preenche a forma especificada com uma imagem grande.</summary>
-        <remarks>
-          <para>Se você desejar preencher a forma com pequenas repetições de uma imagem, use o <see cref="M:Microsoft.Office.Interop.Word.FillFormat.UserTextured(System.String)" /> método.</para>
-          <para />
-        </remarks>
+        <remarks><para>Se você quiser preencher a forma com pequenas cópias de uma imagem lado a lado, <see cref="M:Microsoft.Office.Interop.Word.FillFormat.UserTextured(System.String)" /> use o método.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="UserTextured">
@@ -1200,13 +1141,10 @@
         <Parameter Name="TextureFile" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="TextureFile">
-          <b>String</b> necessário. O nome do arquivo da imagem.</param>
-        <summary>Preenche a forma especificada com várias imagens pequenas lado a lado.</summary>
-        <remarks>
-          <para>Se você desejar preencher a forma com uma imagem grande, use o <see cref="M:Microsoft.Office.Interop.Word.FillFormat.UserPicture(System.String)" /> método.</para>
-          <para />
-        </remarks>
+        <param name="TextureFile"><b>String</b> necessário. O nome de arquivo da figura.</param>
+        <summary>Preenche a forma especificada com pequenos quadros de uma imagem dispostos lado a lado.</summary>
+        <remarks><para>Se você quiser preencher a forma com uma imagem grande, use o <see cref="M:Microsoft.Office.Interop.Word.FillFormat.UserPicture(System.String)" /> método.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Visible">
@@ -1235,13 +1173,10 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> se o objeto especificado ou a formatação aplicada a ele, está visível.</summary>
+        <summary><b>True</b> se o objeto especificado ou a formatação aplicada a ele, está visível.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Alguns métodos e propriedades poderão ser disponíveis se a propriedade <b>Visible</b> for <b>False</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Alguns métodos e propriedades poderão ser disponíveis se a propriedade <b>Visible</b> for <b>False</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

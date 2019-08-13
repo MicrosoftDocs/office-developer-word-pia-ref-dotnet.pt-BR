@@ -1,13 +1,5 @@
 <Type Name="AddIn" FullName="Microsoft.Office.Interop.Word.AddIn">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="eca0625fe8de93d38c8fe893e6a66c3f0bf7b440" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20663810" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface AddIn" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="695249a505a14baf5625853d5db3725ed54c358e" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144670" /></Metadata><TypeSignature Language="C#" Value="public interface AddIn" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AddIn" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.AddIn" />
   <TypeSignature Language="VB.NET" Value="Public Interface AddIn" />
@@ -27,15 +19,13 @@
   </Attributes>
   <Docs>
     <summary>Representa um único suplemento, instalado ou não.</summary>
-    <remarks>
-      <para>O objeto <b>AddIn</b> é um membro do <see cref="T:Microsoft.Office.Interop.Word.AddIns" /> conjunto. A coleção <b>AddIns</b> contém todos os suplementos disponíveis para o Microsoft Word, independentemente de estarem ou não carregados no momento. A coleção <b>AddIns</b> inclui modelos globais ou suplemento bibliotecas do Word (WLLs) exibidas na caixa de diálogo modelos e suplementos (menu Ferramentas).</para>
-      <para>Uso <b>AddIns</b>(<paramref name="index" />), onde <paramref name="index" /> é o nome do suplemento ou o número de índice, para retornar um único objeto <b>AddIn</b> . Você deve coincidir exatamente a ortografia (mas não necessariamente as maiusculas/minúsculas) do nome, como ele é mostrado na caixa de diálogo modelos e suplementos.</para>
-      <para>o número de índice representa a posição do suplemento na lista de suplementos na caixa de diálogo modelos e suplementos.</para>
-      <para>Uso o <see cref="M:Microsoft.Office.Interop.Word.AddIns.Add(System.String,System.Object@)" /> método para adicionar um suplemento à lista de suplementos disponíveis e (opcionalmente) instalá-lo usando o <paramref name="Install" /> argumento.</para>
-      <para>Para instalar um suplemento mostrado na lista de suplementos disponíveis, use o <see cref="P:Microsoft.Office.Interop.Word.AddIn.Installed" /> propriedade.</para>
-      <para>Uso o <see cref="P:Microsoft.Office.Interop.Word.AddIn.Compiled" /> propriedade para determinar se um objeto <b>AddIn</b> é um modelo ou uma WLL.</para>
-      <para />
-    </remarks>
+    <remarks><para>O objeto <b>AddIn</b> é um membro da <see cref="T:Microsoft.Office.Interop.Word.AddIns" /> coleção. A <b></b> coleção AddIns contém todos os suplementos disponíveis para o Microsoft Word, independentemente de estarem ou não são carregados no momento. A <b></b> coleção AddIns inclui modelos globais ou bibliotecas de suplementos do Word (WLLs) exibidas na caixa de diálogo modelos e suplementos (menu ferramentas).</para>
+      <para>Use <b>AddIns</b>(<paramref name="index" />), onde <paramref name="index" /> é o nome do suplemento ou número de índice, para retornar um único objeto <b>AddIn</b> . Você deve corresponder exatamente a ortografia (mas não necessariamente as maiúsculas/minúsculas) do nome, como ele é mostrado na caixa de diálogo modelos e suplementos.</para>
+      <para>O número de índice representa a posição do suplemento na lista de suplementos da caixa de diálogo Modelos e suplementos.</para>
+      <para>Use o <see cref="M:Microsoft.Office.Interop.Word.AddIns.Add(System.String,System.Object@)" /> método para adicionar um suplemento à lista de suplementos disponíveis e (opcionalmente) instalá-lo usando o <paramref name="Install" /> argumento.</para>
+      <para>Para instalar um suplemento mostrado na lista de suplementos disponíveis, use a <see cref="P:Microsoft.Office.Interop.Word.AddIn.Installed" /> propriedade.</para>
+      <para>Use a <see cref="P:Microsoft.Office.Interop.Word.AddIn.Compiled" /> propriedade para determinar se um objeto <b>AddIn</b> é um modelo ou uma WLL.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -61,7 +51,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o criador do objeto especificado.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o criador do objeto especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -89,12 +79,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um valor que indica se o suplemento especificado será carregado automaticamente quando o Microsoft Word é iniciado.</summary>
+        <summary>Retorna um valor que indica se o suplemento especificado é carregado automaticamente quando o Microsoft Word é iniciado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Suplementos situados na pasta de inicialização na pasta de programa do Word são carregados automaticamente.</para>
-          <para />
-        </remarks>
+        <remarks><para>Suplementos situados na pasta de inicialização na pasta de programa do Word são carregados automaticamente.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Compiled">
@@ -120,12 +108,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um valor que indica se o suplemento especificado é uma biblioteca suplemento do Microsoft Word (WLL).</summary>
+        <summary>Retorna um valor que indica se o suplemento especificado é uma biblioteca de suplementos do Microsoft Word (WLL).</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o suplemento especificado não for uma WLL, ele é um modelo.</para>
-          <para />
-        </remarks>
+        <remarks><para>Se o suplemento especificado não for um WLL, será um modelo.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -153,9 +139,9 @@
       <Docs>
         <summary>Retorna um valor que indica o aplicativo no qual o objeto especificado foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto especificado foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
-          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Se o objeto especificado foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". [!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
+          <para>A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -179,7 +165,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Exclui o especificado <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> objeto.</summary>
+        <summary>Exclui o objeto <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> especificado.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -206,7 +192,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um valor que representa a posição de um item em uma <see cref="T:Microsoft.Office.Interop.Word.AddIns" /> conjunto.</summary>
+        <summary>Retorna um valor que representa a posição de um item em uma <see cref="T:Microsoft.Office.Interop.Word.AddIns" /> coleção.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -237,11 +223,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define um valor que indica <b>True</b> se o suplemento especificado estiver instalado (carregado).</summary>
+        <summary>Retorna ou define um valor que indica <b>true</b> se o suplemento especificado estiver instalado (carregado).</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Suplementos que são carregados são selecionados na caixa de diálogo modelos e suplementos (menu Ferramentas).</para> Suplementos de 
-          <para>Uninstalled estão incluídos na <see cref="T:Microsoft.Office.Interop.Word.AddIns" /> conjunto. Para remover um modelo ou WLL da coleção <b>AddIns</b> , aplique o <see cref="M:Microsoft.Office.Interop.Word.AddIn.Delete" /> método para o <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> objeto (o nome do suplemento é removido da caixa de diálogo modelos e suplementos). Para descarregar todos os modelos e WLLs, aplique o <see cref="M:Microsoft.Office.Interop.Word.AddIns.Unload(System.Boolean)" /> método à coleção <b>AddIns</b> .</para><para /></remarks>
+        <remarks><para>Os suplementos carregados são selecionados na caixa de diálogo Modelos e Suplementos (menu Ferramentas).</para>
+          <para>Suplementos desinstalados estão incluídos na <see cref="T:Microsoft.Office.Interop.Word.AddIns" /> coleção. Para remover um modelo ou WLL da coleção <b>AddIns</b> , aplique o <see cref="M:Microsoft.Office.Interop.Word.AddIn.Delete" /> método ao <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> objeto (o nome do suplemento é removido da caixa de diálogo modelos e suplementos). Para descarregar todos os modelos e WLLs, aplique <see cref="M:Microsoft.Office.Interop.Word.AddIns.Unload(System.Boolean)" /> o método à <b></b> coleção AddIns.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -267,7 +253,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um valor que indica o nome do grupo de contas <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> objeto.</summary>
+        <summary>Retorna um valor que indica o nome do objeto especificado <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> .</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -295,7 +281,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um valor que representa o objeto pai do especificado <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> objeto.</summary>
+        <summary>Retorna um valor que representa o objeto pai do objeto especificado <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> .</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -323,12 +309,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um valor que indica a URL especificada <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> objeto.</summary>
+        <summary>Retorna um valor que indica a URL para o objeto <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>O caminho não inclui um caractere de barra invertida precedente — por exemplo, "http://MyServer". Use o <see cref="P:Microsoft.Office.Interop.Word.ApplicationClass.PathSeparator" /> caractere de propriedade para adicionar uma barra à direita, mesmo que a propriedade <b>PathSeparator</b> assume como padrão uma barra invertida (\).</para>
-          <para />
-        </remarks>
+        <remarks><para>O caminho não inclui um caractere de barra à direita (por exemplo, "http://MyServer". Use a <see cref="P:Microsoft.Office.Interop.Word.ApplicationClass.PathSeparator" /> propriedade para adicionar um caractere de barra de avanço à direita, mesmo que a propriedade <b>PathSeparator</b> padrão a uma barra\)invertida (.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

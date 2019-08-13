@@ -1,13 +1,5 @@
 <Type Name="CalloutFormat" FullName="Microsoft.Office.Interop.Word.CalloutFormat">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c04c571668cd9e557fbce92649a5a632d6c743de" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20664214" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface CalloutFormat" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="3e225a3d98b4c368d5c9c0b464dfefb3fd25e89a" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147311" /></Metadata><TypeSignature Language="C#" Value="public interface CalloutFormat" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CalloutFormat" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.CalloutFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface CalloutFormat" />
@@ -26,11 +18,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Contém propriedades e métodos que se aplicam a textos descritivos.</summary>
-    <remarks>
-      <para>Use o <see cref="P:Microsoft.Office.Interop.Word.Shape.Callout" /> propriedade para retornar um objeto <b>CalloutFormat</b> .</para>
-      <para />
-    </remarks>
+    <summary>Contém propriedades e métodos que se aplicam a textos explicativos de linha.</summary>
+    <remarks><para>Use a <see cref="P:Microsoft.Office.Interop.Word.Shape.Callout" /> propriedade para retornar um objeto <b>CalloutFormat</b> . </para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Accent">
@@ -59,7 +49,7 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define um valor que indica se uma ênfase vertical separa o texto explicativo da linha de texto explicativo.</summary>
+        <summary>Retorna ou define um valor que indica se uma ênfase vertical separa o texto explicativo da linha do texto explicativo.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -90,13 +80,11 @@
         <ReturnType>Microsoft.Office.Core.MsoCalloutAngleType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define um valor que indica o ângulo do texto explicativo.</summary>
+        <summary>Retorna ou define um valor que indica o ângulo da linha do texto explicativo.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se a linha de texto explicativo contiver mais de um segmento de linha, essa propriedade retorna ou define o ângulo do segmento que está mais longe da caixa do texto explicativo.</para>
+        <remarks><para>Se a linha de texto explicativo contiver mais de um segmento de linha, essa propriedade retorna ou define o ângulo do segmento que está mais longe da caixa do texto explicativo.</para>
           <para>Se você definir o valor dessa propriedade como algo diferente de <b>msoCalloutAngleAutomatic</b>, a linha do texto explicativo mantém um ângulo fixo à medida que você arrasta o texto explicativo.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -122,7 +110,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -159,13 +147,11 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define um valor que indica se o lugar onde a linha de texto explicativo é anexada à caixa do texto explicativo muda dependendo se a origem da linha do texto explicativo (para onde o texto explicativo aponta) está à esquerda ou à direita da caixa do texto explicativo.</summary>
+        <summary>Retorna ou define um valor que indica se o local em que a linha do texto explicativo é anexada à caixa do texto explicativo muda dependendo se a origem da linha do texto explicativo (onde o texto explicativo aponta) está à esquerda ou à direita da caixa do texto explicativo.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Quando o valor dessa propriedade for <b>True</b>, o valor de posicionamento (a distância vertical da borda da caixa do texto explicativo até o lugar onde a linha do texto explicativo é anexada) é medido da parte superior da caixa de texto quando a caixa de texto está à direita da origem , e é medido da parte inferior da caixa de texto quando a caixa de texto estiver à esquerda da origem. Quando o valor dessa propriedade for <b>False</b>, o valor de posicionamento sempre é medido da parte superior da caixa de texto, independentemente das posições relativas da caixa de texto e da origem. Use o <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.CustomDrop(System.Single)" /> método para definir o valor de posicionamento e usar o <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.Drop" /> propriedade para retornar o valor de posicionamento.</para>
-          <para>a definição dessa propriedade afeta um texto explicativo somente se ele tiver sido definido explicitamente definido drop valor — ou seja, se o valor do <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.DropType" /> é <b>conectada</b>. Por padrão, textos explicativos têm valores definidos explicitamente projetada quando eles são criados.</para>
-          <para />
-        </remarks>
+        <remarks><para>Quando o valor dessa propriedade é <b>true</b>, o valor de posicionamento (a distância vertical da borda da caixa do texto explicativo até o lugar onde a linha de texto explicativo é anexada) é medido da parte superior da caixa de texto quando a caixa de texto está à direita da origem , e ela é medida da parte inferior da caixa de texto quando a caixa de texto está à esquerda da origem. Quando o valor dessa propriedade for <b>False</b>, o valor de posicionamento será sempre medido a partir da parte superior da caixa de texto, independentemente das posições relativas da caixa de texto e da origem. Use o <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.CustomDrop(System.Single)" /> método para definir o valor de posicionamento e use a <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.Drop" /> propriedade para retornar o valor de posicionamento.</para>
+          <para>A definição dessa propriedade afeta um texto explicativo somente se ele tiver um valor de posicionamento definido explicitamente — ou seja, se <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.DropType" /> o valor da propriedade for <b>msoCalloutDropCustom</b>. Por padrão, textos explicativos têm explicitamente projetada valores definidos quando eles são criados.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoLength">
@@ -191,12 +177,10 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um valor que indica se é necessário definir automaticamente o tamanho do texto explicativo.</summary>
+        <summary>Retorna um valor que indica se deve ser definido automaticamente o tamanho da linha do texto explicativo.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Use o <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.AutomaticLength" /> método para definir essa propriedade como <b>msoTrue</b>e use o <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.CustomLength(System.Single)" /> método para definir essa propriedade como <b>msoFalse</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Use o <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.AutomaticLength" /> método para definir essa propriedade como <b>msoTrue</b>e use o <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.CustomLength(System.Single)" /> método para definir essa propriedade como <b>MsoFalse</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AutomaticLength">
@@ -223,12 +207,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Especifica que o primeiro segmento da linha de texto explicativo (o segmento anexado à caixa do texto explicativo) será dimensionado automaticamente quando o texto explicativo for movido.</summary>
-        <remarks>
-          <para>Use o <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.CustomLength(System.Single)" /> método para especificar que o primeiro segmento da linha do texto explicativo retenha o comprimento fixo retornado pelo <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.Length" /> propriedade sempre que o texto explicativo for movido. Só se aplica a textos explicativos cujas linhas consistem em mais de um segmento (tipos <b>msoCalloutThree</b> e <b>msoCalloutFour</b>).</para>
-          <para>Aplicando este método define a <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoLength" /> propriedade como <b>True</b>.</para>
-          <para />
-        </remarks>
+        <summary>Especifica que o primeiro segmento do texto explicativo (o segmento anexado à caixa do texto explicativo) seja dimensionado automaticamente quando o texto explicativo for movido.</summary>
+        <remarks><para>Use o <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.CustomLength(System.Single)" /> método para especificar que o primeiro segmento da linha de texto explicativo retenha o comprimento fixo <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.Length" /> retornado pela propriedade sempre que o texto explicativo for movido. Aplica-se somente a textos explicativos cujas linhas consistam em mais de um segmento (tipos <b>msoCalloutThree</b> e <b>msoCalloutFour</b>).</para>
+          <para>A aplicação desse método define <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoLength" /> a propriedade como <b>true</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Border">
@@ -287,9 +269,9 @@
       <Docs>
         <summary>Retorna um valor que indica o aplicativo no qual o objeto especificado foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto especificado foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
-          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Se o objeto especificado foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". [!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
+          <para>A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CustomDrop">
@@ -317,11 +299,9 @@
       <Docs>
         <param name="Drop">A distância da altura, em pontos.</param>
         <summary>Define a distância vertical (em pontos) da borda da caixa delimitadora até o lugar onde a linha de texto explicativo é anexada à caixa de texto de texto.</summary>
-        <remarks>
-          <para>Essa distância é medida da parte superior da caixa de texto, a menos que o <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoAttach" /> propriedade estiver definida como <b>True</b> e a caixa de texto estiver à esquerda da origem da linha do texto explicativo (o lugar para que o texto explicativo aponta) nesse caso a distância de posicionamento é medido da parte inferior da caixa de texto.</para>
-          <para>Se o <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.PresetDrop(Microsoft.Office.Core.MsoCalloutDropType)" /> método foi usado anteriormente para configurar a distância do texto explicativo especificado, chame o método <b>PresetDrop</b> novamente usando o argumento <b>msoCalloutDropCustom</b> antes de usar o método <b>CustomDrop</b> para que o sinalizador drop configuração entrará em vigor.</para>
-          <para />
-        </remarks>
+        <remarks><para>Essa distância é medida a partir da parte superior da caixa de texto <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoAttach" /> , a menos que a propriedade seja definida como <b>true</b> e a caixa de texto esteja à esquerda da origem da linha do texto explicativo (o lugar para o qual o texto explicativo aponta) e, nesse caso, a distância de posicionamento é medida da parte inferior da caixa de texto.</para>
+          <para>Se o <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.PresetDrop(Microsoft.Office.Core.MsoCalloutDropType)" /> método foi usado anteriormente para definir o descarte para o texto explicativo especificado, chame o método <b>PresetDrop</b> novamente usando o argumento <b>msoCalloutDropCustom</b> antes de usar o método <b>CustomDrop</b> para que a configuração de soltar personalizada tenha efeitos.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CustomLength">
@@ -348,12 +328,10 @@
       </Parameters>
       <Docs>
         <param name="Length">O comprimento do primeiro segmento do texto explicativo, em pontos.</param>
-        <summary>Especifica que o primeiro segmento da linha de texto explicativo (o segmento conectado à caixa do texto explicativo) deverá manter um comprimento fixo quando o texto explicativo for movido.</summary>
-        <remarks>
-          <para>Use o <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.AutomaticLength" /> método para especificar que o primeiro segmento da linha do texto explicativo seja dimensionado automaticamente sempre que o texto explicativo for movido. Só se aplica a textos explicativos cujas linhas consistem em mais de um segmento (tipos <b>msoCalloutThree</b> e <b>msoCalloutFour</b>).</para>
-          <para>Aplicando este método define a <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoLength" /> propriedade como <b>False</b> e define o <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.Length" /> propriedade como o valor especificado para o <paramref name="Length" /> argumento.</para>
-          <para />
-        </remarks>
+        <summary>Especifica que o primeiro segmento da linha do texto explicativo (o segmento anexado à caixa de texto explicativo) retém um comprimento fixo sempre que o texto explicativo é movido.</summary>
+        <remarks><para>Use o <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.AutomaticLength" /> método para especificar que o primeiro segmento da linha do texto explicativo seja dimensionado automaticamente sempre que o texto explicativo for movido. Aplica-se somente a textos explicativos cujas linhas consistam em mais de um segmento (tipos <b>msoCalloutThree</b> e <b>msoCalloutFour</b>).</para>
+          <para>A aplicação desse método define <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoLength" /> a propriedade como <b>false</b> e define <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.Length" /> a propriedade com o valor especificado para <paramref name="Length" /> o argumento.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Drop">
@@ -381,12 +359,10 @@
       <Docs>
         <summary>Para textos explicativos com um valor de posicionamento explicitamente definido, essa propriedade retorna a distância vertical (em pontos) da extremidade da caixa delimitadora de texto até o lugar onde a linha do texto explicativo é anexada à caixa de texto.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Essa distância é medida da parte superior da caixa de texto, a menos que o <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoAttach" /> propriedade estiver definida como <b>True</b> e a caixa de texto estiver à esquerda da origem da linha do texto explicativo (o lugar para que o texto explicativo aponta) nesse caso a distância de posicionamento é medido da parte inferior da caixa de texto.</para>
-          <para>Uso o <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.CustomDrop(System.Single)" /> método para definir o valor dessa propriedade.</para>
-          <para>o valor dessa propriedade reflete precisamente a posição do anexo de linha do texto explicativo à caixa de texto somente se o texto explicativo tiver explicitamente definido drop valor — ou seja, se o valor do <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.DropType" /> é <b>conectada</b>. Use o <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.PresetDrop(Microsoft.Office.Core.MsoCalloutDropType)" /> método com um argumento <b>msoCalloutCustomDrop</b> para definir a propriedade <b>DropType</b> como <b>msoCalloutDropCustom</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Essa distância é medida a partir da parte superior da caixa de texto <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoAttach" /> , a menos que a propriedade seja definida como <b>true</b> e a caixa de texto esteja à esquerda da origem da linha do texto explicativo (o lugar para o qual o texto explicativo aponta) e, nesse caso, a distância de posicionamento é medida da parte inferior da caixa de texto.</para>
+          <para>Use o <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.CustomDrop(System.Single)" /> método para definir o valor dessa propriedade.</para>
+          <para>O valor dessa propriedade reflete precisamente a posição do anexo da linha do texto explicativo para a caixa de texto somente se o texto explicativo tiver um valor de posicionamento definido explicitamente — ou seja, <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.DropType" /> se o valor da propriedade for <b>msoCalloutDropCustom</b>. Use o <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.PresetDrop(Microsoft.Office.Core.MsoCalloutDropType)" /> método com um argumento <b>msoCalloutCustomDrop</b> para definir a propriedade <b>DropType</b> como <b>msoCalloutDropCustom</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DropType">
@@ -414,11 +390,9 @@
       <Docs>
         <summary>Retorna um valor que indica onde a linha de texto explicativo é anexada à caixa do texto explicativo.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o tipo de posicionamento do texto explicativo for <b>msoCalloutDropCustom</b>, os valores da <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.Drop" /> e <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoAttach" /> propriedades e as posições relativas da caixa de texto do texto explicativo e origem da linha do texto explicativo (o lugar para o qual o texto explicativo aponta) são usadas para determinar onde o texto explicativo linha é anexada à caixa de texto.</para>
-          <para>Uso o <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.PresetDrop(Microsoft.Office.Core.MsoCalloutDropType)" /> método para definir o valor dessa propriedade.</para>
-          <para />
-        </remarks>
+        <remarks><para>Se o tipo de queda de texto explicativo for <b>msoCalloutDropCustom</b>, <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.Drop" /> os <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoAttach" /> valores das propriedades e das posições relativas da caixa do texto explicativo e da origem da linha de texto explicativo (o lugar para o qual o texto explicativo aponta) serão usados para determinar onde o texto explicativo linha anexa à caixa de texto.</para>
+          <para>Use o <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.PresetDrop(Microsoft.Office.Core.MsoCalloutDropType)" /> método para definir o valor dessa propriedade.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Gap">
@@ -447,7 +421,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define um valor que indica a distância horizontal (em pontos) entre o final do texto explicativo e a caixa delimitadora de texto.</summary>
+        <summary>Retorna ou define um valor que indica a distância horizontal (em pontos) entre o final da linha do texto explicativo e a caixa delimitadora de texto.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -475,13 +449,11 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Quando o <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoLength" /> propriedade do texto explicativo especificado é definida como <b>False</b>, a propriedade <b>Length</b> retorna o comprimento (em pontos) do primeiro segmento do texto explicativo (o segmento anexado à caixa do texto explicativo).</summary>
+        <summary>Quando a <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoLength" /> Propriedade do texto explicativo especificado é definida como <b>false</b>, a propriedade <b>Length</b> retorna o comprimento (em pontos) do primeiro segmento da linha do texto explicativo (o segmento anexado à caixa do texto explicativo).</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Só se aplica a textos explicativos cujas linhas consistem em mais de um segmento (tipos <b>msoCalloutThree</b> e <b>msoCalloutFour</b>).</para>
-          <para>Uso o <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.CustomLength(System.Single)" /> método para definir o valor dessa propriedade para o <see cref="T:Microsoft.Office.Interop.Word.CalloutFormat" /> objeto.</para>
-          <para />
-        </remarks>
+        <remarks><para>Aplica-se somente a textos explicativos cujas linhas consistam em mais de um segmento (tipos <b>msoCalloutThree</b> e <b>msoCalloutFour</b>).</para>
+          <para>Use o <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.CustomLength(System.Single)" /> método para definir o valor dessa propriedade para o <see cref="T:Microsoft.Office.Interop.Word.CalloutFormat" /> objeto.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -535,12 +507,10 @@
         <Parameter Name="DropType" Type="Microsoft.Office.Core.MsoCalloutDropType" />
       </Parameters>
       <Docs>
-        <param name="DropType">A posição inicial da linha de texto explicativo em relação à caixa delimitadora de texto.</param>
+        <param name="DropType">A posição inicial da linha do texto explicativo em relação à caixa delimitadora de texto.</param>
         <summary>Especifica se a linha do texto explicativo é anexada à parte superior, à parte inferior ou ao centro da caixa do texto explicativo ou se ela é anexada em um ponto situado a uma distância especificada em relação à parte superior ou inferior da caixa de texto.</summary>
-        <remarks>
-          <para>Se você especificar <b>msoCalloutDropCustom</b> para o <paramref name="DropType" /> parâmetro, os valores da <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.Drop" /> e <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoAttach" /> propriedades e as posições relativas da caixa de texto do texto explicativo e origem da linha do texto explicativo (o lugar para o qual o texto explicativo aponta) são usadas para determinar onde a linha de texto explicativo é anexada à caixa de texto.</para>
-          <para />
-        </remarks>
+        <remarks><para>Se você especificar <b>msoCalloutDropCustom</b> para o <paramref name="DropType" /> parâmetro, os valores das propriedades <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.Drop" /> e <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoAttach" /> as posições relativas da caixa do texto explicativo e da origem da linha de texto explicativo (o lugar para o qual o texto explicativo aponta) serão usados para determinar onde a linha do texto explicativo é anexada à caixa de texto.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">

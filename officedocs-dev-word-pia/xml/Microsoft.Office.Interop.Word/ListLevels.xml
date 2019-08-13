@@ -1,13 +1,5 @@
 <Type Name="ListLevels" FullName="Microsoft.Office.Interop.Word.ListLevels">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="345ec8cf35045c8f363788631d6ef1e1f1353dda" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20664603" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ListLevels : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="09f3bd00422a681e4357da47dfe50d934788f98e" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144488" /></Metadata><TypeSignature Language="C#" Value="public interface ListLevels : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ListLevels implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ListLevels" />
   <TypeSignature Language="VB.NET" Value="Public Interface ListLevels&#xA;Implements IEnumerable" />
@@ -30,15 +22,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Uma coleção de <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> objetos que representa todos os níveis de lista de um modelo de lista, seja o único nível para obter uma lista com marcador ou numerado ou um dos nove níveis de uma lista numerada de contorno.</summary>
-    <remarks>
-      <para>Use o <see cref="P:Microsoft.Office.Interop.Word.ListTemplate.ListLevels" /> propriedade para retornar a coleção <b>ListLevels</b> .</para>
-      <para>Uso <b>ListLevels</b>(<paramref name="index" />), onde <paramref name="index" /> é um número de 1 a 9, para retornar um único objeto <b>ListLevel</b> .</para>
+    <summary>Uma coleção de <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> objetos que representa todos os níveis de lista de um modelo de lista, seja o único nível de uma lista com marcadores ou numerada ou um dos nove níveis de uma lista de vários níveis.</summary>
+    <remarks><para>Use a <see cref="P:Microsoft.Office.Interop.Word.ListTemplate.ListLevels" /> propriedade para retornar a coleção <b>ListLevels</b> .</para>
+      <para>Use <b>ListLevels</b>(<paramref name="index" />), onde <paramref name="index" /> é um número de 1 a 9, para retornar um único objeto <b>ListLevel</b> .</para>
       <para>
         <b>Observação</b>: você não pode adicionar novos níveis a um modelo de lista.</para>
-      <para>Para aplicar um nível de lista, primeiro identifique o intervalo ou a lista e, em seguida, usar o <see cref="M:Microsoft.Office.Interop.Word.List.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@)" /> método. Cada guia no início do parágrafo é convertido em um nível de lista. Por exemplo, se um parágrafo que começa com três guias tornará um parágrafo de lista de três níveis depois que o método <b>ApplyListTemplate</b> é usado.</para>
-      <para />
-    </remarks>
+      <para>Para aplicar um nível de lista, primeiro identifique o intervalo ou lista e, em seguida <see cref="M:Microsoft.Office.Interop.Word.List.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@)" /> , use o método. Cada guia no início do parágrafo é convertido em um nível de lista. Por exemplo, se um parágrafo que começa com três guias tornará um parágrafo de lista de três níveis depois que o método <b>ApplyListTemplate</b> é usado.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -64,7 +54,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -122,9 +112,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
-          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". [!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
+          <para>A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">

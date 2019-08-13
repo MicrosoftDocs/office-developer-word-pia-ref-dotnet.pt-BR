@@ -1,13 +1,5 @@
 <Type Name="CustomProperties" FullName="Microsoft.Office.Interop.Word.CustomProperties">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="8f6473f0e4c3581ad32f4763037b5c6429e43eb2" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20664487" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface CustomProperties : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="22226bea0164d096e40f7c20b44e97dd1e5c0a19" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147148" /></Metadata><TypeSignature Language="C#" Value="public interface CustomProperties : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CustomProperties implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.CustomProperties" />
   <TypeSignature Language="VB.NET" Value="Public Interface CustomProperties&#xA;Implements IEnumerable" />
@@ -31,9 +23,11 @@
   </Attributes>
   <Docs>
     <summary>Uma coleção de <see cref="T:Microsoft.Office.Interop.Word.CustomProperty" /> objetos que representa as propriedades relacionadas a uma marca inteligente.</summary>
-    <remarks>
-      <para>Coleção <b>CustomProperties</b> inclui todas as propriedades personalizadas de marca inteligente em um documento.</para> Uso de 
-      <para>o <see cref="P:Microsoft.Office.Interop.Word.SmartTag.Properties" /> propriedade para retornar um único objeto <b>CustomProperties</b> . Use o <see cref="M:Microsoft.Office.Interop.Word.CustomProperties.Add(System.String,System.String)" /> método do <b>CustomProperties</b> do objeto com para criar uma propriedade personalizada.</para><para>Uso <see cref="P:Microsoft.Office.Interop.Word.SmartTag.Properties" /> (<paramref name="index" />) para retornar uma única propriedade para uma marca inteligente, onde index é o número da propriedade.</para><para>Uso o <see cref="P:Microsoft.Office.Interop.Word.CustomProperties.Count" /> propriedade para retornar o número de propriedades personalizadas para uma marca inteligente.</para><para /></remarks>
+    <remarks><para>Coleção <b>CustomProperties</b> inclui todas as propriedades personalizadas de marca inteligente em um documento.</para>
+      <para>Use a <see cref="P:Microsoft.Office.Interop.Word.SmartTag.Properties" /> propriedade para retornar um único <b></b> objeto CustomProperties. Use o <see cref="M:Microsoft.Office.Interop.Word.CustomProperties.Add(System.String,System.String)" /> método do objeto <b>CustomProperties</b> com para criar uma propriedade personalizada.</para>
+      <para>Use <see cref="P:Microsoft.Office.Interop.Word.SmartTag.Properties" /> (<paramref name="index" />) para retornar uma única propriedade para uma marca inteligente, onde index é o número da propriedade.</para>
+      <para>Use a <see cref="P:Microsoft.Office.Interop.Word.CustomProperties.Count" /> propriedade para retornar o número de propriedades personalizadas para uma marca inteligente. </para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -60,11 +54,9 @@
         <Parameter Name="Value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Name">
-          <b>String</b> necessário. O nome da propriedade da marca inteligente personalizada.</param>
-        <param name="Value">
-          <b>String</b> necessário. O valor da propriedade da marca inteligente personalizada.</param>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.CustomProperty" /> object que representa uma propriedade personalizada adicionada a uma marca inteligente.</summary>
+        <param name="Name"><b>String</b> necessário. O nome da propriedade da marca inteligente personalizada.</param>
+        <param name="Value"><b>String</b> necessário. O valor da propriedade de marca inteligente personalizada.</param>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.CustomProperty" /> objeto que representa uma propriedade personalizada adicionada a uma marca inteligente.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -92,7 +84,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -150,9 +142,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto especificado foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
-          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Se o objeto especificado foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". [!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
+          <para>A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">

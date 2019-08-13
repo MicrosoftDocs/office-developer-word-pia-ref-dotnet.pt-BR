@@ -1,13 +1,5 @@
 <Type Name="EmailSignatureEntries" FullName="Microsoft.Office.Interop.Word.EmailSignatureEntries">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="e4b8f95bf26593569b6242f57c107ad971d61db8" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20665215" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface EmailSignatureEntries : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="291d476d90182c2d9643f61032c174a3f2413a3b" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146889" /></Metadata><TypeSignature Language="C#" Value="public interface EmailSignatureEntries : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract EmailSignatureEntries implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.EmailSignatureEntries" />
   <TypeSignature Language="VB.NET" Value="Public Interface EmailSignatureEntries&#xA;Implements IEnumerable" />
@@ -31,10 +23,8 @@
   </Attributes>
   <Docs>
     <summary>Uma coleção de <see cref="T:Microsoft.Office.Interop.Word.EmailSignatureEntry" /> objetos que representa todas as entradas de assinatura de email disponíveis para o Microsoft Word.</summary>
-    <remarks>
-      <para>Use o <see cref="P:Microsoft.Office.Interop.Word.EmailSignature.EmailSignatureEntries" /> propriedade para retornar a coleção <b>EmailSignatureEntries</b> . Use o <see cref="M:Microsoft.Office.Interop.Word.EmailSignatureEntries.Add(System.String,Microsoft.Office.Interop.Word.Range)" /> método do objeto <b>EmailSignatureEntries</b> para adicionar uma assinatura de email para o Word.</para>
-      <para />
-    </remarks>
+    <remarks><para>Use a <see cref="P:Microsoft.Office.Interop.Word.EmailSignature.EmailSignatureEntries" /> propriedade para retornar a coleção <b>EmailSignatureEntries</b> . Use o <see cref="M:Microsoft.Office.Interop.Word.EmailSignatureEntries.Add(System.String,Microsoft.Office.Interop.Word.Range)" /> método do objeto <b>EmailSignatureEntries</b> para adicionar uma assinatura de email ao Word.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -60,15 +50,12 @@
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
       </Parameters>
       <Docs>
-        <param name="Name">
-          <b>String</b> necessário. O nome da entrada de email.</param>
-        <param name="Range">Objeto de <b>intervalo</b> necessário. O intervalo no documento que será adicionado como assinatura.</param>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.EmailSignatureEntry" /> object que representa uma nova entrada de assinatura de email.</summary>
+        <param name="Name"><b>String</b> necessário. O nome da entrada de email.</param>
+        <param name="Range">Objeto <b>Range</b> necessário. O intervalo no documento que será adicionado como assinatura.</param>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.EmailSignatureEntry" /> objeto que representa uma nova entrada de assinatura de email.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Uma assinatura de email é o texto padrão que termina uma mensagem de email, como seu nome e número de telefone. Use o <see cref="P:Microsoft.Office.Interop.Word.EmailSignature.EmailSignatureEntries" /> propriedade para criar e gerenciar uma coleção de assinaturas de email que o Microsoft Word usará ao criar mensagens de email.</para>
-          <para />
-        </remarks>
+        <remarks><para>Uma assinatura de email é o texto padrão que termina uma mensagem de email, como seu nome e número de telefone. Use a <see cref="P:Microsoft.Office.Interop.Word.EmailSignature.EmailSignatureEntries" /> propriedade para criar e gerenciar uma coleção de assinaturas de email que o Microsoft Word usará ao criar mensagens de email.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -94,7 +81,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -152,9 +139,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto especificado foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
-          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Se o objeto especificado foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". [!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
+          <para>A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">

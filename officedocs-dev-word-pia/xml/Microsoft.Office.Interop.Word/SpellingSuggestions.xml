@@ -1,13 +1,5 @@
 <Type Name="SpellingSuggestions" FullName="Microsoft.Office.Interop.Word.SpellingSuggestions">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c30fd4820009953509a43ffbb37abf5462125885" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20664980" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface SpellingSuggestions : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="4cee29ad3d8de668efc42731bf2fa1ab75a7b415" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146086" /></Metadata><TypeSignature Language="C#" Value="public interface SpellingSuggestions : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SpellingSuggestions implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.SpellingSuggestions" />
   <TypeSignature Language="VB.NET" Value="Public Interface SpellingSuggestions&#xA;Implements IEnumerable" />
@@ -30,8 +22,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Uma coleção de <see cref="T:Microsoft.Office.Interop.Word.SpellingSuggestion" /> objetos que representam todas as sugestões para uma palavra especificada ou para a primeira palavra no intervalo especificado.</summary>
-    <remarks>Método <para>usar o <b>GetSpellingSuggestions</b> de um <see cref="T:Microsoft.Office.Interop.Word.Application" /> ou <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto para retornar a coleção <b>SpellingSuggestions</b> . O método <b>SpellingSuggestions</b> , quando aplicada ao objeto <b>Application</b> , deve especificar a palavra a ser verificado. Quando o método <b>GetSpellingSuggestions</b> é aplicado a um intervalo, a primeira palavra no intervalo for verificada.</para><para>Você não pode adicionar sugestões para ou remover sugestões da coleção de sugestões de ortografia. Sugestões de ortografia são derivados de arquivos de dicionário principal e personalizado.</para><para /></remarks>
+    <summary>Uma coleção de <see cref="T:Microsoft.Office.Interop.Word.SpellingSuggestion" /> objetos que representa todas as sugestões para uma palavra especificada ou para a primeira palavra no intervalo especificado.</summary>
+    <remarks><para>Use o método <b>GetSpellingSuggestions</b> de um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto <see cref="T:Microsoft.Office.Interop.Word.Range" /> or para retornar a coleção <b>SpellingSuggestions</b> . O método <b>SpellingSuggestions</b>, quando aplicada ao objeto <b>Application</b>, deve especificar a palavra a ser verificado. Quando o método <b>GetSpellingSuggestions</b> for aplicado a um intervalo, a primeira palavra no intervalo é verificada.</para>
+      <para>Você não pode adicionar nem remover sugestões da coleção de sugestões de ortografia. As sugestões de ortografia são derivadas dos arquivos de dicionário principal e personalizado.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -57,7 +51,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -115,9 +109,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
-          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". [!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
+          <para>A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -237,8 +231,7 @@
       <Docs>
         <summary>Retorna o tipo de erro de ortografia.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
+        <remarks><para>
             <see cref="T:Microsoft.Office.Interop.Word.WdSpellingErrorType" />pode ser uma destas constantes <b>WdSpellingErrorType</b> .</para>
           <para>
             <b>wdSpellingCapitalization</b>
@@ -248,8 +241,9 @@
           </para>
           <para>
             <b>wdSpellingNotInDictionary</b>
-          </para> Uso de 
-          <para>o <see cref="M:Microsoft.Office.Interop.Word._Application.GetSpellingSuggestions(System.String,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> método para retornar uma coleção de palavras sugeridas como substituições de ortografia. Se uma palavra estiver incorreta, o <see cref="M:Microsoft.Office.Interop.Word._Application.CheckSpelling(System.String,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> método retornará <b>True</b>.</para><para /></remarks>
+          </para>
+          <para>Use o <see cref="M:Microsoft.Office.Interop.Word._Application.GetSpellingSuggestions(System.String,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> método para retornar uma coleção de palavras sugeridas como substituições de ortografia. Se uma palavra tiver sido digitada incorretamente <see cref="M:Microsoft.Office.Interop.Word._Application.CheckSpelling(System.String,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> , o método retornará <b>true</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

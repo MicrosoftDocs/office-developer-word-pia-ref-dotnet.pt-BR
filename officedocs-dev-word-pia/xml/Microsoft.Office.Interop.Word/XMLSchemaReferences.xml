@@ -1,13 +1,5 @@
 <Type Name="XMLSchemaReferences" FullName="Microsoft.Office.Interop.Word.XMLSchemaReferences">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d73115d0737a9a8813cc10517309d5891eb13c07" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20665473" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface XMLSchemaReferences : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="94efe895c3428319116ab8be0f25073c91b0326b" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142609" /></Metadata><TypeSignature Language="C#" Value="public interface XMLSchemaReferences : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract XMLSchemaReferences implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.XMLSchemaReferences" />
   <TypeSignature Language="VB.NET" Value="Public Interface XMLSchemaReferences&#xA;Implements IEnumerable" />
@@ -31,10 +23,8 @@
   </Attributes>
   <Docs>
     <summary>Uma coleção de <see cref="T:Microsoft.Office.Interop.Word.XMLSchemaReference" /> objetos que representam os namespaces exclusivos anexados a um documento.</summary>
-    <remarks>
-      <para>Use o <see cref="P:Microsoft.Office.Interop.Word._Document.XMLSchemaReferences" /> propriedade para retornar uma coleção de esquemas anexados a um documento.</para>
-      <para />
-    </remarks>
+    <remarks><para>Use a <see cref="P:Microsoft.Office.Interop.Word._Document.XMLSchemaReferences" /> propriedade para retornar uma coleção de esquemas anexados a um documento.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -62,10 +52,10 @@
         <Parameter Name="InstallForAllUsers" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="NamespaceURI">Opcional <b>cadeia de caracteres</b>. O nome do esquema conforme definido no esquema. O <paramref name="Namespace" /> parâmetro diferencia maiusculas de minúsculas e deve ser escrito exatamente como aparece no esquema. Se o namespace especificado não pode ser encontrado em qualquer um dos esquemas anexados ao documento, um erro será exibido.</param>
-        <param name="Alias">Opcional <b>cadeia de caracteres</b>. O nome do esquema conforme é exibido na guia Esquemas na caixa de diálogo Modelos e Suplementos.</param>
-        <param name="FileName">Opcional <b>cadeia de caracteres</b>. O caminho e o nome do esquema. Isso pode ser um caminho de arquivo local, um caminho de rede ou um endereço de Internet.</param>
-        <param name="InstallForAllUsers">Opcional <b>booleano</b>. <b>True</b> se todos os usuários que fazem logon em um computador pode acessar e usar o novo esquema. O padrão é <b>False</b>.</param>
+        <param name="NamespaceURI"><b>Cadeia de caracteres</b>opcional. O nome do esquema conforme definido no esquema. O <paramref name="Namespace" /> parâmetro diferencia maiúsculas de minúsculas e deve ser digitado exatamente como aparece no esquema. Se o espaço para nome especificado não puder ser encontrado em nenhum dos esquemas anexados ao documento, um erro é exibido.</param>
+        <param name="Alias"><b>Cadeia de caracteres</b>opcional. O nome do esquema conforme é exibido na guia Esquemas na caixa de diálogo Modelos e Suplementos.</param>
+        <param name="FileName"><b>Cadeia de caracteres</b>opcional. O caminho e o nome do arquivo do esquema. Esse pode ser um caminho de arquivo local, de rede ou um endereço de Internet.</param>
+        <param name="InstallForAllUsers"><b>Boolean</b>opcional. <b>True</b> se todos os usuários que fazem logon em um computador podem acessar e usar o novo esquema. O padrão é <b>False</b>.</param>
         <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.XMLSchemaReference" /> que representa um esquema aplicado a um documento.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -131,7 +121,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -226,9 +216,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
-          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". [!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
+          <para>A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -289,8 +279,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> para ocultar violações de esquemas quando o Microsoft Word valida o XML em um documento.</summary>
+        <summary><b>True</b> para ocultar as violações de esquema quando o Microsoft Word valida o XML em um documento.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -321,13 +310,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <b>Boolean</b> que indica se o Microsoft Word realiza a validação em nós de texto com irmãos e especifica se esses nós de texto são salvos em XML quando o <see cref="P:Microsoft.Office.Interop.Word._Document.XMLSaveDataOnly" /> propriedade é <b>True</b>.</summary>
+        <summary>Retorna um <b>Boolean</b> que indica se o Microsoft Word realiza a validação em nós de texto que têm irmãos de elemento e especifica se esses nós de texto são salvos <see cref="P:Microsoft.Office.Interop.Word._Document.XMLSaveDataOnly" /> em XML quando a propriedade é <b>true</b>.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
+        <remarks><para>
             <b>True</b> faz com que o Word ignore violações de esquema causadas por nós de texto com irmãos; Ele também impede que esses nós de texto sejam salvos em XML quando a propriedade <b>XMLSaveDataOnly</b> for <b>True</b>, que ajuda a evitar que o texto inserido por um extensível Stylesheet Language Transformation (XSLT) sejam salvos como parte dos dados. <b>False</b> gera erros de validação em nós de texto com irmãos.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -442,12 +429,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Certifica-se de um elemento XML individual ou todo o documento contra os esquemas ou esquema XML anexado.</summary>
-        <remarks>
-          <para>Use o método <b>Validate</b> com o <see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationStatus" /> e <see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationErrorText(System.Boolean)" /> propriedades para determinar se um elemento XML é válido para o esquema aplicado e que texto de erro será exibido ao usuário. Use o <see cref="M:Microsoft.Office.Interop.Word.XMLNode.SetValidationError(Microsoft.Office.Interop.Word.WdXMLValidationStatus,System.Object@,System.Boolean)" /> método para substituir as violações do esquema com erros de validação personalizada.</para>
-          <para>Quando você executa o método <b>Validate</b> , o Microsoft Word preenche a <see cref="P:Microsoft.Office.Interop.Word._Document.XMLSchemaViolations" /> coleção com os nós XML que possuem erros de validação.</para>
-          <para />
-        </remarks>
+        <summary>Verifica um elemento XML individual ou todo o documento em relação ao esquema XML anexado ou a esquemas.</summary>
+        <remarks><para>Use o método <b>Validate</b> com as <see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationStatus" /> propriedades <see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationErrorText(System.Boolean)" /> e para determinar se um elemento XML é válido em relação ao esquema aplicado e qual o texto de erro a ser exibido para o usuário. Use o <see cref="M:Microsoft.Office.Interop.Word.XMLNode.SetValidationError(Microsoft.Office.Interop.Word.WdXMLValidationStatus,System.Object@,System.Boolean)" /> método para substituir as violações de esquema com erros de validação personalizados.</para>
+          <para>Quando você executa o método <b>Validate</b> , o Microsoft Word preenche a <see cref="P:Microsoft.Office.Interop.Word._Document.XMLSchemaViolations" /> coleção com os nós XML que têm erros de validação.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

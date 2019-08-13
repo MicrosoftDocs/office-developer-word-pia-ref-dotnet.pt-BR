@@ -1,13 +1,5 @@
 <Type Name="MailMerge" FullName="Microsoft.Office.Interop.Word.MailMerge">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f5bb8ad4de7fc159ec30e1c17d9fcf1851962f01" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20665170" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface MailMerge" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="6af9ade1b4ba89c72ee01b49396483c2c4e1bb64" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146182" /></Metadata><TypeSignature Language="C#" Value="public interface MailMerge" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract MailMerge" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.MailMerge" />
   <TypeSignature Language="VB.NET" Value="Public Interface MailMerge" />
@@ -27,10 +19,8 @@
   </Attributes>
   <Docs>
     <summary>Representa a funcionalidade de mala direta no Microsoft Word.</summary>
-    <remarks>
-      <para>Use o <see cref="P:Microsoft.Office.Interop.Word._Document.MailMerge" /> propriedade para retornar o objeto <b>MailMerge</b> . O objeto <b>MailMerge</b> está sempre disponível independentemente se a operação de mala direta tiver começado. Use o <see cref="P:Microsoft.Office.Interop.Word.MailMerge.State" /> propriedade para determinar o status da operação de mala direta.</para>
-      <para />
-    </remarks>
+    <remarks><para>Use a <see cref="P:Microsoft.Office.Interop.Word._Document.MailMerge" /> propriedade para retornar o objeto <b>MailMerge</b> . Objeto <b>MailMerge</b> está sempre disponível independente da operação de mala direta ter começado. Use a <see cref="P:Microsoft.Office.Interop.Word.MailMerge.State" /> propriedade para determinar o status da operação de mala direta.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -56,7 +46,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -116,30 +106,19 @@
         <Parameter Name="LinkToSource" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Name">
-          <b>Objeto</b>de opcional. O caminho e o nome de arquivo da nova fonte de dados.</param>
-        <param name="PasswordDocument">
-          <b>Objeto</b>de opcional. A senha necessária para abrir a nova fonte de dados.</param>
-        <param name="WritePasswordDocument">
-          <b>Objeto</b>de opcional. A senha necessária para salvar alterações na fonte de dados.</param>
-        <param name="HeaderRecord">
-          <b>Objeto</b>de opcional. Os nomes de campos do registro de cabeçalho. Se esse argumento for omitido, o registro de cabeçalho padrão será usado: "Cargo, Nome, Sobrenome, Posição, Empresa, Endereço1, Endereço2, Cidade, Estado, CEP, País, FoneResidencial, FoneComercial". Para separar os nomes de campos, use o separador de lista especificado em Configurações regionais no Painel de controle.</param>
-        <param name="MSQuery">
-          <b>Objeto</b>de opcional. <b>True</b> para iniciar o Microsoft Query, se ele estiver instalado. O <paramref name="Name" />, <paramref name="PasswordDocument" />, e <paramref name="HeaderRecord" /> argumentos são ignorados.</param>
-        <param name="SQLStatement">
-          <b>Objeto</b>de opcional. Define opções de consulta para recuperação de dados.</param>
-        <param name="SQLStatement1">
-          <b>Objeto</b>de opcional. Se a cadeia de caracteres de consulta for maior que 255 caracteres, <paramref name="SQLStatement" /> especificará a primeira parte da cadeia de caracteres, e <paramref name="SQLStatement1" /> especificará a segunda parte.</param>
-        <param name="Connection">
-          <b>Objeto</b>de opcional. Um intervalo dentro do qual a consulta especificada por <paramref name="SQLStatement" /> será realizada. Como você pode especificar o intervalo depende de como os dados são recuperados. Para recuperar dados através de ODBC de exemplo: quando, você deve especificar uma cadeia de caracteres de conexão. Ao recuperar dados do Microsoft Excel usando intercâmbio dinâmico de dados (DDE), você pode especificar um intervalo nomeado. <b>Segurança</b>  Intercâmbio dinâmico de dados (DDE) é uma tecnologia mais antiga que não seja segura. Se possível, use uma alternativa mais segura para DDE. Ao recuperar dados do Microsoft Access, você especificar a palavra "Table" ou "Query" seguida pelo nome de uma tabela ou consulta.</param>
-        <param name="LinkToSource">
-          <b>Objeto</b>de opcional. <b>True</b> para executar a consulta especificada por <paramref name="Connection" /> e <paramref name="SQLStatement" /> toda vez que o documento principal é aberto.</param>
+        <param name="Name"><b>Objeto</b>opcional. O caminho e o nome de arquivo da nova fonte de dados.</param>
+        <param name="PasswordDocument"><b>Objeto</b>opcional. A senha necessária para abrir a nova fonte de dados.</param>
+        <param name="WritePasswordDocument"><b>Objeto</b>opcional. A senha necessária para salvar alterações na fonte de dados.</param>
+        <param name="HeaderRecord"><b>Objeto</b>opcional. Os nomes de campos do registro de cabeçalho. Se esse argumento for omitido, o registro de cabeçalho padrão será usado: "Cargo, Nome, Sobrenome, Posição, Empresa, Endereço1, Endereço2, Cidade, Estado, CEP, País, FoneResidencial, FoneComercial". Para separar os nomes de campos, use o separador de lista especificado em Configurações regionais no Painel de controle.</param>
+        <param name="MSQuery"><b>Objeto</b>opcional. <b>True</b> para iniciar o Microsoft Query, se ele estiver instalado. Os <paramref name="Name" />argumentos <paramref name="PasswordDocument" />, e <paramref name="HeaderRecord" /> são ignorados.</param>
+        <param name="SQLStatement"><b>Objeto</b>opcional. Define opções de consulta para recuperação de dados.</param>
+        <param name="SQLStatement1"><b>Objeto</b>opcional. Se a cadeia de caracteres de consulta for maior que <paramref name="SQLStatement" /> 255 caracteres, especifica a primeira parte da cadeia <paramref name="SQLStatement1" /> de caracteres e especifica a segunda parte.</param>
+        <param name="Connection"><b>Objeto</b>opcional. Um intervalo dentro do qual a consulta especificada <paramref name="SQLStatement" /> por será executado. A maneira como você especifica o intervalo depende de como os dados são recuperados. Por exemplo: ao recuperar dados através de ODBC, você especifica uma sequência de conexão. Ao recuperar dados do Microsoft Excel usando intercâmbio dinâmico de dados (DDE), você especifica um intervalo nomeado. <b>Segurança</b>  DDE (troca dinâmica de dados) é uma tecnologia mais antiga que não é segura. Se possível, use uma alternativa mais segura para o DDE. Ao recuperar dados do Microsoft Access, você especifica a palavra "Table" ou "Query" seguida pelo nome de uma tabela ou consulta.</param>
+        <param name="LinkToSource"><b>Objeto</b>opcional. <b>True</b> para executar a consulta especificada por <paramref name="Connection" /> e <paramref name="SQLStatement" /> cada vez que o documento principal é aberto.</param>
         <summary>Cria um documento do Microsoft Word que usa uma tabela para armazenar dados para mala direta.</summary>
-        <remarks>
-          <para>a nova fonte de dados é anexada ao documento especificado, que se torna um documento principal se ele já não for uma.</para>
-          <para>Evite usar senhas codificadas em seus aplicativos. Se uma senha for necessária em um procedimento, solicitar a senha do usuário, armazene em uma variável e, em seguida, use a variável no seu código.</para>
-          <para />
-        </remarks>
+        <remarks><para>A nova fonte de dados é anexada ao documento especificado, que se torna um documento principal, se ainda não houver um.</para>
+          <para>Evite usar senhas codificadas em seus aplicativos. Se uma senha for necessária em um procedimento, solicite a senha do usuário, armazene-a em uma variável e use a variável em seu código.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateHeaderSource">
@@ -167,21 +146,15 @@
         <Parameter Name="HeaderRecord" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Name">
-          <b>String</b> necessário. O caminho e o nome do arquivo da nova fonte de cabeçalho.</param>
-        <param name="PasswordDocument">
-          <b>Objeto</b>de opcional. A senha necessária para abrir a nova fonte de cabeçalho.</param>
-        <param name="WritePasswordDocument">
-          <b>Objeto</b>de opcional. A senha necessária para salvar alterações na nova fonte de cabeçalho.</param>
-        <param name="HeaderRecord">
-          <b>Objeto</b>de opcional. Uma sequência de texto que especifica os nomes dos campos para o registro de cabeçalho. Se esse argumento for omitido, o registro de cabeçalho padrão será usado: "Cargo, Nome, Sobrenome, Posição, Empresa, Endereço1, Endereço2, Cidade, Estado, CEP, País, FoneResidencial, FoneComercial". Para separar os nomes de campo no Windows, use o separador de lista especificado nas configurações regionais no painel de controle.</param>
-        <summary>Cria um documento do Microsoft Word que armazena um registro de cabeçalho é usado no lugar do registro de cabeçalho de fonte de dados em uma mala direta.</summary>
-        <remarks>
-          <para>Esse método anexa a nova fonte de cabeçalho ao documento especificado, que se torna um documento principal se ele já não for uma.</para>
-          <para>a nova fonte de cabeçalho usa uma tabela para organizar nomes de campo de mala direta.</para>
-          <para>Evite usar senhas codificadas em seus aplicativos. Se uma senha for necessária em um procedimento, solicitar a senha do usuário, armazene em uma variável e, em seguida, use a variável no seu código.</para>
-          <para />
-        </remarks>
+        <param name="Name"><b>String</b> necessário. O caminho e o nome do arquivo da nova fonte de cabeçalho.</param>
+        <param name="PasswordDocument"><b>Objeto</b>opcional. A senha necessária para abrir a nova fonte de cabeçalho.</param>
+        <param name="WritePasswordDocument"><b>Objeto</b>opcional. A senha necessária para salvar alterações na nova fonte de cabeçalho.</param>
+        <param name="HeaderRecord"><b>Objeto</b>opcional. Uma sequência de texto que especifica os nomes dos campos para o registro de cabeçalho. Se esse argumento for omitido, o registro de cabeçalho padrão será usado: "Cargo, Nome, Sobrenome, Posição, Empresa, Endereço1, Endereço2, Cidade, Estado, CEP, País, FoneResidencial, FoneComercial". Para separar os nomes de campos no Windows, use o separador de lista especificado em configurações regionais no painel de controle.</param>
+        <summary>Cria um documento do Microsoft Word que armazena um registro de cabeçalho usado no lugar do registro de cabeçalho da fonte de dados em uma mala direta.</summary>
+        <remarks><para>Este método anexa a nova fonte de cabeçalho ao documento especificado, que se torna um documento principal, se ainda não houver um.</para>
+          <para>A nova fonte de cabeçalho usa uma tabela para organizar nomes de campo de mala direta.</para>
+          <para>Evite usar senhas codificadas em seus aplicativos. Se uma senha for necessária em um procedimento, solicite a senha do usuário, armazene-a em uma variável e use a variável em seu código.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -209,9 +182,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto especificado foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
-          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Se o objeto especificado foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". [!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
+          <para>A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DataSource">
@@ -270,8 +243,7 @@
       <Docs>
         <summary>Retorna ou define o destino dos resultados da mala direta.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>A propriedade <b>Destination</b> pode ser um dos seguintes <see cref="T:Microsoft.Office.Interop.Word.WdMailMergeDestination" /> constantes: </para>
+        <remarks><para>A propriedade <b>Destination</b> pode ser uma das seguintes <see cref="T:Microsoft.Office.Interop.Word.WdMailMergeDestination" /> constantes: </para>
           <para>
             <b>wdSendToFax</b>
           </para>
@@ -284,8 +256,7 @@
           <para>
             <b>wdSendToNewDocument</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EditDataSource">
@@ -310,13 +281,11 @@
       <Parameters />
       <Docs>
         <summary>Abre ou alterna para a fonte de dados de mala direta.</summary>
-        <remarks>
-          <para>Se a fonte de dados for um documento do Microsoft Word, esse método abre a fonte de dados (ou ativa a fonte de dados se ele já estiver aberto).</para>
-          <para>Se o Word está acessando os dados por meio do intercâmbio dinâmico de dados (DDE) — usando um aplicativo como o Microsoft Excel ou o Microsoft Access — esse método exibe a fonte de dados nesse aplicativo.</para>
-          <para>Dynamic data exchange (DDE) é uma tecnologia mais antiga que não seja segura. Se possível, use uma alternativa mais segura para DDE.</para>
-          <para>Se o Word está acessando os dados por meio da conectividade aberta de banco de dados (ODBC), esse método exibe os dados em um documento do Word. Observe que se o Microsoft Query estiver instalado, uma mensagem aparece, fornecendo a opção para exibir o Microsoft Query em vez de conversão de dados.</para>
-          <para />
-        </remarks>
+        <remarks><para>Se a fonte de dados for um documento do Microsoft Word, esse método abrirá a fonte de dados (ou ativará a fonte de dados se ela já estiver aberta).</para>
+          <para>Se o Word estiver acessando os dados através de troca dinâmica de dados (DDE), usando um aplicativo como o Microsoft Excel ou o Microsoft Access, este método exibirá a fonte de dados nesse aplicativo.</para>
+          <para>Dynamic data exchange (DDE) é uma tecnologia mais antiga que não é segura. Se possível, use uma alternativa mais segura para o DDE.</para>
+          <para>Se o Word estiver acessando os dados através de open database connectivity (ODBC), esse método exibirá os dados em um documento do Word. Observe que, se o Microsoft Query estiver instalado, uma mensagem será exibida, fornecendo a opção para exibir o Microsoft Query em vez de converter os dados.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EditHeaderSource">
@@ -340,11 +309,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Abre a fonte de cabeçalho anexada a um documento principal de mala direta ou ativa a fonte de cabeçalho se ele já estiver aberto.</summary>
-        <remarks>
-          <para>Se o documento principal de mala direta não tiver uma fonte de cabeçalho, esse método causará um erro.</para>
-          <para />
-        </remarks>
+        <summary>Abre a fonte de cabeçalho anexada a um documento principal de mala direta ou ativa a fonte de cabeçalho se ela já estiver aberta.</summary>
+        <remarks><para>Se o documento principal de mala direta não tiver uma fonte de cabeçalho, esse método causará um erro.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EditMainDocument">
@@ -369,10 +336,8 @@
       <Parameters />
       <Docs>
         <summary>Ativa o documento principal de mala direta associado ao documento de fonte de dados ou de cabeçalho especificado.</summary>
-        <remarks>
-          <para>Se o documento principal não estiver aberto, ocorrerá um erro. Use o <see cref="M:Microsoft.Office.Interop.Word.Documents.Open(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> método se o documento principal não estiver aberto no momento.</para>
-          <para />
-        </remarks>
+        <remarks><para>Se o documento principal não estiver aberto, ocorrerá um erro. Use o <see cref="M:Microsoft.Office.Interop.Word.Documents.Open(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> método se o documento principal não estiver aberto no momento.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -397,8 +362,7 @@
         <Parameter Name="Pause" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Pause">
-          <b>Objeto</b>de opcional. <b>True</b> para o Microsoft Word pausar e exibir uma caixa de diálogo de solução de problemas, se for encontrado um erro de mala direta; <b>False</b> para relatar erros em um novo documento.</param>
+        <param name="Pause"><b>Objeto</b>opcional. <b>True</b> para o Microsoft Word para pausar e exibir uma caixa de diálogo de solução de problemas se um erro de mala direta for encontrado; <b>False</b> para relatar erros em um novo documento.</param>
         <summary>Realiza a operação de mala direta especificada.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -426,7 +390,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.MailMergeFields</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.MailMergeFields" /> coleção que representa todas as mala direta relacionados a campos no documento especificado.</summary>
+        <summary>Retorna uma <see cref="T:Microsoft.Office.Interop.Word.MailMergeFields" /> coleção que representa todos os campos relacionados à mala direta no documento especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -457,12 +421,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Determina se os campos de mala direta em um documento são realçados.</summary>
+        <summary>Determina se os campos de mesclagem em um documento estão realçados.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Essa propriedade retorna <b>True</b> se os campos de mala direta são destacados e <b>False</b> se não. Defina o valor da propriedade como <b>True</b> ou <b>False</b> para habilitar ou desabilitar a funcionalidade.</para>
-          <para />
-        </remarks>
+        <remarks><para>Essa propriedade retornará <b>true</b> se os campos de mesclagem estiverem realçados e <b>false</b> se não. Defina o valor da propriedade como <b>true</b> ou <b>false</b> para habilitar ou desabilitar a funcionalidade.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MailAddressFieldName">
@@ -522,12 +484,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Determina se os documentos mesclados são enviados como anexos quando o destino da mala direta é uma mensagem de email ou um fax.</summary>
+        <summary>Determina se os documentos de mala direta são enviados como anexos quando o destino da mala direta é uma mensagem de email ou um fax.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Esta propriedade retorna <b>True</b> se os documentos mesclados são enviados como anexos quando o destino da mala direta é uma mensagem de email ou um fax e <b>False</b> se não. Defina o valor da propriedade como <b>True</b> ou <b>False</b> para habilitar ou desabilitar a funcionalidade.</para>
-          <para />
-        </remarks>
+        <remarks><para>Essa propriedade retorna <b>true</b> se os documentos mesclados são enviados como anexos quando o destino da mala direta é uma mensagem de email ou um fax e <b>false</b> se não. Defina o valor da propriedade como <b>true</b> ou <b>false</b> para habilitar ou desabilitar a funcionalidade.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MailFormat">
@@ -556,18 +516,16 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdMailMergeMailFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.WdMailMergeMailFormat" /> constante que representa o formato a ser usado quando o destino da mala direta é uma mensagem de email.</summary>
+        <summary>Retorna uma <see cref="T:Microsoft.Office.Interop.Word.WdMailMergeMailFormat" /> constante que representa o formato a ser usado quando o destino da mala direta é uma mensagem de email.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
+        <remarks><para>
             <b>WdMailMergeMailFormat</b> pode ser uma das seguintes constantes <b>WdMailMergeMailFormat</b> :</para>
-          <para>usando o formato HTML dos documentos de email de mala direta
-            <b>wdMailFormatHTML</b> envia.</para>
-          <para>documentos de email 
-            <b>wdMailFormatPlainText</b> envia mala direta usando texto sem formatação.</para>
-          <para>a propriedade <b>MailFormat</b> é ignorada se a <see cref="P:Microsoft.Office.Interop.Word.MailMerge.MailAsAttachment" /> propriedade estiver definida como <b>True</b>.</para>
-          <para />
-        </remarks>
+          <para>
+            <b>wdMailFormatHTML</b> Envia documentos de email de mala direta usando o formato HTML.</para>
+          <para>
+            <b>wdMailFormatPlainText</b> Envia documentos de email de mala direta usando texto sem formatação.</para>
+          <para>A propriedade <b>MailFormat</b> será ignorada se <see cref="P:Microsoft.Office.Interop.Word.MailMerge.MailAsAttachment" /> a propriedade for definida como <b>true</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MailSubject">
@@ -629,8 +587,7 @@
       <Docs>
         <summary>Retorna ou define o tipo de documento principal de mala direta.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>A propriedade <b>MainDocumentType</b> pode ser uma das seguintes opções <see cref="T:Microsoft.Office.Interop.Word.WdMailMergeMainDocType" /> constantes:</para>
+        <remarks><para>A propriedade <b>MainDocumentType</b> pode ser uma das seguintes <see cref="T:Microsoft.Office.Interop.Word.WdMailMergeMainDocType" /> constantes:</para>
           <para>
             <b>wdCatalog</b>
           </para>
@@ -655,9 +612,8 @@
           <para>
             <b>wdNotAMergeDocument</b>
           </para>
-          <para>Se você definir essa propriedade para um documento que já é um documento principal, a fonte de dados anexada é removida.</para>
-          <para />
-        </remarks>
+          <para>Se você definir essa propriedade para um documento que já é um documento principal, a fonte de dados anexada será removida.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OpenDataSource">
@@ -697,63 +653,50 @@
         <Parameter Name="SubType" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Name">
-          <b>String</b> necessário. O nome de arquivo da fonte de dados. Você pode especificar um arquivo do Microsoft Query (. qry) em vez de especificar uma fonte de dados, uma cadeia de caracteres de conexão e uma cadeia de caracteres de consulta.</param>
-        <param name="Format">
-          <b>Objeto</b>de opcional. O conversor de arquivo usado para abrir o documento. Pode ser uma do <see cref="T:Microsoft.Office.Interop.Word.WdOpenFormat" /> constantes. Para especificar um formato de arquivo externo, use o <see cref="P:Microsoft.Office.Interop.Word.FileConverter.OpenFormat" /> propriedade com a <see cref="T:Microsoft.Office.Interop.Word.FileConverter" /> objeto para determinar o valor a ser usado com esse argumento. <b>WdOpenFormat</b> pode ser uma das seguintes constantes:<b>wdOpenFormatAllWord</b><b>wdOpenFormatAuto padrão.</b><b>wdOpenFormatDocument</b><b>wdOpenFormatEncodedText</b><b>wdOpenFormatRTF</b><b>wdOpenFormatTemplate</b><b>wdOpenFormatText</b><b>wdOpenFormatUnicodeText</b><b>wdOpenFormatWebPages</b><b>wdOpenFormatXML</b></param>
-        <param name="ConfirmConversions">
-          <b>Objeto</b>de opcional. <b>True</b> para exibir a caixa de diálogo Converter arquivo se o arquivo não estiver no formato do Microsoft Word.</param>
-        <param name="ReadOnly">
-          <b>Objeto</b>de opcional. <b>True</b> para abrir a fonte de dados como somente leitura.</param>
-        <param name="LinkToSource">
-          <b>Objeto</b>de opcional. <b>True</b> para executar a consulta especificada por <paramref name="Connection" /> e <paramref name="SQLStatement" /> toda vez que o documento principal é aberto.</param>
-        <param name="AddToRecentFiles">
-          <b>Objeto</b>de opcional. <b>True</b> para adicionar o nome de arquivo à lista de arquivos usados recentemente na parte inferior do menu arquivo.</param>
-        <param name="PasswordDocument">
-          <b>Objeto</b>de opcional. A senha usada para abrir a fonte de dados. (Consulte os Comentários abaixo.)</param>
-        <param name="PasswordTemplate">
-          <b>Objeto</b>de opcional. A senha usada para abrir o modelo. (Consulte os Comentários abaixo.)</param>
-        <param name="Revert">
-          <b>Objeto</b>de opcional. Controla o que acontece se <paramref name="Name" /> é o nome de arquivo de um documento aberto. <b>True</b> para descartar as alterações não salvas no documento aberto e reabra o arquivo; <b>False</b> para ativar o documento aberto.</param>
-        <param name="WritePasswordDocument">
-          <b>Objeto</b>de opcional. A senha usada para salvar alterações no documento. (Consulte os Comentários abaixo.)</param>
+        <param name="Name"><b>String</b> necessário. O nome de arquivo da fonte de dados. Você pode especificar um arquivo Microsoft Query (.qry) em vez de especificar uma fonte de dados, uma sequência de conexão e uma sequência de consulta.</param>
+        <param name="Format"><b>Objeto</b>opcional. O conversor de arquivo usado para abrir o documento. Pode ser uma das <see cref="T:Microsoft.Office.Interop.Word.WdOpenFormat" /> constantes. Para especificar um formato de arquivo externo, use <see cref="P:Microsoft.Office.Interop.Word.FileConverter.OpenFormat" /> a propriedade com <see cref="T:Microsoft.Office.Interop.Word.FileConverter" /> o objeto para determinar o valor a ser usado com esse argumento. <b>WdOpenFormat</b> pode ser uma das seguintes constantes:<b>wdOpenFormatAllWord</b><b>wdOpenFormatAuto default.</b> <b>wdOpenFormatDocument</b> <b>wdOpenFormatEncodedText</b> <b>wdOpenFormatRTF</b> <b>wdOpenFormatTemplate</b> <b>wdOpenFormatText</b> <b>wdOpenFormatUnicodeText</b> <b>wdOpenFormatWebPages</b> <b>wdOpenFormatXML</b></param>
+        <param name="ConfirmConversions"><b>Objeto</b>opcional. <b>True</b> para exibir a caixa de diálogo Converter arquivo se o arquivo não estiver no formato do Microsoft Word.</param>
+        <param name="ReadOnly"><b>Objeto</b>opcional. <b>True</b> para abrir a fonte de dados como somente leitura.</param>
+        <param name="LinkToSource"><b>Objeto</b>opcional. <b>True</b> para executar a consulta especificada por <paramref name="Connection" /> e <paramref name="SQLStatement" /> cada vez que o documento principal é aberto.</param>
+        <param name="AddToRecentFiles"><b>Objeto</b>opcional. <b>True</b> para adicionar o nome de arquivo à lista de arquivos usados recentemente na parte inferior do menu arquivo.</param>
+        <param name="PasswordDocument"><b>Objeto</b>opcional. A senha usada para abrir a fonte de dados. (Consulte os Comentários abaixo.)</param>
+        <param name="PasswordTemplate"><b>Objeto</b>opcional. A senha usada para abrir o modelo. (Consulte os Comentários abaixo.)</param>
+        <param name="Revert"><b>Objeto</b>opcional. Controla o que acontece <paramref name="Name" /> se for o nome de arquivo de um documento aberto. <b>True</b> para descartar as alterações não salvas no documento aberto e reabra o arquivo; <b>False</b> para ativar o documento aberto.</param>
+        <param name="WritePasswordDocument"><b>Objeto</b>opcional. A senha usada para salvar alterações no documento. (Consulte os Comentários abaixo.)</param>
         <param name="WritePasswordTemplate">Objeto opcional. A senha usada para salvar alterações no modelo. (Consulte os Comentários abaixo.)</param>
-        <param name="Connection">
-          <b>Objeto</b>de opcional. Um intervalo dentro do qual a consulta especificada por <paramref name="SQLStatement" /> deve ser realizada. (Consulte comentários abaixo.) Como você pode especificar o intervalo depende de como os dados são recuperados. Para recuperar dados através de Open Database Connectivity (ODBC) de exemplo: quando, você deve especificar uma cadeia de caracteres de conexão. Ao recuperar dados do Microsoft Excel usando intercâmbio dinâmico de dados (DDE), você pode especificar um intervalo nomeado. Intercâmbio dinâmico de dados (DDE) é uma tecnologia mais antiga que não seja segura. Se possível, use uma alternativa mais segura para DDE. Ao recuperar dados do Microsoft Access, você especificar a palavra "Table" ou "Query" seguida pelo nome de uma tabela ou consulta.</param>
-        <param name="SQLStatement">
-          <b>Objeto</b>de opcional. Define opções de consulta para recuperação de dados. (Consulte os Comentários abaixo.)</param>
-        <param name="SQLStatement1">
-          <b>Objeto</b>de opcional. Se a cadeia de caracteres de consulta for maior que 255 caracteres, <paramref name="SQLStatement" /> especificará a primeira parte da cadeia de caracteres, e <paramref name="SQLStatement1" /> especificará a segunda parte. (Consulte os Comentários abaixo.)</param>
-        <param name="OpenExclusive">
-          <b>Objeto</b>de opcional. <b>True</b> para abrir exclusivamente.</param>
-        <param name="SubType">
-          <b>Objeto</b>de opcional. Pode ser uma das seguintes opções <see cref="T:Microsoft.Office.Interop.Word.WdMergeSubType" /> constantes: wdMergeSubTypeAccess 1wdMergeSubTypeOAL 2wdMergeSubTypeOLEDBText 5wdMergeSubTypeOLEDBWord 3wdMergeSubTypeOther 0wdMergeSubTypeOutlook 6wdMergeSubTypeWord 7wdMergeSubTypeWord2000 8wdMergeSubTypeWorks 4</param>
-        <summary>Anexa uma fonte de dados ao documento especificado, que se torna um documento principal se ele ainda não for um.</summary>
-        <remarks>
-          <para>Para determinar as cadeias de caracteres de consulta e conexão ODBC, defina opções de consulta manualmente e usar o <see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.QueryString" /> propriedade para retornar a cadeia de caracteres de conexão. A tabela a seguir inclui algumas palavras-chave comumente usadas do SQL.</para>
+        <param name="Connection"><b>Objeto</b>opcional. Um intervalo dentro do qual a consulta especificada <paramref name="SQLStatement" /> por deve ser executada. (Confira os comentários abaixo.) O modo como você especifica o intervalo depende de como os dados são recuperados. Por exemplo: ao recuperar dados através de ODBC (Open Database Connectivity), você especifica uma sequência de conexão. Ao recuperar dados do Microsoft Excel usando intercâmbio dinâmico de dados (DDE), você especifica um intervalo nomeado. DDE (troca dinâmica de dados) é uma tecnologia mais antiga que não é segura. Se possível, use uma alternativa mais segura para o DDE. Ao recuperar dados do Microsoft Access, você especifica a palavra "Table" ou "Query" seguida pelo nome de uma tabela ou consulta.</param>
+        <param name="SQLStatement"><b>Objeto</b>opcional. Define opções de consulta para recuperação de dados. (Consulte os Comentários abaixo.)</param>
+        <param name="SQLStatement1"><b>Objeto</b>opcional. Se a cadeia de caracteres de consulta for maior que <paramref name="SQLStatement" /> 255 caracteres, especifica a primeira parte da cadeia <paramref name="SQLStatement1" /> de caracteres e especifica a segunda parte. (Consulte os Comentários abaixo.)</param>
+        <param name="OpenExclusive"><b>Objeto</b>opcional. <b>True</b> para abrir exclusivamente.</param>
+        <param name="SubType"><b>Objeto</b>opcional. Pode ser uma das seguintes <see cref="T:Microsoft.Office.Interop.Word.WdMergeSubType" /> constantes: WdMergeSubTypeAccess 1WdMergeSubTypeOAL 2WdMergeSubTypeOLEDBText 5WdMergeSubTypeOLEDBWord 3WdMergeSubTypeOther 0WdMergeSubTypeOutlook 6wdMergeSubTypeWord 7wdMergeSubTypeWord2000 8wdMergeSubTypeWorks 4</param>
+        <summary>Anexa uma fonte de dados ao documento especificado, que se torna um documento principal, se ainda não houver um.</summary>
+        <remarks><para>Para determinar as cadeias de caracteres de consulta e conexão ODBC, defina as opções de <see cref="P:Microsoft.Office.Interop.Word.MailMergeDataSource.QueryString" /> consulta manualmente e use a propriedade para retornar a sequência de conexão. A tabela seguinte inclui algumas palavras-chave SQL frequentemente usadas.</para>
           <list type="table">
             <item>
               <description>DSN</description>
-              <description>o nome da fonte de dados ODBC</description>
+              <description>O nome da fonte de dados ODBC</description>
             </item>
             <item>
               <description>UID</description>
-              <description>a ID de logon do usuário</description>
+              <description>A identificação de logon do usuário</description>
             </item>
             <item>
               <description>PWD</description>
-              <description>a senha especificada pelo usuário</description>
+              <description>A senha especificada pelo usuário</description>
             </item>
             <item>
               <description>DBQ</description>
-              <description>o nome do arquivo de banco de dados</description>
+              <description>O nome de arquivo do banco de dados</description>
             </item>
             <item>
-              <description>Arquivo</description>
+              <description>FIL</description>
               <description>O tipo de arquivo</description>
             </item>
-          </list> Evite usar a conta de logon de administrador (sa) do sistema interno de 
-          <para>. Em vez disso, tornar o sistema administradores membros da função de servidor fixa sysadmin e usem suas próprias contas para fazer logon. Use sa apenas quando não há nenhuma outra maneira de fazer logon. Para impedir o acesso não autorizado através da conta de logon do sa, você deve atribuir essa conta uma senha forte exclusiva.</para><para>Quando possível, use a autenticação do Windows (também conhecido como uma conexão confiável), que usa uma conta de usuário do Windows para se conectar ao SQL Server. Quando um usuário se conecta por meio de uma conta de usuário do Windows, o SQL Server usa informações no sistema operacional Windows para validar o nome de conta e senha. Antes de poder usar a autenticação do Windows, um administrador de servidor deve configurar o SQL Server para usar esse modo de autenticação. Se a autenticação do Windows não estiver disponível, evite salvar informações de logon dos usuários. É mais seguro para os usuários insiram as respectivas informações de logon de cada vez que fizerem logon.</para><para>Evite usar senhas codificadas em seus aplicativos. Se uma senha for necessária em um procedimento, solicitar a senha do usuário, armazene em uma variável e, em seguida, use a variável no seu código.</para><para /></remarks>
+          </list>
+          <para>Evite usar a conta de logon do administrador de sistema (SA) interna. Em vez disso, crie membros dos administradores do sistema da função de servidor fixo sysadmin e então faça-os usar suas próprias contas para fazer logon. Use o sa somente quando não houver outra forma de fazer logon. Para impedir o acesso não autorizado por meio da conta de logon sa, atribua a essa conta uma senha forte e exclusiva.</para>
+          <para>Quando for possível, use a Autenticação do Windows (também conhecida como conexão confiável), que usa uma conta de usuário do Windows para se conectar ao SQL Server. Quando um usuário se conecta por meio de uma conta de usuário do Windows, o SQL Server usa informações do sistema operacional Windows para validar o nome e a senha da conta. Antes de poder usar a Autenticação do Windows, um administrador de servidor deverá configurar o SQL Server para usar esse modo de autenticação. Se a Autenticação do Windows não estiver disponível, evite salvar as informações de logon dos usuários. Será mais seguro para os usuários inserir as informações de logon deles sempre que fizerem logon.</para>
+          <para>Evite usar senhas codificadas em seus aplicativos. Se uma senha for necessária em um procedimento, solicite a senha do usuário, armazene-a em uma variável e use a variável em seu código.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OpenDataSource2000">
@@ -844,34 +787,21 @@
         <Parameter Name="OpenExclusive" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Name">
-          <b>String</b> necessário. O nome de arquivo da fonte de cabeçalho.</param>
-        <param name="Format">
-          <b>Objeto</b>de opcional. O conversor de arquivo usado para abrir o documento. Pode ser uma do <see cref="T:Microsoft.Office.Interop.Word.WdOpenFormat" /> constantes. Para especificar um formato de arquivo externo, use o <see cref="P:Microsoft.Office.Interop.Word.FileConverter.OpenFormat" /> propriedade com um <see cref="T:Microsoft.Office.Interop.Word.FileConverter" /> objeto para determinar o valor a ser usado com esse argumento. <b>WdOpenFormat</b> pode ser uma das seguintes constantes:<b>wdOpenFormatAllWord</b><b>wdOpenFormatAuto padrão.</b><b>wdOpenFormatDocument</b><b>wdOpenFormatEncodedText</b><b>wdOpenFormatRTF</b><b>wdOpenFormatTemplate</b><b>wdOpenFormatText</b><b>wdOpenFormatUnicodeText</b><b>wdOpenFormatWebPages</b><b>wdOpenFormatXML</b></param>
-        <param name="ConfirmConversions">
-          <b>Objeto</b>de opcional. <b>True</b> para exibir a caixa de diálogo Converter arquivo se o arquivo não estiver no formato do Microsoft Word.</param>
-        <param name="ReadOnly">
-          <b>Objeto</b>de opcional. <b>True</b> para abrir a fonte de cabeçalho como somente leitura.</param>
-        <param name="AddToRecentFiles">
-          <b>Objeto</b>de opcional. <b>True</b> para adicionar o nome de arquivo à lista de arquivos usados recentemente na parte inferior do menu arquivo.</param>
-        <param name="PasswordDocument">
-          <b>Objeto</b>de opcional. A senha necessária para abrir o documento de fonte de cabeçalho. (Consulte os Comentários abaixo.)</param>
-        <param name="PasswordTemplate">
-          <b>Objeto</b>de opcional. A senha necessária para abrir o modelo de fonte de cabeçalho. (Consulte os Comentários abaixo.)</param>
-        <param name="Revert">
-          <b>Objeto</b>de opcional. Controla o que acontece se <paramref name="Name" /> é o nome de arquivo de um documento aberto. <b>True</b> para descartar as alterações não salvas no documento aberto e reabra o arquivo; <b>False</b> para ativar o documento aberto.</param>
-        <param name="WritePasswordDocument">
-          <b>Objeto</b>de opcional. A senha necessária para salvar alterações na fonte de dados do documento. (Consulte os Comentários abaixo.)</param>
-        <param name="WritePasswordTemplate">
-          <b>Objeto</b>de opcional. A senha necessária para salvar alterações na fonte de dados do modelo. (Consulte os Comentários abaixo.)</param>
-        <param name="OpenExclusive">
-          <b>Objeto</b>de opcional. True para abrir exclusivamente.</param>
+        <param name="Name"><b>String</b> necessário. O nome de arquivo da fonte de cabeçalho.</param>
+        <param name="Format"><b>Objeto</b>opcional. O conversor de arquivo usado para abrir o documento. Pode ser uma das <see cref="T:Microsoft.Office.Interop.Word.WdOpenFormat" /> constantes. Para especificar um formato de arquivo externo, use <see cref="P:Microsoft.Office.Interop.Word.FileConverter.OpenFormat" /> a propriedade com <see cref="T:Microsoft.Office.Interop.Word.FileConverter" /> um objeto para determinar o valor a ser usado com esse argumento. <b>WdOpenFormat</b> pode ser uma das seguintes constantes:<b>wdOpenFormatAllWord</b><b>wdOpenFormatAuto default.</b> <b>wdOpenFormatDocument</b> <b>wdOpenFormatEncodedText</b> <b>wdOpenFormatRTF</b> <b>wdOpenFormatTemplate</b> <b>wdOpenFormatText</b> <b>wdOpenFormatUnicodeText</b> <b>wdOpenFormatWebPages</b> <b>wdOpenFormatXML</b></param>
+        <param name="ConfirmConversions"><b>Objeto</b>opcional. <b>True</b> para exibir a caixa de diálogo Converter arquivo se o arquivo não estiver no formato do Microsoft Word.</param>
+        <param name="ReadOnly"><b>Objeto</b>opcional. <b>True</b> para abrir a fonte de cabeçalho como somente leitura.</param>
+        <param name="AddToRecentFiles"><b>Objeto</b>opcional. <b>True</b> para adicionar o nome de arquivo à lista de arquivos usados recentemente na parte inferior do menu arquivo.</param>
+        <param name="PasswordDocument"><b>Objeto</b>opcional. A senha necessária para abrir o documento de fonte de cabeçalho. (Consulte os Comentários abaixo.)</param>
+        <param name="PasswordTemplate"><b>Objeto</b>opcional. A senha necessária para abrir o modelo de fonte de cabeçalho. (Consulte os Comentários abaixo.)</param>
+        <param name="Revert"><b>Objeto</b>opcional. Controla o que acontece <paramref name="Name" /> se for o nome de arquivo de um documento aberto. <b>True</b> para descartar as alterações não salvas no documento aberto e reabra o arquivo; <b>False</b> para ativar o documento aberto.</param>
+        <param name="WritePasswordDocument"><b>Objeto</b>opcional. A senha necessária para salvar alterações na fonte de dados do documento. (Consulte os Comentários abaixo.)</param>
+        <param name="WritePasswordTemplate"><b>Objeto</b>opcional. A senha necessária para salvar alterações na fonte de dados do modelo. (Consulte os Comentários abaixo.)</param>
+        <param name="OpenExclusive"><b>Objeto</b>opcional. True para abrir exclusivamente.</param>
         <summary>Anexa uma fonte de cabeçalho de mala direta ao documento especificado.</summary>
-        <remarks>
-          <para>Quando uma fonte de cabeçalho está anexada, o primeiro registro na fonte de cabeçalho é usado no lugar do registro de cabeçalho da fonte de dados.</para>
-          <para>Evite usar senhas codificadas em seus aplicativos. Se uma senha for necessária em um procedimento, solicitar a senha do usuário, armazene em uma variável e, em seguida, use a variável no seu código.</para>
-          <para />
-        </remarks>
+        <remarks><para>Quando uma fonte de cabeçalho está anexada, o primeiro registro da fonte de cabeçalho é usado no lugar do registro de cabeçalho da fonte de dados.</para>
+          <para>Evite usar senhas codificadas em seus aplicativos. Se uma senha for necessária em um procedimento, solicite a senha do usuário, armazene-a em uma variável e use a variável em seu código.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OpenHeaderSource2000">
@@ -978,10 +908,8 @@
       <Docs>
         <summary>Retorna ou define uma <b>cadeia de caracteres</b> que corresponde à legenda em um botão personalizado na concluir a etapa de mala direta (etapa seis) do Assistente de mala direta.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Quando um usuário clica no botão personalizado, ocorre o evento <b>MailMergeWizardSendToCustom é</b> .</para>
-          <para />
-        </remarks>
+        <remarks><para>Quando um usuário clica no botão personalizado, o evento <b>MailMergeWizardSendToCustom</b> ocorre.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowWizard">
@@ -1012,20 +940,13 @@
         <Parameter Name="ShowMergeStep" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="InitialState">
-          <b>Objeto</b>necessário. O número da etapa do Assistente de mala direta a exibir.</param>
-        <param name="ShowDocumentStep">
-          <b>Objeto</b>de opcional. <b>True</b> mantém a etapa "Selecione o tipo de documento" da sequência de etapas de mala direta. <b>False</b> remove a etapa um.</param>
-        <param name="ShowTemplateStep">
-          <b>Objeto</b>de opcional. <b>True</b> mantém a etapa "Selecione o documento inicial" da sequência de etapas de mala direta; <b>False</b> remove a segunda etapa.</param>
-        <param name="ShowDataStep">
-          <b>Objeto</b>de opcional. <b>True</b> mantém a etapa "Selecione os destinatários" da sequência de etapas de mala direta; <b>False</b> remove a etapa três.</param>
-        <param name="ShowWriteStep">
-          <b>Objeto</b>de opcional. <b>True</b> mantém a etapa "Escreva a carta" da sequência de etapas de mala direta; <b>False</b> remove a etapa quatro.</param>
-        <param name="ShowPreviewStep">
-          <b>Objeto</b>de opcional. <b>True</b> mantém a etapa "Visualize as cartas" da sequência de etapas de mala direta; <b>False</b> remove a etapa cinco.</param>
-        <param name="ShowMergeStep">
-          <b>Objeto</b>de opcional. <b>True</b> mantém a etapa "Conclua a mesclagem" da sequência de etapas de mala direta; <b>False</b> remove a etapa seis.</param>
+        <param name="InitialState"><b>Objeto</b>necessário. O número da etapa do Assistente de mala direta a exibir.</param>
+        <param name="ShowDocumentStep"><b>Objeto</b>opcional. <b>True</b> mantém a etapa "Selecione o tipo de documento" da sequência de etapas de mala direta. <b>False</b> remove a etapa um.</param>
+        <param name="ShowTemplateStep"><b>Objeto</b>opcional. <b>True</b> mantém a etapa "Selecionar documento inicial" na sequência de etapas de mala direta; <b>False</b> remove a etapa dois.</param>
+        <param name="ShowDataStep"><b>Objeto</b>opcional. <b>True</b> mantém a etapa "Selecionar destinatários" na sequência de etapas de mala direta; <b>False</b> remove a etapa três.</param>
+        <param name="ShowWriteStep"><b>Objeto</b>opcional. <b>True</b> mantém a etapa "escrever sua carta" na sequência de etapas de mala direta; <b>False</b> remove a etapa quatro.</param>
+        <param name="ShowPreviewStep"><b>Objeto</b>opcional. <b>True</b> mantém a etapa "Visualizar suas cartas" na sequência de etapas de mala direta; <b>False</b> remove a etapa cinco.</param>
+        <param name="ShowMergeStep"><b>Objeto</b>opcional. <b>True</b> mantém a etapa "conclua a mesclagem" na sequência de etapas de mala direta; <b>False</b> remove a etapa seis.</param>
         <summary>Exibe o Assistente de mala direta em um documento.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1055,8 +976,7 @@
       <Docs>
         <summary>Retorna o estado atual de uma operação de mala direta.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>A propriedade <b>State</b> pode ser uma das seguintes opções <see cref="T:Microsoft.Office.Interop.Word.WdMailMergeState" /> constantes:</para>
+        <remarks><para>A propriedade <b>State</b> pode ser uma das seguintes <see cref="T:Microsoft.Office.Interop.Word.WdMailMergeState" /> constantes:</para>
           <para>
             <b>wdDataSource</b>
           </para>
@@ -1073,10 +993,9 @@
             <b>wdMainDocumentOnly</b>
           </para>
           <para>
-            <b> wdNormalDocument</b>
+            <b>wdNormalDocument</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SuppressBlankLines">
@@ -1105,12 +1024,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Determina se as linhas em branco são suprimidas quando os campos de mala direta em um documento principal de mala direta estiverem vazios.</summary>
+        <summary>Determina se as linhas em branco são suprimidas quando os campos de mala direta em um documento principal de mala direta estão vazios.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Essa propriedade retorna <b>True</b> se linhas em branco são suprimidas e <b>False</b> se não. Defina o valor da propriedade como <b>True</b> ou <b>False</b> para habilitar ou desabilitar a funcionalidade.</para>
-          <para />
-        </remarks>
+        <remarks><para>Essa propriedade retorna <b>true</b> se linhas em branco são suprimidas e <b>false</b> se não. Defina o valor da propriedade como <b>true</b> ou <b>false</b> para habilitar ou desabilitar a funcionalidade.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="UseAddressBook">
@@ -1172,11 +1089,9 @@
       <Docs>
         <summary>Determina se os nomes de campo de mala direta são exibidos em um documento principal de mala direta.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Esta propriedade retorna <b>True</b> se os nomes de campo de mala direta são exibidos em um documento principal de mala direta e <b>False</b> se são exibidas informações do registro de dados atual.</para>
-          <para>Se o documento ativo não for um documento principal de mala direta, essa propriedade causará um erro. Para exibir os nomes de campo de mala direta ou seus resultados, defina o <see cref="P:Microsoft.Office.Interop.Word.View.ShowFieldCodes" /> propriedade como <b>False</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Essa propriedade retornará <b>true</b> se os nomes de campo de mesclagem forem exibidos em um documento principal de mala direta e <b>false</b> se as informações do registro de dados atual forem exibidas.</para>
+          <para>Se o documento ativo não for um documento principal de mala direta, essa propriedade causará um erro. Para exibir nomes de campos de mesclagem ou seus resultados <see cref="P:Microsoft.Office.Interop.Word.View.ShowFieldCodes" /> , defina a propriedade como <b>false</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="WizardState">
@@ -1205,12 +1120,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define um <b>inteiro</b> indicando a etapa do Assistente de mala direta atual para um documento.</summary>
+        <summary>Retorna ou define um <b>inteiro</b> que indica a etapa do assistente de mala direta atual para um documento.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>O método de <b>WizardState</b> retorna um número que equivale a etapa do Assistente de mala direta atual; uma zero (0) significa que o Assistente de mala direta está fechado.</para>
-          <para />
-        </remarks>
+        <remarks><para>O <b></b> método wizardstate retorna um número que equivale à etapa atual do assistente de mala direta; um zero (0) significa que o assistente de mala direta está fechado.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

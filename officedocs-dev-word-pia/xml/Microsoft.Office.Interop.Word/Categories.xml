@@ -1,13 +1,5 @@
 <Type Name="Categories" FullName="Microsoft.Office.Interop.Word.Categories">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="40bfdd55758f26399f3d8b0589b3673685e9d356" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20664209" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Categories" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="262df085f360d3a0744754fa774db2e3a5857658" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142338" /></Metadata><TypeSignature Language="C#" Value="public interface Categories" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Categories" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Categories" />
   <TypeSignature Language="VB.NET" Value="Public Interface Categories" />
@@ -27,12 +19,10 @@
   </Attributes>
   <Docs>
     <summary>Representa uma coleção de categorias de bloco de construção.</summary>
-    <remarks>
-      <para>Use o <see cref="M:Microsoft.Office.Interop.Word.Categories.Item(System.Object@)" /> método para acessar uma categoria exising. Você pode usar o <see cref="P:Microsoft.Office.Interop.Word.Category.BuildingBlocks" /> propriedade para acessar uma coleção de <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> objetos para a categoria. </para>
-      <para>Uso o <see cref="M:Microsoft.Office.Interop.Word.Categories.Item(System.Object@)" /> método para acessar uma categoria exising; para criar uma nova categoria, use o <see cref="M:Microsoft.Office.Interop.Word.BuildingBlockEntries.Add(System.String,Microsoft.Office.Interop.Word.WdBuildingBlockTypes,System.String,Microsoft.Office.Interop.Word.Range,System.Object@,Microsoft.Office.Interop.Word.WdDocPartInsertOptions)" /> método do <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" /> conjunto. Definir o valor de <paramref name="Category" /> parâmetro.</para>
-      <para>Para obter mais informações sobre os blocos de construção, consulte <a href="HV10120827">Trabalhando com blocos de construção</a></para>
-      <para />
-    </remarks>
+    <remarks><para>Use o <see cref="M:Microsoft.Office.Interop.Word.Categories.Item(System.Object@)" /> método para acessar uma categoria de exising. Você pode usar a <see cref="P:Microsoft.Office.Interop.Word.Category.BuildingBlocks" /> propriedade para acessar uma coleção de <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> objetos para a categoria. </para>
+      <para>Use o <see cref="M:Microsoft.Office.Interop.Word.Categories.Item(System.Object@)" /> método para acessar uma categoria de exising; para criar uma nova categoria, use o <see cref="M:Microsoft.Office.Interop.Word.BuildingBlockEntries.Add(System.String,Microsoft.Office.Interop.Word.WdBuildingBlockTypes,System.String,Microsoft.Office.Interop.Word.Range,System.Object@,Microsoft.Office.Interop.Word.WdDocPartInsertOptions)" /> método do <see cref="T:Microsoft.Office.Interop.Word.BuildingBlockEntries" /> conjunto. Defina o valor do <paramref name="Category" /> parâmetro.</para>
+      <para>Para obter mais informações sobre blocos de construção, consulte <a href="HV10120827">trabalhando com blocos de construção</a></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -58,10 +48,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word._Application" /> object que representa o aplicativo Microsoft Word.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word._Application" />
-        </value>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word._Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,10 +76,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o número de itens a <see cref="T:Microsoft.Office.Interop.Word.Categories" /> conjunto. Somente leitura.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>Retorna o número de itens na <see cref="T:Microsoft.Office.Interop.Word.Categories" /> coleção. Somente leitura.</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -119,15 +105,11 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado. Somente leitura.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Word, a propriedade <b>Creator</b> retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD."  Essa propriedade principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+        <value><b>Integer</b></value>
+        <remarks><para>Se o objeto foi criado no Microsoft Word, a propriedade <b>Creator</b> retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD".  Essa propriedade foi projetada inicialmente para ser usada no Macintosh, no qual cada aplicativo tem um código de criador com quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
           <para>
             <b>Observação</b>: esse valor também pode ser representado pela constante <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -155,9 +137,7 @@
       <Docs>
         <param name="Index">Especifica uma <b>cadeia de caracteres</b> ou um <b>inteiro</b> que representa o nome ou a posição ordinal do objeto na coleção.</param>
         <summary>Retorna o item especificado na coleção.</summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Word.Category" />
-        </returns>
+        <returns><see cref="T:Microsoft.Office.Interop.Word.Category" /></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -184,10 +164,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o objeto pai do especificado <see cref="T:Microsoft.Office.Interop.Word.Categories" /> conjunto.</summary>
-        <value>
-          <b>Object</b>
-        </value>
+        <summary>Retorna o objeto pai da coleção especificada <see cref="T:Microsoft.Office.Interop.Word.Categories" /> .</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

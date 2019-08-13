@@ -1,13 +1,5 @@
 <Type Name="Windows" FullName="Microsoft.Office.Interop.Word.Windows">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="aa5d387f914422cf8c79854703cd4dd7eb61e181" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20664695" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Windows : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="485e25bf5a3ae2e6749378af1596be5bee3a3b09" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142658" /></Metadata><TypeSignature Language="C#" Value="public interface Windows : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Windows implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Windows" />
   <TypeSignature Language="VB.NET" Value="Public Interface Windows&#xA;Implements IEnumerable" />
@@ -31,15 +23,13 @@
   </Attributes>
   <Docs>
     <summary>Uma coleção de <see cref="T:Microsoft.Office.Interop.Word.Window" /> objetos que representam todas as janelas disponíveis.</summary>
-    <remarks>
-      <para>Use a propriedade do <b>Windows</b> da <see cref="T:Microsoft.Office.Interop.Word.Application" /> ou <see cref="T:Microsoft.Office.Interop.Word.Document" /> objeto para retornar a coleção <b>Windows</b> . A coleção <b>Windows</b> para o objeto <b>Application</b> contém todas as janelas no aplicativo, enquanto a coleção <b>Windows</b> do objeto <b>Document</b> contém somente as janelas que exibem o documento especificado.</para>
-      <para>Uso o <see cref="M:Microsoft.Office.Interop.Word.Windows.Add(System.Object@)" /> método ou o <see cref="M:Microsoft.Office.Interop.Word.Window.NewWindow" /> método para adicionar uma nova janela à coleção Windows.</para>
-      <para>Usar o <b>Windows</b>(<paramref name="index" />), onde <paramref name="index" /> é o nome da janela ou o número de índice, para retornar um único objeto <b>Window</b> .</para>
-      <para>o número de índice é o número à esquerda do nome da janela no menu janela.</para>
-      <para>Dois-pontos (:) e um número aparecem na legenda da janela quando mais de uma janela está aberta para um documento.</para>
+    <remarks><para>Use a propriedade <b>Windows</b> do objeto <see cref="T:Microsoft.Office.Interop.Word.Application" /> or <see cref="T:Microsoft.Office.Interop.Word.Document" /> para retornar a coleção <b>Windows</b> . A coleção <b>Windows</b> para o objeto <b>Application</b> contém todas as janelas no aplicativo, enquanto a coleção <b>Windows</b> do objeto <b>Document</b> contém somente as janelas que exibem o documento especificado.</para>
+      <para>Use o <see cref="M:Microsoft.Office.Interop.Word.Windows.Add(System.Object@)" /> método ou o <see cref="M:Microsoft.Office.Interop.Word.Window.NewWindow" /> método para adicionar uma nova janela à coleção Windows.</para>
+      <para>Use <b></b>o Windows<paramref name="index" />(), <paramref name="index" /> em que é o nome da janela ou o número de índice, para retornar um único objeto <b>Window</b> .</para>
+      <para>O número de índice é o número à esquerda do nome da janela no menu janela.</para>
+      <para>Quando houver mais de uma janela aberta para um documento, serão exibidos dois-pontos (:) e um número na legenda da janela.</para>
       <para>Quando você alterna o modo de visualização de impressão, uma nova janela é criada. Essa janela é removida da coleção <b>Windows</b> quando você fecha a visualização de impressão.</para>
-      <para />
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -63,14 +53,11 @@
         <Parameter Name="Window" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Window">
-          <b>Objeto</b>de opcional. O objeto de <b>janela</b> que você deseja abrir outra janela. Se esse argumento for omitido, uma nova janela é aberta para o documento ativo.</param>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Window" /> object que representa uma nova janela de um documento.</summary>
+        <param name="Window"><b>Objeto</b>opcional. O objeto de <b>janela</b> que você deseja abrir outra janela. Se esse argumento for omitido, uma nova janela é aberta para o documento ativo.</param>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Window" /> objeto que representa uma nova janela de um documento.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Dois-pontos (:) e um número aparecem na legenda da janela quando mais de uma janela está aberta para o documento.</para>
-          <para />
-        </remarks>
+        <remarks><para>Dois-pontos (:) e um número aparecem na legenda da janela quando mais de uma janela está aberta para o mesmo documento.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -96,7 +83,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -123,8 +110,7 @@
         <Parameter Name="ArrangeStyle" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="ArrangeStyle">
-          <b>Objeto</b>de opcional. A organização das janelas. Pode ser um dos seguintes <see cref="T:Microsoft.Office.Interop.Word.WdArrangeStyle" /> constantes: <b>wdIcons</b> ou <b>wdTiled</b>.</param>
+        <param name="ArrangeStyle"><b>Objeto</b>opcional. A organização das janelas. Pode ser uma das seguintes <see cref="T:Microsoft.Office.Interop.Word.WdArrangeStyle" /> constantes: <b>wdIcons</b> ou <b>wdTiled</b>.</param>
         <summary>Organiza todas as janelas de documento abertas no espaço de trabalho do aplicativo. Como o Microsoft Word usa uma interface de documento único (SDI), esse método não é mais válido.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -178,14 +164,11 @@
         <Parameter Name="Document" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Document">
-          <b>Objeto</b>necessário. O documento a ser visualizado nas janelas lado a lado.</param>
+        <param name="Document"><b>Objeto</b>necessário. O documento a ser exibido nas janelas lado a lado.</param>
         <summary>Abre duas janelas no modo lado a lado.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Você não pode usar o método <b>CompareSideBySideWith</b> com o <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto ou o <see cref="P:Microsoft.Office.Interop.Word._Application.ActiveDocument" /> propriedade.</para>
-          <para />
-        </remarks>
+        <remarks><para>Você não pode usar o método <b>CompareSideBySideWith</b> com <see cref="T:Microsoft.Office.Interop.Word.Application" /> o objeto ou <see cref="P:Microsoft.Office.Interop.Word._Application.ActiveDocument" /> a propriedade.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -241,9 +224,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
-          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". [!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
+          <para>A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -360,9 +343,9 @@
       <Parameters />
       <Docs>
         <summary>Redefine dois documentos que estão no modo de exibição Comparar lado a lado com.</summary>
-        <remarks>
-          <para>O método <b>ResetPositionsSideBySide</b> corresponde ao botão Redefinir posição da janela na barra de ferramentas Comparar lado a lado.</para> Método 
-          <para>usar o <b>ResetPositionsSideBySide</b> para redefinir a exibição de dois documentos. Por exemplo, se um usuário minimiza ou maximiza uma das janelas do dois documento comparadas, o método <b>ResetPositionsSideBySide</b> redefine a exibição para que as duas janelas sejam exibida lado a lado novamente.</para><para /></remarks>
+        <remarks><para>O método <b>ResetPositionsSideBySide</b> corresponde ao botão redefinir posição da janela na barra de ferramentas Comparar lado a lado.</para>
+          <para>Use o método <b>ResetPositionsSideBySide</b> para redefinir a exibição de dois documentos. Por exemplo, se um usuário minimizar ou maximizar uma das duas janelas de documentos comparadas, o método <b>ResetPositionsSideBySide</b> redefine a exibição para que as duas janelas sejam exibidas lado a lado.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SyncScrollingSideBySide">
@@ -391,8 +374,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> permite a rolagem do conteúdo das janelas ao mesmo tempo. <b>False</b> desativa a rolagem de janelas ao mesmo tempo.</summary>
+        <summary><b>True</b> habilita a rolagem do conteúdo do Windows ao mesmo tempo. <b>False</b> desabilita a rolagem do Windows ao mesmo tempo.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

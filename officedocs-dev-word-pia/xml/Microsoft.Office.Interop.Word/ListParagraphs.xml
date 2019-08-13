@@ -1,13 +1,5 @@
 <Type Name="ListParagraphs" FullName="Microsoft.Office.Interop.Word.ListParagraphs">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="3a54de4fd6f4e79f4cbe2195f2b28cabd9374f2f" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20664707" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ListParagraphs : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="f2ed5da4555633a8837f621bb30fd13601729534" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146147" /></Metadata><TypeSignature Language="C#" Value="public interface ListParagraphs : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ListParagraphs implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ListParagraphs" />
   <TypeSignature Language="VB.NET" Value="Public Interface ListParagraphs&#xA;Implements IEnumerable" />
@@ -30,15 +22,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Uma coleção de <see cref="T:Microsoft.Office.Interop.Word.Paragraph" /> objetos que representa os parágrafos do intervalo, lista ou documento especificado com formatação de lista aplicada.</summary>
-    <remarks>
-      <para>Use o <see cref="P:Microsoft.Office.Interop.Word._Document.ListParagraphs" /> propriedade para retornar a coleção <b>ListParagraphs</b> .</para>
+    <summary>Uma coleção de <see cref="T:Microsoft.Office.Interop.Word.Paragraph" /> objetos que representa os parágrafos do documento, da lista ou do intervalo especificado com formatação de lista aplicada.</summary>
+    <remarks><para>Use a <see cref="P:Microsoft.Office.Interop.Word._Document.ListParagraphs" /> propriedade para retornar a coleção <b>ListParagraphs</b> .</para>
       <para>Use <b>ListParagraphs</b>(<paramref name="index" />), onde <paramref name="index" /> é o número de índice, para retornar um único objeto Paragraph com formatação de lista.</para>
-      <para>Parágrafos podem ter dois tipos de formatação de lista. O primeiro tipo inclui um número automaticamente adicionado ou o marcador no início de cada parágrafo na lista. O segundo tipo inclui campos LISTNUM, que podem ser colocados em qualquer lugar dentro de um parágrafo. Pode haver mais de um campo LISTNUM por parágrafo.</para>
-      <para>Para adicionar formatação de lista aos parágrafos, você pode usar o <see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@,System.Object@)" /> , <see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyBulletDefault(System.Object@)" /> , <see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyNumberDefault(System.Object@)" /> , ou <see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyOutlineNumberDefault(System.Object@)" /> método. Acesso a esses métodos através do objeto <b>ListFormat</b> para um intervalo especificado.</para>
-      <para>o <see cref="P:Microsoft.Office.Interop.Word.ListParagraphs.Count" /> propriedade dessa coleção em um documento retorna o número de itens no texto principal. Para contar itens em outros textos use a coleção com o <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto.</para>
-      <para />
-    </remarks>
+      <para>Os parágrafos podem ter dois tipos de formatação de lista. O primeiro tipo inclui um número ou um marcador acrescentado automaticamente no início de cada parágrafo da lista. O segundo tipo inclui campos LISTNUM, que podem ser inseridos em qualquer lugar em um parágrafo. É possível existir mais de um campo LISTNUM por parágrafo.</para>
+      <para>Para adicionar formatação de lista a parágrafos, você pode usar <see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@,System.Object@)" /> o <see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyBulletDefault(System.Object@)" /> método <see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyNumberDefault(System.Object@)" /> ,, <see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyOutlineNumberDefault(System.Object@)" /> ou. Você pode acessar esses métodos através do objeto <b>ListFormat</b> para um intervalo especificado.</para>
+      <para>A <see cref="P:Microsoft.Office.Interop.Word.ListParagraphs.Count" /> Propriedade dessa coleção em um documento retorna o número de itens somente no texto principal. Para contar itens em outros textos, use a coleção com <see cref="T:Microsoft.Office.Interop.Word.Range" /> o objeto.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -64,7 +54,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -122,9 +112,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto especificado foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
-          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Se o objeto especificado foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". [!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
+          <para>A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">

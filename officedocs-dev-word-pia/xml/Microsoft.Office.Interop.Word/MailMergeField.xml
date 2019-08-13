@@ -1,13 +1,5 @@
 <Type Name="MailMergeField" FullName="Microsoft.Office.Interop.Word.MailMergeField">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="3826a46a79d1953bf36de88c393620df167dba62" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20663802" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface MailMergeField" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="740faaaa800da0c930fd0ad3e0101c4ed0cd4585" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144460" /></Metadata><TypeSignature Language="C#" Value="public interface MailMergeField" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract MailMergeField" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.MailMergeField" />
   <TypeSignature Language="VB.NET" Value="Public Interface MailMergeField" />
@@ -27,13 +19,11 @@
   </Attributes>
   <Docs>
     <summary>Representa um campo de mala direta único em um documento.</summary>
-    <remarks>
-      <para>O objeto <b>MailMergeDataField</b> é um membro do <see cref="T:Microsoft.Office.Interop.Word.MailMergeDataFields" /> conjunto. A coleção <b>MailMergeDataFields</b> inclui todos os mala direta relacionados a campos em um documento.</para>
-      <para>Uso de <b>campos</b>(<paramref name="index" />), onde <paramref name="index" /> é o número de índice, para retornar um único objeto <b>MailMergeField</b> .</para>
-      <para>Uso o <see cref="M:Microsoft.Office.Interop.Word.MailMergeFields.Add(Microsoft.Office.Interop.Word.Range,System.String)" /> método para adicionar um campo de mesclagem à coleção <b>MailMergeFields</b> .</para>
-      <para>a coleção <b>MailMergeFields</b> tem métodos adicionais, como <see cref="M:Microsoft.Office.Interop.Word.MailMergeFields.AddAsk(Microsoft.Office.Interop.Word.Range,System.String,System.Object@,System.Object@,System.Object@)" /> e <see cref="M:Microsoft.Office.Interop.Word.MailMergeFields.AddFillIn(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@)" />, para adicionar campos relacionados a uma operação de mala direta.</para>
-      <para />
-    </remarks>
+    <remarks><para>O objeto <b>MailMergeDataField</b> é um membro da <see cref="T:Microsoft.Office.Interop.Word.MailMergeDataFields" /> coleção. A coleção <b>MailMergeDataFields</b> inclui todos os mala direta relacionados a campos em um documento.</para>
+      <para>Use <b></b>Fields<paramref name="index" />(), <paramref name="index" /> onde é o número de índice, para retornar um único objeto <b>MailMergeField</b> .</para>
+      <para>Use o <see cref="M:Microsoft.Office.Interop.Word.MailMergeFields.Add(Microsoft.Office.Interop.Word.Range,System.String)" /> método para adicionar um campo de mesclagem à coleção <b>MailMergeFields</b> .</para>
+      <para>A coleção <b>MailMergeFields</b> tem métodos adicionais, como <see cref="M:Microsoft.Office.Interop.Word.MailMergeFields.AddAsk(Microsoft.Office.Interop.Word.Range,System.String,System.Object@,System.Object@,System.Object@)" /> e <see cref="M:Microsoft.Office.Interop.Word.MailMergeFields.AddFillIn(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@)" />, para adicionar campos relacionados a uma operação de mala direta.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -59,7 +49,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -90,12 +80,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Range" /> object que representa um código de campo.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto que representa o código de um campo.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Um código de campo é tudo o que é colocado entre os caracteres de campo (<b>{}</b>), incluindo o espaço à esquerda e caracteres de espaço à direita. Você pode acessar um código de campo sem alterar o modo de exibição dos resultados de campo.</para>
-          <para />
-        </remarks>
+        <remarks><para>Um código de campo é tudo o que se encontra entre os caracteres de campo (<b>{ }</b>) incluindo caracteres de espaço à esquerda e à direita. Você pode acessar um código de campo sem alterar a apresentação de resultados dos campos.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Copy">
@@ -148,9 +136,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
-          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". [!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
+          <para>A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Cut">
@@ -229,8 +217,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> se o campo especificado está bloqueado. Quando um campo está bloqueado, seus resultados não podem ser atualizados.</summary>
+        <summary><b>True</b> se o campo especificado está bloqueado. Quando um campo está bloqueado, seus resultados não podem ser atualizados.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -258,7 +245,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.MailMergeField</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o próximo objeto do conjunto.</summary>
+        <summary>Retorna o próximo objeto da coleção.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -314,7 +301,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.MailMergeField</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o objeto anterior do conjunto.</summary>
+        <summary>Retorna o objeto anterior da coleção.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -341,10 +328,8 @@
       <Parameters />
       <Docs>
         <summary>Seleciona o objeto especificado.</summary>
-        <remarks>
-          <para>Depois de usar esse método, use o <see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> propriedade para trabalhar com os itens selecionados.</para>
-          <para />
-        </remarks>
+        <remarks><para>Depois de usar esse método, use <see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> a propriedade para trabalhar com os itens selecionados.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -372,10 +357,8 @@
       <Docs>
         <summary>Retorna o tipo de campo.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>A propriedade <b>Type</b> pode ser uma do <see cref="T:Microsoft.Office.Interop.Word.WdFieldType" /> constantes.</para>
-          <para />
-        </remarks>
+        <remarks><para>A propriedade <b>Type</b> pode ser uma das <see cref="T:Microsoft.Office.Interop.Word.WdFieldType" /> constantes.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

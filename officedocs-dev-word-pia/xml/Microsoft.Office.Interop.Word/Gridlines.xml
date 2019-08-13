@@ -1,13 +1,5 @@
 <Type Name="Gridlines" FullName="Microsoft.Office.Interop.Word.Gridlines">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="46e2954651cbcd79fec45fc109c9f6414cd798d8" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20663793" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Gridlines" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="dfaa6be729fee8db0d7f8dc03acea0656715c6f5" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146755" /></Metadata><TypeSignature Language="C#" Value="public interface Gridlines" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Gridlines" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Gridlines" />
   <TypeSignature Language="VB.NET" Value="Public Interface Gridlines" />
@@ -27,11 +19,9 @@
   </Attributes>
   <Docs>
     <summary>Representa linhas de grade principais ou secundárias em um eixo do gráfico.</summary>
-    <remarks>
-      <para>Linhas de grade estendem a marcas de escala em um eixo de gráfico para facilitar a visualização dos valores associados aos marcadores de dados. Este objeto não é uma coleção. Não há nenhum objeto representando uma única linha de grade; Você tem todas as linhas de grade de um eixo ativadas ou todos eles desativados.</para>
-      <para>Uso o <see cref="P:Microsoft.Office.Interop.Word.Axis.MajorGridlines" /> propriedade para retornar o <see cref="T:Microsoft.Office.Interop.Word.Gridlines" /> object que representa as linhas de grade principais do eixo. Use o <see cref="P:Microsoft.Office.Interop.Word.Axis.MinorGridlines" /> propriedade para retornar o <see cref="T:Microsoft.Office.Interop.Word.Gridlines" /> object que representa as linhas de grade secundárias. É possível retornar as linhas de grade principais e secundárias ao mesmo tempo.</para>
-      <para />
-    </remarks>
+    <remarks><para>As linhas de grade estendem as marcas de escala em um eixo do gráfico para facilitar a visualização dos valores associados aos marcadores de dados. Este objeto não é uma coleção. Não há nenhum objeto que represente uma única linha de grade; você ativa ou desativa todas as linhas de grade para um eixo.</para>
+      <para>Use a <see cref="P:Microsoft.Office.Interop.Word.Axis.MajorGridlines" /> propriedade para retornar o <see cref="T:Microsoft.Office.Interop.Word.Gridlines" /> objeto que representa as linhas de grade principais do eixo. Use a <see cref="P:Microsoft.Office.Interop.Word.Axis.MinorGridlines" /> propriedade para retornar o <see cref="T:Microsoft.Office.Interop.Word.Gridlines" /> objeto que representa as linhas de grade secundárias. É possível retornar as duas linhas de grade (principal e secundária) ao mesmo tempo.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -57,10 +47,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Quando usado sem um qualificador de objeto, essa propriedade retorna uma <see cref="T:Microsoft.Office.Interop.Word._Application" /> object que representa o aplicativo Microsoft Word. Quando usada com um qualificador de objeto, essa propriedade retornará um objeto <b>Application</b> que representa o criador do objeto especificado (você pode usar essa propriedade com um objeto Automation do OLE para retornar o aplicativo desse objeto). Somente leitura.</summary>
-        <value>
-          <b>Object</b>
-        </value>
+        <summary>Quando usado sem um qualificador de objeto, essa propriedade <see cref="T:Microsoft.Office.Interop.Word._Application" /> retorna um objeto que representa o aplicativo Microsoft Word. Quando usada com um qualificador de objeto, essa propriedade retornará um objeto <b>Application</b> que representa o criador do objeto especificado (você pode usar essa propriedade com um objeto Automation do OLE para retornar o aplicativo desse objeto). Somente leitura.</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,10 +75,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.ChartBorder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.ChartBorder" /> object que representa a borda do objeto. Somente leitura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartBorder" />
-        </value>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.ChartBorder" /> objeto que representa a borda do objeto. Somente leitura.</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartBorder" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -118,13 +104,9 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado. Somente leitura.</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Word, o <see cref="P:Microsoft.Office.Interop.Word.Gridlines.Creator" /> propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD."  Essa propriedade principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
-          <para />
-        </remarks>
+        <value><b>Integer</b></value>
+        <remarks><para>Se o objeto foi criado no Microsoft Word, a <see cref="P:Microsoft.Office.Interop.Word.Gridlines.Creator" /> propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD".  Essa propriedade foi projetada inicialmente para ser usada no Macintosh, no qual cada aplicativo tem um código de criador com quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -149,9 +131,7 @@
       <Parameters />
       <Docs>
         <summary>Exclui o objeto.</summary>
-        <returns>
-          <b>Object</b>
-        </returns>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -179,9 +159,7 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna a linha, preenchimento e efeito da formatação do objeto. Somente leitura.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Word.ChartFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -209,9 +187,7 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna o nome do objeto.</summary>
-        <value>
-          <b>String</b>
-        </value>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -239,9 +215,7 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna o pai do objeto especificado. Somente leitura.</summary>
-        <value>
-          <b>Object</b>
-        </value>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -267,9 +241,7 @@
       <Parameters />
       <Docs>
         <summary>Seleciona o objeto.</summary>
-        <returns>
-          <b>Object</b>
-        </returns>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

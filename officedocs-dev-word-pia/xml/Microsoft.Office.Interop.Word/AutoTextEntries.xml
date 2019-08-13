@@ -1,13 +1,5 @@
 <Type Name="AutoTextEntries" FullName="Microsoft.Office.Interop.Word.AutoTextEntries">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a31d1e907d820a2005c896aa46cf04f2089738e1" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20665289" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface AutoTextEntries : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="616542cb10e6c23af21a1d1d91f287e037699d61" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146273" /></Metadata><TypeSignature Language="C#" Value="public interface AutoTextEntries : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AutoTextEntries implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.AutoTextEntries" />
   <TypeSignature Language="VB.NET" Value="Public Interface AutoTextEntries&#xA;Implements IEnumerable" />
@@ -31,11 +23,11 @@
   </Attributes>
   <Docs>
     <summary>Uma coleção de <see cref="T:Microsoft.Office.Interop.Word.AutoTextEntry" /> objetos que representam as entradas de AutoTexto em um modelo.</summary>
-    <remarks>
-      <para>A coleção <b>AutoTextEntries</b> inclui todas as entradas listadas na guia AutoTexto da caixa de diálogo AutoCorreção (menu Ferramentas).</para>
-      <para>Uso o <see cref="P:Microsoft.Office.Interop.Word.Template.AutoTextEntries" /> propriedade para retornar a coleção <b>AutoTextEntries</b> .</para>
-      <para>Uso o <see cref="M:Microsoft.Office.Interop.Word.AutoTextEntries.Add(System.String,Microsoft.Office.Interop.Word.Range)" /> método para adicionar uma entrada de AutoTexto à coleção <b>AutoTextEntries</b> .</para> Uso de 
-      <para><see cref="P:Microsoft.Office.Interop.Word.Template.AutoTextEntries" />(<paramref name="index" />), onde <paramref name="index" /> é o nome da entrada de AutoTexto ou o número de índice, para retornar um único <see cref="T:Microsoft.Office.Interop.Word.AutoTextEntry" /> objeto. Você deve coincidir exatamente a ortografia (mas não necessariamente as maiusculas/minúsculas) do nome, como ele é mostrado na guia AutoTexto da caixa de diálogo AutoCorreção.</para><para /></remarks>
+    <remarks><para>A coleção <b>AutoTextEntries</b> inclui todas as entradas listadas na guia AutoTexto da caixa de diálogo AutoCorreção (menu ferramentas).</para>
+      <para>Use a <see cref="P:Microsoft.Office.Interop.Word.Template.AutoTextEntries" /> propriedade para retornar a coleção <b>AutoTextEntries</b> .</para>
+      <para>Use o <see cref="M:Microsoft.Office.Interop.Word.AutoTextEntries.Add(System.String,Microsoft.Office.Interop.Word.Range)" /> método para adicionar uma entrada de AutoTexto à coleção <b>AutoTextEntries</b> .</para>
+      <para>Use <see cref="P:Microsoft.Office.Interop.Word.Template.AutoTextEntries" />(<paramref name="index" />), onde <paramref name="index" /> é o nome da entrada de AutoTexto ou o número de índice <see cref="T:Microsoft.Office.Interop.Word.AutoTextEntry" /> , para retornar um único objeto. Você deve corresponder exatamente a ortografia (mas não necessariamente as maiúsculas/minúsculas) do nome, como ele é mostrado na guia AutoTexto da caixa de diálogo AutoCorreção.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -61,7 +53,7 @@
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
       </Parameters>
       <Docs>
-        <param name="Name">Um intervalo de texto que será inserido sempre que <paramref name="Name" /> for digitado.</param>
+        <param name="Name">Um intervalo de texto que será inserido sempre <paramref name="Name" /> que for digitado.</param>
         <param name="Range">O texto que, quando digitado, inicia uma entrada de AutoTexto.</param>
         <summary>Adiciona uma entrada de AutoTexto à lista de entradas de AutoTexto disponíveis.</summary>
         <returns>To be added.</returns>
@@ -93,10 +85,8 @@
         <param name="Range">O intervalo que é excluído e adicionado ao AutoTexto especial.</param>
         <summary>Exclui o intervalo especificado e adiciona o conteúdo do intervalo ao AutoTexto especial (uma entrada de AutoTexto interna).</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>O método <b>AppendToSpike</b> só é válido para o <see cref="T:Microsoft.Office.Interop.Word.AutoTextEntries" /> conjunto no modelo Normal.</para>
-          <para />
-        </remarks>
+        <remarks><para>O método <b>AppendToSpike</b> é válido somente para a <see cref="T:Microsoft.Office.Interop.Word.AutoTextEntries" /> coleção no modelo normal.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -122,7 +112,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -180,9 +170,9 @@
       <Docs>
         <summary>Retorna um valor que indica o aplicativo no qual o objeto especificado foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto especificado foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
-          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Se o objeto especificado foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". [!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
+          <para>A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">

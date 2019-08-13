@@ -1,13 +1,5 @@
 <Type Name="TablesOfFigures" FullName="Microsoft.Office.Interop.Word.TablesOfFigures">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="fe1e1f21bffd98afe08b6b1953eec4af668b2331" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20664646" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface TablesOfFigures : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a47dc8aab96b5338c26c58900de20ee909636d5e" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146007" /></Metadata><TypeSignature Language="C#" Value="public interface TablesOfFigures : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TablesOfFigures implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.TablesOfFigures" />
   <TypeSignature Language="VB.NET" Value="Public Interface TablesOfFigures&#xA;Implements IEnumerable" />
@@ -31,9 +23,10 @@
   </Attributes>
   <Docs>
     <summary>Uma coleção de <see cref="T:Microsoft.Office.Interop.Word.TableOfFigures" /> objetos que representam os índices de ilustrações em um documento.</summary>
-    <remarks>
-      <para>Use o <see cref="P:Microsoft.Office.Interop.Word._Document.TablesOfFigures" /> propriedade para retornar a coleção <b>TablesOfFigures</b> .</para> Uso de 
-      <para>o <see cref="M:Microsoft.Office.Interop.Word.TablesOfFigures.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> método para adicionar um índice de ilustrações a um documento. Um índice de ilustrações lista legendas de figura na ordem em que aparecem no documento.</para><para>Uso <b>TablesOfFigures</b>(<paramref name="index" />), onde <paramref name="index" /> é o número de índice, para retornar um único objeto <b>TableOfFigures</b> . O número de índice representa a posição do índice de ilustrações no documento.</para><para /></remarks>
+    <remarks><para>Use a <see cref="P:Microsoft.Office.Interop.Word._Document.TablesOfFigures" /> propriedade para retornar a coleção <b>TablesOfFigures</b> .</para>
+      <para>Use o <see cref="M:Microsoft.Office.Interop.Word.TablesOfFigures.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> método para adicionar um índice de ilustrações a um documento. Um índice de ilustrações lista legendas de figura na ordem em que aparecem no documento.</para>
+      <para>Use <b>TablesOfFigures</b>(<paramref name="index" />), em <paramref name="index" /> que é o número de índice, para retornar um único objeto <b>TableOfFigures</b> . O número de índice representa a posição do índice de ilustrações no documento.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -69,32 +62,20 @@
         <Parameter Name="HidePageNumbersInWeb" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">Necessário <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto. O intervalo onde você deseja que o índice de ilustrações apareça.</param>
-        <param name="Caption">
-          <b>Objeto</b>de opcional. O rótulo que identifica os itens que você deseja incluir no índice de ilustrações. Corresponde à opção \c de um campo TOC (sumário). O valor padrão é "Figure".</param>
-        <param name="IncludeLabel">
-          <b>Objeto</b>de opcional. <b>True</b> para incluir o nome da legenda e o número da legenda no índice de ilustrações. O valor padrão é <b>True</b>.</param>
-        <param name="UseHeadingStyles">
-          <b>Objeto</b>de opcional. <b>True</b> para usar estilos de título internos para criar o índice de ilustrações. O valor padrão é <b>False</b>.</param>
-        <param name="UpperHeadingLevel">
-          <b>Objeto</b>de opcional. Inicial heading nível para o índice de ilustrações, se <paramref name="UseHeadingStyles" /> estiver definida como <b>True</b>. Corresponde ao valor inicial usado com a opção \o de um campo TOC (índice analítico). O valor padrão é 1.</param>
-        <param name="LowerHeadingLevel">
-          <b>Objeto</b>de opcional. A terminação heading nível para o índice de ilustrações, se <paramref name="UseHeadingStyles" /> estiver definida como <b>True</b>. Corresponde ao valor final usado com a opção \o de um campo TOC (índice analítico). O valor padrão é 9.</param>
-        <param name="UseFields">
-          <b>Objeto</b>de opcional. <b>True</b> para usar os campos de entrada de conteúdo (TC) para criar o índice de ilustrações. Use o <see cref="M:Microsoft.Office.Interop.Word.TablesOfFigures.MarkEntry(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@)" /> método para marcar as entradas que você deseja incluir no índice de ilustrações. O valor padrão é <b>False</b>.</param>
-        <param name="TableID">
-          <b>Objeto</b>de opcional. Um identificador de uma letra que é usado para construir um índice de ilustrações a partir de campos TC (entrada de sumário). Corresponde à opção \f de um campo TOC (sumário). Por exemplo, "i" constrói um índice de ilustrações para uma ilustração.</param>
-        <param name="RightAlignPageNumbers">
-          <b>Objeto</b>de opcional. <b>True</b> alinha números de página com a margem direita da tabela de figuras. O valor padrão é <b>True</b>.</param>
-        <param name="IncludePageNumbers">
-          <b>Objeto</b>de opcional. <b>True</b> se os números de página são incluídos no índice de ilustrações. O valor padrão é <b>True</b>.</param>
-        <param name="AddedStyles">
-          <b>Objeto</b>de opcional. O nome de sequência de caracteres para estilos adicionais usados para compilar o índice de ilustrações (estilos diferentes dos estilos Título 1 até Título 9).</param>
-        <param name="UseHyperlinks">
-          <b>Objeto</b>de opcional. <b>True</b> se as entradas em um índice de ilustrações devem ser formatadas como hiperlinks ao publicar na Web. O valor padrão é <b>True</b>.</param>
-        <param name="HidePageNumbersInWeb">
-          <b>Objeto</b>de opcional. <b>True</b> se os números de página em um índice de ilustrações devem ficar ocultos ao publicar na Web. O valor padrão é <b>True</b>.</param>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.TableOfFigures" /> object que representa um índice de ilustrações adicionado a um documento.</summary>
+        <param name="Range">Objeto <see cref="T:Microsoft.Office.Interop.Word.Range" /> necessário. O intervalo onde você deseja que o índice de ilustrações apareça.</param>
+        <param name="Caption"><b>Objeto</b>opcional. O rótulo que identifica os itens que você deseja incluir no índice de ilustrações. Corresponde à opção \c de um campo TOC (sumário). O valor padrão é "Figure".</param>
+        <param name="IncludeLabel"><b>Objeto</b>opcional. <b>True</b> para incluir o nome da legenda e o número da legenda no índice de ilustrações. O valor padrão é <b>True</b>.</param>
+        <param name="UseHeadingStyles"><b>Objeto</b>opcional. <b>True</b> para usar estilos de título internos para criar o índice de ilustrações. O valor padrão é <b>False</b>.</param>
+        <param name="UpperHeadingLevel"><b>Objeto</b>opcional. O nível de título inicial para o índice de ilustrações <paramref name="UseHeadingStyles" /> , se estiver definido como <b>true</b>. Corresponde ao valor inicial usado com a opção \o de um campo TOC (índice analítico). O valor padrão é 1.</param>
+        <param name="LowerHeadingLevel"><b>Objeto</b>opcional. O nível de título final para o índice de ilustrações <paramref name="UseHeadingStyles" /> , se estiver definido como <b>true</b>. Corresponde ao valor final usado com a opção \o de um campo TOC (índice analítico). O valor padrão é 9.</param>
+        <param name="UseFields"><b>Objeto</b>opcional. <b>True</b> para usar os campos de entrada de conteúdo (TC) para criar o índice de ilustrações. Use o <see cref="M:Microsoft.Office.Interop.Word.TablesOfFigures.MarkEntry(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@)" /> método para marcar entradas que você deseja incluir no índice de ilustrações. O valor padrão é <b>False</b>.</param>
+        <param name="TableID"><b>Objeto</b>opcional. Um identificador de uma letra que é usado para construir um índice de ilustrações a partir de campos TC (entrada de sumário). Corresponde à opção \f de um campo TOC (sumário). Por exemplo, "i" constrói um índice de ilustrações para uma ilustração.</param>
+        <param name="RightAlignPageNumbers"><b>Objeto</b>opcional. <b>True</b> alinha números de página com a margem direita da tabela de figuras. O valor padrão é <b>True</b>.</param>
+        <param name="IncludePageNumbers"><b>Objeto</b>opcional. <b>True</b> se os números de página são incluídos no índice de ilustrações. O valor padrão é <b>True</b>.</param>
+        <param name="AddedStyles"><b>Objeto</b>opcional. O nome de sequência de caracteres para estilos adicionais usados para compilar o índice de ilustrações (estilos diferentes dos estilos Título 1 até Título 9).</param>
+        <param name="UseHyperlinks"><b>Objeto</b>opcional. <b>True</b> se as entradas em um índice de ilustrações devem ser formatadas como hiperlinks ao publicar na Web. O valor padrão é <b>True</b>.</param>
+        <param name="HidePageNumbersInWeb"><b>Objeto</b>opcional. <b>True</b> se os números de página em um índice de ilustrações devem ficar ocultos ao publicar na Web. O valor padrão é <b>True</b>.</param>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.TableOfFigures" /> objeto que representa um índice de ilustrações adicionado a um documento.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -172,7 +153,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -230,9 +211,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
-          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". [!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
+          <para>A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Format">
@@ -263,29 +244,27 @@
       <Docs>
         <summary>Retorna ou define a formatação para os índices de ilustrações no documento especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
+        <remarks><para>
             <see cref="T:Microsoft.Office.Interop.Word.WdTofFormat" />pode ser uma destas constantes <b>WdTofFormat</b> . </para>
           <para>
-            <b>wdTOFCentered </b>
+            <b>wdTOFCentered</b>
           </para>
           <para>
-            <b>wdTOFDistinctive </b>
+            <b>wdTOFDistinctive</b>
           </para>
           <para>
-            <b>wdTOFSimple </b>
+            <b>wdTOFSimple</b>
           </para>
           <para>
-            <b>wdTOFClassic </b>
+            <b>wdTOFClassic</b>
           </para>
           <para>
-            <b>wdTOFFormal </b>
+            <b>wdTOFFormal</b>
           </para>
           <para>
             <b>wdTOFTemplate</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -377,16 +356,12 @@
         <Parameter Name="Level" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">Necessário <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto. A posição da entrada. O campo TC é inserido após <paramref name="Range" />.</param>
-        <param name="Entry">
-          <b>Objeto</b>de opcional. O texto que aparece no sumário ou índice de ilustrações. Para indicar uma subentrada, inclua o texto da entrada principal e o texto da subentrada, separados por dois-pontos (:) (por exemplo, "Introdução:O Produto").</param>
-        <param name="EntryAutoText">
-          <b>Objeto</b>de opcional. O nome da entrada de AutoTexto que inclui texto do índice, índice de ilustrações ou sumário (<paramref name="Entry" /> será ignorado).</param>
-        <param name="TableID">
-          <b>Objeto</b>de opcional. Um identificador de uma letra para o índice de ilustrações ou sumário (por exemplo, "i" para uma "ilustração").</param>
-        <param name="Level">
-          <b>Objeto</b>de opcional. Um nível para a entrada no sumário ou índice de ilustrações.</param>
-        <summary>Insere um campo TC (entrada de sumário) após o intervalo especificado. O método retornará um <see cref="T:Microsoft.Office.Interop.Word.Field" /> objeto que representa o campo TC.</summary>
+        <param name="Range">Objeto <see cref="T:Microsoft.Office.Interop.Word.Range" /> necessário. A posição da entrada. O campo TC é inserido após <paramref name="Range" />.</param>
+        <param name="Entry"><b>Objeto</b>opcional. O texto que aparece no sumário ou índice de ilustrações. Para indicar uma subentrada, inclua o texto da entrada principal e o texto da subentrada, separados por dois-pontos (:) (por exemplo, "Introdução:O Produto").</param>
+        <param name="EntryAutoText"><b>Objeto</b>opcional. O nome da entrada de AutoTexto que inclui o texto do índice, índice de ilustrações ou Sumário<paramref name="Entry" /> (é ignorado).</param>
+        <param name="TableID"><b>Objeto</b>opcional. Um identificador de uma letra para o índice de ilustrações ou sumário (por exemplo, "i" para uma "ilustração").</param>
+        <param name="Level"><b>Objeto</b>opcional. Um nível para a entrada no sumário ou índice de ilustrações.</param>
+        <summary>Insere um campo TC (entrada de sumário) após o intervalo especificado. O método retorna um <see cref="T:Microsoft.Office.Interop.Word.Field" /> objeto que representa o campo TC.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>

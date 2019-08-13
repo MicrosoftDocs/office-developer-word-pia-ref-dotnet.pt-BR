@@ -1,13 +1,5 @@
 <Type Name="Languages" FullName="Microsoft.Office.Interop.Word.Languages">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="b8f79b25011149328004e52e86f60247795a30ec" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20664381" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Languages : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="1baf8eae7e14a2522bca48a798cc4d1874daefdf" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146651" /></Metadata><TypeSignature Language="C#" Value="public interface Languages : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Languages implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Languages" />
   <TypeSignature Language="VB.NET" Value="Public Interface Languages&#xA;Implements IEnumerable" />
@@ -30,14 +22,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Uma coleção de <see cref="T:Microsoft.Office.Interop.Word.Language" /> objetos que representam os idiomas usados para verificação e formatação no Microsoft Word.</summary>
-    <remarks>
-      <para>Use o <see cref="P:Microsoft.Office.Interop.Word._Application.Languages" /> propriedade para retornar a coleção <b>Languages</b> .</para>
-      <para>Uso de <b>idiomas</b>(<paramref name="index" />) para retornar um único objeto de <b>idioma</b> , onde <paramref name="index" /> pode ser o valor do <see cref="P:Microsoft.Office.Interop.Word.Language.Name" /> propriedade, o valor do <see cref="P:Microsoft.Office.Interop.Word.Language.NameLocal" /> propriedade, uma do <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> constantes ou uma do <see cref="T:Microsoft.Office.Core.MsoLanguageID" /> constantes.</para>
-      <para>o <see cref="P:Microsoft.Office.Interop.Word.Languages.Count" /> propriedade retorna o número de idiomas para os quais você pode marcar texto (idiomas para os quais os revisores de texto estão disponíveis). Para fazer a verificação, você deve instalar as ferramentas apropriadas para cada idioma que você pretende verificar. Você precisa de um arquivo. dll e um arquivo. lex para cada um dos seguintes: o dicionário de sinônimos, o verificador ortográfico, verificador gramatical e ferramentas de hifenização.</para>
-      <para>Quando você marca um texto como <b>wdNoProofing</b>, o Word ignora o texto marcado ao executar uma verificação ortográfica ou gramatical. Para marcar o texto para um idioma especificado ou para sem revisão, use o comando Definir idioma (menu Ferramentas, submenu de idioma).</para>
-      <para />
-    </remarks>
+    <summary>Uma coleção de <see cref="T:Microsoft.Office.Interop.Word.Language" /> objetos que representam idiomas usados para verificação ortográfica ou formatação no Microsoft Word.</summary>
+    <remarks><para>Use a <see cref="P:Microsoft.Office.Interop.Word._Application.Languages" /> propriedade para retornar a <b></b> coleção Languages.</para>
+      <para>Use <b></b>Languages<paramref name="index" />() para retornar um único objeto <b>Language</b> , <paramref name="index" /> onde pode ser o valor da <see cref="P:Microsoft.Office.Interop.Word.Language.Name" /> Propriedade, o valor da <see cref="P:Microsoft.Office.Interop.Word.Language.NameLocal" /> Propriedade, uma das <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> constantes ou uma das <see cref="T:Microsoft.Office.Core.MsoLanguageID" /> constantes.</para>
+      <para>A <see cref="P:Microsoft.Office.Interop.Word.Languages.Count" /> propriedade retorna o número de idiomas para os quais você pode marcar texto (idiomas para os quais as ferramentas de revisão estão disponíveis). Para fazer a verificação, é preciso instalar as ferramentas apropriadas para cada idioma que você pretende verificar. Você precisa de um arquivo .dll e de um arquivo .lex para cada um dos itens seguintes: dicionário de sinônimos, verificador ortográfico, verificador gramatical e ferramentas de hifenização.</para>
+      <para>Quando você marca um texto como <b>wdNoProofing</b>, o Word ignora o texto marcado ao executar uma verificação ortográfica ou gramatical. Para marcar o texto de um idioma específico ou sem revisão, use o comando definir idioma (menu ferramentas, submenu idioma).</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -63,7 +53,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -121,9 +111,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
-          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". [!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
+          <para>A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">

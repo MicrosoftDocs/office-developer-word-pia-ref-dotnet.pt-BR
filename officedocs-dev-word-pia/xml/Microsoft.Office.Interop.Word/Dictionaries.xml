@@ -1,13 +1,5 @@
 <Type Name="Dictionaries" FullName="Microsoft.Office.Interop.Word.Dictionaries">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="956b16fdc0aae78cbea233341ebca861e8235368" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20665471" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Dictionaries : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="25481a745c77f77a431162c88cbb1a8efa0fcf1e" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147057" /></Metadata><TypeSignature Language="C#" Value="public interface Dictionaries : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Dictionaries implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Dictionaries" />
   <TypeSignature Language="VB.NET" Value="Public Interface Dictionaries&#xA;Implements IEnumerable" />
@@ -31,10 +23,12 @@
   </Attributes>
   <Docs>
     <summary>Uma coleção de <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> objetos que inclui os dicionários de ortografia personalizados ativos.</summary>
-    <remarks>
-      <para>Use o <see cref="P:Microsoft.Office.Interop.Word._Application.CustomDictionaries" /> propriedade para retornar a coleção de dicionários personalizados ativos no momento.</para> Uso de 
-      <para>o <see cref="M:Microsoft.Office.Interop.Word.Dictionaries.Add(System.String)" /> método para adicionar um novo dicionário personalizado à coleção de dicionários personalizados ativos. Se não houver um arquivo com o nome especificado por <paramref name="FileName" />, Word o criará proprietário.</para> Uso de 
-      <para>o <see cref="M:Microsoft.Office.Interop.Word.Dictionaries.ClearAll" /> método descarregar todos os dicionários personalizados. No entanto, observe que esse método não exclui os arquivos de dicionário. Depois de usar esse método, o número de dicionários personalizados na coleção é 0 (zero).</para><para>Você definir o dicionário personalizado ao qual são adicionadas novas palavras usando o <see cref="P:Microsoft.Office.Interop.Word.Dictionaries.ActiveCustomDictionary" /> propriedade. Se você tentar definir essa propriedade com um dicionário que não é um dicionário personalizado, ocorrerá um erro.</para><para>o <see cref="P:Microsoft.Office.Interop.Word.Dictionaries.Maximum" /> propriedade retorna o número máximo de dicionários ortográficos personalizados simultâneas que o aplicativo pode suportar. Para o Microsoft Word, o máximo é 10.</para><para /></remarks>
+    <remarks><para>Use a <see cref="P:Microsoft.Office.Interop.Word._Application.CustomDictionaries" /> propriedade para retornar a coleção de dicionários personalizados ativos no momento.</para>
+      <para>Use o <see cref="M:Microsoft.Office.Interop.Word.Dictionaries.Add(System.String)" /> método para adicionar um novo dicionário personalizado à coleção de dicionários personalizados ativos. Se não houver um arquivo com o nome especificado por <paramref name="FileName" />, o Word o criará.</para>
+      <para>Use o <see cref="M:Microsoft.Office.Interop.Word.Dictionaries.ClearAll" /> método para descarregar todos os dicionários personalizados. No entanto, observe que esse método não exclui os arquivos de dicionário. Depois de usar esse método, o número de dicionários personalizados na coleção é 0 (zero).</para>
+      <para>Você define o dicionário personalizado ao qual são adicionadas novas palavras usando a <see cref="P:Microsoft.Office.Interop.Word.Dictionaries.ActiveCustomDictionary" /> propriedade. Se você tentar definir essa propriedade com um dicionário que não é um dicionário personalizado, ocorrerá um erro.</para>
+      <para>A <see cref="P:Microsoft.Office.Interop.Word.Dictionaries.Maximum" /> propriedade retorna o número máximo de dicionários de ortografia personalizados simultâneos que o aplicativo pode suportar. Para o Microsoft Word, esse máximo é 10.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="ActiveCustomDictionary">
@@ -63,7 +57,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Dictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define um <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> object que representa o dicionário personalizado ao qual serão adicionadas palavras.</summary>
+        <summary>Retorna ou define um <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> objeto que representa o dicionário personalizado ao qual as palavras serão adicionadas.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -91,14 +85,13 @@
         <Parameter Name="FileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="FileName">
-          <b>String</b> necessário. Sequência de caracteres com o nome do arquivo de dicionário. Se nenhum caminho for especificado na sequência de caracteres, será usado o caminho dos revisores de texto.</param>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> object que representa um novo ortográfico ou conversão dicionário personalizado adicionado à coleção de dicionários ortográficos ou de conversão personalizados ativos.</summary>
+        <param name="FileName"><b>String</b> necessário. Sequência de caracteres com o nome do arquivo de dicionário. Se nenhum caminho for especificado na sequência de caracteres, será usado o caminho dos revisores de texto.</param>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> objeto que representa um novo dicionário ortográfico ou de conversão personalizado adicionado à coleção de dicionários de ortografia ou conversão personalizados ativos.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Se um arquivo com o nome especificado não existir, Microsoft Word o criará.</para>
-          <para>o <see cref="T:Microsoft.Office.Interop.Word.Dictionaries" /> coleção inclui somente os dicionários de ortografia personalizados ativos. Objetos <b>Dictionary</b> que são derivados do <see cref="T:Microsoft.Office.Interop.Word.Languages" /> coleção não possui um método <b>Add</b> . Eles incluem os objetos de dicionário retornados pelo <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveSpellingDictionary" />, <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveGrammarDictionary" />, <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveThesaurusDictionary" />, e <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveHyphenationDictionary" /> propriedades.</para> Uso de 
-          <para>o <see cref="P:Microsoft.Office.Interop.Word._Application.HangulHanjaDictionaries" /> propriedade para retornar a coleção de dicionários personalizados. O <see cref="T:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries" /> coleção inclui somente os dicionários de conversão personalizados ativos.</para><para /></remarks>
+        <remarks><para>Se não houver um arquivo com o nome especificado, o Microsoft Word criará um.</para>
+          <para>A <see cref="T:Microsoft.Office.Interop.Word.Dictionaries" /> coleção inclui apenas os dicionários de ortografia personalizados ativos. <b></b> Os <see cref="T:Microsoft.Office.Interop.Word.Languages" /> objetos Dictionary derivados da coleção não têm um método <b>Add</b> . Eles incluem os objetos Dictionary retornados pelas propriedades <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveSpellingDictionary" />, <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveGrammarDictionary" /> <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveThesaurusDictionary" />, e <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveHyphenationDictionary" /> .</para>
+          <para>Use a <see cref="P:Microsoft.Office.Interop.Word._Application.HangulHanjaDictionaries" /> propriedade para retornar a coleção de dicionários de conversão personalizados. A <see cref="T:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries" /> coleção inclui apenas os dicionários de conversão personalizados ativos.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -124,7 +117,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -151,10 +144,8 @@
       <Parameters />
       <Docs>
         <summary>Descarrega todos os dicionários personalizados ou de conversão.</summary>
-        <remarks>
-          <para>O método <b>ClearAll</b> quando usada em uma <see cref="T:Microsoft.Office.Interop.Word.Dictionaries" /> ou <see cref="T:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries" /> objeto não exclui os arquivos de dicionário personalizados ou de conversão. Depois de usar esse método, o número de dicionários personalizados ou de conversão na coleção é 0 (zero).</para>
-          <para />
-        </remarks>
+        <remarks><para>O método <b>ClearAll</b> quando usado em um <see cref="T:Microsoft.Office.Interop.Word.Dictionaries" /> objeto <see cref="T:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries" /> or não exclui os arquivos de dicionário personalizados ou de conversão. Depois de usar esse método, o número de dicionários personalizados ou de conversão na coleção é 0 (zero).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -210,9 +201,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
-          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". [!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
+          <para>A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">

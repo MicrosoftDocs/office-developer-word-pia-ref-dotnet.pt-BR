@@ -1,13 +1,5 @@
 <Type Name="TableOfFigures" FullName="Microsoft.Office.Interop.Word.TableOfFigures">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d57be96f8ec7c6ed0a74dc51b351cce11593a3c0" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20664545" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface TableOfFigures" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ac4ae4a8b24cb45b90c698437cafe71f03425bcd" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146021" /></Metadata><TypeSignature Language="C#" Value="public interface TableOfFigures" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TableOfFigures" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.TableOfFigures" />
   <TypeSignature Language="VB.NET" Value="Public Interface TableOfFigures" />
@@ -27,10 +19,10 @@
   </Attributes>
   <Docs>
     <summary>Representa um único índice de ilustrações em um documento.</summary>
-    <remarks>
-      <para>O objeto <b>TableOfFigures</b> é um membro do <see cref="T:Microsoft.Office.Interop.Word.TablesOfFigures" /> conjunto. A coleção <b>TablesOfFigures</b> inclui todos os índices de ilustrações em um documento.</para>
-      <para>Uso <b>TablesOfFigures</b>(<paramref name="index" />), onde <paramref name="index" /> é o número de índice, para retornar um único objeto <b>TableOfFigures</b> . O número de índice representa a posição do índice de ilustrações no documento.</para> Uso de 
-      <para>o <see cref="M:Microsoft.Office.Interop.Word.TablesOfFigures.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> método para adicionar um índice de ilustrações a um documento. Um índice de ilustrações lista legendas de figura na ordem em que aparecem no documento.</para><para /></remarks>
+    <remarks><para>O objeto <b>TableOfFigures</b> é um membro da <see cref="T:Microsoft.Office.Interop.Word.TablesOfFigures" /> coleção. A coleção <b>TablesOfFigures</b> inclui todos os índices de ilustrações em um documento.</para>
+      <para>Use <b>TablesOfFigures</b>(<paramref name="index" />), em <paramref name="index" /> que é o número de índice, para retornar um único objeto <b>TableOfFigures</b> . O número de índice representa a posição do índice de ilustrações no documento.</para>
+      <para>Use o <see cref="M:Microsoft.Office.Interop.Word.TablesOfFigures.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> método para adicionar um índice de ilustrações a um documento. Um índice de ilustrações lista legendas de figura na ordem em que aparecem no documento.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -56,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -89,11 +81,9 @@
       <Docs>
         <summary>Retorna ou define o rótulo que identifica os itens a serem incluídos em um índice de ilustrações.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>a propriedade <b>Caption</b> corresponde à opção \c de um campo TOC.</para>
-          <para>Para alterar a legenda da janela do aplicativo para o texto padrão, defina essa propriedade como uma sequência vazia ("").</para>
-          <para />
-        </remarks>
+        <remarks><para>A propriedade <b>Caption</b> corresponde à opção \c de um campo TOC.</para>
+          <para>Para alterar a legenda da janela do aplicativo para o texto padrão, defina essa propriedade com uma sequência de caracteres vazia ("").</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -121,9 +111,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
-          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". [!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
+          <para>A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -174,7 +164,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.HeadingStyles</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.HeadingStyles" /> object que representa estilos adicionais usados para compilar um índice de ilustrações (estilos que não seja o título 1 até Título 9).</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.HeadingStyles" /> objeto que representa estilos adicionais usados para compilar um índice de ilustrações (estilos diferentes dos estilos título 1-título 9).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -205,7 +195,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define se os números de página em uma tabela de figuras devem ficar ocultos ao publicar na Web.</summary>
+        <summary>Retorna ou define se os números de página em um índice de ilustrações devem ficar ocultos ao publicar na Web.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -236,8 +226,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> se o nome da legenda e o número da legenda forem incluídos em um índice de ilustrações.</summary>
+        <summary><b>True</b> se o nome da legenda e o número da legenda forem incluídos em um índice de ilustrações.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -268,8 +257,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> se os números de página são incluídos no índice de ilustrações.</summary>
+        <summary><b>True</b> se os números de página são incluídos no índice de ilustrações.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -302,9 +290,9 @@
       <Docs>
         <summary>Retorna ou define o nível de título final para um índice de ilustrações.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>A propriedade <b>LowerHeadingLevel</b> corresponde ao valor final usado com a opção \o de um campo TOC (índice analítico).</para> Uso de 
-          <para>o <see cref="P:Microsoft.Office.Interop.Word.TableOfFigures.UpperHeadingLevel" /> propriedade para definir o nível de título inicial. Por exemplo, para definir a sintaxe de campo TOC {TOC \o "1-3"}, definir a propriedade <b>LowerHeadingLevel</b> como 3 e a propriedade <b>UpperHeadingLevel</b> como 1.</para><para /></remarks>
+        <remarks><para>A propriedade <b>LowerHeadingLevel</b> corresponde ao valor final usado com a opção \o de um campo TOC (Sumário).</para>
+          <para>Use a <see cref="P:Microsoft.Office.Interop.Word.TableOfFigures.UpperHeadingLevel" /> propriedade para definir o nível de título inicial. Por exemplo, para definir a sintaxe de campo TOC {TOC \o "1-3"}, defina a propriedade <b>LowerHeadingLevel</b> como 3 e a propriedade <b>UpperHeadingLevel</b> como 1.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -358,12 +346,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Range" /> object que representa a parte de um documento que está contida no objeto especificado.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto que representa a parte de um documento que está contida no objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Para obter informações sobre como retornar um intervalo de um documento ou um intervalo de formas de uma coleção de formas, consulte o <see cref="P:Microsoft.Office.Interop.Word.TableOfFigures.Range" /> método.</para>
-          <para />
-        </remarks>
+        <remarks><para>Para obter informações sobre como retornar um intervalo de um documento ou retornar um intervalo de formas de uma coleção de formas <see cref="P:Microsoft.Office.Interop.Word.TableOfFigures.Range" /> , consulte o método.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RightAlignPageNumbers">
@@ -392,8 +378,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> se os números de página são alinhados com a margem direita em um índice de ilustrações.</summary>
+        <summary><b>True</b> se os números de página são alinhados com a margem direita em um índice de ilustrações.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -426,29 +411,27 @@
       <Docs>
         <summary>Retorna ou define o caractere entre as entradas e seus números de página em um índice de ilustrações.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
+        <remarks><para>
             <see cref="T:Microsoft.Office.Interop.Word.WdTabLeader" />pode ser uma destas constantes <b>WdTabLeader</b> . </para>
           <para>
-            <b>wdTabLeaderDashes </b>
+            <b>wdTabLeaderDashes</b>
           </para>
           <para>
-            <b>wdTabLeaderDots </b>
+            <b>wdTabLeaderDots</b>
           </para>
           <para>
-            <b>wdTabLeaderHeavy </b>
+            <b>wdTabLeaderHeavy</b>
           </para>
           <para>
-            <b>wdTabLeaderLines </b>
+            <b>wdTabLeaderLines</b>
           </para>
           <para>
-            <b>wdTabLeaderMiddleDot </b>
+            <b>wdTabLeaderMiddleDot</b>
           </para>
           <para>
             <b>wdTabLeaderSpaces</b>
           </para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TableID">
@@ -477,12 +460,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define um identificador de uma letra que é usado para construir um índice de ilustrações a partir de campos TOC.</summary>
+        <summary>Retorna ou define um identificador de uma letra que é usado para criar um índice de ilustrações a partir de campos TOC.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>A propriedade <b>TableID</b> corresponde à opção \f de um campo TOC. Por exemplo, "T" constrói um sumário a partir de campos TOC usando o identificador de índice T.</para>
-          <para />
-        </remarks>
+        <remarks><para>A <b></b> Propriedade TableID corresponde à opção \f de um campo TOC. Por exemplo, "T" cria um sumário a partir de campos TOC usando o identificador de índice T.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Update">
@@ -506,12 +487,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Atualiza as entradas mostradas na tabela de figuras especificada.</summary>
-        <remarks>
-          <para>
+        <summary>Atualiza as entradas mostradas no índice de ilustrações especificado.</summary>
+        <remarks><para>
             <b>Observação</b>   Use o <see cref="M:Microsoft.Office.Interop.Word.TableOfFigures.UpdatePageNumbers" /> método para atualizar os números de página dos itens em um índice de ilustrações.</para>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="UpdatePageNumbers">
@@ -535,7 +514,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Atualiza os números de página de itens na tabela especificada de ilustrações.</summary>
+        <summary>Atualiza os números de página de itens no índice de ilustrações especificado.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -567,9 +546,9 @@
       <Docs>
         <summary>Retorna ou define o nível de título inicial de um índice de ilustrações.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>A propriedade <b>UpperHeadingLevel</b> corresponde ao valor inicial usado com a opção \o de um campo TOC (índice analítico).</para> Uso de 
-          <para>o <see cref="P:Microsoft.Office.Interop.Word.TableOfFigures.LowerHeadingLevel" /> propriedade para definir o nível de título final. Por exemplo, para definir a sintaxe de campo TOC {TOC \o "1-3"}, definir a propriedade <b>LowerHeadingLevel</b> como 3 e a propriedade <b>UpperHeadingLevel</b> como 1.</para><para /></remarks>
+        <remarks><para>A propriedade <b>UpperHeadingLevel</b> corresponde ao valor inicial usado com a opção \o de um campo TOC (Sumário).</para>
+          <para>Use a <see cref="P:Microsoft.Office.Interop.Word.TableOfFigures.LowerHeadingLevel" /> propriedade para definir o nível de título final. Por exemplo, para definir a sintaxe de campo TOC {TOC \o "1-3"}, defina a propriedade <b>LowerHeadingLevel</b> como 3 e a propriedade <b>UpperHeadingLevel</b> como 1.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="UseFields">
@@ -598,8 +577,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> se os campos de entrada de conteúdo (TC) são usados para criar um índice de ilustrações.</summary>
+        <summary><b>True</b> se os campos de entrada de conteúdo (TC) são usados para criar um índice de ilustrações.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -630,8 +608,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> se os estilos de título internos são usados para criar um índice de ilustrações.</summary>
+        <summary><b>True</b> se estilos de título internos forem usados para criar um índice de ilustrações.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

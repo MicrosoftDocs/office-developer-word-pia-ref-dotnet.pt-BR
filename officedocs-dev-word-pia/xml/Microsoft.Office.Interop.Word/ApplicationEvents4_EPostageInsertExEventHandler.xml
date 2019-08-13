@@ -1,13 +1,5 @@
 <Type Name="ApplicationEvents4_EPostageInsertExEventHandler" FullName="Microsoft.Office.Interop.Word.ApplicationEvents4_EPostageInsertExEventHandler">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="1c6b1e2fa691a9be9bf147368164681f801784e0" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20665270" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public delegate void ApplicationEvents4_EPostageInsertExEventHandler(Document Doc, int cpDeliveryAddrStart, int cpDeliveryAddrEnd, int cpReturnAddrStart, int cpReturnAddrEnd, int xaWidth, int yaHeight, string bstrPrinterName, string bstrPaperFeed, bool fPrint, out bool fCancel);" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="94af4b0a8aa74cc409913103a77c2efdb8781bff" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144818" /></Metadata><TypeSignature Language="C#" Value="public delegate void ApplicationEvents4_EPostageInsertExEventHandler(Document Doc, int cpDeliveryAddrStart, int cpDeliveryAddrEnd, int cpReturnAddrStart, int cpReturnAddrEnd, int xaWidth, int yaHeight, string bstrPrinterName, string bstrPaperFeed, bool fPrint, out bool fCancel);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ApplicationEvents4_EPostageInsertExEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ApplicationEvents4_EPostageInsertExEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub ApplicationEvents4_EPostageInsertExEventHandler(Doc As Document, cpDeliveryAddrStart As Integer, cpDeliveryAddrEnd As Integer, cpReturnAddrStart As Integer, cpReturnAddrEnd As Integer, xaWidth As Integer, yaHeight As Integer, bstrPrinterName As String, bstrPaperFeed As String, fPrint As Boolean, ByRef fCancel As Boolean)" />
@@ -45,27 +37,17 @@
   </ReturnValue>
   <Docs>
     <param name="Doc">Necessário <see cref="T:Microsoft.Office.Interop.Word.Document" />. O documento ao qual a postagem eletrônica é adicionada.</param>
-    <param name="cpDeliveryAddrStart">
-      <b>Inteiro</b>. A posição inicial do documento para o endereço do destinatário. O posicionamento corresponde ao valor do <see cref="P:Microsoft.Office.Interop.Word.Range.Start" /> propriedade para um <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto.</param>
-    <param name="cpDeliveryAddrEnd">
-      <b>Inteiro</b>. A posição final do documento para o endereço do destinatário. O posicionamento corresponde ao valor do <see cref="P:Microsoft.Office.Interop.Word.Range.End" /> propriedade para um objeto <b>Range</b> .</param>
-    <param name="cpReturnAddrStart">
-      <b>Inteiro</b>. A posição inicial do documento para o endereço do remetente. O posicionamento corresponde ao valor da propriedade <b>Iniciar</b> para um objeto <b>Range</b>.</param>
-    <param name="cpReturnAddrEnd">
-      <b>Inteiro</b>. A posição final do documento para o endereço do remetente. O posicionamento corresponde ao valor da propriedade <b>End</b> para um objeto <b>Range</b>.</param>
-    <param name="xaWidth">
-      <b>Inteiro</b>. A largura do envelope em unidades de 1/1440 de polegada.</param>
-    <param name="yaHeight">
-      <b>Inteiro</b>. A altura do envelope em unidades de 1/1440 de polegada.</param>
-    <param name="bstrPrinterName">
-      <b>Cadeia de caracteres</b>. O nome da impressora conforme especificado na guia Opções de Impressão da caixa de diálogo Opções de Envelope.</param>
-    <param name="bstrPaperFeed">
-      <b>Cadeia de caracteres</b>. O método de alimentação conforme especificado na guia Opções de Impressão da caixa de diálogo Opções de Envelope.</param>
-    <param name="fPrint">
-      <b>Boolean</b>. <b>True</b> se o usuário tiver especificado para imprimir o envelope. <b>False</b> se o usuário tiver especificado para inserir o envelope no documento.</param>
-    <param name="fCancel">
-      <b>Boolean</b>. <b>True</b> cancela a ação especificada pelo usuário conforme indicado no <paramref name="fPrint" /> parâmetro.</param>
-    <summary>Um tipo de <b>delegado</b> usado para adicionar um manipulador de eventos para o <see cref="E:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.EPostageInsertEx" /> evento. O evento <b>EPostageInsertEx</b> ocorre quando um usuário insere postagem eletrônica em um documento.</summary>
+    <param name="cpDeliveryAddrStart"><b>Número inteiro</b>. A posição inicial do documento para o endereço do destinatário. O posicionamento corresponde ao valor da <see cref="P:Microsoft.Office.Interop.Word.Range.Start" /> propriedade de um <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto.</param>
+    <param name="cpDeliveryAddrEnd"><b>Número inteiro</b>. A posição final do documento para o endereço do destinatário. O posicionamento corresponde ao valor da <see cref="P:Microsoft.Office.Interop.Word.Range.End" /> propriedade de um objeto <b>Range</b> .</param>
+    <param name="cpReturnAddrStart"><b>Número inteiro</b>. A posição inicial do documento para o endereço do remetente. O posicionamento corresponde ao valor da propriedade <b>Iniciar</b> para um objeto <b>Range</b>.</param>
+    <param name="cpReturnAddrEnd"><b>Número inteiro</b>. A posição final do documento para o endereço do remetente. O posicionamento corresponde ao valor da propriedade <b>End</b> para um objeto <b>Range</b>.</param>
+    <param name="xaWidth"><b>Número inteiro</b>. A largura do envelope em unidades de 1/1440 de polegada.</param>
+    <param name="yaHeight"><b>Número inteiro</b>. A altura do envelope em unidades de 1/1440 de polegada.</param>
+    <param name="bstrPrinterName"><b>Cadeia de caracteres</b>. O nome da impressora conforme especificado na guia Opções de Impressão da caixa de diálogo Opções de Envelope.</param>
+    <param name="bstrPaperFeed"><b>Cadeia de caracteres</b>. O método de alimentação conforme especificado na guia Opções de Impressão da caixa de diálogo Opções de Envelope.</param>
+    <param name="fPrint"><b>Boolean</b>. <b>True</b> se o usuário tiver especificado para imprimir o envelope. <b>False</b> se o usuário tiver especificado para inserir o envelope no documento.</param>
+    <param name="fCancel"><b>Boolean</b>. <b>True</b> cancela a ação que o usuário especificou como indicado no <paramref name="fPrint" /> parâmetro.</param>
+    <summary>Um tipo de <b>Representante</b> usado para adicionar um manipulador de eventos <see cref="E:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.EPostageInsertEx" /> para o evento. O evento <b>EPostageInsertEx</b> ocorre quando um usuário insere postagem eletrônica em um documento.</summary>
     <remarks>To be added.</remarks>
   </Docs>
 </Type>

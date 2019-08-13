@@ -1,13 +1,5 @@
 <Type Name="HangulHanjaConversionDictionaries" FullName="Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="65aad3e41b0fa2a74ea7ef6c7d92127e0018faa4" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20664897" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface HangulHanjaConversionDictionaries : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="7f106055e619307a9bffe6eb130466a321eefa69" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146735" /></Metadata><TypeSignature Language="C#" Value="public interface HangulHanjaConversionDictionaries : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract HangulHanjaConversionDictionaries implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries" />
   <TypeSignature Language="VB.NET" Value="Public Interface HangulHanjaConversionDictionaries&#xA;Implements IEnumerable" />
@@ -31,10 +23,12 @@
   </Attributes>
   <Docs>
     <summary>Uma coleção de <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> objetos que inclui os dicionários de conversão de Hangul em Hanja personalizados ativos.</summary>
-    <remarks>
-      <para>Use o <see cref="P:Microsoft.Office.Interop.Word._Application.HangulHanjaDictionaries" /> propriedade para retornar a coleção de dicionários personalizados ativos no momento.</para> Uso de 
-      <para>o <see cref="M:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries.Add(System.String)" /> método para adicionar um novo dicionário personalizado à coleção de dicionários personalizados ativos. Se não houver um arquivo com o nome especificado por <paramref name="FileName" />, o Microsoft Word cria proprietário.</para> Uso de 
-      <para>o <see cref="M:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries.ClearAll" /> método descarregar todos os dicionários personalizados. No entanto, observe que esse método não exclui os arquivos de dicionário. Depois de usar esse método, o número de dicionários personalizados na coleção é 0 (zero).</para><para>Você definir o dicionário personalizado ao qual são adicionadas novas palavras usando o <see cref="P:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries.ActiveCustomDictionary" /> propriedade. Se você tentar definir essa propriedade com um dicionário que não é um dicionário personalizado, ocorrerá um erro.</para><para>o <see cref="P:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries.Maximum" /> propriedade retorna o número máximo de dicionários de conversão personalizados simultâneas que o aplicativo pode suportar. Para o Word, o máximo é 10.</para><para /></remarks>
+    <remarks><para>Use a <see cref="P:Microsoft.Office.Interop.Word._Application.HangulHanjaDictionaries" /> propriedade para retornar a coleção de dicionários de conversão personalizados ativos no momento.</para>
+      <para>Use o <see cref="M:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries.Add(System.String)" /> método para adicionar um novo dicionário de conversão personalizado à coleção de dicionários de conversão personalizados ativos. Se não houver um arquivo com o nome especificado por <paramref name="FileName" />, o Microsoft Word o criará.</para>
+      <para>Use o <see cref="M:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries.ClearAll" /> método para descarregar todos os dicionários de conversão personalizados. No entanto, observe que esse método não exclui os arquivos de dicionário. Depois de usar esse método, o número de dicionários personalizados na coleção é 0 (zero).</para>
+      <para>Você define o dicionário personalizado ao qual são adicionadas novas palavras usando a <see cref="P:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries.ActiveCustomDictionary" /> propriedade. Se você tentar definir essa propriedade com um dicionário que não é um dicionário personalizado, ocorrerá um erro.</para>
+      <para>A <see cref="P:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries.Maximum" /> propriedade retorna o número máximo de dicionários de conversão personalizados simultâneos que o aplicativo pode suportar. Para o Word, esse máximo é 10.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="ActiveCustomDictionary">
@@ -63,7 +57,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Dictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define um <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> object que representa o dicionário personalizado ao qual serão adicionadas palavras.</summary>
+        <summary>Retorna ou define um <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> objeto que representa o dicionário personalizado ao qual as palavras serão adicionadas.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -91,13 +85,12 @@
         <Parameter Name="FileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="FileName">
-          <b>String</b> necessário. Sequência de caracteres com o nome do arquivo de dicionário. Se nenhum caminho for especificado na sequência de caracteres, será usado o caminho dos revisores de texto.</param>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> object que representa um novo dicionário de conversão adicionado à coleção de dicionários personalizados ativos.</summary>
+        <param name="FileName"><b>String</b> necessário. Sequência de caracteres com o nome do arquivo de dicionário. Se nenhum caminho for especificado na sequência de caracteres, será usado o caminho dos revisores de texto.</param>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> objeto que representa um novo dicionário de conversão adicionado à coleção de dicionários de conversão personalizados ativos.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Se um arquivo com o nome especificado por <paramref name="FileName" /> não existir, Microsoft Word o criará.</para> Uso de 
-          <para>o <see cref="P:Microsoft.Office.Interop.Word._Application.HangulHanjaDictionaries" /> propriedade para retornar a coleção de dicionários personalizados. O <see cref="T:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries" /> coleção inclui somente os dicionários de conversão personalizados ativos.</para><para /></remarks>
+        <remarks><para>Se um arquivo com o nome especificado <paramref name="FileName" /> não existir, o Microsoft Word criará um.</para>
+          <para>Use a <see cref="P:Microsoft.Office.Interop.Word._Application.HangulHanjaDictionaries" /> propriedade para retornar a coleção de dicionários de conversão personalizados. A <see cref="T:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries" /> coleção inclui apenas os dicionários de conversão personalizados ativos.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -123,7 +116,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -181,10 +174,8 @@
       <Parameters />
       <Docs>
         <summary>Descarrega todos os dicionários personalizados ou de conversão.</summary>
-        <remarks>
-          <para>O método <b>ClearAll</b> quando usada em uma <see cref="T:Microsoft.Office.Interop.Word.Dictionaries" /> ou <see cref="T:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries" /> objeto não exclui os arquivos de dicionário personalizados ou de conversão. Depois de usar esse método, o número de dicionários personalizados ou de conversão na coleção é 0 (zero).</para>
-          <para />
-        </remarks>
+        <remarks><para>O método <b>ClearAll</b> quando usado em um <see cref="T:Microsoft.Office.Interop.Word.Dictionaries" /> objeto <see cref="T:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries" /> or não exclui os arquivos de dicionário personalizados ou de conversão. Depois de usar esse método, o número de dicionários personalizados ou de conversão na coleção é 0 (zero).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -240,9 +231,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
-          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". [!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
+          <para>A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">

@@ -1,13 +1,5 @@
 <Type Name="XMLNamespace" FullName="Microsoft.Office.Interop.Word.XMLNamespace">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="e3cee4ccfb64e6e5f08d4d11a8818c1cafb6cce0" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20664731" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface XMLNamespace" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d3b52eee4a72b22c5b40876def419ead67fb9091" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34145412" /></Metadata><TypeSignature Language="C#" Value="public interface XMLNamespace" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract XMLNamespace" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.XMLNamespace" />
   <TypeSignature Language="VB.NET" Value="Public Interface XMLNamespace" />
@@ -27,11 +19,9 @@
   </Attributes>
   <Docs>
     <summary>Representa um esquema individual na Biblioteca de Esquemas.</summary>
-    <remarks>
-      <para>, Você pode acessar a biblioteca de esquemas de dentro do Microsoft Word a partir da guia esquema XML na caixa de diálogo modelos e suplementos. Biblioteca de esquemas representa esquemas instalados no computador de um usuário que o usuário aplicou a um documento do Word ou que um usuário explicitamente adicionou à biblioteca de esquemas usando a caixa de diálogo biblioteca de esquemas.</para>
-      <para>Uso o <see cref="P:Microsoft.Office.Interop.Word.XMLNamespaces.Item(System.Object@)" /> propriedade do <see cref="T:Microsoft.Office.Interop.Word.XMLNamespaces" /> coleção, para retornar um objeto <b>XMLNameSpace</b> individual. O valor de índice da propriedade <b>Item</b> pode ser um <b>inteiro</b>, que indica a posição do esquema na biblioteca de esquemas, ou uma <b>cadeia de caracteres</b>, que representa o nome do esquema conforme retornado usando o <see cref="P:Microsoft.Office.Interop.Word.XMLNamespace.URI" /> (a propriedade Configuração de TargetNamespace definida no esquema).</para>
-      <para />
-    </remarks>
+    <remarks><para>Você pode acessar a Biblioteca de Esquemas a partir do Microsoft Word, na guia Esquema XML da caixa de diálogo Modelos e Suplementos. A biblioteca de esquemas representa os esquemas instalados na máquina de um usuário que um usuário aplicou a um documento do Word ou que um usuário adicionou explicitamente à biblioteca de esquemas usando a caixa de diálogo biblioteca de esquemas.</para>
+      <para>Use a <see cref="P:Microsoft.Office.Interop.Word.XMLNamespaces.Item(System.Object@)" /> propriedade da <see cref="T:Microsoft.Office.Interop.Word.XMLNamespaces" /> coleção para retornar um objeto <b>XMLNameSpace</b> individual. O valor de índice da propriedade <b>Item</b> pode ser um <b>inteiro</b>, que indica a posição do esquema na biblioteca de esquemas ou uma <b>cadeia de caracteres</b>, que representa o nome do esquema conforme retornado usando a <see cref="P:Microsoft.Office.Interop.Word.XMLNamespace.URI" /> Propriedade (o Configuração de TargetNamespace definida no esquema).</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Alias">
@@ -63,7 +53,7 @@
         <Parameter Name="AllUsers" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="AllUsers">Opcional <b>booleano</b>. <b>True</b> se todos os usuários têm acesso ao objeto especificado.</param>
+        <param name="AllUsers"><b>Boolean</b>opcional. <b>True</b> se todos os usuários têm acesso ao objeto especificado.</param>
         <summary>Retorna uma <b>cadeia de caracteres</b> que representa o nome amigável para o objeto especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -92,7 +82,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -120,8 +110,7 @@
         <Parameter Name="Document" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Document">
-          <b>Objeto</b>necessário. O documento ao qual será anexado o esquema XML especificado.</param>
+        <param name="Document"><b>Objeto</b>necessário. O documento ao qual será anexado o esquema XML especificado.</param>
         <summary>Anexa um esquema XML a um documento.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -151,9 +140,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
-          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". [!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
+          <para>A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultTransform">
@@ -185,8 +174,8 @@
         <Parameter Name="AllUsers" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="AllUsers">Opcional <b>booleano</b>. <b>True</b> se todos os usuários têm acesso ao objeto especificado.</param>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.XSLTransform" /> object que representa o arquivo de transformação (XSL) padrão a ser usado ao abrir um documento a partir de um esquema XML para um determinado namespace.</summary>
+        <param name="AllUsers"><b>Boolean</b>opcional. <b>True</b> se todos os usuários têm acesso ao objeto especificado.</param>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.XSLTransform" /> objeto que representa o arquivo de transformação em XSL (XSLT) padrão a ser usado ao abrir um documento a partir de um esquema XML para um namespace específico.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -245,7 +234,7 @@
         <Parameter Name="AllUsers" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="AllUsers">Opcional <b>booleano</b>. <b>True</b> se todos os usuários têm acesso ao objeto especificado.</param>
+        <param name="AllUsers"><b>Boolean</b>opcional. <b>True</b> se todos os usuários têm acesso ao objeto especificado.</param>
         <summary>Obtém ou define o local do namespace XML especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -330,7 +319,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.XSLTransforms</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.XSLTransforms" /> coleção que representa os arquivos de transformação (XSL) especificados para uso com o esquema.</summary>
+        <summary>Retorna uma <see cref="T:Microsoft.Office.Interop.Word.XSLTransforms" /> coleção que representa os arquivos XSLT (Extensible Stylesheet Language Transformation) especificados para uso com um esquema.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

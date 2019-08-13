@@ -1,13 +1,5 @@
 <Type Name="FormField" FullName="Microsoft.Office.Interop.Word.FormField">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="137dfb21b0a9bdd9ac870c9196378e48d20ab52e" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20664730" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface FormField" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="4de4cb33d6d8353de0dcfc472045a254de650268" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146812" /></Metadata><TypeSignature Language="C#" Value="public interface FormField" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract FormField" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.FormField" />
   <TypeSignature Language="VB.NET" Value="Public Interface FormField" />
@@ -27,14 +19,12 @@
   </Attributes>
   <Docs>
     <summary>Representa um único campo de formulário.</summary>
-    <remarks>
-      <para>O objeto <b>FormField</b> é um membro do <see cref="T:Microsoft.Office.Interop.Word.FormFields" /> conjunto.</para>
-      <para>Uso <b>FormFields</b>(<paramref name="index" />), onde <paramref name="index" /> é um nome de indicador ou o número de índice, para retornar um único objeto <b>FormField</b> .</para>
-      <para>o número de índice representa a posição do campo de formulário na seleção, intervalo ou documento.</para>
-      <para>Uso o <see cref="M:Microsoft.Office.Interop.Word.FormFields.Add(Microsoft.Office.Interop.Word.Range,Microsoft.Office.Interop.Word.WdFieldType)" /> método com o objeto <b>FormFields</b> para adicionar um campo de formulário.</para>
-      <para>Uso o <see cref="P:Microsoft.Office.Interop.Word.FormField.CheckBox" />, <see cref="P:Microsoft.Office.Interop.Word.FormField.DropDown" />, e <see cref="P:Microsoft.Office.Interop.Word.FormField.TextInput" /> propriedades com o objeto <b>FormField</b> para retornar o <see cref="T:Microsoft.Office.Interop.Word.CheckBox" />, <see cref="T:Microsoft.Office.Interop.Word.DropDown" />, e <see cref="T:Microsoft.Office.Interop.Word.TextInput" /> objetos.</para>
-      <para />
-    </remarks>
+    <remarks><para>O <b></b> objeto FormField é um membro da <see cref="T:Microsoft.Office.Interop.Word.FormFields" /> coleção.</para>
+      <para>Use <b>FormFields</b>(<paramref name="index" />), onde <paramref name="index" /> é um nome de indicador ou número de índice, para retornar um único objeto <b>FormField</b> .</para>
+      <para>O número de índice representa a posição do campo de formulário na seleção, intervalo ou documento.</para>
+      <para>Use o <see cref="M:Microsoft.Office.Interop.Word.FormFields.Add(Microsoft.Office.Interop.Word.Range,Microsoft.Office.Interop.Word.WdFieldType)" /> método com o objeto <b>FormFields</b> para adicionar um campo de formulário.</para>
+      <para>Use as <see cref="P:Microsoft.Office.Interop.Word.FormField.CheckBox" />propriedades <see cref="P:Microsoft.Office.Interop.Word.FormField.DropDown" />, e <see cref="P:Microsoft.Office.Interop.Word.FormField.TextInput" /> com o objeto <b>FormField</b> para retornar os <see cref="T:Microsoft.Office.Interop.Word.CheckBox" />objetos <see cref="T:Microsoft.Office.Interop.Word.DropDown" />, e <see cref="T:Microsoft.Office.Interop.Word.TextInput" /> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -60,7 +50,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -91,11 +81,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Determina se as referências ao campo de formulário especificado serão atualizadas automaticamente sempre que o campo é encerrado.</summary>
+        <summary>Determina se as referências ao campo de formulário especificado são automaticamente atualizadas sempre que o campo é encerrado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Essa propriedade retorna <b>True</b> se as referências ao campo de formulário especificado sejam automaticamente atualizadas sempre que o campo é encerrado e <b>False</b> se não. Defina o valor da propriedade como <b>True</b> ou <b>False</b> para habilitar ou desabilitar a funcionalidade.</para> Campo 
-          <para>uma REF pode ser usado para fazer referência ao conteúdo de um campo de formulário. Por exemplo, {REF SubTotal} referencia o campo de formulário marcado pelo indicador SubTotal.</para><para /></remarks>
+        <remarks><para>Essa propriedade retorna <b>true</b> se as referências ao campo de formulário especificado são automaticamente atualizadas sempre que o campo é encerrado e <b>false</b> se não. Defina o valor da propriedade como <b>true</b> ou <b>false</b> para habilitar ou desabilitar a funcionalidade.</para>
+          <para>Um campo REF pode ser usado para fazer referência ao conteúdo de um campo de formulário. Por exemplo, {REF SubTotal} faz referência ao campo de formulário marcado pelo indicador SubTotal.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CheckBox">
@@ -121,12 +111,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.CheckBox</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.CheckBox" /> object que representa um campo de formulário caixa de seleção.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.CheckBox" /> objeto que representa um campo de formulário caixa de seleção.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se a propriedade <b>CheckBox</b> for aplicada a um <see cref="T:Microsoft.Office.Interop.Word.FormField" /> objeto que não seja um campo de formulário caixa de seleção, a propriedade não falhará, mas o <see cref="P:Microsoft.Office.Interop.Word.CheckBox.Valid" /> do objeto retornado será <b>False</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Se a propriedade <b>CheckBox</b> for aplicada a um <see cref="T:Microsoft.Office.Interop.Word.FormField" /> objeto que não é um campo de formulário caixa de seleção, a propriedade não falhará, mas a <see cref="P:Microsoft.Office.Interop.Word.CheckBox.Valid" /> Propriedade do objeto retornado será <b>false</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Copy">
@@ -179,9 +167,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto especificado foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
-          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Se o objeto especificado foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". [!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
+          <para>A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Cut">
@@ -259,10 +247,8 @@
       <Docs>
         <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.DropDown" /> objeto que representa um campo de formulário suspenso.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se a propriedade <b>DropDown</b> for aplicada a um <see cref="T:Microsoft.Office.Interop.Word.FormField" /> objeto que não seja um campo de formulário suspenso, a propriedade não falhará, mas o <see cref="P:Microsoft.Office.Interop.Word.DropDown.Valid" /> do objeto retornado será <b>False</b>.</para>
-          <para />
-        </remarks>
+        <remarks><para>Se a propriedade <b>DropDown</b> for aplicada a um <see cref="T:Microsoft.Office.Interop.Word.FormField" /> objeto que não é um campo de formulário suspenso, a propriedade não falhará, mas <see cref="P:Microsoft.Office.Interop.Word.DropDown.Valid" /> a propriedade do objeto retornado será <b>false</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -293,11 +279,9 @@
       <Docs>
         <summary>Determina se um campo de formulário está habilitado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Essa propriedade retorna <b>True</b> se um campo de formulário está habilitado e <b>False</b> se não. Defina o valor da propriedade como <b>True</b> ou <b>False</b> para habilitar ou desabilitar a funcionalidade.</para>
-          <para>Se um campo de formulário estiver habilitado, seu conteúdo pode ser alterado conforme o formulário for preenchido</para>
-          <para />
-        </remarks>
+        <remarks><para>Essa propriedade retorna <b>true</b> se um campo de formulário está habilitado e <b>false</b> se não. Defina o valor da propriedade como <b>true</b> ou <b>false</b> para habilitar ou desabilitar a funcionalidade.</para>
+          <para>Se um campo de formulário estiver habilitado, o seu conteúdo poderá ser alterado quando o formulário for preenchido.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EntryMacro">
@@ -326,12 +310,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define um nome de macro de entrada para o campo de formulário especificado (<see cref="T:Microsoft.Office.Interop.Word.CheckBox" />, <see cref="T:Microsoft.Office.Interop.Word.DropDown" />, ou <see cref="T:Microsoft.Office.Interop.Word.TextInput" />).</summary>
+        <summary>Retorna ou define um nome de macro de entrada para o campo de<see cref="T:Microsoft.Office.Interop.Word.CheckBox" />formulário <see cref="T:Microsoft.Office.Interop.Word.DropDown" />especificado ( <see cref="T:Microsoft.Office.Interop.Word.TextInput" />, ou).</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>A macro de entrada é executada quando o campo de formulário recebe o foco.</para>
-          <para />
-        </remarks>
+        <remarks><para>A macro de entrada é executada quando o campo de formulário recebe o foco.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ExitMacro">
@@ -360,12 +342,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define um nome da macro de saída para o campo de formulário especificado (<see cref="T:Microsoft.Office.Interop.Word.CheckBox" />, <see cref="T:Microsoft.Office.Interop.Word.DropDown" />, ou <see cref="T:Microsoft.Office.Interop.Word.TextInput" />).</summary>
+        <summary>Retorna ou define um nome de macro de saída para o campo de<see cref="T:Microsoft.Office.Interop.Word.CheckBox" />formulário <see cref="T:Microsoft.Office.Interop.Word.DropDown" />especificado ( <see cref="T:Microsoft.Office.Interop.Word.TextInput" />, ou).</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>A macro de saída é executada quando o campo de formulário perde o foco.</para>
-          <para />
-        </remarks>
+        <remarks><para>A macro de saída é executada quando o campo de formulário perde o foco.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HelpText">
@@ -396,10 +376,8 @@
       <Docs>
         <summary>Retorna ou define o texto que é exibido em uma caixa de mensagem quando o campo de formulário tem o foco e o usuário pressionar F1.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o <see cref="P:Microsoft.Office.Interop.Word.FormField.OwnHelp" /> propriedade estiver definida como <b>True</b>, <b>HelpText</b> Especifica o valor de cadeia de caracteres de texto. Se <b>OwnHelp</b> estiver definida como <b>False</b>, <b>HelpText</b> Especifica o nome de uma entrada de AutoTexto que contém o texto de ajuda para o campo de formulário.</para>
-          <para />
-        </remarks>
+        <remarks><para>Se a <see cref="P:Microsoft.Office.Interop.Word.FormField.OwnHelp" /> propriedade for definida como <b>true</b>, <b>HelpText</b> especificará o valor da cadeia de caracteres de texto. Se <b>OwnHelp</b> estiver definida como <b>False</b>, <b>HelpText</b> Especifica o nome de uma entrada de AutoTexto que contém o texto de ajuda para o campo de formulário.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -456,7 +434,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.FormField</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o próximo objeto do conjunto.</summary>
+        <summary>Retorna o próximo objeto da coleção.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -489,10 +467,8 @@
       <Docs>
         <summary>Especifica a fonte do texto exibido em uma caixa de mensagem quando um campo de formulário tem o foco e o usuário pressionar F1.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se <b>True</b>, o texto especificado pelo <see cref="P:Microsoft.Office.Interop.Word.FormField.HelpText" /> propriedade será exibida. Se for <b>False</b>, o texto da entrada de AutoTexto especificado pela propriedade <b>HelpText</b> é exibido.</para>
-          <para />
-        </remarks>
+        <remarks><para>Se <b>true</b>, o texto especificado pela <see cref="P:Microsoft.Office.Interop.Word.FormField.HelpText" /> propriedade é exibido. Se for <b>False</b>, o texto da entrada de AutoTexto especificado pela propriedade <b>HelpText</b> é exibido.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OwnStatus">
@@ -523,10 +499,8 @@
       <Docs>
         <summary>Especifica a fonte do texto que é exibido na barra quando um campo de formulário tem o foco de status.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se a propriedade retorna <b>True</b>, o texto especificado pelo <see cref="P:Microsoft.Office.Interop.Word.FormField.StatusText" /> propriedade será exibida e se <b>Falso</b>, o texto da entrada de AutoTexto a especificado pela propriedade <b>StatusText</b> é exibida. Defina o valor da propriedade como <b>True</b> ou <b>False</b> para habilitar ou desabilitar a funcionalidade.</para>
-          <para />
-        </remarks>
+        <remarks><para>Se a propriedade retornar <b>true</b>, o texto especificado pela <see cref="P:Microsoft.Office.Interop.Word.FormField.StatusText" /> propriedade será exibido e, se for <b>false</b>, o texto da entrada de AutoTexto especificada pela propriedade <b>StatusText</b> será exibido. Defina o valor da propriedade como <b>true</b> ou <b>false</b> para habilitar ou desabilitar a funcionalidade.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -580,7 +554,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.FormField</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o objeto anterior do conjunto.</summary>
+        <summary>Retorna o objeto anterior da coleção.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -608,12 +582,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Range" /> object que representa a parte de um documento que está contida no objeto especificado.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto que representa a parte de um documento que está contida no objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Para obter informações sobre como retornar um intervalo de um documento ou um intervalo de formas de uma coleção de formas, consulte o <see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" /> método.</para>
-          <para />
-        </remarks>
+        <remarks><para>Para obter informações sobre como retornar um intervalo de um documento ou retornar um intervalo de formas de uma coleção de formas <see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" /> , consulte o método.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Result">
@@ -642,12 +614,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Range" /> object que representa a parte de um documento que está contida no objeto especificado.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto que representa a parte de um documento que está contida no objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Para obter informações sobre como retornar um intervalo de um documento ou um intervalo de formas de uma coleção de formas, consulte o <see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" /> método.</para>
-          <para />
-        </remarks>
+        <remarks><para>Para obter informações sobre como retornar um intervalo de um documento ou retornar um intervalo de formas de uma coleção de formas <see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" /> , consulte o método.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -672,10 +642,8 @@
       <Parameters />
       <Docs>
         <summary>Seleciona o objeto especificado.</summary>
-        <remarks>
-          <para>Depois de usar esse método, use o <see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> propriedade para trabalhar com os itens selecionados.</para>
-          <para />
-        </remarks>
+        <remarks><para>Depois de usar esse método, use <see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> a propriedade para trabalhar com os itens selecionados.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="StatusText">
@@ -704,12 +672,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define o texto que é exibido na barra quando um campo de formulário tem o foco de status.</summary>
+        <summary>Retorna ou define o texto que é exibido na barra de status quando um campo de formulário tem o foco.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o <see cref="P:Microsoft.Office.Interop.Word.FormField.OwnStatus" /> propriedade estiver definida como <b>True</b>, a propriedade <b>StatusText</b> Especifica o texto da barra de status. Se a propriedade <b>OwnStatus</b> estiver definida como <b>False</b>, a propriedade <b>StatusText</b> Especifica o nome de uma entrada de AutoTexto que contém o texto da barra de status para o campo de formulário.</para>
-          <para />
-        </remarks>
+        <remarks><para>Se a <see cref="P:Microsoft.Office.Interop.Word.FormField.OwnStatus" /> propriedade for definida como <b>true</b>, a propriedade <b>StatusText</b> especificará o texto da barra de status. Se a propriedade <b>OwnStatus</b> está definida como <b>False</b>, a propriedade <b>StatusText</b> especifica o nome de uma entrada de AutoTexto que contém o texto da barra de status no campo formulário.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TextInput">
@@ -735,13 +701,11 @@
         <ReturnType>Microsoft.Office.Interop.Word.TextInput</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.TextInput" /> object que representa um campo de formulário de texto.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.TextInput" /> objeto que representa um campo de formulário de texto.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se a propriedade <b>TextInput</b> for aplicada a um objeto <b>FormField</b> que não seja um campo de formulário suspenso, a propriedade não falhará, mas o <see cref="P:Microsoft.Office.Interop.Word.TextInput.Valid" /> do objeto retornado será <b>False</b>.</para>
-          <para>Uso o <see cref="P:Microsoft.Office.Interop.Word.FormField.Result" /> propriedade com o objeto <b>FormField</b> para retornar ou definir o conteúdo de um <see cref="T:Microsoft.Office.Interop.Word.TextInput" /> objeto.</para>
-          <para />
-        </remarks>
+        <remarks><para>Se a propriedade <b>TextInput</b> for aplicada a um objeto <b>FormField</b> que não é um campo de formulário suspenso, a propriedade não falhará, <see cref="P:Microsoft.Office.Interop.Word.TextInput.Valid" /> mas a propriedade do objeto retornado será <b>false</b>.</para>
+          <para>Use a <see cref="P:Microsoft.Office.Interop.Word.FormField.Result" /> Propriedade com o <b></b> objeto FormField para retornar ou definir o conteúdo de <see cref="T:Microsoft.Office.Interop.Word.TextInput" /> um objeto.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">

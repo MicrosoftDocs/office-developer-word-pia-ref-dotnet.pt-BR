@@ -1,13 +1,5 @@
 <Type Name="Comment" FullName="Microsoft.Office.Interop.Word.Comment">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="fda4beac7d470cea977cadf0e9685141efef399b" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20664040" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Comment" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="6adea5e853e9646a801465cf9cca29730ebb1600" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146168" /></Metadata><TypeSignature Language="C#" Value="public interface Comment" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Comment" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Comment" />
   <TypeSignature Language="VB.NET" Value="Public Interface Comment" />
@@ -27,10 +19,11 @@
   </Attributes>
   <Docs>
     <summary>Representa um único comentário.</summary>
-    <remarks>
-      <para>O objeto <b>Comment</b> é membro do <see cref="T:Microsoft.Office.Interop.Word.Comments" /> conjunto. Coleção <b>Comments</b> inclui comentários de uma seleção, intervalo ou documento.</para> Use os <b>comentários</b>de 
-      <para>(<paramref name="index" />), onde <paramref name="index" /> é o número de índice, para retornar um único objeto <b>Comment</b> . O número de índice representa a posição do comentário na seleção especificada, intervalo ou documento.</para><para>Uso o <see cref="M:Microsoft.Office.Interop.Word.Comments.Add(Microsoft.Office.Interop.Word.Range,System.Object@)" /> método para adicionar um comentário no intervalo especificado.</para> Uso de 
-      <para>o <see cref="P:Microsoft.Office.Interop.Word.Comment.Reference" /> propriedade para retornar a marca de referência associada ao comentário especificado. Use o <see cref="P:Microsoft.Office.Interop.Word.Comment.Range" /> propriedade para retornar o texto associado ao comentário especificado.</para><para /></remarks>
+    <remarks><para>O objeto <b>comment</b> é um membro da <see cref="T:Microsoft.Office.Interop.Word.Comments" /> coleção. Coleção <b>Comments</b> inclui comentários de uma seleção, intervalo ou documento.</para>
+      <para>Use <b></b>Comments<paramref name="index" />(), <paramref name="index" /> em que é o número de índice, para retornar um único objeto <b>comment</b> . O número de índice representa a posição do comentário na seleção especificada, intervalo ou documento.</para>
+      <para>Use o <see cref="M:Microsoft.Office.Interop.Word.Comments.Add(Microsoft.Office.Interop.Word.Range,System.Object@)" /> método para adicionar um comentário no intervalo especificado.</para>
+      <para>Use a <see cref="P:Microsoft.Office.Interop.Word.Comment.Reference" /> propriedade para retornar a marca de referência associada ao comentário especificado. Use a <see cref="P:Microsoft.Office.Interop.Word.Comment.Range" /> propriedade para retornar o texto associado ao comentário especificado.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Ancestor">
@@ -56,7 +49,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Comment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Para comentários que são respostas à comentários existentes, retorna o pai do objeto <b>Comment</b> ; novos comentários (nível superior), retornará <b>Nothing</b> (uma referência nula (Nothing no Visual Basic) .in c#) somente leitura.</summary>
+        <summary>Para comentários que são respostas a comentários existentes, retorna o objeto <b>comment</b> pai; para comentários novos (de nível superior), retorna <b>Nothing</b> (uma referência nula (Nothing no Visual Basic). em C#) somente leitura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -84,7 +77,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -149,7 +142,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.CoAuthor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.CoAuthor" /> object que representa o autor do comentário especificado. Somente leitura.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.CoAuthor" /> objeto que representa o autor do comentário especificado. Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -179,9 +172,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
-          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". [!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
+          <para>A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Date">
@@ -207,7 +200,7 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna a data e hora em que o comentário foi inserido.</summary>
+        <summary>Retorna a data e a hora em que o comentário foi inserido.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -261,7 +254,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Exclui o comentário especificado e todas as respostas associadas a ela.</summary>
+        <summary>Exclui o comentário especificado e todas as respostas associadas a ele.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -291,7 +284,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define um <b>Boolean</b> (<b>bool</b> em c#) cujo valor é <b>true</b> se o comentário especificado tiver sido marcado como fechado. Leitura e gravação.</summary>
+        <summary>Retorna ou define um <b>Boolean</b> (<b>bool</b> em C#) cujo valor é <b>true</b> se o comentário especificado tiver sido marcado como fechado. Leitura e gravação.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -411,10 +404,8 @@
       <Docs>
         <summary>Retorna um <b>Boolean</b> que indica se um comentário é manuscrito.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Para comentários que são respostas à comentários existentes, retorna o pai do objeto <b>Comment</b> ; novos comentários (nível superior), retornará <b>Nothing</b> (uma referência nula (Nothing no Visual Basic) em c#). Somente leitura.</para>
-          <para />
-        </remarks>
+        <remarks><para>Para comentários que são respostas a comentários existentes, retorna o objeto <b>comment</b> pai; para comentários novos (de nível superior), retorna <b>Nothing</b> (uma referência nula (Nothing no Visual Basic) em C#). Somente leitura.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -468,12 +459,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Range" /> object que representa a parte de um documento que está contida no objeto especificado.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto que representa a parte de um documento que está contida no objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Para obter informações sobre como retornar um intervalo de um documento ou um intervalo de formas de uma coleção de formas, consulte o <see cref="P:Microsoft.Office.Interop.Word.Comment.Range" /> método.</para>
-          <para />
-        </remarks>
+        <remarks><para>Para obter informações sobre como retornar um intervalo de um documento ou retornar um intervalo de formas de uma coleção de formas <see cref="P:Microsoft.Office.Interop.Word.Comment.Range" /> , consulte o método.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Reference">
@@ -499,7 +488,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Range" /> object que representa uma nota de rodapé, nota de fim ou marca de referência de comentário.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto que representa uma marca de referência de nota de rodapé, nota de fim ou comentário.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -527,8 +516,8 @@
         <ReturnType>Microsoft.Office.Interop.Word.Comments</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Comments" /> coleção de objetos <b>Comment</b> que sejam filhos do comentário especificado. Somente leitura.</summary>
-        <value>Chamar o <see cref="M:Microsoft.Office.Interop.Word.Comments.Add(Microsoft.Office.Interop.Word.Range,System.Object@)" /> método na coleção retornada de respostas adiciona uma nova resposta, a menos que a coleção foi acessada a partir de uma resposta para uma resposta. O <see cref="P:Microsoft.Office.Interop.Word.Comments.ShowBy" /> propriedade falha quando chamado na coleção <b>Comments</b> retornada pela propriedade <b>respostas</b> .</value>
+        <summary>Retorna uma <see cref="T:Microsoft.Office.Interop.Word.Comments" /> coleção de objetos <b>comment</b> que são filhos do comentário especificado. Somente leitura.</summary>
+        <value>Chamar o <see cref="M:Microsoft.Office.Interop.Word.Comments.Add(Microsoft.Office.Interop.Word.Range,System.Object@)" /> método na coleção retornada de respostas adiciona uma nova resposta, a menos que a coleção tenha sido acessada a partir de uma resposta a uma resposta. A <see cref="P:Microsoft.Office.Interop.Word.Comments.ShowBy" /> Propriedade falha quando chamada na coleção <b>Comments</b> retornada pela propriedade <b>responder</b> .</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

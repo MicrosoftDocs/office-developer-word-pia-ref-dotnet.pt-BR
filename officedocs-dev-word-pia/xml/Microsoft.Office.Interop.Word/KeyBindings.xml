@@ -1,13 +1,5 @@
 <Type Name="KeyBindings" FullName="Microsoft.Office.Interop.Word.KeyBindings">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="82a4dc883d5b7257bb70e07ee869a0f2dba9b2f1" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20664610" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface KeyBindings : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="c0bf61c2c56c0399c987bf635fa00d822963862c" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146665" /></Metadata><TypeSignature Language="C#" Value="public interface KeyBindings : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract KeyBindings implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.KeyBindings" />
   <TypeSignature Language="VB.NET" Value="Public Interface KeyBindings&#xA;Implements IEnumerable" />
@@ -30,13 +22,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Uma coleção de <see cref="T:Microsoft.Office.Interop.Word.KeyBinding" /> objetos que representam as atribuições de teclas personalizadas no contexto atual. Atribuições de teclas personalizadas são feitas na caixa de diálogo Personalizar teclado.</summary>
-    <remarks>
-      <para>Use o <see cref="P:Microsoft.Office.Interop.Word._Application.KeyBindings" /> propriedade para retornar a coleção <b>KeyBindings</b> .</para>
-      <para>Uso o <see cref="M:Microsoft.Office.Interop.Word.KeyBindings.Add(Microsoft.Office.Interop.Word.WdKeyCategory,System.String,System.Int32,System.Object@,System.Object@)" /> método para adicionar um objeto <b>KeyBinding</b> à coleção <b>KeyBindings</b> .</para>
-      <para>Uso <b>KeyBindings</b>(<paramref name="index" />), onde <paramref name="index" /> é o número de índice, para retornar um único objeto <b>KeyBinding</b> .</para>
-      <para />
-    </remarks>
+    <summary>Uma coleção de <see cref="T:Microsoft.Office.Interop.Word.KeyBinding" /> objetos que representa as atribuições de teclas personalizadas no contexto atual. Atribuições de teclas personalizadas são feitas na caixa de diálogo Personalizar teclado.</summary>
+    <remarks><para>Use a <see cref="P:Microsoft.Office.Interop.Word._Application.KeyBindings" /> propriedade para retornar a <b></b> coleção keybindings.</para>
+      <para>Use o <see cref="M:Microsoft.Office.Interop.Word.KeyBindings.Add(Microsoft.Office.Interop.Word.WdKeyCategory,System.String,System.Int32,System.Object@,System.Object@)" /> método para adicionar um objeto <b>KeyBinding</b> à coleção keybindings. <b></b></para>
+      <para>Use <b></b>keybindings (<paramref name="index" />), onde <paramref name="index" /> é o número de índice, para retornar um único objeto <b>KeyBinding</b> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -66,68 +56,63 @@
       </Parameters>
       <Docs>
         <param name="KeyCategory">Necessário <see cref="T:Microsoft.Office.Interop.Word.WdKeyCategory" />. A categoria da atribuição de chave.</param>
-        <param name="Command">
-          <b>String</b> necessário. O comando que a combinação de teclas especificada executa.</param>
-        <param name="KeyCode">
-          <b>Integer</b>necessário. Uma chave que você especifica usando uma do <see cref="T:Microsoft.Office.Interop.Word.WdKey" /> constantes.</param>
-        <param name="KeyCode2">
-          <b>Objeto</b>de opcional. Uma segunda tecla que você especifica usando uma do <see cref="T:Microsoft.Office.Interop.Word.WdKey" /> constantes.</param>
-        <param name="CommandParameter">
-          <b>Objeto</b>de opcional. Texto adicional, se houver, necessários para o comando especificado por <paramref name="Command" />. Para ver detalhes, consulte a seção "Comentários".</param>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.KeyBinding" /> object que representa uma nova tecla de atalho para uma macro, comando interno, fonte, AutoTexto entrada, estilo ou símbolo.</summary>
+        <param name="Command"><b>String</b> necessário. O comando que a combinação de teclas especificada executa.</param>
+        <param name="KeyCode">Obrigatório <b>Integer</b>. Uma tecla que você especifica usando uma das <see cref="T:Microsoft.Office.Interop.Word.WdKey" /> constantes.</param>
+        <param name="KeyCode2"><b>Objeto</b>opcional. Uma segunda tecla que você especifica usando uma das <see cref="T:Microsoft.Office.Interop.Word.WdKey" /> constantes.</param>
+        <param name="CommandParameter"><b>Objeto</b>opcional. Texto adicional, se houver, necessário para o comando especificado por <paramref name="Command" />. Para ver detalhes, consulte a seção "Comentários".</param>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.KeyBinding" /> objeto que representa uma nova tecla de atalho para uma macro, comando interno, fonte, entrada de AutoTexto, estilo ou símbolo.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Você pode usar o <see cref="M:Microsoft.Office.Interop.Word._Application.BuildKeyCode(Microsoft.Office.Interop.Word.WdKey,System.Object@,System.Object@,System.Object@)" /> método para criar a <paramref name="KeyCode" /> ou <paramref name="KeyCode2" /> argumento.</para>
-          <para>Na tabela a seguir, a coluna da esquerda contém comandos que exigem um valor de comando e a coluna à direita descreve o que você deve fazer para especificar <paramref name="CommandParameter" /> para cada um desses comandos. (A ação equivalente na caixa de diálogo Personalizar teclado (menu Ferramentas) à especificação <paramref name="CommandParameter" /> é selecionar um item na caixa de listagem que aparece quando você seleciona um dos seguintes comandos na caixa comandos.)</para>
+        <remarks><para>Você pode usar o <see cref="M:Microsoft.Office.Interop.Word._Application.BuildKeyCode(Microsoft.Office.Interop.Word.WdKey,System.Object@,System.Object@,System.Object@)" /> método para criar o <paramref name="KeyCode" /> argumento <paramref name="KeyCode2" /> ou.</para>
+          <para>Na tabela a seguir, a coluna esquerda contém comandos que exigem um valor de comando e a coluna à direita descreve o que você deve fazer para especificar <paramref name="CommandParameter" /> para cada um desses comandos. (A ação equivalente na caixa de diálogo Personalizar teclado (menu ferramentas) a ser <paramref name="CommandParameter" /> especificado é selecionar um item na caixa de listagem que aparece quando você seleciona um dos seguintes comandos na caixa comandos.)</para>
           <list type="table">
             <item>
               <description>
-                <b>Bordas</b>, <b>cor</b>ou <b>sombreamento</b></description>
-              <description>um número — especificado como texto — correspondente à posição da configuração selecionada na caixa de listagem que contém valores, onde 0 (zero) é o primeiro item, 1 é o segundo item, e assim por diante</description>
+                <b>Borders</b>, <b>Color</b> ou <b>Shading</b></description>
+              <description>Um número, especificado como texto, correspondente à posição da configuração selecionada na caixa de listagem que contém valores, onde 0 (zero) é o primeiro item, 1 é o segundo item e assim por diante</description>
             </item>
             <item>
               <description>
-                <b>colunas</b>
+                <b>Colunas</b>
               </description>
-              <description>um número entre 1 e 45 — especificado como texto — corresponde ao número de colunas que você deseja aplicar</description>
+              <description>Um número entre 1 e 45 — especificado como texto — corresponde ao número de colunas que você deseja aplicar</description>
             </item>
             <item>
               <description>
-                <b>Condensado</b>
+                <b>Resumida</b>
               </description>
-              <description>uma medida de texto entre 0,1 e 12,75 pontos especificada em incrementos de 0,05 ponto (72 pontos = 1 polegada)</description>
+              <description>Uma medida de texto entre 0,1 e 12,75 pontos, especificada em incrementos de 0,05 ponto (72 pontos = 2,54 centímetros)</description>
             </item>
             <item>
               <description>
-                <b>Expanded</b>
+                <b>Amplo</b>
               </description>
-              <description>uma medida de texto entre 0,1 e 12,75 pontos, especificada em incrementos de 0,05 ponto (72 pontos = 1 polegada)</description>
+              <description>Uma medida de texto entre 0,1 e 12,75 pontos, especificada em incrementos de 0,05 ponto (72 pontos = 2,54 centímetros)</description>
             </item>
             <item>
               <description>
-                <b>FileOpenFile</b>
+                <b>Fileopenfile</b>
               </description>
-              <description> O nome de arquivo e caminho do arquivo a ser aberto. Se o caminho não for especificado, a pasta atual é usada.</description>
+              <description>O caminho e o nome do arquivo a ser aberto. Se o caminho não for especificado, será usada a pasta atual</description>
             </item>
             <item>
               <description>
                 <b>Tamanho da fonte</b>
-              </description>de
-              <description>uma medida de texto positiva, especificada em incrementos de 0,5 ponto (72 pontos = 1 polegada)</description></item>
-            <item>
-              <description>
-                <b>Rebaixado</b>, <b>relevo</b></description>
-              <description>uma medida de texto entre 1 ponto e 64 pontos, especificada em incrementos de 0,5 ponto (72 pontos = 1 polegada)</description>
+              </description>
+              <description>Uma medida de texto positiva, especificada em incrementos de 0,5 ponto (72 pontos = 1 polegada)</description>
             </item>
             <item>
               <description>
-                <b>Símbolo</b>
+                <b>Reduzido</b>, <b>elevado</b></description>
+              <description>Uma medida de texto entre 1 e 64 pontos, especificada em incrementos de 0,5 ponto (72 pontos = 2,54 centímetros)</description>
+            </item>
+            <item>
+              <description>
+                <b>Formato</b>
               </description>
-              <description>uma cadeia de caracteres criada pela concatenação de uma instrução <b>Chr ()</b> e o nome de uma fonte de símbolos (por exemplo, Chr(167) &amp; "Símbolo")</description>
+              <description>Uma cadeia de caracteres criada pela concatenação de uma instrução <b>Chr ()</b> e o nome de uma fonte de símbolo (por exemplo, &amp; Chr (167) "Symbol")</description>
             </item>
           </list>
-          <para />
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -153,7 +138,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -180,10 +165,8 @@
       <Parameters />
       <Docs>
         <summary>Limpa todas as atribuições de teclas personalizadas e restaura as atribuições de teclas de atalho originais do Microsoft Word.</summary>
-        <remarks>
-          <para>Depois de aplicar o método <b>ClearAll</b> para o <see cref="T:Microsoft.Office.Interop.Word.KeyBindings" /> do objeto, as atribuições de teclas no documento ou modelo especificado serão redefinidas para as configurações padrão. Use o <see cref="P:Microsoft.Office.Interop.Word._Application.CustomizationContext" /> propriedade para especificar um contexto de modelo ou documento antes de usar o método <b>ClearAll</b> .</para>
-          <para />
-        </remarks>
+        <remarks><para>Depois de aplicar o método <b>ClearAll</b> ao <see cref="T:Microsoft.Office.Interop.Word.KeyBindings" /> objeto, as atribuições de teclas no modelo ou documento especificado são redefinidas com as configurações padrão. Use a <see cref="P:Microsoft.Office.Interop.Word._Application.CustomizationContext" /> propriedade para especificar um contexto de documento ou modelo antes de usar o método <b>ClearAll</b> .</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Context">
@@ -209,12 +192,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um objeto que representa o local de armazenamento de vinculação de teclas especificada. Essa propriedade pode retornar um <see cref="T:Microsoft.Office.Interop.Word.Document" />, <see cref="T:Microsoft.Office.Interop.Word.Template" />, ou <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto.</summary>
+        <summary>Retorna um objeto que representa o local de armazenamento da Associação de teclas especificada. Esta propriedade pode retornar um <see cref="T:Microsoft.Office.Interop.Word.Document" />objeto <see cref="T:Microsoft.Office.Interop.Word.Template" />, ou <see cref="T:Microsoft.Office.Interop.Word.Application" /> ou.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Atribuições de teclas internas (por exemplo, CTRL + I para <b>itálico</b>) retornam o objeto de <b>aplicativo</b> como o contexto. Qualquer ligações de tecla que você adicionar irá retornar um objeto <b>Document</b> ou <b>Template</b> , dependendo do contexto da personalização em efeito quando o <see cref="T:Microsoft.Office.Interop.Word.KeyBinding" /> objeto foi adicionado.</para>
-          <para />
-        </remarks>
+        <remarks><para>As atribuições de teclas internas (por exemplo, CTRL+I para <b>Itálico</b>) retornam o objeto <b>Application</b> como contexto. Quaisquer associações de teclas adicionadas retornarão um objeto <b>Document</b> ou <b>Template</b> , dependendo do contexto de personalização em vigor quando o <see cref="T:Microsoft.Office.Interop.Word.KeyBinding" /> objeto foi adicionado.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -270,9 +251,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
-          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". [!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
+          <para>A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -362,16 +343,12 @@
         <Parameter Name="KeyCode2" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="KeyCode">
-          <b>Integer</b>necessário. Uma tecla que você especifica usando uma das seguintes constantes <b>WdKey</b>.</param>
-        <param name="KeyCode2">
-          <b>Objeto</b>de opcional. Uma segunda tecla que você especifica usando uma do <see cref="T:Microsoft.Office.Interop.Word.WdKey" /> constantes.</param>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.KeyBinding" /> object que representa a combinação de teclas personalizada especificada. Se a combinação de teclas não existir, este método retornará <b>Nothing</b>.</summary>
+        <param name="KeyCode">Obrigatório <b>Integer</b>. Uma tecla que você especifica usando uma das seguintes constantes <b>WdKey</b>.</param>
+        <param name="KeyCode2"><b>Objeto</b>opcional. Uma segunda tecla que você especifica usando uma das <see cref="T:Microsoft.Office.Interop.Word.WdKey" /> constantes.</param>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.KeyBinding" /> objeto que representa a combinação de teclas personalizada especificada. Se a combinação de teclas não existir, este método retornará <b>Nothing</b>.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Você pode usar o <see cref="M:Microsoft.Office.Interop.Word._Application.BuildKeyCode(Microsoft.Office.Interop.Word.WdKey,System.Object@,System.Object@,System.Object@)" /> método para criar a <paramref name="KeyCode" /> ou <paramref name="KeyCode2" /> argumento.</para>
-          <para />
-        </remarks>
+        <remarks><para>Você pode usar o <see cref="M:Microsoft.Office.Interop.Word._Application.BuildKeyCode(Microsoft.Office.Interop.Word.WdKey,System.Object@,System.Object@,System.Object@)" /> método para criar o <paramref name="KeyCode" /> argumento <paramref name="KeyCode2" /> ou.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">

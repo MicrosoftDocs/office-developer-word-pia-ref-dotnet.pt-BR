@@ -1,13 +1,5 @@
 <Type Name="FirstLetterExceptions" FullName="Microsoft.Office.Interop.Word.FirstLetterExceptions">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="be4f4c5cc8c394619978e1c92f645b802d0e9e31" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20664030" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface FirstLetterExceptions : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="f5a5fc4bea4aa243b52aaff1c5351191136e2e06" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146826" /></Metadata><TypeSignature Language="C#" Value="public interface FirstLetterExceptions : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract FirstLetterExceptions implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.FirstLetterExceptions" />
   <TypeSignature Language="VB.NET" Value="Public Interface FirstLetterExceptions&#xA;Implements IEnumerable" />
@@ -31,13 +23,11 @@
   </Attributes>
   <Docs>
     <summary>Uma coleção de <see cref="T:Microsoft.Office.Interop.Word.FirstLetterException" /> objetos que representam as abreviaturas excluídas da correção automática.</summary>
-    <remarks>
-      <para>O primeiro caractere depois de um período é automaticamente em letras maiusculas quando o <see cref="P:Microsoft.Office.Interop.Word.AutoCorrect.CorrectSentenceCaps" /> propriedade estiver definida como <b>True</b>. A coleção <b>FirstLetterExceptions</b> inclui exceções a esse comportamento (por exemplo, abreviaturas como "addr." e "apt.").</para>
-      <para>Uso o <see cref="P:Microsoft.Office.Interop.Word.AutoCorrect.FirstLetterExceptions" /> propriedade para retornar a coleção <b>FirstLetterExceptions</b> .</para>
-      <para>Uso o <see cref="M:Microsoft.Office.Interop.Word.FirstLetterExceptions.Add(System.String)" /> método para adicionar uma abreviatura à lista de exceções de primeira letra.</para>
-      <para>Uso <b>FirstLetterExceptions</b>(<paramref name="index" />), onde <paramref name="index" /> é a abreviatura ou o número de índice, para retornar um único objeto <b>FirstLetterException</b> .</para>
-      <para />
-    </remarks>
+    <remarks><para>O primeiro caractere após um ponto é automaticamente em maiúscula quando a <see cref="P:Microsoft.Office.Interop.Word.AutoCorrect.CorrectSentenceCaps" /> propriedade é definida como <b>true</b>. A coleção <b>FirstLetterExceptions</b> inclui exceções a esse comportamento (por exemplo, abreviações como "addr". e "apt.").</para>
+      <para>Use a <see cref="P:Microsoft.Office.Interop.Word.AutoCorrect.FirstLetterExceptions" /> propriedade para retornar a coleção <b>FirstLetterExceptions</b> .</para>
+      <para>Use o <see cref="M:Microsoft.Office.Interop.Word.FirstLetterExceptions.Add(System.String)" /> método para adicionar uma abreviatura à lista de exceções de primeira letra.</para>
+      <para>Use <b>FirstLetterExceptions</b>(<paramref name="index" />), em <paramref name="index" /> que é a abreviatura ou o número de índice, para retornar um único objeto <b>FirstLetterException</b> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -63,14 +53,11 @@
         <Parameter Name="Name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Name">
-          <b>String</b> necessário. A abreviação que você não deseja que o Microsoft Word para seguir com uma letra maiuscula.</param>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.FirstLetterException" /> object que representa uma nova exceção adicionada à lista de exceções da AutoCorreção.</summary>
+        <param name="Name"><b>String</b> necessário. A abreviação que você não deseja que o Microsoft Word acompanhe com uma letra maiúscula.</param>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.FirstLetterException" /> objeto que representa uma nova exceção adicionada à lista de exceções da AutoCorreção.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Se o <see cref="P:Microsoft.Office.Interop.Word.AutoCorrect.FirstLetterAutoAdd" /> propriedade for <b>True</b>, as abreviaturas serão automaticamente adicionadas à lista de exceções de primeira letra.</para>
-          <para />
-        </remarks>
+        <remarks><para>Se a <see cref="P:Microsoft.Office.Interop.Word.AutoCorrect.FirstLetterAutoAdd" /> propriedade for <b>true</b>, abreviações serão automaticamente adicionadas à lista de exceções de primeira letra.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -96,7 +83,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -154,9 +141,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
-          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". [!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
+          <para>A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">

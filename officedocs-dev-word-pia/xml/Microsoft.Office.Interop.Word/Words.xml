@@ -1,13 +1,5 @@
 <Type Name="Words" FullName="Microsoft.Office.Interop.Word.Words">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d48de7da434ab165907e297c39bfe4ff1b969693" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20663780" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Words : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d236676b440e6d795d3c1717b83df235a2ae0ef2" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142651" /></Metadata><TypeSignature Language="C#" Value="public interface Words : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Words implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Words" />
   <TypeSignature Language="VB.NET" Value="Public Interface Words&#xA;Implements IEnumerable" />
@@ -31,12 +23,13 @@
   </Attributes>
   <Docs>
     <summary>Uma coleção de palavras em uma seleção, intervalo ou documento.</summary>
-    <remarks>
-      <para>Cada item na coleção <b>Words</b> é um <see cref="T:Microsoft.Office.Interop.Word.Range" /> object que representa uma palavra. Não há nenhum objeto do Word.</para>
-      <para>Use a propriedade <b>palavras</b> para retornar o objeto <b>Words</b> .</para>
-      <para>Usar <b>palavras</b>(<paramref name="index" />), onde <paramref name="index" /> é o número de índice, para retornar um objeto <b>Range</b> que representa uma palavra. O número de índice representa a posição da palavra na coleção <b>Words</b> .</para> Coleção de 
-      <para>o item as <b>palavras</b> inclui a palavra e os espaços após a palavra. Se a seleção é o ponto de inserção e ele é imediatamente seguido por um espaço, Selection.Words(1) refere-se à palavra antes da seleção. Se a seleção é o ponto de inserção e seguida por um caractere imediatamente, Selection.Words(1) se refere à palavra que segue a seleção.</para><para>o <see cref="P:Microsoft.Office.Interop.Word.Words.Count" /> propriedade dessa coleção em um documento retorna o número de itens no texto principal. Para contar itens em outros textos usam a coleção com o objeto de <b>intervalo</b> . Além disso, a propriedade <b>Count</b> inclui as marcas de parágrafo e pontuação no total. Se você precisar uma contagem de palavras em um documento reais, use a caixa de diálogo Contar palavras.</para> Método 
-      <para><b>Adicionar</b> não está disponível para a coleção de <b>palavras</b> . Em vez disso, use o <see cref="M:Microsoft.Office.Interop.Word.Range.InsertAfter(System.String)" /> método ou o <see cref="M:Microsoft.Office.Interop.Word.Range.InsertBefore(System.String)" /> método para adicionar texto a um objeto <b>Range</b> .</para><para /></remarks>
+    <remarks><para>Cada item na coleção <b>Words</b> é um <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto que representa uma palavra. Não há nenhum objeto do Word.</para>
+      <para>Use a propriedade de <b>palavras</b> para retornar um objeto <b>Words</b>.</para>
+      <para>Use <b>palavras</b>(<paramref name="index" />), onde <paramref name="index" /> é o número de índice, para retornar um objeto <b>Range</b> que representa uma palavra. O número de índice representa a posição da palavra na coleção <b>Words</b>.</para>
+      <para>O item na coleção <b>Words</b> inclui a palavra e os espaços após a palavra. Se a seleção for o ponto de inserção e for imediatamente seguida por um espaço, Selection. Words (1) se referirá à palavra que antecede a seleção. Se a seleção for o ponto de inserção e for imediatamente seguida por um caractere, Selection. Words (1) se referirá à palavra após a seleção.</para>
+      <para>A <see cref="P:Microsoft.Office.Interop.Word.Words.Count" /> Propriedade dessa coleção em um documento retorna o número de itens somente no texto principal. Para contar itens em outros textos usam a coleção com o objeto de <b>intervalo</b>. Além disso, a propriedade <b>Count</b> inclui as marcas de parágrafo e pontuação no total. Se você precisar de uma contagem das palavras reais em um documento, use a caixa de diálogo contar palavras.</para>
+      <para>O método <b>Add</b> não está disponível para a coleção <b>Words</b> . Em vez disso, <see cref="M:Microsoft.Office.Interop.Word.Range.InsertAfter(System.String)" /> use o método <see cref="M:Microsoft.Office.Interop.Word.Range.InsertBefore(System.String)" /> ou o método para adicionar texto a um objeto <b>Range</b> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -62,7 +55,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -120,9 +113,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
-          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". [!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
+          <para>A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="First">
@@ -148,7 +141,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Range" /> object que representa a primeira palavra no documento, seleção ou intervalo.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto que representa a primeira palavra de um documento, seleção ou intervalo.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -240,7 +233,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Range" /> object que representa a última palavra de um documento, seleção ou intervalo.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto que representa a última palavra em um documento, seleção ou intervalo.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

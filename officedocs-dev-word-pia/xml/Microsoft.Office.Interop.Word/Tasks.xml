@@ -1,13 +1,5 @@
 <Type Name="Tasks" FullName="Microsoft.Office.Interop.Word.Tasks">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="8f787d708cb40d1b750ff4276873faf5cd63fd07" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20664857" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Tasks : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="59fdebd83123a650ce46aaae0071d81ce5a9a2cd" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34145986" /></Metadata><TypeSignature Language="C#" Value="public interface Tasks : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Tasks implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Tasks" />
   <TypeSignature Language="VB.NET" Value="Public Interface Tasks&#xA;Implements IEnumerable" />
@@ -30,12 +22,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Uma coleção de <see cref="T:Microsoft.Office.Interop.Word.Task" /> objetos que representam todas as tarefas em execução no momento no sistema.</summary>
-    <remarks>
-      <para>Use o <see cref="P:Microsoft.Office.Interop.Word._Application.Tasks" /> propriedade para retornar a coleção <b>Tasks</b> .</para>
-      <para>Uso <b>tarefas</b>(<paramref name="index" />), onde <paramref name="index" /> é o nome do aplicativo ou o número de índice, para retornar um único objeto <b>Task</b> .</para>
-      <para />
-    </remarks>
+    <summary>Uma coleção de <see cref="T:Microsoft.Office.Interop.Word.Task" /> objetos que representa todas as tarefas atualmente em execução no sistema.</summary>
+    <remarks><para>Use a <see cref="P:Microsoft.Office.Interop.Word._Application.Tasks" /> propriedade para retornar a coleção <b>Tasks</b> .</para>
+      <para>Use <b>tarefas</b>(<paramref name="index" />), onde <paramref name="index" /> é o nome do aplicativo ou o número de índice, para retornar um único objeto <b>Task</b> .</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -61,7 +51,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -119,9 +109,9 @@
       <Docs>
         <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
-          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Se o objeto foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". [!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
+          <para>A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Exists">
@@ -147,8 +137,7 @@
         <Parameter Name="Name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Name">
-          <b>String</b> necessário. Um nome de tarefa.</param>
+        <param name="Name"><b>String</b> necessário. Um nome de tarefa.</param>
         <summary>Determina se a tarefa especificada existe. Retorna <b>True</b> se a tarefa existe.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -176,10 +165,8 @@
       <Parameters />
       <Docs>
         <summary>Fecha todos os aplicativos abertos, encerra o Microsoft Windows e efetua logoff no usuário atual.</summary>
-        <remarks>
-          <para>Este método não salva alterações para abrir documentos do Microsoft Word; No entanto, ele pergunta se você deseja salvar alterações para abrir documentos em outros aplicativos baseados no Windows.</para>
-          <para />
-        </remarks>
+        <remarks><para>Este método não salva alterações em documentos abertos do Microsoft Word; no entanto, ele solicita que você salve as alterações em documentos abertos em outros aplicativos baseados no Windows.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">

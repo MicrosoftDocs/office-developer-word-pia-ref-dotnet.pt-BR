@@ -1,13 +1,5 @@
 <Type Name="Broadcast" FullName="Microsoft.Office.Interop.Word.Broadcast">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="98d790daa433768bcb289537f5925f957d798e48" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20664777" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Broadcast" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="0d509697e025a0a6da57a59ccf0c2e2d3d1b050a" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146210" /></Metadata><TypeSignature Language="C#" Value="public interface Broadcast" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Broadcast" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Broadcast" />
   <TypeSignature Language="VB.NET" Value="Public Interface Broadcast" />
@@ -54,13 +46,11 @@
         <Parameter Name="notesWacUrl" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="notesUrl">Especifica a URL onde as anotações compartilhadas de reuniões são armazenadas, para participantes usando o cliente avançado do OneNote.</param>
-        <param name="notesWacUrl">Especifica a URL onde as anotações compartilhadas de reuniões são armazenadas, para participantes usando o cliente do OneNote Online.</param>
-        <summary>Adiciona anotações compartilhadas de reuniões para a transmissão especificada que estão acessíveis para os participantes que usam o cliente avançado do OneNote 2013 ou web app.</summary>
-        <remarks>
-          <para>Se você não passar uma cadeia de caracteres para qualquer um dos dois parâmetros, o método <b>AddMeetingNotes</b> retorna um erro de parâmetro inválido. Se por qualquer motivo, a chamada do método falhar, o Word retornará um erro genérico de transmissão.</para>
-          <para />
-        </remarks>
+        <param name="notesUrl">Especifica a URL onde as anotações de reunião compartilhadas são armazenadas, para os participantes que usam o cliente avançado do OneNote.</param>
+        <param name="notesWacUrl">Especifica a URL onde as anotações de reunião compartilhadas são armazenadas, para os participantes que usam o cliente do OneNote online.</param>
+        <summary>Adiciona anotações de reunião compartilhadas para a transmissão especificada que podem ser acessadas pelos participantes que usam o cliente avançado do OneNote 2013 ou o aplicativo Web.</summary>
+        <remarks><para>Se você não conseguir passar uma cadeia de caracteres para um dos dois parâmetros, o método <b>AddMeetingNotes</b> retornará um erro de parâmetro inválido. Se, por qualquer motivo, a chamada do método falhar, o Word retornará um erro de difusão genérica.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -86,7 +76,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o aplicativo Microsoft Word.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -114,12 +104,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Se uma transmissão estiver em andamento, retornará uma <b>cadeia de caracteres</b> (<b>cadeia de caracteres</b> em c#) que representa a URL do link attendee. Somente leitura.</summary>
+        <summary>Se uma transmissão estiver em andamento, retorna uma <b>cadeia de caracteres</b> (<b>cadeia de caracteres</b> em C#) que representa a URL do link do participante. Somente leitura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se uma transmissão não estiver em andamento, <b>AttendeeUrl</b> retorna uma sequência vazia.</para>
-          <para />
-        </remarks>
+        <remarks><para>Se uma transmissão não estiver em andamento, <b>AttendeeUrl</b> retornará uma cadeia de caracteres vazia.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Capabilities">
@@ -145,36 +133,34 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <b>UInteger</b> (<b>uint</b> em c#) que representa os recursos da transmissão especificado. Somente leitura.</summary>
+        <summary>Retorna um <b>UInteger</b> (<b>uint</b> em C#) que representa os recursos da transmissão especificada. Somente leitura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>A propriedade <b>Capabilities</b> pode retornar os seguintes valores:</para>
+        <remarks><para>A propriedade <b>Capabilities</b> pode retornar os seguintes valores:</para>
           <list type="table">
             <item>
               <description>
                 <b>MSOBroadcastCapFileSizeLimited</b>
               </description>
               <description>1</description>
-              <description>limitado de tamanho de arquivo</description>
+              <description>Tamanho de arquivo limitado</description>
             </item>
             <item>
               <description>
                 <b>MSOBroadcastCapSupportsMeetingNotes</b>
               </description>
-              <description>2</description>
-              <description>suporta Notas de reunião</description>
+              <description>duas</description>
+              <description>Suporte para anotações da reunião</description>
             </item>
             <item>
               <description>
                 <b>MSOBroadcastCapSupportsUpdateDoc</b>
               </description>
-              <description>4</description>
-              <description>documentam suporta a atualização</description>
+              <description>quatro</description>
+              <description>Suporte à atualização de documentos</description>
             </item>
           </list>
-          <para>os valores retornados correspondem a qualquer um dos Microsoft Office 2013 ou transmissão do Microsoft Office 2010 recursos de serviços de apresentação.</para>
-          <para />
-        </remarks>
+          <para>Os valores retornados correspondem aos recursos do serviço de apresentação por transmissão do Microsoft Office 2013 ou do Microsoft Office 2010.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="End">
@@ -199,11 +185,9 @@
       <Parameters />
       <Docs>
         <summary>Encerra a sessão de transmissão especificada.</summary>
-        <remarks>
-          <para>Chamar o método <b>End</b> encerra a sessão de transmissão sem exibir um aviso de confirmação ao usuário. Ele também define o valor da <see cref="P:Microsoft.Office.Interop.Word.Broadcast.AttendeeUrlproperty" /> como uma sequência vazia.</para>
-          <para>Se o documento não está sendo difusão, o método retornará o erro de tempo de execução 4702.</para>
-          <para />
-        </remarks>
+        <remarks><para>Chamar o método <b>end</b> termina a sessão de transmissão sem exibir um prompt de confirmação para o usuário. Também define o valor de <see cref="P:Microsoft.Office.Interop.Word.Broadcast.AttendeeUrlproperty" /> para uma sequência de caracteres vazia.</para>
+          <para>Se o documento não estiver sendo transmitido, o método retornará o erro 4702 de tempo de execução.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -229,7 +213,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <b>objeto</b> que representa o objeto pai do especificado objeto <b>Broadcast</b></summary>
+        <summary>Retorna um <b>objeto</b> que representa o objeto pai do objeto <b>Broadcast</b> especificado</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -255,11 +239,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Pausa a difusão especificada.</summary>
-        <remarks>
-          <para>Se a difusão especificada não estiver em andamento, <b>Pause</b> retornará o erro de tempo de execução 4702.</para>
-          <para />
-        </remarks>
+        <summary>Pausa a transmissão especificada.</summary>
+        <remarks><para>Se a transmissão especificada não estiver em andamento, <b>Pause</b> retornará o erro de tempo de execução 4702.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PresenterServiceUrl">
@@ -285,12 +267,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Se uma transmissão estiver em andamento, retornará uma <b>cadeia de caracteres</b> (<b>cadeia de caracteres</b> em c#) que representa a URL do serviço apresentador que hospeda a difusão. Somente leitura.</summary>
+        <summary>Se uma transmissão estiver em andamento, retorna uma <b>cadeia de caracteres</b> (<b>cadeia de caracteres</b> em C#) que representa a URL do serviço do apresentador que hospeda a transmissão. Somente leitura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se uma transmissão não estiver em andamento, <b>PresenterServiceUrl</b> retorna uma sequência vazia.</para>
-          <para />
-        </remarks>
+        <remarks><para>Se uma transmissão não estiver em andamento, <b>PresenterServiceUrl</b> retornará uma cadeia de caracteres vazia.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Resume">
@@ -314,11 +294,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Retoma a difusão especificada.</summary>
-        <remarks>
-          <para>O método <b>Resume</b> retornará um erro (#4700) se o documento estiver protegido por DRM, já está sendo transmitido (#4698), não está sendo transmitido em todos os (#4702) ou tem edições conflitantes (estiver no modo Mesclar, 4701 #).</para>
-          <para />
-        </remarks>
+        <summary>Retoma a transmissão especificada.</summary>
+        <remarks><para>O método <b>resume</b> retornará um erro (#4700) se o documento estiver protegido por DRM, que já está sendo transmitido (#4698), não está sendo transmitido (#4702) ou com edições conflitantes (está no modo Mesclar, #4701).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SessionID">
@@ -344,12 +322,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Se uma transmissão estiver em andamento, retorna uma <b>cadeia de caracteres</b> (<b>cadeia de caracteres</b> em c#) que especifica a ID da sessão. Somente leitura.</summary>
+        <summary>Se uma transmissão estiver em andamento, retorna uma <b>cadeia de caracteres</b> (<b>cadeia de caracteres</b> em C#) que especifica a ID da sessão. Somente leitura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se uma transmissão não estiver em andamento, <b>SessionID</b> retorna uma sequência vazia.</para>
-          <para />
-        </remarks>
+        <remarks><para>Se uma transmissão não estiver em andamento, <b>SessionID</b> retornará uma cadeia de caracteres vazia.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Start">
@@ -377,11 +353,9 @@
       <Docs>
         <param name="serverUrl">A URL do servidor de transmissão.</param>
         <summary>Inicia a sessão de transmissão especificada.</summary>
-        <remarks>
-          <para>Chamar o método <b>Iniciar</b> configura o servidor, autentica o usuário e carrega a apresentação.</para>
-          <para>Se o valor passado <paramref name="serverUrl" /> tem inválida retorna a formatação, <b>inicie</b> um erro de "parâmetro inválido". Além disso, o método retornará um erro se o documento estiver protegido, de DRM já está sendo transmitido ou tem edições conflitantes (estiver no modo Mesclar).</para>
-          <para />
-        </remarks>
+        <remarks><para>Chamar o método <b>Start</b> configura o servidor, autentica o usuário e carrega a apresentação.</para>
+          <para>Se o valor passado para <paramref name="serverUrl" /> tem formatação inválida, <b>Start</b> retornará um erro "Parameter inválido". Além disso, o método retorna um erro se o documento é protegido por DRM, já está sendo transmitido ou com edições conflitantes (está no modo de mesclagem).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="State">
@@ -407,20 +381,21 @@
         <ReturnType>Microsoft.Office.Core.MsoBroadcastState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna uma constante de <b>MSOBroadcastState</b> que descreve o estado atual de transmissão. Somente leitura.</summary>
+        <summary>Retorna uma constante <b>MSOBroadcastState</b> que descreve o estado de transmissão atual. Somente leitura.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>A propriedade <b>State</b> pode retornar uma das seguintes três estados:</para>
+        <remarks><para>A propriedade <b>State</b> pode retornar um dos três Estados a seguir:</para>
           <list type="bullet">
             <item>
-              <para>Nenhuma difusão (0)</para>
+              <para>Sem difusão (0)</para>
             </item>
             <item>
-              <para>difusão iniciada (1)</para>
-            </item>a
-            <item><para>difusão pausado (2)</para></item></list>
-          <para />
-        </remarks>
+              <para>Transmissão iniciada (1)</para>
+            </item>
+            <item>
+              <para>Transmissão pausada (2)</para>
+            </item>
+          </list>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

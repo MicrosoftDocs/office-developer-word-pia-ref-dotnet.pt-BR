@@ -1,13 +1,5 @@
 <Type Name="Column" FullName="Microsoft.Office.Interop.Word.Column">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="2c3fd80490074f82dd9583409f8f86882d94dd68" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20664460" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Column" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="e45caf40bd3b70419995c7ac70846ec49a9f5e99" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146161" /></Metadata><TypeSignature Language="C#" Value="public interface Column" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Column" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Column" />
   <TypeSignature Language="VB.NET" Value="Public Interface Column" />
@@ -26,10 +18,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Representa uma única coluna da tabela. O objeto <b>Column</b> é um membro do <see cref="T:Microsoft.Office.Interop.Word.Columns" /> conjunto.</summary>
-    <remarks>
-      <para>A coleção <b>Columns</b> inclui todas as colunas em uma tabela, seleção ou intervalo.</para> Usar <b>colunas</b>de 
-      <para>(<paramref name="index" />), onde <paramref name="index" /> é o número de índice, para retornar um único objeto <b>Column</b> . O número de índice representa a posição da coluna na coleção <b>Columns</b> (contando da esquerda para direita).</para><para>Uso o <see cref="P:Microsoft.Office.Interop.Word.Cell.Column" /> propriedade com um <see cref="T:Microsoft.Office.Interop.Word.Cell" /> objeto para retornar um objeto <b>Column</b> .</para><para>Uso o <see cref="M:Microsoft.Office.Interop.Word.Columns.Add(System.Object@)" /> método para adicionar uma coluna a uma tabela.</para><para>Uso o <see cref="P:Microsoft.Office.Interop.Word.Selection.Information(Microsoft.Office.Interop.Word.WdInformation)" /> propriedade com um <see cref="T:Microsoft.Office.Interop.Word.Selection" /> objeto para retornar o número da coluna atual.</para><para /></remarks>
+    <summary>Representa uma única coluna da tabela. O objeto <b>Column</b> é um membro da <see cref="T:Microsoft.Office.Interop.Word.Columns" /> coleção.</summary>
+    <remarks><para>Coleção <b>Columns</b> inclui todas as colunas em uma tabela, seleção ou intervalo.</para>
+      <para>Use <b>Columns</b>(<paramref name="index" />), em <paramref name="index" /> que é o número de índice, para retornar um único objeto <b>Column</b> . O número de índice representa a posição da coluna da coleção <b>Columns</b> (contando da esquerda para a direita).</para>
+      <para>Use a <see cref="P:Microsoft.Office.Interop.Word.Cell.Column" /> Propriedade com um <see cref="T:Microsoft.Office.Interop.Word.Cell" /> objeto para retornar um objeto <b>Column</b> .</para>
+      <para>Use o <see cref="M:Microsoft.Office.Interop.Word.Columns.Add(System.Object@)" /> método para adicionar uma coluna a uma tabela. </para>
+      <para>Use a <see cref="P:Microsoft.Office.Interop.Word.Selection.Information(Microsoft.Office.Interop.Word.WdInformation)" /> Propriedade com um <see cref="T:Microsoft.Office.Interop.Word.Selection" /> objeto para retornar o número da coluna atual.</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -55,7 +50,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> object que representa o criador do objeto especificado.</summary>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o criador do objeto especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -82,10 +77,8 @@
       <Parameters />
       <Docs>
         <summary>Altera a largura de uma coluna de tabela para acomodar a largura do texto sem alterar a disposição do texto nas células.</summary>
-        <remarks>
-          <para>Se a tabela já for tão grande quanto a distância entre as margens esquerdas e direita, esse método não terá efeito.</para>
-          <para />
-        </remarks>
+        <remarks><para>Se a tabela já tiver a mesma largura da distância entre as margens esquerda e direita, esse método não terá nenhum efeito.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Borders">
@@ -114,7 +107,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Borders</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define um <see cref="T:Microsoft.Office.Interop.Word.Borders" /> coleção que representa todas as bordas do objeto especificado.</summary>
+        <summary>Retorna ou define uma <see cref="T:Microsoft.Office.Interop.Word.Borders" /> coleção que representa todas as bordas do objeto especificado.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -142,7 +135,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Cells</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Cells" /> coleção que representa as células da tabela em uma coluna.</summary>
+        <summary>Retorna uma <see cref="T:Microsoft.Office.Interop.Word.Cells" /> coleção que representa as células da tabela em uma coluna.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -172,9 +165,9 @@
       <Docs>
         <summary>Retorna um valor que indica o aplicativo no qual o objeto especificado foi criado.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Se o objeto especificado foi criado no Microsoft Word, essa propriedade retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD." Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para> Propriedade 
-          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para><para /></remarks>
+        <remarks><para>Se o objeto especificado foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD". [!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</para>
+          <para>A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -311,10 +304,8 @@
       <Docs>
         <summary>Retorna o nível de aninhamento da coluna especificada.</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>A tabela mais externa tem um nível de aninhamento 1. O nível de aninhamento de cada tabela aninhada sucessivamente é uma maior do que a tabela anterior.</para>
-          <para />
-        </remarks>
+        <remarks><para>A tabela externa tem o nível de aninhamento 1. O nível de aninhamento de cada tabela aninhada sucessivamente é um acima do da tabela anterior.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Next">
@@ -340,7 +331,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Column</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o próximo objeto do conjunto.</summary>
+        <summary>Retorna o próximo objeto da coleção.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -430,7 +421,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdPreferredWidthType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define a unidade preferida de medida a ser usado para a largura da coluna especificada.</summary>
+        <summary>Retorna ou define a unidade preferida de medida a ser usada para a largura da coluna especificada.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -458,7 +449,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Column</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna o objeto anterior do conjunto.</summary>
+        <summary>Retorna o objeto anterior da coleção.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -513,12 +504,10 @@
       </Parameters>
       <Docs>
         <param name="ColumnWidth">A largura da coluna especificada em pontos.</param>
-        <param name="RulerStyle">Um valor que controla como o Microsoft Word ajusta larguras de células.</param>
+        <param name="RulerStyle">Um valor que controla a maneira como o Microsoft Word ajusta as larguras de célula.</param>
         <summary>Define a largura de uma coluna de uma tabela.</summary>
-        <remarks>
-          <para>O <see cref="T:Microsoft.Office.Interop.Word.WdRulerStyle" /> comportamento se aplica a tabelas alinhado à esquerda. O comportamento de <b>WdRulerStyle</b> para tabelas centralizado e direita pode ser inesperado; Nesses casos, o <see cref="M:Microsoft.Office.Interop.Word.Cell.SetWidth(System.Single,Microsoft.Office.Interop.Word.WdRulerStyle)" /> método deve ser usado com cuidado.</para>
-          <para />
-        </remarks>
+        <remarks><para>O <see cref="T:Microsoft.Office.Interop.Word.WdRulerStyle" /> comportamento se aplica a tabelas alinhadas à esquerda. O comportamento de <b>WdRulerStyle</b> para tabelas centralizadas e alinhadas à direita pode ser inesperado; nesses casos, o <see cref="M:Microsoft.Office.Interop.Word.Cell.SetWidth(System.Single,Microsoft.Office.Interop.Word.WdRulerStyle)" /> método deve ser usado com cuidado.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Shading">
@@ -580,21 +569,19 @@
         <Parameter Name="LanguageID" Type="System.Object&amp;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="ExcludeHeader">Um valor que indica se é necessário excluir o cabeçalho da primeira linha ou parágrafo da operação de classificação. O valor padrão é <b>False</b>.</param>
-        <param name="SortFieldType">O tipo de classificação da coluna. Pode ser uma do <see cref="T:Microsoft.Office.Interop.Word.WdSortFieldType" /> constantes.</param>
+        <param name="ExcludeHeader">Um valor que indica se deve excluir o primeiro cabeçalho de linha ou parágrafo da operação de classificação. O valor padrão é <b>False</b>.</param>
+        <param name="SortFieldType">O tipo de classificação da coluna. Pode ser uma das <see cref="T:Microsoft.Office.Interop.Word.WdSortFieldType" /> constantes.</param>
         <param name="SortOrder">A ordem de classificação a ser usada para a coluna. Pode ser uma <see cref="T:Microsoft.Office.Interop.Word.WdSortOrder" /> constante.</param>
-        <param name="CaseSensitive">Um valor que indica a ordem de classificação com diferenciação de maiusculas. O valor padrão é <b>False</b>.</param>
-        <param name="BidiSort">Um valor que indica a ordem de classificação com base nas regras do idioma da direita para a esquerda. Esse argumento pode não estar disponível, dependendo do suporte a idioma (português do Brasil, por exemplo) que tiver sido selecionado ou instalado.</param>
-        <param name="IgnoreThe">Um valor que indica se deve ignorar o alef lam de caracteres arábico ao classificar o texto em idioma da direita para a esquerda. Esse argumento pode não estar disponível, dependendo do suporte a idioma (português do Brasil, por exemplo) que tiver sido selecionado ou instalado.</param>
-        <param name="IgnoreKashida">Um valor que indica se deve ignorar kashidas ao classificar o texto em idioma da direita para a esquerda. Esse argumento pode não estar disponível, dependendo do suporte a idioma (português do Brasil, por exemplo) que tiver sido selecionado ou instalado.</param>
-        <param name="IgnoreDiacritics">Um valor que indica se deve ignorar caracteres de controle bidirecionais ao classificar o texto em idioma da direita para a esquerda. Esse argumento pode não estar disponível, dependendo do suporte a idioma (português do Brasil, por exemplo) que tiver sido selecionado ou instalado.</param>
-        <param name="IgnoreHe">Um valor que indica se deve ignorar hebraico caractere ele ao classificar o texto em idioma da direita para a esquerda. Esse argumento pode não estar disponível, dependendo do suporte a idioma (português do Brasil, por exemplo) que tiver sido selecionado ou instalado.</param>
-        <param name="LanguageID">Especifica o idioma da classificação. Pode ser uma do <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> constantes.</param>
+        <param name="CaseSensitive">Um valor que indica se deve ser classificado com distinção entre maiúsculas e minúsculas. O valor padrão é <b>False</b>.</param>
+        <param name="BidiSort">Um valor que indica se a classificação deve ser baseada em regras de idioma da direita para a esquerda. Esse argumento pode não estar disponível para você, dependendo do suporte a idioma (português do Brasil, por exemplo) que tiver sido selecionado ou instalado.</param>
+        <param name="IgnoreThe">Um valor que indica se deve ignorar o caractere arábico alef lam ao classificar o texto de idioma da direita para a esquerda. Esse argumento pode não estar disponível para você, dependendo do suporte a idioma (português do Brasil, por exemplo) que tiver sido selecionado ou instalado.</param>
+        <param name="IgnoreKashida">Um valor que indica se deve ignorar kashidas ao classificar o texto de idioma da direita para a esquerda. Esse argumento pode não estar disponível para você, dependendo do suporte a idioma (português do Brasil, por exemplo) que tiver sido selecionado ou instalado.</param>
+        <param name="IgnoreDiacritics">Um valor que indica se deve ignorar caracteres de controle bidirecionais ao classificar o texto de idioma da direita para a esquerda. Esse argumento pode não estar disponível para você, dependendo do suporte a idioma (português do Brasil, por exemplo) que tiver sido selecionado ou instalado.</param>
+        <param name="IgnoreHe">Um valor que indica se deve ignorar o caractere Hebraico ao classificar o texto de idioma da direita para a esquerda. Esse argumento pode não estar disponível para você, dependendo do suporte a idioma (português do Brasil, por exemplo) que tiver sido selecionado ou instalado.</param>
+        <param name="LanguageID">Especifica o idioma de classificação. Pode ser uma das <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> constantes.</param>
         <summary>Classifica a coluna especificada</summary>
-        <remarks>
-          <para>Se você deseja classificar parágrafos dentro de uma célula de tabela, inclua somente os parágrafos e não a marca de fim de célula; Se você incluir a marca de fim de célula em uma seleção ou intervalo e tenta classificar os parágrafos, o Microsoft Word exibe uma mensagem informando que ele não encontrou registros válidos para classificar.</para>
-          <para />
-        </remarks>
+        <remarks><para>Se você quiser classificar parágrafos dentro de uma célula de tabela, inclua apenas os parágrafos e não a marca de fim de célula; Se você incluir a marca de fim de célula em uma seleção ou intervalo e, em seguida, tentar classificar os parágrafos, o Microsoft Word exibirá uma mensagem informando que ele não encontrou registros válidos para classificá-los.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SortOld">

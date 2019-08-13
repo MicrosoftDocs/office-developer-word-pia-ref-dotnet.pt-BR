@@ -1,13 +1,5 @@
 <Type Name="DocumentEvents2_XMLAfterInsertEventHandler" FullName="Microsoft.Office.Interop.Word.DocumentEvents2_XMLAfterInsertEventHandler">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="fd74ca73aa41f3d0754567778bd410aade2b2f6b" />
-    <Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="pt-BR" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
-    <Meta Name="ms.locfileid" Value="20664606" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public delegate void DocumentEvents2_XMLAfterInsertEventHandler(XMLNode NewXMLNode, bool InUndoRedo);" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="6097d72a5b18382fc09cfcc7be258d3904b7e849" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144593" /></Metadata><TypeSignature Language="C#" Value="public delegate void DocumentEvents2_XMLAfterInsertEventHandler(XMLNode NewXMLNode, bool InUndoRedo);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DocumentEvents2_XMLAfterInsertEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.DocumentEvents2_XMLAfterInsertEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub DocumentEvents2_XMLAfterInsertEventHandler(NewXMLNode As XMLNode, InUndoRedo As Boolean)" />
@@ -35,15 +27,11 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="NewXMLNode">
-      <see cref="T:Microsoft.Office.Interop.Word.XMLNode" />. O nó XML recém-incluído.</param>
-    <param name="InUndoRedo">
-      <b>Boolean</b>. <b>True</b> indica que a ação foi realizada usando o recurso Desfazer ou Refazer no Microsoft Word.</param>
-    <summary>Um tipo de <b>delegado</b> usado para adicionar um manipulador de eventos para o <see cref="E:Microsoft.Office.Interop.Word.DocumentEvents2_Event.XMLAfterInsert" /> evento. O evento <b>XMLAfterInsert</b> ocorre quando um usuário adiciona um novo elemento XML a um documento.</summary>
-    <remarks>
-      <para>Se o <paramref name="InUndoRedo" /> parâmetro for <b>True</b>, nunca altere o XML em um documento, enquanto os eventos XMLAfterInsert e XMLBeforeDelete estão em execução. </para>
-      <para>Se o parâmetro InUndoRedo for False, você pode inserir e excluir o XML no documento, mas cuidado que o <b>XMLAfterInsert</b> e <see cref="E:Microsoft.Office.Interop.Word.DocumentEvents2_Event.XMLBeforeDelete" /> eventos não tentará cancelar um ao outro, gerando um loop infinito. Você pode impedir que entrará em loop infinito usando um global variável <b>booleano</b> e verifique se ela no início do manipulador de erros.</para>
-      <para />
-    </remarks>
+    <param name="NewXMLNode"><see cref="T:Microsoft.Office.Interop.Word.XMLNode" />. O nó XML recém-incluído.</param>
+    <param name="InUndoRedo"><b>Boolean</b>. <b>True</b> indica que a ação foi realizada usando o recurso Desfazer ou Refazer no Microsoft Word.</param>
+    <summary>Um tipo de <b>Representante</b> usado para adicionar um manipulador de eventos <see cref="E:Microsoft.Office.Interop.Word.DocumentEvents2_Event.XMLAfterInsert" /> para o evento. O evento <b>XMLAfterInsert</b> ocorre quando um usuário adiciona um novo elemento XML a um documento.</summary>
+    <remarks><para>Se o <paramref name="InUndoRedo" /> parâmetro for <b>true</b>, nunca altere o XML em um documento enquanto os eventos XMLAfterInsert e XMLBeforeDelete estiverem em execução. </para>
+      <para>Se o parâmetro InUndoRedo for false, você poderá inserir e excluir o XML no documento, mas cuidado para que o <b>XMLAfterInsert</b> e <see cref="E:Microsoft.Office.Interop.Word.DocumentEvents2_Event.XMLBeforeDelete" /> os eventos não tentem cancelar uns aos outros, causando um loop infinito. Você pode evitar loops infinitos usando uma variável <b>Boolean</b> global e verificar isso no início do manipulador de erros.</para>
+      <para> </para></remarks>
   </Docs>
 </Type>
