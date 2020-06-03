@@ -1,9 +1,10 @@
 <Type Name="StyleSheet" FullName="Microsoft.Office.Interop.Word.StyleSheet">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="3e2da0d0a53e0f2e767486bea8385d1ef59128f2" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143942" /></Metadata><TypeSignature Language="C#" Value="public interface StyleSheet" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="4f09f2820a296e96027e1406cd43c3904b2b2624" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43926224" /></Metadata><TypeSignature Language="C#" Value="public interface StyleSheet" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract StyleSheet" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.StyleSheet" />
   <TypeSignature Language="VB.NET" Value="Public Interface StyleSheet" />
   <TypeSignature Language="C++ CLI" Value="public interface class StyleSheet" />
+  <TypeSignature Language="F#" Value="type StyleSheet = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -20,7 +21,7 @@
   <Docs>
     <summary>Representa uma única folha de estilo em cascata anexada a um documento da Web.</summary>
     <remarks><para>O objeto <b>StyleSheet</b> é um membro da <see cref="T:Microsoft.Office.Interop.Word.StyleSheets" /> coleção. Coleção <b>StyleSheets</b> contém todas as folhas de estilos em cascata anexadas a um documento especificado.</para>
-      <para>Use a <see cref="P:Microsoft.Office.Interop.Word.StyleSheets.Item(System.Object@)" /> propriedade ou <b>folhas</b>de estilo<paramref name="index" />(), <paramref name="index" /> onde é o nome ou número da folha de estilos, da <b></b> coleção stylesheets para retornar um objeto <b>StyleSheet</b> .</para>
+      <para>Use a <see cref="P:Microsoft.Office.Interop.Word.StyleSheets.Item(System.Object@)" /> propriedade ou <b>folhas</b>de <paramref name="index" /> estilo (), onde <paramref name="index" /> é o nome ou número da folha de estilos, da coleção <b>stylesheets</b> para retornar um objeto <b>StyleSheet</b> .</para>
       <para>Use a <see cref="P:Microsoft.Office.Interop.Word.StyleSheet.Index" /> propriedade para determinar a precedência de folhas de estilo em cascata.</para>
       <para>Use o <see cref="M:Microsoft.Office.Interop.Word.StyleSheet.Move(Microsoft.Office.Interop.Word.WdStyleSheetPrecedence)" /> método para reordenar a precedência de folhas de estilo anexadas.</para>
       <para> </para></remarks>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.StyleSheet.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.StyleSheet.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.StyleSheet.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.StyleSheet.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.StyleSheet.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberSignature Language="F#" Value="abstract member Delete : unit -&gt; unit" Usage="styleSheet.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -115,6 +119,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.StyleSheet.FullName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FullName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FullName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FullName : string" Usage="Microsoft.Office.Interop.Word.StyleSheet.FullName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -134,7 +139,7 @@
       <Docs>
         <summary>Especifica o nome de uma folha de estilo em cascata, incluindo a unidade ou o caminho da Web.</summary>
         <value>To be added.</value>
-        <remarks><para>Usar essa propriedade é equivalente a usar as <see cref="P:Microsoft.Office.Interop.Word.StyleSheet.Path" />propriedades <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" />, e <see cref="P:Microsoft.Office.Interop.Word.StyleSheet.Name" /> e em sequência.</para>
+        <remarks><para>Usar essa propriedade é equivalente a usar as <see cref="P:Microsoft.Office.Interop.Word.StyleSheet.Path" /> <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" /> Propriedades, e e <see cref="P:Microsoft.Office.Interop.Word.StyleSheet.Name" /> em sequência.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -144,6 +149,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.StyleSheet.Index" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Index As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Index : int" Usage="Microsoft.Office.Interop.Word.StyleSheet.Index" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -172,6 +178,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.StyleSheet.Move(Microsoft.Office.Interop.Word.WdStyleSheetPrecedence)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Move (Precedence As WdStyleSheetPrecedence)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Move(Microsoft::Office::Interop::Word::WdStyleSheetPrecedence Precedence);" />
+      <MemberSignature Language="F#" Value="abstract member Move : Microsoft.Office.Interop.Word.WdStyleSheetPrecedence -&gt; unit" Usage="styleSheet.Move Precedence" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -189,7 +196,7 @@
         <Parameter Name="Precedence" Type="Microsoft.Office.Interop.Word.WdStyleSheetPrecedence" />
       </Parameters>
       <Docs>
-        <param name="Precedence">Necessário <see cref="T:Microsoft.Office.Interop.Word.WdStyleSheetPrecedence" />. O nível de precedência. Pode ser uma destas constantes WdStyleSheetPrecedence:<b>wdStyleSheetPrecedenceHigher</b><b>wdStyleSheetPrecedenceHighest</b><b>wdStyleSheetPrecedenceLower</b><b>wdStyleSheetPrecedenceLowest</b></param>
+        <param name="Precedence">Necessário <see cref="T:Microsoft.Office.Interop.Word.WdStyleSheetPrecedence" /> . O nível de precedência. Pode ser uma destas constantes WdStyleSheetPrecedence:<b>wdStyleSheetPrecedenceHigher</b><b>wdStyleSheetPrecedenceHighest</b><b>wdStyleSheetPrecedenceLower</b><b>wdStyleSheetPrecedenceLowest</b></param>
         <summary>Move a ordem de precedência de uma folha de estilos.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -200,6 +207,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.StyleSheet.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Office.Interop.Word.StyleSheet.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -228,6 +236,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.StyleSheet.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.StyleSheet.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -256,6 +265,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.StyleSheet.Path" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Path As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Path { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Path : string" Usage="Microsoft.Office.Interop.Word.StyleSheet.Path" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -275,9 +285,9 @@
       <Docs>
         <summary>Retorna o disco ou o caminho da Web para o objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks><para>O caminho não inclui um caractere precedente  por exemplo, "C:\MSOffice" ou "http://MyServer". Use a <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" /> propriedade para adicionar o caractere que separa pastas e letras de unidade. Use a <see cref="P:Microsoft.Office.Interop.Word.StyleSheet.Name" /> propriedade para retornar o nome de arquivo sem o caminho e use <see cref="P:Microsoft.Office.Interop.Word.StyleSheet.FullName" /> a propriedade para retornar o nome de arquivo e o caminho juntos.</para>
+        <remarks><para>O caminho não inclui um caractere precedente  por exemplo, "C:\MSOffice" ou "http://MyServer". Use a <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" /> propriedade para adicionar o caractere que separa pastas e letras de unidade. Use a <see cref="P:Microsoft.Office.Interop.Word.StyleSheet.Name" /> propriedade para retornar o nome de arquivo sem o caminho e use a <see cref="P:Microsoft.Office.Interop.Word.StyleSheet.FullName" /> propriedade para retornar o nome de arquivo e o caminho juntos.</para>
           <para>
-            <b>Observação</b>  Você pode usar a propriedade <b>PathSeparator</b> para criar endereços da Web, mesmo que eles contenham barras (/) e a propriedade <b>PathSeparator</b> seja padronizada como uma\)barra invertida (.</para>
+            <b>Observação</b>  Você pode usar a propriedade <b>PathSeparator</b> para criar endereços da Web, mesmo que eles contenham barras (/) e a propriedade <b>PathSeparator</b> seja padronizada como uma barra invertida ( \) .</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -287,6 +297,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.StyleSheet.Title" />
       <MemberSignature Language="VB.NET" Value="Public Property Title As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Title { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Title : string with get, set" Usage="Microsoft.Office.Interop.Word.StyleSheet.Title" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -318,6 +329,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.StyleSheet.Type" />
       <MemberSignature Language="VB.NET" Value="Public Property Type As WdStyleSheetLinkType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdStyleSheetLinkType Type { Microsoft::Office::Interop::Word::WdStyleSheetLinkType get(); void set(Microsoft::Office::Interop::Word::WdStyleSheetLinkType value); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Microsoft.Office.Interop.Word.WdStyleSheetLinkType with get, set" Usage="Microsoft.Office.Interop.Word.StyleSheet.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

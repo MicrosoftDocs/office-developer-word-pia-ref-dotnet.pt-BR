@@ -1,9 +1,10 @@
 <Type Name="SmartTagType" FullName="Microsoft.Office.Interop.Word.SmartTagType">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="be0009d07ada538632f62700e62de5b182eb910c" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143984" /></Metadata><TypeSignature Language="C#" Value="public interface SmartTagType" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="4dda4b414bab01205c0c91563416a35026dc2a2f" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43926294" /></Metadata><TypeSignature Language="C#" Value="public interface SmartTagType" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SmartTagType" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.SmartTagType" />
   <TypeSignature Language="VB.NET" Value="Public Interface SmartTagType" />
   <TypeSignature Language="C++ CLI" Value="public interface class SmartTagType" />
+  <TypeSignature Language="F#" Value="type SmartTagType = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -21,8 +22,8 @@
     <summary>Representa um tipo de marca inteligente.</summary>
     <remarks><para>Um tipo de marca inteligente é um único item em uma lista de marcas inteligentes. Essas listas podem conter vários tipos de marcas inteligentes. Por exemplo, a lista de marcas inteligentes Address instalada em sistemas em inglês, por padrão, contém os tipos de marcas inteligentes name, street e city, para citar apenas alguns.</para>
       <para>
-        <see cref="T:Microsoft.Office.Interop.Word.SmartTagRecognizer" />, <see cref="T:Microsoft.Office.Interop.Word.SmartTagAction" />e <see cref="T:Microsoft.Office.Interop.Word.SmartTagType" /> objetos estão relacionados em que cada item que um componente de marca inteligente reconhece é um objeto <b>smartTagType</b> . Por exemplo, "city" no componente de marca inteligente Address é um objeto <b>SmartTagType</b> específico. O tipo de marca inteligente city possui objetos <b>SmartTagRecognizer</b> relacionados (a parte do componente de marca inteligente que reconhece marcas inteligentes do tipo "city" nos documentos) e objetos <b>SmartTagAction</b> (a parte do componente de marca inteligente que disponibiliza ações relacionadas ao tipo de marca inteligente específico, que pode incluir a pesquisa de uma cidade identificada no Microsoft MapPoint, no MSN). No entanto, o reconhecedor faz o rotulamento, o manipulador de ações fornece a funcionalidade do usuário final e o que o une juntos é o tipo de marca inteligente em que eles trabalham.</para>
-      <para>Use o <see cref="P:Microsoft.Office.Interop.Word.SmartTagTypes.Item(System.Object@)" /> método para retornar um tipo de marca inteligente específico em uma coleção de tipos de marca inteligente. Em seguida, <see cref="P:Microsoft.Office.Interop.Word.SmartTagType.SmartTagRecognizers" /> use a propriedade para retornar todos os identificadores de marcas inteligentes associados a um tipo especificado de marca inteligente <see cref="P:Microsoft.Office.Interop.Word.SmartTagType.SmartTagActions" /> e use a propriedade para retornar todas as ações de marcas inteligentes associadas a um tipo especificado de marca inteligente.</para>
+        <see cref="T:Microsoft.Office.Interop.Word.SmartTagRecognizer" />, <see cref="T:Microsoft.Office.Interop.Word.SmartTagAction" /> e <see cref="T:Microsoft.Office.Interop.Word.SmartTagType" /> objetos estão relacionados em que cada item que um componente de marca inteligente reconhece é um objeto <b>smartTagType</b> . Por exemplo, "city" no componente de marca inteligente Address é um objeto <b>SmartTagType</b> específico. O tipo de marca inteligente city possui objetos <b>SmartTagRecognizer</b> relacionados (a parte do componente de marca inteligente que reconhece marcas inteligentes do tipo "city" nos documentos) e objetos <b>SmartTagAction</b> (a parte do componente de marca inteligente que disponibiliza ações relacionadas ao tipo de marca inteligente específico, que pode incluir a pesquisa de uma cidade identificada no Microsoft MapPoint, no MSN). No entanto, o reconhecedor faz o rotulamento, o manipulador de ações fornece a funcionalidade do usuário final e o que o une juntos é o tipo de marca inteligente em que eles trabalham.</para>
+      <para>Use o <see cref="P:Microsoft.Office.Interop.Word.SmartTagTypes.Item(System.Object@)" /> método para retornar um tipo de marca inteligente específico em uma coleção de tipos de marca inteligente. Em seguida, use a <see cref="P:Microsoft.Office.Interop.Word.SmartTagType.SmartTagRecognizers" /> propriedade para retornar todos os identificadores de marcas inteligentes associados a um tipo especificado de marca inteligente e use a <see cref="P:Microsoft.Office.Interop.Word.SmartTagType.SmartTagActions" /> propriedade para retornar todas as ações de marcas inteligentes associadas a um tipo especificado de marca inteligente.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SmartTagType.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.SmartTagType.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SmartTagType.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.SmartTagType.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SmartTagType.FriendlyName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FriendlyName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FriendlyName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FriendlyName : string" Usage="Microsoft.Office.Interop.Word.SmartTagType.FriendlyName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -118,9 +122,9 @@
       <Docs>
         <summary>Retorna uma <b>cadeia de caracteres</b> que representa um nome amigável para um tipo de marca inteligente.</summary>
         <value>To be added.</value>
-        <remarks><para>Nomes de tipo de marca inteligente, conforme definido <see cref="P:Microsoft.Office.Interop.Word.SmartTagType.Name" /> na propriedade, são formatados como nomes de recursos uniformes (urns). O nome amigável remove o URN e deixa o nome após o sinal de sustenido (#). Por exemplo, o tipo de marca inteligente endereço retorna o seguinte URN para <see cref="P:Microsoft.Office.Interop.Word.SmartTagType.Name" /> a propriedade.</para>
+        <remarks><para>Nomes de tipo de marca inteligente, conforme definido na <see cref="P:Microsoft.Office.Interop.Word.SmartTagType.Name" /> propriedade, são formatados como nomes de recursos uniformes (urns). O nome amigável remove o URN e deixa o nome após o sinal de sustenido (#). Por exemplo, o tipo de marca inteligente endereço retorna o seguinte URN para a <see cref="P:Microsoft.Office.Interop.Word.SmartTagType.Name" /> propriedade.</para>
           <para>urn: schemas-microsoft-com: Office: SmartTags # endereço</para>
-          <para>A <b></b> Propriedade FriendlyName remove tudo até e incluindo o sinal de sustenido (#) e deixa a seguinte <b>cadeia de caracteres</b>:</para>
+          <para>A propriedade <b>FriendlyName</b> remove tudo até e incluindo o sinal de sustenido (#) e deixa a seguinte <b>cadeia de caracteres</b>:</para>
           <para>address</para>
           <para> </para></remarks>
       </Docs>
@@ -131,6 +135,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SmartTagType.Name" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Office.Interop.Word.SmartTagType.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -162,6 +167,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SmartTagType.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.SmartTagType.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -193,6 +199,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SmartTagType.SmartTagActions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SmartTagActions As SmartTagActions" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::SmartTagActions ^ SmartTagActions { Microsoft::Office::Interop::Word::SmartTagActions ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SmartTagActions : Microsoft.Office.Interop.Word.SmartTagActions" Usage="Microsoft.Office.Interop.Word.SmartTagType.SmartTagActions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -224,6 +231,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.SmartTagType.SmartTagRecognizers" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SmartTagRecognizers As SmartTagRecognizers" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::SmartTagRecognizers ^ SmartTagRecognizers { Microsoft::Office::Interop::Word::SmartTagRecognizers ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SmartTagRecognizers : Microsoft.Office.Interop.Word.SmartTagRecognizers" Usage="Microsoft.Office.Interop.Word.SmartTagType.SmartTagRecognizers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

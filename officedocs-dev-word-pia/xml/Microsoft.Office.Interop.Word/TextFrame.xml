@@ -1,9 +1,10 @@
 <Type Name="TextFrame" FullName="Microsoft.Office.Interop.Word.TextFrame">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="9dc205fa2eb96a394cd184a865635344805cf9be" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143816" /></Metadata><TypeSignature Language="C#" Value="public interface TextFrame" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="7d3c2759c678340f923e96191454ec4ad2f716d0" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43926035" /></Metadata><TypeSignature Language="C#" Value="public interface TextFrame" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TextFrame" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.TextFrame" />
   <TypeSignature Language="VB.NET" Value="Public Interface TextFrame" />
   <TypeSignature Language="C++ CLI" Value="public interface class TextFrame" />
+  <TypeSignature Language="F#" Value="type TextFrame = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -18,12 +19,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Representa o quadro de texto em <see cref="T:Microsoft.Office.Interop.Word.Shape" /> um objeto. Contém o texto no quadro de texto, bem como as propriedades que controlam as margens e a orientação do quadro de texto.</summary>
-    <remarks><para>Use a <see cref="P:Microsoft.Office.Interop.Word.Shape.TextFrame" /> propriedade para retornar o <b></b> objeto TextFrame para uma forma. A <see cref="P:Microsoft.Office.Interop.Word.TextFrame.TextRange" /> propriedade retorna um <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto que representa o intervalo de texto dentro do quadro de texto especificado.</para>
+    <summary>Representa o quadro de texto em um <see cref="T:Microsoft.Office.Interop.Word.Shape" /> objeto. Contém o texto no quadro de texto, bem como as propriedades que controlam as margens e a orientação do quadro de texto.</summary>
+    <remarks><para>Use a <see cref="P:Microsoft.Office.Interop.Word.Shape.TextFrame" /> propriedade para retornar o objeto <b>TextFrame</b> para uma forma. A <see cref="P:Microsoft.Office.Interop.Word.TextFrame.TextRange" /> propriedade retorna um <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto que representa o intervalo de texto dentro do quadro de texto especificado.</para>
       <para>
         <b>Observação</b>  Algumas formas não dão suporte a texto anexado (linhas, formas livres, imagens e objetos OLE, por exemplo). Se você tentar retornar ou definir propriedades que controlam texto em um quadro de texto para esses objetos, ocorrerá um erro.</para>
       <para>Use a <see cref="P:Microsoft.Office.Interop.Word.TextFrame.HasText" /> propriedade para determinar se o quadro de texto contém texto.</para>
-      <para>Quadros de texto podem ser vinculados juntos, para que o texto flui do quadro de texto de uma forma para o quadro de texto, de outra forma. Use as <see cref="P:Microsoft.Office.Interop.Word.TextFrame.Next" /> propriedades <see cref="P:Microsoft.Office.Interop.Word.TextFrame.Previous" /> e para vincular quadros de texto.</para>
+      <para>Quadros de texto podem ser vinculados juntos, para que o texto flui do quadro de texto de uma forma para o quadro de texto, de outra forma. Use as <see cref="P:Microsoft.Office.Interop.Word.TextFrame.Next" /> <see cref="P:Microsoft.Office.Interop.Word.TextFrame.Previous" /> Propriedades e para vincular quadros de texto.</para>
       <para>Use a <see cref="P:Microsoft.Office.Interop.Word.TextFrame.ContainingRange" /> propriedade para retornar um <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto que representa o texto inteiro que flui entre quadros de texto vinculados.</para>
       <para> </para></remarks>
   </Docs>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextFrame.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.TextFrame.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextFrame.AutoSize" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoSize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int AutoSize { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.AutoSize : int with get, set" Usage="Microsoft.Office.Interop.Word.TextFrame.AutoSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.TextFrame.BreakForwardLink" />
       <MemberSignature Language="VB.NET" Value="Public Sub BreakForwardLink ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void BreakForwardLink();" />
+      <MemberSignature Language="F#" Value="abstract member BreakForwardLink : unit -&gt; unit" Usage="textFrame.BreakForwardLink " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -119,6 +123,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextFrame.Column" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Column As TextColumn2" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::TextColumn2 ^ Column { Microsoft::Office::Core::TextColumn2 ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Column : Microsoft.Office.Core.TextColumn2" Usage="Microsoft.Office.Interop.Word.TextFrame.Column" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -148,6 +153,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextFrame.ContainingRange" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContainingRange As Range" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ ContainingRange { Microsoft::Office::Interop::Word::Range ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ContainingRange : Microsoft.Office.Interop.Word.Range" Usage="Microsoft.Office.Interop.Word.TextFrame.ContainingRange" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -176,6 +182,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextFrame.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.TextFrame.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -206,6 +213,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.TextFrame.DeleteText" />
       <MemberSignature Language="VB.NET" Value="Public Sub DeleteText ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DeleteText();" />
+      <MemberSignature Language="F#" Value="abstract member DeleteText : unit -&gt; unit" Usage="textFrame.DeleteText " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -231,6 +239,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextFrame.HasText" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasText As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int HasText { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasText : int" Usage="Microsoft.Office.Interop.Word.TextFrame.HasText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -259,6 +268,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextFrame.HorizontalAnchor" />
       <MemberSignature Language="VB.NET" Value="Public Property HorizontalAnchor As MsoHorizontalAnchor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoHorizontalAnchor HorizontalAnchor { Microsoft::Office::Core::MsoHorizontalAnchor get(); void set(Microsoft::Office::Core::MsoHorizontalAnchor value); };" />
+      <MemberSignature Language="F#" Value="member this.HorizontalAnchor : Microsoft.Office.Core.MsoHorizontalAnchor with get, set" Usage="Microsoft.Office.Interop.Word.TextFrame.HorizontalAnchor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -281,7 +291,7 @@
       <Docs>
         <summary>Obtém ou define o alinhamento horizontal do texto em um quadro de texto.</summary>
         <value>O alinhamento horizontal do texto em um quadro de texto.</value>
-        <remarks><para>Leitura/gravação <see cref="T:Microsoft.Office.Core.MsoHorizontalAnchor" />.</para>
+        <remarks><para>Leitura/gravação <see cref="T:Microsoft.Office.Core.MsoHorizontalAnchor" /> .</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -291,6 +301,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextFrame.MarginBottom" />
       <MemberSignature Language="VB.NET" Value="Public Property MarginBottom As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float MarginBottom { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.MarginBottom : single with get, set" Usage="Microsoft.Office.Interop.Word.TextFrame.MarginBottom" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -322,6 +333,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextFrame.MarginLeft" />
       <MemberSignature Language="VB.NET" Value="Public Property MarginLeft As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float MarginLeft { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.MarginLeft : single with get, set" Usage="Microsoft.Office.Interop.Word.TextFrame.MarginLeft" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -353,6 +365,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextFrame.MarginRight" />
       <MemberSignature Language="VB.NET" Value="Public Property MarginRight As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float MarginRight { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.MarginRight : single with get, set" Usage="Microsoft.Office.Interop.Word.TextFrame.MarginRight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -384,6 +397,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextFrame.MarginTop" />
       <MemberSignature Language="VB.NET" Value="Public Property MarginTop As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float MarginTop { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.MarginTop : single with get, set" Usage="Microsoft.Office.Interop.Word.TextFrame.MarginTop" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -415,6 +429,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextFrame.Next" />
       <MemberSignature Language="VB.NET" Value="Public Property Next As TextFrame" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::TextFrame ^ Next { Microsoft::Office::Interop::Word::TextFrame ^ get(); void set(Microsoft::Office::Interop::Word::TextFrame ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Next : Microsoft.Office.Interop.Word.TextFrame with get, set" Usage="Microsoft.Office.Interop.Word.TextFrame.Next" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -446,6 +461,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextFrame.NoTextRotation" />
       <MemberSignature Language="VB.NET" Value="Public Property NoTextRotation As MsoTriState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState NoTextRotation { Microsoft::Office::Core::MsoTriState get(); void set(Microsoft::Office::Core::MsoTriState value); };" />
+      <MemberSignature Language="F#" Value="member this.NoTextRotation : Microsoft.Office.Core.MsoTriState with get, set" Usage="Microsoft.Office.Interop.Word.TextFrame.NoTextRotation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -468,7 +484,7 @@
       <Docs>
         <summary>Obtém ou define se o texto no quadro de texto não deve girar quando a forma é girada.</summary>
         <value>Um <see cref="T:Microsoft.Office.Core.MsoTriState" /> objeto.</value>
-        <remarks><para>Leitura/gravação <see cref="T:Microsoft.Office.Core.MsoTriState" />. Somente as constantes de <b>MsoTriState</b> <b>msoFalse</b> e <b>msoTrue</b> podem ser usados para definir essa propriedade.</para>
+        <remarks><para>Leitura/gravação <see cref="T:Microsoft.Office.Core.MsoTriState" /> . Somente as constantes de <b>MsoTriState</b> <b>msoFalse</b> e <b>msoTrue</b> podem ser usados para definir essa propriedade.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -478,6 +494,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextFrame.Orientation" />
       <MemberSignature Language="VB.NET" Value="Public Property Orientation As MsoTextOrientation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTextOrientation Orientation { Microsoft::Office::Core::MsoTextOrientation get(); void set(Microsoft::Office::Core::MsoTextOrientation value); };" />
+      <MemberSignature Language="F#" Value="member this.Orientation : Microsoft.Office.Core.MsoTextOrientation with get, set" Usage="Microsoft.Office.Interop.Word.TextFrame.Orientation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -524,7 +541,7 @@
             <b>msoTextOrientationVerticalFarEast</b>
           </para>
           <para>Algumas constantes listadas acima podem não estar disponíveis para você, dependendo do suporte a idioma (por exemplo, português do Brasil) que tiver sido selecionado ou instalado.</para>
-          <para>Você pode definir a orientação para um quadro de texto ou para um intervalo ou seleção que acontece ocorra dentro de um quadro de texto. Para obter informações sobre a diferença entre um quadro de texto e uma caixa de texto <see cref="T:Microsoft.Office.Interop.Word.TextFrame" /> , consulte o objeto.</para>
+          <para>Você pode definir a orientação para um quadro de texto ou para um intervalo ou seleção que acontece ocorra dentro de um quadro de texto. Para obter informações sobre a diferença entre um quadro de texto e uma caixa de texto, consulte o <see cref="T:Microsoft.Office.Interop.Word.TextFrame" /> objeto.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -534,6 +551,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextFrame.Overflowing" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Overflowing As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Overflowing { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Overflowing : bool" Usage="Microsoft.Office.Interop.Word.TextFrame.Overflowing" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -562,6 +580,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextFrame.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Shape" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Shape ^ Parent { Microsoft::Office::Interop::Word::Shape ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : Microsoft.Office.Interop.Word.Shape" Usage="Microsoft.Office.Interop.Word.TextFrame.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -590,6 +609,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextFrame.PathFormat" />
       <MemberSignature Language="VB.NET" Value="Public Property PathFormat As MsoPathFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoPathFormat PathFormat { Microsoft::Office::Core::MsoPathFormat get(); void set(Microsoft::Office::Core::MsoPathFormat value); };" />
+      <MemberSignature Language="F#" Value="member this.PathFormat : Microsoft.Office.Core.MsoPathFormat with get, set" Usage="Microsoft.Office.Interop.Word.TextFrame.PathFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -654,6 +674,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextFrame.Previous" />
       <MemberSignature Language="VB.NET" Value="Public Property Previous As TextFrame" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::TextFrame ^ Previous { Microsoft::Office::Interop::Word::TextFrame ^ get(); void set(Microsoft::Office::Interop::Word::TextFrame ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Previous : Microsoft.Office.Interop.Word.TextFrame with get, set" Usage="Microsoft.Office.Interop.Word.TextFrame.Previous" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -685,6 +706,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextFrame.TextRange" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TextRange As Range" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ TextRange { Microsoft::Office::Interop::Word::Range ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TextRange : Microsoft.Office.Interop.Word.Range" Usage="Microsoft.Office.Interop.Word.TextFrame.TextRange" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -713,6 +735,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextFrame.ThreeD" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ThreeD As ThreeDFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ThreeDFormat ^ ThreeD { Microsoft::Office::Interop::Word::ThreeDFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ThreeD : Microsoft.Office.Interop.Word.ThreeDFormat" Usage="Microsoft.Office.Interop.Word.TextFrame.ThreeD" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -742,6 +765,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.TextFrame.ValidLinkTarget(Microsoft.Office.Interop.Word.TextFrame)" />
       <MemberSignature Language="VB.NET" Value="Public Function ValidLinkTarget (TargetTextFrame As TextFrame) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ValidLinkTarget(Microsoft::Office::Interop::Word::TextFrame ^ TargetTextFrame);" />
+      <MemberSignature Language="F#" Value="abstract member ValidLinkTarget : Microsoft.Office.Interop.Word.TextFrame -&gt; bool" Usage="textFrame.ValidLinkTarget TargetTextFrame" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -759,10 +783,10 @@
         <Parameter Name="TargetTextFrame" Type="Microsoft.Office.Interop.Word.TextFrame" />
       </Parameters>
       <Docs>
-        <param name="TargetTextFrame">Objeto <see cref="T:Microsoft.Office.Interop.Word.TextFrame" /> necessário. O quadro de texto de destino no qual você deseja vincular o quadro de texto especificado.</param>
+        <param name="TargetTextFrame"><see cref="T:Microsoft.Office.Interop.Word.TextFrame" />Objeto necessário. O quadro de texto de destino no qual você deseja vincular o quadro de texto especificado.</param>
         <summary>Determina se o quadro de texto de uma forma pode ser vinculado ao quadro de texto de outra forma.</summary>
         <returns>To be added.</returns>
-        <remarks><para>A <b></b> Propriedade TextFrame retorna <b>true</b> se <paramref name="TargetTextFrame" /> for um destino válido. Ele retornará <b>false</b> se <paramref name="TargetTextFrame" /> já contiver texto ou já estiver vinculado ou se a forma não oferecer suporte a texto anexado.</para>
+        <remarks><para>A propriedade <b>TextFrame</b> retorna <b>true</b> se <paramref name="TargetTextFrame" /> for um destino válido. Ele retornará <b>false</b> se <paramref name="TargetTextFrame" /> já contiver texto ou já estiver vinculado ou se a forma não oferecer suporte a texto anexado.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -772,6 +796,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextFrame.VerticalAnchor" />
       <MemberSignature Language="VB.NET" Value="Public Property VerticalAnchor As MsoVerticalAnchor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoVerticalAnchor VerticalAnchor { Microsoft::Office::Core::MsoVerticalAnchor get(); void set(Microsoft::Office::Core::MsoVerticalAnchor value); };" />
+      <MemberSignature Language="F#" Value="member this.VerticalAnchor : Microsoft.Office.Core.MsoVerticalAnchor with get, set" Usage="Microsoft.Office.Interop.Word.TextFrame.VerticalAnchor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -803,6 +828,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextFrame.WarpFormat" />
       <MemberSignature Language="VB.NET" Value="Public Property WarpFormat As MsoWarpFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoWarpFormat WarpFormat { Microsoft::Office::Core::MsoWarpFormat get(); void set(Microsoft::Office::Core::MsoWarpFormat value); };" />
+      <MemberSignature Language="F#" Value="member this.WarpFormat : Microsoft.Office.Core.MsoWarpFormat with get, set" Usage="Microsoft.Office.Interop.Word.TextFrame.WarpFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -825,7 +851,7 @@
       <Docs>
         <summary>Obtém ou define o formato Warp (como o texto é distorcedo) para o quadro de texto especificado.</summary>
         <value>O formato Warp (como o texto é distorcedo) para o quadro de texto especificado.</value>
-        <remarks><para>Leitura/gravação <see cref="T:Microsoft.Office.Core.MsoWarpFormat" />.</para>
+        <remarks><para>Leitura/gravação <see cref="T:Microsoft.Office.Core.MsoWarpFormat" /> .</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -835,6 +861,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TextFrame.WordWrap" />
       <MemberSignature Language="VB.NET" Value="Public Property WordWrap As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int WordWrap { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.WordWrap : int with get, set" Usage="Microsoft.Office.Interop.Word.TextFrame.WordWrap" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

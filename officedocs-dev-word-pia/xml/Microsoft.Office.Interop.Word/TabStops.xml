@@ -1,9 +1,10 @@
 <Type Name="TabStops" FullName="Microsoft.Office.Interop.Word.TabStops">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="5dccca7a808f17210ed911b946b4012c04f38708" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143900" /></Metadata><TypeSignature Language="C#" Value="public interface TabStops : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="8cf0fe3956d091a44048f4d9587982038dce4cbe" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43926161" /></Metadata><TypeSignature Language="C#" Value="public interface TabStops : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TabStops implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.TabStops" />
   <TypeSignature Language="VB.NET" Value="Public Interface TabStops&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class TabStops : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type TabStops = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -26,7 +27,7 @@
     <remarks><para>Use a propriedade <b>TabStops</b> para retornar a coleção <b>TabStops</b>.</para>
       <para>Use o <see cref="M:Microsoft.Office.Interop.Word.TabStops.Add(System.Single,System.Object@,System.Object@)" /> método para adicionar uma parada de tabulação.</para>
       <para>Você também pode adicionar uma parada de tabulação especificando um local com a propriedade <b>TabStops</b>.</para>
-      <para>Use <b>TabStops</b>(<paramref name="index" />), onde <paramref name="index" /> é o local da parada de tabulação (em pontos) ou o número de índice, para retornar um único objeto <b>TabStop</b> . Paradas de tabulação são indexadas numericamente da esquerda para direita ao longo da régua.</para>
+      <para>Use <b>TabStops</b>( <paramref name="index" /> ), onde <paramref name="index" /> é o local da parada de tabulação (em pontos) ou o número de índice, para retornar um único objeto <b>TabStop</b> . Paradas de tabulação são indexadas numericamente da esquerda para direita ao longo da régua.</para>
       <para>Ao trabalhar com a <see cref="T:Microsoft.Office.Interop.Word.Paragraphs" /> coleção (ou um intervalo com vários parágrafos), você deve modificar cada parágrafo na coleção individualmente se as paradas de tabulação não forem idênticas em todos os parágrafos.</para>
       <para> </para></remarks>
   </Docs>
@@ -36,6 +37,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.TabStop Add([in]float32 Position, [in]object&amp; Alignment, [in]object&amp; Leader) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.TabStops.Add(System.Single,System.Object@,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (Position As Single, Optional ByRef Alignment As Object, Optional ByRef Leader As Object) As TabStop" />
+      <MemberSignature Language="F#" Value="abstract member Add : single * obj * obj -&gt; Microsoft.Office.Interop.Word.TabStop" Usage="tabStops.Add (Position, Alignment, Leader)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -51,13 +53,13 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="Position" Type="System.Single" />
-        <Parameter Name="Alignment" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="Leader" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Alignment" Type="System.Object" RefType="ref" />
+        <Parameter Name="Leader" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="Position"><b>Único</b>necessário. A posição da parada de tabulação (em pontos) em relação à margem esquerda.</param>
-        <param name="Alignment"><b>Objeto</b>opcional. O alinhamento da parada de tabulação. Pode ser <see cref="T:Microsoft.Office.Interop.Word.WdTabAlignment" /> uma das seguintes constantes: <b>wdAlignTabBar</b>, <b>wdAlignTabCenter</b>, <b>wdAlignTabDecimal</b>, <b>wdAlignTabLeft</b>, <b>wdAlignTabList</b>ou <b>wdAlignTabRight</b>. Se esse argumento for omitido, <b>wdAlignTabLeft</b> será usado.</param>
-        <param name="Leader"><b>Objeto</b>opcional. O tipo de preenchimento da parada de tabulação. Pode ser <see cref="T:Microsoft.Office.Interop.Word.WdTabLeader" /> uma das seguintes constantes: <b>wdTabLeaderDashes</b>, <b>wdTabLeaderDots</b>, <b>wdTabLeaderHeavy</b>, <b>wdTabLeaderLines</b>, <b>wdTabLeaderMiddleDot</b>ou <b>wdTabLeaderSpaces</b>. Se esse argumento for omitido, <b>wdTabLeaderSpaces</b> será usado.</param>
+        <param name="Alignment"><b>Objeto</b>opcional. O alinhamento da parada de tabulação. Pode ser uma das seguintes <see cref="T:Microsoft.Office.Interop.Word.WdTabAlignment" /> constantes: <b>wdAlignTabBar</b>, <b>wdAlignTabCenter</b>, <b>WdAlignTabDecimal</b>, <b>wdAlignTabLeft</b>, <b>wdAlignTabList</b>ou <b>wdAlignTabRight</b>. Se esse argumento for omitido, <b>wdAlignTabLeft</b> será usado.</param>
+        <param name="Leader"><b>Objeto</b>opcional. O tipo de preenchimento da parada de tabulação. Pode ser uma das seguintes <see cref="T:Microsoft.Office.Interop.Word.WdTabLeader" /> constantes: <b>wdTabLeaderDashes</b>, <b>wdTabLeaderDots</b>, <b>WdTabLeaderHeavy</b>, <b>wdTabLeaderLines</b>, <b>wdTabLeaderMiddleDot</b>ou <b>wdTabLeaderSpaces</b>. Se esse argumento for omitido, <b>wdTabLeaderSpaces</b> será usado.</param>
         <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.TabStop" /> objeto que representa uma parada de tabulação personalizada adicionada a um documento.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -69,6 +71,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.TabStops.After(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Function After (Position As Single) As TabStop" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::TabStop ^ After(float Position);" />
+      <MemberSignature Language="F#" Value="abstract member After : single -&gt; Microsoft.Office.Interop.Word.TabStop" Usage="tabStops.After Position" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -87,7 +90,7 @@
       </Parameters>
       <Docs>
         <param name="Position"><b>Único</b>necessário. Especifica uma posição na régua, em pontos.</param>
-        <summary>Retorna o próximo <see cref="T:Microsoft.Office.Interop.Word.TabStop" /> objeto à direita de <paramref name="Position" />.</summary>
+        <summary>Retorna o próximo <see cref="T:Microsoft.Office.Interop.Word.TabStop" /> objeto à direita de <paramref name="Position" /> .</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -98,6 +101,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TabStops.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.TabStops.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -126,6 +130,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.TabStops.Before(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Function Before (Position As Single) As TabStop" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::TabStop ^ Before(float Position);" />
+      <MemberSignature Language="F#" Value="abstract member Before : single -&gt; Microsoft.Office.Interop.Word.TabStop" Usage="tabStops.Before Position" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -144,7 +149,7 @@
       </Parameters>
       <Docs>
         <param name="Position"><b>Único</b>necessário. Especifica uma posição na régua, em pontos.</param>
-        <summary>Retorna o próximo <see cref="T:Microsoft.Office.Interop.Word.TabStop" /> objeto à esquerda de <paramref name="Position" />.</summary>
+        <summary>Retorna o próximo <see cref="T:Microsoft.Office.Interop.Word.TabStop" /> objeto à esquerda de <paramref name="Position" /> .</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -155,6 +160,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.TabStops.ClearAll" />
       <MemberSignature Language="VB.NET" Value="Public Sub ClearAll ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ClearAll();" />
+      <MemberSignature Language="F#" Value="abstract member ClearAll : unit -&gt; unit" Usage="tabStops.ClearAll " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -171,7 +177,7 @@
       <Parameters />
       <Docs>
         <summary>Limpa todas as paradas de tabulação personalizadas a partir do parágrafo especificado.</summary>
-        <remarks><para>Para limpar uma parada de tabulação individual, <see cref="M:Microsoft.Office.Interop.Word.TabStop.Clear" /> use o método <see cref="T:Microsoft.Office.Interop.Word.TabStop" /> do objeto. O método <b>ClearAll</b> não limpa o padrão paradas de tabulação. Para manipular as paradas de tabulação padrão <see cref="P:Microsoft.Office.Interop.Word._Document.DefaultTabStop" /> , use a propriedade do documento.</para>
+        <remarks><para>Para limpar uma parada de tabulação individual, use o <see cref="M:Microsoft.Office.Interop.Word.TabStop.Clear" /> método do <see cref="T:Microsoft.Office.Interop.Word.TabStop" /> objeto. O método <b>ClearAll</b> não limpa o padrão paradas de tabulação. Para manipular as paradas de tabulação padrão, use a <see cref="P:Microsoft.Office.Interop.Word._Document.DefaultTabStop" /> Propriedade do documento.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -181,6 +187,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TabStops.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.TabStops.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -209,6 +216,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TabStops.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.TabStops.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -239,6 +247,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.TabStops.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="tabStops.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -271,6 +280,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TabStops.Item(System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(ByRef Index As Object) As TabStop" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::TabStop ^ default[System::Object ^ %] { Microsoft::Office::Interop::Word::TabStop ^ get(System::Object ^ % Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(obj) : Microsoft.Office.Interop.Word.TabStop" Usage="Microsoft.Office.Interop.Word.TabStops.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -288,7 +298,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.TabStop</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Index" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="Index">Um <b>objeto</b> que indica a posição ordinal ou uma cadeia de caracteres que representa o nome do objeto individual.</param>
@@ -303,6 +313,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TabStops.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.TabStops.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

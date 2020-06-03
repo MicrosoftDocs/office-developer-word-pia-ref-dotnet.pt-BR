@@ -1,9 +1,10 @@
 <Type Name="XMLNode" FullName="Microsoft.Office.Interop.Word.XMLNode">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="9972982e927ab7d392fa88967c808138fa36eb51" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34145419" /></Metadata><TypeSignature Language="C#" Value="public interface XMLNode" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="461776a92f3f6382051903364f4b16798022f332" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43926721" /></Metadata><TypeSignature Language="C#" Value="public interface XMLNode" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract XMLNode" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.XMLNode" />
   <TypeSignature Language="VB.NET" Value="Public Interface XMLNode" />
   <TypeSignature Language="C++ CLI" Value="public interface class XMLNode" />
+  <TypeSignature Language="F#" Value="type XMLNode = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -19,7 +20,7 @@
   </Attributes>
   <Docs>
     <summary>Representa um único elemento XML aplicado a um documento.</summary>
-    <remarks><para>Cada elemento XML aplicado a um documento é exibido como um nó em um controle de exibição de árvore no painel de tarefas Estrutura XML. Cada nó no modo de exibição de árvore é uma instância <see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> de um objeto. A hierarquia nesse modo de exibição indica se um nó contém nós filho.</para>
+    <remarks><para>Cada elemento XML aplicado a um documento é exibido como um nó em um controle de exibição de árvore no painel de tarefas Estrutura XML. Cada nó no modo de exibição de árvore é uma instância de um <see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> objeto. A hierarquia nesse modo de exibição indica se um nó contém nós filho.</para>
       <para>Use a <see cref="P:Microsoft.Office.Interop.Word.XMLNodes.Item(System.Int32)" /> propriedade da <see cref="T:Microsoft.Office.Interop.Word.XMLNodes" /> coleção para retornar um objeto individual <see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> . Use o <see cref="M:Microsoft.Office.Interop.Word.XMLNode.Validate" /> método para verificar se um elemento XML é válido de acordo com os esquemas aplicados e se todos os elementos filho necessários existem e estão na ordem necessária. Depois de executar o <see cref="M:Microsoft.Office.Interop.Word.XMLNode.Validate" /> método, use a <see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationStatus" /> propriedade para verificar se um elemento é válido e use a <see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationErrorText(System.Boolean)" /> propriedade para exibir informações sobre o que o usuário precisa fazer para que o documento fique em conformidade com as regras de esquema XML.</para>
       <para> </para></remarks>
   </Docs>
@@ -30,6 +31,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.XMLNode.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -58,6 +60,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.Attributes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Attributes As XMLNodes" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::XMLNodes ^ Attributes { Microsoft::Office::Interop::Word::XMLNodes ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Attributes : Microsoft.Office.Interop.Word.XMLNodes" Usage="Microsoft.Office.Interop.Word.XMLNode.Attributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -77,7 +80,7 @@
       <Docs>
         <summary>Retorna uma <see cref="T:Microsoft.Office.Interop.Word.XMLNodes" /> coleção que representa os atributos do elemento especificado.</summary>
         <value>To be added.</value>
-        <remarks><para>Todos <see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> os objetos da <b></b> coleção XMLNodes retornados usando a propriedade <b>Attributes</b> têm um <see cref="P:Microsoft.Office.Interop.Word.XMLNode.NodeType" /> valor de propriedade de <b>NodeTypewdXMLNodeAttribute</b>.</para>
+        <remarks><para>Todos os <see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> objetos da coleção <b>XMLNodes</b> retornados usando a propriedade <b>Attributes</b> têm um <see cref="P:Microsoft.Office.Interop.Word.XMLNode.NodeType" /> valor de propriedade de <b>NodeTypewdXMLNodeAttribute</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -87,6 +90,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.BaseName" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property BaseName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BaseName : string" Usage="Microsoft.Office.Interop.Word.XMLNode.BaseName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -115,6 +119,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.ChildNodes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChildNodes As XMLNodes" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::XMLNodes ^ ChildNodes { Microsoft::Office::Interop::Word::XMLNodes ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ChildNodes : Microsoft.Office.Interop.Word.XMLNodes" Usage="Microsoft.Office.Interop.Word.XMLNode.ChildNodes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -143,6 +148,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.ChildNodeSuggestions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChildNodeSuggestions As XMLChildNodeSuggestions" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::XMLChildNodeSuggestions ^ ChildNodeSuggestions { Microsoft::Office::Interop::Word::XMLChildNodeSuggestions ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ChildNodeSuggestions : Microsoft.Office.Interop.Word.XMLChildNodeSuggestions" Usage="Microsoft.Office.Interop.Word.XMLNode.ChildNodeSuggestions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -175,6 +181,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.XMLNode.Copy" />
       <MemberSignature Language="VB.NET" Value="Public Sub Copy ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Copy();" />
+      <MemberSignature Language="F#" Value="abstract member Copy : unit -&gt; unit" Usage="xMLNode.Copy " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -200,6 +207,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.XMLNode.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -230,6 +238,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.XMLNode.Cut" />
       <MemberSignature Language="VB.NET" Value="Public Sub Cut ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Cut();" />
+      <MemberSignature Language="F#" Value="abstract member Cut : unit -&gt; unit" Usage="xMLNode.Cut " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -255,6 +264,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.XMLNode.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberSignature Language="F#" Value="abstract member Delete : unit -&gt; unit" Usage="xMLNode.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -280,6 +290,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.FirstChild" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FirstChild As XMLNode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::XMLNode ^ FirstChild { Microsoft::Office::Interop::Word::XMLNode ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FirstChild : Microsoft.Office.Interop.Word.XMLNode" Usage="Microsoft.Office.Interop.Word.XMLNode.FirstChild" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -309,6 +320,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.HasChildNodes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasChildNodes As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasChildNodes { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasChildNodes : bool" Usage="Microsoft.Office.Interop.Word.XMLNode.HasChildNodes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -338,6 +350,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.LastChild" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastChild As XMLNode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::XMLNode ^ LastChild { Microsoft::Office::Interop::Word::XMLNode ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LastChild : Microsoft.Office.Interop.Word.XMLNode" Usage="Microsoft.Office.Interop.Word.XMLNode.LastChild" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -367,6 +380,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.Level" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Level As WdXMLNodeLevel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdXMLNodeLevel Level { Microsoft::Office::Interop::Word::WdXMLNodeLevel get(); };" />
+      <MemberSignature Language="F#" Value="member this.Level : Microsoft.Office.Interop.Word.WdXMLNodeLevel" Usage="Microsoft.Office.Interop.Word.XMLNode.Level" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -395,6 +409,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.NamespaceURI" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NamespaceURI As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NamespaceURI { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NamespaceURI : string" Usage="Microsoft.Office.Interop.Word.XMLNode.NamespaceURI" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -424,6 +439,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.NextSibling" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NextSibling As XMLNode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::XMLNode ^ NextSibling { Microsoft::Office::Interop::Word::XMLNode ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NextSibling : Microsoft.Office.Interop.Word.XMLNode" Usage="Microsoft.Office.Interop.Word.XMLNode.NextSibling" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -453,6 +469,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.NodeType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NodeType As WdXMLNodeType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdXMLNodeType NodeType { Microsoft::Office::Interop::Word::WdXMLNodeType get(); };" />
+      <MemberSignature Language="F#" Value="member this.NodeType : Microsoft.Office.Interop.Word.WdXMLNodeType" Usage="Microsoft.Office.Interop.Word.XMLNode.NodeType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -478,7 +495,7 @@
             <b>NodeTypewdXMLNodeAttribute</b> – indica um nó de atributo.</para>
           <para>
             <b>wdXMLNodeElement</b> – indica um nó de elemento.</para>
-          <para>Um <see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> objeto pode ser um elemento XML ou um atributo de um elemento. Use a propriedade <b>NodeType</b> para determinar o tipo de nó com o qual você está trabalhando, para não tentar executar operações inválidas no nó. Por exemplo, a <see cref="P:Microsoft.Office.Interop.Word.XMLNode.Attributes" /> Propriedade se aplica somente aos nós de elemento, embora ele seja exibido na lista de propriedades disponíveis para o objeto <b>XMLNode</b> .</para>
+          <para>Um <see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> objeto pode ser um elemento XML ou um atributo de um elemento. Use a propriedade <b>NodeType</b> para determinar o tipo de nó com o qual você está trabalhando, para não tentar executar operações inválidas no nó. Por exemplo, a <see cref="P:Microsoft.Office.Interop.Word.XMLNode.Attributes" /> propriedade se aplica somente aos nós de elemento, embora ele seja exibido na lista de propriedades disponíveis para o objeto <b>XMLNode</b> .</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -488,6 +505,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.NodeValue" />
       <MemberSignature Language="VB.NET" Value="Public Property NodeValue As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NodeValue { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.NodeValue : string with get, set" Usage="Microsoft.Office.Interop.Word.XMLNode.NodeValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -521,6 +539,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.OwnerDocument" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OwnerDocument As Document" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Document ^ OwnerDocument { Microsoft::Office::Interop::Word::Document ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OwnerDocument : Microsoft.Office.Interop.Word.Document" Usage="Microsoft.Office.Interop.Word.XMLNode.OwnerDocument" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -550,6 +569,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.XMLNode.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -578,6 +598,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.ParentNode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ParentNode As XMLNode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::XMLNode ^ ParentNode { Microsoft::Office::Interop::Word::XMLNode ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ParentNode : Microsoft.Office.Interop.Word.XMLNode" Usage="Microsoft.Office.Interop.Word.XMLNode.ParentNode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -606,6 +627,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.PlaceholderText" />
       <MemberSignature Language="VB.NET" Value="Public Property PlaceholderText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PlaceholderText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PlaceholderText : string with get, set" Usage="Microsoft.Office.Interop.Word.XMLNode.PlaceholderText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -638,6 +660,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.PreviousSibling" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PreviousSibling As XMLNode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::XMLNode ^ PreviousSibling { Microsoft::Office::Interop::Word::XMLNode ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PreviousSibling : Microsoft.Office.Interop.Word.XMLNode" Usage="Microsoft.Office.Interop.Word.XMLNode.PreviousSibling" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -667,6 +690,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.Range" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Range As Range" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ Range { Microsoft::Office::Interop::Word::Range ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Range : Microsoft.Office.Interop.Word.Range" Usage="Microsoft.Office.Interop.Word.XMLNode.Range" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -686,7 +710,7 @@
       <Docs>
         <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto que representa a parte de um documento que está contida no objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks><para>Para obter informações sobre como retornar um intervalo de um documento, <see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" /> consulte o método.</para>
+        <remarks><para>Para obter informações sobre como retornar um intervalo de um documento, consulte o <see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" /> método.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -696,6 +720,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.XMLNode.RemoveChild(Microsoft.Office.Interop.Word.XMLNode)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveChild (ChildElement As XMLNode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveChild(Microsoft::Office::Interop::Word::XMLNode ^ ChildElement);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveChild : Microsoft.Office.Interop.Word.XMLNode -&gt; unit" Usage="xMLNode.RemoveChild ChildElement" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -713,7 +738,7 @@
         <Parameter Name="ChildElement" Type="Microsoft.Office.Interop.Word.XMLNode" />
       </Parameters>
       <Docs>
-        <param name="ChildElement">Necessário <see cref="T:Microsoft.Office.Interop.Word.XMLNode" />. O elemento filho a ser removido.</param>
+        <param name="ChildElement">Necessário <see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> . O elemento filho a ser removido.</param>
         <summary>Remove o elemento filho especificado do elemento especificado.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -723,6 +748,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.XMLNodes SelectNodes([in]string XPath, [in]string PrefixMapping, [in]bool FastSearchSkippingTextNodes) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.XMLNode.SelectNodes(System.String,System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function SelectNodes (XPath As String, Optional PrefixMapping As String = &quot;&quot;, Optional FastSearchSkippingTextNodes As Boolean = false) As XMLNodes" />
+      <MemberSignature Language="F#" Value="abstract member SelectNodes : string * string * bool -&gt; Microsoft.Office.Interop.Word.XMLNodes" Usage="xMLNode.SelectNodes (XPath, PrefixMapping, FastSearchSkippingTextNodes)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -747,7 +773,7 @@
         <param name="FastSearchSkippingTextNodes"><b>Boolean</b>opcional. <b>True</b> ignora todos os nós de texto ao procurar o nó especificado. <b>False</b> inclui nós de texto na pesquisa. Valor padrão é <b>False</b>.</param>
         <summary>Retorna uma <see cref="T:Microsoft.Office.Interop.Word.XMLNodes" /> coleção que representa todos os nós que correspondem a uma cadeia de caracteres XPath especificada na ordem em que aparecem.</summary>
         <returns>To be added.</returns>
-        <remarks><para>A definição <paramref name="FastSearchSkippingTextNodes" /> do parâmetro como <b>true</b> reduz o desempenho, pois o Microsoft Word pesquisa todos os nós em um documento em relação ao texto contido no nó.</para>
+        <remarks><para>A definição do <paramref name="FastSearchSkippingTextNodes" /> parâmetro como <b>true</b> reduz o desempenho, pois o Microsoft Word pesquisa todos os nós em um documento em relação ao texto contido no nó.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -756,6 +782,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.XMLNode SelectSingleNode([in]string XPath, [in]string PrefixMapping, [in]bool FastSearchSkippingTextNodes) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.XMLNode.SelectSingleNode(System.String,System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function SelectSingleNode (XPath As String, Optional PrefixMapping As String = &quot;&quot;, Optional FastSearchSkippingTextNodes As Boolean = false) As XMLNode" />
+      <MemberSignature Language="F#" Value="abstract member SelectSingleNode : string * string * bool -&gt; Microsoft.Office.Interop.Word.XMLNode" Usage="xMLNode.SelectSingleNode (XPath, PrefixMapping, FastSearchSkippingTextNodes)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -775,12 +802,12 @@
         <Parameter Name="FastSearchSkippingTextNodes" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="XPath"><b>String</b> necessário. Uma cadeia <paramref name="XPath" /> de caracteres válida. Para obter mais informações <paramref name="XPath" />sobre o, <paramref name="XPath" /> consulte a documentação de referência no site da Web do Microsoft Developer Network (MSDN).</param>
+        <param name="XPath"><b>String</b> necessário. Uma <paramref name="XPath" /> cadeia de caracteres válida. Para obter mais informações sobre <paramref name="XPath" /> o, consulte a <paramref name="XPath" /> documentação de referência no site da Web do Microsoft Developer Network (MSDN).</param>
         <param name="PrefixMapping"><b>Objeto</b>opcional. Fornece o prefixo no esquema no qual será realizada a busca. Use o <paramref name="PrefixMapping" /> parâmetro se o <paramref name="XPath" /> parâmetro usar nomes para Pesquisar elementos.</param>
         <param name="FastSearchSkippingTextNodes"><b>Boolean</b>opcional. <b>True</b> ignora todos os nós de texto ao procurar o nó especificado. <b>False</b> inclui nós de texto na pesquisa. Valor padrão é <b>True</b>.</param>
         <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> objeto que representa o primeiro nó que corresponde a uma cadeia de caracteres XPath especificada no documento especificado.</summary>
         <returns>To be added.</returns>
-        <remarks><para>A definição <paramref name="FastSearchSkippingTextNodes" /> do parâmetro como <b>false</b> diminui o desempenho porque o Microsoft Word pesquisa todos os nós em um documento em relação ao texto contido no nó.</para>
+        <remarks><para>A definição do <paramref name="FastSearchSkippingTextNodes" /> parâmetro como <b>false</b> diminui o desempenho porque o Microsoft Word pesquisa todos os nós em um documento em relação ao texto contido no nó.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -789,6 +816,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetValidationError([in]valuetype Microsoft.Office.Interop.Word.WdXMLValidationStatus Status, [in]object&amp; ErrorText, [in]bool ClearedAutomatically) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.XMLNode.SetValidationError(Microsoft.Office.Interop.Word.WdXMLValidationStatus,System.Object@,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetValidationError (Status As WdXMLValidationStatus, Optional ByRef ErrorText As Object, Optional ClearedAutomatically As Boolean = false)" />
+      <MemberSignature Language="F#" Value="abstract member SetValidationError : Microsoft.Office.Interop.Word.WdXMLValidationStatus * obj * bool -&gt; unit" Usage="xMLNode.SetValidationError (Status, ErrorText, ClearedAutomatically)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -804,13 +832,13 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="Status" Type="Microsoft.Office.Interop.Word.WdXMLValidationStatus" />
-        <Parameter Name="ErrorText" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ErrorText" Type="System.Object" RefType="ref" />
         <Parameter Name="ClearedAutomatically" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="Status">Necessário <see cref="T:Microsoft.Office.Interop.Word.WdXMLValidationStatus" />. Especifica se define (<b>wdXMLValidationStatusCustom</b>wdXMLValidationStatusCustom) ou apaga (<b>wdXMLValidationStatusOK</b>wdXMLValidationStatusOK) o texto de erro de status da validação.</param>
+        <param name="Status">Necessário <see cref="T:Microsoft.Office.Interop.Word.WdXMLValidationStatus" /> . Especifica se define (<b>wdXMLValidationStatusCustom</b>wdXMLValidationStatusCustom) ou apaga (<b>wdXMLValidationStatusOK</b>wdXMLValidationStatusOK) o texto de erro de status da validação.</param>
         <param name="ErrorText"><b>Objeto</b>opcional. O texto exibido para o usuário. Deixe em branco quando o parâmetro <b>status</b> estiver definido como <b>wdXMLValidationStatusOK</b>.</param>
-        <param name="ClearedAutomatically"><b>Boolean</b>opcional. <b>True</b> limpa automaticamente a mensagem de erro assim que o próximo evento de validação ocorrer no nó especificado. <b>False</b> requer a execução <b></b> do método SetValidationError com <paramref name="Status" /> um parâmetro de <b>wdXMLValidationStatusOK</b> para limpar o texto de erro personalizado.</param>
+        <param name="ClearedAutomatically"><b>Boolean</b>opcional. <b>True</b> limpa automaticamente a mensagem de erro assim que o próximo evento de validação ocorrer no nó especificado. <b>False</b> requer a execução do método <b>SetValidationError</b> com um <paramref name="Status" /> parâmetro de <b>wdXMLValidationStatusOK</b> para limpar o texto de erro personalizado.</param>
         <summary>Altera o texto de erro de validação exibido para um usuário para um nó especificado e força o Microsoft Word a relatar um nó como inválido.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -821,6 +849,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.SmartTag" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SmartTag As SmartTag" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::SmartTag ^ SmartTag { Microsoft::Office::Interop::Word::SmartTag ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SmartTag : Microsoft.Office.Interop.Word.SmartTag" Usage="Microsoft.Office.Interop.Word.XMLNode.SmartTag" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -853,6 +882,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.Text" />
       <MemberSignature Language="VB.NET" Value="Public Property Text As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="Microsoft.Office.Interop.Word.XMLNode.Text" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -884,6 +914,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.XMLNode.Validate" />
       <MemberSignature Language="VB.NET" Value="Public Sub Validate ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Validate();" />
+      <MemberSignature Language="F#" Value="abstract member Validate : unit -&gt; unit" Usage="xMLNode.Validate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -900,7 +931,7 @@
       <Parameters />
       <Docs>
         <summary>Verifica um elemento XML individual ou todo o documento em relação ao esquema XML anexado ou a esquemas.</summary>
-        <remarks><para>Use o método <b>Validate</b> com as <see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationStatus" /> propriedades <see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationErrorText(System.Boolean)" /> e para determinar se um elemento XML é válido em relação ao esquema aplicado e qual o texto de erro a ser exibido para o usuário. Use o <see cref="M:Microsoft.Office.Interop.Word.XMLNode.SetValidationError(Microsoft.Office.Interop.Word.WdXMLValidationStatus,System.Object@,System.Boolean)" /> método para substituir as violações de esquema com erros de validação personalizados.</para>
+        <remarks><para>Use o método <b>Validate</b> com as <see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationStatus" /> <see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationErrorText(System.Boolean)" /> Propriedades e para determinar se um elemento XML é válido em relação ao esquema aplicado e qual o texto de erro a ser exibido para o usuário. Use o <see cref="M:Microsoft.Office.Interop.Word.XMLNode.SetValidationError(Microsoft.Office.Interop.Word.WdXMLValidationStatus,System.Object@,System.Boolean)" /> método para substituir as violações de esquema com erros de validação personalizados.</para>
           <para>Quando você executa o método <b>Validate</b> , o Microsoft Word preenche a <see cref="P:Microsoft.Office.Interop.Word._Document.XMLSchemaViolations" /> coleção com os nós XML que têm erros de validação.</para>
           <para> </para></remarks>
       </Docs>
@@ -911,6 +942,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.ValidationErrorText(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ValidationErrorText(Optional Advanced As Boolean = false) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ValidationErrorText[bool] { System::String ^ get(bool Advanced); };" />
+      <MemberSignature Language="F#" Value="member this.ValidationErrorText(bool) : string" Usage="Microsoft.Office.Interop.Word.XMLNode.ValidationErrorText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -932,7 +964,7 @@
       </Parameters>
       <Docs>
         <param name="Advanced"><b>Boolean</b>opcional. Indica que o texto de erro exibido é a versão avançada da descrição do erro de validação, que vem do componente MSXML 5.0 que acompanha o Microsoft Word.</param>
-        <summary>Retorna uma <b>cadeia de caracteres</b> que representa a descrição de um erro de <see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> validação em um objeto.</summary>
+        <summary>Retorna uma <b>cadeia de caracteres</b> que representa a descrição de um erro de validação em um <see cref="T:Microsoft.Office.Interop.Word.XMLNode" /> objeto.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -943,6 +975,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.ValidationStatus" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ValidationStatus As WdXMLValidationStatus" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdXMLValidationStatus ValidationStatus { Microsoft::Office::Interop::Word::WdXMLValidationStatus get(); };" />
+      <MemberSignature Language="F#" Value="member this.ValidationStatus : Microsoft.Office.Interop.Word.WdXMLValidationStatus" Usage="Microsoft.Office.Interop.Word.XMLNode.ValidationStatus" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -965,7 +998,7 @@
         <remarks><para>
             <b>WdXMLValidationStatus</b> pode ser uma das seguintes constantes:</para>
           <para>
-            <b>wdxmlvalidationstatuscustomwdxmlvalidationstatuscustom</b> Indica que o <see cref="M:Microsoft.Office.Interop.Word.XMLNode.SetValidationError(Microsoft.Office.Interop.Word.WdXMLValidationStatus,System.Object@,System.Boolean)" /> método foi usado para definir <see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationErrorText(System.Boolean)" /> a propriedade como uma cadeia de caracteres de texto Personalizada. </para>
+            <b>wdxmlvalidationstatuscustomwdxmlvalidationstatuscustom</b> Indica que o <see cref="M:Microsoft.Office.Interop.Word.XMLNode.SetValidationError(Microsoft.Office.Interop.Word.WdXMLValidationStatus,System.Object@,System.Boolean)" /> método foi usado para definir a <see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationErrorText(System.Boolean)" /> propriedade como uma cadeia de caracteres de texto Personalizada. </para>
           <para>
             <b>wdXMLValidationStatusOK</b> Indica que um atributo ou elemento XML é válido de acordo com o esquema anexado.</para>
           <para>Enquanto essas são as constantes nomeadas apenas dois que permite a propriedade <b>ValidationStatus</b>, existem muitos valores não-nomeados mais provenientes do componente MSXML 5.0 incluído no Microsoft Word. Para obter uma lista completa dos valores possíveis e o significado correspondente, consulte o Microsoft Word XML Content Development Kit no site do Microsoft Developer Network (MSDN).</para>
@@ -978,6 +1011,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.WordOpenXML" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WordOpenXML As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ WordOpenXML { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WordOpenXML : string" Usage="Microsoft.Office.Interop.Word.XMLNode.WordOpenXML" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1007,6 +1041,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLNode.XML(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XML(Optional DataOnly As Boolean = false) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XML[bool] { System::String ^ get(bool DataOnly); };" />
+      <MemberSignature Language="F#" Value="member this.XML(bool) : string" Usage="Microsoft.Office.Interop.Word.XMLNode.XML" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
