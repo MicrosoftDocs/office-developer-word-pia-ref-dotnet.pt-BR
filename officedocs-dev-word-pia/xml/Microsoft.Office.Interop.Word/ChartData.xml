@@ -1,9 +1,10 @@
 <Type Name="ChartData" FullName="Microsoft.Office.Interop.Word.ChartData">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="20de20835218a229a3e2ed120eb0d1a884f4bd73" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147226" /></Metadata><TypeSignature Language="C#" Value="public interface ChartData" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="edcada55bc6e08ca07a4f5832d20c44a9cfff61b" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43922476" /></Metadata><TypeSignature Language="C#" Value="public interface ChartData" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ChartData" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ChartData" />
   <TypeSignature Language="VB.NET" Value="Public Interface ChartData" />
   <TypeSignature Language="C++ CLI" Value="public interface class ChartData" />
+  <TypeSignature Language="F#" Value="type ChartData = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ChartData.Activate" />
       <MemberSignature Language="VB.NET" Value="Public Sub Activate ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Activate();" />
+      <MemberSignature Language="F#" Value="abstract member Activate : unit -&gt; unit" Usage="chartData.Activate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -45,9 +47,9 @@
       <Parameters />
       <Docs>
         <summary>Ativa a primeira janela da pasta de trabalho associada ao gráfico.</summary>
-        <remarks><para>Se o gráfico estiver vinculado a uma pasta de trabalho do Microsoft Excel, este método não executará nenhuma macro Auto_Activate ou Auto_Deactivate que possa estar anexada à pasta <see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" /> de trabalho (use o método para executar essas macros).</para>
+        <remarks><para>Se o gráfico estiver vinculado a uma pasta de trabalho do Microsoft Excel, esse método não executará qualquer Auto_Activate ou Auto_Deactivate macros que possa estar anexada à pasta de trabalho (use o <see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" /> método para executar essas macros).</para>
           <para>
-            <b>Observação</b>: Este método deve ser chamado antes de fazer <see cref="P:Microsoft.Office.Interop.Word.ChartData.Workbook" /> referência à propriedade.</para>
+            <b>Observação</b>: Este método deve ser chamado antes de fazer referência à <see cref="P:Microsoft.Office.Interop.Word.ChartData.Workbook" /> propriedade.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ChartData.ActivateChartDataWindow" />
       <MemberSignature Language="VB.NET" Value="Public Sub ActivateChartDataWindow ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ActivateChartDataWindow();" />
+      <MemberSignature Language="F#" Value="abstract member ActivateChartDataWindow : unit -&gt; unit" Usage="chartData.ActivateChartDataWindow " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -84,6 +87,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ChartData.BreakLink" />
       <MemberSignature Language="VB.NET" Value="Public Sub BreakLink ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void BreakLink();" />
+      <MemberSignature Language="F#" Value="abstract member BreakLink : unit -&gt; unit" Usage="chartData.BreakLink " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -110,6 +114,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartData.IsLinked" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsLinked As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsLinked { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsLinked : bool" Usage="Microsoft.Office.Interop.Word.ChartData.IsLinked" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -129,7 +134,7 @@
       <Docs>
         <summary><b>True</b> se os dados do gráfico estiver vinculados a uma pasta de trabalho do Microsoft Excel externa. Somente leitura.</summary>
         <value><b>Boolean</b></value>
-        <remarks><para>O uso <see cref="M:Microsoft.Office.Interop.Word.ChartData.BreakLink" /> do método para remover o link para uma pasta de trabalho do Microsoft Excel define essa propriedade como <b>false</b>.</para>
+        <remarks><para>O uso do <see cref="M:Microsoft.Office.Interop.Word.ChartData.BreakLink" /> método para remover o link para uma pasta de trabalho do Microsoft Excel define essa propriedade como <b>false</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -139,6 +144,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ChartData.Workbook" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Workbook As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Workbook { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Workbook : obj" Usage="Microsoft.Office.Interop.Word.ChartData.Workbook" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

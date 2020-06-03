@@ -1,9 +1,10 @@
 <Type Name="CalloutFormat" FullName="Microsoft.Office.Interop.Word.CalloutFormat">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="3e225a3d98b4c368d5c9c0b464dfefb3fd25e89a" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147311" /></Metadata><TypeSignature Language="C#" Value="public interface CalloutFormat" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ca057147289138dd738cdaf129377d28b3b0dcd9" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43922574" /></Metadata><TypeSignature Language="C#" Value="public interface CalloutFormat" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CalloutFormat" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.CalloutFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface CalloutFormat" />
   <TypeSignature Language="C++ CLI" Value="public interface class CalloutFormat" />
+  <TypeSignature Language="F#" Value="type CalloutFormat = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -29,6 +30,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CalloutFormat.Accent" />
       <MemberSignature Language="VB.NET" Value="Public Property Accent As MsoTriState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState Accent { Microsoft::Office::Core::MsoTriState get(); void set(Microsoft::Office::Core::MsoTriState value); };" />
+      <MemberSignature Language="F#" Value="member this.Accent : Microsoft.Office.Core.MsoTriState with get, set" Usage="Microsoft.Office.Interop.Word.CalloutFormat.Accent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CalloutFormat.Angle" />
       <MemberSignature Language="VB.NET" Value="Public Property Angle As MsoCalloutAngleType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoCalloutAngleType Angle { Microsoft::Office::Core::MsoCalloutAngleType get(); void set(Microsoft::Office::Core::MsoCalloutAngleType value); };" />
+      <MemberSignature Language="F#" Value="member this.Angle : Microsoft.Office.Core.MsoCalloutAngleType with get, set" Usage="Microsoft.Office.Interop.Word.CalloutFormat.Angle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CalloutFormat.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.CalloutFormat.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -121,6 +125,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoAttach" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoAttach As MsoTriState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState AutoAttach { Microsoft::Office::Core::MsoTriState get(); void set(Microsoft::Office::Core::MsoTriState value); };" />
+      <MemberSignature Language="F#" Value="member this.AutoAttach : Microsoft.Office.Core.MsoTriState with get, set" Usage="Microsoft.Office.Interop.Word.CalloutFormat.AutoAttach" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -149,8 +154,8 @@
       <Docs>
         <summary>Retorna ou define um valor que indica se o local em que a linha do texto explicativo é anexada à caixa do texto explicativo muda dependendo se a origem da linha do texto explicativo (onde o texto explicativo aponta) está à esquerda ou à direita da caixa do texto explicativo.</summary>
         <value>To be added.</value>
-        <remarks><para>Quando o valor dessa propriedade é <b>true</b>, o valor de posicionamento (a distância vertical da borda da caixa do texto explicativo até o lugar onde a linha de texto explicativo é anexada) é medido da parte superior da caixa de texto quando a caixa de texto está à direita da origem , e ela é medida da parte inferior da caixa de texto quando a caixa de texto está à esquerda da origem. Quando o valor dessa propriedade for <b>False</b>, o valor de posicionamento será sempre medido a partir da parte superior da caixa de texto, independentemente das posições relativas da caixa de texto e da origem. Use o <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.CustomDrop(System.Single)" /> método para definir o valor de posicionamento e use a <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.Drop" /> propriedade para retornar o valor de posicionamento.</para>
-          <para>A definição dessa propriedade afeta um texto explicativo somente se ele tiver um valor de posicionamento definido explicitamente — ou seja, se <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.DropType" /> o valor da propriedade for <b>msoCalloutDropCustom</b>. Por padrão, textos explicativos têm explicitamente projetada valores definidos quando eles são criados.</para>
+        <remarks><para>Quando o valor dessa propriedade for <b>true</b>, o valor de posicionamento (a distância vertical da borda da caixa do texto explicativo até o lugar onde a linha de texto explicativo é anexada) é medido da parte superior da caixa de texto quando a caixa de texto está à direita da origem e é medida da parte inferior da caixa de texto quando a caixa de texto está à esquerda da origem. Quando o valor dessa propriedade for <b>False</b>, o valor de posicionamento será sempre medido a partir da parte superior da caixa de texto, independentemente das posições relativas da caixa de texto e da origem. Use o <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.CustomDrop(System.Single)" /> método para definir o valor de posicionamento e use a <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.Drop" /> propriedade para retornar o valor de posicionamento.</para>
+          <para>A definição dessa propriedade afeta um texto explicativo somente se ele tiver um valor de posicionamento definido explicitamente — ou seja, se o valor da <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.DropType" /> propriedade for <b>msoCalloutDropCustom</b>. Por padrão, textos explicativos têm explicitamente projetada valores definidos quando eles são criados.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -160,6 +165,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoLength" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AutoLength As MsoTriState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState AutoLength { Microsoft::Office::Core::MsoTriState get(); };" />
+      <MemberSignature Language="F#" Value="member this.AutoLength : Microsoft.Office.Core.MsoTriState" Usage="Microsoft.Office.Interop.Word.CalloutFormat.AutoLength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -189,6 +195,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.CalloutFormat.AutomaticLength" />
       <MemberSignature Language="VB.NET" Value="Public Sub AutomaticLength ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AutomaticLength();" />
+      <MemberSignature Language="F#" Value="abstract member AutomaticLength : unit -&gt; unit" Usage="calloutFormat.AutomaticLength " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -208,8 +215,8 @@
       <Parameters />
       <Docs>
         <summary>Especifica que o primeiro segmento do texto explicativo (o segmento anexado à caixa do texto explicativo) seja dimensionado automaticamente quando o texto explicativo for movido.</summary>
-        <remarks><para>Use o <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.CustomLength(System.Single)" /> método para especificar que o primeiro segmento da linha de texto explicativo retenha o comprimento fixo <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.Length" /> retornado pela propriedade sempre que o texto explicativo for movido. Aplica-se somente a textos explicativos cujas linhas consistam em mais de um segmento (tipos <b>msoCalloutThree</b> e <b>msoCalloutFour</b>).</para>
-          <para>A aplicação desse método define <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoLength" /> a propriedade como <b>true</b>.</para>
+        <remarks><para>Use o <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.CustomLength(System.Single)" /> método para especificar que o primeiro segmento da linha de texto explicativo retenha o comprimento fixo retornado pela <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.Length" /> propriedade sempre que o texto explicativo for movido. Aplica-se somente a textos explicativos cujas linhas consistam em mais de um segmento (tipos <b>msoCalloutThree</b> e <b>msoCalloutFour</b>).</para>
+          <para>A aplicação desse método define a <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoLength" /> propriedade como <b>true</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -219,6 +226,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CalloutFormat.Border" />
       <MemberSignature Language="VB.NET" Value="Public Property Border As MsoTriState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState Border { Microsoft::Office::Core::MsoTriState get(); void set(Microsoft::Office::Core::MsoTriState value); };" />
+      <MemberSignature Language="F#" Value="member this.Border : Microsoft.Office.Core.MsoTriState with get, set" Usage="Microsoft.Office.Interop.Word.CalloutFormat.Border" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -250,6 +258,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CalloutFormat.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.CalloutFormat.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -280,6 +289,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.CalloutFormat.CustomDrop(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CustomDrop (Drop As Single)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CustomDrop(float Drop);" />
+      <MemberSignature Language="F#" Value="abstract member CustomDrop : single -&gt; unit" Usage="calloutFormat.CustomDrop Drop" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -299,8 +309,8 @@
       <Docs>
         <param name="Drop">A distância da altura, em pontos.</param>
         <summary>Define a distância vertical (em pontos) da borda da caixa delimitadora até o lugar onde a linha de texto explicativo é anexada à caixa de texto de texto.</summary>
-        <remarks><para>Essa distância é medida a partir da parte superior da caixa de texto <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoAttach" /> , a menos que a propriedade seja definida como <b>true</b> e a caixa de texto esteja à esquerda da origem da linha do texto explicativo (o lugar para o qual o texto explicativo aponta) e, nesse caso, a distância de posicionamento é medida da parte inferior da caixa de texto.</para>
-          <para>Se o <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.PresetDrop(Microsoft.Office.Core.MsoCalloutDropType)" /> método foi usado anteriormente para definir o descarte para o texto explicativo especificado, chame o método <b>PresetDrop</b> novamente usando o argumento <b>msoCalloutDropCustom</b> antes de usar o método <b>CustomDrop</b> para que a configuração de soltar personalizada tenha efeitos.</para>
+        <remarks><para>Essa distância é medida a partir da parte superior da caixa de texto, a menos que a <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoAttach" /> propriedade seja definida como <b>true</b> e a caixa de texto esteja à esquerda da origem da linha do texto explicativo (o lugar para o qual o texto explicativo aponta) e, nesse caso, a distância de posicionamento é medida da parte inferior da caixa de texto.</para>
+          <para>Se o <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.PresetDrop(Microsoft.Office.Core.MsoCalloutDropType)" /> método foi usado anteriormente para definir o descarte para o texto explicativo especificado, chame o método <b>PresetDrop</b> novamente usando o argumento <b>msoCalloutDropCustom</b> antes de usar o método <b>CustomDrop</b> para que a configuração de posicionamento personalizada tenha efeito.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -310,6 +320,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.CalloutFormat.CustomLength(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CustomLength (Length As Single)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CustomLength(float Length);" />
+      <MemberSignature Language="F#" Value="abstract member CustomLength : single -&gt; unit" Usage="calloutFormat.CustomLength Length" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -330,7 +341,7 @@
         <param name="Length">O comprimento do primeiro segmento do texto explicativo, em pontos.</param>
         <summary>Especifica que o primeiro segmento da linha do texto explicativo (o segmento anexado à caixa de texto explicativo) retém um comprimento fixo sempre que o texto explicativo é movido.</summary>
         <remarks><para>Use o <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.AutomaticLength" /> método para especificar que o primeiro segmento da linha do texto explicativo seja dimensionado automaticamente sempre que o texto explicativo for movido. Aplica-se somente a textos explicativos cujas linhas consistam em mais de um segmento (tipos <b>msoCalloutThree</b> e <b>msoCalloutFour</b>).</para>
-          <para>A aplicação desse método define <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoLength" /> a propriedade como <b>false</b> e define <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.Length" /> a propriedade com o valor especificado para <paramref name="Length" /> o argumento.</para>
+          <para>A aplicação desse método define a <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoLength" /> propriedade como <b>false</b> e define a <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.Length" /> propriedade com o valor especificado para o <paramref name="Length" /> argumento.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -340,6 +351,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CalloutFormat.Drop" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Drop As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Drop { float get(); };" />
+      <MemberSignature Language="F#" Value="member this.Drop : single" Usage="Microsoft.Office.Interop.Word.CalloutFormat.Drop" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -359,9 +371,9 @@
       <Docs>
         <summary>Para textos explicativos com um valor de posicionamento explicitamente definido, essa propriedade retorna a distância vertical (em pontos) da extremidade da caixa delimitadora de texto até o lugar onde a linha do texto explicativo é anexada à caixa de texto.</summary>
         <value>To be added.</value>
-        <remarks><para>Essa distância é medida a partir da parte superior da caixa de texto <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoAttach" /> , a menos que a propriedade seja definida como <b>true</b> e a caixa de texto esteja à esquerda da origem da linha do texto explicativo (o lugar para o qual o texto explicativo aponta) e, nesse caso, a distância de posicionamento é medida da parte inferior da caixa de texto.</para>
+        <remarks><para>Essa distância é medida a partir da parte superior da caixa de texto, a menos que a <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoAttach" /> propriedade seja definida como <b>true</b> e a caixa de texto esteja à esquerda da origem da linha do texto explicativo (o lugar para o qual o texto explicativo aponta) e, nesse caso, a distância de posicionamento é medida da parte inferior da caixa de texto.</para>
           <para>Use o <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.CustomDrop(System.Single)" /> método para definir o valor dessa propriedade.</para>
-          <para>O valor dessa propriedade reflete precisamente a posição do anexo da linha do texto explicativo para a caixa de texto somente se o texto explicativo tiver um valor de posicionamento definido explicitamente — ou seja, <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.DropType" /> se o valor da propriedade for <b>msoCalloutDropCustom</b>. Use o <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.PresetDrop(Microsoft.Office.Core.MsoCalloutDropType)" /> método com um argumento <b>msoCalloutCustomDrop</b> para definir a propriedade <b>DropType</b> como <b>msoCalloutDropCustom</b>.</para>
+          <para>O valor dessa propriedade reflete precisamente a posição do anexo da linha do texto explicativo para a caixa de texto somente se o texto explicativo tiver um valor de posicionamento definido explicitamente — ou seja, se o valor da <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.DropType" /> propriedade for <b>msoCalloutDropCustom</b>. Use o <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.PresetDrop(Microsoft.Office.Core.MsoCalloutDropType)" /> método com um argumento <b>msoCalloutCustomDrop</b> para definir a propriedade <b>DropType</b> como <b>msoCalloutDropCustom</b>.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -371,6 +383,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CalloutFormat.DropType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DropType As MsoCalloutDropType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoCalloutDropType DropType { Microsoft::Office::Core::MsoCalloutDropType get(); };" />
+      <MemberSignature Language="F#" Value="member this.DropType : Microsoft.Office.Core.MsoCalloutDropType" Usage="Microsoft.Office.Interop.Word.CalloutFormat.DropType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -390,7 +403,7 @@
       <Docs>
         <summary>Retorna um valor que indica onde a linha de texto explicativo é anexada à caixa do texto explicativo.</summary>
         <value>To be added.</value>
-        <remarks><para>Se o tipo de queda de texto explicativo for <b>msoCalloutDropCustom</b>, <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.Drop" /> os <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoAttach" /> valores das propriedades e das posições relativas da caixa do texto explicativo e da origem da linha de texto explicativo (o lugar para o qual o texto explicativo aponta) serão usados para determinar onde o texto explicativo linha anexa à caixa de texto.</para>
+        <remarks><para>Se o tipo de queda de texto explicativo for <b>msoCalloutDropCustom</b>, os valores das propriedades e das <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.Drop" /> <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoAttach" /> posições relativas da caixa do texto explicativo e da origem da linha de texto explicativo (o lugar para o qual o texto explicativo aponta) serão usados para determinar onde a linha do texto explicativo é anexada à caixa de texto.</para>
           <para>Use o <see cref="M:Microsoft.Office.Interop.Word.CalloutFormat.PresetDrop(Microsoft.Office.Core.MsoCalloutDropType)" /> método para definir o valor dessa propriedade.</para>
           <para> </para></remarks>
       </Docs>
@@ -401,6 +414,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CalloutFormat.Gap" />
       <MemberSignature Language="VB.NET" Value="Public Property Gap As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Gap { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.Gap : single with get, set" Usage="Microsoft.Office.Interop.Word.CalloutFormat.Gap" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -432,6 +446,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CalloutFormat.Length" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Length As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Length { float get(); };" />
+      <MemberSignature Language="F#" Value="member this.Length : single" Usage="Microsoft.Office.Interop.Word.CalloutFormat.Length" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -462,6 +477,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CalloutFormat.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.CalloutFormat.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -490,6 +506,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.CalloutFormat.PresetDrop(Microsoft.Office.Core.MsoCalloutDropType)" />
       <MemberSignature Language="VB.NET" Value="Public Sub PresetDrop (DropType As MsoCalloutDropType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void PresetDrop(Microsoft::Office::Core::MsoCalloutDropType DropType);" />
+      <MemberSignature Language="F#" Value="abstract member PresetDrop : Microsoft.Office.Core.MsoCalloutDropType -&gt; unit" Usage="calloutFormat.PresetDrop DropType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -509,7 +526,7 @@
       <Docs>
         <param name="DropType">A posição inicial da linha do texto explicativo em relação à caixa delimitadora de texto.</param>
         <summary>Especifica se a linha do texto explicativo é anexada à parte superior, à parte inferior ou ao centro da caixa do texto explicativo ou se ela é anexada em um ponto situado a uma distância especificada em relação à parte superior ou inferior da caixa de texto.</summary>
-        <remarks><para>Se você especificar <b>msoCalloutDropCustom</b> para o <paramref name="DropType" /> parâmetro, os valores das propriedades <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.Drop" /> e <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoAttach" /> as posições relativas da caixa do texto explicativo e da origem da linha de texto explicativo (o lugar para o qual o texto explicativo aponta) serão usados para determinar onde a linha do texto explicativo é anexada à caixa de texto.</para>
+        <remarks><para>Se você especificar <b>msoCalloutDropCustom</b> para o <paramref name="DropType" /> parâmetro, os valores das <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.Drop" /> Propriedades e as <see cref="P:Microsoft.Office.Interop.Word.CalloutFormat.AutoAttach" /> posições relativas da caixa do texto explicativo e da origem da linha de texto explicativo (o lugar para o qual o texto explicativo aponta) serão usados para determinar onde a linha do texto explicativo é anexada à caixa de texto.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -519,6 +536,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.CalloutFormat.Type" />
       <MemberSignature Language="VB.NET" Value="Public Property Type As MsoCalloutType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoCalloutType Type { Microsoft::Office::Core::MsoCalloutType get(); void set(Microsoft::Office::Core::MsoCalloutType value); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Microsoft.Office.Core.MsoCalloutType with get, set" Usage="Microsoft.Office.Interop.Word.CalloutFormat.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

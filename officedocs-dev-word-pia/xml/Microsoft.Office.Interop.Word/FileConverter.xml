@@ -1,9 +1,10 @@
 <Type Name="FileConverter" FullName="Microsoft.Office.Interop.Word.FileConverter">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="e5e73be359807266e9514d8b613947bcb2065ec8" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146847" /></Metadata><TypeSignature Language="C#" Value="public interface FileConverter" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="c1653d7b330b2f29a45122d2b0b38c50ff0aceb1" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43921966" /></Metadata><TypeSignature Language="C#" Value="public interface FileConverter" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract FileConverter" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.FileConverter" />
   <TypeSignature Language="VB.NET" Value="Public Interface FileConverter" />
   <TypeSignature Language="C++ CLI" Value="public interface class FileConverter" />
+  <TypeSignature Language="F#" Value="type FileConverter = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -19,10 +20,10 @@
   </Attributes>
   <Docs>
     <summary>Representa um conversor de arquivo que é usado para abrir ou salvar arquivos.</summary>
-    <remarks><para>O <b></b> objeto FileConverter é um membro da <see cref="T:Microsoft.Office.Interop.Word.FileConverters" /> coleção. Coleção <b>FileConverters</b> contém todos os conversores de arquivo instalados para abertura e salvamento de arquivos.</para>
-      <para>Use <b></b>FileConverters (<paramref name="index" />), onde <paramref name="index" /> é um nome de classe ou número de índice, para retornar <b></b> um único objeto FileConverter.</para>
+    <remarks><para>O <b>objeto</b> FileConverter é um membro da <see cref="T:Microsoft.Office.Interop.Word.FileConverters" /> coleção. Coleção <b>FileConverters</b> contém todos os conversores de arquivo instalados para abertura e salvamento de arquivos.</para>
+      <para>Use <b>FileConverters</b>( <paramref name="index" /> ), onde <paramref name="index" /> é um nome de classe ou número de índice, para retornar <b>FileConverter</b> um único objeto FileConverter.</para>
       <para>O número de índice representa a posição do conversor de arquivo na coleção <b>FileConverters</b>.</para>
-      <para>Você não pode criar um novo conversor de arquivo ou adicionar uma à coleção <b>FileConverters</b>. Objetos <b>FileConverter</b> são adicionados durante a instalação do Microsoft Office ou instalando os conversores de arquivo suplementares. Use a <see cref="P:Microsoft.Office.Interop.Word.FileConverter.CanSave" /> propriedade ou <see cref="P:Microsoft.Office.Interop.Word.FileConverter.CanOpen" /> para determinar se um objeto <b></b> FileConverter pode ser usado para abrir ou salvar um documento.</para>
+      <para>Você não pode criar um novo conversor de arquivo ou adicionar uma à coleção <b>FileConverters</b>. Objetos <b>FileConverter</b> são adicionados durante a instalação do Microsoft Office ou instalando os conversores de arquivo suplementares. Use a <see cref="P:Microsoft.Office.Interop.Word.FileConverter.CanSave" /> propriedade ou <see cref="P:Microsoft.Office.Interop.Word.FileConverter.CanOpen" /> para determinar se um objeto <b>FileConverter</b> FileConverter pode ser usado para abrir ou salvar um documento.</para>
       <para>Os conversores de arquivo para salvamento de documentos são listados na caixa de diálogo Salvar como. Os conversores de arquivo para abertura de documentos aparecem em uma caixa de diálogo quando a caixa de seleção Confirmar conversão ao abrir estiver marcada na guia Geral da caixa de diálogo Opções (menu Ferramentas).</para>
       <para> </para></remarks>
   </Docs>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FileConverter.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.FileConverter.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FileConverter.CanOpen" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanOpen As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanOpen { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanOpen : bool" Usage="Microsoft.Office.Interop.Word.FileConverter.CanOpen" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -91,6 +94,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FileConverter.CanSave" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanSave As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanSave { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanSave : bool" Usage="Microsoft.Office.Interop.Word.FileConverter.CanSave" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -120,6 +124,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FileConverter.ClassName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClassName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ClassName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ClassName : string" Usage="Microsoft.Office.Interop.Word.FileConverter.ClassName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -148,6 +153,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FileConverter.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.FileConverter.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -178,6 +184,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FileConverter.Extensions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Extensions As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Extensions { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Extensions : string" Usage="Microsoft.Office.Interop.Word.FileConverter.Extensions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -206,6 +213,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FileConverter.FormatName" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property FormatName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FormatName : string" Usage="Microsoft.Office.Interop.Word.FileConverter.FormatName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -235,6 +243,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FileConverter.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Office.Interop.Word.FileConverter.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -263,6 +272,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FileConverter.OpenFormat" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OpenFormat As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int OpenFormat { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.OpenFormat : int" Usage="Microsoft.Office.Interop.Word.FileConverter.OpenFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -282,7 +292,7 @@
       <Docs>
         <summary>Retorna o formato de arquivo do conversor de arquivo especificado.</summary>
         <value>To be added.</value>
-        <remarks><para>A propriedade <b>OpenFormat</b> pode ser qualquer constante <see cref="T:Microsoft.Office.Interop.Word.WdOpenFormat" /> válida ou pode ser um número exclusivo que representa um conversor de arquivo externo.</para>
+        <remarks><para>A propriedade <b>OpenFormat</b> pode ser qualquer <see cref="T:Microsoft.Office.Interop.Word.WdOpenFormat" /> constante válida ou pode ser um número exclusivo que representa um conversor de arquivo externo.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -292,6 +302,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FileConverter.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.FileConverter.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -320,6 +331,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FileConverter.Path" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Path As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Path { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Path : string" Usage="Microsoft.Office.Interop.Word.FileConverter.Path" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -350,6 +362,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.FileConverter.SaveFormat" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SaveFormat As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SaveFormat { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.SaveFormat : int" Usage="Microsoft.Office.Interop.Word.FileConverter.SaveFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

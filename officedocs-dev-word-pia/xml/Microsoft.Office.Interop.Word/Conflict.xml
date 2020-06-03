@@ -1,9 +1,10 @@
 <Type Name="Conflict" FullName="Microsoft.Office.Interop.Word.Conflict">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="21e74154c2475877e56ac3b4b4b6917cedd06347" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147204" /></Metadata><TypeSignature Language="C#" Value="public interface Conflict" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="8fcb574f4804f8afbf21ecfb81c2808bd2bdf2b0" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43922322" /></Metadata><TypeSignature Language="C#" Value="public interface Conflict" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Conflict" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Conflict" />
   <TypeSignature Language="VB.NET" Value="Public Interface Conflict" />
   <TypeSignature Language="C++ CLI" Value="public interface class Conflict" />
+  <TypeSignature Language="F#" Value="type Conflict = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -21,7 +22,7 @@
     <summary>Representa uma edição conflitante em um documento de coautoria. O tipo de um <see cref="T:Microsoft.Office.Interop.Word.Conflict" /> objeto é especificado pela <see cref="T:Microsoft.Office.Interop.Word.WdRevisionType" /> enumeração.</summary>
     <remarks><para>Geralmente, quando um documento com coautoria habilitada é editado simultaneamente, somente um coautor pode editar um determinado intervalo de cada vez. O Microsoft Word 2010 coloca automaticamente um bloqueio no intervalo no momento em que o coautor começa a ser editado para que outros coautores não possam editar o mesmo intervalo ao mesmo tempo.</para>
       <para>Um conflito pode ocorrer quando um determinado intervalo em um documento com coautoria habilitado é editado simultaneamente antes que um único coautoria obtenha um bloqueio exclusivo no intervalo. Em uma situação de conflito, ele parece que cada coautoria tem um bloqueio exclusivo no intervalo, mas o bloqueio não é comunicado aos outros coautores. O coautor que salvar primeiro no servidor não verá o conflito, porque sua versão do documento se tornará a versão estabelecida. Os coautores que tentarem salvar depois do primeiro coautor ter salvado encontrarão um conflito. O conflito estará entre as diferentes versões do mesmo intervalo.</para>
-      <para>Por exemplo, se um coautor editar a sentença, "a rápida raposa marrom" para ler "a Fast Red raposa" e outro coautor Editará simultaneamente a sentença para ler, "a velocidade branca da agilidade" e as duas edições ocorrerão antes de o coauto obter um bloqueio exclusivo no parágrafo, ocorre um conflito. Nesse caso, "vermelho rápido" e "branco de velocidade" não podem ser reconciliados pelo Word 2010. O primeiro coautor não encontrará dificuldade para salvar sua versão do documento no servidor. Quando o próximo coautor tentar salvar sua versão do documento no servidor, ocorrerá um conflito e o coautor deverá optar pela solução do conflito aceitando ou rejeitando as alterações.</para>
+      <para>Por exemplo, se um coautor editar a sentença, "a rápida raposa marrom" para ler "a Fast Red raposa" e outro coautor Editará simultaneamente a sentença para ler, "a velocidade branca da agilidade" e ambas as edições ocorrerão antes que o coautoria obtenha um bloqueio exclusivo no parágrafo, ocorrerá um conflito. Nesse caso, "vermelho rápido" e "branco de velocidade" não podem ser reconciliados pelo Word 2010. O primeiro coautor não encontrará dificuldade para salvar sua versão do documento no servidor. Quando o próximo coautor tentar salvar sua versão do documento no servidor, ocorrerá um conflito e o coautor deverá optar pela solução do conflito aceitando ou rejeitando as alterações.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Conflict.Accept" />
       <MemberSignature Language="VB.NET" Value="Public Sub Accept ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Accept();" />
+      <MemberSignature Language="F#" Value="abstract member Accept : unit -&gt; unit" Usage="conflict.Accept " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Conflict.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Conflict.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -86,6 +89,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Conflict.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Conflict.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -117,6 +121,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Conflict.Index" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Index As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Index : int" Usage="Microsoft.Office.Interop.Word.Conflict.Index" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -135,7 +140,7 @@
       </ReturnValue>
       <Docs>
         <summary>Retorna um valor que representa a posição de um item em uma coleção.</summary>
-        <value>Retorna <see cref="T:System.Int32" />.</value>
+        <value>Retorna <see cref="T:System.Int32" /> .</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -145,6 +150,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Conflict.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Conflict.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -173,6 +179,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Conflict.Range" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Range As Range" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ Range { Microsoft::Office::Interop::Word::Range ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Range : Microsoft.Office.Interop.Word.Range" Usage="Microsoft.Office.Interop.Word.Conflict.Range" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -202,6 +209,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Conflict.Reject" />
       <MemberSignature Language="VB.NET" Value="Public Sub Reject ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Reject();" />
+      <MemberSignature Language="F#" Value="abstract member Reject : unit -&gt; unit" Usage="conflict.Reject " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -228,6 +236,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Conflict.Type" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As WdRevisionType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdRevisionType Type { Microsoft::Office::Interop::Word::WdRevisionType get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Microsoft.Office.Interop.Word.WdRevisionType" Usage="Microsoft.Office.Interop.Word.Conflict.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

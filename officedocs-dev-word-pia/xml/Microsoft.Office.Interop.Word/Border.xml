@@ -1,9 +1,10 @@
 <Type Name="Border" FullName="Microsoft.Office.Interop.Word.Border">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="bdd51dcf5bee087b8afe2a4b3e9384bb47359ecc" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146322" /></Metadata><TypeSignature Language="C#" Value="public interface Border" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="e642626927b975c9b75b34c5cff82a58ff8324fb" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43922706" /></Metadata><TypeSignature Language="C#" Value="public interface Border" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Border" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Border" />
   <TypeSignature Language="VB.NET" Value="Public Interface Border" />
   <TypeSignature Language="C++ CLI" Value="public interface class Border" />
+  <TypeSignature Language="F#" Value="type Border = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -20,7 +21,7 @@
   <Docs>
     <summary>Representa uma borda de um objeto.</summary>
     <remarks><para>O objeto <b>Border</b> é um membro da <see cref="T:Microsoft.Office.Interop.Word.Borders" /> coleção.</para>
-      <para>Use <b></b>Borders<paramref name="index" />(), <paramref name="index" /> onde identifica a borda, para retornar um único objeto <b>Border</b> . <paramref name="Index" />pode ser uma das seguintes <see cref="T:Microsoft.Office.Interop.Word.WdBorderType" /> constantes: <b>wdBorderBottom</b>, <b>wdBorderDiagonalDown</b>, <b>wdBorderDiagonalUp</b>, <b>wdBorderHorizontal</b>, <b>wdBorderLeft</b>, <b>wdBorderRight</b>, <b>wdBorderTop</b>ou <b> wdBorderVertical</b>. Use a <see cref="P:Microsoft.Office.Interop.Word.Border.LineStyle" /> propriedade para aplicar uma linha de borda a um objeto <b>Border</b> .</para>
+      <para>Use <b>Borders</b>( <paramref name="index" /> ), onde <paramref name="index" /> identifica a borda, para retornar um único objeto <b>Border</b> . <paramref name="Index" />pode ser uma das seguintes <see cref="T:Microsoft.Office.Interop.Word.WdBorderType" /> constantes: <b>wdBorderBottom</b>, <b>wdBorderDiagonalDown</b>, <b>wdBorderDiagonalUp</b>, <b>WdBorderHorizontal</b>, <b>wdBorderLeft</b>, <b>wdBorderRight</b>, <b>wdBorderTop</b>ou <b>wdBorderVertical</b>. Use a <see cref="P:Microsoft.Office.Interop.Word.Border.LineStyle" /> propriedade para aplicar uma linha de borda a um objeto <b>Border</b> .</para>
       <para>Objetos de 
         <b>borda</b> não podem ser adicionados à coleção <b>Borders</b>. O número de membros na coleção <b>Borders</b> é finito e varia dependendo do tipo de objeto. Por exemplo, uma tabela tem seis elementos na coleção <b>Borders</b>, enquanto um parágrafo tem quatro.</para>
       <para> </para></remarks>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Border.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Border.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Border.ArtStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property ArtStyle As WdPageBorderArt" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdPageBorderArt ArtStyle { Microsoft::Office::Interop::Word::WdPageBorderArt get(); void set(Microsoft::Office::Interop::Word::WdPageBorderArt value); };" />
+      <MemberSignature Language="F#" Value="member this.ArtStyle : Microsoft.Office.Interop.Word.WdPageBorderArt with get, set" Usage="Microsoft.Office.Interop.Word.Border.ArtStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -91,6 +94,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Border.ArtWidth" />
       <MemberSignature Language="VB.NET" Value="Public Property ArtWidth As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ArtWidth { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.ArtWidth : int with get, set" Usage="Microsoft.Office.Interop.Word.Border.ArtWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -122,6 +126,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Border.Color" />
       <MemberSignature Language="VB.NET" Value="Public Property Color As WdColor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdColor Color { Microsoft::Office::Interop::Word::WdColor get(); void set(Microsoft::Office::Interop::Word::WdColor value); };" />
+      <MemberSignature Language="F#" Value="member this.Color : Microsoft.Office.Interop.Word.WdColor with get, set" Usage="Microsoft.Office.Interop.Word.Border.Color" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -144,7 +149,7 @@
       <Docs>
         <summary>Retorna ou define a cor de 24 bits do objeto especificado <see cref="T:Microsoft.Office.Interop.Word.Border" /> .</summary>
         <value>To be added.</value>
-        <remarks><para>Pode ser qualquer constante <see cref="T:Microsoft.Office.Interop.Word.WdColor" /> válida ou um valor retornado pela função RGB do Visual Basic.</para>
+        <remarks><para>Pode ser qualquer <see cref="T:Microsoft.Office.Interop.Word.WdColor" /> constante válida ou um valor retornado pela função RGB do Visual Basic.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -154,6 +159,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Border.ColorIndex" />
       <MemberSignature Language="VB.NET" Value="Public Property ColorIndex As WdColorIndex" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdColorIndex ColorIndex { Microsoft::Office::Interop::Word::WdColorIndex get(); void set(Microsoft::Office::Interop::Word::WdColorIndex value); };" />
+      <MemberSignature Language="F#" Value="member this.ColorIndex : Microsoft.Office.Interop.Word.WdColorIndex with get, set" Usage="Microsoft.Office.Interop.Word.Border.ColorIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -185,6 +191,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Border.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Border.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -215,6 +222,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Border.Inside" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Inside As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Inside { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Inside : bool" Usage="Microsoft.Office.Interop.Word.Border.Inside" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -243,6 +251,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Border.LineStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property LineStyle As WdLineStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdLineStyle LineStyle { Microsoft::Office::Interop::Word::WdLineStyle get(); void set(Microsoft::Office::Interop::Word::WdLineStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.LineStyle : Microsoft.Office.Interop.Word.WdLineStyle with get, set" Usage="Microsoft.Office.Interop.Word.Border.LineStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -277,6 +286,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Border.LineWidth" />
       <MemberSignature Language="VB.NET" Value="Public Property LineWidth As WdLineWidth" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdLineWidth LineWidth { Microsoft::Office::Interop::Word::WdLineWidth get(); void set(Microsoft::Office::Interop::Word::WdLineWidth value); };" />
+      <MemberSignature Language="F#" Value="member this.LineWidth : Microsoft.Office.Interop.Word.WdLineWidth with get, set" Usage="Microsoft.Office.Interop.Word.Border.LineWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -310,6 +320,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Border.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Border.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -338,6 +349,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Border.Visible" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Visible As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool default { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Visible : bool with get, set" Usage="Microsoft.Office.Interop.Word.Border.Visible" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -358,7 +370,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna ou define um valor que indica se o objeto <see cref="T:Microsoft.Office.Interop.Word.Border" /> especificado está visível.</summary>
+        <summary>Retorna ou define um valor que indica se o <see cref="T:Microsoft.Office.Interop.Word.Border" /> objeto especificado está visível.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -1,9 +1,10 @@
 <Type Name="Fields" FullName="Microsoft.Office.Interop.Word.Fields">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="57c76419b1fbb163aa0a4e6e8b8649d94596aa1d" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34148072" /></Metadata><TypeSignature Language="C#" Value="public interface Fields : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="7707d0ccba1457fd9bf4187b0f73311090e83f85" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43921979" /></Metadata><TypeSignature Language="C#" Value="public interface Fields : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Fields implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Fields" />
   <TypeSignature Language="VB.NET" Value="Public Interface Fields&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class Fields : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type Fields = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -25,9 +26,9 @@
     <summary>Uma coleção de <see cref="T:Microsoft.Office.Interop.Word.Field" /> objetos que representam todos os campos em uma seleção, intervalo ou documento.</summary>
     <remarks><para>Use a propriedade <b>Fields</b> para retornar a coleção <b>Fields</b>.</para>
       <para>Use o <see cref="M:Microsoft.Office.Interop.Word.Fields.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@)" /> método para adicionar um campo à coleção <b>Fields</b> .</para>
-      <para>Use <b>campos</b>(<paramref name="index" />), onde índice é o <paramref name="index" /> número, para retornar um único objeto <b>Field</b> . O número de índice representa a posição do campo na seleção, intervalo ou documento.</para>
-      <para>Use a <b></b> Propriedade Fields com um objeto <b>MailMerge</b> para retornar a coleção <b>MailMergeFields</b> .</para>
-      <para>A <see cref="P:Microsoft.Office.Interop.Word.Fields.Count" /> Propriedade dessa coleção em um documento retorna o número de itens somente no texto principal. Para contar itens em outros textos, use a coleção com <see cref="T:Microsoft.Office.Interop.Word.Range" /> o objeto.</para>
+      <para>Use <b>campos</b>( <paramref name="index" /> ), onde índice é o <paramref name="index" /> número, para retornar um único objeto <b>Field</b> . O número de índice representa a posição do campo na seleção, intervalo ou documento.</para>
+      <para>Use a propriedade <b>Fields</b> com um objeto <b>MailMerge</b> para retornar a coleção <b>MailMergeFields</b> .</para>
+      <para>A <see cref="P:Microsoft.Office.Interop.Word.Fields.Count" /> propriedade dessa coleção em um documento retorna o número de itens somente no texto principal. Para contar itens em outros textos, use a coleção com o <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -35,6 +36,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.Field Add (Microsoft.Office.Interop.Word.Range Range, ref object Type, ref object Text, ref object PreserveFormatting);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Field Add([in]class Microsoft.Office.Interop.Word.Range Range, [in]object&amp; Type, [in]object&amp; Text, [in]object&amp; PreserveFormatting) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Fields.Add(Microsoft.Office.Interop.Word.Range,System.Object@,System.Object@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (Range As Range, Optional ByRef Type As Object, Optional ByRef Text As Object, Optional ByRef PreserveFormatting As Object) As Field" />
+      <MemberSignature Language="F#" Value="abstract member Add : Microsoft.Office.Interop.Word.Range * obj * obj * obj -&gt; Microsoft.Office.Interop.Word.Field" Usage="fields.Add (Range, Type, Text, PreserveFormatting)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -50,19 +53,19 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
-        <Parameter Name="Type" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="Text" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="PreserveFormatting" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Type" Type="System.Object" RefType="ref" />
+        <Parameter Name="Text" Type="System.Object" RefType="ref" />
+        <Parameter Name="PreserveFormatting" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range">Objeto <see cref="T:Microsoft.Office.Interop.Word.Range" /> necessário. O intervalo no qual você deseja incluir o campo. Se o intervalo não estiver recolhido, o campo substituirá o intervalo.</param>
+        <param name="Range"><see cref="T:Microsoft.Office.Interop.Word.Range" />Objeto necessário. O intervalo no qual você deseja incluir o campo. Se o intervalo não estiver recolhido, o campo substituirá o intervalo.</param>
         <param name="Type"><b>Objeto</b>opcional. Pode ser qualquer <see cref="T:Microsoft.Office.Interop.Word.WdFieldType" /> constante. Para obter uma lista de constantes válidas, consulte o Pesquisador de objetos do Microsoft Visual Basic. O valor padrão é <b>wdFieldEmpty</b>.</param>
         <param name="Text"><b>Objeto</b>opcional. Texto adicional necessário para o campo. Por exemplo, se quiser especificar uma opção para o campo, você deve acrescentá-la aqui.</param>
         <param name="PreserveFormatting"><b>Objeto</b>opcional. <b>True</b> para fazer com que a formatação aplicada ao campo seja preservada durante as atualizações.</param>
         <summary>Adiciona um <see cref="T:Microsoft.Office.Interop.Word.Field" /> objeto à <see cref="T:Microsoft.Office.Interop.Word.Fields" /> coleção.</summary>
         <returns>To be added.</returns>
         <remarks><para>Este método retorna o objeto <b>Field</b> no intervalo especificado.</para>
-          <para>Não é possível inserir alguns campos (como <b>wdFieldOCX</b> e <b>wdFieldFormCheckBox</b>) usando o método <b>Add</b> da coleção <b>Fields</b>. Em vez disso, você deve usar métodos específicos como <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddOLEControl(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> o método e o método <b>Add</b> para <see cref="T:Microsoft.Office.Interop.Word.FormFields" /> a coleção.</para>
+          <para>Não é possível inserir alguns campos (como <b>wdFieldOCX</b> e <b>wdFieldFormCheckBox</b>) usando o método <b>Add</b> da coleção <b>Fields</b>. Em vez disso, você deve usar métodos específicos como o <see cref="M:Microsoft.Office.Interop.Word.Shapes.AddOLEControl(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> método e o método <b>Add</b> para a <see cref="T:Microsoft.Office.Interop.Word.FormFields" /> coleção.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -72,6 +75,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Fields.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Fields.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -100,6 +104,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Fields.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.Fields.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -128,6 +133,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Fields.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Fields.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -158,6 +164,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Fields.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="fields.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -190,6 +197,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Fields.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Integer) As Field" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Field ^ default[int] { Microsoft::Office::Interop::Word::Field ^ get(int Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : Microsoft.Office.Interop.Word.Field" Usage="Microsoft.Office.Interop.Word.Fields.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -222,6 +230,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Fields.Locked" />
       <MemberSignature Language="VB.NET" Value="Public Property Locked As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Locked { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Locked : int with get, set" Usage="Microsoft.Office.Interop.Word.Fields.Locked" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -254,6 +263,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Fields.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Fields.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -282,6 +292,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Fields.ToggleShowCodes" />
       <MemberSignature Language="VB.NET" Value="Public Sub ToggleShowCodes ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ToggleShowCodes();" />
+      <MemberSignature Language="F#" Value="abstract member ToggleShowCodes : unit -&gt; unit" Usage="fields.ToggleShowCodes " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -308,6 +319,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Fields.Unlink" />
       <MemberSignature Language="VB.NET" Value="Public Sub Unlink ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Unlink();" />
+      <MemberSignature Language="F#" Value="abstract member Unlink : unit -&gt; unit" Usage="fields.Unlink " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -334,6 +346,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Fields.Update" />
       <MemberSignature Language="VB.NET" Value="Public Function Update () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Update();" />
+      <MemberSignature Language="F#" Value="abstract member Update : unit -&gt; int" Usage="fields.Update " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -361,6 +374,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Fields.UpdateSource" />
       <MemberSignature Language="VB.NET" Value="Public Sub UpdateSource ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void UpdateSource();" />
+      <MemberSignature Language="F#" Value="abstract member UpdateSource : unit -&gt; unit" Usage="fields.UpdateSource " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

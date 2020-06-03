@@ -1,9 +1,10 @@
 <Type Name="DiagramNode" FullName="Microsoft.Office.Interop.Word.DiagramNode">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="9738bbfbf5c67a83fbc7807283833051a5fadce7" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147092" /></Metadata><TypeSignature Language="C#" Value="public interface DiagramNode" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a071f77a7dcf69fe03a0a45cfda65ea447ad4b54" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43922168" /></Metadata><TypeSignature Language="C#" Value="public interface DiagramNode" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract DiagramNode" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.DiagramNode" />
   <TypeSignature Language="VB.NET" Value="Public Interface DiagramNode" />
   <TypeSignature Language="C++ CLI" Value="public interface class DiagramNode" />
+  <TypeSignature Language="F#" Value="type DiagramNode = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -20,7 +21,7 @@
   <Docs>
     <summary>Representa um único nó de diagrama dentro de um diagrama.</summary>
     <remarks><para>O objeto <b>DiagramNode</b> é um membro da <see cref="T:Microsoft.Office.Interop.Word.DiagramNodes" /> coleção.</para>
-      <para>Use a propriedade <b>DiagramNode</b> do objeto <see cref="T:Microsoft.Office.Interop.Word.Shape" /> ou <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> para retornar um objeto <b>DiagramNode</b> . Use o <see cref="M:Microsoft.Office.Interop.Word.DiagramNode.AddNode(Microsoft.Office.Core.MsoRelativeNodePosition,Microsoft.Office.Core.MsoDiagramNodeType)" /> método para adicionar um nó a um diagrama.</para>
+      <para>Use a propriedade <b>DiagramNode</b> do <see cref="T:Microsoft.Office.Interop.Word.Shape" /> objeto ou <see cref="T:Microsoft.Office.Interop.Word.ShapeRange" /> para retornar um objeto <b>DiagramNode</b> . Use o <see cref="M:Microsoft.Office.Interop.Word.DiagramNode.AddNode(Microsoft.Office.Core.MsoRelativeNodePosition,Microsoft.Office.Core.MsoDiagramNodeType)" /> método para adicionar um nó a um diagrama.</para>
       <para>Use o <see cref="M:Microsoft.Office.Interop.Word.DiagramNode.Delete" /> método para remover um nó de um diagrama.</para>
       <para> </para></remarks>
   </Docs>
@@ -30,6 +31,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.DiagramNode AddNode([in]valuetype Microsoft.Office.Core.MsoRelativeNodePosition Pos, [in]valuetype Microsoft.Office.Core.MsoDiagramNodeType NodeType) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.DiagramNode.AddNode(Microsoft.Office.Core.MsoRelativeNodePosition,Microsoft.Office.Core.MsoDiagramNodeType)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddNode (Optional Pos As MsoRelativeNodePosition = Microsoft.Office.Core.MsoRelativeNodePosition.msoAfterNode, Optional NodeType As MsoDiagramNodeType = Microsoft.Office.Core.MsoDiagramNodeType.msoDiagramNode) As DiagramNode" />
+      <MemberSignature Language="F#" Value="abstract member AddNode : Microsoft.Office.Core.MsoRelativeNodePosition * Microsoft.Office.Core.MsoDiagramNodeType -&gt; Microsoft.Office.Interop.Word.DiagramNode" Usage="diagramNode.AddNode (Pos, NodeType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -48,8 +50,8 @@
         <Parameter Name="NodeType" Type="Microsoft.Office.Core.MsoDiagramNodeType" />
       </Parameters>
       <Docs>
-        <param name="Pos">Opcional <see cref="T:Microsoft.Office.Core.MsoRelativeNodePosition" />. Especifica onde o nó será adicionado, em relação ao nó de chamada.</param>
-        <param name="NodeType">Opcional <see cref="T:Microsoft.Office.Core.MsoDiagramNodeType" />. Especifica o tipo de nó.</param>
+        <param name="Pos">Opcional <see cref="T:Microsoft.Office.Core.MsoRelativeNodePosition" /> . Especifica onde o nó será adicionado, em relação ao nó de chamada.</param>
+        <param name="NodeType">Opcional <see cref="T:Microsoft.Office.Core.MsoDiagramNodeType" /> . Especifica o tipo de nó.</param>
         <summary>Cria um nó de diagrama, retornando um <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> objeto que representa o novo nó do diagrama. Para diagramas conceituais, o objeto <b>DiagramNode</b> é adicionado ao final da lista de formas.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.DiagramNode.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.DiagramNode.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -89,6 +92,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.DiagramNode.Children" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Children As DiagramNodeChildren" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::DiagramNodeChildren ^ Children { Microsoft::Office::Interop::Word::DiagramNodeChildren ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Children : Microsoft.Office.Interop.Word.DiagramNodeChildren" Usage="Microsoft.Office.Interop.Word.DiagramNode.Children" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -112,10 +116,11 @@
       </Docs>
     </Member>
     <Member MemberName="CloneNode">
-      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.DiagramNode CloneNode (bool copyChildren, out Microsoft.Office.Interop.Word.DiagramNode TargetNode = null, Microsoft.Office.Core.MsoRelativeNodePosition Pos = Microsoft.Office.Core.MsoRelativeNodePosition.msoAfterNode);" />
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.DiagramNode CloneNode (bool copyChildren, out Microsoft.Office.Interop.Word.DiagramNode TargetNode = default, Microsoft.Office.Core.MsoRelativeNodePosition Pos = Microsoft.Office.Core.MsoRelativeNodePosition.msoAfterNode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.DiagramNode CloneNode([in]bool copyChildren, [out] class Microsoft.Office.Interop.Word.DiagramNode&amp; TargetNode, [in]valuetype Microsoft.Office.Core.MsoRelativeNodePosition Pos) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.DiagramNode.CloneNode(System.Boolean,Microsoft.Office.Interop.Word.DiagramNode@,Microsoft.Office.Core.MsoRelativeNodePosition)" />
       <MemberSignature Language="VB.NET" Value="Public Function CloneNode (copyChildren As Boolean, Optional ByRef TargetNode As DiagramNode = null, Optional Pos As MsoRelativeNodePosition = Microsoft.Office.Core.MsoRelativeNodePosition.msoAfterNode) As DiagramNode" />
+      <MemberSignature Language="F#" Value="abstract member CloneNode : bool * DiagramNode * Microsoft.Office.Core.MsoRelativeNodePosition -&gt; Microsoft.Office.Interop.Word.DiagramNode" Usage="diagramNode.CloneNode (copyChildren, TargetNode, Pos)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -131,13 +136,13 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="copyChildren" Type="System.Boolean" />
-        <Parameter Name="TargetNode" Type="Microsoft.Office.Interop.Word.DiagramNode&amp;" RefType="out" />
+        <Parameter Name="TargetNode" Type="Microsoft.Office.Interop.Word.DiagramNode" RefType="out" />
         <Parameter Name="Pos" Type="Microsoft.Office.Core.MsoRelativeNodePosition" />
       </Parameters>
       <Docs>
         <param name="copyChildren"><b>Booliano</b>necessário. True para clonar também os filhos do nó do diagrama.</param>
         <param name="TargetNode">Objeto <b>DiagramNode</b> opcional. O nó onde o novo nó será colocado.</param>
-        <param name="Pos">Opcional <see cref="T:Microsoft.Office.Core.MsoRelativeNodePosition" />. Se <paramref name="TargetNode" /> for especificado, indica o local em que o nó será adicionado <paramref name="TargetNode" />.</param>
+        <param name="Pos">Opcional <see cref="T:Microsoft.Office.Core.MsoRelativeNodePosition" /> . Se <paramref name="TargetNode" /> for especificado, indica o local em que o nó será adicionado <paramref name="TargetNode" /> .</param>
         <summary>Clona um nó de diagrama especificado. Retorna um <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> objeto que representa o clone.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -149,6 +154,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.DiagramNode.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.DiagramNode.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -179,6 +185,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.DiagramNode.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberSignature Language="F#" Value="abstract member Delete : unit -&gt; unit" Usage="diagramNode.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -204,6 +211,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.DiagramNode.Diagram" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Diagram As Diagram" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Diagram ^ Diagram { Microsoft::Office::Interop::Word::Diagram ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Diagram : Microsoft.Office.Interop.Word.Diagram" Usage="Microsoft.Office.Interop.Word.DiagramNode.Diagram" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -232,6 +240,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.DiagramNode.Layout" />
       <MemberSignature Language="VB.NET" Value="Public Property Layout As MsoOrgChartLayoutType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoOrgChartLayoutType Layout { Microsoft::Office::Core::MsoOrgChartLayoutType get(); void set(Microsoft::Office::Core::MsoOrgChartLayoutType value); };" />
+      <MemberSignature Language="F#" Value="member this.Layout : Microsoft.Office.Core.MsoOrgChartLayoutType with get, set" Usage="Microsoft.Office.Interop.Word.DiagramNode.Layout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -263,6 +272,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.DiagramNode.MoveNode(Microsoft.Office.Interop.Word.DiagramNode@,Microsoft.Office.Core.MsoRelativeNodePosition)" />
       <MemberSignature Language="VB.NET" Value="Public Sub MoveNode (ByRef TargetNode As DiagramNode, Pos As MsoRelativeNodePosition)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void MoveNode([Runtime::InteropServices::Out] Microsoft::Office::Interop::Word::DiagramNode ^ % TargetNode, Microsoft::Office::Core::MsoRelativeNodePosition Pos);" />
+      <MemberSignature Language="F#" Value="abstract member MoveNode : DiagramNode * Microsoft.Office.Core.MsoRelativeNodePosition -&gt; unit" Usage="diagramNode.MoveNode (TargetNode, Pos)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -277,12 +287,12 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="TargetNode" Type="Microsoft.Office.Interop.Word.DiagramNode&amp;" RefType="out" />
+        <Parameter Name="TargetNode" Type="Microsoft.Office.Interop.Word.DiagramNode" RefType="out" />
         <Parameter Name="Pos" Type="Microsoft.Office.Core.MsoRelativeNodePosition" />
       </Parameters>
       <Docs>
-        <param name="TargetNode">Objeto <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> necessário. O nó do diagrama onde o nó especificado será movido.</param>
-        <param name="Pos">Necessário <see cref="T:Microsoft.Office.Core.MsoRelativeNodePosition" />. Especifica onde o nó será adicionado em relação a <paramref name="TargetNode" />.</param>
+        <param name="TargetNode"><see cref="T:Microsoft.Office.Interop.Word.DiagramNode" />Objeto necessário. O nó do diagrama onde o nó especificado será movido.</param>
+        <param name="Pos">Necessário <see cref="T:Microsoft.Office.Core.MsoRelativeNodePosition" /> . Especifica onde o nó será adicionado em relação a <paramref name="TargetNode" /> .</param>
         <summary>Move um nó de diagrama e qualquer um de seus nós filhos dentro de um diagrama.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -293,6 +303,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.DiagramNode.NextNode" />
       <MemberSignature Language="VB.NET" Value="Public Function NextNode () As DiagramNode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::DiagramNode ^ NextNode();" />
+      <MemberSignature Language="F#" Value="abstract member NextNode : unit -&gt; Microsoft.Office.Interop.Word.DiagramNode" Usage="diagramNode.NextNode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -320,6 +331,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.DiagramNode.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.DiagramNode.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -348,6 +360,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.DiagramNode.PrevNode" />
       <MemberSignature Language="VB.NET" Value="Public Function PrevNode () As DiagramNode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::DiagramNode ^ PrevNode();" />
+      <MemberSignature Language="F#" Value="abstract member PrevNode : unit -&gt; Microsoft.Office.Interop.Word.DiagramNode" Usage="diagramNode.PrevNode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -375,6 +388,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.DiagramNode.ReplaceNode(Microsoft.Office.Interop.Word.DiagramNode@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ReplaceNode (ByRef TargetNode As DiagramNode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReplaceNode([Runtime::InteropServices::Out] Microsoft::Office::Interop::Word::DiagramNode ^ % TargetNode);" />
+      <MemberSignature Language="F#" Value="abstract member ReplaceNode : DiagramNode -&gt; unit" Usage="diagramNode.ReplaceNode TargetNode" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -389,10 +403,10 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="TargetNode" Type="Microsoft.Office.Interop.Word.DiagramNode&amp;" RefType="out" />
+        <Parameter Name="TargetNode" Type="Microsoft.Office.Interop.Word.DiagramNode" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="TargetNode">Objeto <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> necessário. O nó do diagrama a ser substituído.</param>
+        <param name="TargetNode"><see cref="T:Microsoft.Office.Interop.Word.DiagramNode" />Objeto necessário. O nó do diagrama a ser substituído.</param>
         <summary>Substitui um nó de diagrama de destino pelo nó de diagrama de origem.</summary>
         <remarks><para>O nó de diagrama de destino é excluído e o nó de diagrama de origem, incluindo qualquer um dos seus nós filhos, é movido para onde o nó de diagrama de destino foi.</para>
           <para> </para></remarks>
@@ -404,6 +418,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.DiagramNode.Root" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Root As DiagramNode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::DiagramNode ^ Root { Microsoft::Office::Interop::Word::DiagramNode ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Root : Microsoft.Office.Interop.Word.DiagramNode" Usage="Microsoft.Office.Interop.Word.DiagramNode.Root" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -432,6 +447,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.DiagramNode.Shape" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Shape As Shape" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Shape ^ Shape { Microsoft::Office::Interop::Word::Shape ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Shape : Microsoft.Office.Interop.Word.Shape" Usage="Microsoft.Office.Interop.Word.DiagramNode.Shape" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -459,6 +475,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SwapNode([out] class Microsoft.Office.Interop.Word.DiagramNode&amp; TargetNode, [in]valuetype Microsoft.Office.Core.MsoRelativeNodePosition Pos) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.DiagramNode.SwapNode(Microsoft.Office.Interop.Word.DiagramNode@,Microsoft.Office.Core.MsoRelativeNodePosition)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SwapNode (ByRef TargetNode As DiagramNode, Optional Pos As MsoRelativeNodePosition = (Microsoft.Office.Core.MsoRelativeNodePosition) -1)" />
+      <MemberSignature Language="F#" Value="abstract member SwapNode : DiagramNode * Microsoft.Office.Core.MsoRelativeNodePosition -&gt; unit" Usage="diagramNode.SwapNode (TargetNode, Pos)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -473,12 +490,12 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="TargetNode" Type="Microsoft.Office.Interop.Word.DiagramNode&amp;" RefType="out" />
+        <Parameter Name="TargetNode" Type="Microsoft.Office.Interop.Word.DiagramNode" RefType="out" />
         <Parameter Name="Pos" Type="Microsoft.Office.Core.MsoRelativeNodePosition" />
       </Parameters>
       <Docs>
-        <param name="TargetNode">Objeto <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> necessário. O nó com o qual trocar.</param>
-        <param name="Pos">Opcional <see cref="T:Microsoft.Office.Core.MsoRelativeNodePosition" />. A posição do nó em relação ao nó com o qual ele está sendo trocado.</param>
+        <param name="TargetNode"><see cref="T:Microsoft.Office.Interop.Word.DiagramNode" />Objeto necessário. O nó com o qual trocar.</param>
+        <param name="Pos">Opcional <see cref="T:Microsoft.Office.Core.MsoRelativeNodePosition" /> . A posição do nó em relação ao nó com o qual ele está sendo trocado.</param>
         <summary>Troca o nó do diagrama de destino pelo nó do diagrama de origem.</summary>
         <remarks><para>Todos os nós de diagrama filhos são movidos junto com seus nós raiz correspondentes.</para>
           <para> </para></remarks>
@@ -490,6 +507,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.DiagramNode.TextShape" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TextShape As Shape" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Shape ^ TextShape { Microsoft::Office::Interop::Word::Shape ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TextShape : Microsoft.Office.Interop.Word.Shape" Usage="Microsoft.Office.Interop.Word.DiagramNode.TextShape" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -518,6 +536,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.DiagramNode.TransferChildren(Microsoft.Office.Interop.Word.DiagramNode@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub TransferChildren (ByRef ReceivingNode As DiagramNode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void TransferChildren([Runtime::InteropServices::Out] Microsoft::Office::Interop::Word::DiagramNode ^ % ReceivingNode);" />
+      <MemberSignature Language="F#" Value="abstract member TransferChildren : DiagramNode -&gt; unit" Usage="diagramNode.TransferChildren ReceivingNode" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -532,10 +551,10 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ReceivingNode" Type="Microsoft.Office.Interop.Word.DiagramNode&amp;" RefType="out" />
+        <Parameter Name="ReceivingNode" Type="Microsoft.Office.Interop.Word.DiagramNode" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="ReceivingNode">Objeto <see cref="T:Microsoft.Office.Interop.Word.DiagramNode" /> necessário. O nó para o qual transferir os nós filhos.</param>
+        <param name="ReceivingNode"><see cref="T:Microsoft.Office.Interop.Word.DiagramNode" />Objeto necessário. O nó para o qual transferir os nós filhos.</param>
         <summary>Move os nós filho do nó de diagrama de origem para o nó de diagrama de destino (recebimento).</summary>
         <remarks>To be added.</remarks>
       </Docs>

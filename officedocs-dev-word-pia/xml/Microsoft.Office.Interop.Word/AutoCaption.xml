@@ -1,9 +1,10 @@
 <Type Name="AutoCaption" FullName="Microsoft.Office.Interop.Word.AutoCaption">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="3109344f5a410ce2a910d0c31881fbca7986b697" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146231" /></Metadata><TypeSignature Language="C#" Value="public interface AutoCaption" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5b4e08af43274532ab693500b33b7707734b3cd4" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43922790" /></Metadata><TypeSignature Language="C#" Value="public interface AutoCaption" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AutoCaption" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.AutoCaption" />
   <TypeSignature Language="VB.NET" Value="Public Interface AutoCaption" />
   <TypeSignature Language="C++ CLI" Value="public interface class AutoCaption" />
+  <TypeSignature Language="F#" Value="type AutoCaption = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -19,8 +20,8 @@
   </Attributes>
   <Docs>
     <summary>Representa uma única legenda que pode ser adicionada automaticamente quando itens como tabelas, figuras ou objetos OLE são inseridos em um documento.</summary>
-    <remarks><para>O <b></b> objeto AutoCaption é um membro da <see cref="T:Microsoft.Office.Interop.Word.AutoCaptions" /> coleção. A <b></b> coleção AutoCaptions contém todas as legendas listadas na caixa de diálogo AutoCaption (menu Inserir).</para>
-      <para>Use <b></b>AutoCaptions (<paramref name="index" />), onde <paramref name="index" /> é o nome da legenda ou número de índice, para retornar um único objeto AutoCaption. <b></b> Os nomes de legenda correspondem aos itens listados na caixa de diálogo AutoCaption (menu Inserir). Você deve corresponder exatamente a ortografia (mas não necessariamente as maiúsculas/minúsculas) do nome, como ele é mostrado na caixa de diálogo AutoCaption.</para>
+    <remarks><para>O objeto <b>AutoCaption</b> é um membro da <see cref="T:Microsoft.Office.Interop.Word.AutoCaptions" /> coleção. A coleção <b>AutoCaptions</b> contém todas as legendas listadas na caixa de diálogo AutoCaption (menu Inserir).</para>
+      <para>Use <b>AutoCaptions</b>( <paramref name="index" /> ), onde <paramref name="index" /> é o nome da legenda ou número de índice, para retornar um único objeto <b>AutoCaption</b> . Os nomes de legenda correspondem aos itens listados na caixa de diálogo AutoCaption (menu Inserir). Você deve corresponder exatamente a ortografia (mas não necessariamente as maiúsculas/minúsculas) do nome, como ele é mostrado na caixa de diálogo AutoCaption.</para>
       <para>O número de índice representa a posição do objeto <b>AutoCaption</b> na lista de itens na caixa de diálogo AutoCaption.</para>
       <para>Objetos 
         <b>AutoCaption</b> não podem ser adicionados ou excluídos da coleção <b>AutoCaptions</b> programaticamente.</para>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.AutoCaption.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.AutoCaption.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.AutoCaption.AutoInsert" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoInsert As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutoInsert { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AutoInsert : bool with get, set" Usage="Microsoft.Office.Interop.Word.AutoCaption.AutoInsert" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -92,6 +95,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.AutoCaption.CaptionLabel" />
       <MemberSignature Language="VB.NET" Value="Public Property CaptionLabel As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ CaptionLabel { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CaptionLabel : obj with get, set" Usage="Microsoft.Office.Interop.Word.AutoCaption.CaptionLabel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -114,7 +118,7 @@
       <Docs>
         <summary>Retorna ou define a legenda do rótulo ("Figura", "Table" ou "Equação", por exemplo) da legenda especificada.</summary>
         <value>To be added.</value>
-        <remarks><para>Essa propriedade pode ser definida como um nome de legenda ou <see cref="T:Microsoft.Office.Interop.Word.WdCaptionLabelID" /> uma constante.</para>
+        <remarks><para>Essa propriedade pode ser definida como um nome de legenda ou uma <see cref="T:Microsoft.Office.Interop.Word.WdCaptionLabelID" /> constante.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -124,6 +128,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.AutoCaption.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.AutoCaption.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -154,6 +159,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.AutoCaption.Index" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Index As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Index : int" Usage="Microsoft.Office.Interop.Word.AutoCaption.Index" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -182,6 +188,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.AutoCaption.Name" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Office.Interop.Word.AutoCaption.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -210,6 +217,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.AutoCaption.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.AutoCaption.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

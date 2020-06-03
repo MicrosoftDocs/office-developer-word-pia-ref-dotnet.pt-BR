@@ -1,9 +1,10 @@
 <Type Name="Dictionaries" FullName="Microsoft.Office.Interop.Word.Dictionaries">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="25481a745c77f77a431162c88cbb1a8efa0fcf1e" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147057" /></Metadata><TypeSignature Language="C#" Value="public interface Dictionaries : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="fbe2a9d134a78c910101e898e2b4e4a665978b04" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43922217" /></Metadata><TypeSignature Language="C#" Value="public interface Dictionaries : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Dictionaries implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Dictionaries" />
   <TypeSignature Language="VB.NET" Value="Public Interface Dictionaries&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class Dictionaries : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type Dictionaries = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -24,7 +25,7 @@
   <Docs>
     <summary>Uma coleção de <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> objetos que inclui os dicionários de ortografia personalizados ativos.</summary>
     <remarks><para>Use a <see cref="P:Microsoft.Office.Interop.Word._Application.CustomDictionaries" /> propriedade para retornar a coleção de dicionários personalizados ativos no momento.</para>
-      <para>Use o <see cref="M:Microsoft.Office.Interop.Word.Dictionaries.Add(System.String)" /> método para adicionar um novo dicionário personalizado à coleção de dicionários personalizados ativos. Se não houver um arquivo com o nome especificado por <paramref name="FileName" />, o Word o criará.</para>
+      <para>Use o <see cref="M:Microsoft.Office.Interop.Word.Dictionaries.Add(System.String)" /> método para adicionar um novo dicionário personalizado à coleção de dicionários personalizados ativos. Se não houver um arquivo com o nome especificado por <paramref name="FileName" /> , o Word o criará.</para>
       <para>Use o <see cref="M:Microsoft.Office.Interop.Word.Dictionaries.ClearAll" /> método para descarregar todos os dicionários personalizados. No entanto, observe que esse método não exclui os arquivos de dicionário. Depois de usar esse método, o número de dicionários personalizados na coleção é 0 (zero).</para>
       <para>Você define o dicionário personalizado ao qual são adicionadas novas palavras usando a <see cref="P:Microsoft.Office.Interop.Word.Dictionaries.ActiveCustomDictionary" /> propriedade. Se você tentar definir essa propriedade com um dicionário que não é um dicionário personalizado, ocorrerá um erro.</para>
       <para>A <see cref="P:Microsoft.Office.Interop.Word.Dictionaries.Maximum" /> propriedade retorna o número máximo de dicionários de ortografia personalizados simultâneos que o aplicativo pode suportar. Para o Microsoft Word, esse máximo é 10.</para>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Dictionaries.ActiveCustomDictionary" />
       <MemberSignature Language="VB.NET" Value="Public Property ActiveCustomDictionary As Dictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Dictionary ^ ActiveCustomDictionary { Microsoft::Office::Interop::Word::Dictionary ^ get(); void set(Microsoft::Office::Interop::Word::Dictionary ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ActiveCustomDictionary : Microsoft.Office.Interop.Word.Dictionary with get, set" Usage="Microsoft.Office.Interop.Word.Dictionaries.ActiveCustomDictionary" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Dictionaries.Add(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (FileName As String) As Dictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::Dictionary ^ Add(System::String ^ FileName);" />
+      <MemberSignature Language="F#" Value="abstract member Add : string -&gt; Microsoft.Office.Interop.Word.Dictionary" Usage="dictionaries.Add FileName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -89,7 +92,7 @@
         <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Dictionary" /> objeto que representa um novo dicionário ortográfico ou de conversão personalizado adicionado à coleção de dicionários de ortografia ou conversão personalizados ativos.</summary>
         <returns>To be added.</returns>
         <remarks><para>Se não houver um arquivo com o nome especificado, o Microsoft Word criará um.</para>
-          <para>A <see cref="T:Microsoft.Office.Interop.Word.Dictionaries" /> coleção inclui apenas os dicionários de ortografia personalizados ativos. <b></b> Os <see cref="T:Microsoft.Office.Interop.Word.Languages" /> objetos Dictionary derivados da coleção não têm um método <b>Add</b> . Eles incluem os objetos Dictionary retornados pelas propriedades <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveSpellingDictionary" />, <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveGrammarDictionary" /> <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveThesaurusDictionary" />, e <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveHyphenationDictionary" /> .</para>
+          <para>A <see cref="T:Microsoft.Office.Interop.Word.Dictionaries" /> coleção inclui apenas os dicionários de ortografia personalizados ativos. Os objetos <b>Dictionary</b> derivados da <see cref="T:Microsoft.Office.Interop.Word.Languages" /> coleção não têm um método <b>Add</b> . Eles incluem os objetos Dictionary retornados pelas <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveSpellingDictionary" /> Propriedades, <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveGrammarDictionary" /> , <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveThesaurusDictionary" /> e <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveHyphenationDictionary" /> .</para>
           <para>Use a <see cref="P:Microsoft.Office.Interop.Word._Application.HangulHanjaDictionaries" /> propriedade para retornar a coleção de dicionários de conversão personalizados. A <see cref="T:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries" /> coleção inclui apenas os dicionários de conversão personalizados ativos.</para>
           <para> </para></remarks>
       </Docs>
@@ -100,6 +103,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Dictionaries.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Dictionaries.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -128,6 +132,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Dictionaries.ClearAll" />
       <MemberSignature Language="VB.NET" Value="Public Sub ClearAll ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ClearAll();" />
+      <MemberSignature Language="F#" Value="abstract member ClearAll : unit -&gt; unit" Usage="dictionaries.ClearAll " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -144,7 +149,7 @@
       <Parameters />
       <Docs>
         <summary>Descarrega todos os dicionários personalizados ou de conversão.</summary>
-        <remarks><para>O método <b>ClearAll</b> quando usado em um <see cref="T:Microsoft.Office.Interop.Word.Dictionaries" /> objeto <see cref="T:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries" /> or não exclui os arquivos de dicionário personalizados ou de conversão. Depois de usar esse método, o número de dicionários personalizados ou de conversão na coleção é 0 (zero).</para>
+        <remarks><para>O método <b>ClearAll</b> quando usado em um <see cref="T:Microsoft.Office.Interop.Word.Dictionaries" /> objeto or não <see cref="T:Microsoft.Office.Interop.Word.HangulHanjaConversionDictionaries" /> exclui os arquivos de dicionário personalizados ou de conversão. Depois de usar esse método, o número de dicionários personalizados ou de conversão na coleção é 0 (zero).</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -154,6 +159,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Dictionaries.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.Dictionaries.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -182,6 +188,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Dictionaries.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Dictionaries.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -212,6 +219,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Dictionaries.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="dictionaries.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -244,6 +252,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Dictionaries.Item(System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(ByRef Index As Object) As Dictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Dictionary ^ default[System::Object ^ %] { Microsoft::Office::Interop::Word::Dictionary ^ get(System::Object ^ % Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(obj) : Microsoft.Office.Interop.Word.Dictionary" Usage="Microsoft.Office.Interop.Word.Dictionaries.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -261,7 +270,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Dictionary</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Index" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="Index">Um <b>objeto</b> que indica a posição ordinal ou uma cadeia de caracteres que representa o nome do objeto individual.</param>
@@ -276,6 +285,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Dictionaries.Maximum" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Maximum As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Maximum { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Maximum : int" Usage="Microsoft.Office.Interop.Word.Dictionaries.Maximum" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -304,6 +314,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Dictionaries.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Dictionaries.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

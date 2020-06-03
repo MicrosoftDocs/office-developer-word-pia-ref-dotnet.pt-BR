@@ -1,9 +1,10 @@
 <Type Name="Dictionary" FullName="Microsoft.Office.Interop.Word.Dictionary">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="7eb1c3a125004711f709d1a46bde81b4b66d431c" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147050" /></Metadata><TypeSignature Language="C#" Value="public interface Dictionary" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="7cd7215c062770ab4726b7b42ab7149362963eb9" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43922210" /></Metadata><TypeSignature Language="C#" Value="public interface Dictionary" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Dictionary" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Dictionary" />
   <TypeSignature Language="VB.NET" Value="Public Interface Dictionary" />
   <TypeSignature Language="C++ CLI" Value="public interface class Dictionary" />
+  <TypeSignature Language="F#" Value="type Dictionary = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -20,11 +21,11 @@
   <Docs>
     <summary>Representa um dicionário.</summary>
     <remarks><para>Objetos 
-        <b>Dictionary</b> que representam os dicionários personalizados são membros <see cref="T:Microsoft.Office.Interop.Word.Dictionaries" /> da coleção. Outros objetos Dictionary são retornados pelas propriedades da <see cref="T:Microsoft.Office.Interop.Word.Language" /> coleção; Isso inclui as <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveSpellingDictionary" />propriedades <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveGrammarDictionary" />, <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveThesaurusDictionary" />, e <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveHyphenationDictionary" /> . Você pode usar essas propriedades para cada idioma para o qual as ferramentas de revisão são instaladas.</para>
-      <para>Use <b>CustomDictionaries</b>(<paramref name="index" />), onde <paramref name="index" /> é um número de índice ou o nome da cadeia de caracteres do dicionário, para retornar um único objeto <b>Dictionary</b> que representa um dicionário personalizado.</para>
+        <b>Dictionary</b> que representam os dicionários personalizados são membros da <see cref="T:Microsoft.Office.Interop.Word.Dictionaries" /> coleção. Outros objetos Dictionary são retornados pelas propriedades da <see cref="T:Microsoft.Office.Interop.Word.Language" /> coleção; eles incluem as <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveSpellingDictionary" /> Propriedades, <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveGrammarDictionary" /> , <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveThesaurusDictionary" /> e <see cref="P:Microsoft.Office.Interop.Word.Language.ActiveHyphenationDictionary" /> . Você pode usar essas propriedades para cada idioma para o qual as ferramentas de revisão são instaladas.</para>
+      <para>Use <b>CustomDictionaries</b>( <paramref name="index" /> ), onde <paramref name="index" /> é um número de índice ou o nome da cadeia de caracteres do dicionário, para retornar um único objeto <b>Dictionary</b> que representa um dicionário personalizado.</para>
       <para>Use a <see cref="P:Microsoft.Office.Interop.Word.Dictionaries.ActiveCustomDictionary" /> propriedade para definir o dicionário ortográfico personalizado na coleção para a qual são adicionadas novas palavras. Se você tentar definir essa propriedade com um dicionário que não é um dicionário personalizado, ocorrerá um erro.</para>
       <para>Use o <see cref="M:Microsoft.Office.Interop.Word.Dictionaries.Add(System.String)" /> método para adicionar um novo dicionário à coleção de dicionários personalizados ativos. Se não houver nenhum arquivo com o nome especificado, o Microsoft Word o criará.</para>
-      <para>Use a <see cref="P:Microsoft.Office.Interop.Word.Dictionary.Name" /> propriedade <see cref="P:Microsoft.Office.Interop.Word.Dictionary.Path" /> e para localizar qualquer um dos dicionários.</para>
+      <para>Use a <see cref="P:Microsoft.Office.Interop.Word.Dictionary.Name" /> <see cref="P:Microsoft.Office.Interop.Word.Dictionary.Path" /> propriedade e para localizar qualquer um dos dicionários.</para>
       <para>Use a <see cref="P:Microsoft.Office.Interop.Word.Dictionary.LanguageSpecific" /> propriedade para determinar se o dicionário personalizado especificado pode ter um idioma específico atribuído a ele com a <see cref="P:Microsoft.Office.Interop.Word.Dictionary.LanguageID" /> propriedade. Se o dicionário de idioma específico, ele verificará somente o texto que está formatado para o idioma especificado.</para>
       <para>A <see cref="P:Microsoft.Office.Interop.Word.Dictionary.ReadOnly" /> propriedade retorna <b>true</b> para arquivos. Lex (dicionários de verificação internos) e <b>false</b> para arquivos. DIC (dicionários ortográficos personalizados).</para>
       <para> </para></remarks>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Dictionary.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Dictionary.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Dictionary.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Dictionary.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -94,6 +97,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Dictionary.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberSignature Language="F#" Value="abstract member Delete : unit -&gt; unit" Usage="dictionary.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -119,6 +123,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Dictionary.LanguageID" />
       <MemberSignature Language="VB.NET" Value="Public Property LanguageID As WdLanguageID" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdLanguageID LanguageID { Microsoft::Office::Interop::Word::WdLanguageID get(); void set(Microsoft::Office::Interop::Word::WdLanguageID value); };" />
+      <MemberSignature Language="F#" Value="member this.LanguageID : Microsoft.Office.Interop.Word.WdLanguageID with get, set" Usage="Microsoft.Office.Interop.Word.Dictionary.LanguageID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -141,7 +146,7 @@
       <Docs>
         <summary>Retorna ou define o idioma do objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks><para>Para um dicionário personalizado, você deve primeiro definir a <see cref="P:Microsoft.Office.Interop.Word.Dictionary.LanguageSpecific" /> Propriedade como <b>true</b> antes de especificar a propriedade <b>LanguageID</b> . Os dicionários personalizados que são específicos do idioma só procuram o texto formatado para esse idioma.</para>
+        <remarks><para>Para um dicionário personalizado, você deve primeiro definir a <see cref="P:Microsoft.Office.Interop.Word.Dictionary.LanguageSpecific" /> propriedade como <b>true</b> antes de especificar a propriedade <b>LanguageID</b> . Os dicionários personalizados que são específicos do idioma só procuram o texto formatado para esse idioma.</para>
           <para>A propriedade LanguageID pode ser uma das <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> constantes. Algumas dessas constantes podem não estar disponíveis, dependendo do suporte a idioma (português do Brasil, por exemplo) que você selecionou ou instalou.</para>
           <para> </para></remarks>
       </Docs>
@@ -152,6 +157,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Dictionary.LanguageSpecific" />
       <MemberSignature Language="VB.NET" Value="Public Property LanguageSpecific As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool LanguageSpecific { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.LanguageSpecific : bool with get, set" Usage="Microsoft.Office.Interop.Word.Dictionary.LanguageSpecific" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -183,6 +189,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Dictionary.Name" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Office.Interop.Word.Dictionary.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -211,6 +218,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Dictionary.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Dictionary.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -239,6 +247,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Dictionary.Path" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Path As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Path { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Path : string" Usage="Microsoft.Office.Interop.Word.Dictionary.Path" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -259,7 +268,7 @@
         <summary>Retorna o disco ou o caminho da Web para o objeto especificado.</summary>
         <value>To be added.</value>
         <remarks><para>O caminho não inclui um caractere precedente  por exemplo, "C:\MSOffice" ou "http://MyServer". Use a <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" /> propriedade para adicionar o caractere que separa pastas e letras de unidade. Use a <see cref="P:Microsoft.Office.Interop.Word.Dictionary.Name" /> propriedade para retornar o nome do arquivo sem o caminho.</para>
-          <para>Observação Você pode usar a propriedade <b>PathSeparator</b> para criar endereços da Web, mesmo que eles contenham barras (/) e a propriedade <b>PathSeparator</b> seja padronizada como uma\)barra invertida (.</para>
+          <para>Observação Você pode usar a propriedade <b>PathSeparator</b> para criar endereços da Web, mesmo que eles contenham barras (/) e a propriedade <b>PathSeparator</b> seja padronizada como uma barra invertida ( \) .</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -269,6 +278,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Dictionary.ReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReadOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.ReadOnly : bool" Usage="Microsoft.Office.Interop.Word.Dictionary.ReadOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -298,6 +308,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Dictionary.Type" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As WdDictionaryType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdDictionaryType Type { Microsoft::Office::Interop::Word::WdDictionaryType get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Microsoft.Office.Interop.Word.WdDictionaryType" Usage="Microsoft.Office.Interop.Word.Dictionary.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
