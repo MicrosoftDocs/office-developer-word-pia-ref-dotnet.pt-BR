@@ -1,9 +1,10 @@
 <Type Name="InlineShape" FullName="Microsoft.Office.Interop.Word.InlineShape">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="9f81e89e789a82e62997f9c7555c77ad9c26269d" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146679" /></Metadata><TypeSignature Language="C#" Value="public interface InlineShape" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="0249b4203836ce9c4e7cc494ecd93032505d8ca6" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43923945" /></Metadata><TypeSignature Language="C#" Value="public interface InlineShape" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract InlineShape" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.InlineShape" />
   <TypeSignature Language="VB.NET" Value="Public Interface InlineShape" />
   <TypeSignature Language="C++ CLI" Value="public interface class InlineShape" />
+  <TypeSignature Language="F#" Value="type InlineShape = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -18,13 +19,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary><span data-ttu-id="7979c-101">Representa um objeto na camada de texto de um documento.</span><span class="sxs-lookup"><span data-stu-id="7979c-101">Represents an object in the text layer of a document.</span></span></summary>
-    <remarks><para><span data-ttu-id="7979c-102">Uma forma embutida somente pode ser uma imagem, um objeto OLE ou um controle ActiveX.</span><span class="sxs-lookup"><span data-stu-id="7979c-102">An inline shape can only be a picture, an OLE object, or an ActiveX control.</span></span> <span data-ttu-id="7979c-103"><see cref="T:Microsoft.Office.Interop.Word.InlineShape" />os objetos são tratados como caracteres e são posicionados como caracteres dentro de uma linha de texto.</span><span class="sxs-lookup"><span data-stu-id="7979c-103"><see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> objects are treated like characters and are positioned as characters within a line of text.</span></span> <span data-ttu-id="7979c-104">O <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> objeto é um membro da <see cref="T:Microsoft.Office.Interop.Word.InlineShapes" /> coleção.</span><span class="sxs-lookup"><span data-stu-id="7979c-104">The <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> object is a member of the <see cref="T:Microsoft.Office.Interop.Word.InlineShapes" /> collection.</span></span> <span data-ttu-id="7979c-105">A <see cref="T:Microsoft.Office.Interop.Word.InlineShapes" /> coleção contém todas as formas em um documento, intervalo ou seleção.</span><span class="sxs-lookup"><span data-stu-id="7979c-105">The <see cref="T:Microsoft.Office.Interop.Word.InlineShapes" /> collection contains all the shapes in a document, range, or selection.</span></span></para>
-      <para><span data-ttu-id="7979c-106">Use <b>InlineShapes</b>(<paramref name="index" />), em <paramref name="index" /> que é o número de índice, para retornar <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> um único objeto.</span><span class="sxs-lookup"><span data-stu-id="7979c-106">Use <b>InlineShapes</b>(<paramref name="index" />), where <paramref name="index" /> is the index number, to return a single <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> object.</span></span> <span data-ttu-id="7979c-107">Formas embutidas não têm nomes.</span><span class="sxs-lookup"><span data-stu-id="7979c-107">Inline shapes don't have names.</span></span></para>
-      <para><span data-ttu-id="7979c-108">
-        <see cref="T:Microsoft.Office.Interop.Word.Shape" />os objetos são ancorados a um intervalo de texto, mas estão livres para flutuar e podem ser posicionados em qualquer lugar na página.</span><span class="sxs-lookup"><span data-stu-id="7979c-108">
-        <see cref="T:Microsoft.Office.Interop.Word.Shape" /> objects are anchored to a range of text but are free-floating and can be positioned anywhere on the page.</span></span> <span data-ttu-id="7979c-109">Você pode usar o <see cref="M:Microsoft.Office.Interop.Word.Shape.ConvertToInlineShape" /> método e os <see cref="M:Microsoft.Office.Interop.Word.InlineShape.ConvertToShape" /> métodos para converter formas de um tipo para outro.</span><span class="sxs-lookup"><span data-stu-id="7979c-109">You can use the <see cref="M:Microsoft.Office.Interop.Word.Shape.ConvertToInlineShape" /> method and the <see cref="M:Microsoft.Office.Interop.Word.InlineShape.ConvertToShape" /> methods to convert shapes from one type to the other.</span></span> <span data-ttu-id="7979c-110">Você pode converter somente figuras, objetos OLE e controles ActiveX para formas embutidas.</span><span class="sxs-lookup"><span data-stu-id="7979c-110">You can convert only pictures, OLE objects, and ActiveX controls to inline shapes.</span></span> <span data-ttu-id="7979c-111">Use a <see cref="P:Microsoft.Office.Interop.Word.InlineShape.Type" /> propriedade para retornar o tipo de forma embutida: imagem, imagem vinculada, objeto OLE incorporado, objeto OLE vinculado ou controle ActiveX.</span><span class="sxs-lookup"><span data-stu-id="7979c-111">Use the <see cref="P:Microsoft.Office.Interop.Word.InlineShape.Type" /> property to return the type of inline shape: picture, linked picture, embedded OLE object, linked OLE object, or ActiveX control.</span></span></para>
-      <para><span data-ttu-id="7979c-112">Quando você abre um documento criado em uma versão anterior do Microsoft Word, as imagens são convertidas em formas embutidas.</span><span class="sxs-lookup"><span data-stu-id="7979c-112">When you open a document created in an earlier version of Microsoft Word, pictures are converted to inline shapes.</span></span></para>
+    <summary><span data-ttu-id="a6621-101">Representa um objeto na camada de texto de um documento.</span><span class="sxs-lookup"><span data-stu-id="a6621-101">Represents an object in the text layer of a document.</span></span></summary>
+    <remarks><para><span data-ttu-id="a6621-102">Uma forma embutida somente pode ser uma imagem, um objeto OLE ou um controle ActiveX.</span><span class="sxs-lookup"><span data-stu-id="a6621-102">An inline shape can only be a picture, an OLE object, or an ActiveX control.</span></span> <span data-ttu-id="a6621-103"><see cref="T:Microsoft.Office.Interop.Word.InlineShape" />os objetos são tratados como caracteres e são posicionados como caracteres dentro de uma linha de texto.</span><span class="sxs-lookup"><span data-stu-id="a6621-103"><see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> objects are treated like characters and are positioned as characters within a line of text.</span></span> <span data-ttu-id="a6621-104">O <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> objeto é um membro da <see cref="T:Microsoft.Office.Interop.Word.InlineShapes" /> coleção.</span><span class="sxs-lookup"><span data-stu-id="a6621-104">The <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> object is a member of the <see cref="T:Microsoft.Office.Interop.Word.InlineShapes" /> collection.</span></span> <span data-ttu-id="a6621-105">A <see cref="T:Microsoft.Office.Interop.Word.InlineShapes" /> coleção contém todas as formas em um documento, intervalo ou seleção.</span><span class="sxs-lookup"><span data-stu-id="a6621-105">The <see cref="T:Microsoft.Office.Interop.Word.InlineShapes" /> collection contains all the shapes in a document, range, or selection.</span></span></para>
+      <para><span data-ttu-id="a6621-106">Use <b>InlineShapes</b>( <paramref name="index" /> ), em que <paramref name="index" /> é o número de índice, para retornar um único <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> objeto.</span><span class="sxs-lookup"><span data-stu-id="a6621-106">Use <b>InlineShapes</b>(<paramref name="index" />), where <paramref name="index" /> is the index number, to return a single <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> object.</span></span> <span data-ttu-id="a6621-107">Formas embutidas não têm nomes.</span><span class="sxs-lookup"><span data-stu-id="a6621-107">Inline shapes don't have names.</span></span></para>
+      <para><span data-ttu-id="a6621-108">
+        <see cref="T:Microsoft.Office.Interop.Word.Shape" />os objetos são ancorados a um intervalo de texto, mas estão livres para flutuar e podem ser posicionados em qualquer lugar na página.</span><span class="sxs-lookup"><span data-stu-id="a6621-108">
+        <see cref="T:Microsoft.Office.Interop.Word.Shape" /> objects are anchored to a range of text but are free-floating and can be positioned anywhere on the page.</span></span> <span data-ttu-id="a6621-109">Você pode usar o <see cref="M:Microsoft.Office.Interop.Word.Shape.ConvertToInlineShape" /> método e os <see cref="M:Microsoft.Office.Interop.Word.InlineShape.ConvertToShape" /> métodos para converter formas de um tipo para outro.</span><span class="sxs-lookup"><span data-stu-id="a6621-109">You can use the <see cref="M:Microsoft.Office.Interop.Word.Shape.ConvertToInlineShape" /> method and the <see cref="M:Microsoft.Office.Interop.Word.InlineShape.ConvertToShape" /> methods to convert shapes from one type to the other.</span></span> <span data-ttu-id="a6621-110">Você pode converter somente figuras, objetos OLE e controles ActiveX para formas embutidas.</span><span class="sxs-lookup"><span data-stu-id="a6621-110">You can convert only pictures, OLE objects, and ActiveX controls to inline shapes.</span></span> <span data-ttu-id="a6621-111">Use a <see cref="P:Microsoft.Office.Interop.Word.InlineShape.Type" /> propriedade para retornar o tipo de forma embutida: imagem, imagem vinculada, objeto OLE incorporado, objeto OLE vinculado ou controle ActiveX.</span><span class="sxs-lookup"><span data-stu-id="a6621-111">Use the <see cref="P:Microsoft.Office.Interop.Word.InlineShape.Type" /> property to return the type of inline shape: picture, linked picture, embedded OLE object, linked OLE object, or ActiveX control.</span></span></para>
+      <para><span data-ttu-id="a6621-112">Quando você abre um documento criado em uma versão anterior do Microsoft Word, as imagens são convertidas em formas embutidas.</span><span class="sxs-lookup"><span data-stu-id="a6621-112">When you open a document created in an earlier version of Microsoft Word, pictures are converted to inline shapes.</span></span></para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.InlineShape.Activate" />
       <MemberSignature Language="VB.NET" Value="Public Sub Activate ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Activate();" />
+      <MemberSignature Language="F#" Value="abstract member Activate : unit -&gt; unit" Usage="inlineShape.Activate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -52,7 +54,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary><span data-ttu-id="7979c-113">Ativa o objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="7979c-113">Activates the specified object.</span></span></summary>
+        <summary><span data-ttu-id="a6621-113">Ativa o objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="a6621-113">Activates the specified object.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShape.AlternativeText" />
       <MemberSignature Language="VB.NET" Value="Public Property AlternativeText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AlternativeText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AlternativeText : string with get, set" Usage="Microsoft.Office.Interop.Word.InlineShape.AlternativeText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -82,7 +85,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="7979c-114">Retorna ou define o texto alternativo associado a uma forma em uma página da Web.</span><span class="sxs-lookup"><span data-stu-id="7979c-114">Returns or sets the alternative text associated with a shape in a Web page.</span></span></summary>
+        <summary><span data-ttu-id="a6621-114">Retorna ou define o texto alternativo associado a uma forma em uma página da Web.</span><span class="sxs-lookup"><span data-stu-id="a6621-114">Returns or sets the alternative text associated with a shape in a Web page.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShape.AnchorID" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AnchorID As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int AnchorID { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.AnchorID : int" Usage="Microsoft.Office.Interop.Word.InlineShape.AnchorID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -124,6 +128,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShape.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.InlineShape.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -141,7 +146,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="7979c-115">Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</span><span class="sxs-lookup"><span data-stu-id="7979c-115">Returns a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span></span></summary>
+        <summary><span data-ttu-id="a6621-115">Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</span><span class="sxs-lookup"><span data-stu-id="a6621-115">Returns a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -152,6 +157,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShape.Borders" />
       <MemberSignature Language="VB.NET" Value="Public Property Borders As Borders" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Borders ^ Borders { Microsoft::Office::Interop::Word::Borders ^ get(); void set(Microsoft::Office::Interop::Word::Borders ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Borders : Microsoft.Office.Interop.Word.Borders with get, set" Usage="Microsoft.Office.Interop.Word.InlineShape.Borders" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -172,7 +178,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Borders</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="7979c-116">Retorna uma <see cref="T:Microsoft.Office.Interop.Word.Borders" /> coleção que representa todas as bordas do objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="7979c-116">Returns a <see cref="T:Microsoft.Office.Interop.Word.Borders" /> collection that represents all the borders for the specified object.</span></span></summary>
+        <summary><span data-ttu-id="a6621-116">Retorna uma <see cref="T:Microsoft.Office.Interop.Word.Borders" /> coleção que representa todas as bordas do objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="a6621-116">Returns a <see cref="T:Microsoft.Office.Interop.Word.Borders" /> collection that represents all the borders for the specified object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -183,6 +189,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShape.Chart" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Chart As Chart" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Chart ^ Chart { Microsoft::Office::Interop::Word::Chart ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Chart : Microsoft.Office.Interop.Word.Chart" Usage="Microsoft.Office.Interop.Word.InlineShape.Chart" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -200,7 +207,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Chart</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="7979c-117">Retorna um gráfico dentro da coleção de formas embutidas em um documento.</span><span class="sxs-lookup"><span data-stu-id="7979c-117">Returns a chart within the collection of inline shapes in a document.</span></span> <span data-ttu-id="7979c-118">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="7979c-118">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="a6621-117">Retorna um gráfico dentro da coleção de formas embutidas em um documento.</span><span class="sxs-lookup"><span data-stu-id="a6621-117">Returns a chart within the collection of inline shapes in a document.</span></span> <span data-ttu-id="a6621-118">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="a6621-118">Read-only.</span></span></summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.Chart" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -211,6 +218,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.InlineShape.ConvertToShape" />
       <MemberSignature Language="VB.NET" Value="Public Function ConvertToShape () As Shape" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::Shape ^ ConvertToShape();" />
+      <MemberSignature Language="F#" Value="abstract member ConvertToShape : unit -&gt; Microsoft.Office.Interop.Word.Shape" Usage="inlineShape.ConvertToShape " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -226,9 +234,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary><span data-ttu-id="7979c-119">Converte uma forma embutida em uma forma flutuante e retorna um <see cref="T:Microsoft.Office.Interop.Word.Shape" /> objeto que representa a nova forma.</span><span class="sxs-lookup"><span data-stu-id="7979c-119">Converts an inline shape to a free-floating shape and returns a <see cref="T:Microsoft.Office.Interop.Word.Shape" /> object that represents the new shape.</span></span></summary>
+        <summary><span data-ttu-id="a6621-119">Converte uma forma embutida em uma forma flutuante e retorna um <see cref="T:Microsoft.Office.Interop.Word.Shape" /> objeto que representa a nova forma.</span><span class="sxs-lookup"><span data-stu-id="a6621-119">Converts an inline shape to a free-floating shape and returns a <see cref="T:Microsoft.Office.Interop.Word.Shape" /> object that represents the new shape.</span></span></summary>
         <returns>To be added.</returns>
-        <remarks><para><span data-ttu-id="7979c-120">Você deve aplicar o <see cref="M:Microsoft.Office.Interop.Word.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" /> método a um <see cref="T:Microsoft.Office.Interop.Word.FreeformBuilder" /> objeto pelo menos uma vez antes de usar o método <b>ConvertToShape</b> .</span><span class="sxs-lookup"><span data-stu-id="7979c-120">You must apply the <see cref="M:Microsoft.Office.Interop.Word.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" /> method to a <see cref="T:Microsoft.Office.Interop.Word.FreeformBuilder" /> object at least once before you use the <b>ConvertToShape</b> method.</span></span></para>
+        <remarks><para><span data-ttu-id="a6621-120">Você deve aplicar o <see cref="M:Microsoft.Office.Interop.Word.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" /> método a um <see cref="T:Microsoft.Office.Interop.Word.FreeformBuilder" /> objeto pelo menos uma vez antes de usar o método <b>ConvertToShape</b> .</span><span class="sxs-lookup"><span data-stu-id="a6621-120">You must apply the <see cref="M:Microsoft.Office.Interop.Word.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" /> method to a <see cref="T:Microsoft.Office.Interop.Word.FreeformBuilder" /> object at least once before you use the <b>ConvertToShape</b> method.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -238,6 +246,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShape.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.InlineShape.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -255,10 +264,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="7979c-121">Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</span><span class="sxs-lookup"><span data-stu-id="7979c-121">Returns a 32-bit integer that indicates the application in which the specified object was created.</span></span></summary>
+        <summary><span data-ttu-id="a6621-121">Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</span><span class="sxs-lookup"><span data-stu-id="a6621-121">Returns a 32-bit integer that indicates the application in which the specified object was created.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="7979c-122">Se o objeto especificado foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD".</span><span class="sxs-lookup"><span data-stu-id="7979c-122">If the specified object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span> <span data-ttu-id="7979c-123">[!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</span><span class="sxs-lookup"><span data-stu-id="7979c-123">This value can also be represented by the constant <b>wdCreatorCode</b>.</span></span></para>
-          <para><span data-ttu-id="7979c-124">A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres.</span><span class="sxs-lookup"><span data-stu-id="7979c-124">The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="7979c-125">Por exemplo, o Microsoft Word tem o código de criador MSWD.</span><span class="sxs-lookup"><span data-stu-id="7979c-125">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="7979c-126">Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</span><span class="sxs-lookup"><span data-stu-id="7979c-126">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
+        <remarks><para><span data-ttu-id="a6621-122">Se o objeto especificado foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD".</span><span class="sxs-lookup"><span data-stu-id="a6621-122">If the specified object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span> <span data-ttu-id="a6621-123">[!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</span><span class="sxs-lookup"><span data-stu-id="a6621-123">This value can also be represented by the constant <b>wdCreatorCode</b>.</span></span></para>
+          <para><span data-ttu-id="a6621-124">A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres.</span><span class="sxs-lookup"><span data-stu-id="a6621-124">The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="a6621-125">Por exemplo, o Microsoft Word tem o código de criador MSWD.</span><span class="sxs-lookup"><span data-stu-id="a6621-125">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="a6621-126">Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</span><span class="sxs-lookup"><span data-stu-id="a6621-126">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -268,6 +277,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.InlineShape.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberSignature Language="F#" Value="abstract member Delete : unit -&gt; unit" Usage="inlineShape.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -283,7 +293,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary><span data-ttu-id="7979c-127">Exclui o objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="7979c-127">Deletes the specified object.</span></span></summary>
+        <summary><span data-ttu-id="a6621-127">Exclui o objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="a6621-127">Deletes the specified object.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -293,6 +303,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShape.EditID" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EditID As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int EditID { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.EditID : int" Usage="Microsoft.Office.Interop.Word.InlineShape.EditID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -324,6 +335,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShape.Field" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Field As Field" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Field ^ Field { Microsoft::Office::Interop::Word::Field ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Field : Microsoft.Office.Interop.Word.Field" Usage="Microsoft.Office.Interop.Word.InlineShape.Field" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -341,9 +353,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.Field</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="7979c-128">Retorna um <see cref="T:Microsoft.Office.Interop.Word.Field" /> objeto que representa o campo associado à forma especificada.</span><span class="sxs-lookup"><span data-stu-id="7979c-128">Returns a <see cref="T:Microsoft.Office.Interop.Word.Field" /> object that represents the field associated with the specified shape.</span></span></summary>
+        <summary><span data-ttu-id="a6621-128">Retorna um <see cref="T:Microsoft.Office.Interop.Word.Field" /> objeto que representa o campo associado à forma especificada.</span><span class="sxs-lookup"><span data-stu-id="a6621-128">Returns a <see cref="T:Microsoft.Office.Interop.Word.Field" /> object that represents the field associated with the specified shape.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="7979c-129">Use a <see cref="P:Microsoft.Office.Interop.Word._Document.Fields" /> propriedade para retornar a <see cref="T:Microsoft.Office.Interop.Word.Fields" /> coleção.</span><span class="sxs-lookup"><span data-stu-id="7979c-129">Use the <see cref="P:Microsoft.Office.Interop.Word._Document.Fields" /> property to return the <see cref="T:Microsoft.Office.Interop.Word.Fields" /> collection.</span></span></para>
+        <remarks><para><span data-ttu-id="a6621-129">Use a <see cref="P:Microsoft.Office.Interop.Word._Document.Fields" /> propriedade para retornar a <see cref="T:Microsoft.Office.Interop.Word.Fields" /> coleção.</span><span class="sxs-lookup"><span data-stu-id="a6621-129">Use the <see cref="P:Microsoft.Office.Interop.Word._Document.Fields" /> property to return the <see cref="T:Microsoft.Office.Interop.Word.Fields" /> collection.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -353,6 +365,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShape.Fill" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Fill As FillFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::FillFormat ^ Fill { Microsoft::Office::Interop::Word::FillFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Fill : Microsoft.Office.Interop.Word.FillFormat" Usage="Microsoft.Office.Interop.Word.InlineShape.Fill" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -370,7 +383,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.FillFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="7979c-130">Retorna um <see cref="T:Microsoft.Office.Interop.Word.FillFormat" /> objeto que contém propriedades de formatação de preenchimento para a forma especificada.</span><span class="sxs-lookup"><span data-stu-id="7979c-130">Returns a <see cref="T:Microsoft.Office.Interop.Word.FillFormat" /> object that contains fill formatting properties for the specified shape.</span></span></summary>
+        <summary><span data-ttu-id="a6621-130">Retorna um <see cref="T:Microsoft.Office.Interop.Word.FillFormat" /> objeto que contém propriedades de formatação de preenchimento para a forma especificada.</span><span class="sxs-lookup"><span data-stu-id="a6621-130">Returns a <see cref="T:Microsoft.Office.Interop.Word.FillFormat" /> object that contains fill formatting properties for the specified shape.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -381,6 +394,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShape.Glow" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Glow As GlowFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::GlowFormat ^ Glow { Microsoft::Office::Interop::Word::GlowFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Glow : Microsoft.Office.Interop.Word.GlowFormat" Usage="Microsoft.Office.Interop.Word.InlineShape.Glow" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -398,7 +412,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.GlowFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="7979c-131">Retorna as propriedades de formatação para um efeito de brilho.</span><span class="sxs-lookup"><span data-stu-id="7979c-131">Returns the formatting properties for a glow effect.</span></span> <span data-ttu-id="7979c-132">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="7979c-132">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="a6621-131">Retorna as propriedades de formatação para um efeito de brilho.</span><span class="sxs-lookup"><span data-stu-id="a6621-131">Returns the formatting properties for a glow effect.</span></span> <span data-ttu-id="a6621-132">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="a6621-132">Read-only.</span></span></summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.GlowFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -409,6 +423,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShape.GroupItems" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GroupItems As GroupShapes" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::GroupShapes ^ GroupItems { Microsoft::Office::Interop::Word::GroupShapes ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.GroupItems : Microsoft.Office.Interop.Word.GroupShapes" Usage="Microsoft.Office.Interop.Word.InlineShape.GroupItems" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -426,7 +441,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.GroupShapes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="7979c-133">Retorna as formas que são agrupadas em uma forma embutida.</span><span class="sxs-lookup"><span data-stu-id="7979c-133">Returns the shapes that are grouped together for an inline shape.</span></span> <span data-ttu-id="7979c-134">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="7979c-134">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="a6621-133">Retorna as formas que são agrupadas em uma forma embutida.</span><span class="sxs-lookup"><span data-stu-id="a6621-133">Returns the shapes that are grouped together for an inline shape.</span></span> <span data-ttu-id="a6621-134">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="a6621-134">Read-only.</span></span></summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.GroupShapes" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -437,6 +452,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShape.HasChart" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasChart As MsoTriState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState HasChart { Microsoft::Office::Core::MsoTriState get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasChart : Microsoft.Office.Core.MsoTriState" Usage="Microsoft.Office.Interop.Word.InlineShape.HasChart" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -454,9 +470,9 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="7979c-135"><b>True</b> se a forma especificada for um gráfico.</span><span class="sxs-lookup"><span data-stu-id="7979c-135"><b>True</b> if the specified shape is a chart.</span></span> <span data-ttu-id="7979c-136">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="7979c-136">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="a6621-135"><b>True</b> se a forma especificada for um gráfico.</span><span class="sxs-lookup"><span data-stu-id="a6621-135"><b>True</b> if the specified shape is a chart.</span></span> <span data-ttu-id="a6621-136">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="a6621-136">Read-only.</span></span></summary>
         <value><see cref="T:Microsoft.Office.Core.MsoTriState" /></value>
-        <remarks><para><span data-ttu-id="7979c-137">Essa propriedade sempre retorna <b>false</b> para gráficos OLE.</span><span class="sxs-lookup"><span data-stu-id="7979c-137">This property always returns <b>False</b> for OLE charts.</span></span> <span data-ttu-id="7979c-138">Para gráficos OLE, use InlineShape.OLEFormat.ProgID e verifique os seguintes valores possíveis: "Excel.Chart.8", "MSGraph.Chart.8", "Excel.Sheet.8", "Excel.Chart.5", "MSGraph.Chart.5" ou "Excel.Sheet.5".</span><span class="sxs-lookup"><span data-stu-id="7979c-138">For OLE charts, use InlineShape.OLEFormat.ProgID and check for the following possible values: "Excel.Chart.8", "MSGraph.Chart.8", "Excel.Sheet.8", "Excel.Chart.5", "MSGraph.Chart.5", or "Excel.Sheet.5".</span></span></para>
+        <remarks><para><span data-ttu-id="a6621-137">Essa propriedade sempre retorna <b>false</b> para gráficos OLE.</span><span class="sxs-lookup"><span data-stu-id="a6621-137">This property always returns <b>False</b> for OLE charts.</span></span> <span data-ttu-id="a6621-138">Para gráficos OLE, use InlineShape.OLEFormat.ProgID e verifique os seguintes valores possíveis: "Excel.Chart.8", "MSGraph.Chart.8", "Excel.Sheet.8", "Excel.Chart.5", "MSGraph.Chart.5" ou "Excel.Sheet.5".</span><span class="sxs-lookup"><span data-stu-id="a6621-138">For OLE charts, use InlineShape.OLEFormat.ProgID and check for the following possible values: "Excel.Chart.8", "MSGraph.Chart.8", "Excel.Sheet.8", "Excel.Chart.5", "MSGraph.Chart.5", or "Excel.Sheet.5".</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -466,6 +482,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShape.HasSmartArt" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasSmartArt As MsoTriState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState HasSmartArt { Microsoft::Office::Core::MsoTriState get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasSmartArt : Microsoft.Office.Core.MsoTriState" Usage="Microsoft.Office.Interop.Word.InlineShape.HasSmartArt" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -483,9 +500,9 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="7979c-139">Obtém <b>true</b> se houver um diagrama SmartArt presente na forma.</span><span class="sxs-lookup"><span data-stu-id="7979c-139">Gets <b>True</b> if there is a SmartArt diagram present on the shape.</span></span></summary>
-        <value><span data-ttu-id="7979c-140">Um <see cref="T:Microsoft.Office.Core.MsoTriState" /> objeto.</span><span class="sxs-lookup"><span data-stu-id="7979c-140">A <see cref="T:Microsoft.Office.Core.MsoTriState" /> object.</span></span></value>
-        <remarks><para><span data-ttu-id="7979c-141">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="7979c-141">Read-only.</span></span></para>
+        <summary><span data-ttu-id="a6621-139">Obtém <b>true</b> se houver um diagrama SmartArt presente na forma.</span><span class="sxs-lookup"><span data-stu-id="a6621-139">Gets <b>True</b> if there is a SmartArt diagram present on the shape.</span></span></summary>
+        <value><span data-ttu-id="a6621-140">Um <see cref="T:Microsoft.Office.Core.MsoTriState" /> objeto.</span><span class="sxs-lookup"><span data-stu-id="a6621-140">A <see cref="T:Microsoft.Office.Core.MsoTriState" /> object.</span></span></value>
+        <remarks><para><span data-ttu-id="a6621-141">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="a6621-141">Read-only.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -495,6 +512,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShape.Height" />
       <MemberSignature Language="VB.NET" Value="Public Property Height As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Height { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.Height : single with get, set" Usage="Microsoft.Office.Interop.Word.InlineShape.Height" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -515,7 +533,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="7979c-142">Retorna ou define a altura da forma embutida especificada.</span><span class="sxs-lookup"><span data-stu-id="7979c-142">Returns or sets the height of the specified inline shape.</span></span></summary>
+        <summary><span data-ttu-id="a6621-142">Retorna ou define a altura da forma embutida especificada.</span><span class="sxs-lookup"><span data-stu-id="a6621-142">Returns or sets the height of the specified inline shape.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -526,6 +544,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShape.HorizontalLineFormat" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HorizontalLineFormat As HorizontalLineFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::HorizontalLineFormat ^ HorizontalLineFormat { Microsoft::Office::Interop::Word::HorizontalLineFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.HorizontalLineFormat : Microsoft.Office.Interop.Word.HorizontalLineFormat" Usage="Microsoft.Office.Interop.Word.InlineShape.HorizontalLineFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -543,7 +562,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.HorizontalLineFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="7979c-143">Retorna um <see cref="T:Microsoft.Office.Interop.Word.HorizontalLineFormat" /> objeto que contém a formatação de linha horizontal para o <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="7979c-143">Returns a <see cref="T:Microsoft.Office.Interop.Word.HorizontalLineFormat" /> object that contains the horizontal line formatting for the specified <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> object.</span></span></summary>
+        <summary><span data-ttu-id="a6621-143">Retorna um <see cref="T:Microsoft.Office.Interop.Word.HorizontalLineFormat" /> objeto que contém a formatação de linha horizontal para o <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="a6621-143">Returns a <see cref="T:Microsoft.Office.Interop.Word.HorizontalLineFormat" /> object that contains the horizontal line formatting for the specified <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -554,6 +573,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShape.Hyperlink" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Hyperlink As Hyperlink" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Hyperlink ^ Hyperlink { Microsoft::Office::Interop::Word::Hyperlink ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Hyperlink : Microsoft.Office.Interop.Word.Hyperlink" Usage="Microsoft.Office.Interop.Word.InlineShape.Hyperlink" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -571,9 +591,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.Hyperlink</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="7979c-144">Retorna um <see cref="T:Microsoft.Office.Interop.Word.Hyperlink" /> objeto que representa o hiperlink associado ao objeto especificado <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> .</span><span class="sxs-lookup"><span data-stu-id="7979c-144">Returns a <see cref="T:Microsoft.Office.Interop.Word.Hyperlink" /> object that represents the hyperlink associated with the specified <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> object.</span></span></summary>
+        <summary><span data-ttu-id="a6621-144">Retorna um <see cref="T:Microsoft.Office.Interop.Word.Hyperlink" /> objeto que representa o hiperlink associado ao objeto especificado <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> .</span><span class="sxs-lookup"><span data-stu-id="a6621-144">Returns a <see cref="T:Microsoft.Office.Interop.Word.Hyperlink" /> object that represents the hyperlink associated with the specified <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> object.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="7979c-145">Se não houver hiperlink associado à forma especificada, ocorrerá um erro.</span><span class="sxs-lookup"><span data-stu-id="7979c-145">If there's no hyperlink associated with the specified shape, an error occurs.</span></span></para>
+        <remarks><para><span data-ttu-id="a6621-145">Se não houver hiperlink associado à forma especificada, ocorrerá um erro.</span><span class="sxs-lookup"><span data-stu-id="a6621-145">If there's no hyperlink associated with the specified shape, an error occurs.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -583,6 +603,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShape.IsPictureBullet" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsPictureBullet As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsPictureBullet { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsPictureBullet : bool" Usage="Microsoft.Office.Interop.Word.InlineShape.IsPictureBullet" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -600,10 +621,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="7979c-146">Determina se um <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> objeto é um marcador de imagem.</span><span class="sxs-lookup"><span data-stu-id="7979c-146">Determines if a <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> object is a picture bullet.</span></span></summary>
+        <summary><span data-ttu-id="a6621-146">Determina se um <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> objeto é um marcador de imagem.</span><span class="sxs-lookup"><span data-stu-id="a6621-146">Determines if a <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> object is a picture bullet.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="7979c-147">Essa propriedade retorna <b>true</b> para indicar que um <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> objeto é um marcador de imagem.</span><span class="sxs-lookup"><span data-stu-id="7979c-147">This property returns <b>True</b> to indicate that an <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> object is a picture bullet.</span></span></para>
-          <para><span data-ttu-id="7979c-148">Embora os marcadores de imagem sejam considerados formas embutidas, a <see cref="T:Microsoft.Office.Interop.Word.InlineShapes" /> pesquisa de uma coleção de documentos não retornará marcadores de imagem.</span><span class="sxs-lookup"><span data-stu-id="7979c-148">Although picture bullets are considered inline shapes, searching a document's <see cref="T:Microsoft.Office.Interop.Word.InlineShapes" /> collection will not return picture bullets.</span></span></para>
+        <remarks><para><span data-ttu-id="a6621-147">Essa propriedade retorna <b>true</b> para indicar que um <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> objeto é um marcador de imagem.</span><span class="sxs-lookup"><span data-stu-id="a6621-147">This property returns <b>True</b> to indicate that an <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> object is a picture bullet.</span></span></para>
+          <para><span data-ttu-id="a6621-148">Embora os marcadores de imagem sejam considerados formas embutidas, a pesquisa de uma coleção de documentos <see cref="T:Microsoft.Office.Interop.Word.InlineShapes" /> não retornará marcadores de imagem.</span><span class="sxs-lookup"><span data-stu-id="a6621-148">Although picture bullets are considered inline shapes, searching a document's <see cref="T:Microsoft.Office.Interop.Word.InlineShapes" /> collection will not return picture bullets.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -613,6 +634,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShape.Line" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Line As LineFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::LineFormat ^ Line { Microsoft::Office::Interop::Word::LineFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Line : Microsoft.Office.Interop.Word.LineFormat" Usage="Microsoft.Office.Interop.Word.InlineShape.Line" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -630,9 +652,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.LineFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="7979c-149">Retorna um <see cref="T:Microsoft.Office.Interop.Word.LineFormat" /> objeto que contém as propriedades de formatação de linha para a forma especificada.</span><span class="sxs-lookup"><span data-stu-id="7979c-149">Returns a <see cref="T:Microsoft.Office.Interop.Word.LineFormat" /> object that contains line formatting properties for the specified shape.</span></span></summary>
+        <summary><span data-ttu-id="a6621-149">Retorna um <see cref="T:Microsoft.Office.Interop.Word.LineFormat" /> objeto que contém as propriedades de formatação de linha para a forma especificada.</span><span class="sxs-lookup"><span data-stu-id="a6621-149">Returns a <see cref="T:Microsoft.Office.Interop.Word.LineFormat" /> object that contains line formatting properties for the specified shape.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="7979c-150">Para uma linha, o objeto <b>LineFormat</b> representa a própria linha; para uma forma com uma borda, o objeto <b>LineFormat</b> representa a borda.</span><span class="sxs-lookup"><span data-stu-id="7979c-150">For a line, the <b>LineFormat</b> object represents the line itself; for a shape with a border, the <b>LineFormat</b> object represents the border.</span></span></para>
+        <remarks><para><span data-ttu-id="a6621-150">Para uma linha, o objeto <b>LineFormat</b> representa a própria linha; para uma forma com uma borda, o objeto <b>LineFormat</b> representa a borda.</span><span class="sxs-lookup"><span data-stu-id="a6621-150">For a line, the <b>LineFormat</b> object represents the line itself; for a shape with a border, the <b>LineFormat</b> object represents the border.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -642,6 +664,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShape.LinkFormat" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LinkFormat As LinkFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::LinkFormat ^ LinkFormat { Microsoft::Office::Interop::Word::LinkFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LinkFormat : Microsoft.Office.Interop.Word.LinkFormat" Usage="Microsoft.Office.Interop.Word.InlineShape.LinkFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -659,7 +682,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.LinkFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="7979c-151">Retorna um <see cref="T:Microsoft.Office.Interop.Word.LinkFormat" /> objeto que representa as opções de vínculo do especificado <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> vinculado a um arquivo.</span><span class="sxs-lookup"><span data-stu-id="7979c-151">Returns a <see cref="T:Microsoft.Office.Interop.Word.LinkFormat" /> object that represents the link options of the specified <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> that's linked to a file.</span></span></summary>
+        <summary><span data-ttu-id="a6621-151">Retorna um <see cref="T:Microsoft.Office.Interop.Word.LinkFormat" /> objeto que representa as opções de vínculo do especificado <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> vinculado a um arquivo.</span><span class="sxs-lookup"><span data-stu-id="a6621-151">Returns a <see cref="T:Microsoft.Office.Interop.Word.LinkFormat" /> object that represents the link options of the specified <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> that's linked to a file.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -670,6 +693,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShape.LockAspectRatio" />
       <MemberSignature Language="VB.NET" Value="Public Property LockAspectRatio As MsoTriState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState LockAspectRatio { Microsoft::Office::Core::MsoTriState get(); void set(Microsoft::Office::Core::MsoTriState value); };" />
+      <MemberSignature Language="F#" Value="member this.LockAspectRatio : Microsoft.Office.Core.MsoTriState with get, set" Usage="Microsoft.Office.Interop.Word.InlineShape.LockAspectRatio" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -690,35 +714,35 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="7979c-152">Determina que a forma especificada mantenha as suas proporções originais ao ser redimensionada.</span><span class="sxs-lookup"><span data-stu-id="7979c-152">Determines whether the specified shape retains its original proportions when you resize it.</span></span></summary>
+        <summary><span data-ttu-id="a6621-152">Determina que a forma especificada mantenha as suas proporções originais ao ser redimensionada.</span><span class="sxs-lookup"><span data-stu-id="a6621-152">Determines whether the specified shape retains its original proportions when you resize it.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="7979c-153">Essa propriedade retorna <b>msoTrue</b> se a forma especificada retém suas proporções originais quando você a redimensiona e <b>MsoFalse</b> se você pode alterar a altura e a largura da forma independentemente uma da outra ao redimensioná-la.</span><span class="sxs-lookup"><span data-stu-id="7979c-153">This property returns <b>MsoTrue</b> if the specified shape retains its original proportions when you resize it, and <b>MsoFalse</b> if you can change the height and width of the shape independently of one another when you resize it.</span></span></para>
-          <para><span data-ttu-id="7979c-154">
-            <see cref="T:Microsoft.Office.Core.MsoTriState" />pode ser uma das seguintes constantes:</span><span class="sxs-lookup"><span data-stu-id="7979c-154">
+        <remarks><para><span data-ttu-id="a6621-153">Essa propriedade retorna <b>msoTrue</b> se a forma especificada retém suas proporções originais quando você a redimensiona e <b>MsoFalse</b> se você pode alterar a altura e a largura da forma independentemente uma da outra ao redimensioná-la.</span><span class="sxs-lookup"><span data-stu-id="a6621-153">This property returns <b>MsoTrue</b> if the specified shape retains its original proportions when you resize it, and <b>MsoFalse</b> if you can change the height and width of the shape independently of one another when you resize it.</span></span></para>
+          <para><span data-ttu-id="a6621-154">
+            <see cref="T:Microsoft.Office.Core.MsoTriState" />pode ser uma das seguintes constantes:</span><span class="sxs-lookup"><span data-stu-id="a6621-154">
             <see cref="T:Microsoft.Office.Core.MsoTriState" /> can be one of the following constants:</span></span> </para>
-          <para><span data-ttu-id="7979c-155">
+          <para><span data-ttu-id="a6621-155">
             <b>msoCTrue</b>
-          </span><span class="sxs-lookup"><span data-stu-id="7979c-155">
+          </span><span class="sxs-lookup"><span data-stu-id="a6621-155">
             <b>msoCTrue </b>
           </span></span></para>
-          <para><span data-ttu-id="7979c-156">
+          <para><span data-ttu-id="a6621-156">
             <b>msoFalse</b>
-          </span><span class="sxs-lookup"><span data-stu-id="7979c-156">
+          </span><span class="sxs-lookup"><span data-stu-id="a6621-156">
             <b>msoFalse </b>
           </span></span></para>
-          <para><span data-ttu-id="7979c-157">
+          <para><span data-ttu-id="a6621-157">
             <b>msoTriStateMixed</b>
-          </span><span class="sxs-lookup"><span data-stu-id="7979c-157">
+          </span><span class="sxs-lookup"><span data-stu-id="a6621-157">
             <b>msoTriStateMixed </b>
           </span></span></para>
-          <para><span data-ttu-id="7979c-158">
+          <para><span data-ttu-id="a6621-158">
             <b>msoTriStateToggle</b>
-          </span><span class="sxs-lookup"><span data-stu-id="7979c-158">
+          </span><span class="sxs-lookup"><span data-stu-id="a6621-158">
             <b>msoTriStateToggle </b>
           </span></span></para>
-          <para><span data-ttu-id="7979c-159">
+          <para><span data-ttu-id="a6621-159">
             <b>msoTrue</b>
-          </span><span class="sxs-lookup"><span data-stu-id="7979c-159">
+          </span><span class="sxs-lookup"><span data-stu-id="a6621-159">
             <b>msoTrue</b>
           </span></span></para>
           <para> </para></remarks>
@@ -730,6 +754,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShape.OLEFormat" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OLEFormat As OLEFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::OLEFormat ^ OLEFormat { Microsoft::Office::Interop::Word::OLEFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OLEFormat : Microsoft.Office.Interop.Word.OLEFormat" Usage="Microsoft.Office.Interop.Word.InlineShape.OLEFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -747,7 +772,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.OLEFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="7979c-160">Retorna um <see cref="T:Microsoft.Office.Interop.Word.OLEFormat" /> objeto que representa as características OLE (diferentes de vinculação) para o especificado <see cref="T:Microsoft.Office.Interop.Word.InlineShape" />.</span><span class="sxs-lookup"><span data-stu-id="7979c-160">Returns a <see cref="T:Microsoft.Office.Interop.Word.OLEFormat" /> object that represents the OLE characteristics (other than linking) for the specified <see cref="T:Microsoft.Office.Interop.Word.InlineShape" />.</span></span></summary>
+        <summary><span data-ttu-id="a6621-160">Retorna um <see cref="T:Microsoft.Office.Interop.Word.OLEFormat" /> objeto que representa as características OLE (diferentes de vinculação) para o especificado <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> .</span><span class="sxs-lookup"><span data-stu-id="a6621-160">Returns a <see cref="T:Microsoft.Office.Interop.Word.OLEFormat" /> object that represents the OLE characteristics (other than linking) for the specified <see cref="T:Microsoft.Office.Interop.Word.InlineShape" />.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -758,6 +783,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShape.OWSAnchor" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OWSAnchor As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int OWSAnchor { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.OWSAnchor : int" Usage="Microsoft.Office.Interop.Word.InlineShape.OWSAnchor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -778,7 +804,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="7979c-161">Reservado para uso interno.</span><span class="sxs-lookup"><span data-stu-id="7979c-161">Reserved for internal use.</span></span></summary>
+        <summary><span data-ttu-id="a6621-161">Reservado para uso interno.</span><span class="sxs-lookup"><span data-stu-id="a6621-161">Reserved for internal use.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -789,6 +815,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShape.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.InlineShape.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -806,7 +833,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="7979c-162">Retorna um objeto que representa o objeto pai do objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="7979c-162">Returns an object that represents the parent object of the specified object.</span></span></summary>
+        <summary><span data-ttu-id="a6621-162">Retorna um objeto que representa o objeto pai do objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="a6621-162">Returns an object that represents the parent object of the specified object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -817,6 +844,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShape.PictureFormat" />
       <MemberSignature Language="VB.NET" Value="Public Property PictureFormat As PictureFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::PictureFormat ^ PictureFormat { Microsoft::Office::Interop::Word::PictureFormat ^ get(); void set(Microsoft::Office::Interop::Word::PictureFormat ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PictureFormat : Microsoft.Office.Interop.Word.PictureFormat with get, set" Usage="Microsoft.Office.Interop.Word.InlineShape.PictureFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -837,7 +865,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.PictureFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="7979c-163">Retorna um <see cref="T:Microsoft.Office.Interop.Word.PictureFormat" /> objeto que contém as propriedades de formatação da imagem para o objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="7979c-163">Returns a <see cref="T:Microsoft.Office.Interop.Word.PictureFormat" /> object that contains picture formatting properties for the specified object.</span></span></summary>
+        <summary><span data-ttu-id="a6621-163">Retorna um <see cref="T:Microsoft.Office.Interop.Word.PictureFormat" /> objeto que contém as propriedades de formatação da imagem para o objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="a6621-163">Returns a <see cref="T:Microsoft.Office.Interop.Word.PictureFormat" /> object that contains picture formatting properties for the specified object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -848,6 +876,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShape.Range" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Range As Range" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ Range { Microsoft::Office::Interop::Word::Range ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Range : Microsoft.Office.Interop.Word.Range" Usage="Microsoft.Office.Interop.Word.InlineShape.Range" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -865,9 +894,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="7979c-164">Retorna um <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto que representa a parte de um documento que está contida no objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="7979c-164">Returns a <see cref="T:Microsoft.Office.Interop.Word.Range" /> object that represents the portion of a document that's contained in the specified object.</span></span></summary>
+        <summary><span data-ttu-id="a6621-164">Retorna um <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto que representa a parte de um documento que está contida no objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="a6621-164">Returns a <see cref="T:Microsoft.Office.Interop.Word.Range" /> object that represents the portion of a document that's contained in the specified object.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="7979c-165">Para obter informações sobre como retornar um intervalo de um documento ou retornar um intervalo de formas de uma coleção de formas <see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" /> , consulte o método.</span><span class="sxs-lookup"><span data-stu-id="7979c-165">For information about returning a range from a document or returning a shape range from a collection of shapes, see the <see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" /> method.</span></span></para>
+        <remarks><para><span data-ttu-id="a6621-165">Para obter informações sobre como retornar um intervalo de um documento ou retornar um intervalo de formas de uma coleção de formas, consulte o <see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" /> método.</span><span class="sxs-lookup"><span data-stu-id="a6621-165">For information about returning a range from a document or returning a shape range from a collection of shapes, see the <see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" /> method.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -877,6 +906,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShape.Reflection" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Reflection As ReflectionFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ReflectionFormat ^ Reflection { Microsoft::Office::Interop::Word::ReflectionFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Reflection : Microsoft.Office.Interop.Word.ReflectionFormat" Usage="Microsoft.Office.Interop.Word.InlineShape.Reflection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -894,7 +924,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ReflectionFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="7979c-166">Retorna a formatação de reflexo de uma forma.</span><span class="sxs-lookup"><span data-stu-id="7979c-166">Returns the reflection formatting for a shape.</span></span> <span data-ttu-id="7979c-167">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="7979c-167">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="a6621-166">Retorna a formatação de reflexo de uma forma.</span><span class="sxs-lookup"><span data-stu-id="a6621-166">Returns the reflection formatting for a shape.</span></span> <span data-ttu-id="a6621-167">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="a6621-167">Read-only.</span></span></summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.ReflectionFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -905,6 +935,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.InlineShape.Reset" />
       <MemberSignature Language="VB.NET" Value="Public Sub Reset ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Reset();" />
+      <MemberSignature Language="F#" Value="abstract member Reset : unit -&gt; unit" Usage="inlineShape.Reset " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -920,7 +951,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary><span data-ttu-id="7979c-168">Remove as alterações que foram realizadas em uma forma embutida.</span><span class="sxs-lookup"><span data-stu-id="7979c-168">Removes changes that were made to an inline shape.</span></span></summary>
+        <summary><span data-ttu-id="a6621-168">Remove as alterações que foram realizadas em uma forma embutida.</span><span class="sxs-lookup"><span data-stu-id="a6621-168">Removes changes that were made to an inline shape.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -930,6 +961,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShape.ScaleHeight" />
       <MemberSignature Language="VB.NET" Value="Public Property ScaleHeight As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float ScaleHeight { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.ScaleHeight : single with get, set" Usage="Microsoft.Office.Interop.Word.InlineShape.ScaleHeight" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -950,7 +982,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="7979c-169">Dimensiona a altura da forma embutida especificada em relação ao seu tamanho original.</span><span class="sxs-lookup"><span data-stu-id="7979c-169">Scales the height of the specified inline shape relative to its original size.</span></span></summary>
+        <summary><span data-ttu-id="a6621-169">Dimensiona a altura da forma embutida especificada em relação ao seu tamanho original.</span><span class="sxs-lookup"><span data-stu-id="a6621-169">Scales the height of the specified inline shape relative to its original size.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -961,6 +993,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShape.ScaleWidth" />
       <MemberSignature Language="VB.NET" Value="Public Property ScaleWidth As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float ScaleWidth { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.ScaleWidth : single with get, set" Usage="Microsoft.Office.Interop.Word.InlineShape.ScaleWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -981,7 +1014,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="7979c-170">Dimensiona a largura da forma embutida especificada em relação ao seu tamanho original.</span><span class="sxs-lookup"><span data-stu-id="7979c-170">Scales the width of the specified inline shape relative to its original size.</span></span></summary>
+        <summary><span data-ttu-id="a6621-170">Dimensiona a largura da forma embutida especificada em relação ao seu tamanho original.</span><span class="sxs-lookup"><span data-stu-id="a6621-170">Scales the width of the specified inline shape relative to its original size.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -992,6 +1025,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShape.Script" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Script As Script" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::Script ^ Script { Microsoft::Office::Core::Script ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Script : Microsoft.Office.Core.Script" Usage="Microsoft.Office.Interop.Word.InlineShape.Script" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1009,9 +1043,9 @@
         <ReturnType>Microsoft.Office.Core.Script</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="7979c-171">Retorna um <see cref="T:Microsoft.Office.Core.Script" /> objeto que representa um bloco de script ou código na página da Web especificada.</span><span class="sxs-lookup"><span data-stu-id="7979c-171">Returns a <see cref="T:Microsoft.Office.Core.Script" /> object, which represents a block of script or code on the specified Web page.</span></span></summary>
+        <summary><span data-ttu-id="a6621-171">Retorna um <see cref="T:Microsoft.Office.Core.Script" /> objeto que representa um bloco de script ou código na página da Web especificada.</span><span class="sxs-lookup"><span data-stu-id="a6621-171">Returns a <see cref="T:Microsoft.Office.Core.Script" /> object, which represents a block of script or code on the specified Web page.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="7979c-172">Se a página não contiver nenhum script, nada será retornado.</span><span class="sxs-lookup"><span data-stu-id="7979c-172">If the page contains no script, nothing is returned.</span></span></para>
+        <remarks><para><span data-ttu-id="a6621-172">Se a página não contiver nenhum script, nada será retornado.</span><span class="sxs-lookup"><span data-stu-id="a6621-172">If the page contains no script, nothing is returned.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1021,6 +1055,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.InlineShape.Select" />
       <MemberSignature Language="VB.NET" Value="Public Sub Select ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Select();" />
+      <MemberSignature Language="F#" Value="abstract member Select : unit -&gt; unit" Usage="inlineShape.Select " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1036,8 +1071,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary><span data-ttu-id="7979c-173">Seleciona o objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="7979c-173">Selects the specified object.</span></span></summary>
-        <remarks><para><span data-ttu-id="7979c-174">Depois de usar esse método, use <see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> a propriedade para trabalhar com os itens selecionados.</span><span class="sxs-lookup"><span data-stu-id="7979c-174">After using this method, use the <see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> property to work with the selected items.</span></span></para>
+        <summary><span data-ttu-id="a6621-173">Seleciona o objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="a6621-173">Selects the specified object.</span></span></summary>
+        <remarks><para><span data-ttu-id="a6621-174">Depois de usar esse método, use a <see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> propriedade para trabalhar com os itens selecionados.</span><span class="sxs-lookup"><span data-stu-id="a6621-174">After using this method, use the <see cref="P:Microsoft.Office.Interop.Word._Application.Selection" /> property to work with the selected items.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1047,6 +1082,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShape.Shadow" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Shadow As ShadowFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ShadowFormat ^ Shadow { Microsoft::Office::Interop::Word::ShadowFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Shadow : Microsoft.Office.Interop.Word.ShadowFormat" Usage="Microsoft.Office.Interop.Word.InlineShape.Shadow" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1064,7 +1100,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ShadowFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="7979c-175">Retorna a formatação de sombra para a forma especificada.</span><span class="sxs-lookup"><span data-stu-id="7979c-175">Returns the shadow formatting for the specified shape.</span></span> <span data-ttu-id="7979c-176">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="7979c-176">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="a6621-175">Retorna a formatação de sombra para a forma especificada.</span><span class="sxs-lookup"><span data-stu-id="a6621-175">Returns the shadow formatting for the specified shape.</span></span> <span data-ttu-id="a6621-176">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="a6621-176">Read-only.</span></span></summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.ShadowFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1075,6 +1111,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShape.SmartArt" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SmartArt As SmartArt" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::SmartArt ^ SmartArt { Microsoft::Office::Core::SmartArt ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SmartArt : Microsoft.Office.Core.SmartArt" Usage="Microsoft.Office.Interop.Word.InlineShape.SmartArt" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1092,9 +1129,9 @@
         <ReturnType>Microsoft.Office.Core.SmartArt</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="7979c-177">Obtém um <see cref="T:Microsoft.Office.Core.SmartArt" /> objeto que fornece uma maneira de trabalhar com o SmartArt associado à forma embutida especificada.</span><span class="sxs-lookup"><span data-stu-id="7979c-177">Gets a <see cref="T:Microsoft.Office.Core.SmartArt" /> object that provides a way to work with the SmartArt associated with the specified inline shape.</span></span></summary>
-        <value><span data-ttu-id="7979c-178">Um <see cref="T:Microsoft.Office.Core.SmartArt" /> objeto que oferece uma maneira de trabalhar com o SmartArt associado à forma embutida especificada.</span><span class="sxs-lookup"><span data-stu-id="7979c-178">A <see cref="T:Microsoft.Office.Core.SmartArt" /> object that provides a way to work with the SmartArt associated with the specified inline shape.</span></span></value>
-        <remarks><para><span data-ttu-id="7979c-179">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="7979c-179">Read-only.</span></span> <span data-ttu-id="7979c-180">Esta propriedade fornece um ponto de entrada para interagir com um gráfico SmartArt associado à forma embutida.</span><span class="sxs-lookup"><span data-stu-id="7979c-180">This property provides an entry point for interacting with a Smart Art graphic associated with the inline shape.</span></span></para>
+        <summary><span data-ttu-id="a6621-177">Obtém um <see cref="T:Microsoft.Office.Core.SmartArt" /> objeto que fornece uma maneira de trabalhar com o SmartArt associado à forma embutida especificada.</span><span class="sxs-lookup"><span data-stu-id="a6621-177">Gets a <see cref="T:Microsoft.Office.Core.SmartArt" /> object that provides a way to work with the SmartArt associated with the specified inline shape.</span></span></summary>
+        <value><span data-ttu-id="a6621-178">Um <see cref="T:Microsoft.Office.Core.SmartArt" /> objeto que oferece uma maneira de trabalhar com o SmartArt associado à forma embutida especificada.</span><span class="sxs-lookup"><span data-stu-id="a6621-178">A <see cref="T:Microsoft.Office.Core.SmartArt" /> object that provides a way to work with the SmartArt associated with the specified inline shape.</span></span></value>
+        <remarks><para><span data-ttu-id="a6621-179">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="a6621-179">Read-only.</span></span> <span data-ttu-id="a6621-180">Esta propriedade fornece um ponto de entrada para interagir com um gráfico SmartArt associado à forma embutida.</span><span class="sxs-lookup"><span data-stu-id="a6621-180">This property provides an entry point for interacting with a Smart Art graphic associated with the inline shape.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1104,6 +1141,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShape.SoftEdge" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SoftEdge As SoftEdgeFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::SoftEdgeFormat ^ SoftEdge { Microsoft::Office::Interop::Word::SoftEdgeFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SoftEdge : Microsoft.Office.Interop.Word.SoftEdgeFormat" Usage="Microsoft.Office.Interop.Word.InlineShape.SoftEdge" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1121,7 +1159,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.SoftEdgeFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="7979c-181">Retorna a formatação da borda flexível de uma forma.</span><span class="sxs-lookup"><span data-stu-id="7979c-181">Returns the soft edge formatting for a shape.</span></span> <span data-ttu-id="7979c-182">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="7979c-182">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="a6621-181">Retorna a formatação da borda flexível de uma forma.</span><span class="sxs-lookup"><span data-stu-id="a6621-181">Returns the soft edge formatting for a shape.</span></span> <span data-ttu-id="a6621-182">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="a6621-182">Read-only.</span></span></summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.SoftEdgeFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1132,6 +1170,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShape.TextEffect" />
       <MemberSignature Language="VB.NET" Value="Public Property TextEffect As TextEffectFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::TextEffectFormat ^ TextEffect { Microsoft::Office::Interop::Word::TextEffectFormat ^ get(); void set(Microsoft::Office::Interop::Word::TextEffectFormat ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TextEffect : Microsoft.Office.Interop.Word.TextEffectFormat with get, set" Usage="Microsoft.Office.Interop.Word.InlineShape.TextEffect" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1152,7 +1191,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.TextEffectFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="7979c-183">Retorna um <see cref="T:Microsoft.Office.Interop.Word.TextEffectFormat" /> objeto que contém propriedades de formatação de efeito de texto para a forma especificada.</span><span class="sxs-lookup"><span data-stu-id="7979c-183">Returns a <see cref="T:Microsoft.Office.Interop.Word.TextEffectFormat" /> object that contains text-effect formatting properties for the specified shape.</span></span></summary>
+        <summary><span data-ttu-id="a6621-183">Retorna um <see cref="T:Microsoft.Office.Interop.Word.TextEffectFormat" /> objeto que contém propriedades de formatação de efeito de texto para a forma especificada.</span><span class="sxs-lookup"><span data-stu-id="a6621-183">Returns a <see cref="T:Microsoft.Office.Interop.Word.TextEffectFormat" /> object that contains text-effect formatting properties for the specified shape.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1163,6 +1202,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShape.Title" />
       <MemberSignature Language="VB.NET" Value="Public Property Title As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Title { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Title : string with get, set" Usage="Microsoft.Office.Interop.Word.InlineShape.Title" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1183,9 +1223,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="7979c-184">Obtém ou define um valor que contém um título para a forma embutida especificada.</span><span class="sxs-lookup"><span data-stu-id="7979c-184">Gets or sets a value that contains a title for the specified inline shape.</span></span></summary>
-        <value><span data-ttu-id="7979c-185">Um título para a forma embutida especificada.</span><span class="sxs-lookup"><span data-stu-id="7979c-185">A title for the specified inline shape.</span></span></value>
-        <remarks><para><span data-ttu-id="7979c-186">Leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="7979c-186">Read/write.</span></span> <span data-ttu-id="7979c-187">Use essa propriedade para fornecer um título de texto alternativo para uma forma embutida.</span><span class="sxs-lookup"><span data-stu-id="7979c-187">Use this property to provide an alternative text title for an inline shape.</span></span> <span data-ttu-id="7979c-188">Essa propriedade adiciona o texto do título à caixa de texto título no painel de texto alt da caixa de diálogo Formatar forma no Microsoft Word 2010.</span><span class="sxs-lookup"><span data-stu-id="7979c-188">This property adds title text to the Title text box on the Alt Text pane of the Format Shape dialog in Microsoft Word 2010.</span></span></para>
+        <summary><span data-ttu-id="a6621-184">Obtém ou define um valor que contém um título para a forma embutida especificada.</span><span class="sxs-lookup"><span data-stu-id="a6621-184">Gets or sets a value that contains a title for the specified inline shape.</span></span></summary>
+        <value><span data-ttu-id="a6621-185">Um título para a forma embutida especificada.</span><span class="sxs-lookup"><span data-stu-id="a6621-185">A title for the specified inline shape.</span></span></value>
+        <remarks><para><span data-ttu-id="a6621-186">Leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="a6621-186">Read/write.</span></span> <span data-ttu-id="a6621-187">Use essa propriedade para fornecer um título de texto alternativo para uma forma embutida.</span><span class="sxs-lookup"><span data-stu-id="a6621-187">Use this property to provide an alternative text title for an inline shape.</span></span> <span data-ttu-id="a6621-188">Essa propriedade adiciona o texto do título à caixa de texto título no painel de texto alt da caixa de diálogo Formatar forma no Microsoft Word 2010.</span><span class="sxs-lookup"><span data-stu-id="a6621-188">This property adds title text to the Title text box on the Alt Text pane of the Format Shape dialog in Microsoft Word 2010.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1195,6 +1235,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShape.Type" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As WdInlineShapeType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdInlineShapeType Type { Microsoft::Office::Interop::Word::WdInlineShapeType get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Microsoft.Office.Interop.Word.WdInlineShapeType" Usage="Microsoft.Office.Interop.Word.InlineShape.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1212,64 +1253,64 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdInlineShapeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="7979c-189">Retorna o tipo de forma embutida.</span><span class="sxs-lookup"><span data-stu-id="7979c-189">Returns the type of inline shape.</span></span></summary>
+        <summary><span data-ttu-id="a6621-189">Retorna o tipo de forma embutida.</span><span class="sxs-lookup"><span data-stu-id="a6621-189">Returns the type of inline shape.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="7979c-190">
-            <see cref="T:Microsoft.Office.Interop.Word.WdInlineShapeType" />pode ser uma das seguintes constantes:</span><span class="sxs-lookup"><span data-stu-id="7979c-190">
+        <remarks><para><span data-ttu-id="a6621-190">
+            <see cref="T:Microsoft.Office.Interop.Word.WdInlineShapeType" />pode ser uma das seguintes constantes:</span><span class="sxs-lookup"><span data-stu-id="a6621-190">
             <see cref="T:Microsoft.Office.Interop.Word.WdInlineShapeType" /> can be one of the following constants.</span></span> </para>
-          <para><span data-ttu-id="7979c-191">
+          <para><span data-ttu-id="a6621-191">
             <b>wdInlineShapeEmbeddedOLEObject</b>
-          </span><span class="sxs-lookup"><span data-stu-id="7979c-191">
+          </span><span class="sxs-lookup"><span data-stu-id="a6621-191">
             <b>wdInlineShapeEmbeddedOLEObject</b>
           </span></span></para>
-          <para><span data-ttu-id="7979c-192">
+          <para><span data-ttu-id="a6621-192">
             <b>wdInlineShapeHorizontalLine</b>
-          </span><span class="sxs-lookup"><span data-stu-id="7979c-192">
+          </span><span class="sxs-lookup"><span data-stu-id="a6621-192">
             <b>wdInlineShapeHorizontalLine</b>
           </span></span></para>
-          <para><span data-ttu-id="7979c-193">
+          <para><span data-ttu-id="a6621-193">
             <b>wdInlineShapeLinkedOLEObject</b>
-          </span><span class="sxs-lookup"><span data-stu-id="7979c-193">
+          </span><span class="sxs-lookup"><span data-stu-id="a6621-193">
             <b>wdInlineShapeLinkedOLEObject</b>
           </span></span></para>
-          <para><span data-ttu-id="7979c-194">
+          <para><span data-ttu-id="a6621-194">
             <b>wdInlineShapeLinkedPicture</b>
-          </span><span class="sxs-lookup"><span data-stu-id="7979c-194">
+          </span><span class="sxs-lookup"><span data-stu-id="a6621-194">
             <b>wdInlineShapeLinkedPicture</b>
           </span></span></para>
-          <para><span data-ttu-id="7979c-195">
+          <para><span data-ttu-id="a6621-195">
             <b>wdInlineShapeLinkedPictureHorizontalLine</b>
-          </span><span class="sxs-lookup"><span data-stu-id="7979c-195">
+          </span><span class="sxs-lookup"><span data-stu-id="a6621-195">
             <b>wdInlineShapeLinkedPictureHorizontalLine</b>
           </span></span></para>
-          <para><span data-ttu-id="7979c-196">
+          <para><span data-ttu-id="a6621-196">
             <b>wdInlineShapeOLEControlObject</b>
-          </span><span class="sxs-lookup"><span data-stu-id="7979c-196">
+          </span><span class="sxs-lookup"><span data-stu-id="a6621-196">
             <b>wdInlineShapeOLEControlObject</b>
           </span></span></para>
-          <para><span data-ttu-id="7979c-197">
+          <para><span data-ttu-id="a6621-197">
             <b>wdInlineShapeOWSAnchor</b>
-          </span><span class="sxs-lookup"><span data-stu-id="7979c-197">
+          </span><span class="sxs-lookup"><span data-stu-id="a6621-197">
             <b>wdInlineShapeOWSAnchor</b>
           </span></span></para>
-          <para><span data-ttu-id="7979c-198">
+          <para><span data-ttu-id="a6621-198">
             <b>wdInlineShapePicture</b>
-          </span><span class="sxs-lookup"><span data-stu-id="7979c-198">
+          </span><span class="sxs-lookup"><span data-stu-id="a6621-198">
             <b>wdInlineShapePicture</b>
           </span></span></para>
-          <para><span data-ttu-id="7979c-199">
+          <para><span data-ttu-id="a6621-199">
             <b>wdInlineShapePictureBullet</b>
-          </span><span class="sxs-lookup"><span data-stu-id="7979c-199">
+          </span><span class="sxs-lookup"><span data-stu-id="a6621-199">
             <b>wdInlineShapePictureBullet</b>
           </span></span></para>
-          <para><span data-ttu-id="7979c-200">
+          <para><span data-ttu-id="a6621-200">
             <b>wdInlineShapePictureHorizontalLine</b>
-          </span><span class="sxs-lookup"><span data-stu-id="7979c-200">
+          </span><span class="sxs-lookup"><span data-stu-id="a6621-200">
             <b>wdInlineShapePictureHorizontalLine</b>
           </span></span></para>
-          <para><span data-ttu-id="7979c-201">
+          <para><span data-ttu-id="a6621-201">
             <b>wdInlineShapeScriptAnchor</b>
-          </span><span class="sxs-lookup"><span data-stu-id="7979c-201">
+          </span><span class="sxs-lookup"><span data-stu-id="a6621-201">
             <b>wdInlineShapeScriptAnchor</b>
           </span></span></para>
           <para> </para></remarks>
@@ -1281,6 +1322,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShape.Width" />
       <MemberSignature Language="VB.NET" Value="Public Property Width As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Width { float get(); void set(float value); };" />
+      <MemberSignature Language="F#" Value="member this.Width : single with get, set" Usage="Microsoft.Office.Interop.Word.InlineShape.Width" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1301,7 +1343,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="7979c-202">Retorna ou define a largura do objeto especificado, em pontos.</span><span class="sxs-lookup"><span data-stu-id="7979c-202">Returns or sets the width of the specified object, in points.</span></span></summary>
+        <summary><span data-ttu-id="a6621-202">Retorna ou define a largura do objeto especificado, em pontos.</span><span class="sxs-lookup"><span data-stu-id="a6621-202">Returns or sets the width of the specified object, in points.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

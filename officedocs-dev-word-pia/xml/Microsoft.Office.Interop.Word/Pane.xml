@@ -1,9 +1,10 @@
 <Type Name="Pane" FullName="Microsoft.Office.Interop.Word.Pane">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="2c6d2b532972458c15ddcaf3f76f72a0ddd27d36" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147736" /></Metadata><TypeSignature Language="C#" Value="public interface Pane" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="4f308afaf8401d346ac4ffdb21a90f617e1a530a" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43924750" /></Metadata><TypeSignature Language="C#" Value="public interface Pane" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Pane" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Pane" />
   <TypeSignature Language="VB.NET" Value="Public Interface Pane" />
   <TypeSignature Language="C++ CLI" Value="public interface class Pane" />
+  <TypeSignature Language="F#" Value="type Pane = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -18,8 +19,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary><span data-ttu-id="b1ae7-101">Representa um painel de janela.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-101">Represents a window pane.</span></span> <span data-ttu-id="b1ae7-102">Objeto <b>Pane</b> é um membro da coleção <b>Panes</b>.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-102">The <b>Pane</b> object is a member of the <b>Panes</b> collection.</span></span> <span data-ttu-id="b1ae7-103">A <see cref="Panes#SameCHM" /> coleção inclui todos os painéis de janela de uma única janela.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-103">The <see cref="Panes#SameCHM" /> collection includes all the window panes for a single window.</span></span></summary>
-    <remarks><para><span data-ttu-id="b1ae7-104">Use <b>panes</b>(<paramref name="Index" />), em <paramref name="Index" /> que é o número de índice, para retornar um único objeto <b>pane</b> .</span><span class="sxs-lookup"><span data-stu-id="b1ae7-104">Use <b>Panes</b>(<paramref name="Index" />), where <paramref name="Index" /> is the index number, to return a single <b>Pane</b> object.</span></span> <span data-ttu-id="b1ae7-105">O exemplo a seguir fecha o painel ativo.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-105">The following example closes the active pane.</span></span></para>
+    <summary><span data-ttu-id="c1da3-101">Representa um painel de janela.</span><span class="sxs-lookup"><span data-stu-id="c1da3-101">Represents a window pane.</span></span> <span data-ttu-id="c1da3-102">Objeto <b>Pane</b> é um membro da coleção <b>Panes</b>.</span><span class="sxs-lookup"><span data-stu-id="c1da3-102">The <b>Pane</b> object is a member of the <b>Panes</b> collection.</span></span> <span data-ttu-id="c1da3-103">A <see cref="Panes#SameCHM" /> coleção inclui todos os painéis de janela de uma única janela.</span><span class="sxs-lookup"><span data-stu-id="c1da3-103">The <see cref="Panes#SameCHM" /> collection includes all the window panes for a single window.</span></span></summary>
+    <remarks><para><span data-ttu-id="c1da3-104">Use <b>panes</b>( <paramref name="Index" /> ), em que <paramref name="Index" /> é o número de índice, para retornar um único objeto <b>pane</b> .</span><span class="sxs-lookup"><span data-stu-id="c1da3-104">Use <b>Panes</b>(<paramref name="Index" />), where <paramref name="Index" /> is the index number, to return a single <b>Pane</b> object.</span></span> <span data-ttu-id="c1da3-105">O exemplo a seguir fecha o painel ativo.</span><span class="sxs-lookup"><span data-stu-id="c1da3-105">The following example closes the active pane.</span></span></para>
       <code>&lt;span class="label"&gt;If ActiveDocument.ActiveWindow.Panes.Count &amp;gt;= 2 Then _ 
 
 
@@ -277,12 +278,12 @@
 
 
     ActiveDocument.ActiveWindow.ActivePane.Close&lt;/span&gt;</code>
-      <para><span data-ttu-id="b1ae7-p103">Use o método <b>Add</b> ou a propriedade <b>Split</b> para adicionar um painel de janela. O exemplo a seguir divide a janela ativa em 20% do tamanho atual da janela.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-p103">Use the <b>Add</b> method or the <b>Split</b> property to add a window pane. The following example splits the active window at 20 percent of the current window size.</span></span></para>
+      <para><span data-ttu-id="c1da3-p103">Use o método <b>Add</b> ou a propriedade <b>Split</b> para adicionar um painel de janela. O exemplo a seguir divide a janela ativa em 20% do tamanho atual da janela.</span><span class="sxs-lookup"><span data-stu-id="c1da3-p103">Use the <b>Add</b> method or the <b>Split</b> property to add a window pane. The following example splits the active window at 20 percent of the current window size.</span></span></para>
       <code>&lt;span class="label"&gt;ActiveDocument.ActiveWindow.Panes.Add SplitVertical:=20&lt;/span&gt;</code>
-      <para><span data-ttu-id="b1ae7-108">O exemplo a seguir divide a janela ativa ao meio.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-108">The following example splits the active window in half.</span></span></para>
+      <para><span data-ttu-id="c1da3-108">O exemplo a seguir divide a janela ativa ao meio.</span><span class="sxs-lookup"><span data-stu-id="c1da3-108">The following example splits the active window in half.</span></span></para>
       <code>&lt;span class="label"&gt;ActiveDocument.ActiveWindow.Split = True&lt;/span&gt;</code>
-      <para><span data-ttu-id="b1ae7-109">Você pode usar a propriedade <b>SplitSpecial</b> para mostrar comentários, notas de rodapé ou notas de fim em um painel separado.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-109">You can use the <b>SplitSpecial</b> property to show comments, footnotes, or endnotes in a separate pane.</span></span></para>
-      <para><span data-ttu-id="b1ae7-p104">Uma janela tem mais de um painel quando está dividida ou quando o modo de exibição é diferente de layout de impressão e são exibidas informações, como notas de rodapé ou comentários. O exemplo a seguir exibe o painel de comentários no modo de exibição normal e, em seguida, solicita que o usuário feche o painel.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-p104">A window has more than one pane if the window is split or the view is not print layout view and information such as footnotes or comments are displayed. The following example displays the comments pane in normal view and then prompts to close the pane.</span></span></para>
+      <para><span data-ttu-id="c1da3-109">Você pode usar a propriedade <b>SplitSpecial</b> para mostrar comentários, notas de rodapé ou notas de fim em um painel separado.</span><span class="sxs-lookup"><span data-stu-id="c1da3-109">You can use the <b>SplitSpecial</b> property to show comments, footnotes, or endnotes in a separate pane.</span></span></para>
+      <para><span data-ttu-id="c1da3-p104">Uma janela tem mais de um painel quando está dividida ou quando o modo de exibição é diferente de layout de impressão e são exibidas informações, como notas de rodapé ou comentários. O exemplo a seguir exibe o painel de comentários no modo de exibição normal e, em seguida, solicita que o usuário feche o painel.</span><span class="sxs-lookup"><span data-stu-id="c1da3-p104">A window has more than one pane if the window is split or the view is not print layout view and information such as footnotes or comments are displayed. The following example displays the comments pane in normal view and then prompts to close the pane.</span></span></para>
       <code>&lt;span class="label"&gt;ActiveDocument.ActiveWindow.View.Type = wdNormalView 
 
 
@@ -2085,6 +2086,7 @@ End If&lt;/span&gt;</code>
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Pane.Activate" />
       <MemberSignature Language="VB.NET" Value="Public Sub Activate ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Activate();" />
+      <MemberSignature Language="F#" Value="abstract member Activate : unit -&gt; unit" Usage="pane.Activate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2100,9 +2102,9 @@ End If&lt;/span&gt;</code>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary><span data-ttu-id="b1ae7-112">Ativa o painel especificado.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-112">Activates the specified pane.</span></span></summary>
+        <summary><span data-ttu-id="c1da3-112">Ativa o painel especificado.</span><span class="sxs-lookup"><span data-stu-id="c1da3-112">Activates the specified pane.</span></span></summary>
         <remarks>To be added.</remarks>
-        <example><para><span data-ttu-id="b1ae7-113">Este exemplo divide a janela ativa e ativa o primeiro painel.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-113">This example splits the active window and then activates the first pane.</span></span></para>
+        <example><para><span data-ttu-id="c1da3-113">Este exemplo divide a janela ativa e ativa o primeiro painel.</span><span class="sxs-lookup"><span data-stu-id="c1da3-113">This example splits the active window and then activates the first pane.</span></span></para>
           <code>&lt;span class="label"&gt;Sub SplitWindow() 
 
 
@@ -2882,6 +2884,7 @@ End If&lt;/span&gt;</code>
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Pane.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Pane.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2899,9 +2902,9 @@ End If&lt;/span&gt;</code>
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="b1ae7-114">Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-114">Returns an <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span></span></summary>
+        <summary><span data-ttu-id="c1da3-114">Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</span><span class="sxs-lookup"><span data-stu-id="c1da3-114">Returns an <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="b1ae7-115">As funções CreateObject e GetObject do Visual Basic lhe dão acesso a um objeto de automação OLE de um projeto Visual Basic for Applications.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-115">Visual Basic's CreateObject and GetObject functions give you access to an OLE Automation object from a Visual Basic for Applications project.</span></span></para>
+        <remarks><para><span data-ttu-id="c1da3-115">As funções CreateObject e GetObject do Visual Basic lhe dão acesso a um objeto de automação OLE de um projeto Visual Basic for Applications.</span><span class="sxs-lookup"><span data-stu-id="c1da3-115">Visual Basic's CreateObject and GetObject functions give you access to an OLE Automation object from a Visual Basic for Applications project.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2911,6 +2914,7 @@ End If&lt;/span&gt;</code>
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Pane.AutoScroll(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AutoScroll (Velocity As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AutoScroll(int Velocity);" />
+      <MemberSignature Language="F#" Value="abstract member AutoScroll : int -&gt; unit" Usage="pane.AutoScroll Velocity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2928,8 +2932,8 @@ End If&lt;/span&gt;</code>
         <Parameter Name="Velocity" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Velocity"><span data-ttu-id="b1ae7-116">A velocidade de rolagem.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-116">The speed for scrolling.</span></span></param>
-        <summary><span data-ttu-id="b1ae7-117">Rola automaticamente pelo painel especificado.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-117">Scrolls automatically through the specified pane.</span></span></summary>
+        <param name="Velocity"><span data-ttu-id="c1da3-116">A velocidade de rolagem.</span><span class="sxs-lookup"><span data-stu-id="c1da3-116">The speed for scrolling.</span></span></param>
+        <summary><span data-ttu-id="c1da3-117">Rola automaticamente pelo painel especificado.</span><span class="sxs-lookup"><span data-stu-id="c1da3-117">Scrolls automatically through the specified pane.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2939,6 +2943,7 @@ End If&lt;/span&gt;</code>
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Pane.BrowseToWindow" />
       <MemberSignature Language="VB.NET" Value="Public Property BrowseToWindow As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool BrowseToWindow { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.BrowseToWindow : bool with get, set" Usage="Microsoft.Office.Interop.Word.Pane.BrowseToWindow" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2965,7 +2970,7 @@ End If&lt;/span&gt;</code>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="b1ae7-118">Reservado para uso interno.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-118">Reserved for internal use.</span></span></summary>
+        <summary><span data-ttu-id="c1da3-118">Reservado para uso interno.</span><span class="sxs-lookup"><span data-stu-id="c1da3-118">Reserved for internal use.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2976,6 +2981,7 @@ End If&lt;/span&gt;</code>
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Pane.BrowseWidth" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BrowseWidth As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int BrowseWidth { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.BrowseWidth : int" Usage="Microsoft.Office.Interop.Word.Pane.BrowseWidth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2993,9 +2999,9 @@ End If&lt;/span&gt;</code>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="b1ae7-119">Retorna a largura (em pontos) da área na qual o texto quebre no painel especificado.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-119">Returns the width (in points) of the area in which text wraps in the specified pane.</span></span> <span data-ttu-id="b1ae7-120">Somente leitura <b>Long</b>.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-120">Read-only <b>Long</b>.</span></span></summary>
+        <summary><span data-ttu-id="c1da3-119">Retorna a largura (em pontos) da área na qual o texto quebre no painel especificado.</span><span class="sxs-lookup"><span data-stu-id="c1da3-119">Returns the width (in points) of the area in which text wraps in the specified pane.</span></span> <span data-ttu-id="c1da3-120">Somente leitura <b>Long</b>.</span><span class="sxs-lookup"><span data-stu-id="c1da3-120">Read-only <b>Long</b>.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="b1ae7-121">Essa propriedade funciona apenas quando você está no modo de exibição de layout da Web.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-121">This property works only when you are in Web layout view.</span></span></para>
+        <remarks><para><span data-ttu-id="c1da3-121">Essa propriedade funciona apenas quando você está no modo de exibição de layout da Web.</span><span class="sxs-lookup"><span data-stu-id="c1da3-121">This property works only when you are in Web layout view.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -3005,6 +3011,7 @@ End If&lt;/span&gt;</code>
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Pane.Close" />
       <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Close();" />
+      <MemberSignature Language="F#" Value="abstract member Close : unit -&gt; unit" Usage="pane.Close " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -3020,9 +3027,9 @@ End If&lt;/span&gt;</code>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary><span data-ttu-id="b1ae7-122">Fecha a fonte de dados, painel ou tarefas especificadas da mala direta.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-122">Closes the specified Mail Merge data source, pane, or task.</span></span></summary>
+        <summary><span data-ttu-id="c1da3-122">Fecha a fonte de dados, painel ou tarefas especificadas da mala direta.</span><span class="sxs-lookup"><span data-stu-id="c1da3-122">Closes the specified Mail Merge data source, pane, or task.</span></span></summary>
         <remarks>To be added.</remarks>
-        <example><para><span data-ttu-id="b1ae7-123">Este exemplo fecha o painel ativo se a janela ativa estiver dividida.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-123">This example closes the active pane if the active window is split.</span></span></para>
+        <example><para><span data-ttu-id="c1da3-123">Este exemplo fecha o painel ativo se a janela ativa estiver dividida.</span><span class="sxs-lookup"><span data-stu-id="c1da3-123">This example closes the active pane if the active window is split.</span></span></para>
           <code>&lt;span class="label"&gt;If ActiveDocument.ActiveWindow.Panes.Count &amp;gt;= 2 Then _ 
 
 
@@ -3289,6 +3296,7 @@ End If&lt;/span&gt;</code>
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Pane.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Pane.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -3306,9 +3314,9 @@ End If&lt;/span&gt;</code>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="b1ae7-124">Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-124">Returns a 32-bit integer that indicates the application in which the specified object was created.</span></span> <span data-ttu-id="b1ae7-125"><b>Long</b> somente leitura.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-125">Read-only <b>Long</b>.</span></span></summary>
+        <summary><span data-ttu-id="c1da3-124">Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</span><span class="sxs-lookup"><span data-stu-id="c1da3-124">Returns a 32-bit integer that indicates the application in which the specified object was created.</span></span> <span data-ttu-id="c1da3-125"><b>Long</b> somente leitura.</span><span class="sxs-lookup"><span data-stu-id="c1da3-125">Read-only <b>Long</b>.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="b1ae7-126">Se o objeto foi criado no Microsoft Word, a propriedade <b>Creator</b> retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD".</span><span class="sxs-lookup"><span data-stu-id="b1ae7-126">If the object was created in Microsoft Word, the <b>Creator</b> property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span>  <span data-ttu-id="b1ae7-127">Essa propriedade foi projetada inicialmente para ser usada no Macintosh, no qual cada aplicativo tem um código de criador com quatro caracteres.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-127">This property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="b1ae7-128">Por exemplo, o Microsoft Word tem o código de criador MSWD.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-128">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="b1ae7-129">Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-129">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
+        <remarks><para><span data-ttu-id="c1da3-126">Se o objeto foi criado no Microsoft Word, a propriedade <b>Creator</b> retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD".</span><span class="sxs-lookup"><span data-stu-id="c1da3-126">If the object was created in Microsoft Word, the <b>Creator</b> property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span>  <span data-ttu-id="c1da3-127">Essa propriedade foi projetada inicialmente para ser usada no Macintosh, no qual cada aplicativo tem um código de criador com quatro caracteres.</span><span class="sxs-lookup"><span data-stu-id="c1da3-127">This property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="c1da3-128">Por exemplo, o Microsoft Word tem o código de criador MSWD.</span><span class="sxs-lookup"><span data-stu-id="c1da3-128">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="c1da3-129">Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</span><span class="sxs-lookup"><span data-stu-id="c1da3-129">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -3318,6 +3326,7 @@ End If&lt;/span&gt;</code>
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Pane.DisplayRulers" />
       <MemberSignature Language="VB.NET" Value="Public Property DisplayRulers As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DisplayRulers { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.DisplayRulers : bool with get, set" Usage="Microsoft.Office.Interop.Word.Pane.DisplayRulers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -3338,11 +3347,11 @@ End If&lt;/span&gt;</code>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="b1ae7-130"><b>True</b> se réguas são exibidas para o painel especificado.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-130"><b>True</b> if rulers are displayed for the specified pane.</span></span> <span data-ttu-id="b1ae7-131"><b>Boolean</b> de leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-131">Read/write <b>Boolean</b>.</span></span></summary>
+        <summary><span data-ttu-id="c1da3-130"><b>True</b> se réguas são exibidas para o painel especificado.</span><span class="sxs-lookup"><span data-stu-id="c1da3-130"><b>True</b> if rulers are displayed for the specified pane.</span></span> <span data-ttu-id="c1da3-131"><b>Boolean</b> de leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="c1da3-131">Read/write <b>Boolean</b>.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="b1ae7-132">A propriedade <b>DisplayRulers</b> é equivalente ao comando régua no menu Exibir.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-132">The <b>DisplayRulers</b> property is equivalent to the Ruler command on the View menu.</span></span> <span data-ttu-id="b1ae7-133">Se <b>DisplayRulers</b> for <b>Falso</b>, as réguas horizontais e vertical não serão exibidas, independentemente do estado da propriedade <b>DisplayVerticalRuler</b>.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-133">If <b>DisplayRulers</b> is <b>False</b>, the horizontal and vertical rulers won't be displayed, regardless of the state of the <b>DisplayVerticalRuler</b> property.</span></span></para>
+        <remarks><para><span data-ttu-id="c1da3-132">A propriedade <b>DisplayRulers</b> é equivalente ao comando régua no menu Exibir.</span><span class="sxs-lookup"><span data-stu-id="c1da3-132">The <b>DisplayRulers</b> property is equivalent to the Ruler command on the View menu.</span></span> <span data-ttu-id="c1da3-133">Se <b>DisplayRulers</b> for <b>Falso</b>, as réguas horizontais e vertical não serão exibidas, independentemente do estado da propriedade <b>DisplayVerticalRuler</b>.</span><span class="sxs-lookup"><span data-stu-id="c1da3-133">If <b>DisplayRulers</b> is <b>False</b>, the horizontal and vertical rulers won't be displayed, regardless of the state of the <b>DisplayVerticalRuler</b> property.</span></span></para>
           <para> </para></remarks>
-        <example><para><span data-ttu-id="b1ae7-134">Este exemplo alterna o painel ativo para o modo de layout de impressão e exibe as réguas horizontal e vertical.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-134">This example switches the active pane to print layout view and displays the horizontal and vertical rulers.</span></span></para>
+        <example><para><span data-ttu-id="c1da3-134">Este exemplo alterna o painel ativo para o modo de layout de impressão e exibe as réguas horizontal e vertical.</span><span class="sxs-lookup"><span data-stu-id="c1da3-134">This example switches the active pane to print layout view and displays the horizontal and vertical rulers.</span></span></para>
           <code>&lt;span class="label"&gt;With ActiveDocument.ActiveWindow.ActivePane 
 
 
@@ -3866,6 +3875,7 @@ End If&lt;/span&gt;</code>
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Pane.DisplayVerticalRuler" />
       <MemberSignature Language="VB.NET" Value="Public Property DisplayVerticalRuler As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DisplayVerticalRuler { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.DisplayVerticalRuler : bool with get, set" Usage="Microsoft.Office.Interop.Word.Pane.DisplayVerticalRuler" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -3886,11 +3896,11 @@ End If&lt;/span&gt;</code>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="b1ae7-135"><b>True</b> se uma régua vertical é exibida para o painel especificado.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-135"><b>True</b> if a vertical ruler is displayed for the specified pane.</span></span> <span data-ttu-id="b1ae7-136">Leitura/gravação <b>booleano</b>.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-136">Read/write <b>Boolean</b>.</span></span></summary>
+        <summary><span data-ttu-id="c1da3-135"><b>True</b> se uma régua vertical é exibida para o painel especificado.</span><span class="sxs-lookup"><span data-stu-id="c1da3-135"><b>True</b> if a vertical ruler is displayed for the specified pane.</span></span> <span data-ttu-id="c1da3-136">Leitura/gravação <b>booleano</b>.</span><span class="sxs-lookup"><span data-stu-id="c1da3-136">Read/write <b>Boolean</b>.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="b1ae7-137">Uma régua vertical só aparece no modo de exibição de layout de impressão, e somente se a propriedade <b>DisplayRulers</b> estiver definida como <b>True</b>.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-137">A vertical ruler appears only in print layout view, and only if the <b>DisplayRulers</b> property is set to <b>True</b>.</span></span></para>
+        <remarks><para><span data-ttu-id="c1da3-137">Uma régua vertical só aparece no modo de exibição de layout de impressão, e somente se a propriedade <b>DisplayRulers</b> estiver definida como <b>True</b>.</span><span class="sxs-lookup"><span data-stu-id="c1da3-137">A vertical ruler appears only in print layout view, and only if the <b>DisplayRulers</b> property is set to <b>True</b>.</span></span></para>
           <para> </para></remarks>
-        <example><para><span data-ttu-id="b1ae7-138">Este exemplo alterna o painel ativo para o modo de layout de impressão e exibe as réguas horizontal e vertical.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-138">This example switches the active pane to print layout view and displays the horizontal and vertical rulers.</span></span></para>
+        <example><para><span data-ttu-id="c1da3-138">Este exemplo alterna o painel ativo para o modo de layout de impressão e exibe as réguas horizontal e vertical.</span><span class="sxs-lookup"><span data-stu-id="c1da3-138">This example switches the active pane to print layout view and displays the horizontal and vertical rulers.</span></span></para>
           <code>&lt;span class="label"&gt;With ActiveDocument.ActiveWindow.ActivePane 
 
 
@@ -4670,6 +4680,7 @@ End If&lt;/span&gt;</code>
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Pane.Document" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Document As Document" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Document ^ Document { Microsoft::Office::Interop::Word::Document ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Document : Microsoft.Office.Interop.Word.Document" Usage="Microsoft.Office.Interop.Word.Pane.Document" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -4687,7 +4698,7 @@ End If&lt;/span&gt;</code>
         <ReturnType>Microsoft.Office.Interop.Word.Document</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="b1ae7-139">Retorna um <see cref="T:Microsoft.Office.Interop.Word.Document" /> objeto associado ao painel especificado.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-139">Returns a <see cref="T:Microsoft.Office.Interop.Word.Document" /> object associated with the specified pane.</span></span> <span data-ttu-id="b1ae7-140">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-140">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="c1da3-139">Retorna um <see cref="T:Microsoft.Office.Interop.Word.Document" /> objeto associado ao painel especificado.</span><span class="sxs-lookup"><span data-stu-id="c1da3-139">Returns a <see cref="T:Microsoft.Office.Interop.Word.Document" /> object associated with the specified pane.</span></span> <span data-ttu-id="c1da3-140">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="c1da3-140">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4698,6 +4709,7 @@ End If&lt;/span&gt;</code>
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Pane.Frameset" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Frameset As Frameset" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Frameset ^ Frameset { Microsoft::Office::Interop::Word::Frameset ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Frameset : Microsoft.Office.Interop.Word.Frameset" Usage="Microsoft.Office.Interop.Word.Pane.Frameset" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -4715,12 +4727,12 @@ End If&lt;/span&gt;</code>
         <ReturnType>Microsoft.Office.Interop.Word.Frameset</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="b1ae7-141">Retorna um <see cref="T:Microsoft.Office.Interop.Word.Frameset" /> objeto que representa uma página de quadros inteira ou um único quadro em uma página de quadros.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-141">Returns a <see cref="T:Microsoft.Office.Interop.Word.Frameset" /> object that represents an entire frames page or a single frame on a frames page.</span></span> <span data-ttu-id="b1ae7-142">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-142">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="c1da3-141">Retorna um <see cref="T:Microsoft.Office.Interop.Word.Frameset" /> objeto que representa uma página de quadros inteira ou um único quadro em uma página de quadros.</span><span class="sxs-lookup"><span data-stu-id="c1da3-141">Returns a <see cref="T:Microsoft.Office.Interop.Word.Frameset" /> object that represents an entire frames page or a single frame on a frames page.</span></span> <span data-ttu-id="c1da3-142">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="c1da3-142">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="b1ae7-143">Para obter mais informações sobre como criar páginas de <see cref="Creatingframespages#SameCHM" />quadros, consulte.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-143">For more information on creating frames pages, see <see cref="Creatingframespages#SameCHM" />.</span></span></para>
+        <remarks><para><span data-ttu-id="c1da3-143">Para obter mais informações sobre como criar páginas de quadros, consulte <see cref="Creatingframespages#SameCHM" /> .</span><span class="sxs-lookup"><span data-stu-id="c1da3-143">For more information on creating frames pages, see <see cref="Creatingframespages#SameCHM" />.</span></span></para>
           <para> </para>
           <para> </para></remarks>
-        <example><para><span data-ttu-id="b1ae7-144">Este exemplo adiciona um novo quadro imediatamente à direita do quadro especificado.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-144">This example adds a new frame to the immediate right of the specified frame.</span></span></para>
+        <example><para><span data-ttu-id="c1da3-144">Este exemplo adiciona um novo quadro imediatamente à direita do quadro especificado.</span><span class="sxs-lookup"><span data-stu-id="c1da3-144">This example adds a new frame to the immediate right of the specified frame.</span></span></para>
           <code>&lt;span class="label"&gt;ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
 &lt;span class="label"&gt;Frameset&lt;/span&gt;
 &lt;span class="label"&gt;_    .AddNewFrame wdFramesetNewRight&lt;/span&gt;</code></example>
@@ -4732,6 +4744,7 @@ End If&lt;/span&gt;</code>
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Pane.HorizontalPercentScrolled" />
       <MemberSignature Language="VB.NET" Value="Public Property HorizontalPercentScrolled As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int HorizontalPercentScrolled { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.HorizontalPercentScrolled : int with get, set" Usage="Microsoft.Office.Interop.Word.Pane.HorizontalPercentScrolled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -4752,10 +4765,10 @@ End If&lt;/span&gt;</code>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="b1ae7-145">Retorna ou define a posição de rolagem horizontal como um percentual da largura do documento.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-145">Returns or sets the horizontal scroll position as a percentage of the document width.</span></span> <span data-ttu-id="b1ae7-146">Leitura/gravação <b>longa</b>.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-146">Read/write <b>Long</b>.</span></span></summary>
+        <summary><span data-ttu-id="c1da3-145">Retorna ou define a posição de rolagem horizontal como um percentual da largura do documento.</span><span class="sxs-lookup"><span data-stu-id="c1da3-145">Returns or sets the horizontal scroll position as a percentage of the document width.</span></span> <span data-ttu-id="c1da3-146">Leitura/gravação <b>longa</b>.</span><span class="sxs-lookup"><span data-stu-id="c1da3-146">Read/write <b>Long</b>.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <example><para><span data-ttu-id="b1ae7-147">Este exemplo rola horizontalmente o painel ativo da janela de Document1 totalmente para a esquerda.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-147">This example horizontally scrolls the active pane of the window for Document1 all the way to the left.</span></span></para>
+        <example><para><span data-ttu-id="c1da3-147">Este exemplo rola horizontalmente o painel ativo da janela de Document1 totalmente para a esquerda.</span><span class="sxs-lookup"><span data-stu-id="c1da3-147">This example horizontally scrolls the active pane of the window for Document1 all the way to the left.</span></span></para>
           <code>&lt;span class="label"&gt;With Windows("Document1") 
 
 
@@ -5279,6 +5292,7 @@ End If&lt;/span&gt;</code>
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Pane.Index" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Index As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Index : int" Usage="Microsoft.Office.Interop.Word.Pane.Index" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -5296,7 +5310,7 @@ End If&lt;/span&gt;</code>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="b1ae7-148">Retorna um <b>Long</b> que representa a posição de um item em uma coleção.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-148">Returns a <b>Long</b> that represents the position of an item in a collection.</span></span> <span data-ttu-id="b1ae7-149">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-149">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="c1da3-148">Retorna um <b>Long</b> que representa a posição de um item em uma coleção.</span><span class="sxs-lookup"><span data-stu-id="c1da3-148">Returns a <b>Long</b> that represents the position of an item in a collection.</span></span> <span data-ttu-id="c1da3-149">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="c1da3-149">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5306,6 +5320,7 @@ End If&lt;/span&gt;</code>
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void LargeScroll([in]object&amp; Down, [in]object&amp; Up, [in]object&amp; ToRight, [in]object&amp; ToLeft) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Pane.LargeScroll(System.Object@,System.Object@,System.Object@,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub LargeScroll (Optional ByRef Down As Object, Optional ByRef Up As Object, Optional ByRef ToRight As Object, Optional ByRef ToLeft As Object)" />
+      <MemberSignature Language="F#" Value="abstract member LargeScroll : obj * obj * obj * obj -&gt; unit" Usage="pane.LargeScroll (Down, Up, ToRight, ToLeft)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -5320,18 +5335,18 @@ End If&lt;/span&gt;</code>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Down" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="Up" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="ToRight" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="ToLeft" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Down" Type="System.Object" RefType="ref" />
+        <Parameter Name="Up" Type="System.Object" RefType="ref" />
+        <Parameter Name="ToRight" Type="System.Object" RefType="ref" />
+        <Parameter Name="ToLeft" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Down"><span data-ttu-id="b1ae7-150">O número de telas pelas quais rolar a janela para baixo.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-150">The number of screens to scroll the window down.</span></span></param>
-        <param name="Up"><span data-ttu-id="b1ae7-151">O número de telas pelas quais rolar a janela para cima.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-151">The number of screens to scroll the window up.</span></span></param>
-        <param name="ToRight"><span data-ttu-id="b1ae7-152">O número de telas pelas quais rolar a janela para a direita.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-152">The number of screens to scroll the window to the right.</span></span></param>
-        <param name="ToLeft"><span data-ttu-id="b1ae7-153">O número de telas pelas quais rolar a janela para a esquerda.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-153">The number of screens to scroll the window to the left.</span></span></param>
-        <summary><span data-ttu-id="b1ae7-154">Rola uma janela ou painel pelo número especificado de telas.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-154">Scrolls a window or pane by the specified number of screens.</span></span></summary>
-        <remarks><para><span data-ttu-id="b1ae7-155">Esse método é equivalente a clicar imediatamente antes ou depois das caixas de rolagem nas barras de rolagem horizontal e vertical.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-155">This method is equivalent to clicking just before or just after the scroll boxes on the horizontal and vertical scroll bars.</span></span></para>
+        <param name="Down"><span data-ttu-id="c1da3-150">O número de telas pelas quais rolar a janela para baixo.</span><span class="sxs-lookup"><span data-stu-id="c1da3-150">The number of screens to scroll the window down.</span></span></param>
+        <param name="Up"><span data-ttu-id="c1da3-151">O número de telas pelas quais rolar a janela para cima.</span><span class="sxs-lookup"><span data-stu-id="c1da3-151">The number of screens to scroll the window up.</span></span></param>
+        <param name="ToRight"><span data-ttu-id="c1da3-152">O número de telas pelas quais rolar a janela para a direita.</span><span class="sxs-lookup"><span data-stu-id="c1da3-152">The number of screens to scroll the window to the right.</span></span></param>
+        <param name="ToLeft"><span data-ttu-id="c1da3-153">O número de telas pelas quais rolar a janela para a esquerda.</span><span class="sxs-lookup"><span data-stu-id="c1da3-153">The number of screens to scroll the window to the left.</span></span></param>
+        <summary><span data-ttu-id="c1da3-154">Rola uma janela ou painel pelo número especificado de telas.</span><span class="sxs-lookup"><span data-stu-id="c1da3-154">Scrolls a window or pane by the specified number of screens.</span></span></summary>
+        <remarks><para><span data-ttu-id="c1da3-155">Esse método é equivalente a clicar imediatamente antes ou depois das caixas de rolagem nas barras de rolagem horizontal e vertical.</span><span class="sxs-lookup"><span data-stu-id="c1da3-155">This method is equivalent to clicking just before or just after the scroll boxes on the horizontal and vertical scroll bars.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -5341,6 +5356,7 @@ End If&lt;/span&gt;</code>
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Pane.MinimumFontSize" />
       <MemberSignature Language="VB.NET" Value="Public Property MinimumFontSize As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MinimumFontSize { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MinimumFontSize : int with get, set" Usage="Microsoft.Office.Interop.Word.Pane.MinimumFontSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -5361,11 +5377,11 @@ End If&lt;/span&gt;</code>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="b1ae7-156">Retorna ou define o tamanho de fonte mínimo (em pontos) exibido para o painel especificado.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-156">Returns or sets the minimum font size (in points) displayed for the specified pane.</span></span> <span data-ttu-id="b1ae7-157"><b>Long</b> de leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-157">Read/write <b>Long</b>.</span></span></summary>
+        <summary><span data-ttu-id="c1da3-156">Retorna ou define o tamanho de fonte mínimo (em pontos) exibido para o painel especificado.</span><span class="sxs-lookup"><span data-stu-id="c1da3-156">Returns or sets the minimum font size (in points) displayed for the specified pane.</span></span> <span data-ttu-id="c1da3-157"><b>Long</b> de leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="c1da3-157">Read/write <b>Long</b>.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="b1ae7-158">Essa propriedade afeta apenas o texto mostrado no modo de exibição de layout da Web.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-158">This property only affects the text as shown in Web layout view.</span></span> <span data-ttu-id="b1ae7-159">Os tamanhos em pontos exibidos na barra de ferramentas Formatação e usados para impressão não são alterados.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-159">The point sizes that are displayed on the Formatting toolbar and used for printing aren't changed.</span></span></para>
+        <remarks><para><span data-ttu-id="c1da3-158">Essa propriedade afeta apenas o texto mostrado no modo de exibição de layout da Web.</span><span class="sxs-lookup"><span data-stu-id="c1da3-158">This property only affects the text as shown in Web layout view.</span></span> <span data-ttu-id="c1da3-159">Os tamanhos em pontos exibidos na barra de ferramentas Formatação e usados para impressão não são alterados.</span><span class="sxs-lookup"><span data-stu-id="c1da3-159">The point sizes that are displayed on the Formatting toolbar and used for printing aren't changed.</span></span></para>
           <para> </para></remarks>
-        <example><para><span data-ttu-id="b1ae7-160">Este exemplo define a janela ativa no modo online e, em seguida, define como 12 pontos o tamanho de fonte mínimo para o painel ativo.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-160">This example sets the active window to online view and then sets the minimum font size for the active pane to 12 points.</span></span></para>
+        <example><para><span data-ttu-id="c1da3-160">Este exemplo define a janela ativa no modo online e, em seguida, define como 12 pontos o tamanho de fonte mínimo para o painel ativo.</span><span class="sxs-lookup"><span data-stu-id="c1da3-160">This example sets the active window to online view and then sets the minimum font size for the active pane to 12 points.</span></span></para>
           <code>&lt;span class="label"&gt;With ActiveDocument.ActiveWindow 
 
 
@@ -5881,7 +5897,7 @@ End If&lt;/span&gt;</code>
     .ActivePane.&lt;/span&gt;
 &lt;span class="label"&gt;MinimumFontSize&lt;/span&gt;
 &lt;span class="label"&gt;= 12End With&lt;/span&gt;</code>
-          <para><span data-ttu-id="b1ae7-161">Este exemplo retorna o tamanho de fonte mínimo para o painel ativo.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-161">This example returns the minimum font size for the active pane.</span></span></para>
+          <para><span data-ttu-id="c1da3-161">Este exemplo retorna o tamanho de fonte mínimo para o painel ativo.</span><span class="sxs-lookup"><span data-stu-id="c1da3-161">This example returns the minimum font size for the active pane.</span></span></para>
           <code>&lt;span class="label"&gt;Msgbox _ 
 
 
@@ -6148,6 +6164,7 @@ End If&lt;/span&gt;</code>
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Pane.NewFrameset" />
       <MemberSignature Language="VB.NET" Value="Public Sub NewFrameset ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void NewFrameset();" />
+      <MemberSignature Language="F#" Value="abstract member NewFrameset : unit -&gt; unit" Usage="pane.NewFrameset " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -6163,10 +6180,10 @@ End If&lt;/span&gt;</code>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary><span data-ttu-id="b1ae7-162">Cria uma nova página de quadros com base no painel especificado.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-162">Creates a new frames page based on the specified pane.</span></span></summary>
-        <remarks><para><span data-ttu-id="b1ae7-163">Para obter mais informações sobre como criar páginas de <see cref="Creatingframespages#SameCHM" />quadros, consulte.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-163">For more information on creating frames pages, see <see cref="Creatingframespages#SameCHM" />.</span></span></para>
+        <summary><span data-ttu-id="c1da3-162">Cria uma nova página de quadros com base no painel especificado.</span><span class="sxs-lookup"><span data-stu-id="c1da3-162">Creates a new frames page based on the specified pane.</span></span></summary>
+        <remarks><para><span data-ttu-id="c1da3-163">Para obter mais informações sobre como criar páginas de quadros, consulte <see cref="Creatingframespages#SameCHM" /> .</span><span class="sxs-lookup"><span data-stu-id="c1da3-163">For more information on creating frames pages, see <see cref="Creatingframespages#SameCHM" />.</span></span></para>
           <para> </para></remarks>
-        <example><para><span data-ttu-id="b1ae7-164">Este exemplo abre um documento chamado "Temp.doc" e cria uma nova página de quadros cujo único quadro contém "Temp.doc".</span><span class="sxs-lookup"><span data-stu-id="b1ae7-164">This example opens a document named "Temp.doc" and then creates a new frames page whose only frame contains "Temp.doc".</span></span></para>
+        <example><para><span data-ttu-id="c1da3-164">Este exemplo abre um documento chamado "Temp.doc" e cria uma nova página de quadros cujo único quadro contém "Temp.doc".</span><span class="sxs-lookup"><span data-stu-id="c1da3-164">This example opens a document named "Temp.doc" and then creates a new frames page whose only frame contains "Temp.doc".</span></span></para>
           <code>&lt;span class="label"&gt;Documents.Open "C:\Documents\Temp.doc" 
 
 
@@ -6433,6 +6450,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Pane.Next" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Next As Pane" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Pane ^ Next { Microsoft::Office::Interop::Word::Pane ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Next : Microsoft.Office.Interop.Word.Pane" Usage="Microsoft.Office.Interop.Word.Pane.Next" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -6450,7 +6468,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
         <ReturnType>Microsoft.Office.Interop.Word.Pane</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="b1ae7-165">Retorna um objeto <b>Pane</b> que representa o próximo painel do documento na coleção.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-165">Returns a <b>Pane</b> object that represents the next document pane in the collection.</span></span> <span data-ttu-id="b1ae7-166">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-166">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="c1da3-165">Retorna um objeto <b>Pane</b> que representa o próximo painel do documento na coleção.</span><span class="sxs-lookup"><span data-stu-id="c1da3-165">Returns a <b>Pane</b> object that represents the next document pane in the collection.</span></span> <span data-ttu-id="c1da3-166">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="c1da3-166">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6461,6 +6479,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Pane.Pages" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Pages As Pages" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Pages ^ Pages { Microsoft::Office::Interop::Word::Pages ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Pages : Microsoft.Office.Interop.Word.Pages" Usage="Microsoft.Office.Interop.Word.Pane.Pages" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -6478,7 +6497,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
         <ReturnType>Microsoft.Office.Interop.Word.Pages</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="b1ae7-167">Retorna uma <see cref="T:Microsoft.Office.Interop.Word.Pages" /> coleção que representa as páginas em um documento.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-167">Returns a <see cref="T:Microsoft.Office.Interop.Word.Pages" /> collection that represents the pages in a document.</span></span></summary>
+        <summary><span data-ttu-id="c1da3-167">Retorna uma <see cref="T:Microsoft.Office.Interop.Word.Pages" /> coleção que representa as páginas em um documento.</span><span class="sxs-lookup"><span data-stu-id="c1da3-167">Returns a <see cref="T:Microsoft.Office.Interop.Word.Pages" /> collection that represents the pages in a document.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6488,6 +6507,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void PageScroll([in]object&amp; Down, [in]object&amp; Up) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Pane.PageScroll(System.Object@,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub PageScroll (Optional ByRef Down As Object, Optional ByRef Up As Object)" />
+      <MemberSignature Language="F#" Value="abstract member PageScroll : obj * obj -&gt; unit" Usage="pane.PageScroll (Down, Up)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -6502,13 +6522,13 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Down" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="Up" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Down" Type="System.Object" RefType="ref" />
+        <Parameter Name="Up" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Down"><span data-ttu-id="b1ae7-168">O número de páginas pelas quais rolar para baixo.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-168">The number of pages to be scrolled down.</span></span></param>
-        <param name="Up"><span data-ttu-id="b1ae7-169">O número de páginas pelas quais rolar para cima.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-169">The number of pages to be scrolled up.</span></span></param>
-        <summary><span data-ttu-id="b1ae7-170">Rola pelo painel ou pela janela especificada página por página.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-170">Scrolls through the specified pane or window page by page.</span></span></summary>
+        <param name="Down"><span data-ttu-id="c1da3-168">O número de páginas pelas quais rolar para baixo.</span><span class="sxs-lookup"><span data-stu-id="c1da3-168">The number of pages to be scrolled down.</span></span></param>
+        <param name="Up"><span data-ttu-id="c1da3-169">O número de páginas pelas quais rolar para cima.</span><span class="sxs-lookup"><span data-stu-id="c1da3-169">The number of pages to be scrolled up.</span></span></param>
+        <summary><span data-ttu-id="c1da3-170">Rola pelo painel ou pela janela especificada página por página.</span><span class="sxs-lookup"><span data-stu-id="c1da3-170">Scrolls through the specified pane or window page by page.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -6518,6 +6538,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Pane.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Pane.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -6535,7 +6556,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="b1ae7-171">Retorna um <b>objeto</b> que representa o objeto pai do objeto <b>Pane</b> especificado.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-171">Returns an <b>Object</b> that represents the parent object of the specified <b>Pane</b> object.</span></span></summary>
+        <summary><span data-ttu-id="c1da3-171">Retorna um <b>objeto</b> que representa o objeto pai do objeto <b>Pane</b> especificado.</span><span class="sxs-lookup"><span data-stu-id="c1da3-171">Returns an <b>Object</b> that represents the parent object of the specified <b>Pane</b> object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6546,6 +6567,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Pane.Previous" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Previous As Pane" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Pane ^ Previous { Microsoft::Office::Interop::Word::Pane ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Previous : Microsoft.Office.Interop.Word.Pane" Usage="Microsoft.Office.Interop.Word.Pane.Previous" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -6563,7 +6585,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
         <ReturnType>Microsoft.Office.Interop.Word.Pane</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="b1ae7-172">Retorna um objeto  <b>Pane</b> que representa o painel de documento anterior da coleção.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-172">Returns a <b>Pane</b> object that represents the previous document pane in the collection.</span></span> <span data-ttu-id="b1ae7-173">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-173">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="c1da3-172">Retorna um objeto  <b>Pane</b> que representa o painel de documento anterior da coleção.</span><span class="sxs-lookup"><span data-stu-id="c1da3-172">Returns a <b>Pane</b> object that represents the previous document pane in the collection.</span></span> <span data-ttu-id="c1da3-173">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="c1da3-173">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6574,6 +6596,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Pane.Selection" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Selection As Selection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Selection ^ Selection { Microsoft::Office::Interop::Word::Selection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Selection : Microsoft.Office.Interop.Word.Selection" Usage="Microsoft.Office.Interop.Word.Pane.Selection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -6591,7 +6614,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
         <ReturnType>Microsoft.Office.Interop.Word.Selection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="b1ae7-174">Retorna o objeto <b>Selection</b> que representa uma seleção ou o ponto de inserção dentro de um painel do documento.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-174">Returns the <b>Selection</b> object that represents a selection or the insertion point within a document pane.</span></span> <span data-ttu-id="b1ae7-175">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-175">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="c1da3-174">Retorna o objeto <b>Selection</b> que representa uma seleção ou o ponto de inserção dentro de um painel do documento.</span><span class="sxs-lookup"><span data-stu-id="c1da3-174">Returns the <b>Selection</b> object that represents a selection or the insertion point within a document pane.</span></span> <span data-ttu-id="c1da3-175">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="c1da3-175">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6601,6 +6624,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SmallScroll([in]object&amp; Down, [in]object&amp; Up, [in]object&amp; ToRight, [in]object&amp; ToLeft) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Pane.SmallScroll(System.Object@,System.Object@,System.Object@,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SmallScroll (Optional ByRef Down As Object, Optional ByRef Up As Object, Optional ByRef ToRight As Object, Optional ByRef ToLeft As Object)" />
+      <MemberSignature Language="F#" Value="abstract member SmallScroll : obj * obj * obj * obj -&gt; unit" Usage="pane.SmallScroll (Down, Up, ToRight, ToLeft)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -6615,17 +6639,17 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Down" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="Up" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="ToRight" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="ToLeft" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Down" Type="System.Object" RefType="ref" />
+        <Parameter Name="Up" Type="System.Object" RefType="ref" />
+        <Parameter Name="ToRight" Type="System.Object" RefType="ref" />
+        <Parameter Name="ToLeft" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Down"><span data-ttu-id="b1ae7-176">O número de linhas pelas quais rolar a janela para baixo.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-176">The number of lines to scroll the window down.</span></span></param>
-        <param name="Up"><span data-ttu-id="b1ae7-177">O número de linhas pelas quais rolar a janela para cima.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-177">The number of lines to scroll the window up.</span></span></param>
-        <param name="ToRight"><span data-ttu-id="b1ae7-178">O número de linhas pelas quais rolar a janela para a direita.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-178">The number of lines to scroll the window to the right.</span></span></param>
-        <param name="ToLeft"><span data-ttu-id="b1ae7-179">O número de linhas pelas quais rolar a janela para a esquerda.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-179">The number of lines to scroll the window to the left.</span></span></param>
-        <summary><span data-ttu-id="b1ae7-180">Rola uma janela ou painel pelo número especificado de linhas.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-180">Scrolls a window or pane by the specified number of lines.</span></span></summary>
+        <param name="Down"><span data-ttu-id="c1da3-176">O número de linhas pelas quais rolar a janela para baixo.</span><span class="sxs-lookup"><span data-stu-id="c1da3-176">The number of lines to scroll the window down.</span></span></param>
+        <param name="Up"><span data-ttu-id="c1da3-177">O número de linhas pelas quais rolar a janela para cima.</span><span class="sxs-lookup"><span data-stu-id="c1da3-177">The number of lines to scroll the window up.</span></span></param>
+        <param name="ToRight"><span data-ttu-id="c1da3-178">O número de linhas pelas quais rolar a janela para a direita.</span><span class="sxs-lookup"><span data-stu-id="c1da3-178">The number of lines to scroll the window to the right.</span></span></param>
+        <param name="ToLeft"><span data-ttu-id="c1da3-179">O número de linhas pelas quais rolar a janela para a esquerda.</span><span class="sxs-lookup"><span data-stu-id="c1da3-179">The number of lines to scroll the window to the left.</span></span></param>
+        <summary><span data-ttu-id="c1da3-180">Rola uma janela ou painel pelo número especificado de linhas.</span><span class="sxs-lookup"><span data-stu-id="c1da3-180">Scrolls a window or pane by the specified number of lines.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -6635,6 +6659,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Pane.TOCInFrameset" />
       <MemberSignature Language="VB.NET" Value="Public Sub TOCInFrameset ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void TOCInFrameset();" />
+      <MemberSignature Language="F#" Value="abstract member TOCInFrameset : unit -&gt; unit" Usage="pane.TOCInFrameset " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -6650,10 +6675,10 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary><span data-ttu-id="b1ae7-181">Cria um sumário baseado no documento especificado e coloca-o em um novo quadro do lado esquerdo de uma página de quadros.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-181">Creates a table of contents based on the specified document and puts it in a new frame on the left side of the frames page.</span></span></summary>
-        <remarks><para><span data-ttu-id="b1ae7-182">Para obter mais informações sobre como criar páginas de <see cref="Creatingframespages#SameCHM" />quadros, consulte.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-182">For more information on creating frames pages, see <see cref="Creatingframespages#SameCHM" />.</span></span></para>
+        <summary><span data-ttu-id="c1da3-181">Cria um sumário baseado no documento especificado e coloca-o em um novo quadro do lado esquerdo de uma página de quadros.</span><span class="sxs-lookup"><span data-stu-id="c1da3-181">Creates a table of contents based on the specified document and puts it in a new frame on the left side of the frames page.</span></span></summary>
+        <remarks><para><span data-ttu-id="c1da3-182">Para obter mais informações sobre como criar páginas de quadros, consulte <see cref="Creatingframespages#SameCHM" /> .</span><span class="sxs-lookup"><span data-stu-id="c1da3-182">For more information on creating frames pages, see <see cref="Creatingframespages#SameCHM" />.</span></span></para>
           <para> </para></remarks>
-        <example><para><span data-ttu-id="b1ae7-183">Este exemplo abre um arquivo chamado "Proposal.doc", cria uma página de quadros baseada no arquivo e adiciona um quadro (do lado esquerdo da página) contendo um sumário do arquivo.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-183">This example opens a file named "Proposal.doc", creates a frames page based on the file, and adds a frame (on the left side of the page) containing a table of contents for the file.</span></span></para>
+        <example><para><span data-ttu-id="c1da3-183">Este exemplo abre um arquivo chamado "Proposal.doc", cria uma página de quadros baseada no arquivo e adiciona um quadro (do lado esquerdo da página) contendo um sumário do arquivo.</span><span class="sxs-lookup"><span data-stu-id="c1da3-183">This example opens a file named "Proposal.doc", creates a frames page based on the file, and adds a frame (on the left side of the page) containing a table of contents for the file.</span></span></para>
           <code>&lt;span class="label"&gt;Documents.Open "C:\Documents\Proposal.doc" 
 
 
@@ -7176,6 +7201,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Pane.VerticalPercentScrolled" />
       <MemberSignature Language="VB.NET" Value="Public Property VerticalPercentScrolled As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int VerticalPercentScrolled { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.VerticalPercentScrolled : int with get, set" Usage="Microsoft.Office.Interop.Word.Pane.VerticalPercentScrolled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -7196,10 +7222,10 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="b1ae7-184">Retorna ou define a posição de rolagem vertical como um percentual do comprimento do documento.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-184">Returns or sets the vertical scroll position as a percentage of the document length.</span></span> <span data-ttu-id="b1ae7-185"><b>Long</b> de leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-185">Read/write <b>Long</b>.</span></span></summary>
+        <summary><span data-ttu-id="c1da3-184">Retorna ou define a posição de rolagem vertical como um percentual do comprimento do documento.</span><span class="sxs-lookup"><span data-stu-id="c1da3-184">Returns or sets the vertical scroll position as a percentage of the document length.</span></span> <span data-ttu-id="c1da3-185"><b>Long</b> de leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="c1da3-185">Read/write <b>Long</b>.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <example><para><span data-ttu-id="b1ae7-186">Este exemplo rola o painel ativo da janela de Document1 verticalmente até o fim.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-186">This example vertically scrolls the active pane of the window for Document1 to the end.</span></span></para>
+        <example><para><span data-ttu-id="c1da3-186">Este exemplo rola o painel ativo da janela de Document1 verticalmente até o fim.</span><span class="sxs-lookup"><span data-stu-id="c1da3-186">This example vertically scrolls the active pane of the window for Document1 to the end.</span></span></para>
           <code>&lt;span class="label"&gt;With Windows("Document1") 
 
 
@@ -7723,6 +7749,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Pane.View" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property View As View" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::View ^ View { Microsoft::Office::Interop::Word::View ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.View : Microsoft.Office.Interop.Word.View" Usage="Microsoft.Office.Interop.Word.Pane.View" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -7740,10 +7767,10 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
         <ReturnType>Microsoft.Office.Interop.Word.View</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="b1ae7-187">Retorna um objeto <b>View</b> que representa o modo de exibição para o painel especificado.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-187">Returns a <b>View</b> object that represents the view for the specified pane.</span></span></summary>
+        <summary><span data-ttu-id="c1da3-187">Retorna um objeto <b>View</b> que representa o modo de exibição para o painel especificado.</span><span class="sxs-lookup"><span data-stu-id="c1da3-187">Returns a <b>View</b> object that represents the view for the specified pane.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <example><para><span data-ttu-id="b1ae7-188">Este exemplo mostra todos os caracteres não-imprimíveis de painéis associados a primeira janela na coleção <b>Windows</b>.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-188">This example shows all nonprinting characters for panes associated with the first window in the <b>Windows</b> collection.</span></span></para>
+        <example><para><span data-ttu-id="c1da3-188">Este exemplo mostra todos os caracteres não-imprimíveis de painéis associados a primeira janela na coleção <b>Windows</b>.</span><span class="sxs-lookup"><span data-stu-id="c1da3-188">This example shows all nonprinting characters for panes associated with the first window in the <b>Windows</b> collection.</span></span></para>
           <code>&lt;span class="label"&gt;For Each myPane In Windows(1).Panes 
 
 
@@ -8011,6 +8038,7 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Pane.Zooms" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Zooms As Zooms" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Zooms ^ Zooms { Microsoft::Office::Interop::Word::Zooms ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Zooms : Microsoft.Office.Interop.Word.Zooms" Usage="Microsoft.Office.Interop.Word.Pane.Zooms" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -8028,11 +8056,11 @@ ActiveDocument.ActiveWindow.ActivePane.&lt;/span&gt;
         <ReturnType>Microsoft.Office.Interop.Word.Zooms</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="b1ae7-189">Retorna uma <see cref="Zooms#SameCHM" /> coleção que representa as opções de ampliação de cada modo de exibição (como modo de exibição normal, modo de estrutura de tópicos ou modo de layout de impressão).</span><span class="sxs-lookup"><span data-stu-id="b1ae7-189">Returns a <see cref="Zooms#SameCHM" /> collection that represents the magnification options for each view (such as normal view, outline view or print layout view).</span></span></summary>
+        <summary><span data-ttu-id="c1da3-189">Retorna uma <see cref="Zooms#SameCHM" /> coleção que representa as opções de ampliação de cada modo de exibição (como modo de exibição normal, modo de estrutura de tópicos ou modo de layout de impressão).</span><span class="sxs-lookup"><span data-stu-id="c1da3-189">Returns a <see cref="Zooms#SameCHM" /> collection that represents the magnification options for each view (such as normal view, outline view or print layout view).</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="b1ae7-190">Para obter informações sobre como retornar um único membro de uma coleção <see cref="ReturninganObjectfromaCollection#SameCHM" />, consulte.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-190">For information about returning a single member of a collection, see <see cref="ReturninganObjectfromaCollection#SameCHM" />.</span></span></para>
+        <remarks><para><span data-ttu-id="c1da3-190">Para obter informações sobre como retornar um único membro de uma coleção, consulte <see cref="ReturninganObjectfromaCollection#SameCHM" /> .</span><span class="sxs-lookup"><span data-stu-id="c1da3-190">For information about returning a single member of a collection, see <see cref="ReturninganObjectfromaCollection#SameCHM" />.</span></span></para>
           <para> </para></remarks>
-        <example><para><span data-ttu-id="b1ae7-191">Este exemplo define a ampliação como 100% no modo normal para cada janela aberta.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-191">This example sets the magnification in normal view to 100 percent for each open window.</span></span></para>
+        <example><para><span data-ttu-id="c1da3-191">Este exemplo define a ampliação como 100% no modo normal para cada janela aberta.</span><span class="sxs-lookup"><span data-stu-id="c1da3-191">This example sets the magnification in normal view to 100 percent for each open window.</span></span></para>
           <code>&lt;span class="label"&gt;Dim wndLoop as Window 
 
 
@@ -8804,7 +8832,7 @@ For Each wndLoop In Windows
     wndLoop.ActivePane.&lt;/span&gt;
 &lt;span class="label"&gt;Zooms&lt;/span&gt;
 &lt;span class="label"&gt;(wdNormalView).Percentage = 100Next wndLoop&lt;/span&gt;</code>
-          <para><span data-ttu-id="b1ae7-192">Este exemplo define a ampliação no modo de layout de impressão de forma que uma página inteira fique visível.</span><span class="sxs-lookup"><span data-stu-id="b1ae7-192">This example sets the magnification in print layout view so that an entire page is visible.</span></span></para>
+          <para><span data-ttu-id="c1da3-192">Este exemplo define a ampliação no modo de layout de impressão de forma que uma página inteira fique visível.</span><span class="sxs-lookup"><span data-stu-id="c1da3-192">This example sets the magnification in print layout view so that an entire page is visible.</span></span></para>
           <code>&lt;span class="label"&gt;ActiveDocument.ActiveWindow.Panes(1).&lt;/span&gt;
 &lt;span class="label"&gt;Zooms&lt;/span&gt;
 &lt;span class="label"&gt;(wdPrintView).PageFit = _    wdPageFitFullPage&lt;/span&gt;</code></example>

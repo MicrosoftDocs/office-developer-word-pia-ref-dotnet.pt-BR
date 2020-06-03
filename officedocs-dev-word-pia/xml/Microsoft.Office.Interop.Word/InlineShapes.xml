@@ -1,9 +1,10 @@
 <Type Name="InlineShapes" FullName="Microsoft.Office.Interop.Word.InlineShapes">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="37073b7d0cfd73d163e623520cf1f2b791991061" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147939" /></Metadata><TypeSignature Language="C#" Value="public interface InlineShapes : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="aa8c3664525fcb2c6215fd6210c3121b6230479d" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43923938" /></Metadata><TypeSignature Language="C#" Value="public interface InlineShapes : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract InlineShapes implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.InlineShapes" />
   <TypeSignature Language="VB.NET" Value="Public Interface InlineShapes&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class InlineShapes : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type InlineShapes = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,14 +23,14 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary><span data-ttu-id="90f56-101">Uma coleção de <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> objetos que representam todas as formas embutidas em um documento, intervalo ou seleção.</span><span class="sxs-lookup"><span data-stu-id="90f56-101">A collection of <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> objects that represent all the inline shapes in a document, range, or selection.</span></span></summary>
-    <remarks><para><span data-ttu-id="90f56-102">Use a <b></b> Propriedade InlineShapes de um <see cref="T:Microsoft.Office.Interop.Word._Document" />objeto <see cref="T:Microsoft.Office.Interop.Word.Range" />, ou <see cref="T:Microsoft.Office.Interop.Word.Selection" /> , para retornar uma <see cref="T:Microsoft.Office.Interop.Word.InlineShapes" /> coleção.</span><span class="sxs-lookup"><span data-stu-id="90f56-102">Use the <b>InlineShapes</b> property of a <see cref="T:Microsoft.Office.Interop.Word._Document" />, <see cref="T:Microsoft.Office.Interop.Word.Range" />, or <see cref="T:Microsoft.Office.Interop.Word.Selection" /> object to return an <see cref="T:Microsoft.Office.Interop.Word.InlineShapes" /> collection.</span></span></para>
-      <para><span data-ttu-id="90f56-103">Use o <see cref="M:Microsoft.Office.Interop.Word.InlineShapes.New(Microsoft.Office.Interop.Word.Range)" /> método para criar uma nova imagem como uma forma embutida.</span><span class="sxs-lookup"><span data-stu-id="90f56-103">Use the <see cref="M:Microsoft.Office.Interop.Word.InlineShapes.New(Microsoft.Office.Interop.Word.Range)" /> method to create a new picture as an inline shape.</span></span> <span data-ttu-id="90f56-104">Você pode usar os <see cref="M:Microsoft.Office.Interop.Word.InlineShapes.AddPicture(System.String,System.Object@,System.Object@,System.Object@)" /> métodos <see cref="M:Microsoft.Office.Interop.Word.InlineShapes.AddOLEObject(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> e para adicionar imagens ou objetos OLE e vinculá-los a um arquivo de origem.</span><span class="sxs-lookup"><span data-stu-id="90f56-104">You can use the <see cref="M:Microsoft.Office.Interop.Word.InlineShapes.AddPicture(System.String,System.Object@,System.Object@,System.Object@)" /> and <see cref="M:Microsoft.Office.Interop.Word.InlineShapes.AddOLEObject(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> methods to add pictures or OLE objects and link them to a source file.</span></span> <span data-ttu-id="90f56-105">Use o <see cref="M:Microsoft.Office.Interop.Word.InlineShapes.AddOLEControl(System.Object@,System.Object@)" /> método para adicionar um controle ActiveX.</span><span class="sxs-lookup"><span data-stu-id="90f56-105">Use the <see cref="M:Microsoft.Office.Interop.Word.InlineShapes.AddOLEControl(System.Object@,System.Object@)" /> method to add an ActiveX control.</span></span></para>
-      <para><span data-ttu-id="90f56-106">
-        <see cref="T:Microsoft.Office.Interop.Word.Shape" />os objetos são ancorados a um intervalo de texto, mas estão livres para flutuar e podem ser posicionados em qualquer lugar na página.</span><span class="sxs-lookup"><span data-stu-id="90f56-106">
-        <see cref="T:Microsoft.Office.Interop.Word.Shape" /> objects are anchored to a range of text but are free-floating and can be positioned anywhere on the page.</span></span> <span data-ttu-id="90f56-107">Você pode usar o <see cref="M:Microsoft.Office.Interop.Word.Shape.ConvertToInlineShape" /> método e o <see cref="M:Microsoft.Office.Interop.Word.InlineShape.ConvertToShape" /> método para converter formas de um tipo para outro.</span><span class="sxs-lookup"><span data-stu-id="90f56-107">You can use the <see cref="M:Microsoft.Office.Interop.Word.Shape.ConvertToInlineShape" /> method and the <see cref="M:Microsoft.Office.Interop.Word.InlineShape.ConvertToShape" /> method to convert shapes from one type to the other.</span></span> <span data-ttu-id="90f56-108">Você pode converter somente figuras, objetos OLE e controles ActiveX para formas embutidas.</span><span class="sxs-lookup"><span data-stu-id="90f56-108">You can convert only pictures, OLE objects, and ActiveX controls to inline shapes.</span></span></para>
-      <para><span data-ttu-id="90f56-109">A <see cref="P:Microsoft.Office.Interop.Word.InlineShapes.Count" /> Propriedade dessa coleção em um documento retorna o número de itens somente no texto principal.</span><span class="sxs-lookup"><span data-stu-id="90f56-109">The <see cref="P:Microsoft.Office.Interop.Word.InlineShapes.Count" /> property for this collection in a document returns the number of items in the main story only.</span></span> <span data-ttu-id="90f56-110">Para contar itens em outros textos, use a coleção com <see cref="T:Microsoft.Office.Interop.Word.Range" /> o objeto.</span><span class="sxs-lookup"><span data-stu-id="90f56-110">To count items in other stories use the collection with the <see cref="T:Microsoft.Office.Interop.Word.Range" /> object.</span></span></para>
-      <para><span data-ttu-id="90f56-111">Quando você abre um documento criado em uma versão anterior do Microsoft Word, as imagens são convertidas em formas embutidas.</span><span class="sxs-lookup"><span data-stu-id="90f56-111">When you open a document created in an earlier version of Microsoft Word, pictures are converted to inline shapes.</span></span></para>
+    <summary><span data-ttu-id="4e884-101">Uma coleção de <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> objetos que representam todas as formas embutidas em um documento, intervalo ou seleção.</span><span class="sxs-lookup"><span data-stu-id="4e884-101">A collection of <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> objects that represent all the inline shapes in a document, range, or selection.</span></span></summary>
+    <remarks><para><span data-ttu-id="4e884-102">Use a propriedade <b>InlineShapes</b> de um <see cref="T:Microsoft.Office.Interop.Word._Document" /> <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto, ou, <see cref="T:Microsoft.Office.Interop.Word.Selection" /> para retornar uma <see cref="T:Microsoft.Office.Interop.Word.InlineShapes" /> coleção.</span><span class="sxs-lookup"><span data-stu-id="4e884-102">Use the <b>InlineShapes</b> property of a <see cref="T:Microsoft.Office.Interop.Word._Document" />, <see cref="T:Microsoft.Office.Interop.Word.Range" />, or <see cref="T:Microsoft.Office.Interop.Word.Selection" /> object to return an <see cref="T:Microsoft.Office.Interop.Word.InlineShapes" /> collection.</span></span></para>
+      <para><span data-ttu-id="4e884-103">Use o <see cref="M:Microsoft.Office.Interop.Word.InlineShapes.New(Microsoft.Office.Interop.Word.Range)" /> método para criar uma nova imagem como uma forma embutida.</span><span class="sxs-lookup"><span data-stu-id="4e884-103">Use the <see cref="M:Microsoft.Office.Interop.Word.InlineShapes.New(Microsoft.Office.Interop.Word.Range)" /> method to create a new picture as an inline shape.</span></span> <span data-ttu-id="4e884-104">Você pode usar os <see cref="M:Microsoft.Office.Interop.Word.InlineShapes.AddPicture(System.String,System.Object@,System.Object@,System.Object@)" /> <see cref="M:Microsoft.Office.Interop.Word.InlineShapes.AddOLEObject(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> métodos e para adicionar imagens ou objetos OLE e vinculá-los a um arquivo de origem.</span><span class="sxs-lookup"><span data-stu-id="4e884-104">You can use the <see cref="M:Microsoft.Office.Interop.Word.InlineShapes.AddPicture(System.String,System.Object@,System.Object@,System.Object@)" /> and <see cref="M:Microsoft.Office.Interop.Word.InlineShapes.AddOLEObject(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> methods to add pictures or OLE objects and link them to a source file.</span></span> <span data-ttu-id="4e884-105">Use o <see cref="M:Microsoft.Office.Interop.Word.InlineShapes.AddOLEControl(System.Object@,System.Object@)" /> método para adicionar um controle ActiveX.</span><span class="sxs-lookup"><span data-stu-id="4e884-105">Use the <see cref="M:Microsoft.Office.Interop.Word.InlineShapes.AddOLEControl(System.Object@,System.Object@)" /> method to add an ActiveX control.</span></span></para>
+      <para><span data-ttu-id="4e884-106">
+        <see cref="T:Microsoft.Office.Interop.Word.Shape" />os objetos são ancorados a um intervalo de texto, mas estão livres para flutuar e podem ser posicionados em qualquer lugar na página.</span><span class="sxs-lookup"><span data-stu-id="4e884-106">
+        <see cref="T:Microsoft.Office.Interop.Word.Shape" /> objects are anchored to a range of text but are free-floating and can be positioned anywhere on the page.</span></span> <span data-ttu-id="4e884-107">Você pode usar o <see cref="M:Microsoft.Office.Interop.Word.Shape.ConvertToInlineShape" /> método e o <see cref="M:Microsoft.Office.Interop.Word.InlineShape.ConvertToShape" /> método para converter formas de um tipo para outro.</span><span class="sxs-lookup"><span data-stu-id="4e884-107">You can use the <see cref="M:Microsoft.Office.Interop.Word.Shape.ConvertToInlineShape" /> method and the <see cref="M:Microsoft.Office.Interop.Word.InlineShape.ConvertToShape" /> method to convert shapes from one type to the other.</span></span> <span data-ttu-id="4e884-108">Você pode converter somente figuras, objetos OLE e controles ActiveX para formas embutidas.</span><span class="sxs-lookup"><span data-stu-id="4e884-108">You can convert only pictures, OLE objects, and ActiveX controls to inline shapes.</span></span></para>
+      <para><span data-ttu-id="4e884-109">A <see cref="P:Microsoft.Office.Interop.Word.InlineShapes.Count" /> propriedade dessa coleção em um documento retorna o número de itens somente no texto principal.</span><span class="sxs-lookup"><span data-stu-id="4e884-109">The <see cref="P:Microsoft.Office.Interop.Word.InlineShapes.Count" /> property for this collection in a document returns the number of items in the main story only.</span></span> <span data-ttu-id="4e884-110">Para contar itens em outros textos, use a coleção com o <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto.</span><span class="sxs-lookup"><span data-stu-id="4e884-110">To count items in other stories use the collection with the <see cref="T:Microsoft.Office.Interop.Word.Range" /> object.</span></span></para>
+      <para><span data-ttu-id="4e884-111">Quando você abre um documento criado em uma versão anterior do Microsoft Word, as imagens são convertidas em formas embutidas.</span><span class="sxs-lookup"><span data-stu-id="4e884-111">When you open a document created in an earlier version of Microsoft Word, pictures are converted to inline shapes.</span></span></para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -38,6 +39,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.InlineShape AddChart([in]valuetype Microsoft.Office.Core.XlChartType Type, [in]object&amp; Range) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.InlineShapes.AddChart(Microsoft.Office.Core.XlChartType,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddChart (Optional Type As XlChartType = (Microsoft.Office.Core.XlChartType) -1, Optional ByRef Range As Object) As InlineShape" />
+      <MemberSignature Language="F#" Value="abstract member AddChart : Microsoft.Office.Core.XlChartType * obj -&gt; Microsoft.Office.Interop.Word.InlineShape" Usage="inlineShapes.AddChart (Type, Range)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -56,12 +58,12 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="Type" Type="Microsoft.Office.Core.XlChartType" />
-        <Parameter Name="Range" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Range" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="Type">To be added.</param>
         <param name="Range">To be added.</param>
-        <summary><span data-ttu-id="90f56-112">This object, member, or enumeration is deprecated and is not intended to be used in your code.</span><span class="sxs-lookup"><span data-stu-id="90f56-112">This object, member, or enumeration is deprecated and is not intended to be used in your code.</span></span></summary>
+        <summary><span data-ttu-id="4e884-112">This object, member, or enumeration is deprecated and is not intended to be used in your code.</span><span class="sxs-lookup"><span data-stu-id="4e884-112">This object, member, or enumeration is deprecated and is not intended to be used in your code.</span></span></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -71,6 +73,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.InlineShape AddChart2([in]int32 Style, [in]valuetype Microsoft.Office.Core.XlChartType Type, [in]object&amp; Range, [in]object&amp; NewLayout) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.InlineShapes.AddChart2(System.Int32,Microsoft.Office.Core.XlChartType,System.Object@,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddChart2 (Optional Style As Integer = -1, Optional Type As XlChartType = (Microsoft.Office.Core.XlChartType) -1, Optional ByRef Range As Object, Optional ByRef NewLayout As Object) As InlineShape" />
+      <MemberSignature Language="F#" Value="abstract member AddChart2 : int * Microsoft.Office.Core.XlChartType * obj * obj -&gt; Microsoft.Office.Interop.Word.InlineShape" Usage="inlineShapes.AddChart2 (Style, Type, Range, NewLayout)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -87,15 +90,15 @@
       <Parameters>
         <Parameter Name="Style" Type="System.Int32" />
         <Parameter Name="Type" Type="Microsoft.Office.Core.XlChartType" />
-        <Parameter Name="Range" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="NewLayout" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Range" Type="System.Object" RefType="ref" />
+        <Parameter Name="NewLayout" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Style"><span data-ttu-id="90f56-113">O estilo do gráfico.</span><span class="sxs-lookup"><span data-stu-id="90f56-113">The chart style.</span></span></param>
-        <param name="Type"><span data-ttu-id="90f56-114">O tipo de gráfico.</span><span class="sxs-lookup"><span data-stu-id="90f56-114">The type of chart.</span></span></param>
-        <param name="Range"><span data-ttu-id="90f56-115">O intervalo onde o gráfico será colocado no texto.</span><span class="sxs-lookup"><span data-stu-id="90f56-115">The range where the chart will be placed in the text.</span></span> <span data-ttu-id="90f56-116">O gráfico substitui o intervalo, a menos que o intervalo esteja recolhido.</span><span class="sxs-lookup"><span data-stu-id="90f56-116">The chart replaces the range, unless the range is collapsed.</span></span> <span data-ttu-id="90f56-117">Se esse argumento for omitido, o gráfico será colocado automaticamente.</span><span class="sxs-lookup"><span data-stu-id="90f56-117">If this argument is omitted, the chart is placed automatically.</span></span></param>
-        <param name="NewLayout"><span data-ttu-id="90f56-118">Se <paramref name="NewLayout" /> for true, o gráfico será inserido usando as novas regras de formatação dinâmica (o título está ativado, e a legenda estará ativa apenas se houver várias séries).</span><span class="sxs-lookup"><span data-stu-id="90f56-118">If <paramref name="NewLayout" /> is true, the chart is inserted by using the new dynamic formatting rules (Title is on, and Legend is on only if there are multiple series).</span></span></param>
-        <summary><span data-ttu-id="90f56-119">Adiciona um gráfico ao documento.</span><span class="sxs-lookup"><span data-stu-id="90f56-119">Adds a chart to the document.</span></span> <span data-ttu-id="90f56-120">Retorna um <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> objeto que representa o gráfico e o adiciona à coleção especificada.</span><span class="sxs-lookup"><span data-stu-id="90f56-120">Returns an <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> object that represents the chart and adds it to the specified collection.</span></span></summary>
+        <param name="Style"><span data-ttu-id="4e884-113">O estilo do gráfico.</span><span class="sxs-lookup"><span data-stu-id="4e884-113">The chart style.</span></span></param>
+        <param name="Type"><span data-ttu-id="4e884-114">O tipo de gráfico.</span><span class="sxs-lookup"><span data-stu-id="4e884-114">The type of chart.</span></span></param>
+        <param name="Range"><span data-ttu-id="4e884-115">O intervalo onde o gráfico será colocado no texto.</span><span class="sxs-lookup"><span data-stu-id="4e884-115">The range where the chart will be placed in the text.</span></span> <span data-ttu-id="4e884-116">O gráfico substitui o intervalo, a menos que o intervalo esteja recolhido.</span><span class="sxs-lookup"><span data-stu-id="4e884-116">The chart replaces the range, unless the range is collapsed.</span></span> <span data-ttu-id="4e884-117">Se esse argumento for omitido, o gráfico será colocado automaticamente.</span><span class="sxs-lookup"><span data-stu-id="4e884-117">If this argument is omitted, the chart is placed automatically.</span></span></param>
+        <param name="NewLayout"><span data-ttu-id="4e884-118">Se <paramref name="NewLayout" /> for true, o gráfico será inserido usando as novas regras de formatação dinâmica (o título está ativado, e a legenda estará ativa apenas se houver várias séries).</span><span class="sxs-lookup"><span data-stu-id="4e884-118">If <paramref name="NewLayout" /> is true, the chart is inserted by using the new dynamic formatting rules (Title is on, and Legend is on only if there are multiple series).</span></span></param>
+        <summary><span data-ttu-id="4e884-119">Adiciona um gráfico ao documento.</span><span class="sxs-lookup"><span data-stu-id="4e884-119">Adds a chart to the document.</span></span> <span data-ttu-id="4e884-120">Retorna um <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> objeto que representa o gráfico e o adiciona à coleção especificada.</span><span class="sxs-lookup"><span data-stu-id="4e884-120">Returns an <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> object that represents the chart and adds it to the specified collection.</span></span></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -105,6 +108,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.InlineShape AddHorizontalLine([in]string FileName, [in]object&amp; Range) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.InlineShapes.AddHorizontalLine(System.String,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddHorizontalLine (FileName As String, Optional ByRef Range As Object) As InlineShape" />
+      <MemberSignature Language="F#" Value="abstract member AddHorizontalLine : string * obj -&gt; Microsoft.Office.Interop.Word.InlineShape" Usage="inlineShapes.AddHorizontalLine (FileName, Range)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -120,14 +124,14 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="FileName" Type="System.String" />
-        <Parameter Name="Range" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Range" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="FileName"><span data-ttu-id="90f56-121"><b>String</b> necessário.</span><span class="sxs-lookup"><span data-stu-id="90f56-121">Required <b>String</b>.</span></span> <span data-ttu-id="90f56-122">O nome do arquivo de imagem que você deseja usar para a linha horizontal.</span><span class="sxs-lookup"><span data-stu-id="90f56-122">The file name of the image you want to use for the horizontal line.</span></span></param>
-        <param name="Range"><span data-ttu-id="90f56-123"><b>Objeto</b>opcional.</span><span class="sxs-lookup"><span data-stu-id="90f56-123">Optional <b>Object</b>.</span></span> <span data-ttu-id="90f56-124">O intervalo acima do qual o Microsoft Word coloca a linha horizontal.</span><span class="sxs-lookup"><span data-stu-id="90f56-124">The range above which Microsoft Word places the horizontal line.</span></span> <span data-ttu-id="90f56-125">Se este argumento for omitido, o Word colocará a linha acima da seleção atual.</span><span class="sxs-lookup"><span data-stu-id="90f56-125">If this argument is omitted, Word places the horizontal line above the current selection.</span></span></param>
-        <summary><span data-ttu-id="90f56-126">Adiciona uma linha horizontal baseada em um arquivo de imagem ao documento atual.</span><span class="sxs-lookup"><span data-stu-id="90f56-126">Adds a horizontal line based on an image file to the current document.</span></span></summary>
+        <param name="FileName"><span data-ttu-id="4e884-121"><b>String</b> necessário.</span><span class="sxs-lookup"><span data-stu-id="4e884-121">Required <b>String</b>.</span></span> <span data-ttu-id="4e884-122">O nome do arquivo de imagem que você deseja usar para a linha horizontal.</span><span class="sxs-lookup"><span data-stu-id="4e884-122">The file name of the image you want to use for the horizontal line.</span></span></param>
+        <param name="Range"><span data-ttu-id="4e884-123"><b>Objeto</b>opcional.</span><span class="sxs-lookup"><span data-stu-id="4e884-123">Optional <b>Object</b>.</span></span> <span data-ttu-id="4e884-124">O intervalo acima do qual o Microsoft Word coloca a linha horizontal.</span><span class="sxs-lookup"><span data-stu-id="4e884-124">The range above which Microsoft Word places the horizontal line.</span></span> <span data-ttu-id="4e884-125">Se este argumento for omitido, o Word colocará a linha acima da seleção atual.</span><span class="sxs-lookup"><span data-stu-id="4e884-125">If this argument is omitted, Word places the horizontal line above the current selection.</span></span></param>
+        <summary><span data-ttu-id="4e884-126">Adiciona uma linha horizontal baseada em um arquivo de imagem ao documento atual.</span><span class="sxs-lookup"><span data-stu-id="4e884-126">Adds a horizontal line based on an image file to the current document.</span></span></summary>
         <returns>To be added.</returns>
-        <remarks><para><span data-ttu-id="90f56-127">Para adicionar uma linha horizontal que não se baseia em um arquivo de imagem existente, <see cref="M:Microsoft.Office.Interop.Word.InlineShapes.AddHorizontalLineStandard(System.Object@)" /> use o método.</span><span class="sxs-lookup"><span data-stu-id="90f56-127">To add a horizontal line that isn't based on an existing image file, use the <see cref="M:Microsoft.Office.Interop.Word.InlineShapes.AddHorizontalLineStandard(System.Object@)" /> method.</span></span></para>
+        <remarks><para><span data-ttu-id="4e884-127">Para adicionar uma linha horizontal que não se baseia em um arquivo de imagem existente, use o <see cref="M:Microsoft.Office.Interop.Word.InlineShapes.AddHorizontalLineStandard(System.Object@)" /> método.</span><span class="sxs-lookup"><span data-stu-id="4e884-127">To add a horizontal line that isn't based on an existing image file, use the <see cref="M:Microsoft.Office.Interop.Word.InlineShapes.AddHorizontalLineStandard(System.Object@)" /> method.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -136,6 +140,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.InlineShape AddHorizontalLineStandard([in]object&amp; Range) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.InlineShapes.AddHorizontalLineStandard(System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddHorizontalLineStandard (Optional ByRef Range As Object) As InlineShape" />
+      <MemberSignature Language="F#" Value="abstract member AddHorizontalLineStandard : obj -&gt; Microsoft.Office.Interop.Word.InlineShape" Usage="inlineShapes.AddHorizontalLineStandard Range" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -150,13 +155,13 @@
         <ReturnType>Microsoft.Office.Interop.Word.InlineShape</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Range" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Range" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Range"><span data-ttu-id="90f56-128"><b>Objeto</b>opcional.</span><span class="sxs-lookup"><span data-stu-id="90f56-128">Optional <b>Object</b>.</span></span> <span data-ttu-id="90f56-129">O intervalo acima do qual o Microsoft Word coloca a linha horizontal.</span><span class="sxs-lookup"><span data-stu-id="90f56-129">The range above which Microsoft Word places the horizontal line.</span></span> <span data-ttu-id="90f56-130">Se este argumento for omitido, o Word colocará a linha acima da seleção atual.</span><span class="sxs-lookup"><span data-stu-id="90f56-130">If this argument is omitted, Word places the horizontal line above the current selection.</span></span></param>
-        <summary><span data-ttu-id="90f56-131">Adiciona uma linha horizontal ao documento atual.</span><span class="sxs-lookup"><span data-stu-id="90f56-131">Adds a horizontal line to the current document.</span></span></summary>
+        <param name="Range"><span data-ttu-id="4e884-128"><b>Objeto</b>opcional.</span><span class="sxs-lookup"><span data-stu-id="4e884-128">Optional <b>Object</b>.</span></span> <span data-ttu-id="4e884-129">O intervalo acima do qual o Microsoft Word coloca a linha horizontal.</span><span class="sxs-lookup"><span data-stu-id="4e884-129">The range above which Microsoft Word places the horizontal line.</span></span> <span data-ttu-id="4e884-130">Se este argumento for omitido, o Word colocará a linha acima da seleção atual.</span><span class="sxs-lookup"><span data-stu-id="4e884-130">If this argument is omitted, Word places the horizontal line above the current selection.</span></span></param>
+        <summary><span data-ttu-id="4e884-131">Adiciona uma linha horizontal ao documento atual.</span><span class="sxs-lookup"><span data-stu-id="4e884-131">Adds a horizontal line to the current document.</span></span></summary>
         <returns>To be added.</returns>
-        <remarks><para><span data-ttu-id="90f56-132">Para adicionar uma linha horizontal baseada em um arquivo de imagem existente, use <see cref="M:Microsoft.Office.Interop.Word.InlineShapes.AddHorizontalLine(System.String,System.Object@)" /> o método.</span><span class="sxs-lookup"><span data-stu-id="90f56-132">To add a horizontal line based on an existing image file, use the <see cref="M:Microsoft.Office.Interop.Word.InlineShapes.AddHorizontalLine(System.String,System.Object@)" /> method.</span></span></para>
+        <remarks><para><span data-ttu-id="4e884-132">Para adicionar uma linha horizontal baseada em um arquivo de imagem existente, use o <see cref="M:Microsoft.Office.Interop.Word.InlineShapes.AddHorizontalLine(System.String,System.Object@)" /> método.</span><span class="sxs-lookup"><span data-stu-id="4e884-132">To add a horizontal line based on an existing image file, use the <see cref="M:Microsoft.Office.Interop.Word.InlineShapes.AddHorizontalLine(System.String,System.Object@)" /> method.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -165,6 +170,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.InlineShape AddOLEControl([in]object&amp; ClassType, [in]object&amp; Range) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.InlineShapes.AddOLEControl(System.Object@,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddOLEControl (Optional ByRef ClassType As Object, Optional ByRef Range As Object) As InlineShape" />
+      <MemberSignature Language="F#" Value="abstract member AddOLEControl : obj * obj -&gt; Microsoft.Office.Interop.Word.InlineShape" Usage="inlineShapes.AddOLEControl (ClassType, Range)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -179,16 +185,16 @@
         <ReturnType>Microsoft.Office.Interop.Word.InlineShape</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ClassType" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="Range" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ClassType" Type="System.Object" RefType="ref" />
+        <Parameter Name="Range" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="ClassType"><span data-ttu-id="90f56-133"><b>Objeto</b>opcional.</span><span class="sxs-lookup"><span data-stu-id="90f56-133">Optional <b>Object</b>.</span></span> <span data-ttu-id="90f56-134">O identificador programático para o controle ActiveX ser criado.</span><span class="sxs-lookup"><span data-stu-id="90f56-134">The programmatic identifier for the ActiveX control to be created.</span></span></param>
-        <param name="Range"><span data-ttu-id="90f56-135"><b>Objeto</b>opcional.</span><span class="sxs-lookup"><span data-stu-id="90f56-135">Optional <b>Object</b>.</span></span> <span data-ttu-id="90f56-136">O intervalo onde o controle ActiveX será colocado no texto.</span><span class="sxs-lookup"><span data-stu-id="90f56-136">The range where the ActiveX control will be placed in the text.</span></span> <span data-ttu-id="90f56-137">O controle ActiveX substitui o intervalo, se o intervalo não estiver recolhido.</span><span class="sxs-lookup"><span data-stu-id="90f56-137">The ActiveX control replaces the range, if the range isn't collapsed.</span></span> <span data-ttu-id="90f56-138">Se esse argumento for omitido, o controle ActiveX será colocado automaticamente.</span><span class="sxs-lookup"><span data-stu-id="90f56-138">If this argument is omitted, the Active X control is placed automatically.</span></span></param>
-        <summary><span data-ttu-id="90f56-139">Cria um controle ActiveX (conhecido anteriormente como controle OLE).</span><span class="sxs-lookup"><span data-stu-id="90f56-139">Creates an ActiveX control (formerly known as an OLE control).</span></span></summary>
+        <param name="ClassType"><span data-ttu-id="4e884-133"><b>Objeto</b>opcional.</span><span class="sxs-lookup"><span data-stu-id="4e884-133">Optional <b>Object</b>.</span></span> <span data-ttu-id="4e884-134">O identificador programático para o controle ActiveX ser criado.</span><span class="sxs-lookup"><span data-stu-id="4e884-134">The programmatic identifier for the ActiveX control to be created.</span></span></param>
+        <param name="Range"><span data-ttu-id="4e884-135"><b>Objeto</b>opcional.</span><span class="sxs-lookup"><span data-stu-id="4e884-135">Optional <b>Object</b>.</span></span> <span data-ttu-id="4e884-136">O intervalo onde o controle ActiveX será colocado no texto.</span><span class="sxs-lookup"><span data-stu-id="4e884-136">The range where the ActiveX control will be placed in the text.</span></span> <span data-ttu-id="4e884-137">O controle ActiveX substitui o intervalo, se o intervalo não estiver recolhido.</span><span class="sxs-lookup"><span data-stu-id="4e884-137">The ActiveX control replaces the range, if the range isn't collapsed.</span></span> <span data-ttu-id="4e884-138">Se esse argumento for omitido, o controle ActiveX será colocado automaticamente.</span><span class="sxs-lookup"><span data-stu-id="4e884-138">If this argument is omitted, the Active X control is placed automatically.</span></span></param>
+        <summary><span data-ttu-id="4e884-139">Cria um controle ActiveX (conhecido anteriormente como controle OLE).</span><span class="sxs-lookup"><span data-stu-id="4e884-139">Creates an ActiveX control (formerly known as an OLE control).</span></span></summary>
         <returns>To be added.</returns>
-        <remarks><para><span data-ttu-id="90f56-140">Esse método retorna o <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> objeto que representa o novo controle ActiveX.</span><span class="sxs-lookup"><span data-stu-id="90f56-140">This method returns the <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> object that represents the new ActiveX control.</span></span></para>
-          <para><span data-ttu-id="90f56-141">Os controles ActiveX são representados <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> como objetos ou objetos <b>InlineShape</b> no Microsoft Word.</span><span class="sxs-lookup"><span data-stu-id="90f56-141">ActiveX controls are represented as either <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objects or <b>InlineShape</b> objects in Microsoft Word.</span></span> <span data-ttu-id="90f56-142">Para modificar as propriedades de um controle ActiveX, use a <see cref="P:Microsoft.Office.Interop.Excel.OLEFormat.Object" /> Propriedade do <see cref="T:Microsoft.Office.Interop.Excel.OLEFormat" /> objeto para a forma especificada ou forma embutida.</span><span class="sxs-lookup"><span data-stu-id="90f56-142">To modify the properties for an ActiveX control, use the <see cref="P:Microsoft.Office.Interop.Excel.OLEFormat.Object" /> property of the <see cref="T:Microsoft.Office.Interop.Excel.OLEFormat" /> object for the specified shape or inline shape.</span></span></para>
+        <remarks><para><span data-ttu-id="4e884-140">Esse método retorna o <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> objeto que representa o novo controle ActiveX.</span><span class="sxs-lookup"><span data-stu-id="4e884-140">This method returns the <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> object that represents the new ActiveX control.</span></span></para>
+          <para><span data-ttu-id="4e884-141">Os controles ActiveX são representados como objetos <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> ou objetos <b>InlineShape</b> no Microsoft Word.</span><span class="sxs-lookup"><span data-stu-id="4e884-141">ActiveX controls are represented as either <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objects or <b>InlineShape</b> objects in Microsoft Word.</span></span> <span data-ttu-id="4e884-142">Para modificar as propriedades de um controle ActiveX, use a <see cref="P:Microsoft.Office.Interop.Excel.OLEFormat.Object" /> Propriedade do <see cref="T:Microsoft.Office.Interop.Excel.OLEFormat" /> objeto para a forma especificada ou forma embutida.</span><span class="sxs-lookup"><span data-stu-id="4e884-142">To modify the properties for an ActiveX control, use the <see cref="P:Microsoft.Office.Interop.Excel.OLEFormat.Object" /> property of the <see cref="T:Microsoft.Office.Interop.Excel.OLEFormat" /> object for the specified shape or inline shape.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -197,6 +203,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.InlineShape AddOLEObject([in]object&amp; ClassType, [in]object&amp; FileName, [in]object&amp; LinkToFile, [in]object&amp; DisplayAsIcon, [in]object&amp; IconFileName, [in]object&amp; IconIndex, [in]object&amp; IconLabel, [in]object&amp; Range) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.InlineShapes.AddOLEObject(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddOLEObject (Optional ByRef ClassType As Object, Optional ByRef FileName As Object, Optional ByRef LinkToFile As Object, Optional ByRef DisplayAsIcon As Object, Optional ByRef IconFileName As Object, Optional ByRef IconIndex As Object, Optional ByRef IconLabel As Object, Optional ByRef Range As Object) As InlineShape" />
+      <MemberSignature Language="F#" Value="abstract member AddOLEObject : obj * obj * obj * obj * obj * obj * obj * obj -&gt; Microsoft.Office.Interop.Word.InlineShape" Usage="inlineShapes.AddOLEObject (ClassType, FileName, LinkToFile, DisplayAsIcon, IconFileName, IconIndex, IconLabel, Range)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -211,27 +218,27 @@
         <ReturnType>Microsoft.Office.Interop.Word.InlineShape</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ClassType" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="FileName" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="LinkToFile" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="DisplayAsIcon" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="IconFileName" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="IconIndex" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="IconLabel" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="Range" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ClassType" Type="System.Object" RefType="ref" />
+        <Parameter Name="FileName" Type="System.Object" RefType="ref" />
+        <Parameter Name="LinkToFile" Type="System.Object" RefType="ref" />
+        <Parameter Name="DisplayAsIcon" Type="System.Object" RefType="ref" />
+        <Parameter Name="IconFileName" Type="System.Object" RefType="ref" />
+        <Parameter Name="IconIndex" Type="System.Object" RefType="ref" />
+        <Parameter Name="IconLabel" Type="System.Object" RefType="ref" />
+        <Parameter Name="Range" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="ClassType"><span data-ttu-id="90f56-143"><b>Objeto</b>opcional.</span><span class="sxs-lookup"><span data-stu-id="90f56-143">Optional <b>Object</b>.</span></span> <span data-ttu-id="90f56-144">O nome do aplicativo usado para ativar o objeto OLE especificado.</span><span class="sxs-lookup"><span data-stu-id="90f56-144">The name of the application used to activate the specified OLE object.</span></span></param>
-        <param name="FileName"><span data-ttu-id="90f56-145"><b>Objeto</b>opcional.</span><span class="sxs-lookup"><span data-stu-id="90f56-145">Optional <b>Object</b>.</span></span> <span data-ttu-id="90f56-146">O arquivo a partir do qual o objeto será criado.</span><span class="sxs-lookup"><span data-stu-id="90f56-146">The file from which the object is to be created.</span></span> <span data-ttu-id="90f56-147">Se esse argumento for omitido, a pasta atual será usada.</span><span class="sxs-lookup"><span data-stu-id="90f56-147">If this argument is omitted, the current folder is used.</span></span> <span data-ttu-id="90f56-148">Você deve especificar o <paramref name="ClassType" /> argumento ou <paramref name="FileName" /> para o objeto, mas não ambos.</span><span class="sxs-lookup"><span data-stu-id="90f56-148">You must specify either the <paramref name="ClassType" /> or <paramref name="FileName" /> argument for the object, but not both.</span></span></param>
-        <param name="LinkToFile"><span data-ttu-id="90f56-149"><b>Objeto</b>opcional.</span><span class="sxs-lookup"><span data-stu-id="90f56-149">Optional <b>Object</b>.</span></span> <span data-ttu-id="90f56-150"><b>True</b> para vincular o objeto OLE ao arquivo do qual ele foi criado; <b>False</b> para tornar o objeto OLE uma cópia independente do arquivo.</span><span class="sxs-lookup"><span data-stu-id="90f56-150"><b>True</b> to link the OLE object to the file from which it was created; <b>False</b> to make the OLE object an independent copy of the file.</span></span> <span data-ttu-id="90f56-151">Se você especificou um valor <paramref name="ClassType" />para, <paramref name="LinkToFile" /> o argumento deve ser <b>false</b>.</span><span class="sxs-lookup"><span data-stu-id="90f56-151">If you specified a value for <paramref name="ClassType" />, the <paramref name="LinkToFile" /> argument must be <b>False</b>.</span></span> <span data-ttu-id="90f56-152">O valor padrão é <b>False</b>.</span><span class="sxs-lookup"><span data-stu-id="90f56-152">The default value is <b>False</b>.</span></span></param>
-        <param name="DisplayAsIcon"><span data-ttu-id="90f56-153"><b>Objeto</b>opcional.</span><span class="sxs-lookup"><span data-stu-id="90f56-153">Optional <b>Object</b>.</span></span> <span data-ttu-id="90f56-154"><b>True</b> para exibir o objeto OLE como um ícone.</span><span class="sxs-lookup"><span data-stu-id="90f56-154"><b>True</b> to display the OLE object as an icon.</span></span> <span data-ttu-id="90f56-155">O valor padrão é <b>False</b>.</span><span class="sxs-lookup"><span data-stu-id="90f56-155">The default value is <b>False</b>.</span></span></param>
-        <param name="IconFileName"><span data-ttu-id="90f56-156"><b>Objeto</b>opcional.</span><span class="sxs-lookup"><span data-stu-id="90f56-156">Optional <b>Object</b>.</span></span> <span data-ttu-id="90f56-157">O arquivo que contém o ícone a ser exibido.</span><span class="sxs-lookup"><span data-stu-id="90f56-157">The file that contains the icon to be displayed.</span></span></param>
-        <param name="IconIndex"><span data-ttu-id="90f56-158"><b>Objeto</b>opcional.</span><span class="sxs-lookup"><span data-stu-id="90f56-158">Optional <b>Object</b>.</span></span> <span data-ttu-id="90f56-159">O número de índice do ícone dentro <paramref name="IconFileName" />.</span><span class="sxs-lookup"><span data-stu-id="90f56-159">The index number of the icon within <paramref name="IconFileName" />.</span></span> <span data-ttu-id="90f56-160">A ordem dos ícones no arquivo especificado corresponde à ordem na qual os ícones aparecem na caixa de diálogo Alterar ícone (menu Inserir, caixa de diálogo Objeto), quando a caixa de seleção Exibir como ícone está marcada.</span><span class="sxs-lookup"><span data-stu-id="90f56-160">The order of icons in the specified file corresponds to the order in which the icons appear in the Change Icon dialog box (Insert menu, Object dialog box) when the Display as icon check box is selected.</span></span> <span data-ttu-id="90f56-161">O primeiro ícone no arquivo tem o número de índice 0 (zero).</span><span class="sxs-lookup"><span data-stu-id="90f56-161">The first icon in the file has the index number 0 (zero).</span></span> <span data-ttu-id="90f56-162">Se um ícone com o número de índice fornecido não existir <paramref name="IconFileName" />no, o ícone com o número de índice 1 (o segundo ícone no arquivo) será usado.</span><span class="sxs-lookup"><span data-stu-id="90f56-162">If an icon with the given index number doesn't exist in <paramref name="IconFileName" />, the icon with the index number 1 (the second icon in the file) is used.</span></span> <span data-ttu-id="90f56-163">O valor padrão é 0 (zero).</span><span class="sxs-lookup"><span data-stu-id="90f56-163">The default value is 0 (zero).</span></span></param>
-        <param name="IconLabel"><span data-ttu-id="90f56-164"><b>Objeto</b>opcional.</span><span class="sxs-lookup"><span data-stu-id="90f56-164">Optional <b>Object</b>.</span></span> <span data-ttu-id="90f56-165">Um nome (legenda) a ser exibido abaixo do ícone.</span><span class="sxs-lookup"><span data-stu-id="90f56-165">A label (caption) to be displayed beneath the icon.</span></span></param>
-        <param name="Range"><span data-ttu-id="90f56-166"><b>Objeto</b>opcional.</span><span class="sxs-lookup"><span data-stu-id="90f56-166">Optional <b>Object</b>.</span></span> <span data-ttu-id="90f56-167">O intervalo onde o objeto OLE será colocado no texto.</span><span class="sxs-lookup"><span data-stu-id="90f56-167">The range where the OLE object will be placed in the text.</span></span> <span data-ttu-id="90f56-168">O objeto OLE substitui o intervalo, a não ser que o intervalo esteja recolhido.</span><span class="sxs-lookup"><span data-stu-id="90f56-168">The OLE object replaces the range, unless the range is collapsed.</span></span> <span data-ttu-id="90f56-169">Se esse argumento for omitido, o objeto será colocado automaticamente.</span><span class="sxs-lookup"><span data-stu-id="90f56-169">If this argument is omitted, the object is placed automatically.</span></span></param>
-        <summary><span data-ttu-id="90f56-170">Cria um objeto OLE.</span><span class="sxs-lookup"><span data-stu-id="90f56-170">Creates an OLE object.</span></span></summary>
+        <param name="ClassType"><span data-ttu-id="4e884-143"><b>Objeto</b>opcional.</span><span class="sxs-lookup"><span data-stu-id="4e884-143">Optional <b>Object</b>.</span></span> <span data-ttu-id="4e884-144">O nome do aplicativo usado para ativar o objeto OLE especificado.</span><span class="sxs-lookup"><span data-stu-id="4e884-144">The name of the application used to activate the specified OLE object.</span></span></param>
+        <param name="FileName"><span data-ttu-id="4e884-145"><b>Objeto</b>opcional.</span><span class="sxs-lookup"><span data-stu-id="4e884-145">Optional <b>Object</b>.</span></span> <span data-ttu-id="4e884-146">O arquivo a partir do qual o objeto será criado.</span><span class="sxs-lookup"><span data-stu-id="4e884-146">The file from which the object is to be created.</span></span> <span data-ttu-id="4e884-147">Se esse argumento for omitido, a pasta atual será usada.</span><span class="sxs-lookup"><span data-stu-id="4e884-147">If this argument is omitted, the current folder is used.</span></span> <span data-ttu-id="4e884-148">Você deve especificar o <paramref name="ClassType" /> argumento ou <paramref name="FileName" /> para o objeto, mas não ambos.</span><span class="sxs-lookup"><span data-stu-id="4e884-148">You must specify either the <paramref name="ClassType" /> or <paramref name="FileName" /> argument for the object, but not both.</span></span></param>
+        <param name="LinkToFile"><span data-ttu-id="4e884-149"><b>Objeto</b>opcional.</span><span class="sxs-lookup"><span data-stu-id="4e884-149">Optional <b>Object</b>.</span></span> <span data-ttu-id="4e884-150"><b>True</b> para vincular o objeto OLE ao arquivo do qual ele foi criado; <b>False</b> para tornar o objeto OLE uma cópia independente do arquivo.</span><span class="sxs-lookup"><span data-stu-id="4e884-150"><b>True</b> to link the OLE object to the file from which it was created; <b>False</b> to make the OLE object an independent copy of the file.</span></span> <span data-ttu-id="4e884-151">Se você especificou um valor para <paramref name="ClassType" /> , o <paramref name="LinkToFile" /> argumento deve ser <b>false</b>.</span><span class="sxs-lookup"><span data-stu-id="4e884-151">If you specified a value for <paramref name="ClassType" />, the <paramref name="LinkToFile" /> argument must be <b>False</b>.</span></span> <span data-ttu-id="4e884-152">O valor padrão é <b>False</b>.</span><span class="sxs-lookup"><span data-stu-id="4e884-152">The default value is <b>False</b>.</span></span></param>
+        <param name="DisplayAsIcon"><span data-ttu-id="4e884-153"><b>Objeto</b>opcional.</span><span class="sxs-lookup"><span data-stu-id="4e884-153">Optional <b>Object</b>.</span></span> <span data-ttu-id="4e884-154"><b>True</b> para exibir o objeto OLE como um ícone.</span><span class="sxs-lookup"><span data-stu-id="4e884-154"><b>True</b> to display the OLE object as an icon.</span></span> <span data-ttu-id="4e884-155">O valor padrão é <b>False</b>.</span><span class="sxs-lookup"><span data-stu-id="4e884-155">The default value is <b>False</b>.</span></span></param>
+        <param name="IconFileName"><span data-ttu-id="4e884-156"><b>Objeto</b>opcional.</span><span class="sxs-lookup"><span data-stu-id="4e884-156">Optional <b>Object</b>.</span></span> <span data-ttu-id="4e884-157">O arquivo que contém o ícone a ser exibido.</span><span class="sxs-lookup"><span data-stu-id="4e884-157">The file that contains the icon to be displayed.</span></span></param>
+        <param name="IconIndex"><span data-ttu-id="4e884-158"><b>Objeto</b>opcional.</span><span class="sxs-lookup"><span data-stu-id="4e884-158">Optional <b>Object</b>.</span></span> <span data-ttu-id="4e884-159">O número de índice do ícone dentro <paramref name="IconFileName" /> .</span><span class="sxs-lookup"><span data-stu-id="4e884-159">The index number of the icon within <paramref name="IconFileName" />.</span></span> <span data-ttu-id="4e884-160">A ordem dos ícones no arquivo especificado corresponde à ordem na qual os ícones aparecem na caixa de diálogo Alterar ícone (menu Inserir, caixa de diálogo Objeto), quando a caixa de seleção Exibir como ícone está marcada.</span><span class="sxs-lookup"><span data-stu-id="4e884-160">The order of icons in the specified file corresponds to the order in which the icons appear in the Change Icon dialog box (Insert menu, Object dialog box) when the Display as icon check box is selected.</span></span> <span data-ttu-id="4e884-161">O primeiro ícone no arquivo tem o número de índice 0 (zero).</span><span class="sxs-lookup"><span data-stu-id="4e884-161">The first icon in the file has the index number 0 (zero).</span></span> <span data-ttu-id="4e884-162">Se um ícone com o número de índice fornecido não existir no <paramref name="IconFileName" /> , o ícone com o número de índice 1 (o segundo ícone no arquivo) será usado.</span><span class="sxs-lookup"><span data-stu-id="4e884-162">If an icon with the given index number doesn't exist in <paramref name="IconFileName" />, the icon with the index number 1 (the second icon in the file) is used.</span></span> <span data-ttu-id="4e884-163">O valor padrão é 0 (zero).</span><span class="sxs-lookup"><span data-stu-id="4e884-163">The default value is 0 (zero).</span></span></param>
+        <param name="IconLabel"><span data-ttu-id="4e884-164"><b>Objeto</b>opcional.</span><span class="sxs-lookup"><span data-stu-id="4e884-164">Optional <b>Object</b>.</span></span> <span data-ttu-id="4e884-165">Um nome (legenda) a ser exibido abaixo do ícone.</span><span class="sxs-lookup"><span data-stu-id="4e884-165">A label (caption) to be displayed beneath the icon.</span></span></param>
+        <param name="Range"><span data-ttu-id="4e884-166"><b>Objeto</b>opcional.</span><span class="sxs-lookup"><span data-stu-id="4e884-166">Optional <b>Object</b>.</span></span> <span data-ttu-id="4e884-167">O intervalo onde o objeto OLE será colocado no texto.</span><span class="sxs-lookup"><span data-stu-id="4e884-167">The range where the OLE object will be placed in the text.</span></span> <span data-ttu-id="4e884-168">O objeto OLE substitui o intervalo, a não ser que o intervalo esteja recolhido.</span><span class="sxs-lookup"><span data-stu-id="4e884-168">The OLE object replaces the range, unless the range is collapsed.</span></span> <span data-ttu-id="4e884-169">Se esse argumento for omitido, o objeto será colocado automaticamente.</span><span class="sxs-lookup"><span data-stu-id="4e884-169">If this argument is omitted, the object is placed automatically.</span></span></param>
+        <summary><span data-ttu-id="4e884-170">Cria um objeto OLE.</span><span class="sxs-lookup"><span data-stu-id="4e884-170">Creates an OLE object.</span></span></summary>
         <returns>To be added.</returns>
-        <remarks><para><span data-ttu-id="90f56-171">Retorna o <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> objeto que representa o novo objeto OLE.</span><span class="sxs-lookup"><span data-stu-id="90f56-171">Returns the <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> object that represents the new OLE object.</span></span></para>
+        <remarks><para><span data-ttu-id="4e884-171">Retorna o <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> objeto que representa o novo objeto OLE.</span><span class="sxs-lookup"><span data-stu-id="4e884-171">Returns the <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> object that represents the new OLE object.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -240,6 +247,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.InlineShape AddPicture([in]string FileName, [in]object&amp; LinkToFile, [in]object&amp; SaveWithDocument, [in]object&amp; Range) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.InlineShapes.AddPicture(System.String,System.Object@,System.Object@,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddPicture (FileName As String, Optional ByRef LinkToFile As Object, Optional ByRef SaveWithDocument As Object, Optional ByRef Range As Object) As InlineShape" />
+      <MemberSignature Language="F#" Value="abstract member AddPicture : string * obj * obj * obj -&gt; Microsoft.Office.Interop.Word.InlineShape" Usage="inlineShapes.AddPicture (FileName, LinkToFile, SaveWithDocument, Range)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -255,18 +263,18 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="FileName" Type="System.String" />
-        <Parameter Name="LinkToFile" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="SaveWithDocument" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="Range" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="LinkToFile" Type="System.Object" RefType="ref" />
+        <Parameter Name="SaveWithDocument" Type="System.Object" RefType="ref" />
+        <Parameter Name="Range" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="FileName"><span data-ttu-id="90f56-172"><b>String</b> necessário.</span><span class="sxs-lookup"><span data-stu-id="90f56-172">Required <b>String</b>.</span></span> <span data-ttu-id="90f56-173">O caminho e o nome do arquivo de figura.</span><span class="sxs-lookup"><span data-stu-id="90f56-173">The path and file name of the picture.</span></span></param>
-        <param name="LinkToFile"><span data-ttu-id="90f56-174"><b>Objeto</b>opcional.</span><span class="sxs-lookup"><span data-stu-id="90f56-174">Optional <b>Object</b>.</span></span> <span data-ttu-id="90f56-175"><b>True</b> para vincular a imagem ao arquivo do qual ele foi criado.</span><span class="sxs-lookup"><span data-stu-id="90f56-175"><b>True</b> to link the picture to the file from which it was created.</span></span> <span data-ttu-id="90f56-176"><b>False</b> para tornar a imagem uma cópia independente do arquivo.</span><span class="sxs-lookup"><span data-stu-id="90f56-176"><b>False</b> to make the picture an independent copy of the file.</span></span> <span data-ttu-id="90f56-177">O valor padrão é <b>False</b>.</span><span class="sxs-lookup"><span data-stu-id="90f56-177">The default value is <b>False</b>.</span></span></param>
-        <param name="SaveWithDocument"><span data-ttu-id="90f56-178"><b>Objeto</b>opcional.</span><span class="sxs-lookup"><span data-stu-id="90f56-178">Optional <b>Object</b>.</span></span> <span data-ttu-id="90f56-179"><b>True</b> para salvar a imagem vinculada com o documento.</span><span class="sxs-lookup"><span data-stu-id="90f56-179"><b>True</b> to save the linked picture with the document.</span></span> <span data-ttu-id="90f56-180">O valor padrão é <b>False</b>.</span><span class="sxs-lookup"><span data-stu-id="90f56-180">The default value is <b>False</b>.</span></span></param>
-        <param name="Range"><span data-ttu-id="90f56-181"><b>Objeto</b>opcional.</span><span class="sxs-lookup"><span data-stu-id="90f56-181">Optional <b>Object</b>.</span></span> <span data-ttu-id="90f56-182">O intervalo onde a figura será colocada no texto.</span><span class="sxs-lookup"><span data-stu-id="90f56-182">The location where the picture will be placed in the text.</span></span> <span data-ttu-id="90f56-183">Se o intervalo não estiver recolhido, a figura substituirá o intervalo; caso contrário, a figura será inserida.</span><span class="sxs-lookup"><span data-stu-id="90f56-183">If the range isn't collapsed, the picture replaces the range; otherwise, the picture is inserted.</span></span> <span data-ttu-id="90f56-184">Se esse argumento for omitido, a figura será posicionada automaticamente.</span><span class="sxs-lookup"><span data-stu-id="90f56-184">If this argument is omitted, the picture is placed automatically.</span></span></param>
-        <summary><span data-ttu-id="90f56-185">Adiciona uma figura a um documento.</span><span class="sxs-lookup"><span data-stu-id="90f56-185">Adds a picture to a document.</span></span></summary>
+        <param name="FileName"><span data-ttu-id="4e884-172"><b>String</b> necessário.</span><span class="sxs-lookup"><span data-stu-id="4e884-172">Required <b>String</b>.</span></span> <span data-ttu-id="4e884-173">O caminho e o nome do arquivo de figura.</span><span class="sxs-lookup"><span data-stu-id="4e884-173">The path and file name of the picture.</span></span></param>
+        <param name="LinkToFile"><span data-ttu-id="4e884-174"><b>Objeto</b>opcional.</span><span class="sxs-lookup"><span data-stu-id="4e884-174">Optional <b>Object</b>.</span></span> <span data-ttu-id="4e884-175"><b>True</b> para vincular a imagem ao arquivo do qual ele foi criado.</span><span class="sxs-lookup"><span data-stu-id="4e884-175"><b>True</b> to link the picture to the file from which it was created.</span></span> <span data-ttu-id="4e884-176"><b>False</b> para tornar a imagem uma cópia independente do arquivo.</span><span class="sxs-lookup"><span data-stu-id="4e884-176"><b>False</b> to make the picture an independent copy of the file.</span></span> <span data-ttu-id="4e884-177">O valor padrão é <b>False</b>.</span><span class="sxs-lookup"><span data-stu-id="4e884-177">The default value is <b>False</b>.</span></span></param>
+        <param name="SaveWithDocument"><span data-ttu-id="4e884-178"><b>Objeto</b>opcional.</span><span class="sxs-lookup"><span data-stu-id="4e884-178">Optional <b>Object</b>.</span></span> <span data-ttu-id="4e884-179"><b>True</b> para salvar a imagem vinculada com o documento.</span><span class="sxs-lookup"><span data-stu-id="4e884-179"><b>True</b> to save the linked picture with the document.</span></span> <span data-ttu-id="4e884-180">O valor padrão é <b>False</b>.</span><span class="sxs-lookup"><span data-stu-id="4e884-180">The default value is <b>False</b>.</span></span></param>
+        <param name="Range"><span data-ttu-id="4e884-181"><b>Objeto</b>opcional.</span><span class="sxs-lookup"><span data-stu-id="4e884-181">Optional <b>Object</b>.</span></span> <span data-ttu-id="4e884-182">O intervalo onde a figura será colocada no texto.</span><span class="sxs-lookup"><span data-stu-id="4e884-182">The location where the picture will be placed in the text.</span></span> <span data-ttu-id="4e884-183">Se o intervalo não estiver recolhido, a figura substituirá o intervalo; caso contrário, a figura será inserida.</span><span class="sxs-lookup"><span data-stu-id="4e884-183">If the range isn't collapsed, the picture replaces the range; otherwise, the picture is inserted.</span></span> <span data-ttu-id="4e884-184">Se esse argumento for omitido, a figura será posicionada automaticamente.</span><span class="sxs-lookup"><span data-stu-id="4e884-184">If this argument is omitted, the picture is placed automatically.</span></span></param>
+        <summary><span data-ttu-id="4e884-185">Adiciona uma figura a um documento.</span><span class="sxs-lookup"><span data-stu-id="4e884-185">Adds a picture to a document.</span></span></summary>
         <returns>To be added.</returns>
-        <remarks><para><span data-ttu-id="90f56-186">Este método retorna um <see cref="T:Microsoft.Office.Interop.Word.Shape" /> objeto que representa a imagem e o <see cref="T:Microsoft.Office.Interop.Word.InlineShapes" /> adiciona à coleção.</span><span class="sxs-lookup"><span data-stu-id="90f56-186">This method returns a <see cref="T:Microsoft.Office.Interop.Word.Shape" /> object that represents the picture and adds it to the <see cref="T:Microsoft.Office.Interop.Word.InlineShapes" /> collection.</span></span></para>
+        <remarks><para><span data-ttu-id="4e884-186">Este método retorna um <see cref="T:Microsoft.Office.Interop.Word.Shape" /> objeto que representa a imagem e o adiciona à <see cref="T:Microsoft.Office.Interop.Word.InlineShapes" /> coleção.</span><span class="sxs-lookup"><span data-stu-id="4e884-186">This method returns a <see cref="T:Microsoft.Office.Interop.Word.Shape" /> object that represents the picture and adds it to the <see cref="T:Microsoft.Office.Interop.Word.InlineShapes" /> collection.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -275,6 +283,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.InlineShape AddPictureBullet([in]string FileName, [in]object&amp; Range) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.InlineShapes.AddPictureBullet(System.String,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddPictureBullet (FileName As String, Optional ByRef Range As Object) As InlineShape" />
+      <MemberSignature Language="F#" Value="abstract member AddPictureBullet : string * obj -&gt; Microsoft.Office.Interop.Word.InlineShape" Usage="inlineShapes.AddPictureBullet (FileName, Range)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -290,14 +299,14 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="FileName" Type="System.String" />
-        <Parameter Name="Range" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Range" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="FileName"><span data-ttu-id="90f56-187"><b>String</b> necessário.</span><span class="sxs-lookup"><span data-stu-id="90f56-187">Required <b>String</b>.</span></span> <span data-ttu-id="90f56-188">O nome do arquivo de imagem que você deseja usar para o marcador de figura.</span><span class="sxs-lookup"><span data-stu-id="90f56-188">The file name of the image you want to use for the picture bullet.</span></span></param>
-        <param name="Range"><span data-ttu-id="90f56-189"><b>Objeto</b>opcional.</span><span class="sxs-lookup"><span data-stu-id="90f56-189">Optional <b>Object</b>.</span></span> <span data-ttu-id="90f56-190">O intervalo ao qual o Microsoft Word adiciona o marcador de figura.</span><span class="sxs-lookup"><span data-stu-id="90f56-190">The range to which Microsoft Word adds the picture bullet.</span></span> <span data-ttu-id="90f56-191">O Word adiciona o marcador de figura a cada parágrafo dentro do intervalo.</span><span class="sxs-lookup"><span data-stu-id="90f56-191">Word adds the picture bullet to each paragraph in the range.</span></span> <span data-ttu-id="90f56-192">Se este argumento for omitido, o Word adiciona o marcador de figura a cada parágrafo da seleção atual.</span><span class="sxs-lookup"><span data-stu-id="90f56-192">If this argument is omitted, Word adds the picture bullet to each paragraph in the current selection.</span></span></param>
-        <summary><span data-ttu-id="90f56-193">Adiciona ao documento atual um marcador de figura baseado em um arquivo de imagem.</span><span class="sxs-lookup"><span data-stu-id="90f56-193">Adds a picture bullet based on an image file to the current document.</span></span></summary>
+        <param name="FileName"><span data-ttu-id="4e884-187"><b>String</b> necessário.</span><span class="sxs-lookup"><span data-stu-id="4e884-187">Required <b>String</b>.</span></span> <span data-ttu-id="4e884-188">O nome do arquivo de imagem que você deseja usar para o marcador de figura.</span><span class="sxs-lookup"><span data-stu-id="4e884-188">The file name of the image you want to use for the picture bullet.</span></span></param>
+        <param name="Range"><span data-ttu-id="4e884-189"><b>Objeto</b>opcional.</span><span class="sxs-lookup"><span data-stu-id="4e884-189">Optional <b>Object</b>.</span></span> <span data-ttu-id="4e884-190">O intervalo ao qual o Microsoft Word adiciona o marcador de figura.</span><span class="sxs-lookup"><span data-stu-id="4e884-190">The range to which Microsoft Word adds the picture bullet.</span></span> <span data-ttu-id="4e884-191">O Word adiciona o marcador de figura a cada parágrafo dentro do intervalo.</span><span class="sxs-lookup"><span data-stu-id="4e884-191">Word adds the picture bullet to each paragraph in the range.</span></span> <span data-ttu-id="4e884-192">Se este argumento for omitido, o Word adiciona o marcador de figura a cada parágrafo da seleção atual.</span><span class="sxs-lookup"><span data-stu-id="4e884-192">If this argument is omitted, Word adds the picture bullet to each paragraph in the current selection.</span></span></param>
+        <summary><span data-ttu-id="4e884-193">Adiciona ao documento atual um marcador de figura baseado em um arquivo de imagem.</span><span class="sxs-lookup"><span data-stu-id="4e884-193">Adds a picture bullet based on an image file to the current document.</span></span></summary>
         <returns>To be added.</returns>
-        <remarks><para><span data-ttu-id="90f56-194">Esse método retorna um <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> objeto.</span><span class="sxs-lookup"><span data-stu-id="90f56-194">This method returns a <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> object.</span></span></para>
+        <remarks><para><span data-ttu-id="4e884-194">Esse método retorna um <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> objeto.</span><span class="sxs-lookup"><span data-stu-id="4e884-194">This method returns a <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> object.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -306,6 +315,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.InlineShape AddSmartArt([in]class Microsoft.Office.Core.SmartArtLayout Layout, [in]object&amp; Range) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.InlineShapes.AddSmartArt(Microsoft.Office.Core.SmartArtLayout,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddSmartArt (Layout As SmartArtLayout, Optional ByRef Range As Object) As InlineShape" />
+      <MemberSignature Language="F#" Value="abstract member AddSmartArt : Microsoft.Office.Core.SmartArtLayout * obj -&gt; Microsoft.Office.Interop.Word.InlineShape" Usage="inlineShapes.AddSmartArt (Layout, Range)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -321,13 +331,13 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="Layout" Type="Microsoft.Office.Core.SmartArtLayout" />
-        <Parameter Name="Range" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Range" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Layout"><span data-ttu-id="90f56-195">Um <see cref="T:Microsoft.Office.Core.SmartArtLayout" /> objeto que especifica o layout para o elemento gráfico SmartArt.</span><span class="sxs-lookup"><span data-stu-id="90f56-195">A <see cref="T:Microsoft.Office.Core.SmartArtLayout" /> object that specifies the layout for the SmartArt graphic.</span></span></param>
-        <param name="Range"><span data-ttu-id="90f56-196">Especifica o texto ao qual o gráfico será vinculado.</span><span class="sxs-lookup"><span data-stu-id="90f56-196">Specifies the text to which the SmartArt graphic is bound.</span></span> <span data-ttu-id="90f56-197">Se <paramref name="Range" /> for especificado, o elemento gráfico SmartArt será posicionado no início do primeiro parágrafo do intervalo.</span><span class="sxs-lookup"><span data-stu-id="90f56-197">If <paramref name="Range" /> is specified, the SmartArt graphic is positioned at the beginning of the first paragraph in the range.</span></span> <span data-ttu-id="90f56-198">Se esse parâmetro for omitido, o intervalo será selecionado automaticamente e o elemento gráfico SmartArt será posicionado em relação às bordas superior e esquerda da página.</span><span class="sxs-lookup"><span data-stu-id="90f56-198">If this parameter is omitted, the range is selected automatically, and the SmartArt graphic is positioned relative to the top and left edges of the page.</span></span></param>
-        <summary><span data-ttu-id="90f56-199">Insere um elemento gráfico SmartArt como uma forma embutida no documento ativo.</span><span class="sxs-lookup"><span data-stu-id="90f56-199">Inserts a SmartArt graphic as an inline shape into the active document.</span></span></summary>
-        <returns><span data-ttu-id="90f56-200">O elemento gráfico SmartArt a ser inserido.</span><span class="sxs-lookup"><span data-stu-id="90f56-200">The SmartArt graphic to insert.</span></span></returns>
+        <param name="Layout"><span data-ttu-id="4e884-195">Um <see cref="T:Microsoft.Office.Core.SmartArtLayout" /> objeto que especifica o layout para o elemento gráfico SmartArt.</span><span class="sxs-lookup"><span data-stu-id="4e884-195">A <see cref="T:Microsoft.Office.Core.SmartArtLayout" /> object that specifies the layout for the SmartArt graphic.</span></span></param>
+        <param name="Range"><span data-ttu-id="4e884-196">Especifica o texto ao qual o gráfico será vinculado.</span><span class="sxs-lookup"><span data-stu-id="4e884-196">Specifies the text to which the SmartArt graphic is bound.</span></span> <span data-ttu-id="4e884-197">Se <paramref name="Range" /> for especificado, o elemento gráfico SmartArt será posicionado no início do primeiro parágrafo do intervalo.</span><span class="sxs-lookup"><span data-stu-id="4e884-197">If <paramref name="Range" /> is specified, the SmartArt graphic is positioned at the beginning of the first paragraph in the range.</span></span> <span data-ttu-id="4e884-198">Se esse parâmetro for omitido, o intervalo será selecionado automaticamente e o elemento gráfico SmartArt será posicionado em relação às bordas superior e esquerda da página.</span><span class="sxs-lookup"><span data-stu-id="4e884-198">If this parameter is omitted, the range is selected automatically, and the SmartArt graphic is positioned relative to the top and left edges of the page.</span></span></param>
+        <summary><span data-ttu-id="4e884-199">Insere um elemento gráfico SmartArt como uma forma embutida no documento ativo.</span><span class="sxs-lookup"><span data-stu-id="4e884-199">Inserts a SmartArt graphic as an inline shape into the active document.</span></span></summary>
+        <returns><span data-ttu-id="4e884-200">O elemento gráfico SmartArt a ser inserido.</span><span class="sxs-lookup"><span data-stu-id="4e884-200">The SmartArt graphic to insert.</span></span></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -336,6 +346,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.InlineShape AddWebVideo([in]string EmbedCode, [in]object&amp; VideoWidth, [in]object&amp; VideoHeight, [in]object&amp; PosterFrameImage, [in]object&amp; Url, [in]object&amp; Range) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.InlineShapes.AddWebVideo(System.String,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddWebVideo (EmbedCode As String, ByRef VideoWidth As Object, ByRef VideoHeight As Object, Optional ByRef PosterFrameImage As Object, Optional ByRef Url As Object, Optional ByRef Range As Object) As InlineShape" />
+      <MemberSignature Language="F#" Value="abstract member AddWebVideo : string * obj * obj * obj * obj * obj -&gt; Microsoft.Office.Interop.Word.InlineShape" Usage="inlineShapes.AddWebVideo (EmbedCode, VideoWidth, VideoHeight, PosterFrameImage, Url, Range)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -351,20 +362,20 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="EmbedCode" Type="System.String" />
-        <Parameter Name="VideoWidth" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="VideoHeight" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="PosterFrameImage" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="Url" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="Range" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="VideoWidth" Type="System.Object" RefType="ref" />
+        <Parameter Name="VideoHeight" Type="System.Object" RefType="ref" />
+        <Parameter Name="PosterFrameImage" Type="System.Object" RefType="ref" />
+        <Parameter Name="Url" Type="System.Object" RefType="ref" />
+        <Parameter Name="Range" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="EmbedCode"><span data-ttu-id="90f56-201">O código de inserção do vídeo.</span><span class="sxs-lookup"><span data-stu-id="90f56-201">The embed code for the video.</span></span></param>
-        <param name="VideoWidth"><span data-ttu-id="90f56-202">Um inteiro que representa a largura do vídeo da Web em pixels.</span><span class="sxs-lookup"><span data-stu-id="90f56-202">An integer that represents the width of the web video in pixels.</span></span></param>
-        <param name="VideoHeight"><span data-ttu-id="90f56-203">Um inteiro que representa a altura do vídeo da Web em pixels.</span><span class="sxs-lookup"><span data-stu-id="90f56-203">An integer that represents the height of the web video in pixels.</span></span></param>
-        <param name="PosterFrameImage"><span data-ttu-id="90f56-204">Uma cadeia de caracteres que aponta para o arquivo a ser usado como o quadro de cartaz para o vídeo da Web.</span><span class="sxs-lookup"><span data-stu-id="90f56-204">A string that points to the file to use as the poster frame for the web video.</span></span></param>
-        <param name="Url"><span data-ttu-id="90f56-205">A URL do vídeo.</span><span class="sxs-lookup"><span data-stu-id="90f56-205">The URL to the video.</span></span></param>
-        <param name="Range"><span data-ttu-id="90f56-206">O intervalo no qual inserir o vídeo da Web.</span><span class="sxs-lookup"><span data-stu-id="90f56-206">The range at which to insert the web video.</span></span> <span data-ttu-id="90f56-207">Se <paramref name="Range" /> for omitido, a seleção atual será usada.</span><span class="sxs-lookup"><span data-stu-id="90f56-207">If <paramref name="Range" /> is omitted, the current selection is used.</span></span></param>
-        <summary><span data-ttu-id="90f56-208">Adiciona um novo vídeo da Web ao documento.</span><span class="sxs-lookup"><span data-stu-id="90f56-208">Adds a new web video to the document.</span></span></summary>
+        <param name="EmbedCode"><span data-ttu-id="4e884-201">O código de inserção do vídeo.</span><span class="sxs-lookup"><span data-stu-id="4e884-201">The embed code for the video.</span></span></param>
+        <param name="VideoWidth"><span data-ttu-id="4e884-202">Um inteiro que representa a largura do vídeo da Web em pixels.</span><span class="sxs-lookup"><span data-stu-id="4e884-202">An integer that represents the width of the web video in pixels.</span></span></param>
+        <param name="VideoHeight"><span data-ttu-id="4e884-203">Um inteiro que representa a altura do vídeo da Web em pixels.</span><span class="sxs-lookup"><span data-stu-id="4e884-203">An integer that represents the height of the web video in pixels.</span></span></param>
+        <param name="PosterFrameImage"><span data-ttu-id="4e884-204">Uma cadeia de caracteres que aponta para o arquivo a ser usado como o quadro de cartaz para o vídeo da Web.</span><span class="sxs-lookup"><span data-stu-id="4e884-204">A string that points to the file to use as the poster frame for the web video.</span></span></param>
+        <param name="Url"><span data-ttu-id="4e884-205">A URL do vídeo.</span><span class="sxs-lookup"><span data-stu-id="4e884-205">The URL to the video.</span></span></param>
+        <param name="Range"><span data-ttu-id="4e884-206">O intervalo no qual inserir o vídeo da Web.</span><span class="sxs-lookup"><span data-stu-id="4e884-206">The range at which to insert the web video.</span></span> <span data-ttu-id="4e884-207">Se <paramref name="Range" /> for omitido, a seleção atual será usada.</span><span class="sxs-lookup"><span data-stu-id="4e884-207">If <paramref name="Range" /> is omitted, the current selection is used.</span></span></param>
+        <summary><span data-ttu-id="4e884-208">Adiciona um novo vídeo da Web ao documento.</span><span class="sxs-lookup"><span data-stu-id="4e884-208">Adds a new web video to the document.</span></span></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -375,6 +386,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShapes.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.InlineShapes.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -392,7 +404,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="90f56-209">Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</span><span class="sxs-lookup"><span data-stu-id="90f56-209">Returns a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span></span></summary>
+        <summary><span data-ttu-id="4e884-209">Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</span><span class="sxs-lookup"><span data-stu-id="4e884-209">Returns a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -403,6 +415,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShapes.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.InlineShapes.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -420,7 +433,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="90f56-210">Retorna o número de itens na coleção especificada.</span><span class="sxs-lookup"><span data-stu-id="90f56-210">Returns the number of items in the specified collection.</span></span></summary>
+        <summary><span data-ttu-id="4e884-210">Retorna o número de itens na coleção especificada.</span><span class="sxs-lookup"><span data-stu-id="4e884-210">Returns the number of items in the specified collection.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -431,6 +444,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShapes.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.InlineShapes.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -448,10 +462,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="90f56-211">Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</span><span class="sxs-lookup"><span data-stu-id="90f56-211">Returns a 32-bit integer that indicates the application in which the specified object was created.</span></span></summary>
+        <summary><span data-ttu-id="4e884-211">Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</span><span class="sxs-lookup"><span data-stu-id="4e884-211">Returns a 32-bit integer that indicates the application in which the specified object was created.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="90f56-212">Se o objeto especificado foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD".</span><span class="sxs-lookup"><span data-stu-id="90f56-212">If the specified object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span> <span data-ttu-id="90f56-213">[!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</span><span class="sxs-lookup"><span data-stu-id="90f56-213">This value can also be represented by the constant <b>wdCreatorCode</b>.</span></span></para>
-          <para><span data-ttu-id="90f56-214">A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres.</span><span class="sxs-lookup"><span data-stu-id="90f56-214">The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="90f56-215">Por exemplo, o Microsoft Word tem o código de criador MSWD.</span><span class="sxs-lookup"><span data-stu-id="90f56-215">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="90f56-216">Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</span><span class="sxs-lookup"><span data-stu-id="90f56-216">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
+        <remarks><para><span data-ttu-id="4e884-212">Se o objeto especificado foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD".</span><span class="sxs-lookup"><span data-stu-id="4e884-212">If the specified object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span> <span data-ttu-id="4e884-213">[!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</span><span class="sxs-lookup"><span data-stu-id="4e884-213">This value can also be represented by the constant <b>wdCreatorCode</b>.</span></span></para>
+          <para><span data-ttu-id="4e884-214">A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres.</span><span class="sxs-lookup"><span data-stu-id="4e884-214">The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="4e884-215">Por exemplo, o Microsoft Word tem o código de criador MSWD.</span><span class="sxs-lookup"><span data-stu-id="4e884-215">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="4e884-216">Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</span><span class="sxs-lookup"><span data-stu-id="4e884-216">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -461,6 +475,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.InlineShapes.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="inlineShapes.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -493,6 +508,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShapes.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Integer) As InlineShape" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::InlineShape ^ default[int] { Microsoft::Office::Interop::Word::InlineShape ^ get(int Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : Microsoft.Office.Interop.Word.InlineShape" Usage="Microsoft.Office.Interop.Word.InlineShapes.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -513,8 +529,8 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index"><span data-ttu-id="90f56-217">Um <b>inteiro</b> que indica a posição ordinal do objeto individual.</span><span class="sxs-lookup"><span data-stu-id="90f56-217">An <b>Integer</b> indicating the ordinal position of the individual object.</span></span></param>
-        <summary><span data-ttu-id="90f56-218">Retorna um objeto individual de uma coleção.</span><span class="sxs-lookup"><span data-stu-id="90f56-218">Returns an individual object in a collection.</span></span></summary>
+        <param name="Index"><span data-ttu-id="4e884-217">Um <b>inteiro</b> que indica a posição ordinal do objeto individual.</span><span class="sxs-lookup"><span data-stu-id="4e884-217">An <b>Integer</b> indicating the ordinal position of the individual object.</span></span></param>
+        <summary><span data-ttu-id="4e884-218">Retorna um objeto individual de uma coleção.</span><span class="sxs-lookup"><span data-stu-id="4e884-218">Returns an individual object in a collection.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -523,7 +539,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Word.InlineShape New (Microsoft.Office.Interop.Word.Range Range);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.InlineShape New([in]class Microsoft.Office.Interop.Word.Range Range) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.InlineShapes.New(Microsoft.Office.Interop.Word.Range)" />
+      <MemberSignature Language="VB.NET" Value="Public Function New (Range As Range) As InlineShape" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::InlineShape ^ New(Microsoft::Office::Interop::Word::Range ^ Range);" />
+      <MemberSignature Language="F#" Value="abstract member New : Microsoft.Office.Interop.Word.Range -&gt; Microsoft.Office.Interop.Word.InlineShape" Usage="inlineShapes.New Range" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -541,10 +559,10 @@
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Word.Range" />
       </Parameters>
       <Docs>
-        <param name="Range"><span data-ttu-id="90f56-219">Objeto <see cref="T:Microsoft.Office.Interop.Word.Range" /> necessário.</span><span class="sxs-lookup"><span data-stu-id="90f56-219">Required <see cref="T:Microsoft.Office.Interop.Word.Range" /> object.</span></span> <span data-ttu-id="90f56-220">A posição do novo elemento gráfico.</span><span class="sxs-lookup"><span data-stu-id="90f56-220">The location of the new graphic.</span></span></param>
-        <summary><span data-ttu-id="90f56-221">Insere um objeto de imagem do Microsoft Word vazio, de 1 polegada e quadrado cercado por uma borda.</span><span class="sxs-lookup"><span data-stu-id="90f56-221">Inserts an empty, 1-inch-square Microsoft Word picture object surrounded by a border.</span></span></summary>
+        <param name="Range"><span data-ttu-id="4e884-219"><see cref="T:Microsoft.Office.Interop.Word.Range" />Objeto necessário.</span><span class="sxs-lookup"><span data-stu-id="4e884-219">Required <see cref="T:Microsoft.Office.Interop.Word.Range" /> object.</span></span> <span data-ttu-id="4e884-220">A posição do novo elemento gráfico.</span><span class="sxs-lookup"><span data-stu-id="4e884-220">The location of the new graphic.</span></span></param>
+        <summary><span data-ttu-id="4e884-221">Insere um objeto de imagem do Microsoft Word vazio, de 1 polegada e quadrado cercado por uma borda.</span><span class="sxs-lookup"><span data-stu-id="4e884-221">Inserts an empty, 1-inch-square Microsoft Word picture object surrounded by a border.</span></span></summary>
         <returns>To be added.</returns>
-        <remarks><para><span data-ttu-id="90f56-222">Esse método retorna o novo gráfico como um <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> objeto.</span><span class="sxs-lookup"><span data-stu-id="90f56-222">This method returns the new graphic as an <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> object.</span></span></para>
+        <remarks><para><span data-ttu-id="4e884-222">Esse método retorna o novo gráfico como um <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> objeto.</span><span class="sxs-lookup"><span data-stu-id="4e884-222">This method returns the new graphic as an <see cref="T:Microsoft.Office.Interop.Word.InlineShape" /> object.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -554,6 +572,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.InlineShapes.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.InlineShapes.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -571,7 +590,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="90f56-223">Retorna um objeto que representa o objeto pai do objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="90f56-223">Returns an object that represents the parent object of the specified object.</span></span></summary>
+        <summary><span data-ttu-id="4e884-223">Retorna um objeto que representa o objeto pai do objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="4e884-223">Returns an object that represents the parent object of the specified object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
