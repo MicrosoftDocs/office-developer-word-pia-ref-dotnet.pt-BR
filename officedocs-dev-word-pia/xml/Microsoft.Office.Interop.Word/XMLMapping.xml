@@ -1,9 +1,10 @@
 <Type Name="XMLMapping" FullName="Microsoft.Office.Interop.Word.XMLMapping">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="9c7faf4f3e3ffccb270c1cc125874ce43681ee78" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142637" /></Metadata><TypeSignature Language="C#" Value="public interface XMLMapping" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a613d872defc3b239ef077ce2ad4da03a037e7ee" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43926749" /></Metadata><TypeSignature Language="C#" Value="public interface XMLMapping" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract XMLMapping" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.XMLMapping" />
   <TypeSignature Language="VB.NET" Value="Public Interface XMLMapping" />
   <TypeSignature Language="C++ CLI" Value="public interface class XMLMapping" />
+  <TypeSignature Language="F#" Value="type XMLMapping = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -18,8 +19,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary><span data-ttu-id="8b056-101">Representa o mapeamento XML em um <see cref="T:Microsoft.Office.Interop.Word.ContentControl" /> objeto entre o XML personalizado e um controle de conteúdo.</span><span class="sxs-lookup"><span data-stu-id="8b056-101">Represents the XML mapping on a <see cref="T:Microsoft.Office.Interop.Word.ContentControl" /> object between custom XML and a content control.</span></span> <span data-ttu-id="8b056-102">Um mapeamento XML é um vínculo entre o texto em um controle de conteúdo e um elemento XML no repositório de dados XML personalizado para esse documento.</span><span class="sxs-lookup"><span data-stu-id="8b056-102">An XML mapping is a link between the text in a content control and an XML element in the custom XML data store for this document.</span></span></summary>
-    <remarks><para><span data-ttu-id="8b056-103">Use o <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" /> método para adicionar ou alterar o mapeamento XML de um controle de conteúdo usando uma cadeia de caracteres XPath.</span><span class="sxs-lookup"><span data-stu-id="8b056-103">Use the <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" /> method to add or change the XML mapping for a content control using an XPath string.</span></span> <span data-ttu-id="8b056-104">O exemplo a seguir define a propriedade interna do documento para o autor do documento, insere um novo controle de conteúdo no documento ativo e, em seguida, define o mapeamento XML do controle para a propriedade interna do documento.</span><span class="sxs-lookup"><span data-stu-id="8b056-104">The following example sets the built-in document property for the document author, inserts a new content control into the active document, and then sets the XML mapping for the control to the built-in document property.</span></span></para>
+    <summary><span data-ttu-id="81851-101">Representa o mapeamento XML em um <see cref="T:Microsoft.Office.Interop.Word.ContentControl" /> objeto entre o XML personalizado e um controle de conteúdo.</span><span class="sxs-lookup"><span data-stu-id="81851-101">Represents the XML mapping on a <see cref="T:Microsoft.Office.Interop.Word.ContentControl" /> object between custom XML and a content control.</span></span> <span data-ttu-id="81851-102">Um mapeamento XML é um vínculo entre o texto em um controle de conteúdo e um elemento XML no repositório de dados XML personalizado para esse documento.</span><span class="sxs-lookup"><span data-stu-id="81851-102">An XML mapping is a link between the text in a content control and an XML element in the custom XML data store for this document.</span></span></summary>
+    <remarks><para><span data-ttu-id="81851-103">Use o <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" /> método para adicionar ou alterar o mapeamento XML de um controle de conteúdo usando uma cadeia de caracteres XPath.</span><span class="sxs-lookup"><span data-stu-id="81851-103">Use the <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" /> method to add or change the XML mapping for a content control using an XPath string.</span></span> <span data-ttu-id="81851-104">O exemplo a seguir define a propriedade interna do documento para o autor do documento, insere um novo controle de conteúdo no documento ativo e, em seguida, define o mapeamento XML do controle para a propriedade interna do documento.</span><span class="sxs-lookup"><span data-stu-id="81851-104">The following example sets the built-in document property for the document author, inserts a new content control into the active document, and then sets the XML mapping for the control to the built-in document property.</span></span></para>
       <code>&lt;span class="label"&gt;Dim objcc As ContentControl
 
 
@@ -1813,7 +1814,7 @@ If blnMap = False Then
 
 
 End If&lt;/span&gt;</code>
-      <para><span data-ttu-id="8b056-105">Use o <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" /> método para adicionar ou alterar o mapeamento XML de um controle de conteúdo usando um objeto <b>CustomXMLNode</b> .</span><span class="sxs-lookup"><span data-stu-id="8b056-105">Use the <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" /> method to add or change the XML mapping for a content control using a <b>CustomXMLNode</b> object.</span></span> <span data-ttu-id="8b056-106">O exemplo a seguir faz o mesmo que o exemplo anterior, mas usa o método <b>SetMappingByNode</b> .</span><span class="sxs-lookup"><span data-stu-id="8b056-106">The following example does  the same thing as the previous example, but uses the <b>SetMappingByNode</b> method.</span></span></para>
+      <para><span data-ttu-id="81851-105">Use o <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" /> método para adicionar ou alterar o mapeamento XML de um controle de conteúdo usando um objeto <b>CustomXMLNode</b> .</span><span class="sxs-lookup"><span data-stu-id="81851-105">Use the <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" /> method to add or change the XML mapping for a content control using a <b>CustomXMLNode</b> object.</span></span> <span data-ttu-id="81851-106">O exemplo a seguir faz o mesmo que o exemplo anterior, mas usa o método <b>SetMappingByNode</b> .</span><span class="sxs-lookup"><span data-stu-id="81851-106">The following example does  the same thing as the previous example, but uses the <b>SetMappingByNode</b> method.</span></span></para>
       <code>&lt;span class="label"&gt;Dim objcc As ContentControl
 
 
@@ -3735,7 +3736,7 @@ Set objMap = objcc.XMLMapping
 
 
 blnMap = objMap.SetMappingByNode(objNode)&lt;/span&gt;</code>
-      <para><span data-ttu-id="8b056-107">O exemplo a seguir cria um novo objeto <b>CustomXMLPart</b>, carrega o XML personalizado nele e, em seguida, cria dois novos controles de conteúdo e mapeia cada um da um elemento XML diferente no XML personalizado.</span><span class="sxs-lookup"><span data-stu-id="8b056-107">The following example creates a new <b>CustomXMLPart</b> object, loads custom XML into it, and then creates two new content controls and maps each to a different XML element within the custom XML.</span></span></para>
+      <para><span data-ttu-id="81851-107">O exemplo a seguir cria um novo objeto <b>CustomXMLPart</b>, carrega o XML personalizado nele e, em seguida, cria dois novos controles de conteúdo e mapeia cada um da um elemento XML diferente no XML personalizado.</span><span class="sxs-lookup"><span data-stu-id="81851-107">The following example creates a new <b>CustomXMLPart</b> object, loads custom XML into it, and then creates two new content controls and maps each to a different XML element within the custom XML.</span></span></para>
       <code>&lt;span class="label"&gt;Dim objRange As Range
 
 
@@ -7833,7 +7834,7 @@ objCustomControl.XMLMapping.SetMappingByNode objCustomNode
 
 
 MsgBox objCustomControl.XMLMapping.IsMapped&lt;/span&gt;</code>
-      <para><span data-ttu-id="8b056-108">Use o <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.Delete" /> método para remover o mapeamento XML de um controle de conteúdo.</span><span class="sxs-lookup"><span data-stu-id="8b056-108">Use the <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.Delete" /> method to remove the XML mapping for a content control.</span></span>  <span data-ttu-id="8b056-109">A exclusão do mapeamento XML de um controle de conteúdo exclui apenas a conexão entre o controle de conteúdo e os dados do XML.</span><span class="sxs-lookup"><span data-stu-id="8b056-109">Deleting the XML mapping for a content control deletes only  the connection between the content control and the XML data.</span></span>  <span data-ttu-id="8b056-110">Tanto os dados do XML quanto o controle de conteúdo permanecem no documento.</span><span class="sxs-lookup"><span data-stu-id="8b056-110">Both the content control and the XML data remain in the document.</span></span>  <span data-ttu-id="8b056-111">O exemplo a seguir exclui o mapeamento XML de todos os controles de conteúdo no documento ativo que estão atualmente mapeados.</span><span class="sxs-lookup"><span data-stu-id="8b056-111">The following example deletes the XML mapping for all content controls in the active document that are currently mapped.</span></span></para>
+      <para><span data-ttu-id="81851-108">Use o <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.Delete" /> método para remover o mapeamento XML de um controle de conteúdo.</span><span class="sxs-lookup"><span data-stu-id="81851-108">Use the <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.Delete" /> method to remove the XML mapping for a content control.</span></span>  <span data-ttu-id="81851-109">A exclusão do mapeamento XML de um controle de conteúdo exclui apenas a conexão entre o controle de conteúdo e os dados do XML.</span><span class="sxs-lookup"><span data-stu-id="81851-109">Deleting the XML mapping for a content control deletes only  the connection between the content control and the XML data.</span></span>  <span data-ttu-id="81851-110">Tanto os dados do XML quanto o controle de conteúdo permanecem no documento.</span><span class="sxs-lookup"><span data-stu-id="81851-110">Both the content control and the XML data remain in the document.</span></span>  <span data-ttu-id="81851-111">O exemplo a seguir exclui o mapeamento XML de todos os controles de conteúdo no documento ativo que estão atualmente mapeados.</span><span class="sxs-lookup"><span data-stu-id="81851-111">The following example deletes the XML mapping for all content controls in the active document that are currently mapped.</span></span></para>
       <code>&lt;span class="label"&gt;Dim objCC As ContentControl
 
 
@@ -8603,7 +8604,7 @@ For Each objCC In ActiveDocument.ContentControls
 
 
 Next&lt;/span&gt;</code>
-      <para><span data-ttu-id="8b056-112">Use a <see cref="P:Microsoft.Office.Interop.Word.XMLMapping.IsMapped" /> propriedade para determinar se um controle de conteúdo é mapeado para um nó XML no repositório de dados do documento.</span><span class="sxs-lookup"><span data-stu-id="8b056-112">Use the <see cref="P:Microsoft.Office.Interop.Word.XMLMapping.IsMapped" /> property to determine if a content control is mapped to an XML node in the document's data store.</span></span> <span data-ttu-id="8b056-113">O exemplo a seguir exclui o mapeamento XML de todos os controles de conteúdo mapeados no documento ativo.</span><span class="sxs-lookup"><span data-stu-id="8b056-113">The following example deletes the XML mapping for all mapped content controls in the active document.</span></span></para>
+      <para><span data-ttu-id="81851-112">Use a <see cref="P:Microsoft.Office.Interop.Word.XMLMapping.IsMapped" /> propriedade para determinar se um controle de conteúdo é mapeado para um nó XML no repositório de dados do documento.</span><span class="sxs-lookup"><span data-stu-id="81851-112">Use the <see cref="P:Microsoft.Office.Interop.Word.XMLMapping.IsMapped" /> property to determine if a content control is mapped to an XML node in the document's data store.</span></span> <span data-ttu-id="81851-113">O exemplo a seguir exclui o mapeamento XML de todos os controles de conteúdo mapeados no documento ativo.</span><span class="sxs-lookup"><span data-stu-id="81851-113">The following example deletes the XML mapping for all mapped content controls in the active document.</span></span></para>
       <code>&lt;span class="label"&gt;Dim objCC As ContentControl
 
 
@@ -9373,7 +9374,7 @@ For Each objCC In ActiveDocument.ContentControls
 
 
 Next&lt;/span&gt;</code>
-      <para><span data-ttu-id="8b056-114">Use a <see cref="P:Microsoft.Office.Interop.Word.XMLMapping.CustomXMLNode" /> propriedade para acessar o nó XML ao qual um controle de conteúdo é mapeado.</span><span class="sxs-lookup"><span data-stu-id="8b056-114">Use the <see cref="P:Microsoft.Office.Interop.Word.XMLMapping.CustomXMLNode" /> property to access the XML node to which a content control maps.</span></span> <span data-ttu-id="8b056-115">Use a <see cref="P:Microsoft.Office.Interop.Word.XMLMapping.CustomXMLPart" /> propriedade para acessar a parte XML à qual um controle de conteúdo é mapeado.</span><span class="sxs-lookup"><span data-stu-id="8b056-115">Use the <see cref="P:Microsoft.Office.Interop.Word.XMLMapping.CustomXMLPart" /> property to access the XML part to which a content control maps.</span></span> <span data-ttu-id="8b056-116">Para obter mais informações sobre como trabalhar com objetos de <b>CustomXMLPart</b> e <b>CustomXMLNode</b>, consulte os tópicos do respectivo objeto.</span><span class="sxs-lookup"><span data-stu-id="8b056-116">For more information about working with <b>CustomXMLNode</b> and <b>CustomXMLPart</b> objects, see the respective object topics.</span></span></para>
+      <para><span data-ttu-id="81851-114">Use a <see cref="P:Microsoft.Office.Interop.Word.XMLMapping.CustomXMLNode" /> propriedade para acessar o nó XML ao qual um controle de conteúdo é mapeado.</span><span class="sxs-lookup"><span data-stu-id="81851-114">Use the <see cref="P:Microsoft.Office.Interop.Word.XMLMapping.CustomXMLNode" /> property to access the XML node to which a content control maps.</span></span> <span data-ttu-id="81851-115">Use a <see cref="P:Microsoft.Office.Interop.Word.XMLMapping.CustomXMLPart" /> propriedade para acessar a parte XML à qual um controle de conteúdo é mapeado.</span><span class="sxs-lookup"><span data-stu-id="81851-115">Use the <see cref="P:Microsoft.Office.Interop.Word.XMLMapping.CustomXMLPart" /> property to access the XML part to which a content control maps.</span></span> <span data-ttu-id="81851-116">Para obter mais informações sobre como trabalhar com objetos de <b>CustomXMLPart</b> e <b>CustomXMLNode</b>, consulte os tópicos do respectivo objeto.</span><span class="sxs-lookup"><span data-stu-id="81851-116">For more information about working with <b>CustomXMLNode</b> and <b>CustomXMLPart</b> objects, see the respective object topics.</span></span></para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -9383,6 +9384,7 @@ Next&lt;/span&gt;</code>
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLMapping.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.XMLMapping.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -9400,7 +9402,7 @@ Next&lt;/span&gt;</code>
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="8b056-117">Retorna um <see cref="T:Microsoft.Office.Interop.Word._Application" /> objeto que representa o aplicativo Microsoft Word.</span><span class="sxs-lookup"><span data-stu-id="8b056-117">Returns an <see cref="T:Microsoft.Office.Interop.Word._Application" /> object that represents the Microsoft Word application.</span></span></summary>
+        <summary><span data-ttu-id="81851-117">Retorna um <see cref="T:Microsoft.Office.Interop.Word._Application" /> objeto que representa o aplicativo Microsoft Word.</span><span class="sxs-lookup"><span data-stu-id="81851-117">Returns an <see cref="T:Microsoft.Office.Interop.Word._Application" /> object that represents the Microsoft Word application.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -9411,6 +9413,7 @@ Next&lt;/span&gt;</code>
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLMapping.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.XMLMapping.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -9428,11 +9431,11 @@ Next&lt;/span&gt;</code>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="8b056-118">Retorna um inteiro de 32 bits que indica o aplicativo no qual o suplemento foi criado.</span><span class="sxs-lookup"><span data-stu-id="8b056-118">Returns a 32-bit integer that indicates the application in which the add-in was created.</span></span> <span data-ttu-id="8b056-119">Somente leitura <b>Long</b>.</span><span class="sxs-lookup"><span data-stu-id="8b056-119">Read-only <b>Long</b>.</span></span></summary>
+        <summary><span data-ttu-id="81851-118">Retorna um inteiro de 32 bits que indica o aplicativo no qual o suplemento foi criado.</span><span class="sxs-lookup"><span data-stu-id="81851-118">Returns a 32-bit integer that indicates the application in which the add-in was created.</span></span> <span data-ttu-id="81851-119">Somente leitura <b>Long</b>.</span><span class="sxs-lookup"><span data-stu-id="81851-119">Read-only <b>Long</b>.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="8b056-120">Se o objeto foi criado no Microsoft Word, a propriedade <b>Creator</b> retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD".</span><span class="sxs-lookup"><span data-stu-id="8b056-120">If the object was created in Microsoft Word, the <b>Creator</b> property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span>  <span data-ttu-id="8b056-121">Essa propriedade foi projetada inicialmente para ser usada no Macintosh, no qual cada aplicativo tem um código de criador com quatro caracteres.</span><span class="sxs-lookup"><span data-stu-id="8b056-121">This property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="8b056-122">Por exemplo, o Microsoft Word tem o código de criador MSWD.</span><span class="sxs-lookup"><span data-stu-id="8b056-122">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="8b056-123">Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</span><span class="sxs-lookup"><span data-stu-id="8b056-123">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
-          <para><span data-ttu-id="8b056-124">
-            <b>Observação</b>: esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</span><span class="sxs-lookup"><span data-stu-id="8b056-124">
+        <remarks><para><span data-ttu-id="81851-120">Se o objeto foi criado no Microsoft Word, a propriedade <b>Creator</b> retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD".</span><span class="sxs-lookup"><span data-stu-id="81851-120">If the object was created in Microsoft Word, the <b>Creator</b> property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span>  <span data-ttu-id="81851-121">Essa propriedade foi projetada inicialmente para ser usada no Macintosh, no qual cada aplicativo tem um código de criador com quatro caracteres.</span><span class="sxs-lookup"><span data-stu-id="81851-121">This property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="81851-122">Por exemplo, o Microsoft Word tem o código de criador MSWD.</span><span class="sxs-lookup"><span data-stu-id="81851-122">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="81851-123">Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</span><span class="sxs-lookup"><span data-stu-id="81851-123">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
+          <para><span data-ttu-id="81851-124">
+            <b>Observação</b>: esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</span><span class="sxs-lookup"><span data-stu-id="81851-124">
             <b>Note</b>: This value can also be represented by the constant <b>wdCreatorCode</b>.</span></span></para>
           <para> </para></remarks>
       </Docs>
@@ -9443,6 +9446,7 @@ Next&lt;/span&gt;</code>
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLMapping.CustomXMLNode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CustomXMLNode As CustomXMLNode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::CustomXMLNode ^ CustomXMLNode { Microsoft::Office::Core::CustomXMLNode ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CustomXMLNode : Microsoft.Office.Core.CustomXMLNode" Usage="Microsoft.Office.Interop.Word.XMLMapping.CustomXMLNode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -9460,10 +9464,10 @@ Next&lt;/span&gt;</code>
         <ReturnType>Microsoft.Office.Core.CustomXMLNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="8b056-125">Retorna um objeto <b>CustomXMLNode</b> que representa o nó XML personalizado no repositório de dados à qual o controle de conteúdo do documento é mapeado.</span><span class="sxs-lookup"><span data-stu-id="8b056-125">Returns a <b>CustomXMLNode</b> object that represents the custom XML node in the data store to which the content control in the document maps.</span></span></summary>
+        <summary><span data-ttu-id="81851-125">Retorna um objeto <b>CustomXMLNode</b> que representa o nó XML personalizado no repositório de dados à qual o controle de conteúdo do documento é mapeado.</span><span class="sxs-lookup"><span data-stu-id="81851-125">Returns a <b>CustomXMLNode</b> object that represents the custom XML node in the data store to which the content control in the document maps.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <example><para><span data-ttu-id="8b056-126">O exemplo a seguir insere um novo controle de conteúdo e uma parte XML personalizada no documento ativo, mapeia o controle de conteúdo para um nó na parte XML personalizada e, em seguida, define o valor do nó XML mapeado.</span><span class="sxs-lookup"><span data-stu-id="8b056-126">The following example inserts a new content control and custom XML part into the active document, maps the content control to a node in the custom XML part, and then sets the value of the mapped XML node.</span></span></para>
+        <example><para><span data-ttu-id="81851-126">O exemplo a seguir insere um novo controle de conteúdo e uma parte XML personalizada no documento ativo, mapeia o controle de conteúdo para um nó na parte XML personalizada e, em seguida, define o valor do nó XML mapeado.</span><span class="sxs-lookup"><span data-stu-id="81851-126">The following example inserts a new content control and custom XML part into the active document, maps the content control to a node in the custom XML part, and then sets the value of the mapped XML node.</span></span></para>
           <code>&lt;span class="label"&gt;Dim objCC As ContentControl
 
 
@@ -11139,6 +11143,7 @@ Set objNode = objMap.&lt;/span&gt;
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLMapping.CustomXMLPart" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CustomXMLPart As CustomXMLPart" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::CustomXMLPart ^ CustomXMLPart { Microsoft::Office::Core::CustomXMLPart ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CustomXMLPart : Microsoft.Office.Core.CustomXMLPart" Usage="Microsoft.Office.Interop.Word.XMLMapping.CustomXMLPart" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -11156,12 +11161,12 @@ Set objNode = objMap.&lt;/span&gt;
         <ReturnType>Microsoft.Office.Core.CustomXMLPart</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="8b056-127">Retorna um objeto <b>CustomXMLPart</b> que representa a parte XML personalizada à qual o controle de conteúdo do documento é mapeado.</span><span class="sxs-lookup"><span data-stu-id="8b056-127">Returns a <b>CustomXMLPart</b> object that represents the custom XML part to which the content control in the document maps.</span></span></summary>
+        <summary><span data-ttu-id="81851-127">Retorna um objeto <b>CustomXMLPart</b> que representa a parte XML personalizada à qual o controle de conteúdo do documento é mapeado.</span><span class="sxs-lookup"><span data-stu-id="81851-127">Returns a <b>CustomXMLPart</b> object that represents the custom XML part to which the content control in the document maps.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <example><para><span data-ttu-id="8b056-128">O exemplo a seguir acessa o primeiro controle de conteúdo no documento ativo e a parte XML personalizada à qual ele está mapeado e, em seguida, define o valor de texto de um dos nós XML contidos na parte XML personalizada.</span><span class="sxs-lookup"><span data-stu-id="8b056-128">The following example accesses the first content control in the active document and the custom XML part to which it is mapped, and then sets the text value of one of the XML nodes contained within the custom XML part.</span></span></para>
-          <para><span data-ttu-id="8b056-129">
-            <b>Observação</b>: Este exemplo pressupõe que pelo menos um controle de conteúdo no documento ativo esteja mapeado para uma parte XML personalizada que contenha os nós XML especificados na sequência de caracteres XPath.</span><span class="sxs-lookup"><span data-stu-id="8b056-129">
+        <example><para><span data-ttu-id="81851-128">O exemplo a seguir acessa o primeiro controle de conteúdo no documento ativo e a parte XML personalizada à qual ele está mapeado e, em seguida, define o valor de texto de um dos nós XML contidos na parte XML personalizada.</span><span class="sxs-lookup"><span data-stu-id="81851-128">The following example accesses the first content control in the active document and the custom XML part to which it is mapped, and then sets the text value of one of the XML nodes contained within the custom XML part.</span></span></para>
+          <para><span data-ttu-id="81851-129">
+            <b>Observação</b>: Este exemplo pressupõe que pelo menos um controle de conteúdo no documento ativo esteja mapeado para uma parte XML personalizada que contenha os nós XML especificados na sequência de caracteres XPath.</span><span class="sxs-lookup"><span data-stu-id="81851-129">
             <b>Note</b>: This example assumes that at least one content control in the active document is mapped to a custom XML part that contains the XML nodes specified in the XPath string.</span></span></para>
           <code>&lt;span class="label"&gt;Dim objCC As ContentControl
 
@@ -11814,6 +11819,7 @@ Set objPart = objCC.XMLMapping.&lt;/span&gt;
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.XMLMapping.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberSignature Language="F#" Value="abstract member Delete : unit -&gt; unit" Usage="xMLMapping.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -11829,10 +11835,10 @@ Set objPart = objCC.XMLMapping.&lt;/span&gt;
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary><span data-ttu-id="8b056-130">Exclui o mapeamento XML do controle de conteúdo pai.</span><span class="sxs-lookup"><span data-stu-id="8b056-130">Deletes the XML mapping from the parent content control.</span></span></summary>
-        <remarks><para><span data-ttu-id="8b056-131">Essa opção remove o mapeamento XML.</span><span class="sxs-lookup"><span data-stu-id="8b056-131">This operation removes the XML mapping.</span></span>  <span data-ttu-id="8b056-132">Tanto os dados do XML quanto o controle de conteúdo permanecem no documento.</span><span class="sxs-lookup"><span data-stu-id="8b056-132">Both the XML data and the content control remain in the document.</span></span></para>
+        <summary><span data-ttu-id="81851-130">Exclui o mapeamento XML do controle de conteúdo pai.</span><span class="sxs-lookup"><span data-stu-id="81851-130">Deletes the XML mapping from the parent content control.</span></span></summary>
+        <remarks><para><span data-ttu-id="81851-131">Essa opção remove o mapeamento XML.</span><span class="sxs-lookup"><span data-stu-id="81851-131">This operation removes the XML mapping.</span></span>  <span data-ttu-id="81851-132">Tanto os dados do XML quanto o controle de conteúdo permanecem no documento.</span><span class="sxs-lookup"><span data-stu-id="81851-132">Both the XML data and the content control remain in the document.</span></span></para>
           <para> </para></remarks>
-        <example><para><span data-ttu-id="8b056-133">O exemplo a seguir exclui o mapeamento XML de todos os controles de conteúdo no documento ativo que estão atualmente mapeados.</span><span class="sxs-lookup"><span data-stu-id="8b056-133">The following example deletes the XML mapping for all content controls in the active document that are currently mapped.</span></span></para>
+        <example><para><span data-ttu-id="81851-133">O exemplo a seguir exclui o mapeamento XML de todos os controles de conteúdo no documento ativo que estão atualmente mapeados.</span><span class="sxs-lookup"><span data-stu-id="81851-133">The following example deletes the XML mapping for all content controls in the active document that are currently mapped.</span></span></para>
           <code>&lt;span class="label"&gt;Dim objCC As ContentControl
 
 
@@ -12356,6 +12362,7 @@ For Each objCC In ActiveDocument.ContentControls
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLMapping.IsMapped" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property IsMapped As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool default { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsMapped : bool" Usage="Microsoft.Office.Interop.Word.XMLMapping.IsMapped" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -12373,10 +12380,10 @@ For Each objCC In ActiveDocument.ContentControls
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="8b056-134">Retorna um <b>Boolean</b> que representa se o controle de conteúdo no documento está mapeado para um nó XML no repositório de dados XML do documento.</span><span class="sxs-lookup"><span data-stu-id="8b056-134">Returns a <b>Boolean</b> that represents whether the content control in the document is mapped to an XML node in the document’s XML data store.</span></span> <span data-ttu-id="8b056-135">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="8b056-135">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="81851-134">Retorna um <b>Boolean</b> que representa se o controle de conteúdo no documento está mapeado para um nó XML no repositório de dados XML do documento.</span><span class="sxs-lookup"><span data-stu-id="81851-134">Returns a <b>Boolean</b> that represents whether the content control in the document is mapped to an XML node in the document’s XML data store.</span></span> <span data-ttu-id="81851-135">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="81851-135">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <example><para><span data-ttu-id="8b056-136">O exemplo a seguir exclui o mapeamento XML de todos os controles de conteúdo no documento ativo que estão atualmente mapeados.</span><span class="sxs-lookup"><span data-stu-id="8b056-136">The following example deletes the XML mapping for all content controls in the active document that are currently mapped.</span></span></para>
+        <example><para><span data-ttu-id="81851-136">O exemplo a seguir exclui o mapeamento XML de todos os controles de conteúdo no documento ativo que estão atualmente mapeados.</span><span class="sxs-lookup"><span data-stu-id="81851-136">The following example deletes the XML mapping for all content controls in the active document that are currently mapped.</span></span></para>
           <code>&lt;span class="label"&gt;Dim objCC As ContentControl
 
 
@@ -12772,6 +12779,7 @@ For Each objCC In ActiveDocument.ContentControls
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLMapping.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.XMLMapping.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -12789,7 +12797,7 @@ For Each objCC In ActiveDocument.ContentControls
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="8b056-137">Retorna um <b>objeto</b> que representa o objeto pai do objeto <b>XMLMapping</b> especificado.</span><span class="sxs-lookup"><span data-stu-id="8b056-137">Returns an <b>Object</b> that represents the parent object of the specified <b>XMLMapping</b> object.</span></span></summary>
+        <summary><span data-ttu-id="81851-137">Retorna um <b>objeto</b> que representa o objeto pai do objeto <b>XMLMapping</b> especificado.</span><span class="sxs-lookup"><span data-stu-id="81851-137">Returns an <b>Object</b> that represents the parent object of the specified <b>XMLMapping</b> object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -12800,6 +12808,7 @@ For Each objCC In ActiveDocument.ContentControls
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLMapping.PrefixMappings" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PrefixMappings As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PrefixMappings { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PrefixMappings : string" Usage="Microsoft.Office.Interop.Word.XMLMapping.PrefixMappings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -12817,17 +12826,18 @@ For Each objCC In ActiveDocument.ContentControls
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="8b056-138">Retorna uma <b>cadeia de caracteres</b> que representa os mapeamentos de prefixo usados para avaliar o XPath para o mapeamento XML atual.</span><span class="sxs-lookup"><span data-stu-id="8b056-138">Returns a <b>String</b> that represents the prefix mappings used to evaluate the XPath for the current XML mapping.</span></span> <span data-ttu-id="8b056-139">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="8b056-139">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="81851-138">Retorna uma <b>cadeia de caracteres</b> que representa os mapeamentos de prefixo usados para avaliar o XPath para o mapeamento XML atual.</span><span class="sxs-lookup"><span data-stu-id="81851-138">Returns a <b>String</b> that represents the prefix mappings used to evaluate the XPath for the current XML mapping.</span></span> <span data-ttu-id="81851-139">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="81851-139">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="8b056-140">Para definir o mapeamento de um controle de conteúdo, <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" /> use o método <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" /> ou o método.</span><span class="sxs-lookup"><span data-stu-id="8b056-140">To set mapping for a content control, use the <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" /> method or the <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" /> method.</span></span></para>
+        <remarks><para><span data-ttu-id="81851-140">Para definir o mapeamento de um controle de conteúdo, use o <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" /> método ou o <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" /> método.</span><span class="sxs-lookup"><span data-stu-id="81851-140">To set mapping for a content control, use the <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" /> method or the <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" /> method.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetMapping">
-      <MemberSignature Language="C#" Value="public bool SetMapping (string XPath, string PrefixMapping = &quot;&quot;, Microsoft.Office.Core.CustomXMLPart Source = null);" />
+      <MemberSignature Language="C#" Value="public bool SetMapping (string XPath, string PrefixMapping = &quot;&quot;, Microsoft.Office.Core.CustomXMLPart Source = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SetMapping([in]string XPath, [in]string PrefixMapping, [in]class Microsoft.Office.Core.CustomXMLPart Source) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" />
       <MemberSignature Language="VB.NET" Value="Public Function SetMapping (XPath As String, Optional PrefixMapping As String = &quot;&quot;, Optional Source As CustomXMLPart = null) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member SetMapping : string * string * Microsoft.Office.Core.CustomXMLPart -&gt; bool" Usage="xMLMapping.SetMapping (XPath, PrefixMapping, Source)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -12847,18 +12857,18 @@ For Each objCC In ActiveDocument.ContentControls
         <Parameter Name="Source" Type="Microsoft.Office.Core.CustomXMLPart" />
       </Parameters>
       <Docs>
-        <param name="XPath"><span data-ttu-id="8b056-p112">Especifica uma sequência de caracteres do XPath que representa o nó XML ao qual o controle de conteúdo será mapeado. Uma sequência de caracteres do XPath inválida causa um erro em tempo de execução.</span><span class="sxs-lookup"><span data-stu-id="8b056-p112">Specifies an XPath string that represents the XML node to which to map the content control. An invalid XPath string causes a run-time error.</span></span></param>
-        <param name="PrefixMapping"><span data-ttu-id="8b056-143">Especifica os mapeamentos de prefixo a serem usados durante a consulta da expressão fornecida <paramref name="XPath" /> no parâmetro.</span><span class="sxs-lookup"><span data-stu-id="8b056-143">Specifies the prefix mappings to use when querying the expression provided in the <paramref name="XPath" /> parameter.</span></span> <span data-ttu-id="8b056-144">Se for omitido, o Word utilizará o conjunto de mapeamentos de prefixo para a parte XML personalizada especificada no documento atual.</span><span class="sxs-lookup"><span data-stu-id="8b056-144">If omitted, Word uses the set of prefix mappings for the specified custom XML part in the current document.</span></span></param>
-        <param name="Source"><span data-ttu-id="8b056-p114">Especifica os dados XML personalizados desejados para a qual mapear o controle de conteúdo. Se esse parâmetro for omitido, o XPath é avaliado em relação a todos os XML personalizadas no documento atual e o mapeamento é estabelecido com o primeiro <b>CustomXMLPart</b> no qual o XPath resolve para um nó XML. </span><span class="sxs-lookup"><span data-stu-id="8b056-p114">Specifies the desired custom XML data to which to map the content control. If this parameter is omitted, the XPath is evaluated against all custom XML in the current document, and the mapping is established with the first <b>CustomXMLPart</b> in which the XPath resolves to an XML node.</span></span></param>
-        <summary><span data-ttu-id="8b056-147">Permite criar ou alterar o mapeamento XML em um controle de conteúdo.</span><span class="sxs-lookup"><span data-stu-id="8b056-147">Allows creating or changing the XML mapping on a content control.</span></span> <span data-ttu-id="8b056-148">Retorna <b>true</b> se o Microsoft Office Word mapeia o controle de conteúdo para um nó XML personalizado no repositório de dados XML personalizado do documento.</span><span class="sxs-lookup"><span data-stu-id="8b056-148">Returns <b>True</b> if Microsoft Office Word maps the content control to a custom XML node in the document’s custom XML data store.</span></span></summary>
-        <returns><span data-ttu-id="8b056-149">Booliano</span><span class="sxs-lookup"><span data-stu-id="8b056-149">Boolean</span></span></returns>
-        <remarks><para><span data-ttu-id="8b056-p116">Se o mapeamento XML já existir, o Word substituirá o mapeamento XML existente e o conteúdo do novo nó XML mapeado substituirá o texto do controle de conteúdo. Se o XPath especificado não for avaliado para um nó XML nas partes XML personalizadas especificadas, ainda será possível especificar o mapeamento e ele será criado. Esse mapeamento é vinculado automaticamente quando o XPath especificado for avaliado para um nó XML nas partes XML personalizadas especificadas.</span><span class="sxs-lookup"><span data-stu-id="8b056-p116">If the XML mapping already exists, Word replaces the existing XML mapping and the contents of the new mapped XML node replaces the text of the content control. If the specified XPath does not evaluate to an XML node in the specified custom XML part or parts, you can still specify the mapping, and one will be created. This mapping  automatically links when the specified XPath would evaluate to an XML node in the specified custom XML parts.</span></span></para>
-          <para><span data-ttu-id="8b056-153">Consulte também o <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" /> método.</span><span class="sxs-lookup"><span data-stu-id="8b056-153">See also the <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" /> method.</span></span></para>
-          <para><span data-ttu-id="8b056-154">
-            <b>Observação</b>: a criação de um mapeamento para um controle de conteúdo de Rich Text causa um erro em tempo de execução.</span><span class="sxs-lookup"><span data-stu-id="8b056-154">
+        <param name="XPath"><span data-ttu-id="81851-p112">Especifica uma sequência de caracteres do XPath que representa o nó XML ao qual o controle de conteúdo será mapeado. Uma sequência de caracteres do XPath inválida causa um erro em tempo de execução.</span><span class="sxs-lookup"><span data-stu-id="81851-p112">Specifies an XPath string that represents the XML node to which to map the content control. An invalid XPath string causes a run-time error.</span></span></param>
+        <param name="PrefixMapping"><span data-ttu-id="81851-143">Especifica os mapeamentos de prefixo a serem usados durante a consulta da expressão fornecida no <paramref name="XPath" /> parâmetro.</span><span class="sxs-lookup"><span data-stu-id="81851-143">Specifies the prefix mappings to use when querying the expression provided in the <paramref name="XPath" /> parameter.</span></span> <span data-ttu-id="81851-144">Se for omitido, o Word utilizará o conjunto de mapeamentos de prefixo para a parte XML personalizada especificada no documento atual.</span><span class="sxs-lookup"><span data-stu-id="81851-144">If omitted, Word uses the set of prefix mappings for the specified custom XML part in the current document.</span></span></param>
+        <param name="Source"><span data-ttu-id="81851-p114">Especifica os dados XML personalizados desejados para a qual mapear o controle de conteúdo. Se esse parâmetro for omitido, o XPath é avaliado em relação a todos os XML personalizadas no documento atual e o mapeamento é estabelecido com o primeiro <b>CustomXMLPart</b> no qual o XPath resolve para um nó XML. </span><span class="sxs-lookup"><span data-stu-id="81851-p114">Specifies the desired custom XML data to which to map the content control. If this parameter is omitted, the XPath is evaluated against all custom XML in the current document, and the mapping is established with the first <b>CustomXMLPart</b> in which the XPath resolves to an XML node.</span></span></param>
+        <summary><span data-ttu-id="81851-147">Permite criar ou alterar o mapeamento XML em um controle de conteúdo.</span><span class="sxs-lookup"><span data-stu-id="81851-147">Allows creating or changing the XML mapping on a content control.</span></span> <span data-ttu-id="81851-148">Retorna <b>true</b> se o Microsoft Office Word mapeia o controle de conteúdo para um nó XML personalizado no repositório de dados XML personalizado do documento.</span><span class="sxs-lookup"><span data-stu-id="81851-148">Returns <b>True</b> if Microsoft Office Word maps the content control to a custom XML node in the document’s custom XML data store.</span></span></summary>
+        <returns><span data-ttu-id="81851-149">Booliano</span><span class="sxs-lookup"><span data-stu-id="81851-149">Boolean</span></span></returns>
+        <remarks><para><span data-ttu-id="81851-p116">Se o mapeamento XML já existir, o Word substituirá o mapeamento XML existente e o conteúdo do novo nó XML mapeado substituirá o texto do controle de conteúdo. Se o XPath especificado não for avaliado para um nó XML nas partes XML personalizadas especificadas, ainda será possível especificar o mapeamento e ele será criado. Esse mapeamento é vinculado automaticamente quando o XPath especificado for avaliado para um nó XML nas partes XML personalizadas especificadas.</span><span class="sxs-lookup"><span data-stu-id="81851-p116">If the XML mapping already exists, Word replaces the existing XML mapping and the contents of the new mapped XML node replaces the text of the content control. If the specified XPath does not evaluate to an XML node in the specified custom XML part or parts, you can still specify the mapping, and one will be created. This mapping  automatically links when the specified XPath would evaluate to an XML node in the specified custom XML parts.</span></span></para>
+          <para><span data-ttu-id="81851-153">Consulte também o <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" /> método.</span><span class="sxs-lookup"><span data-stu-id="81851-153">See also the <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" /> method.</span></span></para>
+          <para><span data-ttu-id="81851-154">
+            <b>Observação</b>: a criação de um mapeamento para um controle de conteúdo de Rich Text causa um erro em tempo de execução.</span><span class="sxs-lookup"><span data-stu-id="81851-154">
             <b>Note</b>: Creating a mapping for a rich-text content control causes a run-time error.</span></span></para>
           <para> </para></remarks>
-        <example><para><span data-ttu-id="8b056-155">O exemplo a seguir insere uma parte XML personalizada, define o XML para a parte personalizada e, em seguida, insere dois controles de conteúdo no início do documento, mapeando o conteúdo dos controles para o conteúdo dos elementos XML na parte personalizada.</span><span class="sxs-lookup"><span data-stu-id="8b056-155">The following example inserts a custom XML part and sets the XML for the custom part, and then inserts two content controls at the beginning of the document and maps the contents of the controls to the contents of XML elements in the custom part.</span></span></para>
+        <example><para><span data-ttu-id="81851-155">O exemplo a seguir insere uma parte XML personalizada, define o XML para a parte personalizada e, em seguida, insere dois controles de conteúdo no início do documento, mapeando o conteúdo dos controles para o conteúdo dos elementos XML na parte personalizada.</span><span class="sxs-lookup"><span data-stu-id="81851-155">The following example inserts a custom XML part and sets the XML for the custom part, and then inserts two content controls at the beginning of the document and maps the contents of the controls to the contents of XML elements in the custom part.</span></span></para>
           <code>&lt;span class="label"&gt;Dim objRange As Range
 
 
@@ -15304,6 +15314,7 @@ objCustomControl.XMLMapping.&lt;/span&gt;
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" />
       <MemberSignature Language="VB.NET" Value="Public Function SetMappingByNode (Node As CustomXMLNode) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetMappingByNode(Microsoft::Office::Core::CustomXMLNode ^ Node);" />
+      <MemberSignature Language="F#" Value="abstract member SetMappingByNode : Microsoft.Office.Core.CustomXMLNode -&gt; bool" Usage="xMLMapping.SetMappingByNode Node" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -15321,15 +15332,15 @@ objCustomControl.XMLMapping.&lt;/span&gt;
         <Parameter Name="Node" Type="Microsoft.Office.Core.CustomXMLNode" />
       </Parameters>
       <Docs>
-        <param name="Node"><span data-ttu-id="8b056-156">Especifica o nó XML ao qual o controle de conteúdo atual será mapeado.</span><span class="sxs-lookup"><span data-stu-id="8b056-156">Specifies the XML node to which to map the current content control.</span></span></param>
-        <summary><span data-ttu-id="8b056-157">Permite criar ou alterar o mapeamento de dados XML em um controle de conteúdo.</span><span class="sxs-lookup"><span data-stu-id="8b056-157">Allows creating or changing the XML data mapping on a content control.</span></span> <span data-ttu-id="8b056-158">Retorna <b>true</b> se o Microsoft Office Word mapeia o controle de conteúdo para um nó XML personalizado no repositório de dados XML personalizado do documento.</span><span class="sxs-lookup"><span data-stu-id="8b056-158">Returns <b>True</b> if Microsoft Office Word maps the content control to a custom XML node in the document’s custom XML data store.</span></span></summary>
-        <returns><span data-ttu-id="8b056-159">Booliano</span><span class="sxs-lookup"><span data-stu-id="8b056-159">Boolean</span></span></returns>
-        <remarks><para><span data-ttu-id="8b056-160">Se o mapeamento XML já existir, o Word substituirá o mapeamento XML existente e o conteúdo do novo nó XML mapeado substituirá o texto do controle de conteúdo.</span><span class="sxs-lookup"><span data-stu-id="8b056-160">If the XML mapping already exists, then Word replaces the existing XML mapping, and the contents of the new mapped XML node replaces the text of the content control.</span></span> <span data-ttu-id="8b056-161">Consulte também o <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" /> método.</span><span class="sxs-lookup"><span data-stu-id="8b056-161">See also the <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" /> method.</span></span></para>
-          <para><span data-ttu-id="8b056-162">
-            <b>Observação</b>: a criação de um mapeamento para um controle de conteúdo de Rich Text causa um erro em tempo de execução.</span><span class="sxs-lookup"><span data-stu-id="8b056-162">
+        <param name="Node"><span data-ttu-id="81851-156">Especifica o nó XML ao qual o controle de conteúdo atual será mapeado.</span><span class="sxs-lookup"><span data-stu-id="81851-156">Specifies the XML node to which to map the current content control.</span></span></param>
+        <summary><span data-ttu-id="81851-157">Permite criar ou alterar o mapeamento de dados XML em um controle de conteúdo.</span><span class="sxs-lookup"><span data-stu-id="81851-157">Allows creating or changing the XML data mapping on a content control.</span></span> <span data-ttu-id="81851-158">Retorna <b>true</b> se o Microsoft Office Word mapeia o controle de conteúdo para um nó XML personalizado no repositório de dados XML personalizado do documento.</span><span class="sxs-lookup"><span data-stu-id="81851-158">Returns <b>True</b> if Microsoft Office Word maps the content control to a custom XML node in the document’s custom XML data store.</span></span></summary>
+        <returns><span data-ttu-id="81851-159">Booliano</span><span class="sxs-lookup"><span data-stu-id="81851-159">Boolean</span></span></returns>
+        <remarks><para><span data-ttu-id="81851-160">Se o mapeamento XML já existir, o Word substituirá o mapeamento XML existente e o conteúdo do novo nó XML mapeado substituirá o texto do controle de conteúdo.</span><span class="sxs-lookup"><span data-stu-id="81851-160">If the XML mapping already exists, then Word replaces the existing XML mapping, and the contents of the new mapped XML node replaces the text of the content control.</span></span> <span data-ttu-id="81851-161">Consulte também o <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" /> método.</span><span class="sxs-lookup"><span data-stu-id="81851-161">See also the <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" /> method.</span></span></para>
+          <para><span data-ttu-id="81851-162">
+            <b>Observação</b>: a criação de um mapeamento para um controle de conteúdo de Rich Text causa um erro em tempo de execução.</span><span class="sxs-lookup"><span data-stu-id="81851-162">
             <b>Note</b>: Creating a mapping for a rich-text content control causes a run-time error.</span></span></para>
           <para> </para></remarks>
-        <example><para><span data-ttu-id="8b056-163">O exemplo a seguir define a propriedade interna do documento para o autor do documento, insere um novo controle de conteúdo no documento ativo e, em seguida, define o mapeamento XML do controle para a propriedade interna do documento.</span><span class="sxs-lookup"><span data-stu-id="8b056-163">The following example sets the built-in document property for the document author, inserts a new content control into the active document, and then sets the XML mapping for the control to the built-in document property.</span></span></para>
+        <example><para><span data-ttu-id="81851-163">O exemplo a seguir define a propriedade interna do documento para o autor do documento, insere um novo controle de conteúdo no documento ativo e, em seguida, define o mapeamento XML do controle para a propriedade interna do documento.</span><span class="sxs-lookup"><span data-stu-id="81851-163">The following example sets the built-in document property for the document author, inserts a new content control into the active document, and then sets the XML mapping for the control to the built-in document property.</span></span></para>
           <code>&lt;span class="label"&gt;Dim objcc As ContentControl
 
 
@@ -17251,7 +17262,7 @@ Set objMap = objcc.XMLMapping
 
 
 blnMap = objMap.SetMappingByNode(objNode)&lt;/span&gt;</code>
-          <para><span data-ttu-id="8b056-164">O exemplo a seguir cria uma parte XML personalizada e, em seguida, cria dois controles de conteúdo e mapeia cada controle de conteúdo para um nó específico no XML personalizado.</span><span class="sxs-lookup"><span data-stu-id="8b056-164">The following example creates a custom XML part, and then creates two content controls and maps each content control to a specific node within the custom XML.</span></span></para>
+          <para><span data-ttu-id="81851-164">O exemplo a seguir cria uma parte XML personalizada e, em seguida, cria dois controles de conteúdo e mapeia cada controle de conteúdo para um nó específico no XML personalizado.</span><span class="sxs-lookup"><span data-stu-id="81851-164">The following example creates a custom XML part, and then creates two content controls and maps each content control to a specific node within the custom XML.</span></span></para>
           <code>&lt;span class="label"&gt;Dim objRange As Range
 
 
@@ -19825,6 +19836,7 @@ objCustomControl.XMLMapping.&lt;/span&gt;
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLMapping.XPath" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XPath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XPath { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.XPath : string" Usage="Microsoft.Office.Interop.Word.XMLMapping.XPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -19842,11 +19854,11 @@ objCustomControl.XMLMapping.&lt;/span&gt;
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="8b056-165">Retorna uma <b>cadeia de caracteres</b> que representa o XPath para o mapeamento XML, que é avaliada como o nó XML atualmente mapeado.</span><span class="sxs-lookup"><span data-stu-id="8b056-165">Returns a <b>String</b> that represents the XPath for the XML mapping, which evaluates to the currently mapped XML node.</span></span> <span data-ttu-id="8b056-166">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="8b056-166">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="81851-165">Retorna uma <b>cadeia de caracteres</b> que representa o XPath para o mapeamento XML, que é avaliada como o nó XML atualmente mapeado.</span><span class="sxs-lookup"><span data-stu-id="81851-165">Returns a <b>String</b> that represents the XPath for the XML mapping, which evaluates to the currently mapped XML node.</span></span> <span data-ttu-id="81851-166">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="81851-166">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="8b056-167">Para definir o mapeamento de um controle de conteúdo, <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" /> use o método <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" /> ou o método.</span><span class="sxs-lookup"><span data-stu-id="8b056-167">To set mapping for a content control, use the <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" /> method or the <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" /> method.</span></span> <span data-ttu-id="8b056-168">Se o mapeamento não estiver ativo, a utilização dessa propriedade retornará um erro.</span><span class="sxs-lookup"><span data-stu-id="8b056-168">If the mapping is not active, using this property returns an error.</span></span></para>
+        <remarks><para><span data-ttu-id="81851-167">Para definir o mapeamento de um controle de conteúdo, use o <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" /> método ou o <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" /> método.</span><span class="sxs-lookup"><span data-stu-id="81851-167">To set mapping for a content control, use the <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMapping(System.String,System.String,Microsoft.Office.Core.CustomXMLPart)" /> method or the <see cref="M:Microsoft.Office.Interop.Word.XMLMapping.SetMappingByNode(Microsoft.Office.Core.CustomXMLNode)" /> method.</span></span> <span data-ttu-id="81851-168">Se o mapeamento não estiver ativo, a utilização dessa propriedade retornará um erro.</span><span class="sxs-lookup"><span data-stu-id="81851-168">If the mapping is not active, using this property returns an error.</span></span></para>
           <para> </para></remarks>
-        <example><para><span data-ttu-id="8b056-p121">O exemplo a seguir verifica se o primeiro controle de conteúdo no documento ativo é um controle de data e se a sequência de caracteres do XPath está definida para uma propriedade interna específica do documento. Em seguida, ele define o mapeamento para o controle, se o XPath não corresponder e o controle for do tipo data.</span><span class="sxs-lookup"><span data-stu-id="8b056-p121">The following example checks whether the first content control in the active document is a date control and whether the XPath string is set to a specific built-in document property. It then sets the mapping to the control, if the XPath does not match and the control is a date control.</span></span></para>
+        <example><para><span data-ttu-id="81851-p121">O exemplo a seguir verifica se o primeiro controle de conteúdo no documento ativo é um controle de data e se a sequência de caracteres do XPath está definida para uma propriedade interna específica do documento. Em seguida, ele define o mapeamento para o controle, se o XPath não corresponder e o controle for do tipo data.</span><span class="sxs-lookup"><span data-stu-id="81851-p121">The following example checks whether the first content control in the active document is a date control and whether the XPath string is set to a specific built-in document property. It then sets the mapping to the control, if the XPath does not match and the control is a date control.</span></span></para>
           <code>&lt;span class="label"&gt;Dim objCC As ContentControl
 
 

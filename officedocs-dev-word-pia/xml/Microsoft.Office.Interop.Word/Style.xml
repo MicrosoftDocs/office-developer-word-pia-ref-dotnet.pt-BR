@@ -1,9 +1,10 @@
 <Type Name="Style" FullName="Microsoft.Office.Interop.Word.Style">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="74f93bf5a3bfe99659200d0b7c65cb0b82d3670e" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146112" /></Metadata><TypeSignature Language="C#" Value="public interface Style" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="faf86e8d27e6707440672052a3c4a4675dc8c0ab" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43926231" /></Metadata><TypeSignature Language="C#" Value="public interface Style" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Style" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Style" />
   <TypeSignature Language="VB.NET" Value="Public Interface Style" />
   <TypeSignature Language="C++ CLI" Value="public interface class Style" />
+  <TypeSignature Language="F#" Value="type Style = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -18,12 +19,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary><span data-ttu-id="1e44d-101">Representa um único estilo interno ou definido pelo usuário.</span><span class="sxs-lookup"><span data-stu-id="1e44d-101">Represents a single built-in or user-defined style.</span></span></summary>
-    <remarks><para><span data-ttu-id="1e44d-102">O objeto <b>Style</b> inclui atributos de estilo (fonte, estilo da fonte, espaçamento de parágrafo e assim por diante) como propriedades do objeto <b>Style</b> .</span><span class="sxs-lookup"><span data-stu-id="1e44d-102">The <b>Style</b> object includes style attributes (font, font style, paragraph spacing, and so on) as properties of the <b>Style</b> object.</span></span> <span data-ttu-id="1e44d-103">O objeto <b>Style</b> é um membro da <see cref="T:Microsoft.Office.Interop.Word.Styles" /> coleção.</span><span class="sxs-lookup"><span data-stu-id="1e44d-103">The <b>Style</b> object is a member of the <see cref="T:Microsoft.Office.Interop.Word.Styles" /> collection.</span></span> <span data-ttu-id="1e44d-104">A coleção de <b>estilos</b> inclui todos os estilos no documento especificado.</span><span class="sxs-lookup"><span data-stu-id="1e44d-104">The <b>Styles</b> collection includes all the styles in the specified document.</span></span></para>
-      <para><span data-ttu-id="1e44d-105">Use <b></b>Styles<paramref name="index" />(), <paramref name="index" /> onde é o nome do estilo <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" /> , uma constante ou um número de índice, para retornar um único objeto <b>Style</b> .</span><span class="sxs-lookup"><span data-stu-id="1e44d-105">Use <b>Styles</b>(<paramref name="index" />), where <paramref name="index" /> is the style name, a <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" /> constant or index number, to return a single <b>Style</b> object.</span></span> <span data-ttu-id="1e44d-106">Você deve corresponder exatamente a ortografia e o espaçamento do nome do estilo, mas não necessariamente seu uso de maiusculas.</span><span class="sxs-lookup"><span data-stu-id="1e44d-106">You must exactly match the spelling and spacing of the style name, but not necessarily its capitalization.</span></span></para>
-      <para><span data-ttu-id="1e44d-107">O número de índice do estilo representa a posição do estilo na lista classificada em ordem alfabética de nomes de estilo.</span><span class="sxs-lookup"><span data-stu-id="1e44d-107">The style index number represents the position of the style in the alphabetically sorted list of style names.</span></span></para>
-      <para><span data-ttu-id="1e44d-108">Para aplicar um estilo a um intervalo, parágrafo ou parágrafos vários, definir o <b>estilo</b> propriedade com um nome de estilo interna ou definida pelo usuário.</span><span class="sxs-lookup"><span data-stu-id="1e44d-108">To apply a style to a range, paragraph, or multiple paragraphs, set the <b>Style</b> property to a user-defined or built-in style name.</span></span></para>
-      <para><span data-ttu-id="1e44d-109">Use o <see cref="M:Microsoft.Office.Interop.Word._Application.OrganizerCopy(System.String,System.String,System.String,Microsoft.Office.Interop.Word.WdOrganizerObject)" /> método para copiar estilos entre documentos e modelos.</span><span class="sxs-lookup"><span data-stu-id="1e44d-109">Use the <see cref="M:Microsoft.Office.Interop.Word._Application.OrganizerCopy(System.String,System.String,System.String,Microsoft.Office.Interop.Word.WdOrganizerObject)" /> method to copy styles between documents and templates.</span></span> <span data-ttu-id="1e44d-110">Use o <see cref="M:Microsoft.Office.Interop.Word._Document.UpdateStyles" /> método para atualizar os estilos no documento ativo para coincidir com as definições de estilo no modelo anexado.</span><span class="sxs-lookup"><span data-stu-id="1e44d-110">Use the <see cref="M:Microsoft.Office.Interop.Word._Document.UpdateStyles" /> method to update the styles in the active document to match the style definitions in the attached template.</span></span> <span data-ttu-id="1e44d-111">Use o <see cref="M:Microsoft.Office.Interop.Word.Template.OpenAsDocument" /> método para abrir um modelo como um documento para que você possa modificar os estilos do modelo.</span><span class="sxs-lookup"><span data-stu-id="1e44d-111">Use the <see cref="M:Microsoft.Office.Interop.Word.Template.OpenAsDocument" /> method to open a template as a document so that you can modify the template styles.</span></span></para>
+    <summary><span data-ttu-id="5e80d-101">Representa um único estilo interno ou definido pelo usuário.</span><span class="sxs-lookup"><span data-stu-id="5e80d-101">Represents a single built-in or user-defined style.</span></span></summary>
+    <remarks><para><span data-ttu-id="5e80d-102">O objeto <b>Style</b> inclui atributos de estilo (fonte, estilo da fonte, espaçamento de parágrafo e assim por diante) como propriedades do objeto <b>Style</b> .</span><span class="sxs-lookup"><span data-stu-id="5e80d-102">The <b>Style</b> object includes style attributes (font, font style, paragraph spacing, and so on) as properties of the <b>Style</b> object.</span></span> <span data-ttu-id="5e80d-103">O objeto <b>Style</b> é um membro da <see cref="T:Microsoft.Office.Interop.Word.Styles" /> coleção.</span><span class="sxs-lookup"><span data-stu-id="5e80d-103">The <b>Style</b> object is a member of the <see cref="T:Microsoft.Office.Interop.Word.Styles" /> collection.</span></span> <span data-ttu-id="5e80d-104">A coleção de <b>estilos</b> inclui todos os estilos no documento especificado.</span><span class="sxs-lookup"><span data-stu-id="5e80d-104">The <b>Styles</b> collection includes all the styles in the specified document.</span></span></para>
+      <para><span data-ttu-id="5e80d-105">Use <b>Styles</b>( <paramref name="index" /> ), onde <paramref name="index" /> é o nome do estilo, uma <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" /> constante ou um número de índice, para retornar um único objeto <b>Style</b> .</span><span class="sxs-lookup"><span data-stu-id="5e80d-105">Use <b>Styles</b>(<paramref name="index" />), where <paramref name="index" /> is the style name, a <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" /> constant or index number, to return a single <b>Style</b> object.</span></span> <span data-ttu-id="5e80d-106">Você deve corresponder exatamente a ortografia e o espaçamento do nome do estilo, mas não necessariamente seu uso de maiusculas.</span><span class="sxs-lookup"><span data-stu-id="5e80d-106">You must exactly match the spelling and spacing of the style name, but not necessarily its capitalization.</span></span></para>
+      <para><span data-ttu-id="5e80d-107">O número de índice do estilo representa a posição do estilo na lista classificada em ordem alfabética de nomes de estilo.</span><span class="sxs-lookup"><span data-stu-id="5e80d-107">The style index number represents the position of the style in the alphabetically sorted list of style names.</span></span></para>
+      <para><span data-ttu-id="5e80d-108">Para aplicar um estilo a um intervalo, parágrafo ou parágrafos vários, definir o <b>estilo</b> propriedade com um nome de estilo interna ou definida pelo usuário.</span><span class="sxs-lookup"><span data-stu-id="5e80d-108">To apply a style to a range, paragraph, or multiple paragraphs, set the <b>Style</b> property to a user-defined or built-in style name.</span></span></para>
+      <para><span data-ttu-id="5e80d-109">Use o <see cref="M:Microsoft.Office.Interop.Word._Application.OrganizerCopy(System.String,System.String,System.String,Microsoft.Office.Interop.Word.WdOrganizerObject)" /> método para copiar estilos entre documentos e modelos.</span><span class="sxs-lookup"><span data-stu-id="5e80d-109">Use the <see cref="M:Microsoft.Office.Interop.Word._Application.OrganizerCopy(System.String,System.String,System.String,Microsoft.Office.Interop.Word.WdOrganizerObject)" /> method to copy styles between documents and templates.</span></span> <span data-ttu-id="5e80d-110">Use o <see cref="M:Microsoft.Office.Interop.Word._Document.UpdateStyles" /> método para atualizar os estilos no documento ativo para coincidir com as definições de estilo no modelo anexado.</span><span class="sxs-lookup"><span data-stu-id="5e80d-110">Use the <see cref="M:Microsoft.Office.Interop.Word._Document.UpdateStyles" /> method to update the styles in the active document to match the style definitions in the attached template.</span></span> <span data-ttu-id="5e80d-111">Use o <see cref="M:Microsoft.Office.Interop.Word.Template.OpenAsDocument" /> método para abrir um modelo como um documento para que você possa modificar os estilos do modelo.</span><span class="sxs-lookup"><span data-stu-id="5e80d-111">Use the <see cref="M:Microsoft.Office.Interop.Word.Template.OpenAsDocument" /> method to open a template as a document so that you can modify the template styles.</span></span></para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -33,6 +34,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Style.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -50,7 +52,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="1e44d-112">Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</span><span class="sxs-lookup"><span data-stu-id="1e44d-112">Returns a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span></span></summary>
+        <summary><span data-ttu-id="5e80d-112">Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</span><span class="sxs-lookup"><span data-stu-id="5e80d-112">Returns a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -61,6 +63,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.AutomaticallyUpdate" />
       <MemberSignature Language="VB.NET" Value="Public Property AutomaticallyUpdate As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutomaticallyUpdate { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AutomaticallyUpdate : bool with get, set" Usage="Microsoft.Office.Interop.Word.Style.AutomaticallyUpdate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -81,9 +84,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="1e44d-113"><b>True</b> se o estilo for automaticamente redefinido com base na seleção.</span><span class="sxs-lookup"><span data-stu-id="1e44d-113"><b>True</b> if the style is automatically redefined based on the selection.</span></span> <span data-ttu-id="1e44d-114"><b>False</b> se o Microsoft Word solicita confirmação antes de redefinir o estilo com base na seleção.</span><span class="sxs-lookup"><span data-stu-id="1e44d-114"><b>False</b> if Microsoft Word prompts for confirmation before redefining the style based on the selection.</span></span> <span data-ttu-id="1e44d-115"><b>Boolean</b> de leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="1e44d-115">Read/write <b>Boolean</b>.</span></span></summary>
+        <summary><span data-ttu-id="5e80d-113"><b>True</b> se o estilo for automaticamente redefinido com base na seleção.</span><span class="sxs-lookup"><span data-stu-id="5e80d-113"><b>True</b> if the style is automatically redefined based on the selection.</span></span> <span data-ttu-id="5e80d-114"><b>False</b> se o Microsoft Word solicita confirmação antes de redefinir o estilo com base na seleção.</span><span class="sxs-lookup"><span data-stu-id="5e80d-114"><b>False</b> if Microsoft Word prompts for confirmation before redefining the style based on the selection.</span></span> <span data-ttu-id="5e80d-115"><b>Boolean</b> de leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="5e80d-115">Read/write <b>Boolean</b>.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="1e44d-116">Um estilo pode ser redefinido quando ele é aplicado a uma seleção que tem o mesmo estilo mas uma formatação manual diferente.</span><span class="sxs-lookup"><span data-stu-id="1e44d-116">A style can be redefined when it is applied to a selection that has the same style but different manual formatting.</span></span></para>
+        <remarks><para><span data-ttu-id="5e80d-116">Um estilo pode ser redefinido quando ele é aplicado a uma seleção que tem o mesmo estilo mas uma formatação manual diferente.</span><span class="sxs-lookup"><span data-stu-id="5e80d-116">A style can be redefined when it is applied to a selection that has the same style but different manual formatting.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.BaseStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property BaseStyle As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ BaseStyle { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BaseStyle : obj with get, set" Usage="Microsoft.Office.Interop.Word.Style.BaseStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -113,9 +117,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="1e44d-117">Retorna ou define um estilo existente no qual você pode basear a formatação do estilo de outro.</span><span class="sxs-lookup"><span data-stu-id="1e44d-117">Returns or sets an existing style on which you can base the formatting of another style.</span></span> <span data-ttu-id="1e44d-118"><b>Objeto</b> de leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="1e44d-118">Read/write <b>Object</b>.</span></span></summary>
+        <summary><span data-ttu-id="5e80d-117">Retorna ou define um estilo existente no qual você pode basear a formatação do estilo de outro.</span><span class="sxs-lookup"><span data-stu-id="5e80d-117">Returns or sets an existing style on which you can base the formatting of another style.</span></span> <span data-ttu-id="5e80d-118"><b>Objeto</b> de leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="5e80d-118">Read/write <b>Object</b>.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="1e44d-119">Para definir essa propriedade, especifique o nome local do estilo base, um inteiro ou uma <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" /> constante ou um objeto que represente o estilo base.</span><span class="sxs-lookup"><span data-stu-id="1e44d-119">To set this property, specify either the local name of the base style, an integer or a <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" /> constant, or an object that represents the base style.</span></span></para>
+        <remarks><para><span data-ttu-id="5e80d-119">Para definir essa propriedade, especifique o nome local do estilo base, um inteiro ou uma constante ou <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" /> um objeto que represente o estilo base.</span><span class="sxs-lookup"><span data-stu-id="5e80d-119">To set this property, specify either the local name of the base style, an integer or a <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" /> constant, or an object that represents the base style.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -125,6 +129,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.Borders" />
       <MemberSignature Language="VB.NET" Value="Public Property Borders As Borders" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Borders ^ Borders { Microsoft::Office::Interop::Word::Borders ^ get(); void set(Microsoft::Office::Interop::Word::Borders ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Borders : Microsoft.Office.Interop.Word.Borders with get, set" Usage="Microsoft.Office.Interop.Word.Style.Borders" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -145,7 +150,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Borders</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="1e44d-120">Retorna uma <see cref="T:Microsoft.Office.Interop.Word.Borders" /> coleção que representa todas as bordas do objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="1e44d-120">Returns a <see cref="T:Microsoft.Office.Interop.Word.Borders" /> collection that represents all the borders for the specified object.</span></span></summary>
+        <summary><span data-ttu-id="5e80d-120">Retorna uma <see cref="T:Microsoft.Office.Interop.Word.Borders" /> coleção que representa todas as bordas do objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="5e80d-120">Returns a <see cref="T:Microsoft.Office.Interop.Word.Borders" /> collection that represents all the borders for the specified object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -156,6 +161,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.BuiltIn" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BuiltIn As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool BuiltIn { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.BuiltIn : bool" Usage="Microsoft.Office.Interop.Word.Style.BuiltIn" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -173,9 +179,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="1e44d-121"><b>True</b> se o objeto especificado é um dos estilos internos ou rótulos de legenda no Microsoft Word.</span><span class="sxs-lookup"><span data-stu-id="1e44d-121"><b>True</b> if the specified object is one of the built-in styles or caption labels in Microsoft Word.</span></span> <span data-ttu-id="1e44d-122"><b>Boolean</b> somente leitura.</span><span class="sxs-lookup"><span data-stu-id="1e44d-122">Read-only <b>Boolean</b>.</span></span></summary>
+        <summary><span data-ttu-id="5e80d-121"><b>True</b> se o objeto especificado é um dos estilos internos ou rótulos de legenda no Microsoft Word.</span><span class="sxs-lookup"><span data-stu-id="5e80d-121"><b>True</b> if the specified object is one of the built-in styles or caption labels in Microsoft Word.</span></span> <span data-ttu-id="5e80d-122"><b>Boolean</b> somente leitura.</span><span class="sxs-lookup"><span data-stu-id="5e80d-122">Read-only <b>Boolean</b>.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="1e44d-123">Você pode especificar estilos internos em todos os idiomas usando as <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" /> constantes ou dentro de um idioma usando o nome do estilo para a versão do idioma do Microsoft Word.</span><span class="sxs-lookup"><span data-stu-id="1e44d-123">You can specify built-in styles across all languages by using the <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" /> constants or within a language by using the style name for the language version of Microsoft Word.</span></span></para>
+        <remarks><para><span data-ttu-id="5e80d-123">Você pode especificar estilos internos em todos os idiomas usando as <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" /> constantes ou dentro de um idioma usando o nome do estilo para a versão do idioma do Microsoft Word.</span><span class="sxs-lookup"><span data-stu-id="5e80d-123">You can specify built-in styles across all languages by using the <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" /> constants or within a language by using the style name for the language version of Microsoft Word.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -185,6 +191,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Style.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -202,10 +209,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="1e44d-124">Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</span><span class="sxs-lookup"><span data-stu-id="1e44d-124">Returns a 32-bit integer that indicates the application in which the specified object was created.</span></span> <span data-ttu-id="1e44d-125"><b>Integer</b> somente leitura.</span><span class="sxs-lookup"><span data-stu-id="1e44d-125">Read-only <b>Integer</b>.</span></span></summary>
+        <summary><span data-ttu-id="5e80d-124">Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</span><span class="sxs-lookup"><span data-stu-id="5e80d-124">Returns a 32-bit integer that indicates the application in which the specified object was created.</span></span> <span data-ttu-id="5e80d-125"><b>Integer</b> somente leitura.</span><span class="sxs-lookup"><span data-stu-id="5e80d-125">Read-only <b>Integer</b>.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="1e44d-126">Se o objeto foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD".</span><span class="sxs-lookup"><span data-stu-id="1e44d-126">If the object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span> <span data-ttu-id="1e44d-127">[!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</span><span class="sxs-lookup"><span data-stu-id="1e44d-127">This value can also be represented by the constant <b>wdCreatorCode</b>.</span></span></para>
-          <para><span data-ttu-id="1e44d-128">A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres.</span><span class="sxs-lookup"><span data-stu-id="1e44d-128">The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="1e44d-129">Por exemplo, o Microsoft Word tem o código de criador MSWD.</span><span class="sxs-lookup"><span data-stu-id="1e44d-129">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="1e44d-130">Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</span><span class="sxs-lookup"><span data-stu-id="1e44d-130">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
+        <remarks><para><span data-ttu-id="5e80d-126">Se o objeto foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD".</span><span class="sxs-lookup"><span data-stu-id="5e80d-126">If the object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span> <span data-ttu-id="5e80d-127">[!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</span><span class="sxs-lookup"><span data-stu-id="5e80d-127">This value can also be represented by the constant <b>wdCreatorCode</b>.</span></span></para>
+          <para><span data-ttu-id="5e80d-128">A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres.</span><span class="sxs-lookup"><span data-stu-id="5e80d-128">The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="5e80d-129">Por exemplo, o Microsoft Word tem o código de criador MSWD.</span><span class="sxs-lookup"><span data-stu-id="5e80d-129">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="5e80d-130">Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</span><span class="sxs-lookup"><span data-stu-id="5e80d-130">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -215,6 +222,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Style.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberSignature Language="F#" Value="abstract member Delete : unit -&gt; unit" Usage="style.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -230,7 +238,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary><span data-ttu-id="1e44d-131">Exclui o objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="1e44d-131">Deletes the specified object.</span></span></summary>
+        <summary><span data-ttu-id="5e80d-131">Exclui o objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="5e80d-131">Deletes the specified object.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -240,6 +248,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.Description" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Description As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Description : string" Usage="Microsoft.Office.Interop.Word.Style.Description" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -257,9 +266,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="1e44d-132">Retorna a descrição do estilo especificado.</span><span class="sxs-lookup"><span data-stu-id="1e44d-132">Returns the description of the specified style.</span></span> <span data-ttu-id="1e44d-133"><b>String</b> somente leitura.</span><span class="sxs-lookup"><span data-stu-id="1e44d-133">Read-only <b>String</b>.</span></span></summary>
+        <summary><span data-ttu-id="5e80d-132">Retorna a descrição do estilo especificado.</span><span class="sxs-lookup"><span data-stu-id="5e80d-132">Returns the description of the specified style.</span></span> <span data-ttu-id="5e80d-133"><b>String</b> somente leitura.</span><span class="sxs-lookup"><span data-stu-id="5e80d-133">Read-only <b>String</b>.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="1e44d-134">Por exemplo, uma descrição típica para o estilo título 2 pode ser "normal + Font: Arial, 12 pt, negrito, itálico, espaço antes de 12 pt após 3 pt, KeepWithNext, nível 2".</span><span class="sxs-lookup"><span data-stu-id="1e44d-134">For example, a typical description for the Heading 2 style might be "Normal + Font: Arial, 12 pt, Bold, Italic, Space Before 12 pt After 3 pt, KeepWithNext, Level 2."</span></span></para>
+        <remarks><para><span data-ttu-id="5e80d-134">Por exemplo, uma descrição típica para o estilo título 2 pode ser "normal + Font: Arial, 12 pt, negrito, itálico, espaço antes de 12 pt após 3 pt, KeepWithNext, nível 2".</span><span class="sxs-lookup"><span data-stu-id="5e80d-134">For example, a typical description for the Heading 2 style might be "Normal + Font: Arial, 12 pt, Bold, Italic, Space Before 12 pt After 3 pt, KeepWithNext, Level 2."</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -269,6 +278,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.Font" />
       <MemberSignature Language="VB.NET" Value="Public Property Font As Font" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Font ^ Font { Microsoft::Office::Interop::Word::Font ^ get(); void set(Microsoft::Office::Interop::Word::Font ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Font : Microsoft.Office.Interop.Word.Font with get, set" Usage="Microsoft.Office.Interop.Word.Style.Font" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -289,9 +299,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="1e44d-135">Retorna ou define um <see cref="T:Microsoft.Office.Interop.Word.Font" /> objeto que representa a formatação de caractere do objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="1e44d-135">Returns or sets a <see cref="T:Microsoft.Office.Interop.Word.Font" /> object that represents the character formatting of the specified object.</span></span> <span data-ttu-id="1e44d-136"><b>Font</b> de leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="1e44d-136">Read/write <b>Font</b>.</span></span></summary>
+        <summary><span data-ttu-id="5e80d-135">Retorna ou define um <see cref="T:Microsoft.Office.Interop.Word.Font" /> objeto que representa a formatação de caractere do objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="5e80d-135">Returns or sets a <see cref="T:Microsoft.Office.Interop.Word.Font" /> object that represents the character formatting of the specified object.</span></span> <span data-ttu-id="5e80d-136"><b>Font</b> de leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="5e80d-136">Read/write <b>Font</b>.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="1e44d-137">Para definir essa propriedade, especifique uma expressão que retorne um objeto <b>Font</b>.</span><span class="sxs-lookup"><span data-stu-id="1e44d-137">To set this property, specify an expression that returns a <b>Font</b> object.</span></span></para>
+        <remarks><para><span data-ttu-id="5e80d-137">Para definir essa propriedade, especifique uma expressão que retorne um objeto <b>Font</b>.</span><span class="sxs-lookup"><span data-stu-id="5e80d-137">To set this property, specify an expression that returns a <b>Font</b> object.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -301,6 +311,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.Frame" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Frame As Frame" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Frame ^ Frame { Microsoft::Office::Interop::Word::Frame ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Frame : Microsoft.Office.Interop.Word.Frame" Usage="Microsoft.Office.Interop.Word.Style.Frame" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -318,7 +329,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Frame</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="1e44d-138">Retorna um <see cref="T:Microsoft.Office.Interop.Word.Frame" /> objeto que representa a formatação de quadro para o estilo especificado.</span><span class="sxs-lookup"><span data-stu-id="1e44d-138">Returns a <see cref="T:Microsoft.Office.Interop.Word.Frame" /> object that represents the frame formatting for the specified style.</span></span> <span data-ttu-id="1e44d-139">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="1e44d-139">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="5e80d-138">Retorna um <see cref="T:Microsoft.Office.Interop.Word.Frame" /> objeto que representa a formatação de quadro para o estilo especificado.</span><span class="sxs-lookup"><span data-stu-id="5e80d-138">Returns a <see cref="T:Microsoft.Office.Interop.Word.Frame" /> object that represents the frame formatting for the specified style.</span></span> <span data-ttu-id="5e80d-139">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="5e80d-139">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -329,6 +340,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.Hidden" />
       <MemberSignature Language="VB.NET" Value="Public Property Hidden As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Hidden { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Hidden : bool with get, set" Usage="Microsoft.Office.Interop.Word.Style.Hidden" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -355,7 +367,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="1e44d-140">Reservado para uso interno.</span><span class="sxs-lookup"><span data-stu-id="1e44d-140">Reserved for internal use.</span></span></summary>
+        <summary><span data-ttu-id="5e80d-140">Reservado para uso interno.</span><span class="sxs-lookup"><span data-stu-id="5e80d-140">Reserved for internal use.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -366,6 +378,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.InUse" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InUse As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool InUse { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.InUse : bool" Usage="Microsoft.Office.Interop.Word.Style.InUse" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -383,9 +396,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="1e44d-p113"><b>True</b> se o estilo especificado for um estilo interno que tenha sido modificado ou aplicado no documento ou um novo estilo que foi criado no documento. Somente leitura <b>booleano</b>.</span><span class="sxs-lookup"><span data-stu-id="1e44d-p113"><b>True</b> if the specified style is a built-in style that has been modified or applied in the document or a new style that has been created in the document. Read-only <b>Boolean</b>.</span></span></summary>
+        <summary><span data-ttu-id="5e80d-p113"><b>True</b> se o estilo especificado for um estilo interno que tenha sido modificado ou aplicado no documento ou um novo estilo que foi criado no documento. Somente leitura <b>booleano</b>.</span><span class="sxs-lookup"><span data-stu-id="5e80d-p113"><b>True</b> if the specified style is a built-in style that has been modified or applied in the document or a new style that has been created in the document. Read-only <b>Boolean</b>.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="1e44d-143">Essa propriedade não indica necessariamente se o estilo é aplicado atualmente a qualquer texto no documento.</span><span class="sxs-lookup"><span data-stu-id="1e44d-143">This property doesn't necessarily indicate whether the style is currently applied to any text in the document.</span></span> <span data-ttu-id="1e44d-144">Por exemplo, se o texto formatado com um estilo for excluído, a propriedade <b>InUse</b> do estilo permanece <b>True</b>.</span><span class="sxs-lookup"><span data-stu-id="1e44d-144">For instance, if text that's been formatted with a style is deleted, the <b>InUse</b> property of the style remains <b>True</b>.</span></span> <span data-ttu-id="1e44d-145">Para estilos internos que nunca foram usados no documento, essa propriedade retornará <b>False</b>.</span><span class="sxs-lookup"><span data-stu-id="1e44d-145">For built-in styles that have never been used in the document, this property returns <b>False</b>.</span></span></para>
+        <remarks><para><span data-ttu-id="5e80d-143">Essa propriedade não indica necessariamente se o estilo é aplicado atualmente a qualquer texto no documento.</span><span class="sxs-lookup"><span data-stu-id="5e80d-143">This property doesn't necessarily indicate whether the style is currently applied to any text in the document.</span></span> <span data-ttu-id="5e80d-144">Por exemplo, se o texto formatado com um estilo for excluído, a propriedade <b>InUse</b> do estilo permanece <b>True</b>.</span><span class="sxs-lookup"><span data-stu-id="5e80d-144">For instance, if text that's been formatted with a style is deleted, the <b>InUse</b> property of the style remains <b>True</b>.</span></span> <span data-ttu-id="5e80d-145">Para estilos internos que nunca foram usados no documento, essa propriedade retornará <b>False</b>.</span><span class="sxs-lookup"><span data-stu-id="5e80d-145">For built-in styles that have never been used in the document, this property returns <b>False</b>.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -395,6 +408,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.LanguageID" />
       <MemberSignature Language="VB.NET" Value="Public Property LanguageID As WdLanguageID" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdLanguageID LanguageID { Microsoft::Office::Interop::Word::WdLanguageID get(); void set(Microsoft::Office::Interop::Word::WdLanguageID value); };" />
+      <MemberSignature Language="F#" Value="member this.LanguageID : Microsoft.Office.Interop.Word.WdLanguageID with get, set" Usage="Microsoft.Office.Interop.Word.Style.LanguageID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -415,10 +429,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdLanguageID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="1e44d-146">Retorna ou define o idioma do objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="1e44d-146">Returns or sets the language for the specified object.</span></span> <span data-ttu-id="1e44d-147">Leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="1e44d-147">Read/write.</span></span></summary>
+        <summary><span data-ttu-id="5e80d-146">Retorna ou define o idioma do objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="5e80d-146">Returns or sets the language for the specified object.</span></span> <span data-ttu-id="5e80d-147">Leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="5e80d-147">Read/write.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="1e44d-148">Pode ser qualquer <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> constante.</span><span class="sxs-lookup"><span data-stu-id="1e44d-148">Can be any <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> constant.</span></span></para>
-          <para><span data-ttu-id="1e44d-149">Algumas das constantes <b>WdLanguageID</b> podem não estar disponíveis para você, dependendo do suporte a idioma (Português do Brasil, por exemplo) que você selecionou ou instalou.</span><span class="sxs-lookup"><span data-stu-id="1e44d-149">Some of the <b>WdLanguageID</b> constants may not be available to you, depending on the language support (U.S. English, for example) that you’ve selected or installed.</span></span></para>
+        <remarks><para><span data-ttu-id="5e80d-148">Pode ser qualquer <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> constante.</span><span class="sxs-lookup"><span data-stu-id="5e80d-148">Can be any <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> constant.</span></span></para>
+          <para><span data-ttu-id="5e80d-149">Algumas das constantes <b>WdLanguageID</b> podem não estar disponíveis para você, dependendo do suporte a idioma (Português do Brasil, por exemplo) que você selecionou ou instalou.</span><span class="sxs-lookup"><span data-stu-id="5e80d-149">Some of the <b>WdLanguageID</b> constants may not be available to you, depending on the language support (U.S. English, for example) that you’ve selected or installed.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -428,6 +442,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.LanguageIDFarEast" />
       <MemberSignature Language="VB.NET" Value="Public Property LanguageIDFarEast As WdLanguageID" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdLanguageID LanguageIDFarEast { Microsoft::Office::Interop::Word::WdLanguageID get(); void set(Microsoft::Office::Interop::Word::WdLanguageID value); };" />
+      <MemberSignature Language="F#" Value="member this.LanguageIDFarEast : Microsoft.Office.Interop.Word.WdLanguageID with get, set" Usage="Microsoft.Office.Interop.Word.Style.LanguageIDFarEast" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -448,10 +463,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdLanguageID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="1e44d-150">Retorna ou define um idioma do Leste Asiático para o objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="1e44d-150">Returns or sets an East Asian language for the specified object.</span></span></summary>
+        <summary><span data-ttu-id="5e80d-150">Retorna ou define um idioma do Leste Asiático para o objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="5e80d-150">Returns or sets an East Asian language for the specified object.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="1e44d-151">Pode ser qualquer <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> constante.</span><span class="sxs-lookup"><span data-stu-id="1e44d-151">Can be any <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> constant.</span></span></para>
-          <para><span data-ttu-id="1e44d-152">Essa é a maneira recomendada de retornar ou definir o idioma do texto do Leste Asiático em um documento criado em uma versão do Microsoft Word para Leste Asiático.</span><span class="sxs-lookup"><span data-stu-id="1e44d-152">This is the recommended way to return or set the language of East Asian text in a document created in an East Asian version of Microsoft Word.</span></span></para>
+        <remarks><para><span data-ttu-id="5e80d-151">Pode ser qualquer <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> constante.</span><span class="sxs-lookup"><span data-stu-id="5e80d-151">Can be any <see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /> constant.</span></span></para>
+          <para><span data-ttu-id="5e80d-152">Essa é a maneira recomendada de retornar ou definir o idioma do texto do Leste Asiático em um documento criado em uma versão do Microsoft Word para Leste Asiático.</span><span class="sxs-lookup"><span data-stu-id="5e80d-152">This is the recommended way to return or set the language of East Asian text in a document created in an East Asian version of Microsoft Word.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -461,6 +476,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.Linked" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Linked As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Linked { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Linked : bool" Usage="Microsoft.Office.Interop.Word.Style.Linked" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -478,10 +494,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="1e44d-153">Retorna ou define um <b>Boolean</b> que representa se um estilo é vinculado e pode ser utilizado para formatação de caractere e de parágrafo.</span><span class="sxs-lookup"><span data-stu-id="1e44d-153">Returns or sets a <b>Boolean</b> that represents whether a style is a linked style that can be used for both paragraph and character formatting.</span></span> <span data-ttu-id="1e44d-154">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="1e44d-154">Read-only.</span></span></summary>
-        <value><span data-ttu-id="1e44d-155"><b>Boolean</b></span><span class="sxs-lookup"><span data-stu-id="1e44d-155"><b>Boolean</b></span></span></value>
-        <remarks><para><span data-ttu-id="1e44d-156">
-            <b>True</b> indica que a opção tipo de estilo na caixa de diálogo Modificar estilo está definida como "vinculado (parágrafo e caractere)".</span><span class="sxs-lookup"><span data-stu-id="1e44d-156">
+        <summary><span data-ttu-id="5e80d-153">Retorna ou define um <b>Boolean</b> que representa se um estilo é vinculado e pode ser utilizado para formatação de caractere e de parágrafo.</span><span class="sxs-lookup"><span data-stu-id="5e80d-153">Returns or sets a <b>Boolean</b> that represents whether a style is a linked style that can be used for both paragraph and character formatting.</span></span> <span data-ttu-id="5e80d-154">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="5e80d-154">Read-only.</span></span></summary>
+        <value><span data-ttu-id="5e80d-155"><b>Boolean</b></span><span class="sxs-lookup"><span data-stu-id="5e80d-155"><b>Boolean</b></span></span></value>
+        <remarks><para><span data-ttu-id="5e80d-156">
+            <b>True</b> indica que a opção tipo de estilo na caixa de diálogo Modificar estilo está definida como "vinculado (parágrafo e caractere)".</span><span class="sxs-lookup"><span data-stu-id="5e80d-156">
             <b>True</b> indicates that the Style Type option in the Modify Style dialog box is set to "Linked (paragraph and character)".</span></span></para>
           <para> </para></remarks>
       </Docs>
@@ -492,6 +508,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.LinkStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property LinkStyle As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ LinkStyle { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.LinkStyle : obj with get, set" Usage="Microsoft.Office.Interop.Word.Style.LinkStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -512,9 +529,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="1e44d-157">Define ou retorna um <b>objeto</b> que representa um vínculo entre um parágrafo e um estilo de caractere.</span><span class="sxs-lookup"><span data-stu-id="1e44d-157">Sets or returns an <b>Object</b> that represents a link between a paragraph and a character style.</span></span> <span data-ttu-id="1e44d-158">Leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="1e44d-158">Read/write.</span></span></summary>
+        <summary><span data-ttu-id="5e80d-157">Define ou retorna um <b>objeto</b> que representa um vínculo entre um parágrafo e um estilo de caractere.</span><span class="sxs-lookup"><span data-stu-id="5e80d-157">Sets or returns an <b>Object</b> that represents a link between a paragraph and a character style.</span></span> <span data-ttu-id="5e80d-158">Leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="5e80d-158">Read/write.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="1e44d-159">Quando um estilo de caractere e um estilo de parágrafo estão vinculados, os dois estilos assumem a mesma formatação de caractere.</span><span class="sxs-lookup"><span data-stu-id="1e44d-159">When a character style and a paragraph style are linked, the two styles take on the same character formatting.</span></span></para>
+        <remarks><para><span data-ttu-id="5e80d-159">Quando um estilo de caractere e um estilo de parágrafo estão vinculados, os dois estilos assumem a mesma formatação de caractere.</span><span class="sxs-lookup"><span data-stu-id="5e80d-159">When a character style and a paragraph style are linked, the two styles take on the same character formatting.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -522,6 +539,8 @@
       <MemberSignature Language="C#" Value="public void LinkToListTemplate (Microsoft.Office.Interop.Word.ListTemplate ListTemplate, ref object ListLevelNumber);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void LinkToListTemplate([in]class Microsoft.Office.Interop.Word.ListTemplate ListTemplate, [in]object&amp; ListLevelNumber) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Style.LinkToListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub LinkToListTemplate (ListTemplate As ListTemplate, Optional ByRef ListLevelNumber As Object)" />
+      <MemberSignature Language="F#" Value="abstract member LinkToListTemplate : Microsoft.Office.Interop.Word.ListTemplate * obj -&gt; unit" Usage="style.LinkToListTemplate (ListTemplate, ListLevelNumber)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -537,12 +556,12 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="ListTemplate" Type="Microsoft.Office.Interop.Word.ListTemplate" />
-        <Parameter Name="ListLevelNumber" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="ListLevelNumber" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="ListTemplate"><span data-ttu-id="1e44d-160">Objeto <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> necessário.</span><span class="sxs-lookup"><span data-stu-id="1e44d-160">Required <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> object.</span></span> <span data-ttu-id="1e44d-161">O modelo de lista ao qual o estilo será vinculado.</span><span class="sxs-lookup"><span data-stu-id="1e44d-161">The list template that the style is to be linked to.</span></span></param>
-        <param name="ListLevelNumber"><span data-ttu-id="1e44d-162"><b>Objeto</b>opcional.</span><span class="sxs-lookup"><span data-stu-id="1e44d-162">Optional <b>Object</b>.</span></span> <span data-ttu-id="1e44d-163">Um número inteiro correspondente ao nível de lista ao qual o estilo deve ser vinculado.</span><span class="sxs-lookup"><span data-stu-id="1e44d-163">An integer corresponding to the list level that the style is to be linked to.</span></span> <span data-ttu-id="1e44d-164">Se esse argumento for omitido, o nível do estilo será usado.</span><span class="sxs-lookup"><span data-stu-id="1e44d-164">If this argument is omitted, then the level of the style is used.</span></span></param>
-        <summary><span data-ttu-id="1e44d-165">Vincula o estilo especificado a um modelo de lista para que a formatação do estilo possa ser aplicada a listas.</span><span class="sxs-lookup"><span data-stu-id="1e44d-165">Links the specified style to a list template so that the style's formatting can be applied to lists.</span></span></summary>
+        <param name="ListTemplate"><span data-ttu-id="5e80d-160"><see cref="T:Microsoft.Office.Interop.Word.ListTemplate" />Objeto necessário.</span><span class="sxs-lookup"><span data-stu-id="5e80d-160">Required <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> object.</span></span> <span data-ttu-id="5e80d-161">O modelo de lista ao qual o estilo será vinculado.</span><span class="sxs-lookup"><span data-stu-id="5e80d-161">The list template that the style is to be linked to.</span></span></param>
+        <param name="ListLevelNumber"><span data-ttu-id="5e80d-162"><b>Objeto</b>opcional.</span><span class="sxs-lookup"><span data-stu-id="5e80d-162">Optional <b>Object</b>.</span></span> <span data-ttu-id="5e80d-163">Um número inteiro correspondente ao nível de lista ao qual o estilo deve ser vinculado.</span><span class="sxs-lookup"><span data-stu-id="5e80d-163">An integer corresponding to the list level that the style is to be linked to.</span></span> <span data-ttu-id="5e80d-164">Se esse argumento for omitido, o nível do estilo será usado.</span><span class="sxs-lookup"><span data-stu-id="5e80d-164">If this argument is omitted, then the level of the style is used.</span></span></param>
+        <summary><span data-ttu-id="5e80d-165">Vincula o estilo especificado a um modelo de lista para que a formatação do estilo possa ser aplicada a listas.</span><span class="sxs-lookup"><span data-stu-id="5e80d-165">Links the specified style to a list template so that the style's formatting can be applied to lists.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -552,6 +571,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.ListLevelNumber" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ListLevelNumber As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ListLevelNumber { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ListLevelNumber : int" Usage="Microsoft.Office.Interop.Word.Style.ListLevelNumber" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -569,7 +589,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="1e44d-166">Retorna o nível de lista para o estilo especificado.</span><span class="sxs-lookup"><span data-stu-id="1e44d-166">Returns the list level for the specified style.</span></span> <span data-ttu-id="1e44d-167"><b>Integer</b> somente leitura.</span><span class="sxs-lookup"><span data-stu-id="1e44d-167">Read-only <b>Integer</b>.</span></span></summary>
+        <summary><span data-ttu-id="5e80d-166">Retorna o nível de lista para o estilo especificado.</span><span class="sxs-lookup"><span data-stu-id="5e80d-166">Returns the list level for the specified style.</span></span> <span data-ttu-id="5e80d-167"><b>Integer</b> somente leitura.</span><span class="sxs-lookup"><span data-stu-id="5e80d-167">Read-only <b>Integer</b>.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -580,6 +600,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.ListTemplate" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ListTemplate As ListTemplate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ListTemplate ^ ListTemplate { Microsoft::Office::Interop::Word::ListTemplate ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ListTemplate : Microsoft.Office.Interop.Word.ListTemplate" Usage="Microsoft.Office.Interop.Word.Style.ListTemplate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -597,10 +618,10 @@
         <ReturnType>Microsoft.Office.Interop.Word.ListTemplate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="1e44d-168">Retorna um <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> objeto que representa a formatação de lista para o <see cref="T:Microsoft.Office.Interop.Word.Style" /> objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="1e44d-168">Returns a <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> object that represents the list formatting for the specified <see cref="T:Microsoft.Office.Interop.Word.Style" /> object.</span></span></summary>
+        <summary><span data-ttu-id="5e80d-168">Retorna um <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> objeto que representa a formatação de lista para o <see cref="T:Microsoft.Office.Interop.Word.Style" /> objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="5e80d-168">Returns a <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> object that represents the list formatting for the specified <see cref="T:Microsoft.Office.Interop.Word.Style" /> object.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="1e44d-169">Um modelo de lista inclui toda a formatação que define uma determinada lista.</span><span class="sxs-lookup"><span data-stu-id="1e44d-169">A list template includes all the formatting that defines a particular list.</span></span> <span data-ttu-id="1e44d-170">Cada um dos sete formatos (excluindo Nenhum) encontrados em cada uma das guias da caixa de diálogo Marcadores e Numeração (menu Formatar) corresponde a um modelo de lista.</span><span class="sxs-lookup"><span data-stu-id="1e44d-170">Each of the seven formats (excluding None) found on each of the tabs in the Bullets and Numbering dialog box (Format menu) corresponds to a list template.</span></span> <span data-ttu-id="1e44d-171">Os documentos e os modelos também podem conter coleções de modelos de lista.</span><span class="sxs-lookup"><span data-stu-id="1e44d-171">Documents and templates can also contain collections of list templates.</span></span></para>
-          <para><span data-ttu-id="1e44d-172">Se o primeiro parágrafo no intervalo do objeto <b>ListFormat</b> não estiver formatado como uma lista, a propriedade <b>ListTemplate</b> retornará <b>Nothing</b>.</span><span class="sxs-lookup"><span data-stu-id="1e44d-172">If the first paragraph in the range for the <b>ListFormat</b> object is not formatted as a list, the <b>ListTemplate</b> property returns <b>Nothing</b>.</span></span></para>
+        <remarks><para><span data-ttu-id="5e80d-169">Um modelo de lista inclui toda a formatação que define uma determinada lista.</span><span class="sxs-lookup"><span data-stu-id="5e80d-169">A list template includes all the formatting that defines a particular list.</span></span> <span data-ttu-id="5e80d-170">Cada um dos sete formatos (excluindo Nenhum) encontrados em cada uma das guias da caixa de diálogo Marcadores e Numeração (menu Formatar) corresponde a um modelo de lista.</span><span class="sxs-lookup"><span data-stu-id="5e80d-170">Each of the seven formats (excluding None) found on each of the tabs in the Bullets and Numbering dialog box (Format menu) corresponds to a list template.</span></span> <span data-ttu-id="5e80d-171">Os documentos e os modelos também podem conter coleções de modelos de lista.</span><span class="sxs-lookup"><span data-stu-id="5e80d-171">Documents and templates can also contain collections of list templates.</span></span></para>
+          <para><span data-ttu-id="5e80d-172">Se o primeiro parágrafo no intervalo do objeto <b>ListFormat</b> não estiver formatado como uma lista, a propriedade <b>ListTemplate</b> retornará <b>Nothing</b>.</span><span class="sxs-lookup"><span data-stu-id="5e80d-172">If the first paragraph in the range for the <b>ListFormat</b> object is not formatted as a list, the <b>ListTemplate</b> property returns <b>Nothing</b>.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -610,6 +631,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.Locked" />
       <MemberSignature Language="VB.NET" Value="Public Property Locked As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Locked { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Locked : bool with get, set" Usage="Microsoft.Office.Interop.Word.Style.Locked" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -630,7 +652,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="1e44d-173"><b>True</b> se o estilo especificado está bloqueado.</span><span class="sxs-lookup"><span data-stu-id="1e44d-173"><b>True</b> if the specified style is locked.</span></span></summary>
+        <summary><span data-ttu-id="5e80d-173"><b>True</b> se o estilo especificado está bloqueado.</span><span class="sxs-lookup"><span data-stu-id="5e80d-173"><b>True</b> if the specified style is locked.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -641,6 +663,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.NameLocal" />
       <MemberSignature Language="VB.NET" Value="Default Public Property NameLocal As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.NameLocal : string with get, set" Usage="Microsoft.Office.Interop.Word.Style.NameLocal" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -661,9 +684,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="1e44d-174">Retorna o nome de um estilo interno no idioma do usuário.</span><span class="sxs-lookup"><span data-stu-id="1e44d-174">Returns the name of a built-in style in the language of the user.</span></span> <span data-ttu-id="1e44d-175"><b>Cadeia de caracteres</b> de leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="1e44d-175">Read/write <b>String</b>.</span></span></summary>
+        <summary><span data-ttu-id="5e80d-174">Retorna o nome de um estilo interno no idioma do usuário.</span><span class="sxs-lookup"><span data-stu-id="5e80d-174">Returns the name of a built-in style in the language of the user.</span></span> <span data-ttu-id="5e80d-175"><b>Cadeia de caracteres</b> de leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="5e80d-175">Read/write <b>String</b>.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="1e44d-176">A configuração dessa propriedade renomeia um estilo definido pelo usuário ou adiciona um alias a um estilo interno.</span><span class="sxs-lookup"><span data-stu-id="1e44d-176">Setting this property renames a user-defined style or adds an alias to a built-in style.</span></span></para>
+        <remarks><para><span data-ttu-id="5e80d-176">A configuração dessa propriedade renomeia um estilo definido pelo usuário ou adiciona um alias a um estilo interno.</span><span class="sxs-lookup"><span data-stu-id="5e80d-176">Setting this property renames a user-defined style or adds an alias to a built-in style.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -673,6 +696,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.NextParagraphStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property NextParagraphStyle As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ NextParagraphStyle { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.NextParagraphStyle : obj with get, set" Usage="Microsoft.Office.Interop.Word.Style.NextParagraphStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -693,9 +717,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="1e44d-177">Retorna ou define o estilo a ser aplicado automaticamente a um novo parágrafo inserido após um parágrafo formatado com o estilo especificado.</span><span class="sxs-lookup"><span data-stu-id="1e44d-177">Returns or sets the style to be applied automatically to a new paragraph inserted after a paragraph formatted with the specified style.</span></span> <span data-ttu-id="1e44d-178"><b>Objeto</b> de leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="1e44d-178">Read/write <b>Object</b>.</span></span></summary>
+        <summary><span data-ttu-id="5e80d-177">Retorna ou define o estilo a ser aplicado automaticamente a um novo parágrafo inserido após um parágrafo formatado com o estilo especificado.</span><span class="sxs-lookup"><span data-stu-id="5e80d-177">Returns or sets the style to be applied automatically to a new paragraph inserted after a paragraph formatted with the specified style.</span></span> <span data-ttu-id="5e80d-178"><b>Objeto</b> de leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="5e80d-178">Read/write <b>Object</b>.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="1e44d-179">Para definir essa propriedade, especifique o nome local do próximo estilo, um inteiro ou uma <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" /> constante ou um objeto que represente o próximo estilo.</span><span class="sxs-lookup"><span data-stu-id="1e44d-179">To set this property, specify either the local name of the next style, an integer or a <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" /> constant, or an object that represents the next style.</span></span></para>
+        <remarks><para><span data-ttu-id="5e80d-179">Para definir essa propriedade, especifique o nome local do próximo estilo, um inteiro ou uma constante ou <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" /> um objeto que represente o próximo estilo.</span><span class="sxs-lookup"><span data-stu-id="5e80d-179">To set this property, specify either the local name of the next style, an integer or a <see cref="T:Microsoft.Office.Interop.Word.WdBuiltinStyle" /> constant, or an object that represents the next style.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -705,6 +729,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.NoProofing" />
       <MemberSignature Language="VB.NET" Value="Public Property NoProofing As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NoProofing { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.NoProofing : int with get, set" Usage="Microsoft.Office.Interop.Word.Style.NoProofing" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -725,7 +750,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="1e44d-180"><b>True</b> se os verificadores ortográfico e gramatical ignorarem o texto formatado com este estilo.</span><span class="sxs-lookup"><span data-stu-id="1e44d-180"><b>True</b> if the spelling and grammar checker ignores text formatted with this style.</span></span> <span data-ttu-id="1e44d-181"><b>número inteiro</b> de leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="1e44d-181">Read/write <b>Integer</b>.</span></span></summary>
+        <summary><span data-ttu-id="5e80d-180"><b>True</b> se os verificadores ortográfico e gramatical ignorarem o texto formatado com este estilo.</span><span class="sxs-lookup"><span data-stu-id="5e80d-180"><b>True</b> if the spelling and grammar checker ignores text formatted with this style.</span></span> <span data-ttu-id="5e80d-181"><b>número inteiro</b> de leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="5e80d-181">Read/write <b>Integer</b>.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -736,6 +761,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.NoSpaceBetweenParagraphsOfSameStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property NoSpaceBetweenParagraphsOfSameStyle As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool NoSpaceBetweenParagraphsOfSameStyle { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.NoSpaceBetweenParagraphsOfSameStyle : bool with get, set" Usage="Microsoft.Office.Interop.Word.Style.NoSpaceBetweenParagraphsOfSameStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -756,7 +782,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="1e44d-182"><b>True</b> para o Microsoft Word para remover o espaçamento entre parágrafos formatados usando o mesmo estilo.</span><span class="sxs-lookup"><span data-stu-id="1e44d-182"><b>True</b> for Microsoft Word to remove spacing between paragraphs that are formatted using the same style.</span></span> <span data-ttu-id="1e44d-183">Leitura/gravação <b>booleano</b>.</span><span class="sxs-lookup"><span data-stu-id="1e44d-183">Read/write <b>Boolean</b>.</span></span></summary>
+        <summary><span data-ttu-id="5e80d-182"><b>True</b> para o Microsoft Word para remover o espaçamento entre parágrafos formatados usando o mesmo estilo.</span><span class="sxs-lookup"><span data-stu-id="5e80d-182"><b>True</b> for Microsoft Word to remove spacing between paragraphs that are formatted using the same style.</span></span> <span data-ttu-id="5e80d-183">Leitura/gravação <b>booleano</b>.</span><span class="sxs-lookup"><span data-stu-id="5e80d-183">Read/write <b>Boolean</b>.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -767,6 +793,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.ParagraphFormat" />
       <MemberSignature Language="VB.NET" Value="Public Property ParagraphFormat As ParagraphFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ParagraphFormat ^ ParagraphFormat { Microsoft::Office::Interop::Word::ParagraphFormat ^ get(); void set(Microsoft::Office::Interop::Word::ParagraphFormat ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ParagraphFormat : Microsoft.Office.Interop.Word.ParagraphFormat with get, set" Usage="Microsoft.Office.Interop.Word.Style.ParagraphFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -787,7 +814,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ParagraphFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="1e44d-184">Retorna ou define um <see cref="T:Microsoft.Office.Interop.Word.ParagraphFormat" /> objeto que representa as configurações de parágrafo para o estilo especificado.</span><span class="sxs-lookup"><span data-stu-id="1e44d-184">Returns or sets a <see cref="T:Microsoft.Office.Interop.Word.ParagraphFormat" /> object that represents the paragraph settings for the specified style.</span></span> <span data-ttu-id="1e44d-185">Leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="1e44d-185">Read/write.</span></span></summary>
+        <summary><span data-ttu-id="5e80d-184">Retorna ou define um <see cref="T:Microsoft.Office.Interop.Word.ParagraphFormat" /> objeto que representa as configurações de parágrafo para o estilo especificado.</span><span class="sxs-lookup"><span data-stu-id="5e80d-184">Returns or sets a <see cref="T:Microsoft.Office.Interop.Word.ParagraphFormat" /> object that represents the paragraph settings for the specified style.</span></span> <span data-ttu-id="5e80d-185">Leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="5e80d-185">Read/write.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -798,6 +825,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Style.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -815,7 +843,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="1e44d-186">Retorna um objeto que representa o objeto pai do objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="1e44d-186">Returns an object that represents the parent object of the specified object.</span></span></summary>
+        <summary><span data-ttu-id="5e80d-186">Retorna um objeto que representa o objeto pai do objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="5e80d-186">Returns an object that represents the parent object of the specified object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -826,6 +854,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.Priority" />
       <MemberSignature Language="VB.NET" Value="Public Property Priority As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Priority { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Priority : int with get, set" Usage="Microsoft.Office.Interop.Word.Style.Priority" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -846,8 +875,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="1e44d-187">Retorna ou define um <b>inteiro</b> que representa a prioridade para classificar os estilos no painel de tarefas estilos.</span><span class="sxs-lookup"><span data-stu-id="1e44d-187">Returns or sets a <b>Integer</b> that represents the priority for sorting styles in the Styles task pane.</span></span> <span data-ttu-id="1e44d-188">Leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="1e44d-188">Read/write.</span></span></summary>
-        <value><span data-ttu-id="1e44d-189"><b>Integer</b></span><span class="sxs-lookup"><span data-stu-id="1e44d-189"><b>Integer</b></span></span></value>
+        <summary><span data-ttu-id="5e80d-187">Retorna ou define um <b>inteiro</b> que representa a prioridade para classificar os estilos no painel de tarefas estilos.</span><span class="sxs-lookup"><span data-stu-id="5e80d-187">Returns or sets a <b>Integer</b> that represents the priority for sorting styles in the Styles task pane.</span></span> <span data-ttu-id="5e80d-188">Leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="5e80d-188">Read/write.</span></span></summary>
+        <value><span data-ttu-id="5e80d-189"><b>Integer</b></span><span class="sxs-lookup"><span data-stu-id="5e80d-189"><b>Integer</b></span></span></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -857,6 +886,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.QuickStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property QuickStyle As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool QuickStyle { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.QuickStyle : bool with get, set" Usage="Microsoft.Office.Interop.Word.Style.QuickStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -877,8 +907,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="1e44d-190">Retorna ou define um <b>Boolean</b> que indica se o estilo corresponde a um estilo rápido disponível.</span><span class="sxs-lookup"><span data-stu-id="1e44d-190">Returns or sets a <b>Boolean</b> that represents whether the style corresponds to an available quick style.</span></span> <span data-ttu-id="1e44d-191">Leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="1e44d-191">Read/write.</span></span></summary>
-        <value><span data-ttu-id="1e44d-192"><b>Boolean</b></span><span class="sxs-lookup"><span data-stu-id="1e44d-192"><b>Boolean</b></span></span></value>
+        <summary><span data-ttu-id="5e80d-190">Retorna ou define um <b>Boolean</b> que indica se o estilo corresponde a um estilo rápido disponível.</span><span class="sxs-lookup"><span data-stu-id="5e80d-190">Returns or sets a <b>Boolean</b> that represents whether the style corresponds to an available quick style.</span></span> <span data-ttu-id="5e80d-191">Leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="5e80d-191">Read/write.</span></span></summary>
+        <value><span data-ttu-id="5e80d-192"><b>Boolean</b></span><span class="sxs-lookup"><span data-stu-id="5e80d-192"><b>Boolean</b></span></span></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -888,6 +918,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.Shading" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Shading As Shading" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Shading ^ Shading { Microsoft::Office::Interop::Word::Shading ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Shading : Microsoft.Office.Interop.Word.Shading" Usage="Microsoft.Office.Interop.Word.Style.Shading" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -905,7 +936,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Shading</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="1e44d-193">Retorna um <see cref="T:Microsoft.Office.Interop.Word.Shading" /> objeto referente à formatação de sombreamento do objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="1e44d-193">Returns a <see cref="T:Microsoft.Office.Interop.Word.Shading" /> object that refers to the shading formatting for the specified object.</span></span></summary>
+        <summary><span data-ttu-id="5e80d-193">Retorna um <see cref="T:Microsoft.Office.Interop.Word.Shading" /> objeto referente à formatação de sombreamento do objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="5e80d-193">Returns a <see cref="T:Microsoft.Office.Interop.Word.Shading" /> object that refers to the shading formatting for the specified object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -916,6 +947,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.Table" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Table As TableStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::TableStyle ^ Table { Microsoft::Office::Interop::Word::TableStyle ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Table : Microsoft.Office.Interop.Word.TableStyle" Usage="Microsoft.Office.Interop.Word.Style.Table" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -933,7 +965,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.TableStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="1e44d-194">Retorna um <see cref="T:Microsoft.Office.Interop.Word.TableStyle" /> objeto representando as propriedades que podem ser aplicadas a uma tabela usando um estilo de tabela.</span><span class="sxs-lookup"><span data-stu-id="1e44d-194">Returns a <see cref="T:Microsoft.Office.Interop.Word.TableStyle" /> object representing properties that can be applied to a table using a table style.</span></span></summary>
+        <summary><span data-ttu-id="5e80d-194">Retorna um <see cref="T:Microsoft.Office.Interop.Word.TableStyle" /> objeto representando as propriedades que podem ser aplicadas a uma tabela usando um estilo de tabela.</span><span class="sxs-lookup"><span data-stu-id="5e80d-194">Returns a <see cref="T:Microsoft.Office.Interop.Word.TableStyle" /> object representing properties that can be applied to a table using a table style.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -944,6 +976,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.Type" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As WdStyleType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdStyleType Type { Microsoft::Office::Interop::Word::WdStyleType get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Microsoft.Office.Interop.Word.WdStyleType" Usage="Microsoft.Office.Interop.Word.Style.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -961,29 +994,29 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdStyleType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="1e44d-195">Retorna o tipo de estilo.</span><span class="sxs-lookup"><span data-stu-id="1e44d-195">Returns the style type.</span></span> <span data-ttu-id="1e44d-196">Somente <see cref="T:Microsoft.Office.Interop.Word.Style" />leitura.</span><span class="sxs-lookup"><span data-stu-id="1e44d-196">Read-only <see cref="T:Microsoft.Office.Interop.Word.Style" />.</span></span></summary>
+        <summary><span data-ttu-id="5e80d-195">Retorna o tipo de estilo.</span><span class="sxs-lookup"><span data-stu-id="5e80d-195">Returns the style type.</span></span> <span data-ttu-id="5e80d-196">Somente leitura <see cref="T:Microsoft.Office.Interop.Word.Style" /> .</span><span class="sxs-lookup"><span data-stu-id="5e80d-196">Read-only <see cref="T:Microsoft.Office.Interop.Word.Style" />.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="1e44d-197">
-            <b>WdStyleType</b> pode ser uma das seguintes constantes:</span><span class="sxs-lookup"><span data-stu-id="1e44d-197">
+        <remarks><para><span data-ttu-id="5e80d-197">
+            <b>WdStyleType</b> pode ser uma das seguintes constantes:</span><span class="sxs-lookup"><span data-stu-id="5e80d-197">
             <b>WdStyleType</b> can be one of the following constants:</span></span></para>
-          <para><span data-ttu-id="1e44d-198">
+          <para><span data-ttu-id="5e80d-198">
             <b>wdStyleTypeCharacter</b>
-          </span><span class="sxs-lookup"><span data-stu-id="1e44d-198">
+          </span><span class="sxs-lookup"><span data-stu-id="5e80d-198">
             <b>wdStyleTypeCharacter</b>
           </span></span></para>
-          <para><span data-ttu-id="1e44d-199">
+          <para><span data-ttu-id="5e80d-199">
             <b>wdStyleTypeList</b>
-          </span><span class="sxs-lookup"><span data-stu-id="1e44d-199">
+          </span><span class="sxs-lookup"><span data-stu-id="5e80d-199">
             <b>wdStyleTypeList</b>
           </span></span></para>
-          <para><span data-ttu-id="1e44d-200">
+          <para><span data-ttu-id="5e80d-200">
             <b>wdStyleTypeParagraph</b>
-          </span><span class="sxs-lookup"><span data-stu-id="1e44d-200">
+          </span><span class="sxs-lookup"><span data-stu-id="5e80d-200">
             <b>wdStyleTypeParagraph</b>
           </span></span></para>
-          <para><span data-ttu-id="1e44d-201">
+          <para><span data-ttu-id="5e80d-201">
             <b>wdStyleTypeTable</b>
-          </span><span class="sxs-lookup"><span data-stu-id="1e44d-201">
+          </span><span class="sxs-lookup"><span data-stu-id="5e80d-201">
             <b>wdStyleTypeTable</b>
           </span></span></para>
           <para> </para></remarks>
@@ -995,6 +1028,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.UnhideWhenUsed" />
       <MemberSignature Language="VB.NET" Value="Public Property UnhideWhenUsed As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UnhideWhenUsed { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.UnhideWhenUsed : bool with get, set" Usage="Microsoft.Office.Interop.Word.Style.UnhideWhenUsed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1015,8 +1049,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="1e44d-202">Defina <b>true</b> para limpar a <see cref="P:Microsoft.Office.Interop.Word.Style.Hidden" /> Propriedade quando esse estilo for usado.</span><span class="sxs-lookup"><span data-stu-id="1e44d-202">Set <b>True</b> to clear the <see cref="P:Microsoft.Office.Interop.Word.Style.Hidden" /> property when this style is used.</span></span></summary>
-        <value><span data-ttu-id="1e44d-203">Booliano</span><span class="sxs-lookup"><span data-stu-id="1e44d-203">Boolean</span></span></value>
+        <summary><span data-ttu-id="5e80d-202">Defina <b>true</b> para limpar a <see cref="P:Microsoft.Office.Interop.Word.Style.Hidden" /> propriedade quando esse estilo for usado.</span><span class="sxs-lookup"><span data-stu-id="5e80d-202">Set <b>True</b> to clear the <see cref="P:Microsoft.Office.Interop.Word.Style.Hidden" /> property when this style is used.</span></span></summary>
+        <value><span data-ttu-id="5e80d-203">Booliano</span><span class="sxs-lookup"><span data-stu-id="5e80d-203">Boolean</span></span></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1026,6 +1060,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Style.Visibility" />
       <MemberSignature Language="VB.NET" Value="Public Property Visibility As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Visibility { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Visibility : bool with get, set" Usage="Microsoft.Office.Interop.Word.Style.Visibility" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1046,7 +1081,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="1e44d-204">Reservado para uso interno.</span><span class="sxs-lookup"><span data-stu-id="1e44d-204">Reserved for internal use.</span></span></summary>
+        <summary><span data-ttu-id="5e80d-204">Reservado para uso interno.</span><span class="sxs-lookup"><span data-stu-id="5e80d-204">Reserved for internal use.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

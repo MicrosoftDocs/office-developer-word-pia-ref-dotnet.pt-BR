@@ -1,9 +1,10 @@
 <Type Name="Task" FullName="Microsoft.Office.Interop.Word.Task">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="475c1671362444c8d7ebcb134d01290da862e462" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143872" /></Metadata><TypeSignature Language="C#" Value="public interface Task" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="1d8590e38fe131c92557becd7529f20b86a0ff14" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43926084" /></Metadata><TypeSignature Language="C#" Value="public interface Task" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Task" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Task" />
   <TypeSignature Language="VB.NET" Value="Public Interface Task" />
   <TypeSignature Language="C++ CLI" Value="public interface class Task" />
+  <TypeSignature Language="F#" Value="type Task = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -18,9 +19,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary><span data-ttu-id="84aec-101">Representa uma única tarefa em execução no sistema.</span><span class="sxs-lookup"><span data-stu-id="84aec-101">Represents a single task running on the system.</span></span></summary>
-    <remarks><para><span data-ttu-id="84aec-102">O objeto <b>Task</b> é um membro da <see cref="T:Microsoft.Office.Interop.Word.Tasks" /> coleção.</span><span class="sxs-lookup"><span data-stu-id="84aec-102">The <b>Task</b> object is a member of the <see cref="T:Microsoft.Office.Interop.Word.Tasks" /> collection.</span></span> <span data-ttu-id="84aec-103">Coleção <b>Tasks</b> inclui todos os aplicativos que estão sendo executados no sistema.</span><span class="sxs-lookup"><span data-stu-id="84aec-103">The <b>Tasks</b> collection includes all the applications that are currently running on the system.</span></span></para>
-      <para><span data-ttu-id="84aec-104">Use <b>tarefas</b>(<paramref name="index" />), onde <paramref name="index" /> é o nome do aplicativo ou o número de índice, para retornar um único objeto <b>Task</b> .</span><span class="sxs-lookup"><span data-stu-id="84aec-104">Use <b>Tasks</b>(<paramref name="index" />), where <paramref name="index" /> is the application name or the index number, to return a single <b>Task</b> object.</span></span></para>
+    <summary><span data-ttu-id="9ab77-101">Representa uma única tarefa em execução no sistema.</span><span class="sxs-lookup"><span data-stu-id="9ab77-101">Represents a single task running on the system.</span></span></summary>
+    <remarks><para><span data-ttu-id="9ab77-102">O objeto <b>Task</b> é um membro da <see cref="T:Microsoft.Office.Interop.Word.Tasks" /> coleção.</span><span class="sxs-lookup"><span data-stu-id="9ab77-102">The <b>Task</b> object is a member of the <see cref="T:Microsoft.Office.Interop.Word.Tasks" /> collection.</span></span> <span data-ttu-id="9ab77-103">Coleção <b>Tasks</b> inclui todos os aplicativos que estão sendo executados no sistema.</span><span class="sxs-lookup"><span data-stu-id="9ab77-103">The <b>Tasks</b> collection includes all the applications that are currently running on the system.</span></span></para>
+      <para><span data-ttu-id="9ab77-104">Use <b>tarefas</b>( <paramref name="index" /> ), onde <paramref name="index" /> é o nome do aplicativo ou o número de índice, para retornar um único objeto <b>Task</b> .</span><span class="sxs-lookup"><span data-stu-id="9ab77-104">Use <b>Tasks</b>(<paramref name="index" />), where <paramref name="index" /> is the application name or the index number, to return a single <b>Task</b> object.</span></span></para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -29,6 +30,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Activate([in]object&amp; Wait) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Task.Activate(System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Activate (Optional ByRef Wait As Object)" />
+      <MemberSignature Language="F#" Value="abstract member Activate : obj -&gt; unit" Usage="task.Activate Wait" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -43,11 +45,11 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Wait" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Wait" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Wait"><span data-ttu-id="84aec-105"><b>Objeto</b>opcional.</span><span class="sxs-lookup"><span data-stu-id="84aec-105">Optional <b>Object</b>.</span></span> <span data-ttu-id="84aec-106"><b>True</b> para aguardar até que o usuário tenha ativado o Microsoft Word antes de ativar a tarefa.</span><span class="sxs-lookup"><span data-stu-id="84aec-106"><b>True</b> to wait until the user has activated Microsoft Word before activating the task.</span></span> <span data-ttu-id="84aec-107"><b>False</b> para ativar imediatamente a tarefa, mesmo se o Word não está ativo.</span><span class="sxs-lookup"><span data-stu-id="84aec-107"><b>False</b> to immediately activate the task, even if Word isn't active.</span></span></param>
-        <summary><span data-ttu-id="84aec-108">Ativa o <see cref="T:Microsoft.Office.Interop.Word.Task" /> objeto.</span><span class="sxs-lookup"><span data-stu-id="84aec-108">Activates the <see cref="T:Microsoft.Office.Interop.Word.Task" /> object.</span></span></summary>
+        <param name="Wait"><span data-ttu-id="9ab77-105"><b>Objeto</b>opcional.</span><span class="sxs-lookup"><span data-stu-id="9ab77-105">Optional <b>Object</b>.</span></span> <span data-ttu-id="9ab77-106"><b>True</b> para aguardar até que o usuário tenha ativado o Microsoft Word antes de ativar a tarefa.</span><span class="sxs-lookup"><span data-stu-id="9ab77-106"><b>True</b> to wait until the user has activated Microsoft Word before activating the task.</span></span> <span data-ttu-id="9ab77-107"><b>False</b> para ativar imediatamente a tarefa, mesmo se o Word não está ativo.</span><span class="sxs-lookup"><span data-stu-id="9ab77-107"><b>False</b> to immediately activate the task, even if Word isn't active.</span></span></param>
+        <summary><span data-ttu-id="9ab77-108">Ativa o <see cref="T:Microsoft.Office.Interop.Word.Task" /> objeto.</span><span class="sxs-lookup"><span data-stu-id="9ab77-108">Activates the <see cref="T:Microsoft.Office.Interop.Word.Task" /> object.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -57,6 +59,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Task.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Task.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -74,7 +77,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="84aec-109">Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</span><span class="sxs-lookup"><span data-stu-id="84aec-109">Returns a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span></span></summary>
+        <summary><span data-ttu-id="9ab77-109">Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</span><span class="sxs-lookup"><span data-stu-id="9ab77-109">Returns a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -85,6 +88,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Task.Close" />
       <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Close();" />
+      <MemberSignature Language="F#" Value="abstract member Close : unit -&gt; unit" Usage="task.Close " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -100,7 +104,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary><span data-ttu-id="84aec-110">Fecha uma tarefa especificada.</span><span class="sxs-lookup"><span data-stu-id="84aec-110">Closes the specified task.</span></span></summary>
+        <summary><span data-ttu-id="9ab77-110">Fecha uma tarefa especificada.</span><span class="sxs-lookup"><span data-stu-id="9ab77-110">Closes the specified task.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -110,6 +114,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Task.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Task.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -127,10 +132,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="84aec-111">Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</span><span class="sxs-lookup"><span data-stu-id="84aec-111">Returns a 32-bit integer that indicates the application in which the specified object was created.</span></span></summary>
+        <summary><span data-ttu-id="9ab77-111">Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</span><span class="sxs-lookup"><span data-stu-id="9ab77-111">Returns a 32-bit integer that indicates the application in which the specified object was created.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="84aec-112">Se o objeto foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD".</span><span class="sxs-lookup"><span data-stu-id="84aec-112">If the object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span> <span data-ttu-id="84aec-113">[!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</span><span class="sxs-lookup"><span data-stu-id="84aec-113">This value can also be represented by the constant <b>wdCreatorCode</b>.</span></span></para>
-          <para><span data-ttu-id="84aec-114">A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres.</span><span class="sxs-lookup"><span data-stu-id="84aec-114">The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="84aec-115">Por exemplo, o Microsoft Word tem o código de criador MSWD.</span><span class="sxs-lookup"><span data-stu-id="84aec-115">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="84aec-116">Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</span><span class="sxs-lookup"><span data-stu-id="84aec-116">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
+        <remarks><para><span data-ttu-id="9ab77-112">Se o objeto foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD".</span><span class="sxs-lookup"><span data-stu-id="9ab77-112">If the object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span> <span data-ttu-id="9ab77-113">[!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</span><span class="sxs-lookup"><span data-stu-id="9ab77-113">This value can also be represented by the constant <b>wdCreatorCode</b>.</span></span></para>
+          <para><span data-ttu-id="9ab77-114">A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres.</span><span class="sxs-lookup"><span data-stu-id="9ab77-114">The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="9ab77-115">Por exemplo, o Microsoft Word tem o código de criador MSWD.</span><span class="sxs-lookup"><span data-stu-id="9ab77-115">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="9ab77-116">Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</span><span class="sxs-lookup"><span data-stu-id="9ab77-116">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -140,6 +145,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Task.Height" />
       <MemberSignature Language="VB.NET" Value="Public Property Height As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Height { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Height : int with get, set" Usage="Microsoft.Office.Interop.Word.Task.Height" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -160,7 +166,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="84aec-117">Retorna ou define a altura da janela de tarefa especificada, em pontos.</span><span class="sxs-lookup"><span data-stu-id="84aec-117">Returns or sets the height of the specified task window, in points.</span></span></summary>
+        <summary><span data-ttu-id="9ab77-117">Retorna ou define a altura da janela de tarefa especificada, em pontos.</span><span class="sxs-lookup"><span data-stu-id="9ab77-117">Returns or sets the height of the specified task window, in points.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -171,6 +177,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Task.Left" />
       <MemberSignature Language="VB.NET" Value="Public Property Left As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Left { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Left : int with get, set" Usage="Microsoft.Office.Interop.Word.Task.Left" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -191,7 +198,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="84aec-118">Retorna ou define um <b>inteiro</b> que representa a posição horizontal da tarefa especificada, medida em pontos.</span><span class="sxs-lookup"><span data-stu-id="84aec-118">Returns or sets an <b>Integer</b> that represents the horizontal position of the specified task, measured in points.</span></span></summary>
+        <summary><span data-ttu-id="9ab77-118">Retorna ou define um <b>inteiro</b> que representa a posição horizontal da tarefa especificada, medida em pontos.</span><span class="sxs-lookup"><span data-stu-id="9ab77-118">Returns or sets an <b>Integer</b> that represents the horizontal position of the specified task, measured in points.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -202,6 +209,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Task.Move(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Move (Left As Integer, Top As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Move(int Left, int Top);" />
+      <MemberSignature Language="F#" Value="abstract member Move : int * int -&gt; unit" Usage="task.Move (Left, Top)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -220,9 +228,9 @@
         <Parameter Name="Top" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Left"><span data-ttu-id="84aec-119">Obrigatório <b>Integer</b>.</span><span class="sxs-lookup"><span data-stu-id="84aec-119">Required <b>Integer</b>.</span></span> <span data-ttu-id="84aec-120">A posição horizontal de tela da janela especificada.</span><span class="sxs-lookup"><span data-stu-id="84aec-120">The horizontal screen position of the specified window.</span></span></param>
-        <param name="Top"><span data-ttu-id="84aec-121">Obrigatório <b>Integer</b>.</span><span class="sxs-lookup"><span data-stu-id="84aec-121">Required <b>Integer</b>.</span></span> <span data-ttu-id="84aec-122">A posição vertical de tela da janela especificada.</span><span class="sxs-lookup"><span data-stu-id="84aec-122">The vertical screen position of the specified window.</span></span></param>
-        <summary><span data-ttu-id="84aec-123">Posiciona uma janela de tarefa.</span><span class="sxs-lookup"><span data-stu-id="84aec-123">Positions a task window.</span></span></summary>
+        <param name="Left"><span data-ttu-id="9ab77-119">Obrigatório <b>Integer</b>.</span><span class="sxs-lookup"><span data-stu-id="9ab77-119">Required <b>Integer</b>.</span></span> <span data-ttu-id="9ab77-120">A posição horizontal de tela da janela especificada.</span><span class="sxs-lookup"><span data-stu-id="9ab77-120">The horizontal screen position of the specified window.</span></span></param>
+        <param name="Top"><span data-ttu-id="9ab77-121">Obrigatório <b>Integer</b>.</span><span class="sxs-lookup"><span data-stu-id="9ab77-121">Required <b>Integer</b>.</span></span> <span data-ttu-id="9ab77-122">A posição vertical de tela da janela especificada.</span><span class="sxs-lookup"><span data-stu-id="9ab77-122">The vertical screen position of the specified window.</span></span></param>
+        <summary><span data-ttu-id="9ab77-123">Posiciona uma janela de tarefa.</span><span class="sxs-lookup"><span data-stu-id="9ab77-123">Positions a task window.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -232,6 +240,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Task.Name" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Office.Interop.Word.Task.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -249,7 +258,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="84aec-124">Retorna ou define o nome do objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="84aec-124">Returns or sets the name of the specified object.</span></span></summary>
+        <summary><span data-ttu-id="9ab77-124">Retorna ou define o nome do objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="9ab77-124">Returns or sets the name of the specified object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -260,6 +269,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Task.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Task.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -277,7 +287,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="84aec-125">Retorna um objeto que representa o objeto pai do objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="84aec-125">Returns an object that represents the parent object of the specified object.</span></span></summary>
+        <summary><span data-ttu-id="9ab77-125">Retorna um objeto que representa o objeto pai do objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="9ab77-125">Returns an object that represents the parent object of the specified object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -288,6 +298,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Task.Resize(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Resize (Width As Integer, Height As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Resize(int Width, int Height);" />
+      <MemberSignature Language="F#" Value="abstract member Resize : int * int -&gt; unit" Usage="task.Resize (Width, Height)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -306,11 +317,11 @@
         <Parameter Name="Height" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Width"><span data-ttu-id="84aec-126">Obrigatório <b>Integer</b>.</span><span class="sxs-lookup"><span data-stu-id="84aec-126">Required <b>Integer</b>.</span></span> <span data-ttu-id="84aec-127">A largura da janela, em pontos.</span><span class="sxs-lookup"><span data-stu-id="84aec-127">The width of the window, in points.</span></span></param>
-        <param name="Height"><span data-ttu-id="84aec-128">Obrigatório <b>Integer</b>.</span><span class="sxs-lookup"><span data-stu-id="84aec-128">Required <b>Integer</b>.</span></span> <span data-ttu-id="84aec-129">A altura da janela, em pontos.</span><span class="sxs-lookup"><span data-stu-id="84aec-129">The height of the window, in points.</span></span></param>
-        <summary><span data-ttu-id="84aec-130">Dimensiona a janela de tarefa especificada.</span><span class="sxs-lookup"><span data-stu-id="84aec-130">Sizes the specified task window.</span></span> <span data-ttu-id="84aec-131">Se a janela está maximizada ou minimizada, ocorrerá um erro.</span><span class="sxs-lookup"><span data-stu-id="84aec-131">If the window is maximized or minimized, an error occurs.</span></span></summary>
-        <remarks><para><span data-ttu-id="84aec-132">
-            <b>Observação</b>  Use a <see cref="P:Microsoft.Office.Interop.Word.Task.Width" /> propriedade <see cref="P:Microsoft.Office.Interop.Word.Task.Height" /> ou para definir a largura e a altura da janela de forma independente.</span><span class="sxs-lookup"><span data-stu-id="84aec-132">
+        <param name="Width"><span data-ttu-id="9ab77-126">Obrigatório <b>Integer</b>.</span><span class="sxs-lookup"><span data-stu-id="9ab77-126">Required <b>Integer</b>.</span></span> <span data-ttu-id="9ab77-127">A largura da janela, em pontos.</span><span class="sxs-lookup"><span data-stu-id="9ab77-127">The width of the window, in points.</span></span></param>
+        <param name="Height"><span data-ttu-id="9ab77-128">Obrigatório <b>Integer</b>.</span><span class="sxs-lookup"><span data-stu-id="9ab77-128">Required <b>Integer</b>.</span></span> <span data-ttu-id="9ab77-129">A altura da janela, em pontos.</span><span class="sxs-lookup"><span data-stu-id="9ab77-129">The height of the window, in points.</span></span></param>
+        <summary><span data-ttu-id="9ab77-130">Dimensiona a janela de tarefa especificada.</span><span class="sxs-lookup"><span data-stu-id="9ab77-130">Sizes the specified task window.</span></span> <span data-ttu-id="9ab77-131">Se a janela está maximizada ou minimizada, ocorrerá um erro.</span><span class="sxs-lookup"><span data-stu-id="9ab77-131">If the window is maximized or minimized, an error occurs.</span></span></summary>
+        <remarks><para><span data-ttu-id="9ab77-132">
+            <b>Observação</b>  Use a <see cref="P:Microsoft.Office.Interop.Word.Task.Width" /> <see cref="P:Microsoft.Office.Interop.Word.Task.Height" /> propriedade ou para definir a largura e a altura da janela de forma independente.</span><span class="sxs-lookup"><span data-stu-id="9ab77-132">
             <b>Note</b>  Use the <see cref="P:Microsoft.Office.Interop.Word.Task.Width" /> or <see cref="P:Microsoft.Office.Interop.Word.Task.Height" /> property to set the window width and height independently.</span></span></para>
           <para> </para></remarks>
       </Docs>
@@ -321,6 +332,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Task.SendWindowMessage(System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SendWindowMessage (Message As Integer, wParam As Integer, lParam As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SendWindowMessage(int Message, int wParam, int lParam);" />
+      <MemberSignature Language="F#" Value="abstract member SendWindowMessage : int * int * int -&gt; unit" Usage="task.SendWindowMessage (Message, wParam, lParam)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -340,10 +352,10 @@
         <Parameter Name="lParam" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Message"><span data-ttu-id="84aec-133">Obrigatório <b>Integer</b>.</span><span class="sxs-lookup"><span data-stu-id="84aec-133">Required <b>Integer</b>.</span></span> <span data-ttu-id="84aec-134">Um número hexadecimal que corresponde à mensagem que você deseja enviar.</span><span class="sxs-lookup"><span data-stu-id="84aec-134">A hexadecimal number that corresponds to the message you want to send.</span></span> <span data-ttu-id="84aec-135">Se você tiver o Microsoft Platform Software Development Kit, você pode pesquisar o nome da mensagem nos arquivos de cabeçalho (WinUser. h, por exemplo) para localizar o número hexadecimal associado (preceder o valor hexadecimal com &amp;h).</span><span class="sxs-lookup"><span data-stu-id="84aec-135">If you have the Microsoft Platform Software Development Kit, you can look up the name of the message in the header files (Winuser.h, for example) to find the associated hexadecimal number (precede the hexadecimal value with &amp;h).</span></span></param>
-        <param name="wParam"><span data-ttu-id="84aec-136">Obrigatório <b>Integer</b>.</span><span class="sxs-lookup"><span data-stu-id="84aec-136">Required <b>Integer</b>.</span></span> <span data-ttu-id="84aec-137">Parâmetros apropriados para a mensagem que você está enviando.</span><span class="sxs-lookup"><span data-stu-id="84aec-137">Parameters appropriate for the message you’re sending.</span></span> <span data-ttu-id="84aec-138">Para obter informações sobre o que esses valores representam, consulte o tópico de referência dessa mensagem na documentação incluída no Microsoft Platform Software Development Kit.</span><span class="sxs-lookup"><span data-stu-id="84aec-138">For information about what these values represent, see the reference topic for that message in the documentation included with the Microsoft Platform Software Development Kit.</span></span> <span data-ttu-id="84aec-139">Para recuperar os valores apropriados, talvez seja necessário usar o utilitário Spy (que acompanha o kit).</span><span class="sxs-lookup"><span data-stu-id="84aec-139">To retrieve the appropriate values, you may need to use the Spy utility (which comes with the kit).</span></span></param>
-        <param name="lParam"><span data-ttu-id="84aec-140">Obrigatório <b>Integer</b>.</span><span class="sxs-lookup"><span data-stu-id="84aec-140">Required <b>Integer</b>.</span></span> <span data-ttu-id="84aec-141">Parâmetros apropriados para a mensagem que você está enviando.</span><span class="sxs-lookup"><span data-stu-id="84aec-141">Parameters appropriate for the message you’re sending.</span></span> <span data-ttu-id="84aec-142">Para obter informações sobre o que esses valores representam, consulte o tópico de referência dessa mensagem na documentação incluída no Microsoft Platform Software Development Kit.</span><span class="sxs-lookup"><span data-stu-id="84aec-142">For information about what these values represent, see the reference topic for that message in the documentation included with the Microsoft Platform Software Development Kit.</span></span> <span data-ttu-id="84aec-143">Para recuperar os valores apropriados, talvez seja necessário usar o utilitário Spy (que acompanha o kit).</span><span class="sxs-lookup"><span data-stu-id="84aec-143">To retrieve the appropriate values, you may need to use the Spy utility (which comes with the kit).</span></span></param>
-        <summary><span data-ttu-id="84aec-144">Envia uma mensagem do Windows e seus parâmetros associados para a tarefa especificada.</span><span class="sxs-lookup"><span data-stu-id="84aec-144">Sends a Windows message and its associated parameters to the specified task.</span></span></summary>
+        <param name="Message"><span data-ttu-id="9ab77-133">Obrigatório <b>Integer</b>.</span><span class="sxs-lookup"><span data-stu-id="9ab77-133">Required <b>Integer</b>.</span></span> <span data-ttu-id="9ab77-134">Um número hexadecimal que corresponde à mensagem que você deseja enviar.</span><span class="sxs-lookup"><span data-stu-id="9ab77-134">A hexadecimal number that corresponds to the message you want to send.</span></span> <span data-ttu-id="9ab77-135">Se você tiver o Microsoft Platform Software Development Kit, você pode pesquisar o nome da mensagem nos arquivos de cabeçalho (WinUser. h, por exemplo) para localizar o número hexadecimal associado (preceder o valor hexadecimal com &amp; h).</span><span class="sxs-lookup"><span data-stu-id="9ab77-135">If you have the Microsoft Platform Software Development Kit, you can look up the name of the message in the header files (Winuser.h, for example) to find the associated hexadecimal number (precede the hexadecimal value with &amp;h).</span></span></param>
+        <param name="wParam"><span data-ttu-id="9ab77-136">Obrigatório <b>Integer</b>.</span><span class="sxs-lookup"><span data-stu-id="9ab77-136">Required <b>Integer</b>.</span></span> <span data-ttu-id="9ab77-137">Parâmetros apropriados para a mensagem que você está enviando.</span><span class="sxs-lookup"><span data-stu-id="9ab77-137">Parameters appropriate for the message you’re sending.</span></span> <span data-ttu-id="9ab77-138">Para obter informações sobre o que esses valores representam, consulte o tópico de referência dessa mensagem na documentação incluída no Microsoft Platform Software Development Kit.</span><span class="sxs-lookup"><span data-stu-id="9ab77-138">For information about what these values represent, see the reference topic for that message in the documentation included with the Microsoft Platform Software Development Kit.</span></span> <span data-ttu-id="9ab77-139">Para recuperar os valores apropriados, talvez seja necessário usar o utilitário Spy (que acompanha o kit).</span><span class="sxs-lookup"><span data-stu-id="9ab77-139">To retrieve the appropriate values, you may need to use the Spy utility (which comes with the kit).</span></span></param>
+        <param name="lParam"><span data-ttu-id="9ab77-140">Obrigatório <b>Integer</b>.</span><span class="sxs-lookup"><span data-stu-id="9ab77-140">Required <b>Integer</b>.</span></span> <span data-ttu-id="9ab77-141">Parâmetros apropriados para a mensagem que você está enviando.</span><span class="sxs-lookup"><span data-stu-id="9ab77-141">Parameters appropriate for the message you’re sending.</span></span> <span data-ttu-id="9ab77-142">Para obter informações sobre o que esses valores representam, consulte o tópico de referência dessa mensagem na documentação incluída no Microsoft Platform Software Development Kit.</span><span class="sxs-lookup"><span data-stu-id="9ab77-142">For information about what these values represent, see the reference topic for that message in the documentation included with the Microsoft Platform Software Development Kit.</span></span> <span data-ttu-id="9ab77-143">Para recuperar os valores apropriados, talvez seja necessário usar o utilitário Spy (que acompanha o kit).</span><span class="sxs-lookup"><span data-stu-id="9ab77-143">To retrieve the appropriate values, you may need to use the Spy utility (which comes with the kit).</span></span></param>
+        <summary><span data-ttu-id="9ab77-144">Envia uma mensagem do Windows e seus parâmetros associados para a tarefa especificada.</span><span class="sxs-lookup"><span data-stu-id="9ab77-144">Sends a Windows message and its associated parameters to the specified task.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -353,6 +365,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Task.Top" />
       <MemberSignature Language="VB.NET" Value="Public Property Top As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Top { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Top : int with get, set" Usage="Microsoft.Office.Interop.Word.Task.Top" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -373,7 +386,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="84aec-145">Retorna ou define a posição vertical da tarefa especificada, em pontos.</span><span class="sxs-lookup"><span data-stu-id="84aec-145">Returns or sets the vertical position of the specified task, in points.</span></span></summary>
+        <summary><span data-ttu-id="9ab77-145">Retorna ou define a posição vertical da tarefa especificada, em pontos.</span><span class="sxs-lookup"><span data-stu-id="9ab77-145">Returns or sets the vertical position of the specified task, in points.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -384,6 +397,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Task.Visible" />
       <MemberSignature Language="VB.NET" Value="Public Property Visible As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Visible { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Visible : bool with get, set" Usage="Microsoft.Office.Interop.Word.Task.Visible" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -404,9 +418,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="84aec-146"><b>True</b> se o objeto especificado é visível.</span><span class="sxs-lookup"><span data-stu-id="84aec-146"><b>True</b> if the specified object is visible.</span></span></summary>
+        <summary><span data-ttu-id="9ab77-146"><b>True</b> se o objeto especificado é visível.</span><span class="sxs-lookup"><span data-stu-id="9ab77-146"><b>True</b> if the specified object is visible.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="84aec-147">Alguns métodos e propriedades poderão ser disponíveis se a propriedade <b>Visible</b> for <b>False</b>.</span><span class="sxs-lookup"><span data-stu-id="84aec-147">Some methods and properties may be unavailable if the <b>Visible</b> property is <b>False</b>.</span></span></para>
+        <remarks><para><span data-ttu-id="9ab77-147">Alguns métodos e propriedades poderão ser disponíveis se a propriedade <b>Visible</b> for <b>False</b>.</span><span class="sxs-lookup"><span data-stu-id="9ab77-147">Some methods and properties may be unavailable if the <b>Visible</b> property is <b>False</b>.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -416,6 +430,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Task.Width" />
       <MemberSignature Language="VB.NET" Value="Public Property Width As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Width { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Width : int with get, set" Usage="Microsoft.Office.Interop.Word.Task.Width" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -436,7 +451,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="84aec-148">Retorna ou define a largura do objeto especificado, em pontos.</span><span class="sxs-lookup"><span data-stu-id="84aec-148">Returns or sets the width of the specified object, in points.</span></span></summary>
+        <summary><span data-ttu-id="9ab77-148">Retorna ou define a largura do objeto especificado, em pontos.</span><span class="sxs-lookup"><span data-stu-id="9ab77-148">Returns or sets the width of the specified object, in points.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -447,6 +462,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Task.WindowState" />
       <MemberSignature Language="VB.NET" Value="Public Property WindowState As WdWindowState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdWindowState WindowState { Microsoft::Office::Interop::Word::WdWindowState get(); void set(Microsoft::Office::Interop::Word::WdWindowState value); };" />
+      <MemberSignature Language="F#" Value="member this.WindowState : Microsoft.Office.Interop.Word.WdWindowState with get, set" Usage="Microsoft.Office.Interop.Word.Task.WindowState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -467,27 +483,27 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdWindowState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="84aec-149">Retorna ou define o estado da janela de tarefa especificada.</span><span class="sxs-lookup"><span data-stu-id="84aec-149">Returns or sets the state of the specified task window.</span></span></summary>
+        <summary><span data-ttu-id="9ab77-149">Retorna ou define o estado da janela de tarefa especificada.</span><span class="sxs-lookup"><span data-stu-id="9ab77-149">Returns or sets the state of the specified task window.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="84aec-150">
-            <see cref="T:Microsoft.Office.Interop.Word.WdWindowState" />pode ser uma destas constantes <b>WdWindowState</b> .</span><span class="sxs-lookup"><span data-stu-id="84aec-150">
+        <remarks><para><span data-ttu-id="9ab77-150">
+            <see cref="T:Microsoft.Office.Interop.Word.WdWindowState" />pode ser uma destas constantes <b>WdWindowState</b> .</span><span class="sxs-lookup"><span data-stu-id="9ab77-150">
             <see cref="T:Microsoft.Office.Interop.Word.WdWindowState" /> can be one of these <b>WdWindowState</b> constants.</span></span> </para>
-          <para><span data-ttu-id="84aec-151">
+          <para><span data-ttu-id="9ab77-151">
             <b>wdWindowStateMaximize</b>
-          </span><span class="sxs-lookup"><span data-stu-id="84aec-151">
+          </span><span class="sxs-lookup"><span data-stu-id="9ab77-151">
             <b>wdWindowStateMaximize </b>
           </span></span></para>
-          <para><span data-ttu-id="84aec-152">
+          <para><span data-ttu-id="9ab77-152">
             <b>wdWindowStateNormal</b>
-          </span><span class="sxs-lookup"><span data-stu-id="84aec-152">
+          </span><span class="sxs-lookup"><span data-stu-id="9ab77-152">
             <b>wdWindowStateNormal </b>
           </span></span></para>
-          <para><span data-ttu-id="84aec-153">
+          <para><span data-ttu-id="9ab77-153">
             <b>wdWindowStateMinimize</b>
-          </span><span class="sxs-lookup"><span data-stu-id="84aec-153">
+          </span><span class="sxs-lookup"><span data-stu-id="9ab77-153">
             <b>wdWindowStateMinimize</b>
           </span></span></para>
-          <para><span data-ttu-id="84aec-154">A constante <b>wdWindowStateNormal</b> indica uma janela que não está maximizada ou minimizada.</span><span class="sxs-lookup"><span data-stu-id="84aec-154">The <b>wdWindowStateNormal</b> constant indicates a window that's not maximized or minimized.</span></span> <span data-ttu-id="84aec-155">O estado de uma janela inativa não pode ser definido.</span><span class="sxs-lookup"><span data-stu-id="84aec-155">The state of an inactive window cannot be set.</span></span> <span data-ttu-id="84aec-156">Use o <see cref="M:Microsoft.Office.Interop.Word.Task.Activate(System.Object@)" /> método para ativar uma janela antes de configurar o estado da janela.</span><span class="sxs-lookup"><span data-stu-id="84aec-156">Use the <see cref="M:Microsoft.Office.Interop.Word.Task.Activate(System.Object@)" /> method to activate a window prior to setting the window state.</span></span></para>
+          <para><span data-ttu-id="9ab77-154">A constante <b>wdWindowStateNormal</b> indica uma janela que não está maximizada ou minimizada.</span><span class="sxs-lookup"><span data-stu-id="9ab77-154">The <b>wdWindowStateNormal</b> constant indicates a window that's not maximized or minimized.</span></span> <span data-ttu-id="9ab77-155">O estado de uma janela inativa não pode ser definido.</span><span class="sxs-lookup"><span data-stu-id="9ab77-155">The state of an inactive window cannot be set.</span></span> <span data-ttu-id="9ab77-156">Use o <see cref="M:Microsoft.Office.Interop.Word.Task.Activate(System.Object@)" /> método para ativar uma janela antes de configurar o estado da janela.</span><span class="sxs-lookup"><span data-stu-id="9ab77-156">Use the <see cref="M:Microsoft.Office.Interop.Word.Task.Activate(System.Object@)" /> method to activate a window prior to setting the window state.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>

@@ -1,9 +1,10 @@
 <Type Name="XMLSchemaReferences" FullName="Microsoft.Office.Interop.Word.XMLSchemaReferences">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="94efe895c3428319116ab8be0f25073c91b0326b" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34142609" /></Metadata><TypeSignature Language="C#" Value="public interface XMLSchemaReferences : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="62e2b1f2426e3030958a12a8e19dbe48a8f92934" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43926686" /></Metadata><TypeSignature Language="C#" Value="public interface XMLSchemaReferences : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract XMLSchemaReferences implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.XMLSchemaReferences" />
   <TypeSignature Language="VB.NET" Value="Public Interface XMLSchemaReferences&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class XMLSchemaReferences : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type XMLSchemaReferences = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -22,8 +23,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary><span data-ttu-id="c0a0b-101">Uma coleção de <see cref="T:Microsoft.Office.Interop.Word.XMLSchemaReference" /> objetos que representam os namespaces exclusivos anexados a um documento.</span><span class="sxs-lookup"><span data-stu-id="c0a0b-101">A collection of <see cref="T:Microsoft.Office.Interop.Word.XMLSchemaReference" /> objects that represent the unique namespaces that are attached to a document.</span></span></summary>
-    <remarks><para><span data-ttu-id="c0a0b-102">Use a <see cref="P:Microsoft.Office.Interop.Word._Document.XMLSchemaReferences" /> propriedade para retornar uma coleção de esquemas anexados a um documento.</span><span class="sxs-lookup"><span data-stu-id="c0a0b-102">Use the <see cref="P:Microsoft.Office.Interop.Word._Document.XMLSchemaReferences" /> property to return a collection of schemas attached to a document.</span></span></para>
+    <summary><span data-ttu-id="495da-101">Uma coleção de <see cref="T:Microsoft.Office.Interop.Word.XMLSchemaReference" /> objetos que representam os namespaces exclusivos anexados a um documento.</span><span class="sxs-lookup"><span data-stu-id="495da-101">A collection of <see cref="T:Microsoft.Office.Interop.Word.XMLSchemaReference" /> objects that represent the unique namespaces that are attached to a document.</span></span></summary>
+    <remarks><para><span data-ttu-id="495da-102">Use a <see cref="P:Microsoft.Office.Interop.Word._Document.XMLSchemaReferences" /> propriedade para retornar uma coleção de esquemas anexados a um documento.</span><span class="sxs-lookup"><span data-stu-id="495da-102">Use the <see cref="P:Microsoft.Office.Interop.Word._Document.XMLSchemaReferences" /> property to return a collection of schemas attached to a document.</span></span></para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -32,6 +33,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.XMLSchemaReference Add([in]object&amp; NamespaceURI, [in]object&amp; Alias, [in]object&amp; FileName, [in]bool InstallForAllUsers) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.XMLSchemaReferences.Add(System.Object@,System.Object@,System.Object@,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (Optional ByRef NamespaceURI As Object, Optional ByRef Alias As Object, Optional ByRef FileName As Object, Optional InstallForAllUsers As Boolean = false) As XMLSchemaReference" />
+      <MemberSignature Language="F#" Value="abstract member Add : obj * obj * obj * bool -&gt; Microsoft.Office.Interop.Word.XMLSchemaReference" Usage="xMLSchemaReferences.Add (NamespaceURI, Alias, FileName, InstallForAllUsers)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -46,17 +48,17 @@
         <ReturnType>Microsoft.Office.Interop.Word.XMLSchemaReference</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="NamespaceURI" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="Alias" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="FileName" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="NamespaceURI" Type="System.Object" RefType="ref" />
+        <Parameter Name="Alias" Type="System.Object" RefType="ref" />
+        <Parameter Name="FileName" Type="System.Object" RefType="ref" />
         <Parameter Name="InstallForAllUsers" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="NamespaceURI"><span data-ttu-id="c0a0b-103"><b>Cadeia de caracteres</b>opcional.</span><span class="sxs-lookup"><span data-stu-id="c0a0b-103">Optional <b>String</b>.</span></span> <span data-ttu-id="c0a0b-104">O nome do esquema conforme definido no esquema.</span><span class="sxs-lookup"><span data-stu-id="c0a0b-104">The name of the schema as defined in the schema.</span></span> <span data-ttu-id="c0a0b-105">O <paramref name="Namespace" /> parâmetro diferencia maiúsculas de minúsculas e deve ser digitado exatamente como aparece no esquema.</span><span class="sxs-lookup"><span data-stu-id="c0a0b-105">The <paramref name="Namespace" /> parameter is case-sensitive and must be spelled exactly as it appears in the schema.</span></span> <span data-ttu-id="c0a0b-106">Se o espaço para nome especificado não puder ser encontrado em nenhum dos esquemas anexados ao documento, um erro é exibido.</span><span class="sxs-lookup"><span data-stu-id="c0a0b-106">If the specified namespace cannot be found in any of the schemas attached to the document, an error is displayed.</span></span></param>
-        <param name="Alias"><span data-ttu-id="c0a0b-107"><b>Cadeia de caracteres</b>opcional.</span><span class="sxs-lookup"><span data-stu-id="c0a0b-107">Optional <b>String</b>.</span></span> <span data-ttu-id="c0a0b-108">O nome do esquema conforme é exibido na guia Esquemas na caixa de diálogo Modelos e Suplementos.</span><span class="sxs-lookup"><span data-stu-id="c0a0b-108">The name of the schema as it appears on the Schemas tab in the Templates and Add-ins dialog box.</span></span></param>
-        <param name="FileName"><span data-ttu-id="c0a0b-109"><b>Cadeia de caracteres</b>opcional.</span><span class="sxs-lookup"><span data-stu-id="c0a0b-109">Optional <b>String</b>.</span></span> <span data-ttu-id="c0a0b-110">O caminho e o nome do arquivo do esquema.</span><span class="sxs-lookup"><span data-stu-id="c0a0b-110">The path and file name of the schema.</span></span> <span data-ttu-id="c0a0b-111">Esse pode ser um caminho de arquivo local, de rede ou um endereço de Internet.</span><span class="sxs-lookup"><span data-stu-id="c0a0b-111">This may be a local file path, a network path, or an Internet address.</span></span></param>
-        <param name="InstallForAllUsers"><span data-ttu-id="c0a0b-112"><b>Boolean</b>opcional.</span><span class="sxs-lookup"><span data-stu-id="c0a0b-112">Optional <b>Boolean</b>.</span></span> <span data-ttu-id="c0a0b-113"><b>True</b> se todos os usuários que fazem logon em um computador podem acessar e usar o novo esquema.</span><span class="sxs-lookup"><span data-stu-id="c0a0b-113"><b>True</b> if all users that log on to a computer can access and use the new schema.</span></span> <span data-ttu-id="c0a0b-114">O padrão é <b>False</b>.</span><span class="sxs-lookup"><span data-stu-id="c0a0b-114">The default is <b>False</b>.</span></span></param>
-        <summary><span data-ttu-id="c0a0b-115">Retorna um <see cref="T:Microsoft.Office.Interop.Word.XMLSchemaReference" /> que representa um esquema aplicado a um documento.</span><span class="sxs-lookup"><span data-stu-id="c0a0b-115">Returns a <see cref="T:Microsoft.Office.Interop.Word.XMLSchemaReference" /> that represents a schema applied to a document.</span></span></summary>
+        <param name="NamespaceURI"><span data-ttu-id="495da-103"><b>Cadeia de caracteres</b>opcional.</span><span class="sxs-lookup"><span data-stu-id="495da-103">Optional <b>String</b>.</span></span> <span data-ttu-id="495da-104">O nome do esquema conforme definido no esquema.</span><span class="sxs-lookup"><span data-stu-id="495da-104">The name of the schema as defined in the schema.</span></span> <span data-ttu-id="495da-105">O <paramref name="Namespace" /> parâmetro diferencia maiúsculas de minúsculas e deve ser digitado exatamente como aparece no esquema.</span><span class="sxs-lookup"><span data-stu-id="495da-105">The <paramref name="Namespace" /> parameter is case-sensitive and must be spelled exactly as it appears in the schema.</span></span> <span data-ttu-id="495da-106">Se o espaço para nome especificado não puder ser encontrado em nenhum dos esquemas anexados ao documento, um erro é exibido.</span><span class="sxs-lookup"><span data-stu-id="495da-106">If the specified namespace cannot be found in any of the schemas attached to the document, an error is displayed.</span></span></param>
+        <param name="Alias"><span data-ttu-id="495da-107"><b>Cadeia de caracteres</b>opcional.</span><span class="sxs-lookup"><span data-stu-id="495da-107">Optional <b>String</b>.</span></span> <span data-ttu-id="495da-108">O nome do esquema conforme é exibido na guia Esquemas na caixa de diálogo Modelos e Suplementos.</span><span class="sxs-lookup"><span data-stu-id="495da-108">The name of the schema as it appears on the Schemas tab in the Templates and Add-ins dialog box.</span></span></param>
+        <param name="FileName"><span data-ttu-id="495da-109"><b>Cadeia de caracteres</b>opcional.</span><span class="sxs-lookup"><span data-stu-id="495da-109">Optional <b>String</b>.</span></span> <span data-ttu-id="495da-110">O caminho e o nome do arquivo do esquema.</span><span class="sxs-lookup"><span data-stu-id="495da-110">The path and file name of the schema.</span></span> <span data-ttu-id="495da-111">Esse pode ser um caminho de arquivo local, de rede ou um endereço de Internet.</span><span class="sxs-lookup"><span data-stu-id="495da-111">This may be a local file path, a network path, or an Internet address.</span></span></param>
+        <param name="InstallForAllUsers"><span data-ttu-id="495da-112"><b>Boolean</b>opcional.</span><span class="sxs-lookup"><span data-stu-id="495da-112">Optional <b>Boolean</b>.</span></span> <span data-ttu-id="495da-113"><b>True</b> se todos os usuários que fazem logon em um computador podem acessar e usar o novo esquema.</span><span class="sxs-lookup"><span data-stu-id="495da-113"><b>True</b> if all users that log on to a computer can access and use the new schema.</span></span> <span data-ttu-id="495da-114">O padrão é <b>False</b>.</span><span class="sxs-lookup"><span data-stu-id="495da-114">The default is <b>False</b>.</span></span></param>
+        <summary><span data-ttu-id="495da-115">Retorna um <see cref="T:Microsoft.Office.Interop.Word.XMLSchemaReference" /> que representa um esquema aplicado a um documento.</span><span class="sxs-lookup"><span data-stu-id="495da-115">Returns a <see cref="T:Microsoft.Office.Interop.Word.XMLSchemaReference" /> that represents a schema applied to a document.</span></span></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -67,6 +69,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLSchemaReferences.AllowSaveAsXMLWithoutValidation" />
       <MemberSignature Language="VB.NET" Value="Public Property AllowSaveAsXMLWithoutValidation As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowSaveAsXMLWithoutValidation { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AllowSaveAsXMLWithoutValidation : bool with get, set" Usage="Microsoft.Office.Interop.Word.XMLSchemaReferences.AllowSaveAsXMLWithoutValidation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -93,7 +96,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="c0a0b-116">This object, member, or enumeration is deprecated and is not intended to be used in your code.</span><span class="sxs-lookup"><span data-stu-id="c0a0b-116">This object, member, or enumeration is deprecated and is not intended to be used in your code.</span></span></summary>
+        <summary><span data-ttu-id="495da-116">This object, member, or enumeration is deprecated and is not intended to be used in your code.</span><span class="sxs-lookup"><span data-stu-id="495da-116">This object, member, or enumeration is deprecated and is not intended to be used in your code.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -104,6 +107,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLSchemaReferences.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.XMLSchemaReferences.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -121,7 +125,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="c0a0b-117">Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</span><span class="sxs-lookup"><span data-stu-id="c0a0b-117">Returns a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span></span></summary>
+        <summary><span data-ttu-id="495da-117">Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o aplicativo Microsoft Word.</span><span class="sxs-lookup"><span data-stu-id="495da-117">Returns a <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the Microsoft Word application.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -132,6 +136,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLSchemaReferences.AutomaticValidation" />
       <MemberSignature Language="VB.NET" Value="Public Property AutomaticValidation As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutomaticValidation { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AutomaticValidation : bool with get, set" Usage="Microsoft.Office.Interop.Word.XMLSchemaReferences.AutomaticValidation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -158,7 +163,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="c0a0b-118">This object, member, or enumeration is deprecated and is not intended to be used in your code.</span><span class="sxs-lookup"><span data-stu-id="c0a0b-118">This object, member, or enumeration is deprecated and is not intended to be used in your code.</span></span></summary>
+        <summary><span data-ttu-id="495da-118">This object, member, or enumeration is deprecated and is not intended to be used in your code.</span><span class="sxs-lookup"><span data-stu-id="495da-118">This object, member, or enumeration is deprecated and is not intended to be used in your code.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -169,6 +174,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLSchemaReferences.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.XMLSchemaReferences.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -186,7 +192,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="c0a0b-119">Retorna o número de itens na coleção especificada.</span><span class="sxs-lookup"><span data-stu-id="c0a0b-119">Returns the number of items in the specified collection.</span></span></summary>
+        <summary><span data-ttu-id="495da-119">Retorna o número de itens na coleção especificada.</span><span class="sxs-lookup"><span data-stu-id="495da-119">Returns the number of items in the specified collection.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -197,6 +203,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLSchemaReferences.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.XMLSchemaReferences.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -214,10 +221,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="c0a0b-120">Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</span><span class="sxs-lookup"><span data-stu-id="c0a0b-120">Returns a 32-bit integer that indicates the application in which the specified object was created.</span></span></summary>
+        <summary><span data-ttu-id="495da-120">Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</span><span class="sxs-lookup"><span data-stu-id="495da-120">Returns a 32-bit integer that indicates the application in which the specified object was created.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="c0a0b-121">Se o objeto foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD".</span><span class="sxs-lookup"><span data-stu-id="c0a0b-121">If the object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span> <span data-ttu-id="c0a0b-122">[!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</span><span class="sxs-lookup"><span data-stu-id="c0a0b-122">This value can also be represented by the constant <b>wdCreatorCode</b>.</span></span></para>
-          <para><span data-ttu-id="c0a0b-123">A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres.</span><span class="sxs-lookup"><span data-stu-id="c0a0b-123">The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="c0a0b-124">Por exemplo, o Microsoft Word tem o código de criador MSWD.</span><span class="sxs-lookup"><span data-stu-id="c0a0b-124">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="c0a0b-125">Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</span><span class="sxs-lookup"><span data-stu-id="c0a0b-125">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
+        <remarks><para><span data-ttu-id="495da-121">Se o objeto foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD".</span><span class="sxs-lookup"><span data-stu-id="495da-121">If the object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span> <span data-ttu-id="495da-122">[!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</span><span class="sxs-lookup"><span data-stu-id="495da-122">This value can also be represented by the constant <b>wdCreatorCode</b>.</span></span></para>
+          <para><span data-ttu-id="495da-123">A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres.</span><span class="sxs-lookup"><span data-stu-id="495da-123">The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="495da-124">Por exemplo, o Microsoft Word tem o código de criador MSWD.</span><span class="sxs-lookup"><span data-stu-id="495da-124">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="495da-125">Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</span><span class="sxs-lookup"><span data-stu-id="495da-125">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -227,6 +234,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.XMLSchemaReferences.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="xMLSchemaReferences.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -259,6 +267,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLSchemaReferences.HideValidationErrors" />
       <MemberSignature Language="VB.NET" Value="Public Property HideValidationErrors As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HideValidationErrors { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.HideValidationErrors : bool with get, set" Usage="Microsoft.Office.Interop.Word.XMLSchemaReferences.HideValidationErrors" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -279,7 +288,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="c0a0b-126"><b>True</b> para ocultar as violações de esquema quando o Microsoft Word valida o XML em um documento.</span><span class="sxs-lookup"><span data-stu-id="c0a0b-126"><b>True</b> to hide schema violations when Microsoft Word validates the XML in a document.</span></span></summary>
+        <summary><span data-ttu-id="495da-126"><b>True</b> para ocultar as violações de esquema quando o Microsoft Word valida o XML em um documento.</span><span class="sxs-lookup"><span data-stu-id="495da-126"><b>True</b> to hide schema violations when Microsoft Word validates the XML in a document.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -290,6 +299,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLSchemaReferences.IgnoreMixedContent" />
       <MemberSignature Language="VB.NET" Value="Public Property IgnoreMixedContent As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IgnoreMixedContent { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IgnoreMixedContent : bool with get, set" Usage="Microsoft.Office.Interop.Word.XMLSchemaReferences.IgnoreMixedContent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -310,10 +320,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="c0a0b-127">Retorna um <b>Boolean</b> que indica se o Microsoft Word realiza a validação em nós de texto que têm irmãos de elemento e especifica se esses nós de texto são salvos <see cref="P:Microsoft.Office.Interop.Word._Document.XMLSaveDataOnly" /> em XML quando a propriedade é <b>true</b>.</span><span class="sxs-lookup"><span data-stu-id="c0a0b-127">Returns a <b>Boolean</b> that represents whether Microsoft Word performs validation on text nodes that have element siblings and specifies whether these text nodes are saved in XML when the <see cref="P:Microsoft.Office.Interop.Word._Document.XMLSaveDataOnly" /> property is <b>True</b>.</span></span></summary>
+        <summary><span data-ttu-id="495da-127">Retorna um <b>Boolean</b> que indica se o Microsoft Word realiza a validação em nós de texto que têm irmãos de elemento e especifica se esses nós de texto são salvos em XML quando a <see cref="P:Microsoft.Office.Interop.Word._Document.XMLSaveDataOnly" /> propriedade é <b>true</b>.</span><span class="sxs-lookup"><span data-stu-id="495da-127">Returns a <b>Boolean</b> that represents whether Microsoft Word performs validation on text nodes that have element siblings and specifies whether these text nodes are saved in XML when the <see cref="P:Microsoft.Office.Interop.Word._Document.XMLSaveDataOnly" /> property is <b>True</b>.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="c0a0b-p107">
-            <b>True</b> faz com que o Word ignore violações de esquema causadas por nós de texto com irmãos; Ele também impede que esses nós de texto sejam salvos em XML quando a propriedade <b>XMLSaveDataOnly</b> for <b>True</b>, que ajuda a evitar que o texto inserido por um extensível Stylesheet Language Transformation (XSLT) sejam salvos como parte dos dados. <b>False</b> gera erros de validação em nós de texto com irmãos.</span><span class="sxs-lookup"><span data-stu-id="c0a0b-p107">
+        <remarks><para><span data-ttu-id="495da-p107">
+            <b>True</b> faz com que o Word ignore violações de esquema causadas por nós de texto com irmãos; Ele também impede que esses nós de texto sejam salvos em XML quando a propriedade <b>XMLSaveDataOnly</b> for <b>True</b>, que ajuda a evitar que o texto inserido por um extensível Stylesheet Language Transformation (XSLT) sejam salvos como parte dos dados. <b>False</b> gera erros de validação em nós de texto com irmãos.</span><span class="sxs-lookup"><span data-stu-id="495da-p107">
             <b>True</b> causes Word to ignore schema violations caused by text nodes that have element siblings; it also prevents these text nodes from being saved in XML when the <b>XMLSaveDataOnly</b> property is <b>True</b>, which helps to prevent text that was inserted by an Extensible Stylesheet Language Transformation (XLST) from being saved as part of the data. <b>False</b> raises validation errors on text nodes with element siblings.</span></span></para>
           <para> </para></remarks>
       </Docs>
@@ -324,6 +334,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLSchemaReferences.Item(System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(ByRef Index As Object) As XMLSchemaReference" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::XMLSchemaReference ^ default[System::Object ^ %] { Microsoft::Office::Interop::Word::XMLSchemaReference ^ get(System::Object ^ % Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(obj) : Microsoft.Office.Interop.Word.XMLSchemaReference" Usage="Microsoft.Office.Interop.Word.XMLSchemaReferences.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -341,11 +352,11 @@
         <ReturnType>Microsoft.Office.Interop.Word.XMLSchemaReference</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Index" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Index" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="Index"><span data-ttu-id="c0a0b-130">Um <b>objeto</b> que indica a posição ordinal ou uma cadeia de caracteres que representa o nome do objeto individual.</span><span class="sxs-lookup"><span data-stu-id="c0a0b-130">An <b>Object</b> indicating the ordinal position or a string representing the name of the individual object.</span></span></param>
-        <summary><span data-ttu-id="c0a0b-131">Retorna um objeto individual de uma coleção.</span><span class="sxs-lookup"><span data-stu-id="c0a0b-131">Returns an individual object in a collection.</span></span></summary>
+        <param name="Index"><span data-ttu-id="495da-130">Um <b>objeto</b> que indica a posição ordinal ou uma cadeia de caracteres que representa o nome do objeto individual.</span><span class="sxs-lookup"><span data-stu-id="495da-130">An <b>Object</b> indicating the ordinal position or a string representing the name of the individual object.</span></span></param>
+        <summary><span data-ttu-id="495da-131">Retorna um objeto individual de uma coleção.</span><span class="sxs-lookup"><span data-stu-id="495da-131">Returns an individual object in a collection.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -356,6 +367,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLSchemaReferences.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.XMLSchemaReferences.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -373,7 +385,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="c0a0b-132">Retorna um objeto que representa o objeto pai do objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="c0a0b-132">Returns an object that represents the parent object of the specified object.</span></span></summary>
+        <summary><span data-ttu-id="495da-132">Retorna um objeto que representa o objeto pai do objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="495da-132">Returns an object that represents the parent object of the specified object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -384,6 +396,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.XMLSchemaReferences.ShowPlaceholderText" />
       <MemberSignature Language="VB.NET" Value="Public Property ShowPlaceholderText As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowPlaceholderText { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShowPlaceholderText : bool with get, set" Usage="Microsoft.Office.Interop.Word.XMLSchemaReferences.ShowPlaceholderText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -404,7 +417,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="c0a0b-133">Retorna um <b>Boolean</b> que indica se o texto do espaço reservado automático é exibido para os elementos XML em um documento.</span><span class="sxs-lookup"><span data-stu-id="c0a0b-133">Returns a <b>Boolean</b> that represents whether automatic placeholder text is displayed for XML elements in a document.</span></span> <span data-ttu-id="c0a0b-134"><b>True</b> exibe o texto do espaço reservado.</span><span class="sxs-lookup"><span data-stu-id="c0a0b-134"><b>True</b> displays placeholder text.</span></span> <span data-ttu-id="c0a0b-135"><b>False</b> oculta o texto do espaço reservado.</span><span class="sxs-lookup"><span data-stu-id="c0a0b-135"><b>False</b> hides placeholder text.</span></span></summary>
+        <summary><span data-ttu-id="495da-133">Retorna um <b>Boolean</b> que indica se o texto do espaço reservado automático é exibido para os elementos XML em um documento.</span><span class="sxs-lookup"><span data-stu-id="495da-133">Returns a <b>Boolean</b> that represents whether automatic placeholder text is displayed for XML elements in a document.</span></span> <span data-ttu-id="495da-134"><b>True</b> exibe o texto do espaço reservado.</span><span class="sxs-lookup"><span data-stu-id="495da-134"><b>True</b> displays placeholder text.</span></span> <span data-ttu-id="495da-135"><b>False</b> oculta o texto do espaço reservado.</span><span class="sxs-lookup"><span data-stu-id="495da-135"><b>False</b> hides placeholder text.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -415,6 +428,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.XMLSchemaReferences.Validate" />
       <MemberSignature Language="VB.NET" Value="Public Sub Validate ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Validate();" />
+      <MemberSignature Language="F#" Value="abstract member Validate : unit -&gt; unit" Usage="xMLSchemaReferences.Validate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -430,9 +444,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary><span data-ttu-id="c0a0b-136">Verifica um elemento XML individual ou todo o documento em relação ao esquema XML anexado ou a esquemas.</span><span class="sxs-lookup"><span data-stu-id="c0a0b-136">Verifies an individual XML element or the entire document against the attached XML schema or schemas.</span></span></summary>
-        <remarks><para><span data-ttu-id="c0a0b-137">Use o método <b>Validate</b> com as <see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationStatus" /> propriedades <see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationErrorText(System.Boolean)" /> e para determinar se um elemento XML é válido em relação ao esquema aplicado e qual o texto de erro a ser exibido para o usuário.</span><span class="sxs-lookup"><span data-stu-id="c0a0b-137">Use the <b>Validate</b> method with the <see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationStatus" /> and <see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationErrorText(System.Boolean)" /> properties to determine if an XML element is valid against the applied schema and what error text to display to the user.</span></span> <span data-ttu-id="c0a0b-138">Use o <see cref="M:Microsoft.Office.Interop.Word.XMLNode.SetValidationError(Microsoft.Office.Interop.Word.WdXMLValidationStatus,System.Object@,System.Boolean)" /> método para substituir as violações de esquema com erros de validação personalizados.</span><span class="sxs-lookup"><span data-stu-id="c0a0b-138">Use the <see cref="M:Microsoft.Office.Interop.Word.XMLNode.SetValidationError(Microsoft.Office.Interop.Word.WdXMLValidationStatus,System.Object@,System.Boolean)" /> method to override the schema violations with custom validation errors.</span></span></para>
-          <para><span data-ttu-id="c0a0b-139">Quando você executa o método <b>Validate</b> , o Microsoft Word preenche a <see cref="P:Microsoft.Office.Interop.Word._Document.XMLSchemaViolations" /> coleção com os nós XML que têm erros de validação.</span><span class="sxs-lookup"><span data-stu-id="c0a0b-139">When you run the <b>Validate</b> method, Microsoft Word populates the <see cref="P:Microsoft.Office.Interop.Word._Document.XMLSchemaViolations" /> collection with the XML nodes that have validation errors.</span></span></para>
+        <summary><span data-ttu-id="495da-136">Verifica um elemento XML individual ou todo o documento em relação ao esquema XML anexado ou a esquemas.</span><span class="sxs-lookup"><span data-stu-id="495da-136">Verifies an individual XML element or the entire document against the attached XML schema or schemas.</span></span></summary>
+        <remarks><para><span data-ttu-id="495da-137">Use o método <b>Validate</b> com as <see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationStatus" /> <see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationErrorText(System.Boolean)" /> Propriedades e para determinar se um elemento XML é válido em relação ao esquema aplicado e qual o texto de erro a ser exibido para o usuário.</span><span class="sxs-lookup"><span data-stu-id="495da-137">Use the <b>Validate</b> method with the <see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationStatus" /> and <see cref="P:Microsoft.Office.Interop.Word.XMLNode.ValidationErrorText(System.Boolean)" /> properties to determine if an XML element is valid against the applied schema and what error text to display to the user.</span></span> <span data-ttu-id="495da-138">Use o <see cref="M:Microsoft.Office.Interop.Word.XMLNode.SetValidationError(Microsoft.Office.Interop.Word.WdXMLValidationStatus,System.Object@,System.Boolean)" /> método para substituir as violações de esquema com erros de validação personalizados.</span><span class="sxs-lookup"><span data-stu-id="495da-138">Use the <see cref="M:Microsoft.Office.Interop.Word.XMLNode.SetValidationError(Microsoft.Office.Interop.Word.WdXMLValidationStatus,System.Object@,System.Boolean)" /> method to override the schema violations with custom validation errors.</span></span></para>
+          <para><span data-ttu-id="495da-139">Quando você executa o método <b>Validate</b> , o Microsoft Word preenche a <see cref="P:Microsoft.Office.Interop.Word._Document.XMLSchemaViolations" /> coleção com os nós XML que têm erros de validação.</span><span class="sxs-lookup"><span data-stu-id="495da-139">When you run the <b>Validate</b> method, Microsoft Word populates the <see cref="P:Microsoft.Office.Interop.Word._Document.XMLSchemaViolations" /> collection with the XML nodes that have validation errors.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
