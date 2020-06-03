@@ -1,9 +1,10 @@
 <Type Name="ContentControl" FullName="Microsoft.Office.Interop.Word.ContentControl">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="2847f454c15d707ff146dc7c527cbd9a80f88237" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147288" /></Metadata><TypeSignature Language="C#" Value="public interface ContentControl" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="bbb566690cab48722a67b50e3f5c88f37f2d83d7" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43922315" /></Metadata><TypeSignature Language="C#" Value="public interface ContentControl" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ContentControl" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ContentControl" />
   <TypeSignature Language="VB.NET" Value="Public Interface ContentControl" />
   <TypeSignature Language="C++ CLI" Value="public interface class ContentControl" />
+  <TypeSignature Language="F#" Value="type ContentControl = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -18,11 +19,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary><span data-ttu-id="51950-101">Um controle de conteúdo individual.</span><span class="sxs-lookup"><span data-stu-id="51950-101">An  individual content control.</span></span> <span data-ttu-id="51950-102">Os controles de conteúdo são regiões associadas e potencialmente rotuladas em um documento que servem como contêineres para tipos específicos de conteúdo.</span><span class="sxs-lookup"><span data-stu-id="51950-102">Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content.</span></span> <span data-ttu-id="51950-103">Controles de conteúdo individuais podem conter conteúdo como datas, listas ou parágrafos de texto formatado.</span><span class="sxs-lookup"><span data-stu-id="51950-103">Individual content controls may contain contents such as dates, lists, or paragraphs of formatted text.</span></span> <span data-ttu-id="51950-104">O objeto <b>ContentControl</b> é um membro da <see cref="T:Microsoft.Office.Interop.Word.ContentControls" /> coleção.</span><span class="sxs-lookup"><span data-stu-id="51950-104">The <b>ContentControl</b> object is a member of the <see cref="T:Microsoft.Office.Interop.Word.ContentControls" /> collection.</span></span></summary>
-    <remarks><para><span data-ttu-id="51950-105">Use o <see cref="M:Microsoft.Office.Interop.Word.ContentControls.Add(Microsoft.Office.Interop.Word.WdContentControlType,System.Object@)" /> método da <see cref="T:Microsoft.Office.Interop.Word.ContentControls" /> coleção para criar um controle de conteúdo.</span><span class="sxs-lookup"><span data-stu-id="51950-105">Use the <see cref="M:Microsoft.Office.Interop.Word.ContentControls.Add(Microsoft.Office.Interop.Word.WdContentControlType,System.Object@)" /> method of the <see cref="T:Microsoft.Office.Interop.Word.ContentControls" /> collection to create a content control.</span></span> <span data-ttu-id="51950-106">Use o <paramref name="Type" /> parâmetro do método <b>Add</b> para especificar o tipo de controle de conteúdo a ser criado.</span><span class="sxs-lookup"><span data-stu-id="51950-106">Use the <paramref name="Type" /> parameter of the <b>Add</b> method to  specify the type of content control to create.</span></span> </para>
-      <para><span data-ttu-id="51950-107">Use a <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Type" /> propriedade para alterar o controle de conteúdo para um tipo diferente de controle de conteúdo.</span><span class="sxs-lookup"><span data-stu-id="51950-107">Use the <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Type" /> property to change the content control to a different type of content control.</span></span>  <span data-ttu-id="51950-108">Por exemplo, talvez você queira alterar de um controle de data para um controle de texto.</span><span class="sxs-lookup"><span data-stu-id="51950-108">For example, perhaps you want to change from a date control to a text control.</span></span> <span data-ttu-id="51950-109">No entanto, você não poderá alterar a todos os controles de conteúdo para outro tipo; algumas talvez não permita a alteração de seu tipo.</span><span class="sxs-lookup"><span data-stu-id="51950-109">However, you may not be able to change all content controls to another type; some may not allow changing their type.</span></span>  <span data-ttu-id="51950-110">Além disso, dependendo do conteúdo de um controle de conteúdo, você não poderá alterar o tipo.</span><span class="sxs-lookup"><span data-stu-id="51950-110">In addition, depending on the contents of a content control, you may not be able to change the type.</span></span> <span data-ttu-id="51950-111">Por exemplo, se o controle de conteúdo que você deseja alterar para não permitir que o tipo de conteúdo que está no controle de conteúdo existente, a tentativa de alterar o tipo não é permitida e gera um erro em tempo de execução.</span><span class="sxs-lookup"><span data-stu-id="51950-111">For example, if the content control that you want to change to does not allow the type of content that is in the existing content control, attempting to change the type is not allowed and generates a run-time error.</span></span></para>
-      <para><span data-ttu-id="51950-112">Use o <see cref="M:Microsoft.Office.Interop.Word.ContentControl.SetPlaceholderText(Microsoft.Office.Interop.Word.BuildingBlock,Microsoft.Office.Interop.Word.Range,System.String)" /> método para alterar o texto do espaço reservado da cadeia de caracteres padrão para algo mais apropriado para o controle.</span><span class="sxs-lookup"><span data-stu-id="51950-112">Use the <see cref="M:Microsoft.Office.Interop.Word.ContentControl.SetPlaceholderText(Microsoft.Office.Interop.Word.BuildingBlock,Microsoft.Office.Interop.Word.Range,System.String)" /> method to change the placeholder text from the default string to something more appropriate for the control.</span></span> <span data-ttu-id="51950-113">Use a <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Title" /> propriedade para especificar o texto do título do controle.</span><span class="sxs-lookup"><span data-stu-id="51950-113">Use the <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Title" /> property to specify the title text for the control.</span></span>  <span data-ttu-id="51950-114">Isso exibe acima do controle quando o cursor é posicionado dentro do controle ou o ponteiro do mouse estiver posicionado sobre o controle.</span><span class="sxs-lookup"><span data-stu-id="51950-114">This displays above the control when the cursor is positioned inside the control or the mouse pointer is positioned over the control.</span></span></para>
-      <para><span data-ttu-id="51950-115">Dependendo do tipo de controle de conteúdo que você precisa, você pode não ser capazes de usar todas as propriedades e métodos do objeto <b>ContentControl</b>.</span><span class="sxs-lookup"><span data-stu-id="51950-115">Depending on the type of content control that you have, you may not be able to use all the properties and methods of the <b>ContentControl</b> object.</span></span></para>
+    <summary><span data-ttu-id="481bb-101">Um controle de conteúdo individual.</span><span class="sxs-lookup"><span data-stu-id="481bb-101">An  individual content control.</span></span> <span data-ttu-id="481bb-102">Os controles de conteúdo são regiões associadas e potencialmente rotuladas em um documento que servem como contêineres para tipos específicos de conteúdo.</span><span class="sxs-lookup"><span data-stu-id="481bb-102">Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content.</span></span> <span data-ttu-id="481bb-103">Controles de conteúdo individuais podem conter conteúdo como datas, listas ou parágrafos de texto formatado.</span><span class="sxs-lookup"><span data-stu-id="481bb-103">Individual content controls may contain contents such as dates, lists, or paragraphs of formatted text.</span></span> <span data-ttu-id="481bb-104">O objeto <b>ContentControl</b> é um membro da <see cref="T:Microsoft.Office.Interop.Word.ContentControls" /> coleção.</span><span class="sxs-lookup"><span data-stu-id="481bb-104">The <b>ContentControl</b> object is a member of the <see cref="T:Microsoft.Office.Interop.Word.ContentControls" /> collection.</span></span></summary>
+    <remarks><para><span data-ttu-id="481bb-105">Use o <see cref="M:Microsoft.Office.Interop.Word.ContentControls.Add(Microsoft.Office.Interop.Word.WdContentControlType,System.Object@)" /> método da <see cref="T:Microsoft.Office.Interop.Word.ContentControls" /> coleção para criar um controle de conteúdo.</span><span class="sxs-lookup"><span data-stu-id="481bb-105">Use the <see cref="M:Microsoft.Office.Interop.Word.ContentControls.Add(Microsoft.Office.Interop.Word.WdContentControlType,System.Object@)" /> method of the <see cref="T:Microsoft.Office.Interop.Word.ContentControls" /> collection to create a content control.</span></span> <span data-ttu-id="481bb-106">Use o <paramref name="Type" /> parâmetro do método <b>Add</b> para especificar o tipo de controle de conteúdo a ser criado.</span><span class="sxs-lookup"><span data-stu-id="481bb-106">Use the <paramref name="Type" /> parameter of the <b>Add</b> method to  specify the type of content control to create.</span></span> </para>
+      <para><span data-ttu-id="481bb-107">Use a <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Type" /> propriedade para alterar o controle de conteúdo para um tipo diferente de controle de conteúdo.</span><span class="sxs-lookup"><span data-stu-id="481bb-107">Use the <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Type" /> property to change the content control to a different type of content control.</span></span>  <span data-ttu-id="481bb-108">Por exemplo, talvez você queira alterar de um controle de data para um controle de texto.</span><span class="sxs-lookup"><span data-stu-id="481bb-108">For example, perhaps you want to change from a date control to a text control.</span></span> <span data-ttu-id="481bb-109">No entanto, você não poderá alterar a todos os controles de conteúdo para outro tipo; algumas talvez não permita a alteração de seu tipo.</span><span class="sxs-lookup"><span data-stu-id="481bb-109">However, you may not be able to change all content controls to another type; some may not allow changing their type.</span></span>  <span data-ttu-id="481bb-110">Além disso, dependendo do conteúdo de um controle de conteúdo, você não poderá alterar o tipo.</span><span class="sxs-lookup"><span data-stu-id="481bb-110">In addition, depending on the contents of a content control, you may not be able to change the type.</span></span> <span data-ttu-id="481bb-111">Por exemplo, se o controle de conteúdo que você deseja alterar para não permitir que o tipo de conteúdo que está no controle de conteúdo existente, a tentativa de alterar o tipo não é permitida e gera um erro em tempo de execução.</span><span class="sxs-lookup"><span data-stu-id="481bb-111">For example, if the content control that you want to change to does not allow the type of content that is in the existing content control, attempting to change the type is not allowed and generates a run-time error.</span></span></para>
+      <para><span data-ttu-id="481bb-112">Use o <see cref="M:Microsoft.Office.Interop.Word.ContentControl.SetPlaceholderText(Microsoft.Office.Interop.Word.BuildingBlock,Microsoft.Office.Interop.Word.Range,System.String)" /> método para alterar o texto do espaço reservado da cadeia de caracteres padrão para algo mais apropriado para o controle.</span><span class="sxs-lookup"><span data-stu-id="481bb-112">Use the <see cref="M:Microsoft.Office.Interop.Word.ContentControl.SetPlaceholderText(Microsoft.Office.Interop.Word.BuildingBlock,Microsoft.Office.Interop.Word.Range,System.String)" /> method to change the placeholder text from the default string to something more appropriate for the control.</span></span> <span data-ttu-id="481bb-113">Use a <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Title" /> propriedade para especificar o texto do título do controle.</span><span class="sxs-lookup"><span data-stu-id="481bb-113">Use the <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Title" /> property to specify the title text for the control.</span></span>  <span data-ttu-id="481bb-114">Isso exibe acima do controle quando o cursor é posicionado dentro do controle ou o ponteiro do mouse estiver posicionado sobre o controle.</span><span class="sxs-lookup"><span data-stu-id="481bb-114">This displays above the control when the cursor is positioned inside the control or the mouse pointer is positioned over the control.</span></span></para>
+      <para><span data-ttu-id="481bb-115">Dependendo do tipo de controle de conteúdo que você precisa, você pode não ser capazes de usar todas as propriedades e métodos do objeto <b>ContentControl</b>.</span><span class="sxs-lookup"><span data-stu-id="481bb-115">Depending on the type of content control that you have, you may not be able to use all the properties and methods of the <b>ContentControl</b> object.</span></span></para>
       <code />
       <para>Not all content control properties apply to all the different types of content controls.  The following table lists which properties apply to which types of content controls.</para>
       <list type="table">
@@ -76,6 +77,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.AllowInsertDeleteSection" />
       <MemberSignature Language="VB.NET" Value="Public Property AllowInsertDeleteSection As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowInsertDeleteSection { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AllowInsertDeleteSection : bool with get, set" Usage="Microsoft.Office.Interop.Word.ContentControl.AllowInsertDeleteSection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -96,9 +98,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="51950-116">Obtém ou define se os usuários podem adicionar ou remover seções do controle de conteúdo de seção recorrente especificado usando a interface de usuário.</span><span class="sxs-lookup"><span data-stu-id="51950-116">Gets or sets whether users can add or remove sections from the specified repeating section content control by using the user interface.</span></span></summary>
+        <summary><span data-ttu-id="481bb-116">Obtém ou define se os usuários podem adicionar ou remover seções do controle de conteúdo de seção recorrente especificado usando a interface de usuário.</span><span class="sxs-lookup"><span data-stu-id="481bb-116">Gets or sets whether users can add or remove sections from the specified repeating section content control by using the user interface.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="51950-117">Você pode usar essa propriedade somente com controles de conteúdo de seção de repetição.</span><span class="sxs-lookup"><span data-stu-id="51950-117">You can use this property only with repeating section content controls.</span></span> <span data-ttu-id="51950-118">O uso de outros controles de conteúdo resultará em um efeito de mensagem de erro.</span><span class="sxs-lookup"><span data-stu-id="51950-118">Using it with other content controls will result in an error message effect.</span></span></para>
+        <remarks><para><span data-ttu-id="481bb-117">Você pode usar essa propriedade somente com controles de conteúdo de seção de repetição.</span><span class="sxs-lookup"><span data-stu-id="481bb-117">You can use this property only with repeating section content controls.</span></span> <span data-ttu-id="481bb-118">O uso de outros controles de conteúdo resultará em um efeito de mensagem de erro.</span><span class="sxs-lookup"><span data-stu-id="481bb-118">Using it with other content controls will result in an error message effect.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -108,6 +110,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.Appearance" />
       <MemberSignature Language="VB.NET" Value="Public Property Appearance As WdContentControlAppearance" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdContentControlAppearance Appearance { Microsoft::Office::Interop::Word::WdContentControlAppearance get(); void set(Microsoft::Office::Interop::Word::WdContentControlAppearance value); };" />
+      <MemberSignature Language="F#" Value="member this.Appearance : Microsoft.Office.Interop.Word.WdContentControlAppearance with get, set" Usage="Microsoft.Office.Interop.Word.ContentControl.Appearance" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -128,7 +131,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdContentControlAppearance</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="51950-119">Retorna ou define a aparência do controle de conteúdo.</span><span class="sxs-lookup"><span data-stu-id="51950-119">Returns or sets the appearance of the content control.</span></span> <span data-ttu-id="51950-120">Leitura/gravação<see cref="T:Microsoft.Office.Interop.Word.WdContentControlAppearance" /></span><span class="sxs-lookup"><span data-stu-id="51950-120">Read/write <see cref="T:Microsoft.Office.Interop.Word.WdContentControlAppearance" /></span></span></summary>
+        <summary><span data-ttu-id="481bb-119">Retorna ou define a aparência do controle de conteúdo.</span><span class="sxs-lookup"><span data-stu-id="481bb-119">Returns or sets the appearance of the content control.</span></span> <span data-ttu-id="481bb-120">Leitura/gravação<see cref="T:Microsoft.Office.Interop.Word.WdContentControlAppearance" /></span><span class="sxs-lookup"><span data-stu-id="481bb-120">Read/write <see cref="T:Microsoft.Office.Interop.Word.WdContentControlAppearance" /></span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -139,6 +142,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.ContentControl.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -156,7 +160,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="51950-121">Retorna um <see cref="T:Microsoft.Office.Interop.Word._Application" /> objeto que representa o aplicativo Microsoft Word.</span><span class="sxs-lookup"><span data-stu-id="51950-121">Returns an <see cref="T:Microsoft.Office.Interop.Word._Application" /> object that represents the Microsoft Word application.</span></span></summary>
+        <summary><span data-ttu-id="481bb-121">Retorna um <see cref="T:Microsoft.Office.Interop.Word._Application" /> objeto que representa o aplicativo Microsoft Word.</span><span class="sxs-lookup"><span data-stu-id="481bb-121">Returns an <see cref="T:Microsoft.Office.Interop.Word._Application" /> object that represents the Microsoft Word application.</span></span></summary>
         <value><see cref="T:Microsoft.Office.Interop.Word._Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -167,6 +171,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.BuildingBlockCategory" />
       <MemberSignature Language="VB.NET" Value="Public Property BuildingBlockCategory As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ BuildingBlockCategory { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BuildingBlockCategory : string with get, set" Usage="Microsoft.Office.Interop.Word.ContentControl.BuildingBlockCategory" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -187,9 +192,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="51950-122">Retorna ou define a categoria de um controle de conteúdo do bloco de construção.</span><span class="sxs-lookup"><span data-stu-id="51950-122">Returns or sets the category for a building block content control.</span></span> <span data-ttu-id="51950-123">Leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="51950-123">Read/write.</span></span></summary>
-        <value><span data-ttu-id="51950-124"><b>String</b></span><span class="sxs-lookup"><span data-stu-id="51950-124"><b>String</b></span></span></value>
-        <remarks><para><span data-ttu-id="51950-125">Esta propriedade se aplica somente aos controles do conteúdo de controle do bloco de construção e corresponde à opção Categoria na caixa de diálogo Propriedades de Controle de Conteúdo.</span><span class="sxs-lookup"><span data-stu-id="51950-125">This property applies only to building block content controls and corresponds with the Category option in the Content Control Properties dialog box.</span></span> <span data-ttu-id="51950-126">Você pode definir esta propriedade para qualquer sequência de caracteres; no entanto, se você defini-la para uma sequência de caracteres na qual não haja categoria correspondente, o valor da opção Categoria será definido para "(Todas as Categorias)".</span><span class="sxs-lookup"><span data-stu-id="51950-126">You can set this property to any string; however, if you set it to a string for which there is no corresponding category, the value of the Category option is set to "(All Categories)".</span></span></para>
+        <summary><span data-ttu-id="481bb-122">Retorna ou define a categoria de um controle de conteúdo do bloco de construção.</span><span class="sxs-lookup"><span data-stu-id="481bb-122">Returns or sets the category for a building block content control.</span></span> <span data-ttu-id="481bb-123">Leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="481bb-123">Read/write.</span></span></summary>
+        <value><span data-ttu-id="481bb-124"><b>String</b></span><span class="sxs-lookup"><span data-stu-id="481bb-124"><b>String</b></span></span></value>
+        <remarks><para><span data-ttu-id="481bb-125">Esta propriedade se aplica somente aos controles do conteúdo de controle do bloco de construção e corresponde à opção Categoria na caixa de diálogo Propriedades de Controle de Conteúdo.</span><span class="sxs-lookup"><span data-stu-id="481bb-125">This property applies only to building block content controls and corresponds with the Category option in the Content Control Properties dialog box.</span></span> <span data-ttu-id="481bb-126">Você pode definir esta propriedade para qualquer sequência de caracteres; no entanto, se você defini-la para uma sequência de caracteres na qual não haja categoria correspondente, o valor da opção Categoria será definido para "(Todas as Categorias)".</span><span class="sxs-lookup"><span data-stu-id="481bb-126">You can set this property to any string; however, if you set it to a string for which there is no corresponding category, the value of the Category option is set to "(All Categories)".</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -199,6 +204,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.BuildingBlockType" />
       <MemberSignature Language="VB.NET" Value="Public Property BuildingBlockType As WdBuildingBlockTypes" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdBuildingBlockTypes BuildingBlockType { Microsoft::Office::Interop::Word::WdBuildingBlockTypes get(); void set(Microsoft::Office::Interop::Word::WdBuildingBlockTypes value); };" />
+      <MemberSignature Language="F#" Value="member this.BuildingBlockType : Microsoft.Office.Interop.Word.WdBuildingBlockTypes with get, set" Usage="Microsoft.Office.Interop.Word.ContentControl.BuildingBlockType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -219,27 +225,27 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdBuildingBlockTypes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="51950-127">Retorna ou define o tipo de bloco de construção para um controle de conteúdo do bloco de construção.</span><span class="sxs-lookup"><span data-stu-id="51950-127">Returns or sets the type of building block for a building block content control.</span></span> <span data-ttu-id="51950-128">Leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="51950-128">Read/write.</span></span></summary>
+        <summary><span data-ttu-id="481bb-127">Retorna ou define o tipo de bloco de construção para um controle de conteúdo do bloco de construção.</span><span class="sxs-lookup"><span data-stu-id="481bb-127">Returns or sets the type of building block for a building block content control.</span></span> <span data-ttu-id="481bb-128">Leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="481bb-128">Read/write.</span></span></summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.WdBuildingBlockTypes" /></value>
-        <remarks><para><span data-ttu-id="51950-129">Esta propriedade se aplica somente aos controles do conteúdo de controle do bloco de construção e corresponde à opção Galeria na caixa de diálogo Propriedades de Controle de Conteúdo.</span><span class="sxs-lookup"><span data-stu-id="51950-129">This property applies only to building block content controls and corresponds with the Gallery option in the Content Control Properties dialog box.</span></span> <span data-ttu-id="51950-130">Você pode definir esta propriedade somente para os seguintes tipos de bloco de construção:</span><span class="sxs-lookup"><span data-stu-id="51950-130">You can set this property only for the following building block types:</span></span></para>
+        <remarks><para><span data-ttu-id="481bb-129">Esta propriedade se aplica somente aos controles do conteúdo de controle do bloco de construção e corresponde à opção Galeria na caixa de diálogo Propriedades de Controle de Conteúdo.</span><span class="sxs-lookup"><span data-stu-id="481bb-129">This property applies only to building block content controls and corresponds with the Gallery option in the Content Control Properties dialog box.</span></span> <span data-ttu-id="481bb-130">Você pode definir esta propriedade somente para os seguintes tipos de bloco de construção:</span><span class="sxs-lookup"><span data-stu-id="481bb-130">You can set this property only for the following building block types:</span></span></para>
           <list type="bullet">
             <item>
-              <para><span data-ttu-id="51950-131">Personalizado 1 a 5</span><span class="sxs-lookup"><span data-stu-id="51950-131">Custom 1 through Custom 5</span></span></para>
+              <para><span data-ttu-id="481bb-131">Personalizado 1 a 5</span><span class="sxs-lookup"><span data-stu-id="481bb-131">Custom 1 through Custom 5</span></span></para>
             </item>
             <item>
-              <para><span data-ttu-id="51950-132">Autotexto</span><span class="sxs-lookup"><span data-stu-id="51950-132">Autotext</span></span></para>
+              <para><span data-ttu-id="481bb-132">Autotexto</span><span class="sxs-lookup"><span data-stu-id="481bb-132">Autotext</span></span></para>
             </item>
             <item>
-              <para><span data-ttu-id="51950-133">Partes rápidas</span><span class="sxs-lookup"><span data-stu-id="51950-133">Quick Parts</span></span></para>
+              <para><span data-ttu-id="481bb-133">Partes rápidas</span><span class="sxs-lookup"><span data-stu-id="481bb-133">Quick Parts</span></span></para>
             </item>
             <item>
-              <para><span data-ttu-id="51950-134">Autotexto personalizado</span><span class="sxs-lookup"><span data-stu-id="51950-134">Custom Autotext</span></span></para>
+              <para><span data-ttu-id="481bb-134">Autotexto personalizado</span><span class="sxs-lookup"><span data-stu-id="481bb-134">Custom Autotext</span></span></para>
             </item>
             <item>
-              <para><span data-ttu-id="51950-135">Partes rápidas personalizadas</span><span class="sxs-lookup"><span data-stu-id="51950-135">Custom Quick Parts</span></span></para>
+              <para><span data-ttu-id="481bb-135">Partes rápidas personalizadas</span><span class="sxs-lookup"><span data-stu-id="481bb-135">Custom Quick Parts</span></span></para>
             </item>
             <item>
-              <para><span data-ttu-id="51950-136">Equações</span><span class="sxs-lookup"><span data-stu-id="51950-136">Equations</span></span></para>
+              <para><span data-ttu-id="481bb-136">Equações</span><span class="sxs-lookup"><span data-stu-id="481bb-136">Equations</span></span></para>
             </item>
           </list>
           <para> </para></remarks>
@@ -251,6 +257,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.Checked" />
       <MemberSignature Language="VB.NET" Value="Public Property Checked As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Checked { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Checked : bool with get, set" Usage="Microsoft.Office.Interop.Word.ContentControl.Checked" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -271,9 +278,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="51950-137">Obtém ou define o estado atual (marcado/desmarcado) para uma caixa de seleção.</span><span class="sxs-lookup"><span data-stu-id="51950-137">Gets or sets the current state (checked/unchecked) for a check box.</span></span></summary>
-        <value><span data-ttu-id="51950-138"><b>true</b> se a caixa de seleção estiver marcada; outro <b>false</b>.</span><span class="sxs-lookup"><span data-stu-id="51950-138"><b>true</b> if the check box is checked; otherwise; <b>false</b>.</span></span></value>
-        <remarks><para><span data-ttu-id="51950-139">Leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="51950-139">Read/write.</span></span> <span data-ttu-id="51950-140">Use esta propriedade para obter ou definir o estado atual de um controle de conteúdo de caixa de seleção.</span><span class="sxs-lookup"><span data-stu-id="51950-140">Use this property to get or set the current state for a check box content control.</span></span> <span data-ttu-id="51950-141">Se o controle não for uma caixa de seleção, as tentativas de acessar a propriedade falharão com o erro de tempo de execução "esta propriedade só estará disponível para controles de conteúdo de caixa de seleção."</span><span class="sxs-lookup"><span data-stu-id="51950-141">If the control is not a check box, attempts to access the property fail with the run-time error “This property is only available for check box content controls."</span></span></para>
+        <summary><span data-ttu-id="481bb-137">Obtém ou define o estado atual (marcado/desmarcado) para uma caixa de seleção.</span><span class="sxs-lookup"><span data-stu-id="481bb-137">Gets or sets the current state (checked/unchecked) for a check box.</span></span></summary>
+        <value><span data-ttu-id="481bb-138"><b>true</b> se a caixa de seleção estiver marcada; outro <b>false</b>.</span><span class="sxs-lookup"><span data-stu-id="481bb-138"><b>true</b> if the check box is checked; otherwise; <b>false</b>.</span></span></value>
+        <remarks><para><span data-ttu-id="481bb-139">Leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="481bb-139">Read/write.</span></span> <span data-ttu-id="481bb-140">Use esta propriedade para obter ou definir o estado atual de um controle de conteúdo de caixa de seleção.</span><span class="sxs-lookup"><span data-stu-id="481bb-140">Use this property to get or set the current state for a check box content control.</span></span> <span data-ttu-id="481bb-141">Se o controle não for uma caixa de seleção, as tentativas de acessar a propriedade falharão com o erro de tempo de execução "esta propriedade só estará disponível para controles de conteúdo de caixa de seleção."</span><span class="sxs-lookup"><span data-stu-id="481bb-141">If the control is not a check box, attempts to access the property fail with the run-time error “This property is only available for check box content controls."</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -283,6 +290,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.Color" />
       <MemberSignature Language="VB.NET" Value="Public Property Color As WdColor" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdColor Color { Microsoft::Office::Interop::Word::WdColor get(); void set(Microsoft::Office::Interop::Word::WdColor value); };" />
+      <MemberSignature Language="F#" Value="member this.Color : Microsoft.Office.Interop.Word.WdColor with get, set" Usage="Microsoft.Office.Interop.Word.ContentControl.Color" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -303,7 +311,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="51950-142">Retorna ou define a cor do controle de conteúdo.</span><span class="sxs-lookup"><span data-stu-id="51950-142">Returns or sets the color of the content control.</span></span> <span data-ttu-id="51950-143">Leitura/gravação <see cref="T:Microsoft.Office.Interop.Word.WdColor" />.</span><span class="sxs-lookup"><span data-stu-id="51950-143">Read/write <see cref="T:Microsoft.Office.Interop.Word.WdColor" />.</span></span></summary>
+        <summary><span data-ttu-id="481bb-142">Retorna ou define a cor do controle de conteúdo.</span><span class="sxs-lookup"><span data-stu-id="481bb-142">Returns or sets the color of the content control.</span></span> <span data-ttu-id="481bb-143">Leitura/gravação <see cref="T:Microsoft.Office.Interop.Word.WdColor" /> .</span><span class="sxs-lookup"><span data-stu-id="481bb-143">Read/write <see cref="T:Microsoft.Office.Interop.Word.WdColor" />.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -314,6 +322,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ContentControl.Copy" />
       <MemberSignature Language="VB.NET" Value="Public Sub Copy ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Copy();" />
+      <MemberSignature Language="F#" Value="abstract member Copy : unit -&gt; unit" Usage="contentControl.Copy " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -329,8 +338,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary><span data-ttu-id="51950-144">Copia o controle de conteúdo do documento ativo para a área de transferência.</span><span class="sxs-lookup"><span data-stu-id="51950-144">Copies the content control from the active document to the Clipboard.</span></span></summary>
-        <remarks><para><span data-ttu-id="51950-145">Quando você usa o método <b>Copy</b>, o controle de conteúdo original permanece no documento ativo, mas uma cópia do controle, incluindo todas as configurações de propriedade e texto, é movido para a área de transferência.</span><span class="sxs-lookup"><span data-stu-id="51950-145">When you use the <b>Copy</b> method, the original content control remains in the active document, but a copy of the control, including all text and property settings, is moved to the Clipboard.</span></span> <span data-ttu-id="51950-146">Você pode colar o controle de conteúdo em outras seções do documento ativo.</span><span class="sxs-lookup"><span data-stu-id="51950-146">You can then paste the content control into other sections of the active document.</span></span> <span data-ttu-id="51950-147">Use o <see cref="M:Microsoft.Office.Interop.Word.Selection.Paste" /> método do <see cref="T:Microsoft.Office.Interop.Word.Selection" /> objeto ou o <see cref="M:Microsoft.Office.Interop.Word.Range.Paste" /> método do <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto para inserir o controle de conteúdo copiado ou use a função paste de dentro do Microsoft Office Word.</span><span class="sxs-lookup"><span data-stu-id="51950-147">Use the <see cref="M:Microsoft.Office.Interop.Word.Selection.Paste" /> method of the <see cref="T:Microsoft.Office.Interop.Word.Selection" /> object or the <see cref="M:Microsoft.Office.Interop.Word.Range.Paste" /> method of the  <see cref="T:Microsoft.Office.Interop.Word.Range" /> object to insert the copied content control, or use the Paste function from within Microsoft Office Word.</span></span></para>
+        <summary><span data-ttu-id="481bb-144">Copia o controle de conteúdo do documento ativo para a área de transferência.</span><span class="sxs-lookup"><span data-stu-id="481bb-144">Copies the content control from the active document to the Clipboard.</span></span></summary>
+        <remarks><para><span data-ttu-id="481bb-145">Quando você usa o método <b>Copy</b>, o controle de conteúdo original permanece no documento ativo, mas uma cópia do controle, incluindo todas as configurações de propriedade e texto, é movido para a área de transferência.</span><span class="sxs-lookup"><span data-stu-id="481bb-145">When you use the <b>Copy</b> method, the original content control remains in the active document, but a copy of the control, including all text and property settings, is moved to the Clipboard.</span></span> <span data-ttu-id="481bb-146">Você pode colar o controle de conteúdo em outras seções do documento ativo.</span><span class="sxs-lookup"><span data-stu-id="481bb-146">You can then paste the content control into other sections of the active document.</span></span> <span data-ttu-id="481bb-147">Use o <see cref="M:Microsoft.Office.Interop.Word.Selection.Paste" /> método do <see cref="T:Microsoft.Office.Interop.Word.Selection" /> objeto ou o <see cref="M:Microsoft.Office.Interop.Word.Range.Paste" /> método do <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto para inserir o controle de conteúdo copiado ou use a função paste de dentro do Microsoft Office Word.</span><span class="sxs-lookup"><span data-stu-id="481bb-147">Use the <see cref="M:Microsoft.Office.Interop.Word.Selection.Paste" /> method of the <see cref="T:Microsoft.Office.Interop.Word.Selection" /> object or the <see cref="M:Microsoft.Office.Interop.Word.Range.Paste" /> method of the  <see cref="T:Microsoft.Office.Interop.Word.Range" /> object to insert the copied content control, or use the Paste function from within Microsoft Office Word.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -340,6 +349,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.ContentControl.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -357,11 +367,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="51950-148">Retorna um inteiro de 32 bits que indica o aplicativo no qual o suplemento foi criado.</span><span class="sxs-lookup"><span data-stu-id="51950-148">Returns a 32-bit integer that indicates the application in which the add-in was created.</span></span> <span data-ttu-id="51950-149">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="51950-149">Read-only.</span></span></summary>
-        <value><span data-ttu-id="51950-150"><b>Integer</b></span><span class="sxs-lookup"><span data-stu-id="51950-150"><b>Integer</b></span></span></value>
-        <remarks><para><span data-ttu-id="51950-151">Se o objeto foi criado no Microsoft Word, a propriedade <b>Creator</b> retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD".</span><span class="sxs-lookup"><span data-stu-id="51950-151">If the object was created in Microsoft Word, the <b>Creator</b> property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span>  <span data-ttu-id="51950-152">Essa propriedade foi projetada inicialmente para ser usada no Macintosh, no qual cada aplicativo tem um código de criador com quatro caracteres.</span><span class="sxs-lookup"><span data-stu-id="51950-152">This property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="51950-153">Por exemplo, o Microsoft Word tem o código de criador MSWD.</span><span class="sxs-lookup"><span data-stu-id="51950-153">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="51950-154">Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</span><span class="sxs-lookup"><span data-stu-id="51950-154">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
-          <para><span data-ttu-id="51950-155">
-            <b>Observação</b>: esse valor também pode ser representado pela constante <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />.</span><span class="sxs-lookup"><span data-stu-id="51950-155">
+        <summary><span data-ttu-id="481bb-148">Retorna um inteiro de 32 bits que indica o aplicativo no qual o suplemento foi criado.</span><span class="sxs-lookup"><span data-stu-id="481bb-148">Returns a 32-bit integer that indicates the application in which the add-in was created.</span></span> <span data-ttu-id="481bb-149">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="481bb-149">Read-only.</span></span></summary>
+        <value><span data-ttu-id="481bb-150"><b>Integer</b></span><span class="sxs-lookup"><span data-stu-id="481bb-150"><b>Integer</b></span></span></value>
+        <remarks><para><span data-ttu-id="481bb-151">Se o objeto foi criado no Microsoft Word, a propriedade <b>Creator</b> retorna o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD".</span><span class="sxs-lookup"><span data-stu-id="481bb-151">If the object was created in Microsoft Word, the <b>Creator</b> property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span>  <span data-ttu-id="481bb-152">Essa propriedade foi projetada inicialmente para ser usada no Macintosh, no qual cada aplicativo tem um código de criador com quatro caracteres.</span><span class="sxs-lookup"><span data-stu-id="481bb-152">This property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="481bb-153">Por exemplo, o Microsoft Word tem o código de criador MSWD.</span><span class="sxs-lookup"><span data-stu-id="481bb-153">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="481bb-154">Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</span><span class="sxs-lookup"><span data-stu-id="481bb-154">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
+          <para><span data-ttu-id="481bb-155">
+            <b>Observação</b>: esse valor também pode ser representado pela constante <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" /> .</span><span class="sxs-lookup"><span data-stu-id="481bb-155">
             <b>Note</b>: This value can also be represented by the constant <see cref="F:Microsoft.Office.Interop.Word.WdConstants.wdCreatorCode" />.</span></span></para>
           <para> </para></remarks>
       </Docs>
@@ -372,6 +382,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ContentControl.Cut" />
       <MemberSignature Language="VB.NET" Value="Public Sub Cut ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Cut();" />
+      <MemberSignature Language="F#" Value="abstract member Cut : unit -&gt; unit" Usage="contentControl.Cut " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -387,8 +398,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary><span data-ttu-id="51950-156">Remove o controle de conteúdo do documento ativo e move o controle de conteúdo para a área de transferência.</span><span class="sxs-lookup"><span data-stu-id="51950-156">Removes the content control from the active document and moves the content control to the Clipboard.</span></span></summary>
-        <remarks><para><span data-ttu-id="51950-157">Quando você usa o método <b>Copy</b>, o controle de conteúdo original permanece no documento ativo, mas uma cópia do controle, incluindo todas as configurações de propriedade e texto, é movido para a área de transferência.</span><span class="sxs-lookup"><span data-stu-id="51950-157">When you use the <b>Copy</b> method, the original content control remains in the active document, but a copy of the control, including all text and property settings, is moved to the Clipboard.</span></span> <span data-ttu-id="51950-158">Você pode colar o controle de conteúdo em outras seções do documento ativo.</span><span class="sxs-lookup"><span data-stu-id="51950-158">You can then paste the content control into other sections of the active document.</span></span> <span data-ttu-id="51950-159">Use o <see cref="M:Microsoft.Office.Interop.Word.Selection.Paste" /> método do <see cref="T:Microsoft.Office.Interop.Word.Selection" /> objeto ou o <see cref="M:Microsoft.Office.Interop.Word.Range.Paste" /> método do <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto para inserir o controle de conteúdo copiado ou use a função paste de dentro do Microsoft Office Word.</span><span class="sxs-lookup"><span data-stu-id="51950-159">Use the <see cref="M:Microsoft.Office.Interop.Word.Selection.Paste" /> method of the <see cref="T:Microsoft.Office.Interop.Word.Selection" /> object or the <see cref="M:Microsoft.Office.Interop.Word.Range.Paste" /> method of the  <see cref="T:Microsoft.Office.Interop.Word.Range" /> object to insert the copied content control, or use the Paste function from within Microsoft Office Word.</span></span></para>
+        <summary><span data-ttu-id="481bb-156">Remove o controle de conteúdo do documento ativo e move o controle de conteúdo para a área de transferência.</span><span class="sxs-lookup"><span data-stu-id="481bb-156">Removes the content control from the active document and moves the content control to the Clipboard.</span></span></summary>
+        <remarks><para><span data-ttu-id="481bb-157">Quando você usa o método <b>Copy</b>, o controle de conteúdo original permanece no documento ativo, mas uma cópia do controle, incluindo todas as configurações de propriedade e texto, é movido para a área de transferência.</span><span class="sxs-lookup"><span data-stu-id="481bb-157">When you use the <b>Copy</b> method, the original content control remains in the active document, but a copy of the control, including all text and property settings, is moved to the Clipboard.</span></span> <span data-ttu-id="481bb-158">Você pode colar o controle de conteúdo em outras seções do documento ativo.</span><span class="sxs-lookup"><span data-stu-id="481bb-158">You can then paste the content control into other sections of the active document.</span></span> <span data-ttu-id="481bb-159">Use o <see cref="M:Microsoft.Office.Interop.Word.Selection.Paste" /> método do <see cref="T:Microsoft.Office.Interop.Word.Selection" /> objeto ou o <see cref="M:Microsoft.Office.Interop.Word.Range.Paste" /> método do <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto para inserir o controle de conteúdo copiado ou use a função paste de dentro do Microsoft Office Word.</span><span class="sxs-lookup"><span data-stu-id="481bb-159">Use the <see cref="M:Microsoft.Office.Interop.Word.Selection.Paste" /> method of the <see cref="T:Microsoft.Office.Interop.Word.Selection" /> object or the <see cref="M:Microsoft.Office.Interop.Word.Range.Paste" /> method of the  <see cref="T:Microsoft.Office.Interop.Word.Range" /> object to insert the copied content control, or use the Paste function from within Microsoft Office Word.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -398,6 +409,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.DateCalendarType" />
       <MemberSignature Language="VB.NET" Value="Public Property DateCalendarType As WdCalendarType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdCalendarType DateCalendarType { Microsoft::Office::Interop::Word::WdCalendarType get(); void set(Microsoft::Office::Interop::Word::WdCalendarType value); };" />
+      <MemberSignature Language="F#" Value="member this.DateCalendarType : Microsoft.Office.Interop.Word.WdCalendarType with get, set" Usage="Microsoft.Office.Interop.Word.ContentControl.DateCalendarType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -418,7 +430,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdCalendarType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="51950-160">Retorna ou define o tipo de calendário para um controle de conteúdo de calendário.</span><span class="sxs-lookup"><span data-stu-id="51950-160">Returns or sets the calendar type for a calendar content control.</span></span>  <span data-ttu-id="51950-161">Leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="51950-161">Read/write.</span></span></summary>
+        <summary><span data-ttu-id="481bb-160">Retorna ou define o tipo de calendário para um controle de conteúdo de calendário.</span><span class="sxs-lookup"><span data-stu-id="481bb-160">Returns or sets the calendar type for a calendar content control.</span></span>  <span data-ttu-id="481bb-161">Leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="481bb-161">Read/write.</span></span></summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.WdCalendarType" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -429,6 +441,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.DateDisplayFormat" />
       <MemberSignature Language="VB.NET" Value="Public Property DateDisplayFormat As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DateDisplayFormat { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DateDisplayFormat : string with get, set" Usage="Microsoft.Office.Interop.Word.ContentControl.DateDisplayFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -449,9 +462,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="51950-162">Retorna ou define o formato no qual as datas são exibidas.</span><span class="sxs-lookup"><span data-stu-id="51950-162">Returns or sets the format in which dates are displayed.</span></span> <span data-ttu-id="51950-163">Leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="51950-163">Read/write.</span></span></summary>
-        <value><span data-ttu-id="51950-164"><b>String</b></span><span class="sxs-lookup"><span data-stu-id="51950-164"><b>String</b></span></span></value>
-        <remarks><para><span data-ttu-id="51950-165">O formato padrão é a configuração de formato especificada no Microsoft Office Word no sistema de usuários, que geralmente depende da configuração de local no Microsoft Windows.</span><span class="sxs-lookup"><span data-stu-id="51950-165">The default format is the format setting specified in Microsoft Office Word on the users' system, which usually depends on the location setting in Microsoft Windows.</span></span> <span data-ttu-id="51950-166">Por exemplo, o formato padrão de datas para inglês (EUA) é "mm/dd/aaaa".</span><span class="sxs-lookup"><span data-stu-id="51950-166">For example, the default format of dates for English (U.S.) is "mm/dd/yyyy".</span></span> <span data-ttu-id="51950-167">Use a <see cref="P:Microsoft.Office.Interop.Word.ContentControl.DateDisplayFormat" /> propriedade para especificar um formato de data diferente.</span><span class="sxs-lookup"><span data-stu-id="51950-167">Use the <see cref="P:Microsoft.Office.Interop.Word.ContentControl.DateDisplayFormat" /> property to specify a different date format.</span></span></para>
+        <summary><span data-ttu-id="481bb-162">Retorna ou define o formato no qual as datas são exibidas.</span><span class="sxs-lookup"><span data-stu-id="481bb-162">Returns or sets the format in which dates are displayed.</span></span> <span data-ttu-id="481bb-163">Leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="481bb-163">Read/write.</span></span></summary>
+        <value><span data-ttu-id="481bb-164"><b>String</b></span><span class="sxs-lookup"><span data-stu-id="481bb-164"><b>String</b></span></span></value>
+        <remarks><para><span data-ttu-id="481bb-165">O formato padrão é a configuração de formato especificada no Microsoft Office Word no sistema de usuários, que geralmente depende da configuração de local no Microsoft Windows.</span><span class="sxs-lookup"><span data-stu-id="481bb-165">The default format is the format setting specified in Microsoft Office Word on the users' system, which usually depends on the location setting in Microsoft Windows.</span></span> <span data-ttu-id="481bb-166">Por exemplo, o formato padrão de datas para inglês (EUA) é "mm/dd/aaaa".</span><span class="sxs-lookup"><span data-stu-id="481bb-166">For example, the default format of dates for English (U.S.) is "mm/dd/yyyy".</span></span> <span data-ttu-id="481bb-167">Use a <see cref="P:Microsoft.Office.Interop.Word.ContentControl.DateDisplayFormat" /> propriedade para especificar um formato de data diferente.</span><span class="sxs-lookup"><span data-stu-id="481bb-167">Use the <see cref="P:Microsoft.Office.Interop.Word.ContentControl.DateDisplayFormat" /> property to specify a different date format.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -461,6 +474,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.DateDisplayLocale" />
       <MemberSignature Language="VB.NET" Value="Public Property DateDisplayLocale As WdLanguageID" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdLanguageID DateDisplayLocale { Microsoft::Office::Interop::Word::WdLanguageID get(); void set(Microsoft::Office::Interop::Word::WdLanguageID value); };" />
+      <MemberSignature Language="F#" Value="member this.DateDisplayLocale : Microsoft.Office.Interop.Word.WdLanguageID with get, set" Usage="Microsoft.Office.Interop.Word.ContentControl.DateDisplayLocale" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -481,9 +495,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdLanguageID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="51950-168">Retorna um formato de idioma para a data exibida em um controle de conteúdo de data.</span><span class="sxs-lookup"><span data-stu-id="51950-168">Returns a the language format for the date displayed in a date content control.</span></span> <span data-ttu-id="51950-169">Leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="51950-169">Read/write.</span></span></summary>
+        <summary><span data-ttu-id="481bb-168">Retorna um formato de idioma para a data exibida em um controle de conteúdo de data.</span><span class="sxs-lookup"><span data-stu-id="481bb-168">Returns a the language format for the date displayed in a date content control.</span></span> <span data-ttu-id="481bb-169">Leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="481bb-169">Read/write.</span></span></summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.WdLanguageID" /></value>
-        <remarks><para><span data-ttu-id="51950-170">Por padrão, a <see cref="P:Microsoft.Office.Interop.Word.ContentControl.DateDisplayLocale" /> propriedade é inicialmente definida como o idioma de edição especificado no Microsoft Office Word, se for diferente do local especificado no Microsoft Windows.</span><span class="sxs-lookup"><span data-stu-id="51950-170">By default, the <see cref="P:Microsoft.Office.Interop.Word.ContentControl.DateDisplayLocale" /> property is initially set to the editing language specified in Microsoft Office Word, if this is different from the location specified in Microsoft Windows.</span></span></para>
+        <remarks><para><span data-ttu-id="481bb-170">Por padrão, a <see cref="P:Microsoft.Office.Interop.Word.ContentControl.DateDisplayLocale" /> propriedade é inicialmente definida como o idioma de edição especificado no Microsoft Office Word, se for diferente do local especificado no Microsoft Windows.</span><span class="sxs-lookup"><span data-stu-id="481bb-170">By default, the <see cref="P:Microsoft.Office.Interop.Word.ContentControl.DateDisplayLocale" /> property is initially set to the editing language specified in Microsoft Office Word, if this is different from the location specified in Microsoft Windows.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -493,6 +507,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.DateStorageFormat" />
       <MemberSignature Language="VB.NET" Value="Public Property DateStorageFormat As WdContentControlDateStorageFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdContentControlDateStorageFormat DateStorageFormat { Microsoft::Office::Interop::Word::WdContentControlDateStorageFormat get(); void set(Microsoft::Office::Interop::Word::WdContentControlDateStorageFormat value); };" />
+      <MemberSignature Language="F#" Value="member this.DateStorageFormat : Microsoft.Office.Interop.Word.WdContentControlDateStorageFormat with get, set" Usage="Microsoft.Office.Interop.Word.ContentControl.DateStorageFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -513,9 +528,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdContentControlDateStorageFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="51950-171">Retorna ou define o formato de armazenamento e recuperação de datas quando um controle de conteúdo de data é vinculado ao repositório de dados XML do documento ativo.</span><span class="sxs-lookup"><span data-stu-id="51950-171">Returns or sets the format for storage and retrieval of dates when a date content control is bound to the XML data store of the active document.</span></span> <span data-ttu-id="51950-172">Leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="51950-172">Read/write.</span></span></summary>
+        <summary><span data-ttu-id="481bb-171">Retorna ou define o formato de armazenamento e recuperação de datas quando um controle de conteúdo de data é vinculado ao repositório de dados XML do documento ativo.</span><span class="sxs-lookup"><span data-stu-id="481bb-171">Returns or sets the format for storage and retrieval of dates when a date content control is bound to the XML data store of the active document.</span></span> <span data-ttu-id="481bb-172">Leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="481bb-172">Read/write.</span></span></summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.WdContentControlDateStorageFormat" /></value>
-        <remarks><para><span data-ttu-id="51950-173">A <see cref="P:Microsoft.Office.Interop.Word.ContentControl.DateStorageFormat" /> propriedade permite armazenar datas no formato de data, formato de data/hora ou formato de texto.</span><span class="sxs-lookup"><span data-stu-id="51950-173">The <see cref="P:Microsoft.Office.Interop.Word.ContentControl.DateStorageFormat" /> property allows you to store dates  in date format, date/time format, or text format.</span></span></para>
+        <remarks><para><span data-ttu-id="481bb-173">A <see cref="P:Microsoft.Office.Interop.Word.ContentControl.DateStorageFormat" /> propriedade permite armazenar datas no formato de data, formato de data/hora ou formato de texto.</span><span class="sxs-lookup"><span data-stu-id="481bb-173">The <see cref="P:Microsoft.Office.Interop.Word.ContentControl.DateStorageFormat" /> property allows you to store dates  in date format, date/time format, or text format.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -525,6 +540,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.DefaultTextStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property DefaultTextStyle As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ DefaultTextStyle { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultTextStyle : obj with get, set" Usage="Microsoft.Office.Interop.Word.ContentControl.DefaultTextStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -545,8 +561,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="51950-174">Retorna ou define o nome do estilo de caractere a ser usado para formatar o texto em um controle de conteúdo de texto.</span><span class="sxs-lookup"><span data-stu-id="51950-174">Returns or sets the name of the character style to use to format text in a text content control.</span></span> <span data-ttu-id="51950-175">Leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="51950-175">Read/write.</span></span></summary>
-        <value><span data-ttu-id="51950-176"><b>Object</b></span><span class="sxs-lookup"><span data-stu-id="51950-176"><b>Object</b></span></span></value>
+        <summary><span data-ttu-id="481bb-174">Retorna ou define o nome do estilo de caractere a ser usado para formatar o texto em um controle de conteúdo de texto.</span><span class="sxs-lookup"><span data-stu-id="481bb-174">Returns or sets the name of the character style to use to format text in a text content control.</span></span> <span data-ttu-id="481bb-175">Leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="481bb-175">Read/write.</span></span></summary>
+        <value><span data-ttu-id="481bb-176"><b>Object</b></span><span class="sxs-lookup"><span data-stu-id="481bb-176"><b>Object</b></span></span></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -555,6 +571,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Delete([in]bool DeleteContents) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ContentControl.Delete(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete (Optional DeleteContents As Boolean = false)" />
+      <MemberSignature Language="F#" Value="abstract member Delete : bool -&gt; unit" Usage="contentControl.Delete DeleteContents" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -572,8 +589,8 @@
         <Parameter Name="DeleteContents" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="DeleteContents"><span data-ttu-id="51950-177">Especifica se deve excluir o conteúdo do controle de conteúdo.</span><span class="sxs-lookup"><span data-stu-id="51950-177">Specifies whether to delete the contents of the content control.</span></span>  <span data-ttu-id="51950-178"><b>True</b> remove o controle de conteúdo e seu conteúdo.</span><span class="sxs-lookup"><span data-stu-id="51950-178"><b>True</b> removes both the content control and its contents.</span></span> <span data-ttu-id="51950-179"><b>False</b> remove o controle, mas deixa o conteúdo do controle de conteúdo do documento ativo.</span><span class="sxs-lookup"><span data-stu-id="51950-179"><b>False</b> removes the control but leaves the contents of the content control in the active document.</span></span> <span data-ttu-id="51950-180">O valor padrão é <b>False</b>.</span><span class="sxs-lookup"><span data-stu-id="51950-180">The default value is <b>False</b>.</span></span></param>
-        <summary><span data-ttu-id="51950-181">Exclui o controle de conteúdo especificado e o conteúdo do controle de conteúdo.</span><span class="sxs-lookup"><span data-stu-id="51950-181">Deletes the specified content control and the contents of the content control.</span></span></summary>
+        <param name="DeleteContents"><span data-ttu-id="481bb-177">Especifica se deve excluir o conteúdo do controle de conteúdo.</span><span class="sxs-lookup"><span data-stu-id="481bb-177">Specifies whether to delete the contents of the content control.</span></span>  <span data-ttu-id="481bb-178"><b>True</b> remove o controle de conteúdo e seu conteúdo.</span><span class="sxs-lookup"><span data-stu-id="481bb-178"><b>True</b> removes both the content control and its contents.</span></span> <span data-ttu-id="481bb-179"><b>False</b> remove o controle, mas deixa o conteúdo do controle de conteúdo do documento ativo.</span><span class="sxs-lookup"><span data-stu-id="481bb-179"><b>False</b> removes the control but leaves the contents of the content control in the active document.</span></span> <span data-ttu-id="481bb-180">O valor padrão é <b>False</b>.</span><span class="sxs-lookup"><span data-stu-id="481bb-180">The default value is <b>False</b>.</span></span></param>
+        <summary><span data-ttu-id="481bb-181">Exclui o controle de conteúdo especificado e o conteúdo do controle de conteúdo.</span><span class="sxs-lookup"><span data-stu-id="481bb-181">Deletes the specified content control and the contents of the content control.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -583,6 +600,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.DropdownListEntries" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DropdownListEntries As ContentControlListEntries" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ContentControlListEntries ^ DropdownListEntries { Microsoft::Office::Interop::Word::ContentControlListEntries ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DropdownListEntries : Microsoft.Office.Interop.Word.ContentControlListEntries" Usage="Microsoft.Office.Interop.Word.ContentControl.DropdownListEntries" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -600,7 +618,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ContentControlListEntries</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="51950-182">Retorna os itens em um controle de conteúdo de lista suspensa ou em um controle de conteúdo de caixa de combinação.</span><span class="sxs-lookup"><span data-stu-id="51950-182">Returns the items in a drop-down list content control or in a  combo box content control.</span></span> <span data-ttu-id="51950-183">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="51950-183">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="481bb-182">Retorna os itens em um controle de conteúdo de lista suspensa ou em um controle de conteúdo de caixa de combinação.</span><span class="sxs-lookup"><span data-stu-id="481bb-182">Returns the items in a drop-down list content control or in a  combo box content control.</span></span> <span data-ttu-id="481bb-183">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="481bb-183">Read-only.</span></span></summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.ContentControlListEntries" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -611,6 +629,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.ID" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ID As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ID { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ID : string" Usage="Microsoft.Office.Interop.Word.ContentControl.ID" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -628,9 +647,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="51950-184">Retorna a identificação de um controle de conteúdo.</span><span class="sxs-lookup"><span data-stu-id="51950-184">Returns the identification for a content control.</span></span> <span data-ttu-id="51950-185">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="51950-185">Read-only.</span></span></summary>
-        <value><span data-ttu-id="51950-186"><b>String</b></span><span class="sxs-lookup"><span data-stu-id="51950-186"><b>String</b></span></span></value>
-        <remarks><para><span data-ttu-id="51950-p126">A propriedade <b>ID</b> é um número interno que você não pode alterar, mas que você pode usar para identificar um controle de conteúdo no código. Esse número é exclusivo para cada controle de conteúdo e não é alterado.</span><span class="sxs-lookup"><span data-stu-id="51950-p126">The <b>ID</b> property is an internal number that you cannot change but that you can use to identify a content control in code. This number is unique for each content control and does not change.</span></span></para>
+        <summary><span data-ttu-id="481bb-184">Retorna a identificação de um controle de conteúdo.</span><span class="sxs-lookup"><span data-stu-id="481bb-184">Returns the identification for a content control.</span></span> <span data-ttu-id="481bb-185">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="481bb-185">Read-only.</span></span></summary>
+        <value><span data-ttu-id="481bb-186"><b>String</b></span><span class="sxs-lookup"><span data-stu-id="481bb-186"><b>String</b></span></span></value>
+        <remarks><para><span data-ttu-id="481bb-p126">A propriedade <b>ID</b> é um número interno que você não pode alterar, mas que você pode usar para identificar um controle de conteúdo no código. Esse número é exclusivo para cada controle de conteúdo e não é alterado.</span><span class="sxs-lookup"><span data-stu-id="481bb-p126">The <b>ID</b> property is an internal number that you cannot change but that you can use to identify a content control in code. This number is unique for each content control and does not change.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -640,6 +659,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.Level" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Level As WdContentControlLevel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdContentControlLevel Level { Microsoft::Office::Interop::Word::WdContentControlLevel get(); };" />
+      <MemberSignature Language="F#" Value="member this.Level : Microsoft.Office.Interop.Word.WdContentControlLevel" Usage="Microsoft.Office.Interop.Word.ContentControl.Level" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -657,7 +677,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdContentControlLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="51950-189">Retorna o nível do controle de conteúdo — se o controle de conteúdo envolve texto, parágrafos, células de tabela ou linhas de tabela; ou se ela estiver embutida.</span><span class="sxs-lookup"><span data-stu-id="51950-189">Returns the level of the content control—whether the content control surrounds text, paragraphs, table cells, or table rows; or if it is inline.</span></span> <span data-ttu-id="51950-190">Somente <see cref="T:Microsoft.Office.Interop.Word.WdContentControlLevel" />leitura.</span><span class="sxs-lookup"><span data-stu-id="51950-190">Read-only <see cref="T:Microsoft.Office.Interop.Word.WdContentControlLevel" />.</span></span></summary>
+        <summary><span data-ttu-id="481bb-189">Retorna o nível do controle de conteúdo — se o controle de conteúdo envolve texto, parágrafos, células de tabela ou linhas de tabela; ou se ela estiver embutida.</span><span class="sxs-lookup"><span data-stu-id="481bb-189">Returns the level of the content control—whether the content control surrounds text, paragraphs, table cells, or table rows; or if it is inline.</span></span> <span data-ttu-id="481bb-190">Somente leitura <see cref="T:Microsoft.Office.Interop.Word.WdContentControlLevel" /> .</span><span class="sxs-lookup"><span data-stu-id="481bb-190">Read-only <see cref="T:Microsoft.Office.Interop.Word.WdContentControlLevel" />.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -668,6 +688,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.LockContentControl" />
       <MemberSignature Language="VB.NET" Value="Public Property LockContentControl As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool LockContentControl { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.LockContentControl : bool with get, set" Usage="Microsoft.Office.Interop.Word.ContentControl.LockContentControl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -688,11 +709,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="51950-191">Retorna ou define um <b>Boolean</b> que indica se o usuário pode excluir um controle de conteúdo do documento ativo.</span><span class="sxs-lookup"><span data-stu-id="51950-191">Returns or sets a <b>Boolean</b> that represents whether the user can delete a content control from the active document.</span></span> <span data-ttu-id="51950-192">Leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="51950-192">Read/write.</span></span></summary>
-        <value><span data-ttu-id="51950-193"><b>Boolean</b></span><span class="sxs-lookup"><span data-stu-id="51950-193"><b>Boolean</b></span></span></value>
-        <remarks><para><span data-ttu-id="51950-194">O valor padrão dessa propriedade é <b>False</b>.</span><span class="sxs-lookup"><span data-stu-id="51950-194">The default value of this property is <b>False</b>.</span></span>  <span data-ttu-id="51950-195">Essa propriedade corresponde à caixa de seleção de conteúdo de controle não pode ser excluído na caixa de diálogo Propriedades de controle de conteúdo.</span><span class="sxs-lookup"><span data-stu-id="51950-195">This property corresponds to the Content control cannot be deleted check box in the Content Control Properties dialog box.</span></span></para>
-          <para><span data-ttu-id="51950-196">
-            <b>Observação</b>: você não pode definir essa propriedade se <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Temporary" /> a propriedade for definida como <b>true</b>.</span><span class="sxs-lookup"><span data-stu-id="51950-196">
+        <summary><span data-ttu-id="481bb-191">Retorna ou define um <b>Boolean</b> que indica se o usuário pode excluir um controle de conteúdo do documento ativo.</span><span class="sxs-lookup"><span data-stu-id="481bb-191">Returns or sets a <b>Boolean</b> that represents whether the user can delete a content control from the active document.</span></span> <span data-ttu-id="481bb-192">Leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="481bb-192">Read/write.</span></span></summary>
+        <value><span data-ttu-id="481bb-193"><b>Boolean</b></span><span class="sxs-lookup"><span data-stu-id="481bb-193"><b>Boolean</b></span></span></value>
+        <remarks><para><span data-ttu-id="481bb-194">O valor padrão dessa propriedade é <b>False</b>.</span><span class="sxs-lookup"><span data-stu-id="481bb-194">The default value of this property is <b>False</b>.</span></span>  <span data-ttu-id="481bb-195">Essa propriedade corresponde à caixa de seleção de conteúdo de controle não pode ser excluído na caixa de diálogo Propriedades de controle de conteúdo.</span><span class="sxs-lookup"><span data-stu-id="481bb-195">This property corresponds to the Content control cannot be deleted check box in the Content Control Properties dialog box.</span></span></para>
+          <para><span data-ttu-id="481bb-196">
+            <b>Observação</b>: você não pode definir essa propriedade se a <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Temporary" /> propriedade for definida como <b>true</b>.</span><span class="sxs-lookup"><span data-stu-id="481bb-196">
             <b>Note</b>: You cannot set this property if the <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Temporary" /> property is set to <b>True</b>.</span></span></para>
           <para> </para></remarks>
       </Docs>
@@ -703,6 +724,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.LockContents" />
       <MemberSignature Language="VB.NET" Value="Public Property LockContents As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool LockContents { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.LockContents : bool with get, set" Usage="Microsoft.Office.Interop.Word.ContentControl.LockContents" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -723,9 +745,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="51950-197">Retorna ou define um <b>Boolean</b> que indica se o usuário pode editar o conteúdo de um controle de conteúdo.</span><span class="sxs-lookup"><span data-stu-id="51950-197">Returns or sets a <b>Boolean</b> that represents whether the user can edit the contents of a content control.</span></span> <span data-ttu-id="51950-198">Leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="51950-198">Read/write.</span></span></summary>
-        <value><span data-ttu-id="51950-199"><b>Boolean</b></span><span class="sxs-lookup"><span data-stu-id="51950-199"><b>Boolean</b></span></span></value>
-        <remarks><para><span data-ttu-id="51950-200">O valor padrão dessa propriedade é <b>False</b>.</span><span class="sxs-lookup"><span data-stu-id="51950-200">The default value of this property is <b>False</b>.</span></span>  <span data-ttu-id="51950-201">Essa propriedade corresponde à caixa de seleção conteúdo não pode ser editado na caixa de diálogo Propriedades de controle de conteúdo.</span><span class="sxs-lookup"><span data-stu-id="51950-201">This property corresponds to the Contents cannot be edited check box in the Content Control Properties dialog box.</span></span></para>
+        <summary><span data-ttu-id="481bb-197">Retorna ou define um <b>Boolean</b> que indica se o usuário pode editar o conteúdo de um controle de conteúdo.</span><span class="sxs-lookup"><span data-stu-id="481bb-197">Returns or sets a <b>Boolean</b> that represents whether the user can edit the contents of a content control.</span></span> <span data-ttu-id="481bb-198">Leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="481bb-198">Read/write.</span></span></summary>
+        <value><span data-ttu-id="481bb-199"><b>Boolean</b></span><span class="sxs-lookup"><span data-stu-id="481bb-199"><b>Boolean</b></span></span></value>
+        <remarks><para><span data-ttu-id="481bb-200">O valor padrão dessa propriedade é <b>False</b>.</span><span class="sxs-lookup"><span data-stu-id="481bb-200">The default value of this property is <b>False</b>.</span></span>  <span data-ttu-id="481bb-201">Essa propriedade corresponde à caixa de seleção conteúdo não pode ser editado na caixa de diálogo Propriedades de controle de conteúdo.</span><span class="sxs-lookup"><span data-stu-id="481bb-201">This property corresponds to the Contents cannot be edited check box in the Content Control Properties dialog box.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -735,6 +757,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.MultiLine" />
       <MemberSignature Language="VB.NET" Value="Public Property MultiLine As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MultiLine { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.MultiLine : bool with get, set" Usage="Microsoft.Office.Interop.Word.ContentControl.MultiLine" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -755,9 +778,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="51950-202">Retorna um <b>Boolean</b> que indica se um controle de conteúdo de texto permite várias linhas de texto.</span><span class="sxs-lookup"><span data-stu-id="51950-202">Returns a <b>Boolean</b> that represents whether a text content control allows multiple lines of text.</span></span> <span data-ttu-id="51950-203">Leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="51950-203">Read/write.</span></span></summary>
-        <value><span data-ttu-id="51950-204"><b>Boolean</b></span><span class="sxs-lookup"><span data-stu-id="51950-204"><b>Boolean</b></span></span></value>
-        <remarks><para><span data-ttu-id="51950-205">Essa propriedade é aplicada apenas a controles de conteúdo de texto e controles de conteúdo de rich text.</span><span class="sxs-lookup"><span data-stu-id="51950-205">This property applies only to text content controls and rich text content controls.</span></span></para>
+        <summary><span data-ttu-id="481bb-202">Retorna um <b>Boolean</b> que indica se um controle de conteúdo de texto permite várias linhas de texto.</span><span class="sxs-lookup"><span data-stu-id="481bb-202">Returns a <b>Boolean</b> that represents whether a text content control allows multiple lines of text.</span></span> <span data-ttu-id="481bb-203">Leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="481bb-203">Read/write.</span></span></summary>
+        <value><span data-ttu-id="481bb-204"><b>Boolean</b></span><span class="sxs-lookup"><span data-stu-id="481bb-204"><b>Boolean</b></span></span></value>
+        <remarks><para><span data-ttu-id="481bb-205">Essa propriedade é aplicada apenas a controles de conteúdo de texto e controles de conteúdo de rich text.</span><span class="sxs-lookup"><span data-stu-id="481bb-205">This property applies only to text content controls and rich text content controls.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -767,6 +790,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.ContentControl.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -784,8 +808,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="51950-206">Retorna um que representa o objeto pai do objeto especificado <see cref="T:Microsoft.Office.Interop.Word.ContentControl" /> .</span><span class="sxs-lookup"><span data-stu-id="51950-206">Returns an  that represents the parent object of the specified <see cref="T:Microsoft.Office.Interop.Word.ContentControl" /> object.</span></span></summary>
-        <value><span data-ttu-id="51950-207"><b>Object</b></span><span class="sxs-lookup"><span data-stu-id="51950-207"><b>Object</b></span></span></value>
+        <summary><span data-ttu-id="481bb-206">Retorna um que representa o objeto pai do objeto especificado <see cref="T:Microsoft.Office.Interop.Word.ContentControl" /> .</span><span class="sxs-lookup"><span data-stu-id="481bb-206">Returns an  that represents the parent object of the specified <see cref="T:Microsoft.Office.Interop.Word.ContentControl" /> object.</span></span></summary>
+        <value><span data-ttu-id="481bb-207"><b>Object</b></span><span class="sxs-lookup"><span data-stu-id="481bb-207"><b>Object</b></span></span></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -795,6 +819,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.ParentContentControl" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ParentContentControl As ContentControl" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ContentControl ^ ParentContentControl { Microsoft::Office::Interop::Word::ContentControl ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ParentContentControl : Microsoft.Office.Interop.Word.ContentControl" Usage="Microsoft.Office.Interop.Word.ContentControl.ParentContentControl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -812,9 +837,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.ContentControl</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="51950-208">Retorna o controle de conteúdo pai de um controle de conteúdo que está aninhado dentro de um controle de Rich-Text ou controle de grupo.</span><span class="sxs-lookup"><span data-stu-id="51950-208">Returns the parent content control for a content control that is nested inside a rich-text control or group control.</span></span> <span data-ttu-id="51950-209">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="51950-209">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="481bb-208">Retorna o controle de conteúdo pai de um controle de conteúdo que está aninhado dentro de um controle de Rich-Text ou controle de grupo.</span><span class="sxs-lookup"><span data-stu-id="481bb-208">Returns the parent content control for a content control that is nested inside a rich-text control or group control.</span></span> <span data-ttu-id="481bb-209">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="481bb-209">Read-only.</span></span></summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.ContentControl" /></value>
-        <remarks><para><span data-ttu-id="51950-210">Se um controle de conteúdo não for aninhado, esta propriedade retorna um erro.</span><span class="sxs-lookup"><span data-stu-id="51950-210">If a content control is not nested, this proprerty returns an error.</span></span></para>
+        <remarks><para><span data-ttu-id="481bb-210">Se um controle de conteúdo não for aninhado, esta propriedade retorna um erro.</span><span class="sxs-lookup"><span data-stu-id="481bb-210">If a content control is not nested, this proprerty returns an error.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -824,6 +849,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.PlaceholderText" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PlaceholderText As BuildingBlock" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::BuildingBlock ^ PlaceholderText { Microsoft::Office::Interop::Word::BuildingBlock ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PlaceholderText : Microsoft.Office.Interop.Word.BuildingBlock" Usage="Microsoft.Office.Interop.Word.ContentControl.PlaceholderText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -841,9 +867,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.BuildingBlock</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="51950-211">Retorna um <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> objeto que representa o texto do espaço reservado para um controle de conteúdo.</span><span class="sxs-lookup"><span data-stu-id="51950-211">Returns a <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> object that represents the placeholder text for a content control.</span></span> <span data-ttu-id="51950-212">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="51950-212">Read-only.</span></span></summary>
-        <value><span data-ttu-id="51950-213">Retorna <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" />.</span><span class="sxs-lookup"><span data-stu-id="51950-213">Returns <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" />.</span></span></value>
-        <remarks><para><span data-ttu-id="51950-214">Use o <see cref="M:Microsoft.Office.Interop.Word.ContentControl.SetPlaceholderText(Microsoft.Office.Interop.Word.BuildingBlock,Microsoft.Office.Interop.Word.Range,System.String)" /> método para definir o texto do espaço reservado para um controle de conteúdo.</span><span class="sxs-lookup"><span data-stu-id="51950-214">Use the <see cref="M:Microsoft.Office.Interop.Word.ContentControl.SetPlaceholderText(Microsoft.Office.Interop.Word.BuildingBlock,Microsoft.Office.Interop.Word.Range,System.String)" /> method to set the placeholder text for a content control.</span></span></para>
+        <summary><span data-ttu-id="481bb-211">Retorna um <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> objeto que representa o texto do espaço reservado para um controle de conteúdo.</span><span class="sxs-lookup"><span data-stu-id="481bb-211">Returns a <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> object that represents the placeholder text for a content control.</span></span> <span data-ttu-id="481bb-212">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="481bb-212">Read-only.</span></span></summary>
+        <value><span data-ttu-id="481bb-213">Retorna <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> .</span><span class="sxs-lookup"><span data-stu-id="481bb-213">Returns <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" />.</span></span></value>
+        <remarks><para><span data-ttu-id="481bb-214">Use o <see cref="M:Microsoft.Office.Interop.Word.ContentControl.SetPlaceholderText(Microsoft.Office.Interop.Word.BuildingBlock,Microsoft.Office.Interop.Word.Range,System.String)" /> método para definir o texto do espaço reservado para um controle de conteúdo.</span><span class="sxs-lookup"><span data-stu-id="481bb-214">Use the <see cref="M:Microsoft.Office.Interop.Word.ContentControl.SetPlaceholderText(Microsoft.Office.Interop.Word.BuildingBlock,Microsoft.Office.Interop.Word.Range,System.String)" /> method to set the placeholder text for a content control.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -853,6 +879,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.Range" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Range As Range" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ Range { Microsoft::Office::Interop::Word::Range ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Range : Microsoft.Office.Interop.Word.Range" Usage="Microsoft.Office.Interop.Word.ContentControl.Range" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -870,9 +897,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="51950-215">Retorna um <see cref="T:Microsoft.Office.Interop.Word.Range" /> que representa o conteúdo do controle de conteúdo no documento ativo.</span><span class="sxs-lookup"><span data-stu-id="51950-215">Returns a <see cref="T:Microsoft.Office.Interop.Word.Range" /> that represents the contents of the content control in the active document.</span></span> <span data-ttu-id="51950-216">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="51950-216">Read-only.</span></span></summary>
-        <value><span data-ttu-id="51950-217">Retorna <see cref="T:Microsoft.Office.Interop.Word.Range" />.</span><span class="sxs-lookup"><span data-stu-id="51950-217">Returns <see cref="T:Microsoft.Office.Interop.Word.Range" />.</span></span></value>
-        <remarks><para><span data-ttu-id="51950-218">Use a <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Range" /> propriedade para acessar o texto, a formatação do texto e outras propriedades de texto.</span><span class="sxs-lookup"><span data-stu-id="51950-218">Use the <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Range" /> property to access the text, the formatting for the text, and other text properties.</span></span>  <span data-ttu-id="51950-219">Para obter mais informações, consulte <a href="HV10056876">trabalhar com objetos Range</a></span><span class="sxs-lookup"><span data-stu-id="51950-219">For more information, see <a href="HV10056876">Working with Range Objects</a></span></span></para>
+        <summary><span data-ttu-id="481bb-215">Retorna um <see cref="T:Microsoft.Office.Interop.Word.Range" /> que representa o conteúdo do controle de conteúdo no documento ativo.</span><span class="sxs-lookup"><span data-stu-id="481bb-215">Returns a <see cref="T:Microsoft.Office.Interop.Word.Range" /> that represents the contents of the content control in the active document.</span></span> <span data-ttu-id="481bb-216">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="481bb-216">Read-only.</span></span></summary>
+        <value><span data-ttu-id="481bb-217">Retorna <see cref="T:Microsoft.Office.Interop.Word.Range" /> .</span><span class="sxs-lookup"><span data-stu-id="481bb-217">Returns <see cref="T:Microsoft.Office.Interop.Word.Range" />.</span></span></value>
+        <remarks><para><span data-ttu-id="481bb-218">Use a <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Range" /> propriedade para acessar o texto, a formatação do texto e outras propriedades de texto.</span><span class="sxs-lookup"><span data-stu-id="481bb-218">Use the <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Range" /> property to access the text, the formatting for the text, and other text properties.</span></span>  <span data-ttu-id="481bb-219">Para obter mais informações, consulte <a href="HV10056876">trabalhar com objetos Range</a></span><span class="sxs-lookup"><span data-stu-id="481bb-219">For more information, see <a href="HV10056876">Working with Range Objects</a></span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -882,6 +909,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.RepeatingSectionItems" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RepeatingSectionItems As RepeatingSectionItemColl" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::RepeatingSectionItemColl ^ RepeatingSectionItems { Microsoft::Office::Interop::Word::RepeatingSectionItemColl ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RepeatingSectionItems : Microsoft.Office.Interop.Word.RepeatingSectionItemColl" Usage="Microsoft.Office.Interop.Word.ContentControl.RepeatingSectionItems" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -899,9 +927,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.RepeatingSectionItemColl</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="51950-220">Retorna a coleção de itens de seção de repetição no controle de conteúdo de seção recorrente especificado.</span><span class="sxs-lookup"><span data-stu-id="51950-220">Returns the collection of repeating section items in the specified repeating section content control.</span></span> <span data-ttu-id="51950-221">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="51950-221">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="481bb-220">Retorna a coleção de itens de seção de repetição no controle de conteúdo de seção recorrente especificado.</span><span class="sxs-lookup"><span data-stu-id="481bb-220">Returns the collection of repeating section items in the specified repeating section content control.</span></span> <span data-ttu-id="481bb-221">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="481bb-221">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="51950-222">Você pode usar essa propriedade somente com controles de conteúdo de seção de repetição.</span><span class="sxs-lookup"><span data-stu-id="51950-222">You can use this property with repeating section content controls only.</span></span> <span data-ttu-id="51950-223">O uso de outros controles de conteúdo resultará em um erro.</span><span class="sxs-lookup"><span data-stu-id="51950-223">Using it with other content controls will result in an error.</span></span></para>
+        <remarks><para><span data-ttu-id="481bb-222">Você pode usar essa propriedade somente com controles de conteúdo de seção de repetição.</span><span class="sxs-lookup"><span data-stu-id="481bb-222">You can use this property with repeating section content controls only.</span></span> <span data-ttu-id="481bb-223">O uso de outros controles de conteúdo resultará em um erro.</span><span class="sxs-lookup"><span data-stu-id="481bb-223">Using it with other content controls will result in an error.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -911,6 +939,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.RepeatingSectionItemTitle" />
       <MemberSignature Language="VB.NET" Value="Public Property RepeatingSectionItemTitle As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RepeatingSectionItemTitle { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RepeatingSectionItemTitle : string with get, set" Usage="Microsoft.Office.Interop.Word.ContentControl.RepeatingSectionItemTitle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -931,9 +960,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="51950-224">Retorna ou define o nome dos itens de seção de repetição usados no menu de contexto associado ao controle de conteúdo de seção recorrente especificado.</span><span class="sxs-lookup"><span data-stu-id="51950-224">Returns or sets the name of the repeating section items used in the context menu associated with the specified repeating section content control.</span></span> <span data-ttu-id="51950-225">Leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="51950-225">Read/write.</span></span></summary>
+        <summary><span data-ttu-id="481bb-224">Retorna ou define o nome dos itens de seção de repetição usados no menu de contexto associado ao controle de conteúdo de seção recorrente especificado.</span><span class="sxs-lookup"><span data-stu-id="481bb-224">Returns or sets the name of the repeating section items used in the context menu associated with the specified repeating section content control.</span></span> <span data-ttu-id="481bb-225">Leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="481bb-225">Read/write.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="51950-226">Você pode usar essa propriedade somente com controles de conteúdo de seção de repetição.</span><span class="sxs-lookup"><span data-stu-id="51950-226">You can use this property with repeating section content controls only.</span></span> <span data-ttu-id="51950-227">O uso de outros controles de conteúdo resultará em um erro.</span><span class="sxs-lookup"><span data-stu-id="51950-227">Using it with other content controls will result in an error.</span></span></para>
+        <remarks><para><span data-ttu-id="481bb-226">Você pode usar essa propriedade somente com controles de conteúdo de seção de repetição.</span><span class="sxs-lookup"><span data-stu-id="481bb-226">You can use this property with repeating section content controls only.</span></span> <span data-ttu-id="481bb-227">O uso de outros controles de conteúdo resultará em um erro.</span><span class="sxs-lookup"><span data-stu-id="481bb-227">Using it with other content controls will result in an error.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -942,6 +971,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetCheckedSymbol([in]int32 CharacterNumber, [in]string Font) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ContentControl.SetCheckedSymbol(System.Int32,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetCheckedSymbol (CharacterNumber As Integer, Optional Font As String = &quot;&quot;)" />
+      <MemberSignature Language="F#" Value="abstract member SetCheckedSymbol : int * string -&gt; unit" Usage="contentControl.SetCheckedSymbol (CharacterNumber, Font)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -960,16 +990,18 @@
         <Parameter Name="Font" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="CharacterNumber"><span data-ttu-id="51950-228">O número do caractere Unicode do símbolo especificado.</span><span class="sxs-lookup"><span data-stu-id="51950-228">The Unicode character number for the specified symbol.</span></span> <span data-ttu-id="51950-229">Esse valor será sempre a soma de 31 (o número de símbolos de controle no início da fonte) e o número que corresponde à posição do símbolo na tabela de símbolos (contando da esquerda para direita).</span><span class="sxs-lookup"><span data-stu-id="51950-229">This value will always be the sum of 31 (the number of control symbols at the beginning of the font) and the number that corresponds to the position of the symbol in the table of symbols (counting from left to right).</span></span> <span data-ttu-id="51950-230">Por exemplo, para especificar um caractere Delta na posição 37 na tabela de símbolos na fonte Symbol, defina <paramref name="CharacterNumber" /> como 68.</span><span class="sxs-lookup"><span data-stu-id="51950-230">For example, to specify a delta character at position 37 in the table of symbols in the Symbol font, set <paramref name="CharacterNumber" /> to 68.</span></span></param>
-        <param name="Font"><span data-ttu-id="51950-231">O nome da fonte que contém o símbolo.</span><span class="sxs-lookup"><span data-stu-id="51950-231">The name of the font that contains the symbol.</span></span></param>
-        <summary><span data-ttu-id="51950-232">Define o símbolo usado para representar o estado selecionado de um controle de caixa de seleção de conteúdo.</span><span class="sxs-lookup"><span data-stu-id="51950-232">Sets the symbol used to represent the checked state of a check box content control.</span></span></summary>
+        <param name="CharacterNumber"><span data-ttu-id="481bb-228">O número do caractere Unicode do símbolo especificado.</span><span class="sxs-lookup"><span data-stu-id="481bb-228">The Unicode character number for the specified symbol.</span></span> <span data-ttu-id="481bb-229">Esse valor será sempre a soma de 31 (o número de símbolos de controle no início da fonte) e o número que corresponde à posição do símbolo na tabela de símbolos (contando da esquerda para direita).</span><span class="sxs-lookup"><span data-stu-id="481bb-229">This value will always be the sum of 31 (the number of control symbols at the beginning of the font) and the number that corresponds to the position of the symbol in the table of symbols (counting from left to right).</span></span> <span data-ttu-id="481bb-230">Por exemplo, para especificar um caractere Delta na posição 37 na tabela de símbolos na fonte Symbol, defina <paramref name="CharacterNumber" /> como 68.</span><span class="sxs-lookup"><span data-stu-id="481bb-230">For example, to specify a delta character at position 37 in the table of symbols in the Symbol font, set <paramref name="CharacterNumber" /> to 68.</span></span></param>
+        <param name="Font"><span data-ttu-id="481bb-231">O nome da fonte que contém o símbolo.</span><span class="sxs-lookup"><span data-stu-id="481bb-231">The name of the font that contains the symbol.</span></span></param>
+        <summary><span data-ttu-id="481bb-232">Define o símbolo usado para representar o estado selecionado de um controle de caixa de seleção de conteúdo.</span><span class="sxs-lookup"><span data-stu-id="481bb-232">Sets the symbol used to represent the checked state of a check box content control.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SetPlaceholderText">
-      <MemberSignature Language="C#" Value="public void SetPlaceholderText (Microsoft.Office.Interop.Word.BuildingBlock BuildingBlock = null, Microsoft.Office.Interop.Word.Range Range = null, string Text = &quot;&quot;);" />
+      <MemberSignature Language="C#" Value="public void SetPlaceholderText (Microsoft.Office.Interop.Word.BuildingBlock BuildingBlock = default, Microsoft.Office.Interop.Word.Range Range = default, string Text = &quot;&quot;);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetPlaceholderText([in]class Microsoft.Office.Interop.Word.BuildingBlock BuildingBlock, [in]class Microsoft.Office.Interop.Word.Range Range, [in]string Text) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ContentControl.SetPlaceholderText(Microsoft.Office.Interop.Word.BuildingBlock,Microsoft.Office.Interop.Word.Range,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetPlaceholderText (Optional BuildingBlock As BuildingBlock = null, Optional Range As Range = null, Optional Text As String = &quot;&quot;)" />
+      <MemberSignature Language="F#" Value="abstract member SetPlaceholderText : Microsoft.Office.Interop.Word.BuildingBlock * Microsoft.Office.Interop.Word.Range * string -&gt; unit" Usage="contentControl.SetPlaceholderText (BuildingBlock, Range, Text)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -989,11 +1021,11 @@
         <Parameter Name="Text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="BuildingBlock"><span data-ttu-id="51950-233">Especifica um <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> objeto que contém o conteúdo do texto do espaço reservado.</span><span class="sxs-lookup"><span data-stu-id="51950-233">Specifies a <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> object that contains the contents of the placeholder text.</span></span></param>
-        <param name="Range"><span data-ttu-id="51950-234">Especifica um <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto que contém o conteúdo do texto do espaço reservado.</span><span class="sxs-lookup"><span data-stu-id="51950-234">Specifies a <see cref="T:Microsoft.Office.Interop.Word.Range" /> object that contains the contents of the placeholder text.</span></span></param>
-        <param name="Text"><span data-ttu-id="51950-235">Especifica o conteúdo do texto do indicador.</span><span class="sxs-lookup"><span data-stu-id="51950-235">Specifies the contents of the placeholder text.</span></span></param>
-        <summary><span data-ttu-id="51950-236">Define o texto do indicador exibido no controle de conteúdo até que um usuário digite seu próprio texto.</span><span class="sxs-lookup"><span data-stu-id="51950-236">Sets the placeholder text that displays in the content control until a user enters their own text.</span></span></summary>
-        <remarks><para><span data-ttu-id="51950-237">Apenas um dos parâmetros é utilizado ao especificar o texto do indicador.</span><span class="sxs-lookup"><span data-stu-id="51950-237">Only one of the parameters is used when specifying placeholder text.</span></span>  <span data-ttu-id="51950-238">Se mais de um parâmetro for usado, o Microsoft Office Word usará o texto especificado no primeiro parâmetro.</span><span class="sxs-lookup"><span data-stu-id="51950-238">If more than one parameter is used, Microsoft Office Word uses the text specified in the first parameter.</span></span> <span data-ttu-id="51950-239">Se todos os parâmetros forem omitidos, o texto do indicador ficará em branco.</span><span class="sxs-lookup"><span data-stu-id="51950-239">If all  parameters are omitted, the placeholder text is blank.</span></span></para>
+        <param name="BuildingBlock"><span data-ttu-id="481bb-233">Especifica um <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> objeto que contém o conteúdo do texto do espaço reservado.</span><span class="sxs-lookup"><span data-stu-id="481bb-233">Specifies a <see cref="T:Microsoft.Office.Interop.Word.BuildingBlock" /> object that contains the contents of the placeholder text.</span></span></param>
+        <param name="Range"><span data-ttu-id="481bb-234">Especifica um <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto que contém o conteúdo do texto do espaço reservado.</span><span class="sxs-lookup"><span data-stu-id="481bb-234">Specifies a <see cref="T:Microsoft.Office.Interop.Word.Range" /> object that contains the contents of the placeholder text.</span></span></param>
+        <param name="Text"><span data-ttu-id="481bb-235">Especifica o conteúdo do texto do indicador.</span><span class="sxs-lookup"><span data-stu-id="481bb-235">Specifies the contents of the placeholder text.</span></span></param>
+        <summary><span data-ttu-id="481bb-236">Define o texto do indicador exibido no controle de conteúdo até que um usuário digite seu próprio texto.</span><span class="sxs-lookup"><span data-stu-id="481bb-236">Sets the placeholder text that displays in the content control until a user enters their own text.</span></span></summary>
+        <remarks><para><span data-ttu-id="481bb-237">Apenas um dos parâmetros é utilizado ao especificar o texto do indicador.</span><span class="sxs-lookup"><span data-stu-id="481bb-237">Only one of the parameters is used when specifying placeholder text.</span></span>  <span data-ttu-id="481bb-238">Se mais de um parâmetro for usado, o Microsoft Office Word usará o texto especificado no primeiro parâmetro.</span><span class="sxs-lookup"><span data-stu-id="481bb-238">If more than one parameter is used, Microsoft Office Word uses the text specified in the first parameter.</span></span> <span data-ttu-id="481bb-239">Se todos os parâmetros forem omitidos, o texto do indicador ficará em branco.</span><span class="sxs-lookup"><span data-stu-id="481bb-239">If all  parameters are omitted, the placeholder text is blank.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1002,6 +1034,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetUncheckedSymbol([in]int32 CharacterNumber, [in]string Font) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ContentControl.SetUncheckedSymbol(System.Int32,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetUncheckedSymbol (CharacterNumber As Integer, Optional Font As String = &quot;&quot;)" />
+      <MemberSignature Language="F#" Value="abstract member SetUncheckedSymbol : int * string -&gt; unit" Usage="contentControl.SetUncheckedSymbol (CharacterNumber, Font)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1020,9 +1053,9 @@
         <Parameter Name="Font" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="CharacterNumber"><span data-ttu-id="51950-240">O número do caractere Unicode do símbolo especificado.</span><span class="sxs-lookup"><span data-stu-id="51950-240">The Unicode character number for the specified symbol.</span></span> <span data-ttu-id="51950-241">Esse valor será sempre a soma de 31 (o número de símbolos de controle no início da fonte) e o número que corresponde à posição do símbolo na tabela de símbolos (contando da esquerda para direita).</span><span class="sxs-lookup"><span data-stu-id="51950-241">This value will always be the sum of 31 (the number of control symbols at the beginning of the font) and the number that corresponds to the position of the symbol in the table of symbols (counting from left to right).</span></span> <span data-ttu-id="51950-242">Por exemplo, para especificar um caractere Delta na posição 37 na tabela de símbolos na fonte Symbol, defina <paramref name="CharacterNumber" /> como 68.</span><span class="sxs-lookup"><span data-stu-id="51950-242">For example, to specify a delta character at position 37 in the table of symbols in the Symbol font, set <paramref name="CharacterNumber" /> to 68.</span></span></param>
-        <param name="Font"><span data-ttu-id="51950-243">O nome da fonte que contém o símbolo.</span><span class="sxs-lookup"><span data-stu-id="51950-243">The name of the font that contains the symbol.</span></span></param>
-        <summary><span data-ttu-id="51950-244">Define o símbolo usado para representar o estado desmarcado de um controle de caixa de seleção de conteúdo.</span><span class="sxs-lookup"><span data-stu-id="51950-244">Sets the symbol used to represent the unchecked state of a check box content control.</span></span></summary>
+        <param name="CharacterNumber"><span data-ttu-id="481bb-240">O número do caractere Unicode do símbolo especificado.</span><span class="sxs-lookup"><span data-stu-id="481bb-240">The Unicode character number for the specified symbol.</span></span> <span data-ttu-id="481bb-241">Esse valor será sempre a soma de 31 (o número de símbolos de controle no início da fonte) e o número que corresponde à posição do símbolo na tabela de símbolos (contando da esquerda para direita).</span><span class="sxs-lookup"><span data-stu-id="481bb-241">This value will always be the sum of 31 (the number of control symbols at the beginning of the font) and the number that corresponds to the position of the symbol in the table of symbols (counting from left to right).</span></span> <span data-ttu-id="481bb-242">Por exemplo, para especificar um caractere Delta na posição 37 na tabela de símbolos na fonte Symbol, defina <paramref name="CharacterNumber" /> como 68.</span><span class="sxs-lookup"><span data-stu-id="481bb-242">For example, to specify a delta character at position 37 in the table of symbols in the Symbol font, set <paramref name="CharacterNumber" /> to 68.</span></span></param>
+        <param name="Font"><span data-ttu-id="481bb-243">O nome da fonte que contém o símbolo.</span><span class="sxs-lookup"><span data-stu-id="481bb-243">The name of the font that contains the symbol.</span></span></param>
+        <summary><span data-ttu-id="481bb-244">Define o símbolo usado para representar o estado desmarcado de um controle de caixa de seleção de conteúdo.</span><span class="sxs-lookup"><span data-stu-id="481bb-244">Sets the symbol used to represent the unchecked state of a check box content control.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1032,6 +1065,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.ShowingPlaceholderText" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ShowingPlaceholderText As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowingPlaceholderText { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.ShowingPlaceholderText : bool" Usage="Microsoft.Office.Interop.Word.ContentControl.ShowingPlaceholderText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1049,8 +1083,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="51950-245">Retorna um <b>Boolean</b> que indica se o texto de espaço reservado para o controle de conteúdo é exibido.</span><span class="sxs-lookup"><span data-stu-id="51950-245">Returns a <b>Boolean</b> that indicates whether the placeholder text for the content control is displayed.</span></span> <span data-ttu-id="51950-246">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="51950-246">Read-only.</span></span></summary>
-        <value><span data-ttu-id="51950-247"><b>Boolean</b></span><span class="sxs-lookup"><span data-stu-id="51950-247"><b>Boolean</b></span></span></value>
+        <summary><span data-ttu-id="481bb-245">Retorna um <b>Boolean</b> que indica se o texto de espaço reservado para o controle de conteúdo é exibido.</span><span class="sxs-lookup"><span data-stu-id="481bb-245">Returns a <b>Boolean</b> that indicates whether the placeholder text for the content control is displayed.</span></span> <span data-ttu-id="481bb-246">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="481bb-246">Read-only.</span></span></summary>
+        <value><span data-ttu-id="481bb-247"><b>Boolean</b></span><span class="sxs-lookup"><span data-stu-id="481bb-247"><b>Boolean</b></span></span></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1060,6 +1094,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.Tag" />
       <MemberSignature Language="VB.NET" Value="Public Property Tag As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Tag { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Tag : string with get, set" Usage="Microsoft.Office.Interop.Word.ContentControl.Tag" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1080,9 +1115,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="51950-248">Retorna ou define um valor para identificar um controle de conteúdo.</span><span class="sxs-lookup"><span data-stu-id="51950-248">Returns or sets a value to identify a content control.</span></span> <span data-ttu-id="51950-249">Leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="51950-249">Read/write.</span></span></summary>
-        <value><span data-ttu-id="51950-250"><b>String</b></span><span class="sxs-lookup"><span data-stu-id="51950-250"><b>String</b></span></span></value>
-        <remarks><para><span data-ttu-id="51950-251">A <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Tag" /> propriedade é diferente da <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Title" /> Propriedade, pois uma marca nunca é exibida enquanto um usuário edita um documento.</span><span class="sxs-lookup"><span data-stu-id="51950-251">The <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Tag" /> property is different from the <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Title" /> property in that a tag is never displayed while a user edits a document.</span></span>  <span data-ttu-id="51950-252">Em vez disso, os desenvolvedores podem usá-lo para armazenar um valor para manipulação programática enquanto o documento é aberto.</span><span class="sxs-lookup"><span data-stu-id="51950-252">Instead, developers can use it to store a value for programmatic manipulation while the document is opened.</span></span></para>
+        <summary><span data-ttu-id="481bb-248">Retorna ou define um valor para identificar um controle de conteúdo.</span><span class="sxs-lookup"><span data-stu-id="481bb-248">Returns or sets a value to identify a content control.</span></span> <span data-ttu-id="481bb-249">Leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="481bb-249">Read/write.</span></span></summary>
+        <value><span data-ttu-id="481bb-250"><b>String</b></span><span class="sxs-lookup"><span data-stu-id="481bb-250"><b>String</b></span></span></value>
+        <remarks><para><span data-ttu-id="481bb-251">A <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Tag" /> propriedade é diferente da <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Title" /> propriedade, pois uma marca nunca é exibida enquanto um usuário edita um documento.</span><span class="sxs-lookup"><span data-stu-id="481bb-251">The <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Tag" /> property is different from the <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Title" /> property in that a tag is never displayed while a user edits a document.</span></span>  <span data-ttu-id="481bb-252">Em vez disso, os desenvolvedores podem usá-lo para armazenar um valor para manipulação programática enquanto o documento é aberto.</span><span class="sxs-lookup"><span data-stu-id="481bb-252">Instead, developers can use it to store a value for programmatic manipulation while the document is opened.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1092,6 +1127,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.Temporary" />
       <MemberSignature Language="VB.NET" Value="Public Property Temporary As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Temporary { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Temporary : bool with get, set" Usage="Microsoft.Office.Interop.Word.ContentControl.Temporary" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1112,11 +1148,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="51950-p147">Retorna ou define um <b>Boolean</b> que indica se deseja remover um controle de conteúdo do documento ativo quando o usuário edita o conteúdo do controle. Leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="51950-p147">Returns or sets a <b>Boolean</b> that represents whether to remove a content control from the active document when the user edits the contents of the control. Read/write.</span></span></summary>
-        <value><span data-ttu-id="51950-255"><b>Boolean</b></span><span class="sxs-lookup"><span data-stu-id="51950-255"><b>Boolean</b></span></span></value>
-        <remarks><para><span data-ttu-id="51950-256">O valor padrão é <b>False</b>.</span><span class="sxs-lookup"><span data-stu-id="51950-256">The default value is <b>False</b>.</span></span> <span data-ttu-id="51950-257">Essa propriedade corresponde à caixa de seleção Remover o controle de conteúdo ao editar o conteúdo na caixa de diálogo Propriedades de controle de conteúdo.</span><span class="sxs-lookup"><span data-stu-id="51950-257">This property corresponds to the Remove content control when contents are edited check box in the Content Control Properties dialog box.</span></span></para>
-          <para><span data-ttu-id="51950-258">
-            <b>Observação</b>: você não pode definir essa propriedade se <see cref="P:Microsoft.Office.Interop.Word.ContentControl.LockContentControl" /> a propriedade for definida como <b>true</b>.</span><span class="sxs-lookup"><span data-stu-id="51950-258">
+        <summary><span data-ttu-id="481bb-p147">Retorna ou define um <b>Boolean</b> que indica se deseja remover um controle de conteúdo do documento ativo quando o usuário edita o conteúdo do controle. Leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="481bb-p147">Returns or sets a <b>Boolean</b> that represents whether to remove a content control from the active document when the user edits the contents of the control. Read/write.</span></span></summary>
+        <value><span data-ttu-id="481bb-255"><b>Boolean</b></span><span class="sxs-lookup"><span data-stu-id="481bb-255"><b>Boolean</b></span></span></value>
+        <remarks><para><span data-ttu-id="481bb-256">O valor padrão é <b>False</b>.</span><span class="sxs-lookup"><span data-stu-id="481bb-256">The default value is <b>False</b>.</span></span> <span data-ttu-id="481bb-257">Essa propriedade corresponde à caixa de seleção Remover o controle de conteúdo ao editar o conteúdo na caixa de diálogo Propriedades de controle de conteúdo.</span><span class="sxs-lookup"><span data-stu-id="481bb-257">This property corresponds to the Remove content control when contents are edited check box in the Content Control Properties dialog box.</span></span></para>
+          <para><span data-ttu-id="481bb-258">
+            <b>Observação</b>: você não pode definir essa propriedade se a <see cref="P:Microsoft.Office.Interop.Word.ContentControl.LockContentControl" /> propriedade for definida como <b>true</b>.</span><span class="sxs-lookup"><span data-stu-id="481bb-258">
             <b>Note</b>: You cannot set this property if the <see cref="P:Microsoft.Office.Interop.Word.ContentControl.LockContentControl" /> property is set to <b>True</b>.</span></span></para>
           <para> </para></remarks>
       </Docs>
@@ -1127,6 +1163,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.Title" />
       <MemberSignature Language="VB.NET" Value="Public Property Title As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Title { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Title : string with get, set" Usage="Microsoft.Office.Interop.Word.ContentControl.Title" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1147,8 +1184,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="51950-259">Retorna ou define o título de um controle de conteúdo.</span><span class="sxs-lookup"><span data-stu-id="51950-259">Returns or sets the title for a content control.</span></span> <span data-ttu-id="51950-260">Leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="51950-260">Read/write.</span></span></summary>
-        <value><span data-ttu-id="51950-261"><b>String</b></span><span class="sxs-lookup"><span data-stu-id="51950-261"><b>String</b></span></span></value>
+        <summary><span data-ttu-id="481bb-259">Retorna ou define o título de um controle de conteúdo.</span><span class="sxs-lookup"><span data-stu-id="481bb-259">Returns or sets the title for a content control.</span></span> <span data-ttu-id="481bb-260">Leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="481bb-260">Read/write.</span></span></summary>
+        <value><span data-ttu-id="481bb-261"><b>String</b></span><span class="sxs-lookup"><span data-stu-id="481bb-261"><b>String</b></span></span></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1158,6 +1195,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.Type" />
       <MemberSignature Language="VB.NET" Value="Public Property Type As WdContentControlType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::WdContentControlType Type { Microsoft::Office::Interop::Word::WdContentControlType get(); void set(Microsoft::Office::Interop::Word::WdContentControlType value); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Microsoft.Office.Interop.Word.WdContentControlType with get, set" Usage="Microsoft.Office.Interop.Word.ContentControl.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1178,9 +1216,9 @@
         <ReturnType>Microsoft.Office.Interop.Word.WdContentControlType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="51950-262">Retorna ou define o tipo de um controle de conteúdo.</span><span class="sxs-lookup"><span data-stu-id="51950-262">Returns or sets the type for a content control.</span></span> <span data-ttu-id="51950-263">Leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="51950-263">Read/write.</span></span></summary>
+        <summary><span data-ttu-id="481bb-262">Retorna ou define o tipo de um controle de conteúdo.</span><span class="sxs-lookup"><span data-stu-id="481bb-262">Returns or sets the type for a content control.</span></span> <span data-ttu-id="481bb-263">Leitura/gravação.</span><span class="sxs-lookup"><span data-stu-id="481bb-263">Read/write.</span></span></summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.WdContentControlType" /></value>
-        <remarks><para><span data-ttu-id="51950-264">Você pode usar a <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Type" /> propriedade para alterar o tipo de um controle de conteúdo de um tipo para outro.</span><span class="sxs-lookup"><span data-stu-id="51950-264">You can use the <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Type" /> property to change the type of a content control from one type to another.</span></span>  <span data-ttu-id="51950-265">No entanto, a capacidade de alterar o tipo de controle depende do tipo original e o conteúdo dentro do controle de conteúdo no momento da alteração.</span><span class="sxs-lookup"><span data-stu-id="51950-265">However, the ability to change the type of control depends on the original type and on the content inside the content control at the time of the change.</span></span>  <span data-ttu-id="51950-266">Todos os controles de conteúdo podem ser alterados para rich text ou bloco de construção Galeria tipo controles de conteúdo porque esses tipos permitem conteúdo arbitrário.</span><span class="sxs-lookup"><span data-stu-id="51950-266">All content controls can be changed to rich text or building block gallery type content controls because these types allow arbitrary content.</span></span>  <span data-ttu-id="51950-267">Para outros tipos, se o conteúdo é válido para o tipo que você deseja alterar, em seguida, alterando o tipo é permitido.</span><span class="sxs-lookup"><span data-stu-id="51950-267">For other types, if the content is valid for the type that you want to change to, then changing the type is allowed.</span></span>  <span data-ttu-id="51950-268">Caso contrário, a alteração será rejeitada, resultando em um erro de tempo de execução.</span><span class="sxs-lookup"><span data-stu-id="51950-268">Otherwise, the change is rejected, resulting in a run-time error.</span></span></para>
+        <remarks><para><span data-ttu-id="481bb-264">Você pode usar a <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Type" /> propriedade para alterar o tipo de um controle de conteúdo de um tipo para outro.</span><span class="sxs-lookup"><span data-stu-id="481bb-264">You can use the <see cref="P:Microsoft.Office.Interop.Word.ContentControl.Type" /> property to change the type of a content control from one type to another.</span></span>  <span data-ttu-id="481bb-265">No entanto, a capacidade de alterar o tipo de controle depende do tipo original e o conteúdo dentro do controle de conteúdo no momento da alteração.</span><span class="sxs-lookup"><span data-stu-id="481bb-265">However, the ability to change the type of control depends on the original type and on the content inside the content control at the time of the change.</span></span>  <span data-ttu-id="481bb-266">Todos os controles de conteúdo podem ser alterados para rich text ou bloco de construção Galeria tipo controles de conteúdo porque esses tipos permitem conteúdo arbitrário.</span><span class="sxs-lookup"><span data-stu-id="481bb-266">All content controls can be changed to rich text or building block gallery type content controls because these types allow arbitrary content.</span></span>  <span data-ttu-id="481bb-267">Para outros tipos, se o conteúdo é válido para o tipo que você deseja alterar, em seguida, alterando o tipo é permitido.</span><span class="sxs-lookup"><span data-stu-id="481bb-267">For other types, if the content is valid for the type that you want to change to, then changing the type is allowed.</span></span>  <span data-ttu-id="481bb-268">Caso contrário, a alteração será rejeitada, resultando em um erro de tempo de execução.</span><span class="sxs-lookup"><span data-stu-id="481bb-268">Otherwise, the change is rejected, resulting in a run-time error.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1190,6 +1228,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ContentControl.Ungroup" />
       <MemberSignature Language="VB.NET" Value="Public Sub Ungroup ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Ungroup();" />
+      <MemberSignature Language="F#" Value="abstract member Ungroup : unit -&gt; unit" Usage="contentControl.Ungroup " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1205,8 +1244,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary><span data-ttu-id="51950-269">Remove um controle de conteúdo de grupo de um documento, de forma que seus controles de conteúdo de grupo filhos não fiquem mais aninhados e possam ser livremente editados.</span><span class="sxs-lookup"><span data-stu-id="51950-269">Removes a group content control from a document so that its child content controls are no  longer nested  and can be freely edited.</span></span></summary>
-        <remarks><para><span data-ttu-id="51950-270">Este método falhará se você executá-lo em um controle que não seja <see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlGroup" />do tipo.</span><span class="sxs-lookup"><span data-stu-id="51950-270">This method fails if you run it on a control that is not of type <see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlGroup" />.</span></span></para>
+        <summary><span data-ttu-id="481bb-269">Remove um controle de conteúdo de grupo de um documento, de forma que seus controles de conteúdo de grupo filhos não fiquem mais aninhados e possam ser livremente editados.</span><span class="sxs-lookup"><span data-stu-id="481bb-269">Removes a group content control from a document so that its child content controls are no  longer nested  and can be freely edited.</span></span></summary>
+        <remarks><para><span data-ttu-id="481bb-270">Este método falhará se você executá-lo em um controle que não seja do tipo <see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlGroup" /> .</span><span class="sxs-lookup"><span data-stu-id="481bb-270">This method fails if you run it on a control that is not of type <see cref="F:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlGroup" />.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1216,6 +1255,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ContentControl.XMLMapping" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XMLMapping As XMLMapping" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::XMLMapping ^ XMLMapping { Microsoft::Office::Interop::Word::XMLMapping ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.XMLMapping : Microsoft.Office.Interop.Word.XMLMapping" Usage="Microsoft.Office.Interop.Word.ContentControl.XMLMapping" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1233,7 +1273,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.XMLMapping</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="51950-271">Retorna o mapeamento de um controle de conteúdo para dados XML no repositório de dados de um documento.</span><span class="sxs-lookup"><span data-stu-id="51950-271">Returns the mapping of a content control to XML data in the data store of a  document.</span></span> <span data-ttu-id="51950-272">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="51950-272">Read-only.</span></span></summary>
+        <summary><span data-ttu-id="481bb-271">Retorna o mapeamento de um controle de conteúdo para dados XML no repositório de dados de um documento.</span><span class="sxs-lookup"><span data-stu-id="481bb-271">Returns the mapping of a content control to XML data in the data store of a  document.</span></span> <span data-ttu-id="481bb-272">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="481bb-272">Read-only.</span></span></summary>
         <value><see cref="T:Microsoft.Office.Interop.Word.XMLMapping" /></value>
         <remarks>To be added.</remarks>
       </Docs>

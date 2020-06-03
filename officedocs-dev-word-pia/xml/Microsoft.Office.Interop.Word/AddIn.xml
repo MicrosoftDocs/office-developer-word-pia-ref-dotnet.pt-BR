@@ -1,9 +1,10 @@
 <Type Name="AddIn" FullName="Microsoft.Office.Interop.Word.AddIn">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="695249a505a14baf5625853d5db3725ed54c358e" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144670" /></Metadata><TypeSignature Language="C#" Value="public interface AddIn" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="834391be669fe404d74b4ac56273a8b1154ee8ba" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43921881" /></Metadata><TypeSignature Language="C#" Value="public interface AddIn" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AddIn" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.AddIn" />
   <TypeSignature Language="VB.NET" Value="Public Interface AddIn" />
   <TypeSignature Language="C++ CLI" Value="public interface class AddIn" />
+  <TypeSignature Language="F#" Value="type AddIn = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -18,13 +19,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary><span data-ttu-id="bc653-101">Representa um único suplemento, instalado ou não.</span><span class="sxs-lookup"><span data-stu-id="bc653-101">Represents a single add-in, either installed or not installed.</span></span></summary>
-    <remarks><para><span data-ttu-id="bc653-102">O objeto <b>AddIn</b> é um membro da <see cref="T:Microsoft.Office.Interop.Word.AddIns" /> coleção.</span><span class="sxs-lookup"><span data-stu-id="bc653-102">The <b>AddIn</b> object is a member of the <see cref="T:Microsoft.Office.Interop.Word.AddIns" /> collection.</span></span> <span data-ttu-id="bc653-103">A <b></b> coleção AddIns contém todos os suplementos disponíveis para o Microsoft Word, independentemente de estarem ou não são carregados no momento.</span><span class="sxs-lookup"><span data-stu-id="bc653-103">The <b>AddIns</b> collection contains all the add-ins available to Microsoft Word, regardless of whether or not they're currently loaded.</span></span> <span data-ttu-id="bc653-104">A <b></b> coleção AddIns inclui modelos globais ou bibliotecas de suplementos do Word (WLLs) exibidas na caixa de diálogo modelos e suplementos (menu ferramentas).</span><span class="sxs-lookup"><span data-stu-id="bc653-104">The <b>AddIns</b> collection includes global templates or Word add-in libraries (WLLs) displayed in the Templates and Add-ins dialog box (Tools menu).</span></span></para>
-      <para><span data-ttu-id="bc653-105">Use <b>AddIns</b>(<paramref name="index" />), onde <paramref name="index" /> é o nome do suplemento ou número de índice, para retornar um único objeto <b>AddIn</b> .</span><span class="sxs-lookup"><span data-stu-id="bc653-105">Use <b>AddIns</b>(<paramref name="index" />), where <paramref name="index" /> is the add-in name or index number, to return a single <b>AddIn</b> object.</span></span> <span data-ttu-id="bc653-106">Você deve corresponder exatamente a ortografia (mas não necessariamente as maiúsculas/minúsculas) do nome, como ele é mostrado na caixa de diálogo modelos e suplementos.</span><span class="sxs-lookup"><span data-stu-id="bc653-106">You must exactly match the spelling (but not necessarily the capitalization) of the name, as it's shown in the Templates and Add-Ins dialog box.</span></span></para>
-      <para><span data-ttu-id="bc653-107">O número de índice representa a posição do suplemento na lista de suplementos da caixa de diálogo Modelos e suplementos.</span><span class="sxs-lookup"><span data-stu-id="bc653-107">The index number represents the position of the add-in in the list of add-ins in the Templates and Add-ins dialog box.</span></span></para>
-      <para><span data-ttu-id="bc653-108">Use o <see cref="M:Microsoft.Office.Interop.Word.AddIns.Add(System.String,System.Object@)" /> método para adicionar um suplemento à lista de suplementos disponíveis e (opcionalmente) instalá-lo usando o <paramref name="Install" /> argumento.</span><span class="sxs-lookup"><span data-stu-id="bc653-108">Use the <see cref="M:Microsoft.Office.Interop.Word.AddIns.Add(System.String,System.Object@)" /> method to add an add-in to the list of available add-ins and (optionally) install it using the <paramref name="Install" /> argument.</span></span></para>
-      <para><span data-ttu-id="bc653-109">Para instalar um suplemento mostrado na lista de suplementos disponíveis, use a <see cref="P:Microsoft.Office.Interop.Word.AddIn.Installed" /> propriedade.</span><span class="sxs-lookup"><span data-stu-id="bc653-109">To install an add-in shown in the list of available add-ins, use the <see cref="P:Microsoft.Office.Interop.Word.AddIn.Installed" /> property.</span></span></para>
-      <para><span data-ttu-id="bc653-110">Use a <see cref="P:Microsoft.Office.Interop.Word.AddIn.Compiled" /> propriedade para determinar se um objeto <b>AddIn</b> é um modelo ou uma WLL.</span><span class="sxs-lookup"><span data-stu-id="bc653-110">Use the <see cref="P:Microsoft.Office.Interop.Word.AddIn.Compiled" /> property to determine whether an <b>AddIn</b> object is a template or a WLL.</span></span></para>
+    <summary><span data-ttu-id="5500c-101">Representa um único suplemento, instalado ou não.</span><span class="sxs-lookup"><span data-stu-id="5500c-101">Represents a single add-in, either installed or not installed.</span></span></summary>
+    <remarks><para><span data-ttu-id="5500c-102">O objeto <b>AddIn</b> é um membro da <see cref="T:Microsoft.Office.Interop.Word.AddIns" /> coleção.</span><span class="sxs-lookup"><span data-stu-id="5500c-102">The <b>AddIn</b> object is a member of the <see cref="T:Microsoft.Office.Interop.Word.AddIns" /> collection.</span></span> <span data-ttu-id="5500c-103">A coleção <b>AddIns</b> contém todos os suplementos disponíveis para o Microsoft Word, independentemente de estarem ou não são carregados no momento.</span><span class="sxs-lookup"><span data-stu-id="5500c-103">The <b>AddIns</b> collection contains all the add-ins available to Microsoft Word, regardless of whether or not they're currently loaded.</span></span> <span data-ttu-id="5500c-104">A coleção <b>AddIns</b> inclui modelos globais ou bibliotecas de suplementos do Word (WLLs) exibidas na caixa de diálogo modelos e suplementos (menu ferramentas).</span><span class="sxs-lookup"><span data-stu-id="5500c-104">The <b>AddIns</b> collection includes global templates or Word add-in libraries (WLLs) displayed in the Templates and Add-ins dialog box (Tools menu).</span></span></para>
+      <para><span data-ttu-id="5500c-105">Use <b>AddIns</b>( <paramref name="index" /> ), onde <paramref name="index" /> é o nome do suplemento ou número de índice, para retornar um único objeto <b>AddIn</b> .</span><span class="sxs-lookup"><span data-stu-id="5500c-105">Use <b>AddIns</b>(<paramref name="index" />), where <paramref name="index" /> is the add-in name or index number, to return a single <b>AddIn</b> object.</span></span> <span data-ttu-id="5500c-106">Você deve corresponder exatamente a ortografia (mas não necessariamente as maiúsculas/minúsculas) do nome, como ele é mostrado na caixa de diálogo modelos e suplementos.</span><span class="sxs-lookup"><span data-stu-id="5500c-106">You must exactly match the spelling (but not necessarily the capitalization) of the name, as it's shown in the Templates and Add-Ins dialog box.</span></span></para>
+      <para><span data-ttu-id="5500c-107">O número de índice representa a posição do suplemento na lista de suplementos da caixa de diálogo Modelos e suplementos.</span><span class="sxs-lookup"><span data-stu-id="5500c-107">The index number represents the position of the add-in in the list of add-ins in the Templates and Add-ins dialog box.</span></span></para>
+      <para><span data-ttu-id="5500c-108">Use o <see cref="M:Microsoft.Office.Interop.Word.AddIns.Add(System.String,System.Object@)" /> método para adicionar um suplemento à lista de suplementos disponíveis e (opcionalmente) instalá-lo usando o <paramref name="Install" /> argumento.</span><span class="sxs-lookup"><span data-stu-id="5500c-108">Use the <see cref="M:Microsoft.Office.Interop.Word.AddIns.Add(System.String,System.Object@)" /> method to add an add-in to the list of available add-ins and (optionally) install it using the <paramref name="Install" /> argument.</span></span></para>
+      <para><span data-ttu-id="5500c-109">Para instalar um suplemento mostrado na lista de suplementos disponíveis, use a <see cref="P:Microsoft.Office.Interop.Word.AddIn.Installed" /> propriedade.</span><span class="sxs-lookup"><span data-stu-id="5500c-109">To install an add-in shown in the list of available add-ins, use the <see cref="P:Microsoft.Office.Interop.Word.AddIn.Installed" /> property.</span></span></para>
+      <para><span data-ttu-id="5500c-110">Use a <see cref="P:Microsoft.Office.Interop.Word.AddIn.Compiled" /> propriedade para determinar se um objeto <b>AddIn</b> é um modelo ou uma WLL.</span><span class="sxs-lookup"><span data-stu-id="5500c-110">Use the <see cref="P:Microsoft.Office.Interop.Word.AddIn.Compiled" /> property to determine whether an <b>AddIn</b> object is a template or a WLL.</span></span></para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -34,6 +35,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.AddIn.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.AddIn.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -51,7 +53,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="bc653-111">Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o criador do objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="bc653-111">Returns an <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the creator of the specified object.</span></span></summary>
+        <summary><span data-ttu-id="5500c-111">Retorna um <see cref="T:Microsoft.Office.Interop.Word.Application" /> objeto que representa o criador do objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="5500c-111">Returns an <see cref="T:Microsoft.Office.Interop.Word.Application" /> object that represents the creator of the specified object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.AddIn.Autoload" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Autoload As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Autoload { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Autoload : bool" Usage="Microsoft.Office.Interop.Word.AddIn.Autoload" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -79,9 +82,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="bc653-112">Retorna um valor que indica se o suplemento especificado é carregado automaticamente quando o Microsoft Word é iniciado.</span><span class="sxs-lookup"><span data-stu-id="bc653-112">Returns a value indicating whether the specified add-in is automatically loaded when Microsoft Word is started.</span></span></summary>
+        <summary><span data-ttu-id="5500c-112">Retorna um valor que indica se o suplemento especificado é carregado automaticamente quando o Microsoft Word é iniciado.</span><span class="sxs-lookup"><span data-stu-id="5500c-112">Returns a value indicating whether the specified add-in is automatically loaded when Microsoft Word is started.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="bc653-113">Suplementos situados na pasta de inicialização na pasta de programa do Word são carregados automaticamente.</span><span class="sxs-lookup"><span data-stu-id="bc653-113">Add-ins located in the Startup folder in the Word program folder are automatically loaded.</span></span></para>
+        <remarks><para><span data-ttu-id="5500c-113">Suplementos situados na pasta de inicialização na pasta de programa do Word são carregados automaticamente.</span><span class="sxs-lookup"><span data-stu-id="5500c-113">Add-ins located in the Startup folder in the Word program folder are automatically loaded.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -91,6 +94,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.AddIn.Compiled" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Compiled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Compiled { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Compiled : bool" Usage="Microsoft.Office.Interop.Word.AddIn.Compiled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -108,9 +112,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="bc653-114">Retorna um valor que indica se o suplemento especificado é uma biblioteca de suplementos do Microsoft Word (WLL).</span><span class="sxs-lookup"><span data-stu-id="bc653-114">Returns a value indicating whether the specified add-in is a Microsoft Word add-in library (WLL).</span></span></summary>
+        <summary><span data-ttu-id="5500c-114">Retorna um valor que indica se o suplemento especificado é uma biblioteca de suplementos do Microsoft Word (WLL).</span><span class="sxs-lookup"><span data-stu-id="5500c-114">Returns a value indicating whether the specified add-in is a Microsoft Word add-in library (WLL).</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="bc653-115">Se o suplemento especificado não for um WLL, será um modelo.</span><span class="sxs-lookup"><span data-stu-id="bc653-115">If the specified add-in is not a WLL, then it is a template.</span></span></para>
+        <remarks><para><span data-ttu-id="5500c-115">Se o suplemento especificado não for um WLL, será um modelo.</span><span class="sxs-lookup"><span data-stu-id="5500c-115">If the specified add-in is not a WLL, then it is a template.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -120,6 +124,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.AddIn.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.AddIn.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -137,10 +142,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="bc653-116">Retorna um valor que indica o aplicativo no qual o objeto especificado foi criado.</span><span class="sxs-lookup"><span data-stu-id="bc653-116">Returns a value that indicates the application in which the specified object was created.</span></span></summary>
+        <summary><span data-ttu-id="5500c-116">Retorna um valor que indica o aplicativo no qual o objeto especificado foi criado.</span><span class="sxs-lookup"><span data-stu-id="5500c-116">Returns a value that indicates the application in which the specified object was created.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="bc653-117">Se o objeto especificado foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD".</span><span class="sxs-lookup"><span data-stu-id="bc653-117">If the specified object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span> <span data-ttu-id="bc653-118">[!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</span><span class="sxs-lookup"><span data-stu-id="bc653-118">This value can also be represented by the constant <b>wdCreatorCode</b>.</span></span></para>
-          <para><span data-ttu-id="bc653-119">A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres.</span><span class="sxs-lookup"><span data-stu-id="bc653-119">The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="bc653-120">Por exemplo, o Microsoft Word tem o código de criador MSWD.</span><span class="sxs-lookup"><span data-stu-id="bc653-120">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="bc653-121">Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</span><span class="sxs-lookup"><span data-stu-id="bc653-121">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
+        <remarks><para><span data-ttu-id="5500c-117">Se o objeto especificado foi criado no Microsoft Word, essa propriedade retornará o número hexadecimal 4D535744, que representa a cadeia de caracteres "MSWD".</span><span class="sxs-lookup"><span data-stu-id="5500c-117">If the specified object was created in Microsoft Word, this property returns the hexadecimal number 4D535744, which represents the string "MSWD."</span></span> <span data-ttu-id="5500c-118">[!OBSERVAçãO] Esse valor também pode ser representado pela constante <b>wdCreatorCode</b>.</span><span class="sxs-lookup"><span data-stu-id="5500c-118">This value can also be represented by the constant <b>wdCreatorCode</b>.</span></span></para>
+          <para><span data-ttu-id="5500c-119">A propriedade <b>Creator</b> foi projetada principalmente para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres.</span><span class="sxs-lookup"><span data-stu-id="5500c-119">The <b>Creator</b> property was primarily designed to be used on the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="5500c-120">Por exemplo, o Microsoft Word tem o código de criador MSWD.</span><span class="sxs-lookup"><span data-stu-id="5500c-120">For example, Microsoft Word has the creator code MSWD.</span></span> <span data-ttu-id="5500c-121">Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</span><span class="sxs-lookup"><span data-stu-id="5500c-121">For additional information about this property, consult the language reference Help included with Microsoft Office Macintosh Edition.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -150,6 +155,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.AddIn.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberSignature Language="F#" Value="abstract member Delete : unit -&gt; unit" Usage="addIn.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -165,7 +171,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary><span data-ttu-id="bc653-122">Exclui o objeto <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> especificado.</span><span class="sxs-lookup"><span data-stu-id="bc653-122">Deletes the specified <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> object.</span></span></summary>
+        <summary><span data-ttu-id="5500c-122">Exclui o <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="5500c-122">Deletes the specified <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> object.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -175,6 +181,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.AddIn.Index" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Index As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Index : int" Usage="Microsoft.Office.Interop.Word.AddIn.Index" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -192,7 +199,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="bc653-123">Retorna um valor que representa a posição de um item em uma <see cref="T:Microsoft.Office.Interop.Word.AddIns" /> coleção.</span><span class="sxs-lookup"><span data-stu-id="bc653-123">Returns a value that represents the position of an item in a <see cref="T:Microsoft.Office.Interop.Word.AddIns" /> collection.</span></span></summary>
+        <summary><span data-ttu-id="5500c-123">Retorna um valor que representa a posição de um item em uma <see cref="T:Microsoft.Office.Interop.Word.AddIns" /> coleção.</span><span class="sxs-lookup"><span data-stu-id="5500c-123">Returns a value that represents the position of an item in a <see cref="T:Microsoft.Office.Interop.Word.AddIns" /> collection.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -203,6 +210,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.AddIn.Installed" />
       <MemberSignature Language="VB.NET" Value="Public Property Installed As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Installed { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Installed : bool with get, set" Usage="Microsoft.Office.Interop.Word.AddIn.Installed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -223,10 +231,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="bc653-124">Retorna ou define um valor que indica <b>true</b> se o suplemento especificado estiver instalado (carregado).</span><span class="sxs-lookup"><span data-stu-id="bc653-124">Returns or sets a value indicating <b>True</b> if the specified add-in is installed (loaded).</span></span></summary>
+        <summary><span data-ttu-id="5500c-124">Retorna ou define um valor que indica <b>true</b> se o suplemento especificado estiver instalado (carregado).</span><span class="sxs-lookup"><span data-stu-id="5500c-124">Returns or sets a value indicating <b>True</b> if the specified add-in is installed (loaded).</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="bc653-125">Os suplementos carregados são selecionados na caixa de diálogo Modelos e Suplementos (menu Ferramentas).</span><span class="sxs-lookup"><span data-stu-id="bc653-125">Add-ins that are loaded are selected in the Templates and Add-ins dialog box (Tools menu).</span></span></para>
-          <para><span data-ttu-id="bc653-126">Suplementos desinstalados estão incluídos na <see cref="T:Microsoft.Office.Interop.Word.AddIns" /> coleção.</span><span class="sxs-lookup"><span data-stu-id="bc653-126">Uninstalled add-ins are included in the <see cref="T:Microsoft.Office.Interop.Word.AddIns" /> collection.</span></span> <span data-ttu-id="bc653-127">Para remover um modelo ou WLL da coleção <b>AddIns</b> , aplique o <see cref="M:Microsoft.Office.Interop.Word.AddIn.Delete" /> método ao <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> objeto (o nome do suplemento é removido da caixa de diálogo modelos e suplementos).</span><span class="sxs-lookup"><span data-stu-id="bc653-127">To remove a template or WLL from the <b>AddIns</b> collection, apply the <see cref="M:Microsoft.Office.Interop.Word.AddIn.Delete" /> method to the <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> object (the add-in name is removed from the Templates and Add-ins dialog box).</span></span> <span data-ttu-id="bc653-128">Para descarregar todos os modelos e WLLs, aplique <see cref="M:Microsoft.Office.Interop.Word.AddIns.Unload(System.Boolean)" /> o método à <b></b> coleção AddIns.</span><span class="sxs-lookup"><span data-stu-id="bc653-128">To unload all templates and WLLs, apply the <see cref="M:Microsoft.Office.Interop.Word.AddIns.Unload(System.Boolean)" /> method to the <b>AddIns</b> collection.</span></span></para>
+        <remarks><para><span data-ttu-id="5500c-125">Os suplementos carregados são selecionados na caixa de diálogo Modelos e Suplementos (menu Ferramentas).</span><span class="sxs-lookup"><span data-stu-id="5500c-125">Add-ins that are loaded are selected in the Templates and Add-ins dialog box (Tools menu).</span></span></para>
+          <para><span data-ttu-id="5500c-126">Suplementos desinstalados estão incluídos na <see cref="T:Microsoft.Office.Interop.Word.AddIns" /> coleção.</span><span class="sxs-lookup"><span data-stu-id="5500c-126">Uninstalled add-ins are included in the <see cref="T:Microsoft.Office.Interop.Word.AddIns" /> collection.</span></span> <span data-ttu-id="5500c-127">Para remover um modelo ou WLL da coleção <b>AddIns</b> , aplique o <see cref="M:Microsoft.Office.Interop.Word.AddIn.Delete" /> método ao <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> objeto (o nome do suplemento é removido da caixa de diálogo modelos e suplementos).</span><span class="sxs-lookup"><span data-stu-id="5500c-127">To remove a template or WLL from the <b>AddIns</b> collection, apply the <see cref="M:Microsoft.Office.Interop.Word.AddIn.Delete" /> method to the <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> object (the add-in name is removed from the Templates and Add-ins dialog box).</span></span> <span data-ttu-id="5500c-128">Para descarregar todos os modelos e WLLs, aplique o <see cref="M:Microsoft.Office.Interop.Word.AddIns.Unload(System.Boolean)" /> método à coleção <b>AddIns</b> .</span><span class="sxs-lookup"><span data-stu-id="5500c-128">To unload all templates and WLLs, apply the <see cref="M:Microsoft.Office.Interop.Word.AddIns.Unload(System.Boolean)" /> method to the <b>AddIns</b> collection.</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -236,6 +244,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.AddIn.Name" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Office.Interop.Word.AddIn.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -253,7 +262,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="bc653-129">Retorna um valor que indica o nome do objeto especificado <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> .</span><span class="sxs-lookup"><span data-stu-id="bc653-129">Returns a value that indicates the name of the specified <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> object.</span></span></summary>
+        <summary><span data-ttu-id="5500c-129">Retorna um valor que indica o nome do objeto especificado <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> .</span><span class="sxs-lookup"><span data-stu-id="5500c-129">Returns a value that indicates the name of the specified <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -264,6 +273,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.AddIn.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.AddIn.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -281,7 +291,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="bc653-130">Retorna um valor que representa o objeto pai do objeto especificado <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> .</span><span class="sxs-lookup"><span data-stu-id="bc653-130">Returns a value that represents the parent object of the specified <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> object.</span></span></summary>
+        <summary><span data-ttu-id="5500c-130">Retorna um valor que representa o objeto pai do objeto especificado <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> .</span><span class="sxs-lookup"><span data-stu-id="5500c-130">Returns a value that represents the parent object of the specified <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -292,6 +302,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.AddIn.Path" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Path As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Path { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Path : string" Usage="Microsoft.Office.Interop.Word.AddIn.Path" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -309,9 +320,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><span data-ttu-id="bc653-131">Retorna um valor que indica a URL para o objeto <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> especificado.</span><span class="sxs-lookup"><span data-stu-id="bc653-131">Returns a value that indicates the URL to the specified <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> object.</span></span></summary>
+        <summary><span data-ttu-id="5500c-131">Retorna um valor que indica a URL para o <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> objeto especificado.</span><span class="sxs-lookup"><span data-stu-id="5500c-131">Returns a value that indicates the URL to the specified <see cref="T:Microsoft.Office.Interop.Word.AddIn" /> object.</span></span></summary>
         <value>To be added.</value>
-        <remarks><para><span data-ttu-id="bc653-132">O caminho não inclui um caractere de barra à direita (por exemplo, "http://MyServer".</span><span class="sxs-lookup"><span data-stu-id="bc653-132">The path doesn't include a trailing forward slash character—for example, "http://MyServer".</span></span> <span data-ttu-id="bc653-133">Use a <see cref="P:Microsoft.Office.Interop.Word.ApplicationClass.PathSeparator" /> propriedade para adicionar um caractere de barra de avanço à direita, mesmo que a propriedade <b>PathSeparator</b> padrão a uma barra\)invertida (.</span><span class="sxs-lookup"><span data-stu-id="bc653-133">Use the <see cref="P:Microsoft.Office.Interop.Word.ApplicationClass.PathSeparator" /> property to add a trailing forward slash character even though the <b>PathSeparator</b> property defaults to a backslash (\).</span></span></para>
+        <remarks><para><span data-ttu-id="5500c-132">O caminho não inclui um caractere de barra à direita (por exemplo, " http://MyServer ".</span><span class="sxs-lookup"><span data-stu-id="5500c-132">The path doesn't include a trailing forward slash character—for example, "http://MyServer".</span></span> <span data-ttu-id="5500c-133">Use a <see cref="P:Microsoft.Office.Interop.Word.ApplicationClass.PathSeparator" /> propriedade para adicionar um caractere de barra de avanço à direita, mesmo que a propriedade <b>PathSeparator</b> padrão a uma barra invertida ( \) .</span><span class="sxs-lookup"><span data-stu-id="5500c-133">Use the <see cref="P:Microsoft.Office.Interop.Word.ApplicationClass.PathSeparator" /> property to add a trailing forward slash character even though the <b>PathSeparator</b> property defaults to a backslash (\).</span></span></para>
           <para> </para></remarks>
       </Docs>
     </Member>
