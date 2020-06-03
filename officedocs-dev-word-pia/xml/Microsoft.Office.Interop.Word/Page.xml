@@ -1,9 +1,10 @@
 <Type Name="Page" FullName="Microsoft.Office.Interop.Word.Page">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="8d472e16e6aba91d640b12e000710035de65e0ab" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144236" /></Metadata><TypeSignature Language="C#" Value="public interface Page" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="42944665328b28da638d5f0671a18c3f7641b23f" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43924785" /></Metadata><TypeSignature Language="C#" Value="public interface Page" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Page" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Page" />
   <TypeSignature Language="VB.NET" Value="Public Interface Page" />
   <TypeSignature Language="C++ CLI" Value="public interface class Page" />
+  <TypeSignature Language="F#" Value="type Page = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -20,8 +21,8 @@
   <Docs>
     <summary>Representa uma página em um documento. Use o objeto <b>Page</b> e relacionados métodos e propriedades para definir programaticamente o layout de página em um documento.</summary>
     <remarks><para>Use o <see cref="P:Microsoft.Office.Interop.Word.Pages.Item(System.Int32)" /> método para acessar uma página específica em um documento.</para>
-      <para>Para acessar o número de página, use <see cref="P:Microsoft.Office.Interop.Word.Range.Information(Microsoft.Office.Interop.Word.WdInformation)" /> a propriedade de <see cref="T:Microsoft.Office.Interop.Word.Range" /> um <see cref="T:Microsoft.Office.Interop.Word.Selection" /> objeto or ou a <see cref="P:Microsoft.Office.Interop.Word.Break.PageIndex" /> propriedade de um <see cref="T:Microsoft.Office.Interop.Word.Break" /> objeto que pertença à <see cref="T:Microsoft.Office.Interop.Word.Breaks" /> coleção do objeto <b>Page</b> especificado.</para>
-      <para>As <see cref="P:Microsoft.Office.Interop.Word.Page.Top" /> propriedades <see cref="P:Microsoft.Office.Interop.Word.Page.Left" /> e do objeto <b>Page</b> sempre retornam 0 (zero) indicando o canto superior esquerdo da página. As <see cref="P:Microsoft.Office.Interop.Word.Page.Height" /> propriedades <see cref="P:Microsoft.Office.Interop.Word.Page.Width" /> e retornam a altura e a largura em pontos (72 pontos = 1 polegada) do tamanho do papel especificado na caixa de diálogo Configurar página <see cref="T:Microsoft.Office.Interop.Word.PageSetup" /> ou por meio do objeto. Por exemplo, para uma página de polegada 8 1/2 x 279 no modo retrato, a propriedade <b>Height</b> retorna 792 e a propriedade <b>Width</b> retornará 612. Todos os quatro dessas propriedades são somente leitura.</para>
+      <para>Para acessar o número de página, use a <see cref="P:Microsoft.Office.Interop.Word.Range.Information(Microsoft.Office.Interop.Word.WdInformation)" /> propriedade de um <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto or ou <see cref="T:Microsoft.Office.Interop.Word.Selection" /> a <see cref="P:Microsoft.Office.Interop.Word.Break.PageIndex" /> propriedade de um <see cref="T:Microsoft.Office.Interop.Word.Break" /> objeto que pertença à <see cref="T:Microsoft.Office.Interop.Word.Breaks" /> coleção do objeto <b>Page</b> especificado.</para>
+      <para>As <see cref="P:Microsoft.Office.Interop.Word.Page.Top" /> <see cref="P:Microsoft.Office.Interop.Word.Page.Left" /> Propriedades e do objeto <b>Page</b> sempre retornam 0 (zero) indicando o canto superior esquerdo da página. As <see cref="P:Microsoft.Office.Interop.Word.Page.Height" /> <see cref="P:Microsoft.Office.Interop.Word.Page.Width" /> Propriedades e retornam a altura e a largura em pontos (72 pontos = 1 polegada) do tamanho do papel especificado na caixa de diálogo Configurar página ou por meio do <see cref="T:Microsoft.Office.Interop.Word.PageSetup" /> objeto. Por exemplo, para uma página de polegada 8 1/2 x 279 no modo retrato, a propriedade <b>Height</b> retorna 792 e a propriedade <b>Width</b> retornará 612. Todos os quatro dessas propriedades são somente leitura.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Page.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Page.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Page.Breaks" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Breaks As Breaks" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Breaks ^ Breaks { Microsoft::Office::Interop::Word::Breaks ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Breaks : Microsoft.Office.Interop.Word.Breaks" Usage="Microsoft.Office.Interop.Word.Page.Breaks" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -88,6 +91,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Page.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Page.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -118,6 +122,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Page.EnhMetaFileBits" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EnhMetaFileBits As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ EnhMetaFileBits { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EnhMetaFileBits : obj" Usage="Microsoft.Office.Interop.Word.Page.EnhMetaFileBits" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -137,7 +142,7 @@
       <Docs>
         <summary>Retorna um <b>objeto</b> que representa uma representação de imagem de como uma página de texto é exibida. Somente leitura.</summary>
         <value><b>Object</b></value>
-        <remarks><para>A <see cref="P:Microsoft.Office.Interop.Word.Page.EnhMetaFileBits" /> propriedade retorna uma matriz de bytes, que pode ser usada com a interface de programação de aplicativos do microsoft Windows 32 de dentro do ambiente de desenvolvimento do Microsoft Visual Basic ou do Microsoft C++.</para>
+        <remarks><para>A <see cref="P:Microsoft.Office.Interop.Word.Page.EnhMetaFileBits" /> propriedade retorna uma matriz de bytes, que pode ser usada com a interface de programação de aplicativos do Microsoft Windows 32 de dentro do ambiente de desenvolvimento do Microsoft Visual Basic ou do Microsoft C++.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -147,6 +152,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Page.Height" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Height As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Height { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Height : int" Usage="Microsoft.Office.Interop.Word.Page.Height" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -164,7 +170,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A propriedade <b>Height</b> retorna a altura em pontos (72 pontos = 1 polegada) do tamanho do papel especificado na caixa de diálogo Configurar página ou por <see cref="T:Microsoft.Office.Interop.Word.PageSetup" /> meio do objeto.</summary>
+        <summary>A propriedade <b>Height</b> retorna a altura em pontos (72 pontos = 1 polegada) do tamanho do papel especificado na caixa de diálogo Configurar página ou por meio do <see cref="T:Microsoft.Office.Interop.Word.PageSetup" /> objeto.</summary>
         <value>To be added.</value>
         <remarks><para>Por exemplo, para uma página de polegada 8 1/2 x 279 no modo retrato, a propriedade <b>Height</b> retorna 792 e a propriedade <b>Width</b> retornará 612.</para>
           <para> </para></remarks>
@@ -176,6 +182,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Page.Left" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Left As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Left { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Left : int" Usage="Microsoft.Office.Interop.Word.Page.Left" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -204,6 +211,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Page.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Page.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -232,6 +240,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Page.Rectangles" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Rectangles As Rectangles" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Rectangles ^ Rectangles { Microsoft::Office::Interop::Word::Rectangles ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Rectangles : Microsoft.Office.Interop.Word.Rectangles" Usage="Microsoft.Office.Interop.Word.Page.Rectangles" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -261,6 +270,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Page.SaveAsPNG(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SaveAsPNG (FileName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SaveAsPNG(System::String ^ FileName);" />
+      <MemberSignature Language="F#" Value="abstract member SaveAsPNG : string -&gt; unit" Usage="page.SaveAsPNG FileName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -292,6 +302,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Page.Top" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Top As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Top { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Top : int" Usage="Microsoft.Office.Interop.Word.Page.Top" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -320,6 +331,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Page.Width" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Width As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Width { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Width : int" Usage="Microsoft.Office.Interop.Word.Page.Width" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -337,7 +349,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna a largura em pontos (72 pontos = 1 polegada) do tamanho do papel especificado na caixa de diálogo Configurar página ou por <see cref="T:Microsoft.Office.Interop.Word.PageSetup" /> meio do objeto.</summary>
+        <summary>Retorna a largura em pontos (72 pontos = 1 polegada) do tamanho do papel especificado na caixa de diálogo Configurar página ou por meio do <see cref="T:Microsoft.Office.Interop.Word.PageSetup" /> objeto.</summary>
         <value>To be added.</value>
         <remarks><para>Por exemplo, para uma página de polegada 8 1/2 x 279 no modo retrato, a propriedade <b>Height</b> retorna 792 e a propriedade <b>Width</b> retornará 612.</para>
           <para> </para></remarks>

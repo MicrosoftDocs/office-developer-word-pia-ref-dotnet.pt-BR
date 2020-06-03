@@ -1,9 +1,10 @@
 <Type Name="Sentences" FullName="Microsoft.Office.Interop.Word.Sentences">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="b9c8f2df0c924a72bb12132f74fa03d11816de86" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144047" /></Metadata><TypeSignature Language="C#" Value="public interface Sentences : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="818b8b398d8a0178d19c80127a6522e7a01e6f8f" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43924456" /></Metadata><TypeSignature Language="C#" Value="public interface Sentences : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Sentences implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Sentences" />
   <TypeSignature Language="VB.NET" Value="Public Interface Sentences&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class Sentences : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type Sentences = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -23,10 +24,10 @@
   </Attributes>
   <Docs>
     <summary>Uma coleção de <see cref="T:Microsoft.Office.Interop.Word.Range" /> objetos que representam todas as frases de uma seleção, intervalo ou documento. Não há nenhum objeto sentença.</summary>
-    <remarks><para>Use a propriedade <b>Sentences</b> de um <see cref="T:Microsoft.Office.Interop.Word.Selection" />objeto <see cref="T:Microsoft.Office.Interop.Word.Range" /> , ou <see cref="T:Microsoft.Office.Interop.Word.Document" /> , para retornar a coleção <b>Sentences</b> .</para>
-      <para>Use <b>frases</b>(<paramref name="index" />), onde <paramref name="index" /> é o número de índice, para retornar um objeto <b>Range</b> que representa uma frase. O número de índice representa a posição de uma frase na coleção de <b>sentenças</b>.</para>
-      <para>A <see cref="P:Microsoft.Office.Interop.Word.Sentences.Count" /> Propriedade dessa coleção em um documento retorna o número de itens somente no texto principal. Para contar itens em outros textos usam a coleção com o objeto de <b>intervalo</b>.</para>
-      <para>O método <b>Add</b> não está disponível para o conjunto de <b>sentenças</b>. Em vez disso, <see cref="M:Microsoft.Office.Interop.Word.Range.InsertAfter(System.String)" /> use <see cref="M:Microsoft.Office.Interop.Word.Range.InsertBefore(System.String)" /> o método ou para adicionar uma frase a um objeto <b>Range</b> .</para>
+    <remarks><para>Use a propriedade <b>Sentences</b> de um <see cref="T:Microsoft.Office.Interop.Word.Selection" /> <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto, ou, <see cref="T:Microsoft.Office.Interop.Word.Document" /> para retornar a coleção <b>Sentences</b> .</para>
+      <para>Use <b>frases</b>( <paramref name="index" /> ), onde <paramref name="index" /> é o número de índice, para retornar um objeto <b>Range</b> que representa uma frase. O número de índice representa a posição de uma frase na coleção de <b>sentenças</b>.</para>
+      <para>A <see cref="P:Microsoft.Office.Interop.Word.Sentences.Count" /> propriedade dessa coleção em um documento retorna o número de itens somente no texto principal. Para contar itens em outros textos usam a coleção com o objeto de <b>intervalo</b>.</para>
+      <para>O método <b>Add</b> não está disponível para o conjunto de <b>sentenças</b>. Em vez disso, use o <see cref="M:Microsoft.Office.Interop.Word.Range.InsertAfter(System.String)" /> <see cref="M:Microsoft.Office.Interop.Word.Range.InsertBefore(System.String)" /> método ou para adicionar uma frase a um objeto <b>Range</b> .</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Sentences.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Sentences.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -64,6 +66,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Sentences.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.Sentences.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -92,6 +95,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Sentences.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Sentences.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -122,6 +126,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Sentences.First" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property First As Range" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ First { Microsoft::Office::Interop::Word::Range ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.First : Microsoft.Office.Interop.Word.Range" Usage="Microsoft.Office.Interop.Word.Sentences.First" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -150,6 +155,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Sentences.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="sentences.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -182,6 +188,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Sentences.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Integer) As Range" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ default[int] { Microsoft::Office::Interop::Word::Range ^ get(int Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : Microsoft.Office.Interop.Word.Range" Usage="Microsoft.Office.Interop.Word.Sentences.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -214,6 +221,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Sentences.Last" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Last As Range" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ Last { Microsoft::Office::Interop::Word::Range ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Last : Microsoft.Office.Interop.Word.Range" Usage="Microsoft.Office.Interop.Word.Sentences.Last" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -242,6 +250,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Sentences.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Sentences.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

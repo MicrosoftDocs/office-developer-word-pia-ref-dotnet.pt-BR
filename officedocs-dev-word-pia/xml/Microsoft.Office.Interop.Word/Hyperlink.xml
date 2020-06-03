@@ -1,9 +1,10 @@
 <Type Name="Hyperlink" FullName="Microsoft.Office.Interop.Word.Hyperlink">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="b605957f028ab3eb567ae3d9d066ecf695f2ce45" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146707" /></Metadata><TypeSignature Language="C#" Value="public interface Hyperlink" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="910186cf6c907f486ecf56681247ca7b360aef3a" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43924001" /></Metadata><TypeSignature Language="C#" Value="public interface Hyperlink" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Hyperlink" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Hyperlink" />
   <TypeSignature Language="VB.NET" Value="Public Interface Hyperlink" />
   <TypeSignature Language="C++ CLI" Value="public interface class Hyperlink" />
+  <TypeSignature Language="F#" Value="type Hyperlink = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -21,7 +22,7 @@
     <summary>Representa um hyperlink.</summary>
     <remarks><para>O objeto <b>Hyperlink</b> é um membro da <see cref="T:Microsoft.Office.Interop.Word.Hyperlinks" /> coleção.</para>
       <para>Use a <see cref="P:Microsoft.Office.Interop.Word.Shape.Hyperlink" /> propriedade para retornar um objeto <b>Hyperlink</b> associado a uma forma (uma forma pode ter apenas um hiperlink).</para>
-      <para>Use <b></b>hiperlinks (<paramref name="index" />), onde <paramref name="index" /> é o número de índice, para retornar um único objeto <b>Hyperlink</b> de um documento, intervalo ou seleção.</para>
+      <para>Use <b>hiperlinks</b>( <paramref name="index" /> ), onde <paramref name="index" /> é o número de índice, para retornar um único objeto <b>Hyperlink</b> de um documento, intervalo ou seleção.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Hyperlink.Address" />
       <MemberSignature Language="VB.NET" Value="Public Property Address As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Address { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Address : string with get, set" Usage="Microsoft.Office.Interop.Word.Hyperlink.Address" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Hyperlink.AddressOld" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AddressOld As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AddressOld { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AddressOld : string" Usage="Microsoft.Office.Interop.Word.Hyperlink.AddressOld" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Hyperlink.AddToFavorites" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddToFavorites ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddToFavorites();" />
+      <MemberSignature Language="F#" Value="abstract member AddToFavorites : unit -&gt; unit" Usage="hyperlink.AddToFavorites " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -118,6 +122,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Hyperlink.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Hyperlink.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -146,6 +151,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Hyperlink.CreateNewDocument(System.String,System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CreateNewDocument (FileName As String, EditNow As Boolean, Overwrite As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CreateNewDocument(System::String ^ FileName, bool EditNow, bool Overwrite);" />
+      <MemberSignature Language="F#" Value="abstract member CreateNewDocument : string * bool * bool -&gt; unit" Usage="hyperlink.CreateNewDocument (FileName, EditNow, Overwrite)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -167,7 +173,7 @@
       <Docs>
         <param name="FileName"><b>String</b> necessário. O nome de arquivo do documento especificado.</param>
         <param name="EditNow"><b>Booliano</b>necessário. <b>True</b> para fazer com que o documento especificado abra imediatamente em seu ambiente de edição associado. O valor padrão é <b>True</b>.</param>
-        <param name="Overwrite"><b>Booliano</b>necessário. <b>True</b> para sobrescrever qualquer arquivo já existente com o mesmo nome na mesma pasta. <b>False</b> se qualquer arquivo existente com o mesmo nome é preservado e <paramref name="FileName" /> o argumento especifica um novo nome de arquivo. O valor padrão é <b>False</b>.</param>
+        <param name="Overwrite"><b>Booliano</b>necessário. <b>True</b> para sobrescrever qualquer arquivo já existente com o mesmo nome na mesma pasta. <b>False</b> se qualquer arquivo existente com o mesmo nome é preservado e o <paramref name="FileName" /> argumento especifica um novo nome de arquivo. O valor padrão é <b>False</b>.</param>
         <summary>Cria um novo documento vinculado ao hiperlink especificado.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -178,6 +184,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Hyperlink.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Hyperlink.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -208,6 +215,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Hyperlink.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberSignature Language="F#" Value="abstract member Delete : unit -&gt; unit" Usage="hyperlink.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -233,6 +241,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Hyperlink.EmailSubject" />
       <MemberSignature Language="VB.NET" Value="Public Property EmailSubject As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ EmailSubject { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.EmailSubject : string with get, set" Usage="Microsoft.Office.Interop.Word.Hyperlink.EmailSubject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -265,6 +274,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Hyperlink.ExtraInfoRequired" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExtraInfoRequired As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ExtraInfoRequired { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.ExtraInfoRequired : bool" Usage="Microsoft.Office.Interop.Word.Hyperlink.ExtraInfoRequired" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -293,6 +303,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Follow([in]object&amp; NewWindow, [in]object&amp; AddHistory, [in]object&amp; ExtraInfo, [in]object&amp; Method, [in]object&amp; HeaderInfo) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Hyperlink.Follow(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Follow (Optional ByRef NewWindow As Object, Optional ByRef AddHistory As Object, Optional ByRef ExtraInfo As Object, Optional ByRef Method As Object, Optional ByRef HeaderInfo As Object)" />
+      <MemberSignature Language="F#" Value="abstract member Follow : obj * obj * obj * obj * obj -&gt; unit" Usage="hyperlink.Follow (NewWindow, AddHistory, ExtraInfo, Method, HeaderInfo)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -307,19 +318,19 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="NewWindow" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="AddHistory" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="ExtraInfo" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="Method" Type="System.Object&amp;" RefType="ref" />
-        <Parameter Name="HeaderInfo" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="NewWindow" Type="System.Object" RefType="ref" />
+        <Parameter Name="AddHistory" Type="System.Object" RefType="ref" />
+        <Parameter Name="ExtraInfo" Type="System.Object" RefType="ref" />
+        <Parameter Name="Method" Type="System.Object" RefType="ref" />
+        <Parameter Name="HeaderInfo" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="NewWindow"><b>Objeto</b>opcional. <b>True</b> para exibir o documento alvo em uma nova janela. O valor padrão é <b>False</b>.</param>
         <param name="AddHistory"><b>Objeto</b>opcional. Esse argumento é reservado para uso futuro.</param>
-        <param name="ExtraInfo"><b>Objeto</b>opcional. Uma matriz de bytes ou sequências de caracteres que especifica informações adicionais para que o HTTP resolva o hiperlink. Por exemplo, você pode usar <paramref name="ExtraInfo" /> para especificar as coordenadas de um mapa de imagem, o conteúdo de um formulário ou um nome de arquivo FAT. A cadeia de caracteres é postada ou acrescentada, dependendo do valor de <paramref name="Method" />. Use a <see cref="P:Microsoft.Office.Interop.Word.Hyperlink.ExtraInfoRequired" /> propriedade para determinar se é necessário fornecer informações extras.</param>
+        <param name="ExtraInfo"><b>Objeto</b>opcional. Uma matriz de bytes ou sequências de caracteres que especifica informações adicionais para que o HTTP resolva o hiperlink. Por exemplo, você pode usar <paramref name="ExtraInfo" /> para especificar as coordenadas de um mapa de imagem, o conteúdo de um formulário ou um nome de arquivo FAT. A cadeia de caracteres é postada ou acrescentada, dependendo do valor de <paramref name="Method" /> . Use a <see cref="P:Microsoft.Office.Interop.Word.Hyperlink.ExtraInfoRequired" /> propriedade para determinar se é necessário fornecer informações extras.</param>
         <param name="Method"><b>Objeto</b>opcional. Especifica a maneira como são manipuladas as informações adicionais para HTTP. Pode ser qualquer <see cref="T:Microsoft.Office.Core.MsoExtraInfoMethod" /> constante.</param>
         <param name="HeaderInfo"><b>Objeto</b>opcional. Uma string que especifica as informações do cabeçalho para a solicitação de HTTP. O valor padrão é uma sequência de caracteres vazia. Você pode combinar várias linhas de cabeçalho em uma única cadeia de caracteres. A string especificada é convertida automaticamente em caracteres ANSI. Observe que o <paramref name="HeaderInfo" /> argumento pode substituir os campos de cabeçalho HTTP padrão.</param>
-        <summary>Exibe um documento armazenado em cache associado ao objeto <see cref="T:Microsoft.Office.Interop.Word.Hyperlink" /> especificado, caso já tenha sido baixado. Caso contrário, este método resolve o hiperlink, baixa o documento alvo e exibe o documento no aplicativo apropriado.</summary>
+        <summary>Exibe um documento armazenado em cache associado ao <see cref="T:Microsoft.Office.Interop.Word.Hyperlink" /> objeto especificado, caso já tenha sido baixado. Caso contrário, este método resolve o hiperlink, baixa o documento alvo e exibe o documento no aplicativo apropriado.</summary>
         <remarks><para>Quando o hiperlink usa o protocolo de arquivos, esse método abre o documento em vez de fazer o seu download.</para>
           <para> </para></remarks>
       </Docs>
@@ -330,6 +341,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Hyperlink.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Office.Interop.Word.Hyperlink.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -358,6 +370,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Hyperlink.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Hyperlink.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -386,6 +399,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Hyperlink.Range" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Range As Range" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Range ^ Range { Microsoft::Office::Interop::Word::Range ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Range : Microsoft.Office.Interop.Word.Range" Usage="Microsoft.Office.Interop.Word.Hyperlink.Range" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -405,7 +419,7 @@
       <Docs>
         <summary>Retorna um <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto que representa a parte de um documento que está contida no objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks><para>Para obter informações sobre como retornar um intervalo de um documento ou retornar um intervalo de formas de uma coleção de formas <see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" /> , consulte o método.</para>
+        <remarks><para>Para obter informações sobre como retornar um intervalo de um documento ou retornar um intervalo de formas de uma coleção de formas, consulte o <see cref="M:Microsoft.Office.Interop.Word._Document.Range(System.Object@,System.Object@)" /> método.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -415,6 +429,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Hyperlink.ScreenTip" />
       <MemberSignature Language="VB.NET" Value="Public Property ScreenTip As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ScreenTip { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ScreenTip : string with get, set" Usage="Microsoft.Office.Interop.Word.Hyperlink.ScreenTip" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -446,6 +461,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Hyperlink.Shape" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Shape As Shape" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Shape ^ Shape { Microsoft::Office::Interop::Word::Shape ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Shape : Microsoft.Office.Interop.Word.Shape" Usage="Microsoft.Office.Interop.Word.Hyperlink.Shape" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -475,6 +491,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Hyperlink.SubAddress" />
       <MemberSignature Language="VB.NET" Value="Public Property SubAddress As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SubAddress { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SubAddress : string with get, set" Usage="Microsoft.Office.Interop.Word.Hyperlink.SubAddress" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -507,6 +524,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Hyperlink.SubAddressOld" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SubAddressOld As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SubAddressOld { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SubAddressOld : string" Usage="Microsoft.Office.Interop.Word.Hyperlink.SubAddressOld" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -538,6 +556,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Hyperlink.Target" />
       <MemberSignature Language="VB.NET" Value="Public Property Target As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Target { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Target : string with get, set" Usage="Microsoft.Office.Interop.Word.Hyperlink.Target" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -569,6 +588,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Hyperlink.TextToDisplay" />
       <MemberSignature Language="VB.NET" Value="Public Property TextToDisplay As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TextToDisplay { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TextToDisplay : string with get, set" Usage="Microsoft.Office.Interop.Word.Hyperlink.TextToDisplay" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -600,6 +620,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Hyperlink.Type" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As MsoHyperlinkType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoHyperlinkType Type { Microsoft::Office::Core::MsoHyperlinkType get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : Microsoft.Office.Core.MsoHyperlinkType" Usage="Microsoft.Office.Interop.Word.Hyperlink.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

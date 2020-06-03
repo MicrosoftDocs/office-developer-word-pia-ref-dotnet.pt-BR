@@ -1,9 +1,10 @@
 <Type Name="ListParagraphs" FullName="Microsoft.Office.Interop.Word.ListParagraphs">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="f2ed5da4555633a8837f621bb30fd13601729534" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34146147" /></Metadata><TypeSignature Language="C#" Value="public interface ListParagraphs : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="57d0102130b9bb46854110335107eedf669654e9" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43925272" /></Metadata><TypeSignature Language="C#" Value="public interface ListParagraphs : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ListParagraphs implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ListParagraphs" />
   <TypeSignature Language="VB.NET" Value="Public Interface ListParagraphs&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class ListParagraphs : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type ListParagraphs = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -24,10 +25,10 @@
   <Docs>
     <summary>Uma coleção de <see cref="T:Microsoft.Office.Interop.Word.Paragraph" /> objetos que representa os parágrafos do documento, da lista ou do intervalo especificado com formatação de lista aplicada.</summary>
     <remarks><para>Use a <see cref="P:Microsoft.Office.Interop.Word._Document.ListParagraphs" /> propriedade para retornar a coleção <b>ListParagraphs</b> .</para>
-      <para>Use <b>ListParagraphs</b>(<paramref name="index" />), onde <paramref name="index" /> é o número de índice, para retornar um único objeto Paragraph com formatação de lista.</para>
+      <para>Use <b>ListParagraphs</b>( <paramref name="index" /> ), onde <paramref name="index" /> é o número de índice, para retornar um único objeto Paragraph com formatação de lista.</para>
       <para>Os parágrafos podem ter dois tipos de formatação de lista. O primeiro tipo inclui um número ou um marcador acrescentado automaticamente no início de cada parágrafo da lista. O segundo tipo inclui campos LISTNUM, que podem ser inseridos em qualquer lugar em um parágrafo. É possível existir mais de um campo LISTNUM por parágrafo.</para>
-      <para>Para adicionar formatação de lista a parágrafos, você pode usar <see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@,System.Object@)" /> o <see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyBulletDefault(System.Object@)" /> método <see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyNumberDefault(System.Object@)" /> ,, <see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyOutlineNumberDefault(System.Object@)" /> ou. Você pode acessar esses métodos através do objeto <b>ListFormat</b> para um intervalo especificado.</para>
-      <para>A <see cref="P:Microsoft.Office.Interop.Word.ListParagraphs.Count" /> Propriedade dessa coleção em um documento retorna o número de itens somente no texto principal. Para contar itens em outros textos, use a coleção com <see cref="T:Microsoft.Office.Interop.Word.Range" /> o objeto.</para>
+      <para>Para adicionar formatação de lista a parágrafos, você pode usar <see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyListTemplate(Microsoft.Office.Interop.Word.ListTemplate,System.Object@,System.Object@,System.Object@)" /> o <see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyBulletDefault(System.Object@)" /> método,, <see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyNumberDefault(System.Object@)" /> ou <see cref="M:Microsoft.Office.Interop.Word.ListFormat.ApplyOutlineNumberDefault(System.Object@)" /> . Você pode acessar esses métodos através do objeto <b>ListFormat</b> para um intervalo especificado.</para>
+      <para>A <see cref="P:Microsoft.Office.Interop.Word.ListParagraphs.Count" /> propriedade dessa coleção em um documento retorna o número de itens somente no texto principal. Para contar itens em outros textos, use a coleção com o <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -37,6 +38,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListParagraphs.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.ListParagraphs.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -65,6 +67,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListParagraphs.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.ListParagraphs.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListParagraphs.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.ListParagraphs.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -123,6 +127,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ListParagraphs.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="listParagraphs.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -155,6 +160,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListParagraphs.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Integer) As Paragraph" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Paragraph ^ default[int] { Microsoft::Office::Interop::Word::Paragraph ^ get(int Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : Microsoft.Office.Interop.Word.Paragraph" Usage="Microsoft.Office.Interop.Word.ListParagraphs.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -187,6 +193,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListParagraphs.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.ListParagraphs.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

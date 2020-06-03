@@ -1,9 +1,10 @@
 <Type Name="Revisions" FullName="Microsoft.Office.Interop.Word.Revisions">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="dcf957961a05e06b776741ff11ebc85cce0581a2" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147659" /></Metadata><TypeSignature Language="C#" Value="public interface Revisions : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="f077439701c24aa0f04972877aa8b08c3fec3694" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43924540" /></Metadata><TypeSignature Language="C#" Value="public interface Revisions : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Revisions implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Revisions" />
   <TypeSignature Language="VB.NET" Value="Public Interface Revisions&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class Revisions : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type Revisions = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -23,10 +24,10 @@
   </Attributes>
   <Docs>
     <summary>Uma coleção de <see cref="T:Microsoft.Office.Interop.Word.Revision" /> objetos que representa as alterações marcadas com marcas de revisão em um intervalo ou documento.</summary>
-    <remarks><para>Use a <b></b> Propriedade Revisions de um <see cref="T:Microsoft.Office.Interop.Word.Document" /> objeto <see cref="T:Microsoft.Office.Interop.Word.Range" /> or para retornar a <b></b> coleção Revisions.</para>
-      <para>O método <b>Add</b> não está disponível para a coleção <b>Revisions</b>. Objetos de <b>revisão</b> são adicionados quando o controle de alterações estiver habilitada. Defina a <see cref="P:Microsoft.Office.Interop.Word._Document.TrackRevisions" /> Propriedade como <b>true</b> para rastrear revisões feitas no texto do documento.</para>
-      <para>Use <b>revisões</b>(<paramref name="index" />), em que <paramref name="index" /> é o número de índice, para retornar um único objeto Revision. <b></b> O número de índice representa a posição da revisão no intervalo ou documento.</para>
-      <para>A <see cref="P:Microsoft.Office.Interop.Word.Revisions.Count" /> Propriedade dessa coleção em um documento retorna o número de itens somente no texto principal. Para contar itens em outros textos usam a coleção com o objeto de <b>intervalo</b>.</para>
+    <remarks><para>Use a propriedade <b>Revisions</b> de um <see cref="T:Microsoft.Office.Interop.Word.Document" /> <see cref="T:Microsoft.Office.Interop.Word.Range" /> objeto or para retornar a coleção <b>Revisions</b> .</para>
+      <para>O método <b>Add</b> não está disponível para a coleção <b>Revisions</b>. Objetos de <b>revisão</b> são adicionados quando o controle de alterações estiver habilitada. Defina a <see cref="P:Microsoft.Office.Interop.Word._Document.TrackRevisions" /> propriedade como <b>true</b> para rastrear revisões feitas no texto do documento.</para>
+      <para>Use <b>revisões</b>( <paramref name="index" /> ), em que <paramref name="index" /> é o número de índice, para retornar um único objeto <b>Revision</b> . O número de índice representa a posição da revisão no intervalo ou documento.</para>
+      <para>A <see cref="P:Microsoft.Office.Interop.Word.Revisions.Count" /> propriedade dessa coleção em um documento retorna o número de itens somente no texto principal. Para contar itens em outros textos usam a coleção com o objeto de <b>intervalo</b>.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Revisions.AcceptAll" />
       <MemberSignature Language="VB.NET" Value="Public Sub AcceptAll ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AcceptAll();" />
+      <MemberSignature Language="F#" Value="abstract member AcceptAll : unit -&gt; unit" Usage="revisions.AcceptAll " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -62,6 +64,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Revisions.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.Revisions.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -91,6 +94,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Revisions.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.Revisions.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -119,6 +123,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Revisions.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Revisions.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -149,6 +154,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Revisions.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="revisions.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -181,6 +187,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Revisions.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Integer) As Revision" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Revision ^ default[int] { Microsoft::Office::Interop::Word::Revision ^ get(int Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : Microsoft.Office.Interop.Word.Revision" Usage="Microsoft.Office.Interop.Word.Revisions.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -213,6 +220,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Revisions.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Revisions.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -241,6 +249,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Revisions.RejectAll" />
       <MemberSignature Language="VB.NET" Value="Public Sub RejectAll ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RejectAll();" />
+      <MemberSignature Language="F#" Value="abstract member RejectAll : unit -&gt; unit" Usage="revisions.RejectAll " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

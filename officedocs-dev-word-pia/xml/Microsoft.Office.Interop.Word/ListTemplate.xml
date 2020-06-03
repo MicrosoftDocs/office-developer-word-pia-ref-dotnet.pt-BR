@@ -1,9 +1,10 @@
 <Type Name="ListTemplate" FullName="Microsoft.Office.Interop.Word.ListTemplate">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="1139c365cea882b428ac0f0075b3c20e4756cad2" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34144502" /></Metadata><TypeSignature Language="C#" Value="public interface ListTemplate" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="16047960fe1fb0381a7a0dd0beb15ba49ebb8c81" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43925265" /></Metadata><TypeSignature Language="C#" Value="public interface ListTemplate" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ListTemplate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.ListTemplate" />
   <TypeSignature Language="VB.NET" Value="Public Interface ListTemplate" />
   <TypeSignature Language="C++ CLI" Value="public interface class ListTemplate" />
+  <TypeSignature Language="F#" Value="type ListTemplate = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -19,13 +20,13 @@
   </Attributes>
   <Docs>
     <summary>Representa um único modelo de lista que inclui toda a formatação que define uma lista.</summary>
-    <remarks><para>O <b></b> objeto ListTemplate é um membro da <see cref="T:Microsoft.Office.Interop.Word.ListTemplates" /> coleção. Cada um dos sete formatos (excluindo Nenhum) encontrados em cada uma das três guias da caixa de diálogo Marcadores e Numeração corresponde a um objeto modelo de lista. Esses modelos de lista predefinidos podem ser acessados a partir dos três <see cref="T:Microsoft.Office.Interop.Word.ListGallery" /> objetos na <see cref="T:Microsoft.Office.Interop.Word.ListGalleries" /> coleção. Os documentos e os modelos também podem conter coleções de modelos de lista.</para>
-      <para>Use <b>ListTemplates</b>(<paramref name="index" />), em <paramref name="index" /> que é um número de 1 a 7, para retornar um único modelo de lista de uma galeria de listas.</para>
+    <remarks><para>O objeto <b>ListTemplate</b> é um membro da <see cref="T:Microsoft.Office.Interop.Word.ListTemplates" /> coleção. Cada um dos sete formatos (excluindo Nenhum) encontrados em cada uma das três guias da caixa de diálogo Marcadores e Numeração corresponde a um objeto modelo de lista. Esses modelos de lista predefinidos podem ser acessados a partir dos três <see cref="T:Microsoft.Office.Interop.Word.ListGallery" /> objetos na <see cref="T:Microsoft.Office.Interop.Word.ListGalleries" /> coleção. Os documentos e os modelos também podem conter coleções de modelos de lista.</para>
+      <para>Use <b>ListTemplates</b>( <paramref name="index" /> ), em que <paramref name="index" /> é um número de 1 a 7, para retornar um único modelo de lista de uma galeria de listas.</para>
       <para>
-        <b>Observação</b>: algumas propriedades e métodos — <see cref="M:Microsoft.Office.Interop.Word.ListTemplate.Convert(System.Object@)" /> e <see cref="M:Microsoft.Office.Interop.Word.ListTemplates.Add(System.Object@,System.Object@)" />, por exemplo, não funcionam com modelos de lista que são acessados a partir de uma galeria de listas. Você pode modificar esses modelos de lista, mas não pode alterar seu tipo de galeria de lista (<b>wdBulletGallery</b>, <b>wdNumberGallery</b> ou <b>wdOutlineNumberGallery</b>).</para>
+        <b>Observação</b>: algumas propriedades e métodos — <see cref="M:Microsoft.Office.Interop.Word.ListTemplate.Convert(System.Object@)" /> e <see cref="M:Microsoft.Office.Interop.Word.ListTemplates.Add(System.Object@,System.Object@)" /> , por exemplo, não funcionam com modelos de lista que são acessados a partir de uma galeria de listas. Você pode modificar esses modelos de lista, mas não pode alterar seu tipo de galeria de lista (<b>wdBulletGallery</b>, <b>wdNumberGallery</b> ou <b>wdOutlineNumberGallery</b>).</para>
       <para>Use o <see cref="M:Microsoft.Office.Interop.Word.ListTemplates.Add(System.Object@,System.Object@)" /> método para adicionar um modelo de lista à coleção de modelos de lista em um documento ou modelo.</para>
-      <para>Para ver se o modelo de lista especificado contém a formatação interna do Microsoft Word, use <see cref="P:Microsoft.Office.Interop.Word.ListGallery.Modified(System.Int32)" /> a propriedade com o objeto <b>ListGallery</b> . Para redefinir a formatação para o formato de lista original, <see cref="M:Microsoft.Office.Interop.Word.ListGallery.Reset(System.Int32)" /> use o método para o objeto <b>ListGallery</b> .</para>
-      <para>Depois de retornar um objeto <b>ListTemplate</b> , use <b>ListLevels</b>(<paramref name="index" />), em que <paramref name="index" /> é um número de 1 a 9, para retornar um único <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> objeto. Com um <b>objeto ListLevel</b> , você tem acesso a todas as propriedades de formatação para o nível de lista especificado, <see cref="P:Microsoft.Office.Interop.Word.ListLevel.Alignment" />como <see cref="P:Microsoft.Office.Interop.Word.ListLevel.Font" />, <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberFormat" /> <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberPosition" /> <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberStyle" />,,, e <see cref="P:Microsoft.Office.Interop.Word.ListLevel.TrailingCharacter" />.</para>
+      <para>Para ver se o modelo de lista especificado contém a formatação interna do Microsoft Word, use a <see cref="P:Microsoft.Office.Interop.Word.ListGallery.Modified(System.Int32)" /> propriedade com o objeto <b>ListGallery</b> . Para redefinir a formatação para o formato de lista original, use o <see cref="M:Microsoft.Office.Interop.Word.ListGallery.Reset(System.Int32)" /> método para o objeto <b>ListGallery</b> .</para>
+      <para>Depois de retornar um objeto <b>ListTemplate</b> , use <b>ListLevels</b>( <paramref name="index" /> ), em que <paramref name="index" /> é um número de 1 a 9, para retornar um único <see cref="T:Microsoft.Office.Interop.Word.ListLevel" /> objeto. Com um objeto <b>ListLevel</b> , você tem acesso a todas as propriedades de formatação para o nível de lista especificado, como,,,, <see cref="P:Microsoft.Office.Interop.Word.ListLevel.Alignment" /> <see cref="P:Microsoft.Office.Interop.Word.ListLevel.Font" /> <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberFormat" /> <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberPosition" /> <see cref="P:Microsoft.Office.Interop.Word.ListLevel.NumberStyle" /> e <see cref="P:Microsoft.Office.Interop.Word.ListLevel.TrailingCharacter" /> .</para>
       <para>Use o <see cref="M:Microsoft.Office.Interop.Word.ListTemplate.Convert(System.Object@)" /> método para converter um modelo de lista de vários níveis em um modelo de nível único.</para>
       <para> </para></remarks>
   </Docs>
@@ -36,6 +37,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListTemplate.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.ListTemplate.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -63,6 +65,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.ListTemplate Convert([in]object&amp; Level) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.ListTemplate.Convert(System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Function Convert (Optional ByRef Level As Object) As ListTemplate" />
+      <MemberSignature Language="F#" Value="abstract member Convert : obj -&gt; Microsoft.Office.Interop.Word.ListTemplate" Usage="listTemplate.Convert Level" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -77,13 +80,13 @@
         <ReturnType>Microsoft.Office.Interop.Word.ListTemplate</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Level" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="Level" Type="System.Object" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="Level"><b>Objeto</b>opcional. O nível a ser usado para formatar a nova lista. Ao converter uma lista de vários níveis em uma lista de um único nível, esse argumento pode ser um número de 1 a 9. Ao converter uma lista de um único nível em uma lista de vários níveis, 1 é o único valor válido. Se este argumento for omitido, 1 é o valor padrão.</param>
         <summary>Converte uma lista de vários níveis em uma lista de único nível ou vice-versa.</summary>
         <returns>To be added.</returns>
-        <remarks><para>Você não pode usar o método <b>Convert</b> em um modelo de lista que é derivado <see cref="T:Microsoft.Office.Interop.Word.ListGalleries" /> da coleção.</para>
+        <remarks><para>Você não pode usar o método <b>Convert</b> em um modelo de lista que é derivado da <see cref="T:Microsoft.Office.Interop.Word.ListGalleries" /> coleção.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -93,6 +96,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListTemplate.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.ListTemplate.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -123,6 +127,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListTemplate.ListLevels" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ListLevels As ListLevels" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ListLevels ^ ListLevels { Microsoft::Office::Interop::Word::ListLevels ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ListLevels : Microsoft.Office.Interop.Word.ListLevels" Usage="Microsoft.Office.Interop.Word.ListTemplate.ListLevels" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -140,7 +145,7 @@
         <ReturnType>Microsoft.Office.Interop.Word.ListLevels</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Retorna uma <see cref="T:Microsoft.Office.Interop.Word.ListLevels" /> coleção que representa todos os níveis para o especificado <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" />.</summary>
+        <summary>Retorna uma <see cref="T:Microsoft.Office.Interop.Word.ListLevels" /> coleção que representa todos os níveis para o especificado <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> .</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -151,6 +156,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListTemplate.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft.Office.Interop.Word.ListTemplate.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -182,6 +188,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListTemplate.OutlineNumbered" />
       <MemberSignature Language="VB.NET" Value="Public Property OutlineNumbered As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool OutlineNumbered { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.OutlineNumbered : bool with get, set" Usage="Microsoft.Office.Interop.Word.ListTemplate.OutlineNumbered" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -202,10 +209,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> se o objeto <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> especificado é de numeração de tópicos.</summary>
+        <summary><b>True</b> se o <see cref="T:Microsoft.Office.Interop.Word.ListTemplate" /> objeto especificado é de numeração de tópicos.</summary>
         <value>To be added.</value>
         <remarks><para>A definição dessa propriedade como <b>False</b> converte o modelo de lista em uma lista de único nível que usa a formatação do primeiro nível.</para>
-          <para>Você não pode definir essa propriedade para <b></b> um objeto ListTemplate retornado de <see cref="T:Microsoft.Office.Interop.Word.ListGallery" /> um objeto.</para>
+          <para>Você não pode definir essa propriedade para um objeto <b>ListTemplate</b> retornado de um <see cref="T:Microsoft.Office.Interop.Word.ListGallery" /> objeto.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -215,6 +222,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.ListTemplate.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.ListTemplate.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

@@ -1,9 +1,10 @@
 <Type Name="RecentFile" FullName="Microsoft.Office.Interop.Word.RecentFile">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="5a818ea88a0f5d83922bdd03f47dd18ee09e79b4" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147700" /></Metadata><TypeSignature Language="C#" Value="public interface RecentFile" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="db81ee4f1ea293d2ccad612d04a0a287ada3d3d4" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43924624" /></Metadata><TypeSignature Language="C#" Value="public interface RecentFile" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract RecentFile" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.RecentFile" />
   <TypeSignature Language="VB.NET" Value="Public Interface RecentFile" />
   <TypeSignature Language="C++ CLI" Value="public interface class RecentFile" />
+  <TypeSignature Language="F#" Value="type RecentFile = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -19,10 +20,10 @@
   </Attributes>
   <Docs>
     <summary>Representa um arquivo usado recentemente.</summary>
-    <remarks><para>O <b></b> objeto RecentFile é um membro da <see cref="T:Microsoft.Office.Interop.Word.RecentFiles" /> coleção. A coleção <b>RecentFiles</b> inclui todos os arquivos que foram usados recentemente. Os itens da coleção <b>RecentFiles</b> são exibidos na parte inferior do menu arquivo.</para>
-      <para>Use <b></b>RecentFiles (<paramref name="index" />) <paramref name="index" /> , onde é o número de índice, para <b></b> retornar um único objeto RecentFile. O número de índice representa a posição do arquivo no menu <b>arquivo</b>.</para>
-      <para>Use o <see cref="M:Microsoft.Office.Interop.Word.RecentFiles.Add(System.Object@,System.Object@)" /> método para adicionar um arquivo à coleção <b></b> RecentFiles.</para>
-      <para>Os <see cref="M:Microsoft.Office.Interop.Word._Document.SaveAs(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> métodos <see cref="M:Microsoft.Office.Interop.Word.Documents.Open(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> e incluem um <paramref name="AddToRecentFiles" /> argumento que controla se um arquivo é ou não adicionado à lista de arquivos usados recentemente quando o arquivo é aberto ou salvo.</para>
+    <remarks><para>O objeto <b>RecentFile</b> é um membro da <see cref="T:Microsoft.Office.Interop.Word.RecentFiles" /> coleção. A coleção <b>RecentFiles</b> inclui todos os arquivos que foram usados recentemente. Os itens da coleção <b>RecentFiles</b> são exibidos na parte inferior do menu arquivo.</para>
+      <para>Use <b>RecentFiles</b>( <paramref name="index" /> ), onde <paramref name="index" /> é o número de índice, para retornar um único objeto <b>RecentFile</b> . O número de índice representa a posição do arquivo no menu <b>arquivo</b>.</para>
+      <para>Use o <see cref="M:Microsoft.Office.Interop.Word.RecentFiles.Add(System.Object@,System.Object@)" /> método para adicionar um arquivo à coleção <b>RecentFiles</b> .</para>
+      <para>Os <see cref="M:Microsoft.Office.Interop.Word._Document.SaveAs(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> <see cref="M:Microsoft.Office.Interop.Word.Documents.Open(System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)" /> métodos e incluem um <paramref name="AddToRecentFiles" /> argumento que controla se um arquivo é ou não adicionado à lista de arquivos usados recentemente quando o arquivo é aberto ou salvo.</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -32,6 +33,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.RecentFile.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.RecentFile.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -60,6 +62,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.RecentFile.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.RecentFile.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -90,6 +93,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.RecentFile.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberSignature Language="F#" Value="abstract member Delete : unit -&gt; unit" Usage="recentFile.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -115,6 +119,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.RecentFile.Index" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Index As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Index : int" Usage="Microsoft.Office.Interop.Word.RecentFile.Index" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -143,6 +148,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.RecentFile.Name" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Office.Interop.Word.RecentFile.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -171,6 +177,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.RecentFile.Open" />
       <MemberSignature Language="VB.NET" Value="Public Function Open () As Document" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Word::Document ^ Open();" />
+      <MemberSignature Language="F#" Value="abstract member Open : unit -&gt; Microsoft.Office.Interop.Word.Document" Usage="recentFile.Open " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -197,6 +204,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.RecentFile.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.RecentFile.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -225,6 +233,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.RecentFile.Path" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Path As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Path { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Path : string" Usage="Microsoft.Office.Interop.Word.RecentFile.Path" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -246,7 +255,7 @@
         <value>To be added.</value>
         <remarks><para>O caminho não inclui um caractere precedente  por exemplo, "C:\MSOffice" ou "http://MyServer". Use a <see cref="P:Microsoft.Office.Interop.Word._Application.PathSeparator" /> propriedade para adicionar o caractere que separa pastas e letras de unidade. Use a propriedade <b>Name</b> para retornar o nome de arquivo sem o caminho.</para>
           <para>
-            <b>Observação</b>  Você pode usar a propriedade <b>PathSeparator</b> para criar endereços da Web, mesmo que eles contenham barras (/) e a propriedade <b>PathSeparator</b> seja padronizada como uma\)barra invertida (.</para>
+            <b>Observação</b>  Você pode usar a propriedade <b>PathSeparator</b> para criar endereços da Web, mesmo que eles contenham barras (/) e a propriedade <b>PathSeparator</b> seja padronizada como uma barra invertida ( \) .</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -256,6 +265,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.RecentFile.ReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public Property ReadOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ReadOnly { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ReadOnly : bool with get, set" Usage="Microsoft.Office.Interop.Word.RecentFile.ReadOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

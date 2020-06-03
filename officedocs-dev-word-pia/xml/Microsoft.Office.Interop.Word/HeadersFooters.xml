@@ -1,9 +1,10 @@
 <Type Name="HeadersFooters" FullName="Microsoft.Office.Interop.Word.HeadersFooters">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="bbb3145635811002276f2778bca17d7fa3c40db1" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34147995" /></Metadata><TypeSignature Language="C#" Value="public interface HeadersFooters : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="69f2ea2b9b57bc965d809b257de255bdb8fc668c" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43924029" /></Metadata><TypeSignature Language="C#" Value="public interface HeadersFooters : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract HeadersFooters implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.HeadersFooters" />
   <TypeSignature Language="VB.NET" Value="Public Interface HeadersFooters&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class HeadersFooters : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type HeadersFooters = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -23,13 +24,13 @@
   </Attributes>
   <Docs>
     <summary>Uma coleção de <see cref="T:Microsoft.Office.Interop.Word.HeaderFooter" /> objetos que representam os cabeçalhos ou rodapés na seção especificada de um documento.</summary>
-    <remarks><para>Use a <see cref="P:Microsoft.Office.Interop.Word.Section.Headers" /> propriedade <see cref="P:Microsoft.Office.Interop.Word.Section.Footers" /> ou para retornar a coleção <b>HeadersFooters</b> .</para>
+    <remarks><para>Use a <see cref="P:Microsoft.Office.Interop.Word.Section.Headers" /> <see cref="P:Microsoft.Office.Interop.Word.Section.Footers" /> propriedade ou para retornar a coleção <b>HeadersFooters</b> .</para>
       <para>
         <b>Observação</b>: não é possível adicionar objetos <b>HeaderFooter</b> à coleção <b>HeadersFooters</b> .</para>
-      <para>Use <b>cabeçalhos</b>(<paramref name="index" />) ou <b>rodapés</b>(<paramref name="index" />), onde <paramref name="index" /> é uma <see cref="T:Microsoft.Office.Interop.Word.WdHeaderFooterIndex" /> das constantes (<b>wdHeaderFooterEvenPages</b>, <b>wdHeaderFooterFirstPage</b>ou <b>wdHeaderFooterPrimary</b>), para retornar um único <b> Objeto HeaderFooter</b> .</para>
-      <para>Você também pode retornar um único objeto <b>HeaderFooter</b> usando a <see cref="P:Microsoft.Office.Interop.Word.Selection.HeaderFooter" /> Propriedade com um <see cref="T:Microsoft.Office.Interop.Word.Selection" /> objeto.</para>
-      <para>Use a <see cref="P:Microsoft.Office.Interop.Word.PageSetup.DifferentFirstPageHeaderFooter" /> Propriedade com o <see cref="T:Microsoft.Office.Interop.Word.PageSetup" /> objeto para especificar uma primeira página diferente.</para>
-      <para>Use a <see cref="P:Microsoft.Office.Interop.Word.PageSetup.OddAndEvenPagesHeaderFooter" /> Propriedade com o objeto <b>PageSetup</b> para especificar cabeçalhos e rodapés de páginas ímpares e pares diferentes. Quando a propriedade <b>OddAndEvenPagesHeaderFooter</b> é <b>verdadeira</b>, você pode retornar um cabeçalho ou rodapé ímpar usando <b>wdHeaderFooterPrimary</b> e é possível retornar um cabeçalho ou rodapé usando <b>wdHeaderFooterEvenPages</b>.</para>
+      <para>Use <b>cabeçalhos</b>( <paramref name="index" /> ) ou <b>rodapés</b>( <paramref name="index" /> ), onde <paramref name="index" /> é uma das <see cref="T:Microsoft.Office.Interop.Word.WdHeaderFooterIndex" /> constantes (<b>wdHeaderFooterEvenPages</b>, <b>wdHeaderFooterFirstPage</b>ou <b>wdHeaderFooterPrimary</b>), para retornar um único objeto <b>HeaderFooter</b> .</para>
+      <para>Você também pode retornar um único objeto <b>HeaderFooter</b> usando a <see cref="P:Microsoft.Office.Interop.Word.Selection.HeaderFooter" /> propriedade com um <see cref="T:Microsoft.Office.Interop.Word.Selection" /> objeto.</para>
+      <para>Use a <see cref="P:Microsoft.Office.Interop.Word.PageSetup.DifferentFirstPageHeaderFooter" /> propriedade com o <see cref="T:Microsoft.Office.Interop.Word.PageSetup" /> objeto para especificar uma primeira página diferente.</para>
+      <para>Use a <see cref="P:Microsoft.Office.Interop.Word.PageSetup.OddAndEvenPagesHeaderFooter" /> propriedade com o objeto <b>PageSetup</b> para especificar cabeçalhos e rodapés de páginas ímpares e pares diferentes. Quando a propriedade <b>OddAndEvenPagesHeaderFooter</b> é <b>verdadeira</b>, você pode retornar um cabeçalho ou rodapé ímpar usando <b>wdHeaderFooterPrimary</b> e é possível retornar um cabeçalho ou rodapé usando <b>wdHeaderFooterEvenPages</b>.</para>
       <para>Use o <see cref="M:Microsoft.Office.Interop.Word.PageNumbers.Add(System.Object@,System.Object@)" /> método com o <see cref="T:Microsoft.Office.Interop.Word.PageNumbers" /> objeto para adicionar um número de página a um cabeçalho ou rodapé.</para>
       <para> </para></remarks>
   </Docs>
@@ -40,6 +41,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.HeadersFooters.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Application ^ Application { Microsoft::Office::Interop::Word::Application ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : Microsoft.Office.Interop.Word.Application" Usage="Microsoft.Office.Interop.Word.HeadersFooters.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -68,6 +70,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.HeadersFooters.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.HeadersFooters.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -96,6 +99,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.HeadersFooters.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.HeadersFooters.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -126,6 +130,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.HeadersFooters.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="headersFooters.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -158,6 +163,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.HeadersFooters.Item(Microsoft.Office.Interop.Word.WdHeaderFooterIndex)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As WdHeaderFooterIndex) As HeaderFooter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::HeaderFooter ^ default[Microsoft::Office::Interop::Word::WdHeaderFooterIndex] { Microsoft::Office::Interop::Word::HeaderFooter ^ get(Microsoft::Office::Interop::Word::WdHeaderFooterIndex Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(Microsoft.Office.Interop.Word.WdHeaderFooterIndex) : Microsoft.Office.Interop.Word.HeaderFooter" Usage="Microsoft.Office.Interop.Word.HeadersFooters.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -178,7 +184,7 @@
         <Parameter Name="Index" Type="Microsoft.Office.Interop.Word.WdHeaderFooterIndex" />
       </Parameters>
       <Docs>
-        <param name="Index">Necessário <see cref="T:Microsoft.Office.Interop.Word.WdHeaderFooterIndex" />. Uma constante que especifica o cabeçalho ou rodapé na seleção. Pode ser uma das seguintes constantes <b>WdHeaderFooterIndex</b> :<b>wdHeaderFooterEvenPages</b><b>wdHeaderFooterFirstPage</b><b>wdHeaderFooterPrimary</b></param>
+        <param name="Index">Necessário <see cref="T:Microsoft.Office.Interop.Word.WdHeaderFooterIndex" /> . Uma constante que especifica o cabeçalho ou rodapé na seleção. Pode ser uma das seguintes constantes <b>WdHeaderFooterIndex</b> :<b>wdHeaderFooterEvenPages</b><b>wdHeaderFooterFirstPage</b><b>wdHeaderFooterPrimary</b></param>
         <summary>Retorna um cabeçalho ou rodapé em um intervalo ou seleção.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -190,6 +196,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.HeadersFooters.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.HeadersFooters.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

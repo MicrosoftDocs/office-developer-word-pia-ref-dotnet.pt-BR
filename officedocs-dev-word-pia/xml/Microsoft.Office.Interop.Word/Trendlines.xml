@@ -1,9 +1,10 @@
 <Type Name="Trendlines" FullName="Microsoft.Office.Interop.Word.Trendlines">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="d5d8e0ba867d614dca0f443355bc975b7ca84d93" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143739" /></Metadata><TypeSignature Language="C#" Value="public interface Trendlines : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="e16a8fd8562506d1a5699dd79f04e2392431c660" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43925944" /></Metadata><TypeSignature Language="C#" Value="public interface Trendlines : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Trendlines implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.Trendlines" />
   <TypeSignature Language="VB.NET" Value="Public Interface Trendlines&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public interface class Trendlines : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type Trendlines = interface&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Trendline _Default([in]object Index) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Trendlines._Default(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function _Default (Optional Index As Object) As Trendline" />
+      <MemberSignature Language="F#" Value="abstract member _Default : obj -&gt; Microsoft.Office.Interop.Word.Trendline" Usage="trendlines._Default Index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -54,7 +56,7 @@
       <Docs>
         <param name="Index">To be added.</param>
         <summary>Reservado para uso interno.</summary>
-        <returns>Retorna <see cref="T:Microsoft.Office.Interop.Word.Trendline" />.</returns>
+        <returns>Retorna <see cref="T:Microsoft.Office.Interop.Word.Trendline" /> .</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -63,6 +65,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Word.Trendline Add([in]valuetype Microsoft.Office.Interop.Word.XlTrendlineType Type, [in]object Order, [in]object Period, [in]object Forward, [in]object Backward, [in]object Intercept, [in]object DisplayEquation, [in]object DisplayRSquared, [in]object Name) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Trendlines.Add(Microsoft.Office.Interop.Word.XlTrendlineType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (Optional Type As XlTrendlineType = Microsoft.Office.Interop.Word.XlTrendlineType.xlLinear, Optional Order As Object, Optional Period As Object, Optional Forward As Object, Optional Backward As Object, Optional Intercept As Object, Optional DisplayEquation As Object, Optional DisplayRSquared As Object, Optional Name As Object) As Trendline" />
+      <MemberSignature Language="F#" Value="abstract member Add : Microsoft.Office.Interop.Word.XlTrendlineType * obj * obj * obj * obj * obj * obj * obj * obj -&gt; Microsoft.Office.Interop.Word.Trendline" Usage="trendlines.Add (Type, Order, Period, Forward, Backward, Intercept, DisplayEquation, DisplayRSquared, Name)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -88,9 +91,9 @@
         <Parameter Name="Name" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Type">Opcional <see cref="T:Microsoft.Office.Interop.Word.XlTrendlineType" />. O tipo de linha de tendência.</param>
-        <param name="Order"><b>Objeto</b>opcional. Obrigatório se Type for <see cref="F:Microsoft.Office.Interop.Word.XlTrendlineType.xlPolynomial" />. A ordem da linha de tendência. Deve ser um número inteiro de 2 a 6, inclusive.</param>
-        <param name="Period"><b>Objeto</b>opcional. Obrigatório se Type for <see cref="F:Microsoft.Office.Interop.Word.XlTrendlineType.xlMovingAvg" />. O período da linha de tendência. Deve ser um número inteiro maior que 1 e menor que o número de pontos de dados da série à qual você está adicionando uma linha de tendência.</param>
+        <param name="Type">Opcional <see cref="T:Microsoft.Office.Interop.Word.XlTrendlineType" /> . O tipo de linha de tendência.</param>
+        <param name="Order"><b>Objeto</b>opcional. Obrigatório se Type for <see cref="F:Microsoft.Office.Interop.Word.XlTrendlineType.xlPolynomial" /> . A ordem da linha de tendência. Deve ser um número inteiro de 2 a 6, inclusive.</param>
+        <param name="Period"><b>Objeto</b>opcional. Obrigatório se Type for <see cref="F:Microsoft.Office.Interop.Word.XlTrendlineType.xlMovingAvg" /> . O período da linha de tendência. Deve ser um número inteiro maior que 1 e menor que o número de pontos de dados da série à qual você está adicionando uma linha de tendência.</param>
         <param name="Forward"><b>Objeto</b>opcional. O número de períodos (ou unidades em um gráfico de dispersão) pelos quais a linha de tendência se estende para frente.</param>
         <param name="Backward"><b>Objeto</b>opcional. O número de períodos (ou unidades em um gráfico de dispersão) pelos quais uma linha de tendência se estende para trás.</param>
         <param name="Intercept"><b>Objeto</b>opcional. A interseção da linha de tendência. Se este argumento for omitido, a interseção será definida automaticamente pela regressão.</param>
@@ -108,6 +111,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Trendlines.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : obj" Usage="Microsoft.Office.Interop.Word.Trendlines.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -125,7 +129,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Quando usado sem um qualificador de objeto, essa propriedade <see cref="T:Microsoft.Office.Interop.Word._Application" /> retorna um objeto que representa o aplicativo Microsoft Word. Quando usada com um qualificador de objeto, essa propriedade retornará um objeto <b>Application</b> que representa o criador do objeto especificado (você pode usar essa propriedade com um objeto Automation do OLE para retornar o aplicativo desse objeto). Somente leitura.</summary>
+        <summary>Quando usado sem um qualificador de objeto, essa propriedade retorna um <see cref="T:Microsoft.Office.Interop.Word._Application" /> objeto que representa o aplicativo Microsoft Word. Quando usada com um qualificador de objeto, essa propriedade retornará um objeto <b>Application</b> que representa o criador do objeto especificado (você pode usar essa propriedade com um objeto Automation do OLE para retornar o aplicativo desse objeto). Somente leitura.</summary>
         <value><b>Aplicativo</b> (veja acima)</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -136,6 +140,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Trendlines.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Office.Interop.Word.Trendlines.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -164,6 +169,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Trendlines.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.Trendlines.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -193,6 +199,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.Trendlines.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="trendlines.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -215,7 +222,7 @@
       <Parameters />
       <Docs>
         <summary>To be added.</summary>
-        <returns>Retorna <see cref="T:System.Collections.IEnumerator" />.</returns>
+        <returns>Retorna <see cref="T:System.Collections.IEnumerator" /> .</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -225,6 +232,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Trendlines.Item(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Optional Index As Object) As Trendline" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::Trendline ^ default[System::Object ^] { Microsoft::Office::Interop::Word::Trendline ^ get(System::Object ^ Index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(obj) : Microsoft.Office.Interop.Word.Trendline" Usage="Microsoft.Office.Interop.Word.Trendlines.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -257,6 +265,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.Trendlines.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.Trendlines.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>

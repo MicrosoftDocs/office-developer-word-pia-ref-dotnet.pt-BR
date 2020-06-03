@@ -1,9 +1,10 @@
 <Type Name="TickLabels" FullName="Microsoft.Office.Interop.Word.TickLabels">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="0f6662574427978805ce85168409794e1affd85c" /><Meta Name="ms.sourcegitcommit" Value="9a6162e1f2c2145e95970c1fdb1ddcac1366d42f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="34143809" /></Metadata><TypeSignature Language="C#" Value="public interface TickLabels" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="9c421a2e8669e592c85e345b22002f90c66e3df0" /><Meta Name="ms.sourcegitcommit" Value="655244c9d9a99d41d118f4fa57b5d74d46c410d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="pt-BR" /><Meta Name="ms.lasthandoff" Value="06/03/2020" /><Meta Name="ms.locfileid" Value="43925958" /></Metadata><TypeSignature Language="C#" Value="public interface TickLabels" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TickLabels" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Word.TickLabels" />
   <TypeSignature Language="VB.NET" Value="Public Interface TickLabels" />
   <TypeSignature Language="C++ CLI" Value="public interface class TickLabels" />
+  <TypeSignature Language="F#" Value="type TickLabels = interface" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
     <AssemblyVersion>15.0.0.0</AssemblyVersion>
@@ -20,8 +21,8 @@
   <Docs>
     <summary>Representa os rótulos das marcas de escala associados às marcas de escala em um eixo de gráfico.</summary>
     <remarks><para>Este objeto não é uma coleção. Não há nenhum objeto que represente um único rótulo de marca de escala; é preciso retornar todos os rótulos de marca de escala como uma unidade.</para>
-      <para>O texto do rótulo de marca de escala para o eixo de categoria vem do nome da categoria associada no gráfico. O texto de rótulo de marca de escala padrão para o eixo de categoria é o número que indica a posição da categoria relativa à extremidade esquerda desse eixo. Para alterar o número de marcas de escala sem rótulo entre rótulos de marca de escala, você deve alterar <see cref="P:Microsoft.Office.Interop.Word.Axis.TickLabelSpacing" /> a propriedade do eixo das categorias.</para>
-      <para>O texto do rótulo de marca de escala para o eixo dos valores é <see cref="P:Microsoft.Office.Interop.Word.Axis.MajorUnit" />calculado <see cref="P:Microsoft.Office.Interop.Word.Axis.MinimumScale" />com base <see cref="P:Microsoft.Office.Interop.Word.Axis.MaximumScale" /> nas propriedades, e do eixo dos valores. Para alterar o texto do rótulo de marca de escala do eixo de valor, você precisa alterar os valores dessas propriedades.</para>
+      <para>O texto do rótulo de marca de escala para o eixo de categoria vem do nome da categoria associada no gráfico. O texto de rótulo de marca de escala padrão para o eixo de categoria é o número que indica a posição da categoria relativa à extremidade esquerda desse eixo. Para alterar o número de marcas de escala sem rótulo entre rótulos de marca de escala, você deve alterar a <see cref="P:Microsoft.Office.Interop.Word.Axis.TickLabelSpacing" /> Propriedade do eixo das categorias.</para>
+      <para>O texto do rótulo de marca de escala para o eixo dos valores é calculado com base nas <see cref="P:Microsoft.Office.Interop.Word.Axis.MajorUnit" /> <see cref="P:Microsoft.Office.Interop.Word.Axis.MinimumScale" /> Propriedades, e <see cref="P:Microsoft.Office.Interop.Word.Axis.MaximumScale" /> do eixo dos valores. Para alterar o texto do rótulo de marca de escala do eixo de valor, você precisa alterar os valores dessas propriedades.</para>
       <para> </para></remarks>
     <example><para>Use a <see cref="P:Microsoft.Office.Interop.Word.Axis.TickLabels" /> propriedade para retornar o objeto <b>TickLabels</b> . O exemplo a seguir define o formato de número para os rótulos de marca de escala no eixo dos valores do primeiro gráfico do documento ativo.</para>
       <code>&lt;span class="label"&gt;With ActiveDocument.InlineShapes(1) 
@@ -1057,6 +1058,7 @@ End With&lt;/span&gt;</code></example>
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TickLabels.Alignment" />
       <MemberSignature Language="VB.NET" Value="Public Property Alignment As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Alignment { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Alignment : int with get, set" Usage="Microsoft.Office.Interop.Word.TickLabels.Alignment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1088,6 +1090,7 @@ End With&lt;/span&gt;</code></example>
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TickLabels.Application" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Application : obj" Usage="Microsoft.Office.Interop.Word.TickLabels.Application" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1105,7 +1108,7 @@ End With&lt;/span&gt;</code></example>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Quando usado sem um qualificador de objeto, essa propriedade <see cref="T:Microsoft.Office.Interop.Word._Application" /> retorna um objeto que representa o aplicativo Microsoft Word. Quando usada com um qualificador de objeto, essa propriedade retornará um objeto <b>Application</b> que representa o criador do objeto especificado (você pode usar essa propriedade com um objeto Automation do OLE para retornar o aplicativo desse objeto). Somente leitura.</summary>
+        <summary>Quando usado sem um qualificador de objeto, essa propriedade retorna um <see cref="T:Microsoft.Office.Interop.Word._Application" /> objeto que representa o aplicativo Microsoft Word. Quando usada com um qualificador de objeto, essa propriedade retornará um objeto <b>Application</b> que representa o criador do objeto especificado (você pode usar essa propriedade com um objeto Automation do OLE para retornar o aplicativo desse objeto). Somente leitura.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
         <example><para>Este exemplo exibe uma mensagem sobre o aplicativo que criou myObject.</para>
@@ -1376,6 +1379,7 @@ If myObject.&lt;/span&gt;
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TickLabels.AutoScaleFont" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoScaleFont As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ AutoScaleFont { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AutoScaleFont : obj with get, set" Usage="Microsoft.Office.Interop.Word.TickLabels.AutoScaleFont" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1403,7 +1407,7 @@ If myObject.&lt;/span&gt;
       </ReturnValue>
       <Docs>
         <summary>Reservado para uso interno.</summary>
-        <value>Retorna <see cref="T:System.Object" />.</value>
+        <value>Retorna <see cref="T:System.Object" /> .</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1413,6 +1417,7 @@ If myObject.&lt;/span&gt;
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TickLabels.Creator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Creator : int" Usage="Microsoft.Office.Interop.Word.TickLabels.Creator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1442,6 +1447,7 @@ If myObject.&lt;/span&gt;
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.TickLabels.Delete" />
       <MemberSignature Language="VB.NET" Value="Public Function Delete () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Delete();" />
+      <MemberSignature Language="F#" Value="abstract member Delete : unit -&gt; obj" Usage="tickLabels.Delete " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1468,6 +1474,7 @@ If myObject.&lt;/span&gt;
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TickLabels.Depth" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Depth As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Depth { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Depth : int" Usage="Microsoft.Office.Interop.Word.TickLabels.Depth" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1496,6 +1503,7 @@ If myObject.&lt;/span&gt;
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TickLabels.Font" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Font As ChartFont" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ChartFont ^ Font { Microsoft::Office::Interop::Word::ChartFont ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Font : Microsoft.Office.Interop.Word.ChartFont" Usage="Microsoft.Office.Interop.Word.TickLabels.Font" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1524,6 +1532,7 @@ If myObject.&lt;/span&gt;
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TickLabels.Format" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Format As ChartFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::ChartFormat ^ Format { Microsoft::Office::Interop::Word::ChartFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Format : Microsoft.Office.Interop.Word.ChartFormat" Usage="Microsoft.Office.Interop.Word.TickLabels.Format" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1543,7 +1552,7 @@ If myObject.&lt;/span&gt;
       <Docs>
         <summary>Retorna a linha, preenchimento e efeito da formatação do objeto.
 
-Somente <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />leitura.</summary>
+Somente leitura <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" /> .</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1554,6 +1563,7 @@ Somente <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />leitura.</summ
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TickLabels.MultiLevel" />
       <MemberSignature Language="VB.NET" Value="Public Property MultiLevel As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MultiLevel { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.MultiLevel : bool with get, set" Usage="Microsoft.Office.Interop.Word.TickLabels.MultiLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1586,6 +1596,7 @@ Somente <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />leitura.</summ
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TickLabels.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Office.Interop.Word.TickLabels.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1614,6 +1625,7 @@ Somente <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />leitura.</summ
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TickLabels.NumberFormat" />
       <MemberSignature Language="VB.NET" Value="Public Property NumberFormat As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NumberFormat { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.NumberFormat : string with get, set" Usage="Microsoft.Office.Interop.Word.TickLabels.NumberFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -1636,7 +1648,7 @@ Somente <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />leitura.</summ
       <Docs>
         <summary>Retorna ou define um valor <b>String</b> que representa o código de formatação do objeto especificado.</summary>
         <value>To be added.</value>
-        <remarks><para>O código de formatação é a mesma cadeia de caracteres da opção Códigos de formato da caixa de diálogo Formatar células. A função <b>Format</b> usa cadeias de código de formatação diferentes das usadas <see cref="P:Microsoft.Office.Interop.Word.TickLabels.NumberFormatLocal" /> pelas propriedades <b>NumberFormat</b> e Properties.</para>
+        <remarks><para>O código de formatação é a mesma cadeia de caracteres da opção Códigos de formato da caixa de diálogo Formatar células. A função <b>Format</b> usa cadeias de código de formatação diferentes das usadas pelas propriedades <b>NumberFormat</b> e <see cref="P:Microsoft.Office.Interop.Word.TickLabels.NumberFormatLocal" /> Properties.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1646,6 +1658,7 @@ Somente <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />leitura.</summ
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TickLabels.NumberFormatLinked" />
       <MemberSignature Language="VB.NET" Value="Public Property NumberFormatLinked As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool NumberFormatLinked { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.NumberFormatLinked : bool with get, set" Usage="Microsoft.Office.Interop.Word.TickLabels.NumberFormatLinked" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2193,6 +2206,7 @@ Somente <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />leitura.</summ
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TickLabels.NumberFormatLocal" />
       <MemberSignature Language="VB.NET" Value="Public Property NumberFormatLocal As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ NumberFormatLocal { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.NumberFormatLocal : obj with get, set" Usage="Microsoft.Office.Interop.Word.TickLabels.NumberFormatLocal" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -2215,7 +2229,7 @@ Somente <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />leitura.</summ
       <Docs>
         <summary>Retorna ou define um valor <b>Variant</b> que representa o código de formatação do objeto como uma sequência de caracteres no idioma do usuário.</summary>
         <value>To be added.</value>
-        <remarks><para>A função <b>Format</b> usa cadeias de código de formatação diferentes <see cref="P:Microsoft.Office.Interop.Word.TickLabels.NumberFormat" /> das usadas pelas propriedades e <b>NumberFormatLocal</b> .</para>
+        <remarks><para>A função <b>Format</b> usa cadeias de código de formatação diferentes das usadas pelas <see cref="P:Microsoft.Office.Interop.Word.TickLabels.NumberFormat" /> Propriedades e <b>NumberFormatLocal</b> .</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2225,6 +2239,7 @@ Somente <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />leitura.</summ
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TickLabels.Offset" />
       <MemberSignature Language="VB.NET" Value="Public Property Offset As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Offset { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Offset : int with get, set" Usage="Microsoft.Office.Interop.Word.TickLabels.Offset" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -3033,6 +3048,7 @@ Somente <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />leitura.</summ
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TickLabels.Orientation" />
       <MemberSignature Language="VB.NET" Value="Public Property Orientation As XlTickLabelOrientation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Word::XlTickLabelOrientation Orientation { Microsoft::Office::Interop::Word::XlTickLabelOrientation get(); void set(Microsoft::Office::Interop::Word::XlTickLabelOrientation value); };" />
+      <MemberSignature Language="F#" Value="member this.Orientation : Microsoft.Office.Interop.Word.XlTickLabelOrientation with get, set" Usage="Microsoft.Office.Interop.Word.TickLabels.Orientation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -3065,6 +3081,7 @@ Somente <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />leitura.</summ
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TickLabels.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="Microsoft.Office.Interop.Word.TickLabels.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -3093,6 +3110,7 @@ Somente <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />leitura.</summ
       <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Word.TickLabels.ReadingOrder" />
       <MemberSignature Language="VB.NET" Value="Public Property ReadingOrder As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ReadingOrder { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.ReadingOrder : int with get, set" Usage="Microsoft.Office.Interop.Word.TickLabels.ReadingOrder" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
@@ -3124,6 +3142,7 @@ Somente <see cref="T:Microsoft.Office.Interop.Word.ChartFormat" />leitura.</summ
       <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Word.TickLabels.Select" />
       <MemberSignature Language="VB.NET" Value="Public Function Select () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Select();" />
+      <MemberSignature Language="F#" Value="abstract member Select : unit -&gt; obj" Usage="tickLabels.Select " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Office.Interop.Word</AssemblyName>
